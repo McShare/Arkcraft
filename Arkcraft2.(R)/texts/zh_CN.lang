@@ -1,4 +1,4 @@
-#Lo de aca no lo toques que re corto los dedos#
+#请勿随意修改#
 
 
 chestScreen.header.small=小箱子
@@ -14,7 +14,7 @@ item.wooden_sword.name=木棍
 
 
 
-#Lo de aca ARRIBA no lo toques que te corto los dedos#
+#请勿随意修改#
 
 
 
@@ -34,26 +34,26 @@ pack.description=按
 
 pack.name=ArkCraft R
 pack.description=按
-entity.ark:white_male_rex.name=白色雄性雷克斯
-entity.ark:black_male_rex.name=黑色雄性雷克斯
-entity.ark:red_male_rex.name=红色雄性雷克斯
-entity.ark:black_female_rex.name=黑色雌性雷克斯
-entity.ark:red_female_rex.name=红色雌性雷克斯
-entity.ark:white_female_rex.name=白色雌性雷克斯
-entity.ark:rex.name=雷克斯
-item.spawn_egg.entity.ark:rex.name=雷克斯
+entity.ark:white_male_rex.name=白色雄性霸王龙
+entity.ark:black_male_rex.name=黑色雄性霸王龙
+entity.ark:red_male_rex.name=红色雄性
+entity.ark:black_female_rex.name=黑色雌性霸王龙
+entity.ark:red_female_rex.name=红色雌性霸王龙
+entity.ark:white_female_rex.name=白色雌性霸王龙
+entity.ark:rex.name=霸王龙
+item.spawn_egg.entity.ark:rex.name=霸王龙
 tile.ark:reaper_egg.name=死神蛋
-entity.ark:black_male_reaper.name=黑色男性收割者
+entity.ark:black_male_reaper.name=黑色男性死神
 entity.ark:black_female_reaper.name=黑色女死神
-entity.ark:orange_female_spino.name=橙色女性脊柱
-entity.ark:orange_male_spino.name=橙色男性Spino
-entity.ark:green_female_spino.name=绿色女性脊柱
-entity.ark:green_male_spino.name=绿色男性斯皮诺
-entity.ark:white_female_spino.name=白女斯皮诺
-entity.ark:white_male_spino.name=白人男性斯皮诺
-entity.ark:blue_female_spino.name=蓝色女斯皮诺
-entity.ark:blue_male_spino.name=蓝色男性斯皮诺
-item.spawn_egg.entity.ark:spino.name=Spino
+entity.ark:orange_female_spino.name=橙色女性棘龙
+entity.ark:orange_male_spino.name=橙色男性棘龙
+entity.ark:green_female_spino.name=绿色女性棘龙
+entity.ark:green_male_spino.name=绿色男性棘龙
+entity.ark:white_female_spino.name=白女棘龙
+entity.ark:white_male_spino.name=白人男性棘龙
+entity.ark:blue_female_spino.name=蓝色女棘龙
+entity.ark:blue_male_spino.name=蓝色男性棘龙
+item.spawn_egg.entity.ark:spino.name=棘龙
 
 item.arkcraft:cofre_con_cuerdas.name=§6ArkCraft | §3带绳子的箱子
 tile.arkcraft:estructura_tek.name=Tek 结构
@@ -335,32 +335,32 @@ item.spawn_egg.entity.arkcraft:phiomia.name=§6ArkCraft | §3菲奥米亚刷怪�
 entity.arkcraft:phiomia.name=Phiomia
 action.hint.exit.arkcraft:phiomia=骑着 Phiomia
 
-item.spawn_egg.entity.arkcraft:irritator.name=§6ArkCraft | §3刺激物刷怪蛋
-entity.arkcraft:irritator.name=刺激者
-action.hint.exit.arkcraft:irritator=骑马刺激者
+item.spawn_egg.entity.arkcraft:irritator.name=§6ArkCraft | §3激龙刷怪蛋
+entity.arkcraft:irritator.name=激龙
+action.hint.exit.arkcraft:irritator=骑激龙
 
 item.spawn_egg.entity.arkcraft:bulbdog.name=§6ArkCraft | §3Bulbdog Spawn Egg
 entity.arkcraft:bulbdog.name=灯泡狗
 
-item.spawn_egg.entity.arkcraft:lymantria.name=§6ArkCraft | §3Lymantria 刷怪蛋
-entity.arkcraft:lymantria.name=Lymantria
-action.hint.exit.arkcraft:lymantria=骑着 Lymantria
+item.spawn_egg.entity.arkcraft:lymantria.name=§6ArkCraft | §3舞毒蛾蛋
+entity.arkcraft:lymantria.name=舞毒蛾
+action.hint.exit.arkcraft:lymantria=骑舞毒蛾
 
 item.spawn_egg.entity.arkcraft:scutosaurus.name=Scutosaurus 刷怪蛋
 entity.arkcraft:scutosaurus.name=Scutosaurus
 
-item.spawn_egg.entity.arkcraft:ankylosaur.name=§6ArkCraft | §3甲龙刷怪蛋
+item.spawn_egg.entity.arkcraft:ankylosaur.name=§6ArkCraft | §3甲龙蛋
 entity.arkcraft:ankylosaur.name=甲龙
 action.hint.exit.arkcraft:ankylosaur=骑甲龙
 
-item.spawn_egg.entity.arkcraft:skorpiovenator.name=§6ArkCraft | §3Skorpiovenator 刷怪蛋
-entity.arkcraft:skorpiovenator.name=Skorpiovenator
-action.hint.exit.arkcraft:skorpiovenator=骑乘 Skorpiovenator
+item.spawn_egg.entity.arkcraft:skorpiovenator.name=§6ArkCraft | §3蝎猎龙蛋
+entity.arkcraft:skorpiovenator.name=蝎猎龙
+action.hint.exit.arkcraft:skorpiovenator=骑蝎猎龙
 
 
-item.spawn_egg.entity.arkcraft:ouranosaurus.name=§6ArkCraft | §3乌拉诺龙产卵
+item.spawn_egg.entity.arkcraft:ouranosaurus.name=§6ArkCraft | §3无畏龙蛋
 entity.arkcraft:ouranosaurus.name=Ouranosaurus
-action.hint.exit.arkcraft:ouranosaurus=骑着Ouranosaurus
+action.hint.exit.arkcraft:ouranosaurus=骑无畏龙
 
 item.spawn_egg.entity.arkcraft:hln_a.name=§6ArkCraft | §3HLN-A 刷怪蛋
 entity.arkcraft:hln_a.name=HLN-A
@@ -461,23 +461,23 @@ item.arkcraft:cloth_chestplate.name=§6ArkCraft | §3布胸板
 ##bridge 文件版本：#7
 pack.name=ArkCraft R
 pack.description=按
-entity.arkcraft:female_rex.name=§6ArkCraft | §3雌性雷克斯
-entity.arkcraft:male_rex.name=§6ArkCraft | §3雄性雷克斯
-entity.arkcraft:male_spino.name=§6ArkCraft | §3男性斯皮诺
-entity.arkcraft:female_spino.name=§6ArkCraft | §3女性斯皮诺
-item.spawn_egg.entity.arkcraft:male_rex.name=§6ArkCraft | §3雄性雷克斯
-item.spawn_egg.entity.arkcraft:female_rex.name=§6ArkCraft | §3雌性雷克斯
-item.spawn_egg.entity.arkcraft:male_spino.name=§6ArkCraft | §3男性斯皮诺
-item.spawn_egg.entity.arkcraft:female_spino.name=§6ArkCraft | §3女性斯皮诺
+entity.arkcraft:female_rex.name=§6ArkCraft | §3雌性霸王龙
+entity.arkcraft:male_rex.name=§6ArkCraft | §3雄性霸王龙
+entity.arkcraft:male_spino.name=§6ArkCraft | §3男性棘龙
+entity.arkcraft:female_spino.name=§6ArkCraft | §3女性棘龙
+item.spawn_egg.entity.arkcraft:male_rex.name=§6ArkCraft | §3雄性霸王龙
+item.spawn_egg.entity.arkcraft:female_rex.name=§6ArkCraft | §3雌性霸王龙
+item.spawn_egg.entity.arkcraft:male_spino.name=§6ArkCraft | §3男性棘龙
+item.spawn_egg.entity.arkcraft:female_spino.name=§6ArkCraft | §3女性棘龙
 item.spawn_egg.entity.arkcraft:female_yutyrannus.name=§6ArkCraft | §3雌性羽暴龙
 item.spawn_egg.entity.arkcraft:male_yutyrannus.name=§6ArkCraft | §3雄性玉暴龙
 entity.arkcraft:female_yutyrannus.name=§6ArkCraft | §3雌性羽暴龙
 entity.arkcraft:male_yutyrannus.name=§6ArkCraft | §3雄性玉暴龙
-item.spawn_egg.entity.arkcraft:male_baryonyx.name=§6ArkCraft | §3雄性巨龙
-item.spawn_egg.entity.arkcraft:female_baryonyx.name=§6ArkCraft | §3雌性巨龙
-entity.arkcraft:female_baryonyx.name=§6ArkCraft | §3雌性巨龙
-entity.arkcraft:male_baryonyx.name=§6ArkCraft | §3雄性巨龙
-item.spawn_egg.entity.arkcraft:female_shadowmane.name=§6ArkCraft | §3女性影鬃
-item.spawn_egg.entity.arkcraft:male_shadowmane.name=§6ArkCraft | §3男性影鬃
-entity.arkcraft:female_shadowmane.name=§6ArkCraft | §3女性影鬃
-entity.arkcraft:male_shadowmane.name=§6ArkCraft | §3男性影鬃
+item.spawn_egg.entity.arkcraft:male_baryonyx.name=§6ArkCraft | §3雄性重爪龙
+item.spawn_egg.entity.arkcraft:female_baryonyx.name=§6ArkCraft | §3雌性重爪龙
+entity.arkcraft:female_baryonyx.name=§6ArkCraft | §3雌性重爪龙
+entity.arkcraft:male_baryonyx.name=§6ArkCraft | §3雄性重爪龙
+item.spawn_egg.entity.arkcraft:female_shadowmane.name=§6ArkCraft | §3女性暗影鬃狮
+item.spawn_egg.entity.arkcraft:male_shadowmane.name=§6ArkCraft | §3男性暗影鬃狮
+entity.arkcraft:female_shadowmane.name=§6ArkCraft | §3女性暗影鬃狮
+entity.arkcraft:male_shadowmane.name=§6ArkCraft | §3男性暗影鬃狮
