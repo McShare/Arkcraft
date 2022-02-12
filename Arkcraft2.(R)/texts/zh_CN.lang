@@ -210,17 +210,17 @@ item.arkcraft:helicoprion_shard.name=§6ArkCraft | §3鲨鱼鳍
 item.arkcraft:sopa_de_carne.name=§6ArkCraft | §3鱼翅汤
 item.arkcraft:collar_de_helicoprion.name=§6ArkCraft | §3Helicoprion 项链
 
-item.spawn_egg.entity.arkcraft:achatina.name=§6ArkCraft | §3Achatina 刷怪蛋
-entity.arkcraft:achatina.name=Achatina
+item.spawn_egg.entity.arkcraft:achatina.name=§6ArkCraft | §3玛瑙螺刷怪蛋
+entity.arkcraft:achatina.name=玛瑙螺
 
-item.spawn_egg.entity.arkcraft:mamut.name=§6ArkCraft | §3马穆特刷怪蛋
-action.hint.exit.arkcraft:mamut=骑马穆特
-entity.arkcraft:mamut.name=Mamut
+item.spawn_egg.entity.arkcraft:mamut.name=§6ArkCraft | §3猛犸象刷怪蛋
+action.hint.exit.arkcraft:mamut=骑猛犸象
+entity.arkcraft:mamut.name=猛犸象
 
 
-entity.arkcraft:healer_daeodon.name=治疗者Daeodon
-action.hint.exit.arkcraft:healer_daeodon=骑术治疗师Daeodon
-item.spawn_egg.entity.arkcraft:healer_daeodon.name=治疗者 Daeodon 刷怪蛋
+entity.arkcraft:healer_daeodon.name=治疗者凶齿豨
+action.hint.exit.arkcraft:healer_daeodon=骑术治疗师凶齿豨
+item.spawn_egg.entity.arkcraft:healer_daeodon.name=治疗者 凶齿豨刷怪蛋
 
 item.spawn_egg.entity.arkcraft:regeneration.name=再生
 entity.arkcraft:regeneration.name=再生
