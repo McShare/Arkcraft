@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:ankylosaurus",
+      "materials": { "default": "spider" },
+      "textures": {
+        "ankylosaurus1": "textures/entity/ankylosaurus/ankylosaurus1",
+        "ankylosaurus2": "textures/entity/ankylosaurus/ankylosaurus2",
+        "ankylosaurus3": "textures/entity/ankylosaurus/ankylosaurus3"
+      },
+      "geometry": {
+        "default": "geometry.ankylosaurus"
+      },
+      "scripts": {
+        "scale": "1.0"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "sit": "animation.ankylosaurus.sit",
+       "move": "animation.ankylosaurus.move",
+        "attack": "animation.ankylosaurus.attack"
+      },
+      "animation_controllers": [
+      {"general":
+"controller.animation.ankylosaurus.general"}
+      ],
+      "render_controllers": [ "controller.render.ankylosaurus"
+      ],
+      "spawn_egg": {
+         "base_color": "#75422a",
+        "overlay_color": "#d4e8bb"
+      }
+    }
+  }
+}

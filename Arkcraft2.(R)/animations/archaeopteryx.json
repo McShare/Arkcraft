@@ -1,0 +1,125 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.archaeopteryx.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"head2": {
+					"position": [0, -1, -1]
+				},
+				"bocabaja": {
+					"rotation": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": ["math.cos(query.anim_time * 40.17) *  70.0", 0, 0]
+				},
+				"leg7": {
+					"rotation": ["math.cos(query.anim_time * 40.17) * -70.0", 0, 0]
+				},
+				"cuello1": {
+					"rotation": [15, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"bone4": {
+					"rotation": [0, 0, -70],
+					"position": [19, 0, -2]
+				},
+				"bone5": {
+					"rotation": [0, 0, 72.5],
+					"position": [-11, 11, 0]
+				},
+				"bone7": {
+					"rotation": ["math.cos(query.anim_time * 45.17) * -35.0", 0, 0]
+				}
+			}
+		},
+		"animation.archaeopteryx_default": {
+			"loop": true,
+			"bones": {
+				"bocabaja": {
+					"rotation": ["math.cos(query.anim_time * 58.17) *  2.0", 0, 0]
+				},
+				"bocaarriba": {
+					"rotation": ["math.cos(query.anim_time * 58.17) * -2.0", 0, 0]
+				},
+				"leg3": {
+					"rotation": [0, 0, "math.cos(query.anim_time * 58.17) * -10.0"]
+				},
+				"leg18": {
+					"rotation": [0, 0, "math.cos(query.anim_time * 58.17) * 10.0"]
+				},
+				"cola": {
+					"rotation": [0, "math.cos(query.anim_time * 58.17) * -10.0", 0]
+				},
+				"bone": {
+					"position": [0, 0, "math.cos(query.anim_time * 800.17) * 0.4"]
+				},
+				"bone3": {
+					"rotation": ["math.cos(query.anim_time * 450.17) * -5.0", 0, 0],
+					"position": [0, 0, "math.cos(query.anim_time * 600.17) * 0.4"]
+				},
+				"bone2": {
+					"position": [0, 0, "math.cos(query.anim_time * 600.17) * 1.4"]
+				},
+				"bone6": {
+					"position": [0, 0, "math.cos(query.anim_time * 800.17) * -0.4"]
+				},
+				"bone7": {
+					"position": [0, 0, "math.cos(query.anim_time * 800.17) * -0.4"]
+				}
+			}
+		},
+		"animation.archaeopteryx.sit": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"position": [0, -5, 0]
+				},
+				"head2": {
+					"rotation": [22.5, 0, 0]
+				},
+				"leg1": {
+					"rotation": [-45, 0, 0]
+				},
+				"leg7": {
+					"rotation": [-45, 0, 0]
+				},
+				"leg3": {
+					"scale": [1, 0.8, 1]
+				},
+				"leg12": {
+					"scale": 1
+				},
+				"leg18": {
+					"scale": [1, 0.8, 1]
+				},
+				"cola": {
+					"rotation": [20, 0, 0],
+					"position": [0, 0, 5]
+				}
+			}
+		},
+		"animation.micro_raptor.sit": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"position": [0, -17, 0],
+					"scale": [1, 0.86, 0.87]
+				},
+				"bone5": {
+					"rotation": [0, 0, 27.5],
+					"position": [-4, 5, 0]
+				},
+				"bone4": {
+					"rotation": [0, 0, -20],
+					"position": [6, 0, 0]
+				},
+				"bone2": {
+					"rotation": [25, 0, 0],
+					"position": [0, 0, 5]
+				}
+			}
+		}
+	}
+}

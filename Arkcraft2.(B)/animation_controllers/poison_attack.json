@@ -1,0 +1,25 @@
+{
+    "format_version": "1.8.0",
+    "animation_controllers": {
+        "controller.animation.poison_attack": {
+            "initial_state" : "default",
+            "states": {
+                "poison_attack": {
+                "transitions": [
+                        {
+                            "default": "variable.attack_time <= 0.0"
+                        }
+                    ],
+             "on_entry": [
+                        "/summon arkcraft:veneno ^ ^1 ^3"
+                        ]
+                },
+                "default":{
+                    "transitions": [
+                        {"poison_attack": "variable.attack_time > 0.0"}
+                    ]
+                } 
+            }
+        }
+    }
+}

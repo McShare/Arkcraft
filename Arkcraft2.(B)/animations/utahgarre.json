@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.utahgarre": {
+     "animation_length": 2.0,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+"/tp @s @p[r=4]",
+"/execute @p[r=4] ~ ~ ~ detect ~ ~ ~ air 0 tp @s ~ ~-1 ~"
+            ]
+      }
+    }
+  }
+}

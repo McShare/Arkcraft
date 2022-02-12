@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "arkcraft:pastabicho222"
+        },
+        "tags": [
+            "smithy"
+        ],
+        "pattern": [
+            "XWX",
+            "WSW",
+            "XWX"
+        ],
+    "key": {
+      "W": {
+        "item": "arkcraft:poisonshock_bowl"
+      },
+      "S": {
+        "item": "minecraft:wheat"
+      },
+      "X": {
+        "item": "minecraft:honey_bottle"
+      }
+        },
+        "result": {
+            "item": "arkcraft:pasta_bicho",
+            "count": 2
+        }
+    }
+}

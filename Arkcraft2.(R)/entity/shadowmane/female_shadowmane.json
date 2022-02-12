@@ -1,0 +1,69 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"saddle": "textures/entity/shadowmane/saddled/saddled",
+				"variant1": "textures/entity/shadowmane/1",
+				"variant2": "textures/entity/shadowmane/2",
+				"variant3": "textures/entity/shadowmane/3",
+				"variant4": "textures/entity/shadowmane/4"
+			},
+			"geometry": {
+				"default": "geometry.shadowmane"
+			},
+			"animations": {
+				"idle": "animation.shadowmane.idle",
+				"sleep": "animation.shadowmane.sleep",
+				"attack": "controller.animation.attack",
+				"attacking": "animation.shadowmane.attack",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target": "controller.animation.humanoid.look_at_target",
+				"walk": "animation.shadowmane.walk",
+				"special": "animation.shadowmane.roar",
+				"jumping": "animation.shadowmane.jump",
+				"swim": "animation.shadowmane.swim"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 100);"
+				],
+					
+				"animate": [
+					{
+						"sleep": "query.is_sheared"
+					},
+					"attack",
+					"look_at_target",
+					{
+						"idle": "query.is_chested"
+					},
+					{
+						"walk": "query.modified_move_speed"
+					},
+					{
+						"special": "query.is_baby"
+					},
+					{
+						"jumping": "query.is_jumping"
+					},
+					{
+						"swim": "query.is_swimming"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.variants",
+				"controller.render.dino_saddle"
+			],
+			"spawn_egg": {
+				"base_color": "#9C4040",
+				"overlay_color": "#B85E5E"
+			},
+			"identifier": "arkcraft:female_shadowmane"
+		}
+	}
+}

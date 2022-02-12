@@ -1,0 +1,55 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.daeodon_saddle1": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "add_controlable1": "(query.is_saddled) && (query.mark_variant == 0)"
+            }
+          ],
+          "on_entry": [
+            "@s minecraft:daeodon-off_controlable"
+          ]
+        },
+        "add_controlable1": {
+          "transitions": [
+            {
+              "default": "(!query.is_saddled)"
+            }
+          ],
+     "animations": 
+        [
+         "daeodon_saddle_animation"
+         ]
+        }
+      }
+    },
+    "controller.animation.daeodon_saddle2": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "add_controlable2": "(query.variant == 1) && (query.mark_variant == 0)"
+            }
+          ],
+          "on_entry": [
+            "@s minecraft:daeodon-off_controlable"
+          ]
+        },
+        "add_controlable2": {
+          "transitions": [
+            {
+              "default": "(query.variant != 1)"
+            }
+          ],
+     "animations": 
+         [
+         "daeodon_saddle_animation"
+         ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.ovis_aries": {
+      "rebuild_animation_matrices": true,
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.baby",
+            "Texture.ovis",
+            "Texture.aries"
+          ]
+        },
+        "geometries": {
+          "Array.geos": [ "Geometry.default", "Geometry.sheared" ]
+        }
+      },
+      "geometry": "Array.geos[query.is_sheared]",
+      "materials": [ { "*": "Material.default"},
+{"cuerno1*": "Material.cuernos"},
+{"cuerno2*": "Material.cuernos"},
+{"cuerno3*": "Material.cuernos"},
+{"cuerno4*": "Material.cuernos"},
+{"cuerno5*": "Material.cuernos"},
+{"cuerno6*": "Material.cuernos"},
+{"cuerno7*": "Material.cuernos"}
+           ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

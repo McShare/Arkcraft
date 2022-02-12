@@ -1,0 +1,8 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\ArkCraft B\\texts\\en_US.lang",
+	"file_type": "lang",
+	"format_version": 0,
+	"file_uuid": "fcc76ae8_307e_412a_9a05_1e4517cdc73b",
+	"file_version": 1,
+	"cache_content": "pack.name=ArkCraft B\r\npack.description=By\r\n\r\nentity.ark:orange_female_spino.name=Orange Female Spino\r\nentity.ark:orange_male_spino.name=Orange Male Spino\r\nentity.ark:green_female_spino.name=Green Female Spino\r\nentity.ark:green_male_spino.name=Green Male Spino"
+}

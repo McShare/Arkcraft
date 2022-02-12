@@ -1,0 +1,36 @@
+
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:achatina",
+      "materials": {
+        "default": "spider"
+      },            
+      "textures": {
+        "caracol_1": "textures/entity/caracol/caracol_1",
+        "caracol_2": "textures/entity/caracol/caracol_2",
+        "caracol_3": "textures/entity/caracol/caracol_3",
+        "caracol_4": "textures/entity/caracol/caracol_4",
+        "caracol_5": "textures/entity/caracol/caracol_5"
+      },
+      "geometry": {
+        "default":"geometry.achatina"
+      },
+      "animations": {
+
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "look_at_target"
+        ]
+      },
+      "render_controllers": [ "controller.render.achatina" ],
+      "spawn_egg": {
+         "base_color": "#131554",
+        "overlay_color": "#612C13"
+      }
+    }
+  }
+}

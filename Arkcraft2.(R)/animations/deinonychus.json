@@ -1,0 +1,53 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.deinonychus.baby_transform" : {
+			"loop" : true,
+			"bones" : {
+				"head" : {
+					"scale" : 1.5
+				}
+			}
+		},
+		"animation.deinonychus.move" : {
+
+			"loop" : true,
+			"anim_time_update" : "query.modified_distance_moved",
+			"bones": {
+				"bocabaja": {
+					"rotation": [0, 0, 0]
+				},
+				"leg1" : {
+					"rotation" : [ "math.cos(query.anim_time * 45.17) *  45.0", 0.0, 0.0 ]
+				}, 
+				"leg7" : {
+					"rotation" : [ "math.cos(query.anim_time * 45.17) * -45.0", 0.0, 0.0 ]
+				}
+}
+			},
+		"animation.deinonychus_default" : {
+			"loop" : true,
+			"bones" : {
+
+        "bocabaja": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) *  2.0", 0.0, 0.0 ]
+        },
+        "bocaarriba": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) * -2.0", 0.0, 0.0 ]
+        },
+        "leg3": {
+          "rotation": [ 0.0, 0.0,"math.cos(query.anim_time * 58.17) * -10.0"]
+        },
+        "legvelociraptor": {
+          "rotation": [ 0.0, 0.0,"math.cos(query.anim_time * 58.17) * 10.0"]
+        },
+        "leg18": {
+          "rotation": [ 0.0, 0.0,"math.cos(query.anim_time * 58.17) * 10.0"]
+        },
+        "cola": {
+          "rotation": [ 0.0 ,"math.cos(query.anim_time * 58.17) * -10.0", 0.0 ]
+        }
+			}
+		}
+	}
+}

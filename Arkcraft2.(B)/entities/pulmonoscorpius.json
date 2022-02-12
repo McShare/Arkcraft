@@ -1,0 +1,1062 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "arkcraft:pulmonoscorpius",
+      "is_spawnable": true,
+      "is_summonable": false,
+      "is_experimental": false,
+			"scripts": {
+				"animate": [
+"poison_attack",
+"poison_controller",
+{
+    "caida_lenta":"!query.is_on_ground"
+    
+}
+				]
+			},
+			"animations": {
+				"caida_lenta": "animation.pulmonoscorpius_caida_lenta",
+				"poison_attack": "controller.animation.poison_attack",
+				"poison_controller": "animation.poison_controller"
+			}
+     },
+
+
+    "component_groups": {
+        
+  "minecraft:attack_mode":{
+        "minecraft:on_target_escape": {
+          "event": "minecraft:no_attack_mode",
+          "target": "self"
+        },
+        "minecraft:on_target_acquired": {
+        },
+	  "minecraft:behavior.melee_attack": {
+        "priority": 5,
+        "target_dist": 10,
+        "track_target": true
+      }
+  },
+  "minecraft:default_attack_sistem":{
+      "minecraft:follow_range": {
+        "value": 16
+      },
+	  "minecraft:behavior.melee_attack": {
+        "priority": 5,
+        "target_dist": 10,
+        "track_target": true
+      }
+  },
+  "minecraft:on_attack_sistem":{
+        "minecraft:angry": {
+          "duration": 5,
+          "broadcast_anger": false
+        },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 3
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 4
+        },
+      "minecraft:follow_range": {
+        "value": 6
+      },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "no_attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t1"}
+                  ]
+                },
+                "event": "minecraft:attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "Attack Mode"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t1"}
+                  ]
+                },
+                "event": "minecraft:no_attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "No Attack Mode"
+            },
+            
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "no_attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t2"}
+                  ]
+                },
+                "event": "minecraft:attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "Attack Mode"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t2"}
+                  ]
+                },
+                "event": "minecraft:no_attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "No Attack Mode"
+            },
+            
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "no_attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t3"}
+                  ]
+                },
+                "event": "minecraft:attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "Attack Mode"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t3"}
+                  ]
+                },
+                "event": "minecraft:no_attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "No Attack Mode"
+            },
+            
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "no_attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t4"}
+                  ]
+                },
+                "event": "minecraft:attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "Attack Mode"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t4"}
+                  ]
+                },
+                "event": "minecraft:no_attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "No Attack Mode"
+            }
+          ]
+        }},
+  "minecraft:off_attack_sistem":{
+	  "minecraft:behavior.melee_attack": {
+        "priority": 5,
+        "target_dist": 10,
+        "track_target": true
+      },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 3
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 4
+        },
+      "minecraft:follow_range": {
+        "value": 16
+      }
+    },
+        
+        
+"minecraft:pulmonoscorpius_salvaje_adult": {
+      "minecraft:navigation.climb": {
+              "avoid_water": true,        "avoid_damage_blocks": true, "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 9,
+        "speed_multiplier": 0.8
+      },
+     "minecraft:attack": {
+        "damage": 4
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/pulmonoscorpius.json"
+      },
+      "minecraft:type_family": {
+        "family": ["spider", "monster", "mob" , "ark", "pulmonoscorpius" , "arthropod", "carnivoro"]
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 16
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+        "minecraft:scale": {
+          "value": 1.2
+        },
+        "minecraft:spawn_entity": {
+          "min_wait_time": 100,
+          "max_wait_time": 200,
+          "spawn_sound": "plop",
+      "spawn_item": "arkcraft:pulmonoscorpius_egg",
+          "filters": {
+            "test": "rider_count", "subject": "self", "operator": "==", "value": 0
+          }
+        },
+        "minecraft:tameable": {
+          "probability": 0.33,
+          "tame_items": "arkcraft:pasta_bicho",
+          "tame_event": {
+            "event": "minecraft:on_tame_adult",
+            "target": "self"
+          }
+        },
+      "minecraft:health": {
+        "value": 40,
+        "max": 40
+      }
+},
+"minecraft:pulmonoscorpius_salvaje_baby": {
+      "minecraft:navigation.climb": {
+              "avoid_water": true,        "avoid_damage_blocks": true, "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 9,
+        "speed_multiplier": 0.8
+      },
+     "minecraft:attack": {
+        "damage": 2
+      },
+      "minecraft:type_family": {
+        "family": [ "pulmonoscorpius" , "spider", "monster", "mob" , "ark" , "arthropod" , "carnivoro"]
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 16
+          }
+        ],
+        "must_see": true
+      },
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": [
+            {
+              "item": "rotten_flesh",
+              "growth": 0.020
+            }
+          ],
+          "grow_up": {
+            "event": "minecraft:creciendo",
+            "target": "self"
+          }
+      },
+        "minecraft:tameable": {
+          "probability": 0.33,
+          "tame_items": "arkcraft:pasta_bicho",
+          "tame_event": {
+            "event": "minecraft:on_tame_baby",
+            "target": "self"
+          }
+        },
+        "minecraft:scale": {
+          "value": 0.7
+        },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+        },
+        "minecraft:is_baby": {
+        },
+      "minecraft:health": {
+        "value": 16,
+        "max": 16
+      }
+},
+"minecraft:pulmonoscorpius_tamed_adult": {
+        "minecraft:is_tamed": {
+        },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 4
+        },
+     "minecraft:attack": {
+        "damage": 4
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/pulmonoscorpius.json"
+      },
+      "minecraft:type_family": {
+        "family": [ "pulmonoscorpius_tamed" , "spider",  "mob" , "ark" , "arthropod" , "carnivoro"]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 0.5
+      },
+        "minecraft:scale": {
+          "value": 1.2
+        },
+        "minecraft:inventory": {
+          "inventory_size": 20,
+          "container_type": "horse"
+        },
+        "minecraft:sittable": {
+          "sit_event": {
+            "event": "minecraft:sentado",
+            "target": "self"
+          },
+          "stand_event": {
+            "event": "minecraft:levantado",
+            "target": "self"
+          }
+        },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      },
+        "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item":"arkcraft:arthropod_saddle",
+            "accepted_items": ["arkcraft:arthropod_saddle"],
+            "on_equip": {
+              "event": "minecraft:on_saddled"
+            },
+            "on_unequip": {
+              "event": "minecraft:off_saddled"
+            }
+          }
+        ]
+      },
+
+      "minecraft:healable": {
+        "items": [
+                    {
+            "item": "arkcraft:ark_meat_raw",
+            "heal_amount": 10
+          },
+          {
+            "item": "rotten_flesh",
+            "heal_amount": 10
+          }
+        ]
+      },
+      "minecraft:behavior.tempt": {
+        "priority": 5,
+        "speed_multiplier": 1.0,
+        "items": [
+          "rotten_flesh"
+        ]
+      },
+       "minecraft:behavior.follow_owner": {
+          "priority": 3,
+          "speed_multiplier": 1.0,
+          "start_distance": 6,
+          "stop_distance": 4
+        },
+        "minecraft:spawn_entity": {
+          "min_wait_time": 100,
+          "max_wait_time": 200,
+          "spawn_sound": "plop",
+      "spawn_item": "arkcraft:pulmonoscorpius_egg",
+          "filters": {
+            "test": "rider_count", "subject": "self", "operator": "==", "value": 0
+          }
+        },
+      "minecraft:health": {
+        "value": 40,
+        "max": 60
+      }
+},
+"minecraft:pulmonoscorpius_tamed_baby": {
+      "minecraft:navigation.climb": {
+              "avoid_water": true,        "avoid_damage_blocks": true, "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 9,
+        "speed_multiplier": 0.8
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 4
+        },
+     "minecraft:attack": {
+        "damage": 2
+      },
+      "minecraft:type_family": {
+        "family": [ "pulmonoscorpius_tamed" , "spider", "monster", "mob" , "ark" , "carnivoro"]
+      },
+"minecraft:variant": {
+          "value": 0
+        },
+      "minecraft:behavior.tempt": {
+        "priority": 5,
+        "speed_multiplier": 1.0,
+        "items": [
+          "rotten_flesh"
+        ]
+      },
+       "minecraft:behavior.follow_owner": {
+          "priority":3,
+          "speed_multiplier": 1.0,
+          "start_distance": 6,
+          "stop_distance": 3
+        },
+      "minecraft:movement": {
+        "value": 0.19
+      },
+        "minecraft:sittable": {
+        },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      },
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": [
+            {
+              "item": "rotten_flesh",
+              "growth": 0.020
+            }
+          ],
+          "grow_up": {
+            "event": "minecraft:creciendo_domado",
+            "target": "self"
+          }
+      },
+        "minecraft:scale_by_age": {
+          "start_scale": 0.7,
+          "end_scale": 1.2
+        },
+        "minecraft:is_baby": {
+        },
+        "minecraft:is_tamed": {
+        },
+     "minecraft:health": {
+        "value": 16,
+        "max": 16
+      }
+},
+"minecraft:on_saddled":{
+        "minecraft:can_power_jump": {
+},
+      "minecraft:horse.jump_strength": {
+        "value": {
+          "range_min": 0.4, 
+          "range_max": 1.0
+        }
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+        "minecraft:item_controllable": {
+          "control_items": ["arkcraft:whip_t1" , "arkcraft:whip_t2" , "arkcraft:whip_t3" , "arkcraft:whip_t4"]
+        },
+        "minecraft:behavior.controlled_by_player": {
+          "priority": 0
+        },
+        "minecraft:is_saddled": {
+        },
+        "minecraft:input_ground_controlled": {
+        }
+},
+"minecraft:off_saddled":{
+      "minecraft:navigation.climb": {
+              "avoid_water": true,        "avoid_damage_blocks": true, "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      }
+},
+"minecraft:sentado":{
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      }
+    },
+"minecraft:levantado":{
+      "minecraft:movement": {
+        "value": 0.19
+      },
+        "minecraft:rideable": {
+          "priority": 0,
+          "seat_count": 1,
+"rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.ride.horse",
+          "seats": {
+            "position": [ 0.0, 0.7, -0.3 ]
+          }
+
+        }
+    }
+},
+
+    "components": {
+   "minecraft:damage_sensor": {
+   "triggers": {
+       "cause": "fall",
+      "deals_damage": false
+                }
+            },
+        "minecraft:behavior.delayed_attack": {
+          "priority": 4,
+          "attack_once": false,
+          "track_target": true,
+          "require_complete_path": false,
+          "random_stop_interval": 0,
+          "reach_multiplier": 3.4,
+          "speed_multiplier": 1.0,
+          "attack_duration": 2.7,
+          "hit_delay_pct": 1.0
+        },
+        
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      },
+
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:movement": {
+        "value": 0.19
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters":{
+            "all_of": [
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "a_off"
+             }
+            ]
+            },
+            "event":"minecraft:remove_agarre"
+          },
+          {
+            "filters":{
+            "all_of": [
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "no_attack_mode"
+             },
+                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"}
+            ]
+            },
+            "event":"minecraft:on_attack_sistem"
+          },
+          {
+            "filters":{
+            "all_of": [
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 0
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "sistem_attack_mode"
+             },
+                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"}
+            ]
+            },
+            "event":"minecraft:off_attack_sistem"
+          }
+        ]
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 5 : 0"
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:home": {
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:collision_box": {
+        "width": 1.4,
+        "height": 0.9
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+        
+      "minecraft:remove_agarre": {
+		"run_command": {
+          "command": [
+ "effect @s levitation 0 8 true"
+          ],
+          "target": "self"
+		}
+      },
+      "minecraft:off_attack_sistem": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tag @s remove sistem_attack_mode"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+    "minecraft:on_attack_sistem",
+"minecraft:attack_mode"
+          ]
+        },
+        "add": {
+          "component_groups": [
+      "minecraft:off_attack_sistem"
+          ]
+        }
+      },
+      "minecraft:on_attack_sistem": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tag @s add sistem_attack_mode"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+    "minecraft:off_attack_sistem"
+          ]
+        },
+        "add": {
+          "component_groups": [
+      "minecraft:on_attack_sistem"
+          ]
+        }
+      },
+      "minecraft:no_attack_mode": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tellraw @p { \"rawtext\": [ { \"text\" : \"§9[Attack Mode Disabled] \" } ] }",
+    "playsound sound.attack_mode @a[r=4] ~~~"
+          ],
+          "target": "self"
+		},
+            "remove": {
+              "component_groups": [
+"minecraft:attack_mode"
+              ]
+            },
+            "add": {
+            }
+      },
+      "minecraft:attack_mode": {
+		"run_command": {
+          "command": [
+    "tag @s add attack_mode",
+    "tag @s remove no_attack_mode",
+    "tellraw @p { \"rawtext\": [ { \"text\" : \"§4[Attack Mode Active] \" } ] }",
+    "playsound sound.attack_mode @a[r=4] ~~~"
+          ],
+          "target": "self"
+		},
+            "remove": {
+              "component_groups": [
+              ]
+            },
+            "add": {
+              "component_groups": [
+"minecraft:attack_mode"
+              ]
+            }
+      },
+"minecraft:become_angry":{
+          "add": {
+          "component_groups": [
+   "minecraft:pulmonoscorpius_angry"
+   ]
+        }
+},
+"minecraft:on_calm":{
+          "remove": {
+          "component_groups": [
+   "minecraft:pulmonoscorpius_angry"
+   ]
+        }
+},
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 80,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:pulmonoscorpius_salvaje_adult",
+                "minecraft:default_attack_sistem"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:pulmonoscorpius_salvaje_baby",
+                "minecraft:default_attack_sistem"
+              ]
+            }
+          }
+        ]
+    },
+      "minecraft:on_tame_adult": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tag @s remove sistem_attack_mode"
+          ],
+          "target": "self"
+		},
+        "add": {
+          "component_groups": [
+            "minecraft:off_saddled",
+            "minecraft:pulmonoscorpius_tamed_adult",
+            "minecraft:levantado",
+      "minecraft:off_attack_sistem"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+   "minecraft:pulmonoscorpius_angry",
+            "minecraft:pulmonoscorpius_salvaje_adult",
+                "minecraft:default_attack_sistem"
+          ]
+        }
+      },
+      "minecraft:on_tame_baby": {
+        "add": {
+          "component_groups": [
+            "minecraft:pulmonoscorpius_tamed_baby",
+      "minecraft:off_attack_sistem"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+   "minecraft:pulmonoscorpius_angry",
+            "minecraft:pulmonoscorpius_salvaje_baby",
+                "minecraft:default_attack_sistem"
+          ]
+        }
+      },
+      "minecraft:sentado": {
+        "add": {
+          "component_groups": [
+            "minecraft:sentado"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:levantado"
+          ]
+        }
+      },
+      "minecraft:levantado": {
+        "add": {
+          "component_groups": [
+            "minecraft:levantado"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:sentado"
+          ]
+        }
+      },
+      "minecraft:on_saddled": {
+        "add": {
+          "component_groups": [
+            "minecraft:on_saddled"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:off_saddled"
+          ]
+        }
+      },
+      "minecraft:off_saddled": {
+        "remove": {
+          "component_groups": [
+            "minecraft:on_saddled"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:off_saddled"
+          ]
+        }
+      },
+      "minecraft:creciendo_domado": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tag @s remove sistem_attack_mode"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+            "minecraft:pulmonoscorpius_tamed_baby"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:off_saddled",
+            "minecraft:pulmonoscorpius_tamed_adult",
+            "minecraft:levantado"
+          ]
+        }
+      },
+      "minecraft:creciendo": {
+        "remove": {
+          "component_groups": [
+            "minecraft:pulmonoscorpius_salvaje_baby"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:pulmonoscorpius_salvaje_adult"
+          ]
+        }
+      }
+    }
+  }
+}

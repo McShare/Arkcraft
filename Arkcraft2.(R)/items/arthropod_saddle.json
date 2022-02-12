@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:arthropod_saddle",
+   "category": "Equipment"
+  },
+  "components": {
+   "minecraft:icon": "arthropod_saddle",
+   "minecraft:render_offsets": "arthropod_saddle"
+  }
+ }
+}

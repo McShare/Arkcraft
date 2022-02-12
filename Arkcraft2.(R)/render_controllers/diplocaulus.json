@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.diplocaulus": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.diplocaulus_green",
+            "Texture.diplocaulus_albino",
+            "Texture.diplocaulus_blue"
+]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.variant]" ]
+    }
+  }
+}
+

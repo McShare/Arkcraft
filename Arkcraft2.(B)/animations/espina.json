@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.espina": {
+     "animation_length": 10.0,
+      "loop": true,
+      "timeline": {
+        "5.0": [
+"/kill @s"
+            ]
+      }
+    },
+    "animation.magmasaur_proyectil": {
+     "animation_length": 11.0,
+      "loop": true,
+      "timeline": {
+        "10.0": [
+"/kill @s"
+            ]
+      }
+    }
+  }
+}

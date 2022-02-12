@@ -1,0 +1,14 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:pasta_verde",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "pasta_verde",
+   "minecraft:use_animation": "eat",
+   "minecraft:render_offsets": "pasta_verde"
+  }
+ }
+}

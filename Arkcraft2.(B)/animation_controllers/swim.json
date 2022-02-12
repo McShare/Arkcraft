@@ -1,0 +1,38 @@
+//bridge-file-version: #53
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.swimanim": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"camera": "query.is_chested"
+						}
+					],
+					"on_entry": [
+
+						"/execute @s ~ ~ ~ detect ~ ~ ~ water 0 playanimation @e[type=arkcraft:male_spino,r=2] animation.spino.nadar",
+						"/execute @s ~ ~ ~ detect ~ ~ ~ water 0 playanimation @e[type=arkcraft:female_spino,r=2] animation.spino.nadar",
+						"/execute @s ~ ~ ~ detect ~ ~ ~ water 0 playanimation @e[type=arkcraft:male_baryonyx,r=2] animation.baryonyx.swim",
+						"/execute @s ~ ~ ~ detect ~ ~ ~ water 0 playanimation @e[type=arkcraft:female_baryonyx,r=2] animation.baryonyx.swim"
+					]
+				},
+				"camera": {
+					"transitions": [
+						{
+							"default": "query.is_chested"
+						}
+					],
+					"on_entry": [
+						"/execute @s ~ ~ ~ detect ~ ~ ~ water 0 playanimation @e[type=arkcraft:female_spino,r=2] animation.spino.nadar",
+						"/execute @s ~ ~ ~ detect ~ ~ ~ water 0 playanimation @e[type=arkcraft:male_spino,r=2] animation.spino.nadar",
+						"/execute @s ~ ~ ~ detect ~ ~ ~ water 0 playanimation @e[type=arkcraft:male_baryonyx,r=2] animation.baryonyx.swim",
+						"/execute @s ~ ~ ~ detect ~ ~ ~ water 0 playanimation @e[type=arkcraft:female_baryonyx,r=2] animation.baryonyx.swim"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:rexskull_on_stick2"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  X",
+      "Cl "
+    ],
+    "key": {
+      "l": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:string"
+      },
+      "C": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "arkcraft:whip_t2"
+    }
+  }
+}

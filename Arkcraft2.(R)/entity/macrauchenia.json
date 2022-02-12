@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:macrauchenia",
+      "materials": {
+         "default": "cow",
+        "saddle": "skeleton"
+      },
+      "textures": {
+        "macrauchenia_normal": "textures/entity/macrauchenia/macrauchenia_normal",
+        "macrauchenia_fat": "textures/entity/macrauchenia/macrauchenia_fat",
+        "saddle": "textures/entity/macrauchenia/macrauchenia_saddle"
+      },
+      "geometry": {
+        "macrauchenia_normal": "geometry.macrauchenia_normal",
+        "macrauchenia_fat": "geometry.macrauchenia_fat",
+        "saddle": "geometry.macrauchenia_saddle"
+      },
+      "animations": {
+        "move": "animation.macrauchenia.move",
+        "jump": "animation.macrauchenia.jump",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+      { "move": "query.modified_move_speed" },
+        { "jump":"(!query.is_on_ground) && (!query.is_in_water)"},
+          "look_at_target"
+        ]
+      },
+      
+      "render_controllers": [ 
+          "controller.render.macrauchenia_normal",
+          "controller.render.macrauchenia_fat",
+          "controller.render.macrauchenia_saddle"
+          ],
+      "spawn_egg": {
+         "base_color": "#9e5c00",
+        "overlay_color": "#f9b363"
+      }
+    }
+  }
+}

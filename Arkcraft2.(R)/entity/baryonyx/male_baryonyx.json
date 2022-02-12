@@ -1,0 +1,62 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"saddle": "textures/entity/baryonyx/saddled/saddled",
+				"variant1": "textures/entity/baryonyx/blue_baryonyx",
+				"variant2": "textures/entity/baryonyx/yellow_baryonyx",
+				"variant3": "textures/entity/baryonyx/green_baryonyx",
+				"variant4": "textures/entity/baryonyx/orange_baryonyx"
+			},
+			"geometry": {
+				"default": "geometry.baryonyx",
+				"saddle": "geometry.baryonyx_saddled"
+			},
+			"animations": {
+				"idle": "animation.baryonyx.idle",
+				"sleep": "animation.baryonyx.sleep",
+				"attack": "controller.animation.attack",
+				"attacking": "animation.baryonyx.attack",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target": "controller.animation.humanoid.look_at_target",
+				"walk": "animation.baryonyx.walk",
+				"special": "animation.baryonyx.special"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 100);"
+				],
+					
+				"animate": [
+					{
+						"sleep": "query.is_sheared"
+					},
+					"attack",
+					"look_at_target",
+					{
+						"idle": "query.is_chested"
+					},
+					{
+						"walk": "query.modified_move_speed"
+					},
+					{
+						"special": "query.is_baby"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.variants",
+				"controller.render.dino_saddle"
+			],
+			"spawn_egg": {
+				"base_color": "#064E60",
+				"overlay_color": "#DEDEDE"
+			},
+			"identifier": "arkcraft:male_baryonyx"
+		}
+	}
+}

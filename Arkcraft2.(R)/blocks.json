@@ -1,0 +1,33 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+   "arkcraft:smithy":{
+      "sound":"stone",
+      "textures":{
+         "down":"smithy_bottom",
+         "east":"smithy_side",
+         "north":"smithy_front",
+         "south":"smithy_front",
+         "up":"smithy_top",
+         "west":"smithy_side"
+	         }
+        },
+  "arkcraft:narcoberry": {
+    "textures": "arkcraft_narcoberry_stage_0",
+    "sound": "grass"
+        },
+   "arkcraft:grill":{
+      "sound":"stone",
+      "textures":{
+         "down":"grill_bottom",
+         "east":"grill_side",
+         "north":"grill_side",
+         "south":"grill_front",
+         "up":"grill_top",
+         "west":"grill_side"
+      }
+   }
+} 

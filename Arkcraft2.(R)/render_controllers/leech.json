@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.leech": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.common_leech",
+            "Texture.vampire_leech",
+            "Texture.medic_leech",
+            "Texture.poison_leech", 
+            "Texture.paralyzing_leech",
+            "Texture.raud_leech",
+            "Texture.zombie_leech",
+            "Texture.parasite_leech",
+            "Texture.paralyzing_leech_2"
+]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.variant]" ]
+    }
+  }
+}
+

@@ -1,0 +1,61 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.baryonyx": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.sin_montura",
+            "Texture.con_montura"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+ { "head*": "query.variant == 0"},
+ { "bone40*": "query.variant == 0"},
+ { "bone43*": "query.variant == 0"},
+ { "bone41*": "query.variant == 0"},
+ { "bone42*": "query.variant == 0"},
+ { "bone44*": "query.variant == 0"},
+ { "lowerjaw*": "query.variant == 0"},
+ { "bone5*": "query.variant == 0"},
+ { "bone8*": "query.variant == 0"},
+ { "bone45*": "query.variant == 0"},
+ { "bone6*": "query.variant == 0"},
+ { "bone7*": "query.variant == 0"},
+ { "bone46*": "query.variant == 0"},
+ { "bone9*": "query.variant == 0"},
+ { "bone10*": "query.variant == 0"},
+
+ { "head2*": "query.variant == 1"},
+ { "bone48*": "query.variant == 1"},
+ { "bone49*": "query.variant == 1"},
+ { "bone51*": "query.variant == 1"},
+ { "bone52*": "query.variant == 1"},
+ { "bone53*": "query.variant == 1"},
+ { "lowerjaw2*": "query.variant == 1"},
+ { "bone54*": "query.variant == 1"},
+ { "bone58*": "query.variant == 1"},
+
+ { "bone55*": "query.variant == 1"},
+ { "bone56*": "query.variant == 1"},
+ { "bone57*": "query.variant == 1"},
+ { "bone59*": "query.variant == 1"},
+ { "bone60*": "query.variant == 1"},
+ { "bone61*": "query.variant == 1"},
+
+ { "montura*": "query.variant == 1"},
+ { "bone47*": "query.variant == 1"},
+ { "bone62*": "query.variant == 1"},
+ { "bone63*": "query.variant == 1"},
+ { "bone50*": "query.variant == 1"}
+
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.variant]" ]
+    }
+  }
+}

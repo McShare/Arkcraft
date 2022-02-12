@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12",
+  "minecraft:item": {
+    "description": {
+      "identifier": "arkcraft:helicoprion_shard",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "helicoprion_shard",
+      "minecraft:render_offsets": "helicoprion_shard"
+    }
+  }
+}

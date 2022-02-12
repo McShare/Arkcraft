@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:montura_para_tres",
+   "category": "item"
+  },
+  "components": {
+   "minecraft:icon": "montura_para_tres",
+   "minecraft:render_offsets": "montura_para_tres"
+  }
+ }
+}

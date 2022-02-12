@@ -1,0 +1,26 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.ammonite.general" : {
+			"initial_state" : "swimming",
+			"states" : {
+				"swimming" : {
+					"animations" : [ "swim" ],
+					"transitions" : [
+						{
+							"ground" : "!query.is_in_water && query.is_on_ground"
+						}
+					]
+				},
+				"ground" : {
+					"animations" : [ "land" ],
+					"transitions" : [
+						{
+							"swimming" : "query.is_in_water && !query.is_on_ground"
+						}
+					]
+				}
+			}
+		}
+	}
+}

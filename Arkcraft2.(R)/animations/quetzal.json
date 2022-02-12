@@ -1,0 +1,106 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.quetzal.look_at_target": {
+			"loop": true,
+			"bones": {
+				"head7": {
+					"rotation": ["query.target_x_rotation - this", "query.target_y_rotation - this", 0]
+				},
+				"head": {
+					"rotation": ["query.target_x_rotation - this", "query.target_y_rotation - this", 0]
+				}
+			}
+		},
+		"animation.quetzal.volando2": {
+			"loop": true,
+			"animation_length": 2,
+			"sound_effects": {
+				"1.0": {
+					"effect": "volando2"
+				}
+			}
+		},
+		"animation.quetzal.volando": {
+			"loop": true,
+			"bones": {
+				"all": {
+					"rotation": [20, 0, 0],
+					"position": [0, -2, 0]
+				},
+				"allbody": {
+					"rotation": [10, 0, 0]
+				},
+				"alamoveair": {
+					"rotation": [0, 0, "math.cos(query.anim_time * 100.774) *  -20.0"]
+				},
+				"alamoveair2": {
+					"rotation": [0, 0, "math.cos(query.anim_time * 100.774) *  20.0"]
+				}
+			}
+		},
+		"animation.quetzal.piso": {
+			"loop": true,
+			"bones": {
+				"all": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"allbody": {
+					"rotation": [0, 0, 0]
+				},
+				"alamoveair2": {
+					"scale": 0.001
+				},
+				"alamoveair": {
+					"scale": 0.001
+				}
+			}
+		},
+		"animation.quetzal.general2": {
+			"loop": true,
+			"bones": {
+				"bone123": {
+					"rotation": ["math.cos(query.anim_time * 100) *  -1.0", 0, 0]
+				},
+				"bone2": {
+					"rotation": ["math.cos(query.anim_time * 100) *  -1.0", 0, 0]
+				}
+			}
+		},
+		"animation.quetzal.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"ala2": {
+					"rotation": {
+						"0.0": [-20, 0, 0],
+						"0.5": [0, 0, 0],
+						"1.0": [-20, 0, 0]
+					}
+				},
+				"ala3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [-20, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"leg4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [-50, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"leg2": {
+					"rotation": {
+						"0.0": [-40, 0, 0],
+						"0.5": [0, 0, 0],
+						"1.0": [-40, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

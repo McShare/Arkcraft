@@ -1,0 +1,50 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.parasaurolophus.general" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ {							"parasaurolophus_move" : "query.modified_move_speed" },
+                   "look_at_target"
+					],
+					"transitions" : [
+						{
+							"sitting" : "query.is_sitting"
+						}
+					]
+				},
+				
+				"sitting" : {
+					"animations" : [
+{"parasaurolophus_move" : "query.modified_move_speed" },
+					    "parasaurolophus_sitting" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_sitting"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.parasaurio.baby" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ {							"parasaurolophus_baby" : "query.is_baby" }
+					]
+				}
+			}
+		},
+		"controller.animation.parasaurio.default" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+		"parasaurolophus_default"
+					]
+				}
+			}
+		}
+	}
+}

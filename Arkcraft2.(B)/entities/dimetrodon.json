@@ -1,0 +1,633 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "arkcraft:dimetrodon",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+			"scripts": {
+				"animate": [
+					"dimetrodon"
+				]
+			},
+			"animations": {			
+"dimetrodon": "controller.animation.dimetrodon",
+"dimetrodon_cold": "animation.dimetrodon_cold",
+"dimetrodon_warm": "animation.dimetrodon_warm"
+			}
+    },
+    "component_groups": {
+     "minecraft:salvaje":{
+    "minecraft:tameable": {
+          "probability": 0.05,
+          "tame_items": [
+						"arkcraft:pasta_acuatica"],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        },
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 1.45
+      }
+     },
+     "minecraft:domado":{
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      },
+        "minecraft:interact": {
+          "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "minecraft:wool"
+                  }
+                ]
+              },
+              "event": "minecraft:termic_wool",
+              "target": "self"
+            },
+              "use_item": true,
+              "hurt_item": 0,
+            "interact_text": "Termic Wool",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                    { "test": "is_variant", "subject": "self", "operator": "==", "value": 1},
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t1"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_frio",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Cold Mode",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                    { "test": "is_variant", "subject": "self", "operator": "==", "value": 1},
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t2"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_frio",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Cold Mode",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                    { "test": "is_variant", "subject": "self", "operator": "==", "value": 1},
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t3"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_frio",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Cold Mode",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                    { "test": "is_variant", "subject": "self", "operator": "==", "value": 1},
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t4"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_frio",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Cold Mode",
+              "play_sounds": "shear"
+        },
+        
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                    { "test": "is_variant", "subject": "self", "operator": "==", "value": 0},
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t1"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_caliente",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Warm Mode",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                    { "test": "is_variant", "subject": "self", "operator": "==", "value": 0},
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t2"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_caliente",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Warm Mode",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                    { "test": "is_variant", "subject": "self", "operator": "==", "value": 0},
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t3"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_caliente",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Warm Mode",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                    { "test": "is_variant", "subject": "self", "operator": "==", "value": 0},
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t4"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_caliente",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Warm Mode",
+              "play_sounds": "shear"
+        }
+        
+        ]
+        },
+        "minecraft:is_tamed": {
+        },
+
+        "minecraft:behavior.follow_owner": {
+          "priority": 1,
+          "speed_multiplier": 1.0,
+          "start_distance": 8,
+          "stop_distance": 2
+        },
+        "minecraft:behavior.breed": {
+          "priority": 7
+        },
+        "minecraft:sittable": {
+        },
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 1.25
+      }
+     },
+     "minecraft:frio":{
+      "minecraft:fire_immune": false,
+"minecraft:variant": {
+          "value": 0
+        },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      }
+     },
+     "minecraft:caliente":{
+      "minecraft:fire_immune": true,
+"minecraft:variant": {
+          "value": 1
+        },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_water", "operator": "==", "value": true },
+            "cause": "water",
+            "damage_per_tick": 1
+          }
+        ]
+      } 
+     }
+     
+    },
+
+    "components": {
+        "minecraft:scale": {
+          "value": 1.35
+        },
+        "minecraft:variant": {
+          "value": 0
+        },
+      "minecraft:healable": {
+        "items": [
+                    {
+            "item": "arkcraft:ark_meat_raw",
+            "heal_amount": 10
+          },
+          {
+            "item": "porkchop",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_porkchop",
+            "heal_amount": 8
+          },
+          {
+            "item": "fish",
+            "heal_amount": 2
+          },
+          {
+            "item": "salmon",
+            "heal_amount": 2
+          },
+          {
+            "item": "clownfish",
+            "heal_amount": 1
+          },
+          {
+            "item": "pufferfish",
+            "heal_amount": 1
+          },
+          {
+            "item": "cooked_fish",
+            "heal_amount": 5
+          },
+          {
+            "item": "cooked_salmon",
+            "heal_amount": 6
+          },
+          {
+            "item": "beef",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_beef",
+            "heal_amount": 8
+          },
+          {
+            "item": "chicken",
+            "heal_amount": 2
+          },
+          {
+            "item": "cooked_chicken",
+            "heal_amount": 6
+          },
+          {
+            "item": "muttonRaw",
+            "heal_amount": 2
+          },
+          {
+            "item": "muttonCooked",
+            "heal_amount": 6
+          },
+          {
+            "item": "rotten_flesh",
+            "heal_amount": 4
+          },
+          {
+            "item": "rabbit",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_rabbit",
+            "heal_amount": 5
+          },
+          {
+            "item": "rabbit_stew",
+            "heal_amount": 10
+          }
+        ]
+      },
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? Math.Random(5,3) : 3.4"
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/dimetrodon.json"
+        },
+      "minecraft:type_family": {
+        "family": [ "dimetrodon", "mob" ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15000,
+        "suffocate_time": 0
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 0.8
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.follow_parent": {
+        "priority": 5,
+        "speed_multiplier": 1.1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.8
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+    "events": {
+      "minecraft:termic_wool": {
+        "randomize": [
+          {
+              
+            "weight": 10,
+		"run_command": {
+          "command": [
+    "give @p[r=5] arkcraft:termic_wool"
+          ],
+          "target": "self"
+		}
+          },
+          {
+            "weight": 100
+          }
+        ]
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+        "add": {
+          "component_groups": [
+            "minecraft:salvaje"
+          ]
+        }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "swamp"
+                }
+              ]
+            },
+            "add": { "component_groups": [ "minecraft:frio" ] }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "nether"
+                }
+              ]
+            },
+            "add": { "component_groups": [ "minecraft:caliente" ] }
+          }
+        ]
+      },
+      "minecraft:modo_frio": {
+        "remove": {
+          "component_groups": [
+            "minecraft:caliente"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:frio"
+          ]
+        }
+      },
+      "minecraft:modo_caliente": {
+        "remove": {
+          "component_groups": [
+            "minecraft:frio"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:caliente"
+          ]
+        }
+      },
+      "minecraft:on_tame": {
+        "remove": {
+          "component_groups": [
+            "minecraft:salvaje"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:domado"
+          ]
+        }
+      }
+    }
+  }
+}

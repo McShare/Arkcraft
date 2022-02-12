@@ -1,0 +1,42 @@
+
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:micro_raptor",
+      "materials": {
+        "default": "cow"
+      },            
+      "textures": {
+        "micro_raptor1": "textures/entity/micro_raptor/micro_raptor1",
+        "micro_raptor2": "textures/entity/micro_raptor/micro_raptor2",
+        "micro_raptor3": "textures/entity/micro_raptor/micro_raptor3"
+      },
+      "geometry": {
+        "default": "geometry.micro_raptor"
+      },
+      "animations": {
+        "walk": "animation.archaeopteryx.move",
+      "default":
+        "animation.archaeopteryx_default",
+      "sit":
+        "animation.micro_raptor.sit",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "scale": "0.4",
+        "animate": [
+       "default",
+          { "walk": "query.modified_move_speed" },
+          { "sit": "query.is_sitting" },
+          "look_at_target"
+        ]
+      },
+      "render_controllers": [ "controller.render.micro_raptor" ],
+      "spawn_egg": {
+         "base_color": "#426A35",
+        "overlay_color": "#F311E"
+      }
+    }
+  }
+}

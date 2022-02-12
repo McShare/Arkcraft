@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:medium_herbivore_saddle",
+   "category": "item"
+  },
+  "components": {
+   "minecraft:icon": "medium_herbivore_saddle",
+   "minecraft:render_offsets": "medium_herbivore_saddle"
+  }
+ }
+}

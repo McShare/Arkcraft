@@ -1,0 +1,56 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "male_special1",
+				"npc_name": { "rawtext": [ { "translate": "Dino" } ] },
+				"text": { "rawtext": [ { "translate": "Ark Survival Evolved", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "Ride" } ] },
+						"commands": [
+							"/function ride"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "Follow Me" } ] },
+						"commands": [
+							"/event entity @s ark:follow_owner",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "Don't Follow Me" } ] },
+						"commands": [
+							"/event entity @s ark:stop_follow_owner",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "Move" } ] },
+						"commands": [
+							"/event entity @s ark:move",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "Don't Move" } ] },
+						"commands": [
+							"/event entity @s ark:stop_move",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": ">>" } ] },
+						"commands": [
+							"/dialogue change @s male_special2 @p"
+						]
+					}
+				]
+			}
+		]
+	}
+}

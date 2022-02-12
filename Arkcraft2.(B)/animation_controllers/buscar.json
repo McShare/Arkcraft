@@ -1,0 +1,11 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.buscar": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "buscar2":"!query.is_tamed" }
+                        ]}}}}}

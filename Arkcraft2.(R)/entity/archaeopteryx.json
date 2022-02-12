@@ -1,0 +1,42 @@
+
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:archaeopteryx",
+      "materials": {
+        "default": "cow"
+      },            
+      "textures": {
+        "archaeopteryx_green": "textures/entity/archaeopteryx/archaeopteryx_green",
+        "archaeopteryx_orange": "textures/entity/archaeopteryx/archaeopteryx_orange",
+        "archaeopteryx_dark_red": "textures/entity/archaeopteryx/archaeopteryx_dark_red"
+      },
+      "geometry": {
+        "default": "geometry.archaeopteryx"
+      },
+      "animations": {
+        "walk": "animation.archaeopteryx.move",
+      "default":
+        "animation.archaeopteryx_default",
+      "sit":
+        "animation.archaeopteryx.sit",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+       "default",
+          { "walk": "query.modified_move_speed" },
+          { "sit": "query.is_sitting" },
+
+          "look_at_target"
+        ]
+      },
+      "render_controllers": [ "controller.render.archaeopteryx" ],
+      "spawn_egg": {
+         "base_color": "#426A35",
+        "overlay_color": "#F311E"
+      }
+    }
+  }
+}

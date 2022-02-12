@@ -1,0 +1,10 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.water_hability": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "water_hability_on":"query.mark_variant == 1" }]}}}}} 

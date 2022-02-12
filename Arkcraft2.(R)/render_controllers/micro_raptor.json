@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.micro_raptor": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.micro_raptor1",
+            "Texture.micro_raptor2",
+            "Texture.micro_raptor3"
+          ]
+        } 
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true }
+    ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}
+ 

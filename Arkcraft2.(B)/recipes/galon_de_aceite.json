@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:galon_de_aceite"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "111",
+      "121"
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:bucket",
+        "data": 0
+      },
+      "1": {
+        "item": "arkcraft:aceite"
+      }
+    },
+    "result": {
+      "item": "arkcraft:galon_de_aceite"
+    }
+  }
+}

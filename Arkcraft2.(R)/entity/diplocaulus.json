@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:diplocaulus",
+      "materials": { "default": "cow" },
+      "geometry": {
+        "default": "geometry.diplocaulus"
+      },
+      "textures": {
+        "diplocaulus_green": "textures/entity/diplocaulus/diplocaulus_green",
+        "diplocaulus_albino": "textures/entity/diplocaulus/diplocaulus_albino",
+        "diplocaulus_blue": "textures/entity/diplocaulus/diplocaulus_blue"
+      },
+      "animations": {
+        "move": "animation.diplocaulus.move",
+        "look_at_target": "animation.common.look_at_target",
+        "nadando": "animation.diplocaulus.nadando"
+},
+      "animation_controllers": [
+        { "general": "controller.animation.diplocaulus.general" }
+      ],
+      "render_controllers": [ "controller.render.diplocaulus" ],
+      "spawn_egg": {
+        "base_color": "#254A00",
+        "overlay_color": "#464903"
+      }
+    }
+  }
+}

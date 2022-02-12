@@ -1,0 +1,31 @@
+//bridge-file-version: #38
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.camerashake_giant": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"camera": "query.is_chested"
+						}
+					],
+					"on_entry": [
+						"/function camerashake_giant"
+					]
+				},
+				"camera": {
+					"transitions": [
+						{
+							"default": "query.is_chested"
+						}
+					],
+					"on_entry": [
+						"/function camerashake_giant"
+					]
+				}
+			}
+		}
+	}
+}

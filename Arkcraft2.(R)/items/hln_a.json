@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:hln_a_item",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "hln_a_item",
+   "minecraft:render_offsets": "apple"
+  }
+ }
+}

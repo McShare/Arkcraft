@@ -1,0 +1,313 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\ArkCraft B\\items\\ark_crossbow.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "ef9d4654_82d6_459c_974a_d0c960cfd73d",
+	"file_version": 37,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "arkcraft:crossbow",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:max_stack_size": 1,
+							"minecraft:hand_equipped": true,
+							"minecraft:cooldown": {
+								"category": "ender_pearl",
+								"duration": 2
+							},
+							"minecraft:icon": {
+								"texture": "ark_crossbow"
+							},
+							"minecraft:display_name": {
+								"value": "§6Ark | §3Crossbow"
+							},
+							"minecraft:on_use": {
+								"on_use": {
+									"event": "shooter",
+									"condition": "query.get_equipped_item_name('off_hand') == 'narcotic_arrow'"
+								}
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.bows"
+							}
+						},
+						"events": {
+							"shooter": {
+								"run_command": {
+									"command": [
+										"playsound crossbow.shoot @a[r=5] ~ ~ ~ 10",
+										"clear @s ark:narcotic_arrow 0 1"
+									]
+								},
+								"shoot": {
+									"projectile": "ark:arrow",
+									"launch_power": 1,
+									"angle_offset": "query.cardinal_facing"
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "arkcraft:crossbow",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:hand_equipped": true,
+								"minecraft:cooldown": {
+									"category": "ender_pearl",
+									"duration": 2
+								},
+								"minecraft:icon": {
+									"texture": "ark_crossbow"
+								},
+								"minecraft:display_name": {
+									"value": "§6Ark | §3Crossbow"
+								},
+								"minecraft:on_use": {
+									"on_use": {
+										"event": "shooter",
+										"condition": "query.get_equipped_item_name('off_hand') == 'narcotic_arrow'"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.bows"
+								}
+							},
+							"events": {
+								"shooter": {
+									"run_command": {
+										"command": [
+											"playsound crossbow.shoot @a[r=5] ~ ~ ~ 10",
+											"clear @s ark:narcotic_arrow 0 1"
+										]
+									},
+									"shoot": {
+										"projectile": "ark:arrow",
+										"launch_power": 1,
+										"angle_offset": "query.cardinal_facing"
+									}
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "arkcraft:crossbow",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "arkcraft:crossbow",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:hand_equipped": true,
+								"minecraft:cooldown": {
+									"category": "ender_pearl",
+									"duration": 2
+								},
+								"minecraft:icon": {
+									"texture": "ark_crossbow"
+								},
+								"minecraft:display_name": {
+									"value": "§6Ark | §3Crossbow"
+								},
+								"minecraft:on_use": {
+									"on_use": {
+										"event": "shooter",
+										"condition": "query.get_equipped_item_name('off_hand') == 'narcotic_arrow'"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.bows"
+								}
+							},
+							"events": {
+								"shooter": {
+									"run_command": {
+										"command": [
+											"playsound crossbow.shoot @a[r=5] ~ ~ ~ 10",
+											"clear @s ark:narcotic_arrow 0 1"
+										]
+									},
+									"shoot": {
+										"projectile": "ark:arrow",
+										"launch_power": 1,
+										"angle_offset": "query.cardinal_facing"
+									}
+								}
+							}
+						},
+						"key": "components",
+						"is_minified": true,
+						"children": {
+							"minecraft:max_stack_size": 1,
+							"minecraft:hand_equipped": true,
+							"minecraft:cooldown": {
+								"category": "ender_pearl",
+								"duration": 2
+							},
+							"minecraft:icon": {
+								"texture": "ark_crossbow"
+							},
+							"minecraft:display_name": {
+								"value": "§6Ark | §3Crossbow"
+							},
+							"minecraft:on_use": {
+								"on_use": {
+									"event": "shooter",
+									"condition": "query.get_equipped_item_name('off_hand') == 'narcotic_arrow'"
+								}
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.bows"
+							}
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "arkcraft:crossbow",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:hand_equipped": true,
+								"minecraft:cooldown": {
+									"category": "ender_pearl",
+									"duration": 2
+								},
+								"minecraft:icon": {
+									"texture": "ark_crossbow"
+								},
+								"minecraft:display_name": {
+									"value": "§6Ark | §3Crossbow"
+								},
+								"minecraft:on_use": {
+									"on_use": {
+										"event": "shooter",
+										"condition": "query.get_equipped_item_name('off_hand') == 'narcotic_arrow'"
+									}
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.bows"
+								}
+							},
+							"events": {
+								"shooter": {
+									"run_command": {
+										"command": [
+											"playsound crossbow.shoot @a[r=5] ~ ~ ~ 10",
+											"clear @s ark:narcotic_arrow 0 1"
+										]
+									},
+									"shoot": {
+										"projectile": "ark:arrow",
+										"launch_power": 1,
+										"angle_offset": "query.cardinal_facing"
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"shooter": {
+										"run_command": {
+											"command": [
+												"playsound crossbow.shoot @a[r=5] ~ ~ ~ 10",
+												"clear @s ark:narcotic_arrow 0 1"
+											]
+										},
+										"shoot": {
+											"projectile": "ark:arrow",
+											"launch_power": 1,
+											"angle_offset": "query.cardinal_facing"
+										}
+									}
+								},
+								"key": "shooter",
+								"children": [
+									{
+										"open": {
+											"run_command": {
+												"command": [
+													"playsound crossbow.shoot @a[r=5] ~ ~ ~ 10",
+													"clear @s ark:narcotic_arrow 0 1"
+												]
+											},
+											"shoot": {
+												"projectile": "ark:arrow",
+												"launch_power": 1,
+												"angle_offset": "query.cardinal_facing"
+											}
+										},
+										"key": "run_command",
+										"children": [
+											{
+												"open": {
+													"command": [
+														"playsound crossbow.shoot @a[r=5] ~ ~ ~ 10",
+														"clear @s ark:narcotic_arrow 0 1"
+													]
+												},
+												"key": "command",
+												"is_minified": true,
+												"children": [
+													"playsound crossbow.shoot @a[r=5] ~ ~ ~ 10",
+													"clear @s ark:narcotic_arrow 0 1"
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"run_command": {
+												"command": [
+													"playsound crossbow.shoot @a[r=5] ~ ~ ~ 10",
+													"clear @s ark:narcotic_arrow 0 1"
+												]
+											},
+											"shoot": {
+												"projectile": "ark:arrow",
+												"launch_power": 1,
+												"angle_offset": "query.cardinal_facing"
+											}
+										},
+										"key": "shoot",
+										"is_minified": true,
+										"children": {
+											"projectile": "ark:arrow",
+											"launch_power": 1,
+											"angle_offset": "query.cardinal_facing"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

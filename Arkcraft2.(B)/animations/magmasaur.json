@@ -1,0 +1,64 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.montura_magma": {
+     "animation_length": 0.3,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+        "/effect @s resistance 2 2"    
+            
+            ]
+      }
+    },
+    "animation.magmasaur1": {
+     "animation_length": 0.3,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+"/execute @e[type=arkcraft:magmasaur] ~ ~ ~ replaceitem block ^ ^ ^3 slot.container 1 coal 1",
+"/execute @e[type=arkcraft:magmasaur] ~ ~ ~ replaceitem block ^ ^1 ^3 slot.container 1 coal 1",
+"/execute @e[type=arkcraft:magmasaur] ~ ~ ~ replaceitem block ^ ^-1 ^3 slot.container 1 coal 1",
+
+"/execute @s ~ ~ ~ detect ~ ~ ~ fire 0 effect @s speed 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ fire 1 effect @s speed 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ fire 2 effect @s speed 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ fire 3 effect @s speed 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ fire 4 effect @s speed 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ fire 5 effect @s speed 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ fire 6 effect @s speed 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ fire 7 effect @s speed 10 2 true",
+
+
+"/execute @s ~ ~ ~ detect ~ ~ ~ lava 0 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ lava 1 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ lava 2 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ lava 3 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ lava 4 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ lava 5 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ lava 6 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ lava 7 effect @s instant_health 10 2 true",
+
+"/execute @s ~ ~ ~ detect ~ ~ ~ flowing_lava 0 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ flowing_lava 1 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ flowing_lava 2 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ flowing_lava 3 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ flowing_lava 4 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ flowing_lava 5 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ flowing_lava 6 effect @s instant_health 10 2 true",
+"/execute @s ~ ~ ~ detect ~ ~ ~ flowing_lava 7 effect @s instant_health 10 2 true"
+            ]
+      }
+    },
+    "animation.magmasaur_hause": {
+     "animation_length": 21.0,
+      "loop": true,
+      "timeline": {
+        "20.0": [
+        "@s minecraft:a_casa"    
+            
+            ]
+      }
+    }
+  }
+}

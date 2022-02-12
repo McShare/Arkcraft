@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+ "animations": {
+    "animation.poison_controller": {
+     "animation_length": 1.0,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "/effect @s slowness 0 155 true"
+            ]
+      }
+    },
+    "animation.pulmonoscorpius_caida_lenta": {
+     "animation_length": 2.0,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+ "/effect @s slow_falling 3 3 true"
+            ]
+      }
+    },
+    "animation.pulmonoscorpius_agarre": {
+     "animation_length": 1.0,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+    "/tag @s remove a_off",
+    "/effect @s levitation 10000 7",
+ "/execute @s ~~~ detect ~~~ web 0 effect @s levitation 1 0 true"
+            ]
+      }
+    },
+    "animation.pulmonoscorpius_agarrent": {
+     "animation_length": 0.1,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "/execute @s ~~~ detect ^ ^ ^1 air 0 tag @s add a_off",
+ "/execute @s ~~~ detect ^ ^ ^1 water 0 tag @s add a_off",
+ "/execute @s ~~~ detect ^ ^ ^1 lava 0 tag @s add a_off",
+ "/execute @s ~~~ detect ^ ^ ^1 web 0 tag @s add a_off",
+ "/execute @s ~~~ detect ~~~ web 0 effect @s speed 3 4 true" 
+            ]
+      }
+    }
+  }
+}

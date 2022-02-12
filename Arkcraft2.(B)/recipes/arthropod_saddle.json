@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:arthropod_saddle"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "121",
+       "242",
+       "333"
+    ],
+   "key": {
+      "1": {
+        "item": "minecraft:horsearmorleather"
+      },
+      "2": {
+        "item": "minecraft:wool"
+      },
+      "3": {
+        "item": "minecraft:iron_ingot"
+      },
+      "4": {
+        "item": "minecraft:lead"
+      }
+    },
+    "result": {
+      "item": "arkcraft:arthropod_saddle"
+    }
+  }
+}
+
+

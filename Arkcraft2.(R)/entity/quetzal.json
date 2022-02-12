@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:quetzal",
+      "materials": { "default": "cow"
+      },
+      "textures": {
+        "color_celeste": "textures/entity/quetzal/color_celeste",
+        "color_2": "textures/entity/quetzal/color_2",
+        "color_3": "textures/entity/quetzal/color_3",
+        "color_4": "textures/entity/quetzal/color_4"
+      },
+      "geometry": {
+        "default": "geometry.quetzal"
+      },
+	"sound_effects": {
+	"volando2": "mob.enderdragon.flap"
+	},
+      "animations": {
+        "move": "animation.quetzal.move",
+        "pisov": "animation.quetzal.piso",
+        "volando": "animation.quetzal.volando",
+        "volando2": "animation.quetzal.volando2",
+        "general": "animation.quetzal.general", 
+        "general2": "animation.quetzal.general2",
+        "look_at_target": "animation.quetzal.look_at_target"
+},
+      "animation_controllers": [
+        { "general": "controller.animation.quetzal.general" },
+        { "general2": "controller.animation.quetzal.general2" },
+       { "look_at_target": "controller.animation.quetzal.look_at_target" }
+      ],
+      "render_controllers": [ "controller.render.quetzal" ],
+      "spawn_egg": {
+        "base_color": "#85F7A",
+        "overlay_color": "#973C02"
+      }
+    }
+  }
+}

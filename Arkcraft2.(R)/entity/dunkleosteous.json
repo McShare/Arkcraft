@@ -1,0 +1,36 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:dunkleosteous",
+      "materials": {
+        "default": "cow"
+      },
+   "textures": {
+    "default": "textures/entity/dunkleosteous"
+   },
+   "geometry": {
+    "default": "geometry.dunkleosteous"
+   },
+   "render_controllers": [
+    "controller.render.arkcraft_default"
+   ],
+   "animations": {
+        "move": "animation.dunkleosteous.move",
+        "attack_controller": "controller.animation.pulmonoscorpius.attack",
+        "attack": "animation.dunkleosteous.attack"
+   },
+   "scripts": {
+        "scale": "1.0",
+    "animate": [
+     "attack_controller",
+     "move"
+    ]
+   },
+      "spawn_egg": {
+         "base_color": "#330000",
+        "overlay_color": "#E01111"
+      }
+  }
+ }
+}

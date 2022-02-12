@@ -1,0 +1,31 @@
+//bridge-file-version: #10
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.rider": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"ride": "query.has_rider"
+						}
+					],
+					"on_entry": [
+						"/function tag_rider"
+					]
+				},
+				"ride": {
+					"transitions": [
+						{
+							"default": "query.has_rider"
+						}
+					],
+					"on_entry": [
+						"/function tag_rider"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.ankylosaurus": {
+      "part_visibility": [ 
+        { "*montura": "query.is_saddled" },
+        { "*bone74": "query.is_saddled" },
+        { "*bone75": "query.is_saddled" },
+        
+        { "*cofre": "query.is_chested" },
+        { "*bone76": "query.is_chested" }
+      ],
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.ankylosaurus1",
+            "Texture.ankylosaurus2",
+            "Texture.ankylosaurus3"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.variant]" ]
+    }
+    
+  }
+}

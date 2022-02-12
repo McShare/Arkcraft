@@ -1,0 +1,23 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.bulbdog": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.color_uno",
+            "Texture.color_dos"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true }
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

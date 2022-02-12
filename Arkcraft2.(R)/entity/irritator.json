@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:irritator",
+      "materials": { "default": "skeleton"
+      },
+      "textures": {
+        "irritator1": "textures/entity/irritator/irritator1",
+        "irritator2": "textures/entity/irritator/irritator2",
+        "irritator3": "textures/entity/irritator/irritator3"
+    },
+      "geometry": {
+        "default": "geometry.irritator"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animations": {
+        "pudrir": "animation.irritator.pudrir",
+        "walk": "animation.irritator.move",
+        "attack": "animation.irritator.attack",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.irritator.move" },
+        { "attack": "controller.animation.irritator.attack" },
+        { "casting": "controller.animation.irritator.casting" }
+      ],
+      "render_controllers": [ "controller.render.irritator" ],
+      "spawn_egg": {
+         "base_color": "#7bcea1",
+        "overlay_color": "#ceb97b"}
+      
+    }
+  }
+} 

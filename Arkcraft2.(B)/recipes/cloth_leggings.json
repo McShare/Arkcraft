@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:cloth_leggings"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "XXX",
+      "X X"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:string"
+      }
+    },
+    "result": {
+      "item": "arkcraft:cloth_leggings"
+    }
+  }
+}

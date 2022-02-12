@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:medium_carnivore_saddle",
+   "category": "item"
+  },
+  "components": {
+   "minecraft:icon": "medium_carnivore_saddle",
+   "minecraft:render_offsets": "medium_carnivore_saddle"
+  }
+ }
+}

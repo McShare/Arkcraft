@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:quetzal_platform"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "oxo",
+      "1o1",
+      "111"
+    ],
+   "key": {
+      "o": {
+        "item": "minecraft:minecart"
+      },
+      "x": {
+        "item": "arkcraft:medium_carnivore_saddle"
+      },
+      "1": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "result": {
+      "item": "arkcraft:quetzal_platform"
+    }
+  }
+}

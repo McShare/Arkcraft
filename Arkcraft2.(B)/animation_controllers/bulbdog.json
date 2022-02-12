@@ -1,0 +1,12 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.bulbdog": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "bulbdog_domado":"query.is_tamed" }
+                        
+                        ]}}}}}

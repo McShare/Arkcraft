@@ -1,0 +1,30 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "arkcraft:smithy"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "SS",
+            "WX"
+        ],
+    "key": {
+      "W": {
+        "item": "minecraft:crafting_table"
+      },
+      "S": {
+        "item": "minecraft:leather"
+      },
+      "X": {
+        "item": "minecraft:iron_ingot"
+      }
+        },
+        "result": {
+            "item": "arkcraft:smithy",
+            "count": 1
+        }
+    }
+}

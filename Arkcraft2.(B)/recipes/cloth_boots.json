@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:cloth_boots"
+    },
+ 
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "X X"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:string"
+      }
+    },
+    "result": {
+      "item": "arkcraft:cloth_boots"
+    }
+  }
+}

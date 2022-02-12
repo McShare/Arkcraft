@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:daeodon",
+      "materials": { "default": "spider" },
+      "textures": {
+        "default": "textures/entity/daeodon/daeodon_default",
+        "saddle": "textures/entity/saddle/daeodon_saddle"
+      },
+      "geometry": {
+        "default": "geometry.daeodon",
+        "saddle": "geometry.daeodon_saddle"
+      },
+      "scripts": {
+        "scale": "2.3"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "daeodon_sitting": "animation.daeodon.sit",
+       "move": "animation.daeodon.move",
+       "default": "animation.daeodon.defaut",
+        "attack": "animation.daeodon.attack"
+      },
+      "animation_controllers": [
+      {"general":
+"controller.animation.daeodon.general"}
+      ],
+      "render_controllers": [ "controller.render.daeodon",
+"controller.render.daeodon_saddle"
+      ],
+      "spawn_egg": {
+         "base_color": "#401C0D",
+        "overlay_color": "#7F3919"
+      }
+    }
+  }
+}

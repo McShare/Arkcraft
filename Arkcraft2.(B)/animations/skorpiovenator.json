@@ -1,0 +1,54 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.skorpiovenator": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 0 replace concretepowder 0",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 1 replace concretepowder 1",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 2 replace concretepowder 2",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 3 replace concretepowder 3",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 4 replace concretepowder 4",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 5 replace concretepowder 5",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 6 replace concretepowder 6",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 7 replace concretepowder 7",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 8 replace concretepowder 8",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 9 replace concretepowder 9",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 10 replace concretepowder 10",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 11 replace concretepowder 11",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 12 replace concretepowder 12",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 13 replace concretepowder 13",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 14 replace concretepowder 14",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 15 replace concretepowder 15",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 16 replace concretepowder 16",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 17 replace concretepowder 17",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 18 replace concretepowder 18",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 19 replace concretepowder 19",
+
+"/fill ~-10 ~-4 ~10 ~10 ~4 ~-10 concrete 20 replace concretepowder 20"
+            ]
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.frozen_demon.look_at_target" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "look_at_target" ]
+				}
+			}
+		},
+    
+		"controller.animation.frozen_demon.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"attacking" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "variable.attack_time < 0.1"
+						}
+					]
+				},
+				"default" : {
+					"transitions" : [
+						{
+							"attacking" : "variable.attack_time >= 0.1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.frozen_demon_default" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "frozen_demon_default" ]
+				}
+}
+},
+    "controller.animation.frozen_demon.move": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            { "walk": "query.modified_move_speed" },
+            "move"
+          ]
+      }
+    }
+}
+}
+}

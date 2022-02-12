@@ -1,0 +1,107 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.argentavis.general" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						{
+							"move" : "(query.modified_move_speed)"}
+					],
+					"transitions" : [
+						{
+							"is_riding" : "query.is_riding"
+						},
+						{
+							"volando" : "(!query.is_on_ground) && (!query.is_in_water)"
+						},
+						{
+							"is_sitting" : "(query.is_sitting) && (!query.is_riding) && (query.is_on_ground)"
+						}
+					],
+					"blend_transition": 0.2
+				},
+			"is_riding" : {
+					"animations" : [ "is_riding" ],
+					"transitions" : [
+						{
+							"volando" : "(!query.is_on_ground) && (!query.is_in_water)"
+						},
+						{
+							"default" : "(!query.is_riding) && (query.is_on_ground)"},
+						{
+							"is_sitting" : "(query.is_sitting) && (!query.is_riding) && (query.is_on_ground)"
+						}
+					]
+				},
+			"is_sitting" : {
+					"animations" : [ "is_sitting" ],
+					"transitions" : [
+						{
+							"volando" : "(!query.is_on_ground) && (!query.is_in_water)"
+						},
+						{
+							"default" : "(!query.is_sitting)"},
+						{
+							"is_riding" : "query.is_riding"
+						}
+					]
+				},
+			"volando" : {
+					"animations" : [ "volando" , "volando2" ,
+						{
+							"move" : "(query.modified_move_speed)"}
+					],
+					"transitions" : [
+						{
+							"is_sitting" : "(query.is_sitting) && (query.is_on_ground)"
+						},
+						{
+							"default" : "  (query.is_on_ground) || (query.is_in_water)"},
+						{
+							"is_riding" : "query.is_riding"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.argentavis.look_at_target" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "look_at_target" ]
+				}}
+				},
+		"controller.animation.argentavis.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"attacking" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "variable.attack_time < 0.1"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"default" : {
+					"transitions" : [
+						{
+							"attacking" : "variable.attack_time >= 0.1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.argentavis.general2" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "general2" ]
+				}
+}
+}
+	}
+}
+

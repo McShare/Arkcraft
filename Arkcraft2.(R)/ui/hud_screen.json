@@ -1,0 +1,274 @@
+{
+  "stamina_icon": {
+    "type": "image",
+    "variables": [{"requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_0')))",
+      "$icon": "textures/ui/stamine/0"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_1')))",
+      "$icon": "textures/ui/stamine/1"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_2')))",
+      "$icon": "textures/ui/stamine/2"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_3')))",
+      "$icon": "textures/ui/stamine/3"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_4')))",
+      "$icon": "textures/ui/stamine/4"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_5')))",
+      "$icon": "textures/ui/stamine/5"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_6')))",
+      "$icon": "textures/ui/stamine/6"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_7')))",
+      "$icon": "textures/ui/stamine/7"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_8')))",
+      "$icon": "textures/ui/stamine/8"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_9')))",
+      "$icon": "textures/ui/stamine/9"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_10')))",
+      "$icon": "textures/ui/stamine/10"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_11')))",
+      "$icon": "textures/ui/stamine/11"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_12')))",
+      "$icon": "textures/ui/stamine/12"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_13')))",
+      "$icon": "textures/ui/stamine/13"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_14')))",
+      "$icon": "textures/ui/stamine/14"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_15')))",
+      "$icon": "textures/ui/stamine/15"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_16')))",
+      "$icon": "textures/ui/stamine/16"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_17')))",
+      "$icon": "textures/ui/stamine/17"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_18')))",
+      "$icon": "textures/ui/stamine/18"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_19')))",
+      "$icon": "textures/ui/stamine/19"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_20')))",
+      "$icon": "textures/ui/stamine/20"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_21')))",
+      "$icon": "textures/ui/stamine/21"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_22')))",
+      "$icon": "textures/ui/stamine/22"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_23')))",
+      "$icon": "textures/ui/stamine/23"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_24')))",
+      "$icon": "textures/ui/stamine/24"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_25')))",
+      "$icon": "textures/ui/stamine/25"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_26')))",
+      "$icon": "textures/ui/stamine/26"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_27')))",
+      "$icon": "textures/ui/stamine/27"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_28')))",
+      "$icon": "textures/ui/stamine/28"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_29')))",
+      "$icon": "textures/ui/stamine/29"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_30')))",
+      "$icon": "textures/ui/stamine/30"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_31')))",
+      "$icon": "textures/ui/stamine/31"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_32')))",
+      "$icon": "textures/ui/stamine/32"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_33')))",
+      "$icon": "textures/ui/stamine/33"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_34')))",
+      "$icon": "textures/ui/stamine/34"
+   },
+   {
+      "requires": "(not ($actionbar_text = ($actionbar_text - 'stamine_35')))",
+      "$icon": "textures/ui/stamine/35"
+   }
+],
+"texture": "$icon",
+    "size": [ 25, 25 ],
+    "layer": 10,
+    "anchor_to": "top_right",
+    "anchor_from": "top_right",
+    "offset": ["-10px", "10px"],
+    "ignored": "(not ($actionbar_text = 'stamine_0' or $actionbar_text = 'stamine_1' or $actionbar_text = 'stamine_2' or $actionbar_text = 'stamine_3' or $actionbar_text = 'stamine_4' or $actionbar_text = 'stamine_5' or $actionbar_text = 'stamine_6' or $actionbar_text = 'stamine_7' or $actionbar_text = 'stamine_8' or $actionbar_text = 'stamine_9' or $actionbar_text = 'stamine_10' or $actionbar_text = 'stamine_11' or $actionbar_text = 'stamine_12' or $actionbar_text = 'stamine_13' or $actionbar_text = 'stamine_14' or $actionbar_text = 'stamine_15' or $actionbar_text = 'stamine_16' or $actionbar_text = 'stamine_17' or $actionbar_text = 'stamine_18' or $actionbar_text = 'stamine_19' or $actionbar_text = 'stamine_20' or $actionbar_text = 'stamine_21' or $actionbar_text = 'stamine_22' or $actionbar_text = 'stamine_23' or $actionbar_text = 'stamine_24' or $actionbar_text = 'stamine_25')"
+  },
+  "health_icon": {
+    "type": "image",
+    "variables": [{
+      "requires": "($actionbar_text = 'dinohp_0')",
+      "$icon": "textures/ui/health/1"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_1')",
+      "$icon": "textures/ui/health/2"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_2')",
+      "$icon": "textures/ui/health/3"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_3')",
+      "$icon": "textures/ui/health/4"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_4')",
+      "$icon": "textures/ui/health/5"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_5')",
+      "$icon": "textures/ui/health/6"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_6')",
+      "$icon": "textures/ui/health/7"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_7')",
+      "$icon": "textures/ui/health/8"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_8')",
+      "$icon": "textures/ui/health/9"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_9')",
+      "$icon": "textures/ui/health/10"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_10')",
+      "$icon": "textures/ui/health/11"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_11')",
+      "$icon": "textures/ui/health/12"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_12')",
+      "$icon": "textures/ui/health/13"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_13')",
+      "$icon": "textures/ui/health/14"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_14')",
+      "$icon": "textures/ui/health/15"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_15')",
+      "$icon": "textures/ui/health/16"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_16')",
+      "$icon": "textures/ui/health/17"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_17')",
+      "$icon": "textures/ui/health/18"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_18')",
+      "$icon": "textures/ui/health/19"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_19')",
+      "$icon": "textures/ui/health/20"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_20')",
+      "$icon": "textures/ui/health/21"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_21')",
+      "$icon": "textures/ui/health/22"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_22')",
+      "$icon": "textures/ui/health/23"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_23')",
+      "$icon": "textures/ui/health/24"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_24')",
+      "$icon": "textures/ui/health/25"
+    }, {
+      "requires": "($actionbar_text = 'dinohp_25')",
+      "$icon": "textures/ui/health/26"
+    }],
+    "texture": "$icon",
+    "size": [ 25, 25 ],
+    "layer": 10,
+    "anchor_to": "top_right",
+    "anchor_from": "top_right",
+    "offset": ["-10px", "10px"],
+    "ignored": "(not ($actionbar_text = 'dinohp_0' or $actionbar_text = 'dinohp_1' or $actionbar_text = 'dinohp_2' or $actionbar_text = 'dinohp_3' or $actionbar_text = 'dinohp_4' or $actionbar_text = 'dinohp_5' or $actionbar_text = 'dinohp_6' or $actionbar_text = 'dinohp_7' or $actionbar_text = 'dinohp_8' or $actionbar_text = 'dinohp_9' or $actionbar_text = 'dinohp_10' or $actionbar_text = 'dinohp_11' or $actionbar_text = 'dinohp_12' or $actionbar_text = 'dinohp_13' or $actionbar_text = 'dinohp_14' or $actionbar_text = 'dinohp_15' or $actionbar_text = 'dinohp_16' or $actionbar_text = 'dinohp_17' or $actionbar_text = 'dinohp_18' or $actionbar_text = 'dinohp_19' or $actionbar_text = 'dinohp_20' or $actionbar_text = 'dinohp_21' or $actionbar_text = 'dinohp_22' or $actionbar_text = 'dinohp_23' or $actionbar_text = 'dinohp_24' or $actionbar_text = 'dinohp_25')"
+  },
+  
+  "health_icon_factory": {
+    "type": "panel",
+    "factory": {
+      "name": "hud_actionbar_text_factory",
+      "control_ids": {
+        "hud_actionbar_text": "health_icon@health_icon"
+      }
+    }
+  },
+  
+  "hud_actionbar_text/actionbar_message": {
+    "ignored": "($actionbar_text = 'dinohp_0' or $actionbar_text = 'dinohp_1' or $actionbar_text = 'dinohp_2' or $actionbar_text = 'dinohp_3' or $actionbar_text = 'dinohp_4' or $actionbar_text = 'dinohp_5' or $actionbar_text = 'dinohp_6' or $actionbar_text = 'dinohp_7' or $actionbar_text = 'dinohp_8' or $actionbar_text = 'dinohp_9' or $actionbar_text = 'dinohp_10' or $actionbar_text = 'dinohp_11' or $actionbar_text = 'dinohp_12' or $actionbar_text = 'dinohp_13' or $actionbar_text = 'dinohp_14' or $actionbar_text = 'dinohp_15' or $actionbar_text = 'dinohp_16' or $actionbar_text = 'dinohp_17' or $actionbar_text = 'dinohp_18' or $actionbar_text = 'dinohp_19' or $actionbar_text = 'dinohp_20' or $actionbar_text = 'dinohp_21' or $actionbar_text = 'dinohp_22' or $actionbar_text = 'dinohp_23' or $actionbar_text = 'dinohp_24' or $actionbar_text = 'dinohp_25' or $actionbar_text = 'dinohp_clear')"
+  },
+  "hud_actionbar_text": {
+    "ignored": "($actionbar_text = 'dinohp_0' or $actionbar_text = 'dinohp_1' or $actionbar_text = 'dinohp_2' or $actionbar_text = 'dinohp_3' or $actionbar_text = 'dinohp_4' or $actionbar_text = 'dinohp_5' or $actionbar_text = 'dinohp_6' or $actionbar_text = 'dinohp_7' or $actionbar_text = 'dinohp_8' or $actionbar_text = 'dinohp_9' or $actionbar_text = 'dinohp_10' or $actionbar_text = 'dinohp_11' or $actionbar_text = 'dinohp_12' or $actionbar_text = 'dinohp_13' or $actionbar_text = 'dinohp_14' or $actionbar_text = 'dinohp_15' or $actionbar_text = 'dinohp_16' or $actionbar_text = 'dinohp_17' or $actionbar_text = 'dinohp_18' or $actionbar_text = 'dinohp_19' or $actionbar_text = 'dinohp_20' or $actionbar_text = 'dinohp_21' or $actionbar_text = 'dinohp_22' or $actionbar_text = 'dinohp_23' or $actionbar_text = 'dinohp_24' or $actionbar_text = 'dinohp_25' or $actionbar_text = 'dinohp_clear')"
+  },
+  
+  "root_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": {
+          "health_icon_factory@health_icon_factory": {}
+        }
+      }
+    ]
+  }
+}

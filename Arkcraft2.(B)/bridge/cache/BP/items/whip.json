@@ -1,0 +1,239 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\ArkCraft B\\items\\whip.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "09aebb0a_ba3a_4a80_9d73_fe4634023ca9",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "arkcraft:whip",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:max_stack_size": 1,
+							"minecraft:hand_equipped": true,
+							"minecraft:on_use": {
+								"on_use": {
+									"event": "ark:roar_special"
+								}
+							},
+							"minecraft:icon": {
+								"texture": "whip"
+							},
+							"minecraft:cooldown": {
+								"category": "ender_pearl",
+								"duration": 5
+							},
+							"minecraft:display_name": {
+								"value": "§6ArkCraft | §3Whip"
+							}
+						},
+						"events": {
+							"ark:roar_special": {
+								"run_command": {
+									"command": [
+										"event entity @e[family=tamed,r=5] ark:roar_special"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "arkcraft:whip",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "arkcraft:whip",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:hand_equipped": true,
+								"minecraft:on_use": {
+									"on_use": {
+										"event": "ark:roar_special"
+									}
+								},
+								"minecraft:icon": {
+									"texture": "whip"
+								},
+								"minecraft:cooldown": {
+									"category": "ender_pearl",
+									"duration": 5
+								},
+								"minecraft:display_name": {
+									"value": "§6ArkCraft | §3Whip"
+								}
+							},
+							"events": {
+								"ark:roar_special": {
+									"run_command": {
+										"command": [
+											"event entity @e[family=tamed,r=5] ark:roar_special"
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "1",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"data": "true",
+								"key": "minecraft:hand_equipped"
+							},
+							{
+								"key": "minecraft:on_use",
+								"is_minified": true,
+								"children": {
+									"on_use": {
+										"event": "ark:roar_special"
+									}
+								}
+							},
+							{
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "whip"
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:hand_equipped": true,
+									"minecraft:on_use": {
+										"on_use": {
+											"event": "ark:roar_special"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "whip"
+									},
+									"minecraft:cooldown": {
+										"category": "ender_pearl",
+										"duration": 5
+									},
+									"minecraft:display_name": {
+										"value": "§6ArkCraft | §3Whip"
+									}
+								},
+								"key": "minecraft:cooldown",
+								"is_minified": true,
+								"children": {
+									"category": "ender_pearl",
+									"duration": 5
+								}
+							},
+							{
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {
+									"value": "§6ArkCraft | §3Whip"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "arkcraft:whip",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:hand_equipped": true,
+								"minecraft:on_use": {
+									"on_use": {
+										"event": "ark:roar_special"
+									}
+								},
+								"minecraft:icon": {
+									"texture": "whip"
+								},
+								"minecraft:cooldown": {
+									"category": "ender_pearl",
+									"duration": 5
+								},
+								"minecraft:display_name": {
+									"value": "§6ArkCraft | §3Whip"
+								}
+							},
+							"events": {
+								"ark:roar_special": {
+									"run_command": {
+										"command": [
+											"event entity @e[family=tamed,r=5] ark:roar_special"
+										]
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"ark:roar_special": {
+										"run_command": {
+											"command": [
+												"event entity @e[family=tamed,r=5] ark:roar_special"
+											]
+										}
+									}
+								},
+								"key": "ark:roar_special",
+								"children": [
+									{
+										"open": {
+											"run_command": {
+												"command": [
+													"event entity @e[family=tamed,r=5] ark:roar_special"
+												]
+											}
+										},
+										"key": "run_command",
+										"children": [
+											{
+												"open": {
+													"command": [
+														"event entity @e[family=tamed,r=5] ark:roar_special"
+													]
+												},
+												"key": "command",
+												"is_minified": true,
+												"children": [
+													"event entity @e[family=tamed,r=5] ark:roar_special"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

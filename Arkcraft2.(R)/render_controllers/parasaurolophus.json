@@ -1,0 +1,59 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.parasaurolophus": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.textura_0",
+            "Texture.textura_1",
+            "Texture.textura_2"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "borrarmontura": "!query.is_saddled" }
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.variant]" ]
+    },
+    "controller.render.parasaurolophus_saddle": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.saddle"
+          ]
+        }
+      },
+      "geometry": "Geometry.saddle",
+      "part_visibility": [ 
+        { "*": "query.is_saddled" }
+      ],
+      "materials": [ { "*": "Material.default"} ,
+ { "pintable0": "Material.saddle"} ,
+ { "pintable1": "Material.saddle"} ,
+ { "pintable2": "Material.saddle"}
+    ],
+      "textures": [ "Array.skin[query.variant]" ]
+    },
+    "controller.render.parasaurolophus_chest": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.chest"
+         ]
+        }
+      },
+      "geometry": "Geometry.chest",
+      "part_visibility": [ 
+        { "*": "query.is_chested" }
+      ],
+      "materials": [ { "*": "Material.default"} 
+    ],
+      "textures": [ "Array.skin[query.variant]" ]
+    }
+  }
+}

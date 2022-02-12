@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:lymantria",
+      "materials": { "default": "spider"
+      },
+      "textures": {
+        "lymantria1": "textures/entity/lymantria/lymantria1",
+        "lymantria2": "textures/entity/lymantria/lymantria2",
+        "lymantria3": "textures/entity/lymantria/lymantria3",
+        "lymantria4": "textures/entity/lymantria/lymantria4"
+      },
+      "geometry": {
+        "default": "geometry.lymantria"
+      },
+	"sound_effects": {
+	"volando2": "mob.lymantria.fly"
+	},
+      "animations": {
+        "move": "animation.lymantria.walk",
+        "estatica": "animation.lymantria.estatica",
+        "volando": "animation.lymantria.fly",
+        "volando2": "animation.lymantria.volando2",
+        "sit": "animation.lymantria.sit"
+},
+      "animation_controllers": [
+        { "general": "controller.animation.lymantria.general" }
+      ],
+      "render_controllers": [ "controller.render.lymantria" ],
+      "spawn_egg": {
+        "base_color": "#fc2ff5",
+        "overlay_color": "#d1fcfc"
+      }
+    }
+  }
+}

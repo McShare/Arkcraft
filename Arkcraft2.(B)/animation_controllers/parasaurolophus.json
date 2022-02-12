@@ -1,0 +1,17 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.parasaurolophus_general": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "berry_farmer":"(!query.is_baby)"
+                        },
+                        { "radar_mode_on":"(!query.is_baby) && (query.is_sitting)"
+                        }
+                    ]
+                    
+       }}}}      
+}

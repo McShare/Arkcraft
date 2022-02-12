@@ -1,0 +1,97 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pegomastax_move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"cuello1": {
+					"rotation": [25, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"head2": {
+					"position": [0, -3, -2]
+				},
+				"leg1": {
+					"rotation": ["math.cos(query.anim_time * 60.17) *  80.0", 0, 0]
+				},
+				"leg7": {
+					"rotation": ["math.cos(query.anim_time * 60.17) * -80.0", 0, 0]
+				},
+				"cuello2": {
+					"rotation": [10, 0, 0],
+					"position": [0, -2, -1]
+				}
+			}
+		},
+		"animation.pegomastax_default": {
+			"loop": true,
+			"bones": {
+				"bone5": {
+					"rotation": ["math.cos(query.anim_time * 58.17) *  5.0", 0, 0]
+				},
+				"body": {
+					"position": [0, "math.cos(query.anim_time * 200.17) * 0.5", 0]
+				},
+				"bone8": {
+					"rotation": ["math.cos(query.anim_time * 200.17) * 3.5", 0, 0],
+					"position": [0, 0, -0.9]
+				},
+				"leg1": {
+					"position": [0, "-math.cos(query.anim_time * 200.17) * 0.5", 0]
+				},
+				"leg7": {
+					"position": [0, "-math.cos(query.anim_time * 200.17) * 0.5", 0]
+				},
+				"leg3": {
+					"rotation": ["math.cos(query.anim_time * 200.17) * 3.5", 0, 0],
+					"position": [0, 0, -0.9]
+				},
+				"leg2": {
+					"rotation": ["math.cos(query.anim_time * 200.17) * 3.5", 0, 0],
+					"position": [0, 0, -0.9]
+				},
+				"cola": {
+					"rotation": ["math.cos(query.anim_time * 200.17) * 3.5", 0, 0],
+					"position": [0, 0, -0.9]
+				}
+			}
+		},
+		"animation.pegomastax.sit": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-42.5, 0, 0],
+					"position": [0, -11, 0]
+				},
+				"bone8": {
+					"rotation": [45, 0, 0],
+					"position": [0, -3, 13]
+				},
+				"head2": {
+					"rotation": [42.5, 0, 0],
+					"position": [0, -3, 0]
+				},
+				"leg1": {
+					"rotation": [-22.11771, -13.34855, -24.26701]
+				},
+				"leg7": {
+					"rotation": [-31.59341, 12.60837, 8.19252]
+				},
+				"leg3": {
+					"rotation": [35, 0, 0]
+				},
+				"leg2": {
+					"rotation": [35, 0, 0]
+				},
+				"cuello1": {
+					"rotation": [30, 0, 0]
+				},
+				"cola": {
+					"rotation": [45, 0, 0],
+					"position": [0, -3, 13]
+				}
+			}
+		}
+	}
+}

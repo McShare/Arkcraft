@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:cofre_con_cuerdas"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "23",
+      "21"
+    ],
+   "key": {
+      "1": {
+        "item": "minecraft:chest"
+      },
+      "2": {
+        "item": "minecraft:lead"
+      },
+      "3": {
+        "item": "minecraft:leather"
+      }
+    },
+    "result": {
+      "item": "arkcraft:cofre_con_cuerdas"
+    }
+  }
+}

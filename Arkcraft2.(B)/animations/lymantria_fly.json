@@ -1,0 +1,116 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.lymantria_volador": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+    "/effect @s slow_falling 10000 254 true"
+            ]
+      }
+    },
+    "animation.lymantria_velocidad_0": {
+     "animation_length": 0.4,
+      "loop": true,
+      "timeline": {
+        "0.155": [
+    "/effect @s levitation 2 2 true"
+            ],
+        "0.25": [
+    "/effect @s levitation 0 254 true"
+            ]
+      }
+    },
+    "animation.lymantria_velocidad_1": {
+      "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.1": [
+        "/effect @s levitation 0 254 true"
+            ],
+        "0.35": [
+        "/effect @s levitation 1 5 true"
+            ]
+      }
+    },
+    "animation.lymantria_velocidad_2": {
+      "animation_length": 0.35,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+        "/effect @s levitation 0 254 true"
+            ],
+        "0.25": [
+        "/effect @s levitation 1 7 true"
+            ]
+      }
+    },
+    "animation.lymantria_velocidad_3": {
+      "animation_length": 0.35,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+        "/effect @s levitation 0 254 true"
+            ],
+        "0.25": [
+        "/effect @s levitation 1 9 true"
+            ]
+      }
+    },
+    "animation.lymantria_velocidad_4": {
+      "animation_length": 0.2,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+        "/effect @s levitation 0 254 true"
+            ],
+        "0.15": [
+        "/effect @s levitation 1 12 true"
+            ]
+      }
+    },
+    "animation.lymantria_fly1": {
+     "animation_length": 31.0,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "@s minecraft:salvaje_volando"
+            ],
+        "25.0": [
+ "@s minecraft:salvaje_no_volando_random"
+            ],
+        "30.0": [
+ "@s minecraft:salvaje_volando_random"
+            ]
+      }
+    },
+    "animation.lymantria_fly2": {
+     "animation_length": 30.0,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "@s minecraft:salvaje_volando_random"
+            ]
+      }
+    },
+    "animation.ataque_especial_recovery_animation": {
+     "animation_length": 21.0,
+      "loop": true,
+      "timeline": {
+        "20.0": [
+ "@s minecraft:sin_ataque_especial"
+            ]
+      }
+    },
+    "animation.ataque_especial_recovery_animation_domado": {
+     "animation_length": 5.0,
+      "loop": true,
+      "timeline": {
+        "3.0": [
+ "@s minecraft:sin_ataque_especial_domado"
+            ]
+      }
+    }
+  }
+}

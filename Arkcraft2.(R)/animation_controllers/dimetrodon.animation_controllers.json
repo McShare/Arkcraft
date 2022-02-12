@@ -1,0 +1,104 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.dimetrodon.look_at_target" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "look_at_target" ]
+				}
+			}
+		},
+		"controller.animation.dimetrodon.move" : {
+			"initial_state" : "walking",
+			"states" : {
+				"walking" : {
+					"animations" : [ { "walk" : "query.modified_move_speed" } ],
+					"transitions" : [
+						{
+							"attack" : "query.is_delayed_attacking == 1"
+						}
+					]
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+          "blend_transition" : 0.1,
+          "blend_via_shortest_path" : true,
+					"transitions" : [
+						{
+							"walking" : "!query.is_delayed_attacking == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.dimetrodon.general" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+					    "default",
+						{
+	 						"move" : "(query.modified_move_speed)"}
+					],
+					"transitions" : [
+						{
+							"sit" : "query.is_sitting"
+						},
+						{
+							"is_swimming" : "variable.swim_amount > 0.0"
+						}
+					],
+					"blend_transition": 0.2
+				},
+			"is_swimming" : {
+
+					"animations" : [
+			    "default",
+					    "swimming" ],
+					"transitions" : [
+						{
+							"sit" : "query.is_sitting"
+						},
+						{
+							"default" : "variable.swim_amount <= 0.0"
+						}
+					]
+				},
+			"sit" : {
+
+					"animations" : [
+			    "default",
+					    "sit" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_sitting"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.dimetrodon.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"attacking" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "variable.attack_time < 0.1"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"default" : {
+					"transitions" : [
+						{
+							"attacking" : "variable.attack_time >= 0.1"
+						}
+					]
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:termic_wool",
+   "category": "item"
+  },
+  "components": {
+   "minecraft:icon": "termic_wool",
+   "minecraft:render_offsets": "termic_wool"
+  }
+ }
+}

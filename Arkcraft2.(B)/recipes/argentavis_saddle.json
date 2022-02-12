@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:argentavis_saddle"
+    },
+
+    
+    "tags": [ "smithy" ],
+     "pattern": [
+       "232",
+       "141",
+       "141"
+    ],
+   "key": {
+      "1": {
+        "item": "minecraft:horsearmorleather"
+      },
+      "2": {
+        "item": "minecraft:iron_block"
+      },
+      "3": {
+        "item": "minecraft:saddle"
+      },
+      "4": {
+        "item": "minecraft:lead"
+      }
+    },
+    "result": {
+      "item": "arkcraft:argentavis_saddle"
+    }
+  }
+}
+
+

@@ -1,0 +1,75 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.hesperornis.look_at_target": {
+			"loop": true
+		},
+		"animation.hesperornis.general.v1.0": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": ["90.0 - this", 0, 0]
+				}
+			}
+		},
+		"animation.hesperornis.baby_transform": {
+			"loop": true,
+			"animation_length": 15.201,
+			"bones": {
+				"head": {
+					"position": [6, -4, 0],
+					"scale": 2
+				}
+			}
+		},
+		"animation.hesperornis_default": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": ["30.0", 0, 0]
+				},
+				"pico1": {
+					"rotation": ["math.cos(query.anim_time * 58.17) *  2.0", 0, 0]
+				},
+				"pico2": {
+					"rotation": ["math.cos(query.anim_time * 58.17) * -2.0", 0, 0]
+				},
+				"wing0": {
+					"rotation": ["math.cos(query.anim_time * 58.17) *  10.0", 0, 0]
+				},
+				"wing1": {
+					"rotation": ["math.cos(query.anim_time * 58.17) * -10.0", 0, 0]
+				}
+			}
+		},
+		"animation.hesperornis.general": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": ["-this", 0, 0]
+				},
+				"wing0": {
+					"rotation": [0, 0, "variable.wing_flap - this"]
+				},
+				"wing1": {
+					"rotation": [0, 0, "-variable.wing_flap - this"]
+				}
+			}
+		},
+		"animation.hesperornis.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["math.cos(query.anim_time * 48.17) *  50.0", 0, 0]
+				},
+				"leg1": {
+					"rotation": [0, 0, "math.cos(query.anim_time * 48.17) * -50.0"]
+				},
+				"leg2": {
+					"rotation": [0, 0, "-math.cos(query.anim_time * 48.17) * -50.0"]
+				}
+			}
+		}
+	}
+}

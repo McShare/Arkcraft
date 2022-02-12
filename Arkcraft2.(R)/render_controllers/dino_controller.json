@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.dino_saddle": {
+			"geometry": "Geometry.saddle",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"part_visibility": [
+				{
+					"*": "query.is_saddled"
+				}
+			],
+			"textures": [
+				"Texture.saddle"
+			]
+		}
+	}
+}

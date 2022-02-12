@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.achatina": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.caracol_1",
+            "Texture.caracol_2",
+            "Texture.caracol_3",
+            "Texture.caracol_4", 
+            "Texture.caracol_5"
+]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+ { "caparazon": "!query.mark_variant == 1"},
+ { "head": "!query.mark_variant == 1"},
+ { "bone4": "!query.mark_variant == 1"},
+ { "bone": "!query.mark_variant == 1"},
+ { "bone2": "!query.mark_variant == 1"},
+ { "bone": "!query.mark_variant == 1"},
+ { "bone3": "!query.mark_variant == 1"},
+ { "cuerpo4": "!query.mark_variant == 1"},
+ { "cuerpo2": "!query.mark_variant == 1"},
+ { "cuerpo": "!query.mark_variant == 1"},
+ { "encaparazon": "query.mark_variant == 1"}
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.variant]" ]
+    }
+  }
+}

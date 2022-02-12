@@ -1,0 +1,54 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": { 
+    "controller.render.magmasaur_egg": {
+      "geometry": "Geometry.magmasaur_egg",
+      "part_visibility": [ 
+        { "*": "query.variant == 0" }
+      ],
+      "materials": [ { "*": "Material.default"}
+    ], 
+      "textures": [ "Texture.magmasaur_egg" ]
+    },
+    "controller.render.magmasaur": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.magmasaur1",
+            "Texture.magmasaur2",
+             "Texture.magmasaur3",
+             "Texture.magmasaur4"
+           ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": "!query.variant == 0" },
+        { "bone63": "query.is_saddled" },
+        { "montura": "query.is_saddled" }
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.skin_id]" ]
+    },
+    "controller.render.magmasaur_saddle": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.magmasaur1",
+            "Texture.magmasaur2",
+             "Texture.magmasaur3",
+             "Texture.magmasaur4"
+          ]
+        } 
+      },
+      "geometry": "Geometry.saddle",
+      "part_visibility": [ 
+        { "*": "query.is_saddled" }
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.skin_id]" ]
+    }
+  }
+}

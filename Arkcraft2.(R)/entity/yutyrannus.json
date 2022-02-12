@@ -1,0 +1,42 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:yutyrannus",
+      "materials": {
+     "default": "skeleton"
+      },
+      "textures": {
+        "yutyrannusv1": "textures/entity/yutyrannus/yutyrannusv1",
+        "yutyrannusv2": "textures/entity/yutyrannus/yutyrannusv2",
+        "yutyrannusv3": "textures/entity/yutyrannus/yutyrannusv3"
+      },
+      "geometry": {
+        "default": "geometry.yutyrannus"
+      },
+	"sound_effects": {
+	"roarsound": "mob.roarsound"
+	},
+      "animations": {
+       "move": "animation.yutyrannus.move",
+       "sit": "animation.yutyrannus.sit",
+        "roarsound": "animation.yutyrannus.roarsound",
+        "yutyrannus_default_tail": "animation.yutyrannus.default_tail",
+        "yutyrannus_default_jaw": "animation.yutyrannus.default_jaw",
+        "look_at_target": "animation.common.look_at_target",
+        "look_at_target_head": "animation.yutyrannus.look_at_target_head",
+        
+        "casting": "animation.yutyrannus.casting"
+},
+      "animation_controllers": [
+        { "general": "controller.animation.yutyrannus.general" },
+       { "move": "controller.animation.yutyrannus.move" }
+      ],
+      "render_controllers": [ "controller.render.yutyrannus" ],
+      "spawn_egg": {
+        "base_color": "#A34600",
+        "overlay_color": "#CCCCCC"
+      }
+    }
+  }
+}

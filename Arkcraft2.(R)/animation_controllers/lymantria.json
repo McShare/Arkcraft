@@ -1,0 +1,51 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.lymantria.general" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						{
+							"move" : "(query.modified_move_speed)"},
+							"estatica"
+					],
+					"transitions" : [
+						{
+							"volando" : "(!query.is_on_ground) && (!query.is_in_water)"
+						},
+						{
+							"is_sitting" : "(query.is_sitting) && (!query.is_riding) && (query.is_on_ground)"
+						}
+					],
+					"blend_transition": 0.2
+				},
+			"is_sitting" : {
+					"animations" : [       "sit" ,
+"estatica"
+							],
+					"transitions" : [
+						{
+							"volando" : "(!query.is_on_ground) && (!query.is_in_water)"
+						},
+						{
+							"default" : "(!query.is_sitting)"}
+					]
+				},
+			"volando" : {
+					"animations" : [
+	"estatica" ,"volando" , "volando2" 
+					],
+					"transitions" : [
+						{
+							"is_sitting" : "(query.is_sitting) && (query.is_on_ground)"
+						},
+						{
+							"default" : "  (query.is_on_ground)  || (query.is_in_water)"}
+					]
+				}
+			}
+		}
+	}
+}
+

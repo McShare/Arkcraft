@@ -1,0 +1,35 @@
+
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:trilobite",
+      "materials": {
+        "default": "cow"
+      },
+      "textures": {
+        "trilobite1": "textures/entity/trilobite/trilobite1",
+        "trilobite2": "textures/entity/trilobite/trilobite2"
+      },
+      "geometry": {
+        "default": "geometry.trilobite"
+      },
+      "animations": {
+        "move": "animation.trilobite.move"
+      },
+      "scripts": {
+        "animate": [
+          { "move": "query.modified_move_speed" }
+        ]
+      },
+      
+      "render_controllers": [ "controller.render.trilobite" ],
+      "spawn_egg": {
+         "base_color": "#362412",
+        "overlay_color": "#0"
+      }
+    }
+  }
+}
+
+

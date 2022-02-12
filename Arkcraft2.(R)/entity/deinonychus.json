@@ -1,0 +1,70 @@
+
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:deinonychus",
+      "materials": {
+        "default": "cow"
+      },            
+      "textures": {
+        "numero0": "textures/entity/deinonychus/celeste",
+      "numero1": "textures/entity/deinonychus/negro",
+        "numero2": "textures/entity/deinonychus/naranja_1",
+      "numero3": "textures/entity/deinonychus/naranja_2",
+        "numero4": "textures/entity/deinonychus/naranja_3",
+      "numero5": "textures/entity/deinonychus/verde_claro",
+        "numero6": "textures/entity/deinonychus/verde_oscuro",
+      "numero7": "textures/entity/deinonychus/albino",
+        "numero8": "textures/entity/deinonychus/rosa",
+      "numero9": "textures/entity/deinonychus/amarillo",
+        "numero10": "textures/entity/deinonychus/amarillo",
+
+        "numero11": "textures/entity/deinonychus/celeste",
+      "numero12": "textures/entity/deinonychus/negro",
+        "numero13": "textures/entity/deinonychus/naranja_1",
+      "numero14": "textures/entity/deinonychus/naranja_2",
+        "numero15": "textures/entity/deinonychus/naranja_3",
+      "numero16": "textures/entity/deinonychus/verde_claro",
+        "numero17": "textures/entity/deinonychus/verde_oscuro",
+      "numero18": "textures/entity/deinonychus/albino",
+        "numero19": "textures/entity/deinonychus/rosa",
+      "numero20": "textures/entity/deinonychus/amarillo",
+
+        "numero21": "textures/entity/deinonychus/celeste",
+      "numero22": "textures/entity/deinonychus/negro",
+        "numero23": "textures/entity/deinonychus/naranja_1",
+      "numero24": "textures/entity/deinonychus/naranja_2",
+        "numero25": "textures/entity/deinonychus/naranja_3",
+      "numero26": "textures/entity/deinonychus/verde_claro",
+        "numero27": "textures/entity/deinonychus/verde_oscuro",
+      "numero28": "textures/entity/deinonychus/albino",
+        "numero29": "textures/entity/deinonychus/rosa",
+      "numero30": "textures/entity/deinonychus/amarillo"
+      },
+      "geometry": {
+        "default": "geometry.deinonychus"
+      },
+      "animations": {
+        "walk": "animation.deinonychus.move",
+        "baby_transform": "animation.deinonychus.baby_transform",
+      "default":
+        "animation.deinonychus_default",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+       "default",
+          { "walk": "query.modified_move_speed" },
+          { "baby_transform": "query.is_baby" },
+          "look_at_target"
+        ]
+      },
+      "render_controllers": [ "controller.render.deinonychus" ],
+      "spawn_egg": {
+         "base_color": "#4000",
+        "overlay_color": "#66663D"
+      }
+    }
+  }
+}

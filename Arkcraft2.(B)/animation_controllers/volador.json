@@ -1,0 +1,66 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.normal_montando": {
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "transitions": [
+                        {"montando": "(query.is_tamed) && (query.is_in_water)"}
+                    ],
+                    "on_entry":[
+                        "@s minecraft:sentado"
+                    ]
+                    
+                },
+                "montando": {
+                    "transitions": [
+                        {"default": "(query.is_tamed) && (!query.is_in_water)"}
+                    ],
+                    "on_entry":[
+                      "@s minecraft:sentado"
+                    ]
+                }
+            }
+        },
+
+        "controller.animation.volador_en_el_aire": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    
+                    "animations": [
+                        { "velocidad_0":"(query.target_x_rotation >= 10 ) && (query.target_x_rotation <= 50 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_in_water)"},
+                        
+                        { "velocidad_1":"(query.target_x_rotation >= 1 ) && (query.target_x_rotation <= 9 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_in_water)"},
+                        
+                        { "velocidad_2":"(query.target_x_rotation >= 2 ) && (query.target_x_rotation <= 5 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_in_water)"},
+                        
+                        { "velocidad_3":"(query.target_x_rotation >= -15 ) && (query.target_x_rotation <= 1 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_in_water) "},
+                        
+                        { "velocidad_4":"(query.target_x_rotation >= -50 ) && (query.target_x_rotation <= -16 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_in_water)"}
+                    ]
+                }
+            }
+        },
+        "controller.animation.volador_en_el_aire2": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "velocidad_6":"(query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_riding)" }
+                    ]
+                }
+             }
+        },
+        "controller.animation.volador": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                         "volador2" 
+                    ]
+                }
+            }
+        }
+}}

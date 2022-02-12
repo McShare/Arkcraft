@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:montura_para_tres"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+       "1",
+      "c1c",
+       "1"
+    ],
+   "key": {
+      "1": {
+        "item": "arkcraft:medium_herbivore_saddle"
+      },
+      "c": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "result": {
+      "item": "arkcraft:montura_para_tres"
+    }
+  }
+}

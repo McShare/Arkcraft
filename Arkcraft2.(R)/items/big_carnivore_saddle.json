@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:big_carnivore_saddle",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "big_carnivore_saddle",
+   "minecraft:render_offsets": "big_carnivore_saddle"
+  }
+ }
+}

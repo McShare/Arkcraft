@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:quetzal_saddle"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "542",
+      "313",
+      "111"
+    ],
+   "key": {
+      "1": {
+        "item": "minecraft:iron_block"
+      },
+      "2": {
+        "item": "minecraft:lead"
+      },
+      "3": {
+        "item": "minecraft:minecart"
+      },
+      "4": {
+        "item": "minecraft:horsearmorleather"
+      },
+      "5": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "result": {
+      "item": "arkcraft:quetzal_saddle"
+    }
+  }
+}

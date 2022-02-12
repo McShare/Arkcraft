@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.thorny_dragon": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.thorny_dragon1",
+            "Texture.thorny_dragon2"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+ { "montura*": "query.is_saddled"},
+ { "cuerda*": "query.is_saddled"},
+ { "cuerda2*": "query.is_saddled"},
+ { "soporte*": "query.variant == 1 || query.is_saddled"},
+ { "techo0*": "query.variant == 1"},
+ { "techo2*": "query.variant == 1"},
+ { "techo3*": "query.variant == 1"},
+ { "techo5*": "query.variant == 1"},
+ { "techo8*": "query.variant == 1"},
+ { "techo6*": "query.variant == 1"},
+ { "techo7*": "query.variant == 1"},
+ { "techo4*": "query.variant == 1"},
+{ "montura2": "query.variant ==1"}
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.mark_variant]" ]
+    }
+  }
+}

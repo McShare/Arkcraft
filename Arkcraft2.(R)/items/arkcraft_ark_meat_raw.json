@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "arkcraft:ark_meat_raw",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "ark_meat_raw",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+} 

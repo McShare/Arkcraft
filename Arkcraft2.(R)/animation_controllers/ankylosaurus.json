@@ -1,0 +1,47 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.ankylosaurus.general" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ {							"move" : "query.modified_move_speed" },
+                   "look_at_target"
+					],
+					"transitions" : [
+						{
+							"attack" : "query.is_roaring == 1"
+						},
+						{
+							"sit" : "query.is_sitting"
+						}
+					]
+				},
+				
+				"sit" : {
+					"animations" : [ "sit" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_sitting"
+						},
+						{
+							"attack" : "query.is_roaring == 1"
+						}
+					]
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "query.is_roaring == 0"
+						},
+						{
+							"sit" : "(query.is_sitting) && (query.all_animations_finished)"
+						}
+					]
+				}
+			}
+		}
+	}
+}
+ 

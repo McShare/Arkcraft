@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.mega_raptor": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.mega_raptor1",
+            "Texture.mega_raptor2",
+            "Texture.mega_raptor3",
+            "Texture.mega_raptor4",
+            "Texture.mega_raptor5"
+          ]
+        } 
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true }
+    ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

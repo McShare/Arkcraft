@@ -1,0 +1,99 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.velociraptor": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.color_uno",
+            "Texture.color_dos",
+            "Texture.color_tres",
+            "Texture.color_cuatro",
+            "Texture.color_cinco",
+           "Texture.color_seis",
+            "Texture.color_ciete",
+            "Texture.color_ocho",
+            "Texture.color_nueve"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+
+ { "head": "!query.is_saddled"},
+ { "head2": "!query.is_saddled"},
+ { "bocabaja": "!query.is_saddled"},
+ { "bone22": "!query.is_saddled"},
+ { "bone17": "!query.is_saddled"},
+ { "bone23": "!query.is_saddled"},
+ { "bone24": "!query.is_saddled"},
+ { "bocaarriba8": "!query.is_saddled"},
+ { "bone25": "!query.is_saddled"},
+ { "bone26": "!query.is_saddled"},
+ { "bone27": "!query.is_saddled"},
+ { "bocaarriba11": "!query.is_saddled"},
+ { "bocaarriba4": "!query.is_saddled"},
+ { "bocaarriba12": "!query.is_saddled"},
+ { "bone28": "!query.is_saddled"},
+ { "bocaarriba13": "!query.is_saddled"},
+ { "bocaarriba2": "!query.is_saddled"},
+ { "bocaarriba": "!query.is_saddled"},
+ { "bone20": "!query.is_saddled"},
+ { "bone21": "!query.is_saddled"},
+ { "bone5": "!query.is_saddled"},
+ { "bocaarriba3": "!query.is_saddled"},
+ { "bocaarriba14": "!query.is_saddled"},
+ { "bocaarriba5": "!query.is_saddled"},
+ { "bocaarriba6": "!query.is_saddled"},
+ { "bono11": "!query.is_saddled"},
+ { "bone19": "!query.is_saddled"},
+ { "bone40": "!query.is_saddled"},
+ { "bone8": "!query.is_saddled"},
+ { "bone32": "!query.is_saddled"},
+
+
+ { "montura": "query.is_saddled"},
+ { "bone29": "query.is_saddled"},
+ { "montura2": "query.is_saddled"},
+
+ { "head3": "query.is_saddled"},
+ { "head4": "query.is_saddled"},
+ { "bocabaja2": "query.is_saddled"},
+ { "bone7": "query.is_saddled"},
+ { "bone9": "query.is_saddled"},
+ { "bone12": "query.is_saddled"},
+ { "bone41": "query.is_saddled"},
+ { "bone42": "query.is_saddled"},
+ { "bone43": "query.is_saddled"},
+ { "bone44": "query.is_saddled"},
+ { "bocaarriba18": "query.is_saddled"},
+ { "bocaarriba19": "query.is_saddled"},
+ { "bocaarriba20": "query.is_saddled"},
+ { "bone45": "query.is_saddled"},
+ { "bocaarriba21": "query.is_saddled"},
+ { "bocaarriba22": "query.is_saddled"},
+ { "bocaarriba23": "query.is_saddled"},
+ { "bone46": "query.is_saddled"},
+ { "bone47": "query.is_saddled"},
+ { "bone48": "query.is_saddled"},
+ { "bocaarriba25": "query.is_saddled"},
+ { "bocaarriba26": "query.is_saddled"},
+ { "bocaarriba27": "query.is_saddled"},
+ { "bocaarriba28": "query.is_saddled"},
+ { "bono4": "query.is_saddled"},
+ { "bone49": "query.is_saddled"},
+ { "bone50": "query.is_saddled"},
+ { "bone51": "query.is_saddled"},
+ { "bone52": "query.is_saddled"},
+
+ 
+ { "cofre": "query.mark_variant == 1"}
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

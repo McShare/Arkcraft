@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:montura_de_doedicurus"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "111",
+       "132",
+       "111"
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:barrel"
+      },
+      "3": {
+        "item": "minecraft:horsearmorleather"
+      },
+      "1": {
+        "item": "minecraft:lead"
+      }
+    },
+    "result": {
+      "item": "arkcraft:farmer_saddle"
+    }
+  }
+}
+
+

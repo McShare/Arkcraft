@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.leech": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "leech": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/function leech"
+          ]
+        },
+        "leech": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/function leech"
+          ]
+        }
+      }
+    }
+  }
+}

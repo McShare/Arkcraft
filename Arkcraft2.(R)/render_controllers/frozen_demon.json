@@ -1,0 +1,64 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.frozen_demon": {
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+ { "montura": "query.is_saddled"},
+ { "montura1": "query.is_saddled"},
+ { "bone3": "query.is_saddled"},
+ 
+ { "leg3": "query.variant == 0"},
+ { "leg1": "query.variant == 0"},
+ { "leg2": "query.variant == 0"},
+ { "leg0": "query.variant == 0"},
+ { "bone4": "query.variant == 0"},
+ { "head": "query.variant == 0"},
+ { "bone2": "query.variant == 0"},
+ { "bone": "query.variant == 0"},
+ { "cuerno": "query.variant == 0"},
+ { "body": "query.variant == 0"},
+ 
+ { "body2": "query.variant == 1"},
+ { "bone5": "query.variant == 1"},
+ { "head2": "query.variant == 1"},
+ { "bone6": "query.variant == 1"},
+ { "bone7": "query.variant == 1"},
+ { "leg4": "query.variant == 1"},
+ { "leg5": "query.variant == 1"},
+ { "leg6": "query.variant == 1"},
+ { "leg7": "query.variant == 1"},
+ 
+ { "body3": "query.variant == 2"},
+ { "bone9": "query.variant == 2"},
+ { "head3": "query.variant == 2"},
+ { "cuerno2": "query.variant == 2"},
+ { "bone10": "query.variant == 2"},
+ { "bone11": "query.variant == 2"},
+ { "leg8": "query.variant == 2"},
+ { "leg9": "query.variant == 2"},
+ { "leg10": "query.variant == 2"},
+ { "leg11": "query.variant == 2"},
+ 
+ 
+ { "body4": "query.variant == 3"},
+ { "bone13": "query.variant == 3"},
+ { "head4": "query.variant == 3"},
+ { "cuerno3": "query.variant == 3"},
+ { "bone14": "query.variant == 3"},
+  { "bone15": "query.variant == 3"},
+ { "leg12": "query.variant == 3"},
+ { "leg13": "query.variant == 3"},
+ { "leg14": "query.variant == 3"},
+ { "leg15": "query.variant == 3"}
+ 
+ 
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+"textures": [ "Texture.default" ]
+    }
+  }
+}

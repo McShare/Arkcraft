@@ -1,0 +1,78 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mamut.attack": {
+			"loop": true,
+			"animation_length": 5,
+			"bones": {
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.25": [35, 52.5, 0],
+						"1.75": [-45.6, -40.8, 0],
+						"2.5": [0, 0, 0]
+					}
+				},
+				"trunk": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.0": [-85, 0, 0],
+						"2.5": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"2.0": [0, 3, -9],
+						"2.5": [0, 0, 0]
+					}
+				},
+				"all": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.25": [0, 0, 0],
+						"1.4167": [5, 0, 0],
+						"1.5": [0, 0, 0],
+						"1.9167": [-10, 0, 0],
+						"2.0": [5, 0, 0],
+						"2.0833": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.25": [0, 0, 0],
+						"1.4167": [0, -1, 0],
+						"1.5": [0, 0, 0],
+						"1.9167": [0, 1, 0],
+						"2.0": [0, -1, 0],
+						"2.0833": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.mamut_default": {
+			"loop": true,
+			"animation_length": 6.12,
+			"bones": {
+				"all": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.mamut.move": {
+			"loop": true,
+			"animation_length": 0.52,
+			"bones": {
+				"bone16": {
+					"rotation": ["math.cos(query.modified_distance_moved * 20.0) * 20 * query.modified_move_speed - this", 0, 0]
+				},
+				"bone15": {
+					"rotation": ["math.cos(query.modified_distance_moved * 20.0) * -20 * query.modified_move_speed - this", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["math.cos(query.modified_distance_moved * 20.0) * 20 * query.modified_move_speed - this", 0, 0]
+				},
+				"bone17": {
+					"rotation": ["math.cos(query.modified_distance_moved * 20.0) * -20 * query.modified_move_speed - this", 0, 0]
+				}
+			}
+		}
+	}
+}

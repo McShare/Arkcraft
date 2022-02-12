@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:collar_de_helicoprion"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "xxx",
+      "x1x",
+      "xxx"
+    ],
+    "key": {
+      "1": {
+        "item": "minecraft:lead"
+      },
+      "x": {
+        "item": "arkcraft:helicoprion_tooth"
+      }
+    },
+    "result": {
+      "item": "arkcraft:collar_de_helicoprion"
+    }
+  }
+}

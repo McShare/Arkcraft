@@ -1,0 +1,407 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 30,
+              "wants": [
+                {
+                  "item": "minecraft:crafting_table",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:smithy",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+              "quantity": {
+                "min": 1,
+                "max": 3
+              }
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:whip_t2",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+              "quantity": {
+                "min": 2,
+                "max": 5
+              }
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:pulmonoscorpius_egg",
+                  "quantity": 3
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+              "quantity": {
+                "min": 1,
+                "max": 2
+              }
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:sweet_berries",
+              "quantity": {
+                "min": 15,
+                "max": 24
+              }
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:web",
+                  "quantity": 5
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "arkcraft:carne_maju",
+                  "quantity": 20
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "arkcraft:helicoprion_shard",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 4,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 20
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:pasta_roja",
+                  "quantity": 6
+                }
+              ]
+            }
+            ]
+            },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 4,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 20
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:pasta_verde",
+                  "quantity": 6
+                }
+              ]
+ }
+ ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 4,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 20
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:pasta_bicho",
+                  "quantity": 6
+                }
+              ]
+ }
+ ]},
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 4,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 20
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:pasta_acuatica",
+                  "quantity": 6
+                }
+              ]
+ } 
+ ]
+            
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 20,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:narcoberry_seed",
+                  "quantity": 24
+                }
+              ]
+            }
+            ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 20,
+              "wants": [
+                {
+                  "item": "minecraft:horsearmorleather",
+                  "quantity": 4
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 28
+                }
+              ]
+            }
+            ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 4,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:crossbow",
+                  "quantity": 1
+                }
+              ]
+            }
+            ]},
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 40,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:narcotic_arrow",
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "arkcraft:ainiktozoon_shell",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "arkcraft:bucket_ammonite_poisonshock",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "arkcraft:poisonshock_bowl",
+                  "quantity": 3
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 11
+                }
+              ]
+	 }
+	 ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:bucket_tany",
+                  "quantity": 1
+                }
+              ]
+ }
+ ]},
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 100,
+              "wants": [
+                {
+                  "item": "arkcraft:bucket_mawsonia",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:raw_mawsonia",
+                  "quantity": 2
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "arkcraft:poisonshock_bowl",
+                  "quantity": 3
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    ]
+}
+

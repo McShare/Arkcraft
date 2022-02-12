@@ -1,0 +1,71 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+	    
+    "controller.render.archaeopteryx": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.archaeopteryx_green",
+            "Texture.archaeopteryx_orange",
+            "Texture.archaeopteryx_dark_red"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+"part_visibility": [ 
+        { "*": true },
+ { "leg7": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "leg8": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "leg9": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "leg10": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "bone3": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "bone4": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ 
+ { "leg1": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "leg5": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "leg4": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "leg6": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "bone": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "bone2": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ 
+ { "leg3": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "leg11": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "leg12": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "leg13": "query.is_on_ground || query.is_riding || query.is_in_water"},
+
+ { "leg18": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "leg22": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "leg23": "query.is_on_ground || query.is_riding || query.is_in_water"},
+ { "leg24": "query.is_on_ground || query.is_riding || query.is_in_water"},
+
+ { "leg17": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "leg19": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "leg20": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "leg21": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "bone10": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "bone11": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+
+ { "leg2": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "leg14": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "leg15": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "leg16": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "bone8": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "bone9": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+
+ { "leg25": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "leg26": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "leg27": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "leg28": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+
+ { "leg29": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "leg30": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "leg31": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"},
+ { "leg32": "(!query.is_on_ground) && (!query.is_riding) && (!query.is_in_water)"}
+
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

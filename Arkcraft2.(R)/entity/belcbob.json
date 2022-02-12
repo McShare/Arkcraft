@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:belcbob",
+      "materials": { "default": "spider" },
+      "textures": {
+        "belcbob": "textures/entity/fire_expansion/belcbob",
+        "blue_belcbob": "textures/entity/fire_expansion/blue_belcbob"
+      },
+      "geometry": {
+        "default": "geometry.belcbob"
+      },
+      "animations": {
+        "walk": "animation.quadruped.walk"
+      },
+      "scripts": {
+        "animate": [
+          { "walk": "query.modified_move_speed" }
+        ]
+      },
+      "render_controllers": [ "controller.render.belcbob" ],
+      "spawn_egg": {
+         "base_color": "#DB0000",
+        "overlay_color": "#FF"
+      }
+    }
+  }
+}

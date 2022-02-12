@@ -1,0 +1,36 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.teratophoneus.move" : {
+
+			"loop" : true,
+			"anim_time_update" : "query.modified_distance_moved",
+			"bones": {
+				"leg" : {
+					"rotation" : [ "math.cos(query.anim_time * 45.17) *  25.0", 0.0, 0.0 ]
+				}, 
+				"leg2" : {
+					"rotation" : [ "math.cos(query.anim_time * 45.17) * -25.0", 0.0, 0.0 ]
+				}
+}
+			},
+		"animation.teratophoneus_default" : {
+			"loop" : true,
+			"bones" : {
+
+        "jaw": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) *  -15.0", 0.0, 0.0 ]
+        },
+        "tail": {
+          "rotation": [  0.0,"math.cos(query.anim_time * 58.17) * 5.0", 0.0]
+        },
+        "1": {
+          "rotation": [  0.0,"math.cos(query.anim_time * 58.17) * 5.0", 0.0]
+        },
+        "2": {
+          "rotation": [  0.0,"math.cos(query.anim_time * 58.17) * 15.0", 0.0]
+        }
+			}
+		}
+	}
+}

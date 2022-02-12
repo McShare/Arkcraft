@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:montura_para_mamut"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "xxx",
+      "ccc",
+      "xxx"
+    ],
+   "key": {
+      "x": {
+        "item": "minecraft:horsearmorleather"
+      },
+      "c": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "result": {
+      "item": "arkcraft:big_herbivore_saddle"
+    }
+  }
+}

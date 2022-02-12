@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.trilobite": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.trilobite1",
+            "Texture.trilobite2"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true }
+    ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.variant]" ] 
+    }
+  }
+}

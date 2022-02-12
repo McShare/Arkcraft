@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.mamut": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.sin_cofre",
+            "Texture.con_cofre"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+ { "montura*": "query.is_saddled"},
+ { "montura2*": "query.mark_variant == 1"},
+ { "cofre*": "query.variant == 1"},
+ { "cofre2*": "query.variant == 1"},
+
+ { "Bone7*": "!query.is_baby"},
+ { "Bone8*": "!query.is_baby"},
+ { "Bone10*": "!query.is_baby"},
+ { "Bone9*": "!query.is_baby"},
+
+ { "soporte*": "query.mark_variant == 1 || query.is_saddled"},
+ { "soporte2*": "query.mark_variant == 1 || query.is_saddled"},
+ { "soporte3*": "query.mark_variant == 1 || query.is_saddled"},
+ { "soporte4*": "query.mark_variant == 1 || query.is_saddled"}
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.variant]" ]
+    }
+  }
+}

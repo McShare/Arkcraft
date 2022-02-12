@@ -1,0 +1,36 @@
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.farm": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"walking": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function shl1"
+					]
+				},
+				"walking": {
+					"transitions": [
+						{
+							"default": "query.is_breathing"
+						}
+					],
+					"on_entry": [
+						"/execute @s ~ ~ ~ detect ^ ^ ^1 melon_block 0 fill ^ ^ ^1 ^ ^ ^1 air 0 destroy",
+						"/execute @s ~ ~ ~ detect ^ ^ ^1 pumpkin 0 fill ^ ^ ^1 ^ ^ ^1 air 0 destroy",
+						"/execute @s ~ ~ ~ detect ~ ~ ~ wheat 7 fill ~ ~ ~ ~ ~ ~ wheat 0 destroy",
+						"/execute @s ~ ~ ~ detect ~ ~ ~ carrots 7 fill ~ ~ ~ ~ ~ ~ carrots 0 destroy",
+						"/execute @s ~ ~ ~ detect ~ ~ ~ beetroot 7 fill ~ ~ ~ ~ ~ ~ carrots 0 destroy",
+						"/execute @s ~ ~ ~ detect ~ ~ ~ potatoes 7 fill ~ ~ ~ ~ ~ ~ potatoes 0 destroy",
+						"/tp @e[type=item, r=6] ^ ^0.5 ^2"
+					]
+				}
+			}
+		}
+	}
+}

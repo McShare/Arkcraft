@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:big_carnivore_saddle"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "A A",
+       "cAA",
+       " cc"
+    ],
+   "key": {
+      "c": {
+        "item": "minecraft:iron_block"
+      },
+      "A": {
+        "item": "minecraft:horsearmorleather"
+      }
+    },
+    "result": {
+      "item": "arkcraft:big_carnivore_saddle"
+    }
+  }
+}
+
+

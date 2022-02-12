@@ -1,0 +1,25 @@
+{
+    "format_version": "1.8.0",
+    "animation_controllers": {
+        "controller.animation.mamut": {
+            "initial_state" : "default",
+            "states": {
+                "golpe_mamut": {
+                    "transitions": [
+                        {
+                            "default": "(query.is_delayed_attacking == 0)"
+                        }
+                    ],
+                     "animations": [
+     "golpe_mamut_2"
+                        ]
+                },
+                "default":{
+                    "transitions": [
+                        {"golpe_mamut": "(query.is_delayed_attacking == 1) && (!query.is_tamed)"}
+                    ]
+                } 
+            }
+        }
+    }
+}

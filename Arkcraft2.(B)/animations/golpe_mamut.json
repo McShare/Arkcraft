@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.golpe_mamut_2": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": { 
+        "0.0": [
+"/replaceitem entity @a[r=4] slot.armor.chest 1 air 1",
+"/playsound random.break @a[r=4]",
+"/playsound random.break @a[r=4]",
+"/title @a[r=4] actionbar §eU lost ur chestplate",
+"/playanimation @e[type=arkcraft:mamut, r=10] attack"
+            ]
+      }
+    }
+  }
+}

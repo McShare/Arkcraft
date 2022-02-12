@@ -1,0 +1,52 @@
+
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "arkcraft:qilinyu",
+      "population_control": "animal"
+    },
+    "conditions": [
+	  {
+        "minecraft:spawns_underwater": {},
+        "minecraft:spawns_on_surface": {},
+
+        "minecraft:weight": {
+          "default": 20
+        },
+        "minecraft:density_limit": {
+          "surface": 20,
+          "underground": 0
+        },
+        "minecraft:herd": {
+          "min_size": 2,
+          "max_size": 5
+        },
+
+        "minecraft:biome_filter": [
+          { "test": "has_biome_tag", "operator": "==", "value": "ocean"}
+        ]
+      },
+	  {
+        "minecraft:spawns_underwater": {},
+        "minecraft:spawns_on_surface": {},
+
+        "minecraft:weight": {
+          "default": 20
+        },
+        "minecraft:density_limit": {
+          "surface": 20,
+          "underground": 0
+        },
+        "minecraft:herd": {
+          "min_size": 2,
+          "max_size": 5
+        },
+
+        "minecraft:biome_filter": [
+          { "test": "has_biome_tag", "operator": "==", "value": "river"}
+        ]
+      }
+    ]
+  }
+}

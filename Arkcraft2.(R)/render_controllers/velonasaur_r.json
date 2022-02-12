@@ -1,0 +1,33 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+  
+    "controller.render.velonasaur_r_egg": {
+       "geometry": "Geometry.velonasaur_egg",
+      "part_visibility": [ 
+        { "*": "query.skin_id == 0" }
+      ],
+      "materials": [ { "*": "Material.default"}
+    ], 
+      "textures": [ "Texture.velonasaur_egg" ]
+    },
+    "controller.render.velonasaur_r": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.velonasaur_r1",
+            "Texture.velonasaur_r2",
+            "Texture.velonasaur_r3",
+            "Texture.copper"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true }
+    ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

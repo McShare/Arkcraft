@@ -1,0 +1,371 @@
+{
+ "resource_pack_name": "arkcraft",
+ "texture_name": "atlas.items",
+   "texture_data": {
+		"hook_arkcraft": {
+			"textures": [
+				"textures/items/grappling_crossbow/hook_arkcraft"
+			]
+		},
+		"grappling_crossbow_arkcraft": {
+			"textures": [
+				"textures/items/grappling_crossbow/grappling_crossbow_arkcraft"
+			]
+		},
+		"ark_crossbow": {
+			"textures": [
+				"textures/items/ark_crossbow"
+			]
+		},
+		"ark_crossbow_charged": {
+			"textures": [
+				"textures/items/ark_crossbow_charged"
+			]
+		},
+		"whip": {
+			"textures": [
+				"textures/items/latigo"
+			]
+		},
+		"jeringa_r": {
+			"textures": [
+				"textures/items/jeringa_r"
+			]
+		},
+		"narcotic_arrow": {
+			"textures": [
+				"textures/items/narcotic_arrow"
+			]
+		},
+	"elasmotherium_trophy": {
+      "textures": "textures/items/elasmotherium_trophy"
+ },
+    "hln_a_item": {
+      "textures": "textures/items/hln_a_item"
+   },
+    "pelt_helmet": {
+      "textures": "textures/items/armadura/pelt_helmet"
+    },
+      "arkcraft_narcoberry": {
+      "textures": "textures/items/arkcraft_narcoberry"
+    },
+    "ark_meat_cooked": {
+      "textures": "textures/items/pamobile/arkcraft_ark_meat_cooked"
+    },
+    "termic_wool": {
+      "textures": "textures/items/termic_wool"
+    },
+    "ark_meat_raw": {
+      "textures": "textures/items/pamobile/arkcraft_ark_meat_raw"
+    },
+    "pelt_chestplate": {
+      "textures": "textures/items/armadura/pelt_chestplate"
+    },
+    "pelt_leggings": {
+      "textures": "textures/items/armadura/pelt_leggings"
+    },
+    "pelt_boots": {
+      "textures": "textures/items/armadura/pelt_boots"
+    },
+    "cloth_helmet": {
+      "textures": "textures/items/armadura/cloth_helmet"
+    },
+    "cloth_chestplate": {
+      "textures": "textures/items/armadura/cloth_chestplate"
+    },
+    "cloth_leggings": {
+      "textures": "textures/items/armadura/cloth_leggings"
+    },
+    "cloth_boots": {
+      "textures": "textures/items/armadura/cloth_boots"
+    },
+    "egg_ammonite_friend": {
+      "textures": "textures/items/egg_ammonite_friend"
+    },
+    "bucket_trilobite": {
+      "textures": "textures/items/bucket_trilobite"
+    },
+    "raw_mawsonia": {
+      "textures": "textures/items/raw_mawsonia"
+    },
+    "bucket_mawsonia": {
+      "textures": "textures/items/bucket_mawsonia"
+    },
+    "bucket_tany": {
+      "textures": "textures/items/bucket_tany"
+    },
+    "bucket_camaron": {
+      "textures": "textures/items/bucket_camaron"
+    },
+	"poisonshock_bowl": {
+      "textures": "textures/items/poisonshock_bowl"
+ },
+	"bucket_ammonite_friend": {
+      "textures": "textures/items/bucket_ammonite_friend"
+ },
+	"bucket_ammonite_poisonshock": {
+      "textures": "textures/items/bucket_ammonite_poisonshock"
+    },
+  "dodo_egg": {
+   "textures": "textures/items/huevos/dodo_egg"
+ },
+  "whip_t1": {
+   "textures": "textures/items/herramientas/whip_t1"
+ },
+  "whip_t2": {
+   "textures": "textures/items/herramientas/whip_t2"
+ },
+  "whip_t3": {
+   "textures": "textures/items/herramientas/whip_t3"
+ },
+  "whip_t4": {
+   "textures": "textures/items/herramientas/whip_t4"
+ },
+  "baryonyx_egg": {
+   "textures": "textures/items/huevos/baryonyx_egg"
+ },
+  "pasta_roja": {
+   "textures": "textures/items/pasta_roja"
+ },
+  "pasta_verde": {
+   "textures": "textures/items/pasta_verde"
+ },
+  "pasta_bicho": {
+   "textures": "textures/items/pasta_bicho"
+ },
+  "pasta_acuatica": {
+   "textures": "textures/items/pasta_acuatica"
+ },
+  "carne_maju": {
+   "textures": "textures/items/carne_maju"
+ },
+  "raw_prime_meat": {
+   "textures": "textures/items/raw_prime_meat"
+ },
+  "cooked_prime_meat": {
+   "textures": "textures/items/cooked_prime_meat"
+ },
+  "escargot_slime": {
+   "textures": "textures/items/escargot_slime"
+ },
+  "helicoprion_shard": {
+   "textures": "textures/items/helicoprion_shard"
+ },
+  "sopa_de_carne": {
+   "textures": "textures/items/sopa_de_carne"
+ },
+  "helicoprion_tooth": {
+   "textures": "textures/items/helicoprion_tooth"
+ },
+  "ainiktozoon_shell": {
+   "textures": "textures/items/ainiktozoon_shell"
+ },
+  "doedicurus_egg": {
+   "textures": "textures/items/huevos/doedicurus_egg"
+ },
+  "hesperornis_egg": {
+   "textures": "textures/items/huevos/hesperornis_egg"
+ },
+  "yutyrannus_egg": {
+   "textures": "textures/items/huevos/yutyrannus_egg"
+ },
+  "pulmonoscorpius_egg": {
+   "textures": "textures/items/huevos/pulmonoscorpius_egg"
+ },
+  "big_fantasy_saddle": {
+   "textures": "textures/items/montura/big_fantasy_saddle"
+ },
+  "quetzal_platform": {
+   "textures": "textures/items/montura/quetzal_platform"
+ },
+  "quetzal_saddle": {
+   "textures": "textures/items/montura/quetzal_saddle"
+ },
+  "cofre_con_cuerdas": {
+   "textures": "textures/items/montura/cofre_con_cuerdas"
+ },
+  "argentavis_saddle": {
+   "textures": "textures/items/montura/argentavis_saddle"
+ },
+  "big_carnivore_saddle": {
+   "textures": "textures/items/montura/big_carnivore_saddle"
+ },
+  "medium_carnivore_saddle": {
+   "textures": "textures/items/montura/medium_carnivore_saddle"
+},
+  "medium_herbivore_saddle": {
+   "textures": "textures/items/montura/medium_herbivore_saddle"
+ },
+  "montura_de_daeodon": {
+   "textures": "textures/items/montura/montura_de_daeodon"
+ },
+  "montura_de_deinonychus": {
+   "textures": "textures/items/montura/montura_de_deinonychus"
+ },
+  "arthropod_saddle": {
+   "textures": "textures/items/montura/arthropod_saddle"
+ },
+  "big_herbivore_saddle": {
+   "textures": "textures/items/montura/big_herbivore_saddle"
+},
+  "montura_para_mamut": {
+   "textures": "textures/items/montura/montura_para_mamut"
+},
+  "montura_para_tres": {
+   "textures": "textures/items/montura/montura_para_tres"
+},
+ "montura_de_daeodon_tek": {
+   "textures": "textures/items/tek/montura_de_daeodon_tek"
+ },
+  "montura_de_pulmonoscorpius_tek": {
+   "textures": "textures/items/tek/montura_de_pulmonoscorpius_tek"
+ },
+  "elemento": {
+   "textures": "textures/items/tek/elemento"
+ },
+  "detonador": {
+   "textures": "textures/items/explosivos/detonador"
+ },
+  "c4_component": {
+   "textures": "textures/items/explosivos/c4_component"
+ },
+  "placa_de_metal": {
+   "textures": "textures/items/metal/placa_de_metal"
+ },
+  "cementing_paste": {
+   "textures": "textures/items/piedra/cementing_paste"
+ },
+  "aceite": {
+   "textures": "textures/items/aceite/aceite"
+ },
+  "jaula": {
+   "textures": "textures/items/jaulas/jaula"
+ },
+  "galon_de_aceite": {
+   "textures": "textures/items/aceite/galon"
+ },
+  "visor_helmet": {
+   "textures": "textures/items/armadura/visor_helmet"
+ },
+  "collar_de_helicoprion": {
+   "textures": "textures/items/armadura/collar_de_helicoprion"
+ },
+  "bull_helmet": {
+   "textures": "textures/items/armadura/bull_helmet"
+ },
+  "hidden_blade": {
+   "textures": "textures/items/armadura/hidden_blade"
+ },
+  "hero_crown": {
+   "textures": "textures/items/armadura/hero_crown"
+ },
+  "nightvision_glass": {
+   "textures": "textures/items/armadura/nightvision_glass"
+ },
+  "nightvision": {
+   "textures": "textures/items/armadura/nightvision"
+ },
+  "tek_claws": {
+   "textures": "textures/items/armadura/tekclaws"
+ },
+  "toxikarp": {
+   "textures": "textures/items/armadura/toxikarp"
+ },
+  "frost_daggerfish": {
+   "textures": "textures/items/armadura/frost_daggerfish"
+ },
+  "gel": {
+   "textures": "textures/items/aceite/gel"
+ },
+  "binoculars": {
+   "textures": "textures/items/armadura/binoculars"
+ },
+  "life_drainer": {
+   "textures": "textures/items/armadura/life_drainer"
+ },
+  "binoculars2": {
+   "textures": "textures/items/armadura/binoculars2"
+ },
+  "rotten": {
+   "textures": "textures/items/armadura/rotten"
+ },
+  "titanium": {
+   "textures": "textures/items/armadura/hallobar"
+ },
+  "titanium_armor": {
+   "textures": "textures/items/armadura/titaniumarmor"
+ },
+  "titanium_shield": {
+   "textures": "textures/items/armadura/titanium_shield"
+ },
+  "montura_para_thorny_dragon": {
+   "textures": "textures/items/montura/montura_para_thorny_dragon"
+ },
+  "casita_para_thorny_dragon": {
+   "textures": "textures/items/montura/casita_para_thorny_dragon"
+ },
+  "chaos_fish": {
+   "textures": "textures/items/armadura/chaos_fish"
+ },
+  "double_fish": {
+   "textures": "textures/items/armadura/double_cod"
+ },
+  "mom_fish": {
+   "textures": "textures/items/armadura/mom_fish"
+ },
+  "oxygen": {
+   "textures": "textures/items/armadura/oxygen"
+ },
+  "hlapiz": {
+   "textures": "textures/items/armadura/hlapiz"
+ },
+  "farmer_saddle": {
+   "textures": "textures/items/montura/farmer_saddle"
+ },
+  "fire_meat_raw": {
+   "textures": "textures/items/fire_expansion/fire_meat_raw"
+ },
+  "fire_meat_cooked": {
+   "textures": "textures/items/fire_expansion/fire_meat_cooked"
+ },
+  "piel_de_bestia_roja": {
+   "textures": "textures/items/fire_expansion/piel_de_bestia_roja"
+ },
+  "frozen_frame": {
+   "textures": "textures/items/fire_expansion/frozen_frame"
+ },
+  "montura_de_fire_deinonychus": {
+   "textures": "textures/items/fire_expansion/montura_de_fire_deinonychus"
+ },
+  "montura_de_obsidiana": {
+   "textures": "textures/items/fire_expansion/montura_de_obsidiana"
+ },
+  "piel_de_frozen_demon": {
+   "textures": "textures/items/ice_expansion/piel_de_frozen_demon"
+ },
+  "montura_de_frozen_demon": {
+   "textures": "textures/items/ice_expansion/montura_de_frozen_demon"
+ },
+  "montura_de_ice_deinonychus": {
+   "textures": "textures/items/ice_expansion/montura_de_ice_deinonychus"
+ },
+  "ice_powder": {
+   "textures": "textures/items/ice_expansion/ice_powder"
+ },
+  "metal_frame": {
+   "textures": "textures/items/ice_expansion/metal_frame"
+ },
+  "cuerno_de_frozen_demon": {
+   "textures": "textures/items/ice_expansion/cuerno_de_frozen_demon"
+ },
+  "frozen_demon_meat_raw": {
+   "textures": "textures/items/ice_expansion/frozen_demon_meat_raw"
+ },
+  "frozen_demon_soft_meat": {
+   "textures": "textures/items/ice_expansion/frozen_demon_soft_meat"
+ },
+  "frozen_demon_meat_cooked": {
+   "textures": "textures/items/ice_expansion/frozen_demon_meat_cooked"
+ }
+}
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.fire_deinonychus": {
+     "animation_length": 1.0,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "/effect @s speed 5 5 true",
+ "/effect @s slow_falling 5 5 true",
+ "/effect @s jump_boost 5 3 true",
+ "/effect @s resistance 5 0 true"
+            ]
+      }
+    }
+  }
+}

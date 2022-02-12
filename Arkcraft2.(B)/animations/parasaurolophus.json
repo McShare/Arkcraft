@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.berry_farmer": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+    
+            ]
+      }
+    },
+    "animation.radar_mode_on": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+    
+            ]
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "§gArkcraft 2.1 §l§6Behavior",
+		"description": "§3Created by Alex587 and CopperLord44, with help of Halo333, Jellal and EvilRex",
+		"uuid": "19d50184-0153-4627-afd2-90c234a9b14f",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			17,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "d0405307-4e98-46b6-8d6a-248cb5d0a6e4",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "javascript",
+			"uuid": "7ada8507-cfe1-4cbf-818f-e88c3e3d6716",
+			"version": [
+				1,
+				0,
+				0
+			],
+			"entry": "scripts/main.js"
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"1.8.4"
+			]
+		}
+	}
+}

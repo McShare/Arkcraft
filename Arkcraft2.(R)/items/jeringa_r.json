@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:jeringa_r",
+   "category": "item"
+  },
+  "components": {
+   "minecraft:icon": "jeringa_r",
+   "minecraft:render_offsets": "jeringa_r"
+  }
+ }
+}

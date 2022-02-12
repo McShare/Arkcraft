@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.daeodon_saddle_animation": {
+     "animation_length": 1,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+            "@s minecraft:daeodon-on_controlable"
+            ]
+      }
+    }
+  }
+}

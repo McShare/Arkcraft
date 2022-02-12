@@ -1,0 +1,77 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.volador": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+    "/effect @s slow_falling 10000 255 true"
+            ]
+      }
+    },
+    "animation.velocidad_0": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+    "/effect @s levitation 0 254 true"
+            ]
+      }
+    },
+    "animation.velocidad_3": {
+      "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+       "/effect @s levitation 1 9 true"
+            ]
+      }
+    },
+    "animation.velocidad_4": {
+      "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+       "/effect @s levitation 1 11 true"
+            ]
+      }
+    },
+  "animation.velocidad_6": {
+      "animation_length": 3.0,
+      "loop": true,
+      "timeline": {
+        "1.0": [
+       "/effect @s levitation 2 1 true"
+            ]
+      }
+    },
+  "animation.velocidad_5": {
+      "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.3": [
+       "/effect @s levitation 1 5 true"
+            ]
+      }
+    },
+    "animation.velocidad_1": {
+      "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+        "/effect @s levitation 1 5 true"
+            ]
+      }
+    },
+    "animation.velocidad_2": {
+      "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+    "/effect @s levitation 1 7 true"
+            ]
+      }
+    }
+  }
+}

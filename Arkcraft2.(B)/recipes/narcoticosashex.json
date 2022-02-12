@@ -1,0 +1,30 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "arkcraft:narcoticosashex"
+        },
+        "tags": [
+            "smithy"
+        ],
+        "pattern": [
+            "WXW",
+            "WSW"
+        ],
+    "key": {
+      "W": {
+        "item": "arkcraft:narcoberry_seed"
+      },
+      "S": {
+        "item": "minecraft:bowl"
+      },
+      "X": {
+        "item": "minecraft:rotten_flesh"
+      }
+        },
+        "result": {
+            "item": "arkcraft:poisonshock_bowl",
+            "count": 1
+        }
+    }
+}

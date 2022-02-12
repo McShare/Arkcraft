@@ -1,0 +1,28 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "arkcraft:hook"
+        },
+        "tags": [
+            "smithy"
+        ],
+        "pattern": [
+            " X ",
+            "XXX",
+            "WXW"
+        ],
+    "key": {
+      "W": {
+        "item": "minecraft:lead"
+      },
+      "X": {
+        "item": "minecraft:iron_ingot"
+      }
+        },
+        "result": {
+            "item": "arkcraft:hook",
+            "count": 1
+        }
+    }
+}

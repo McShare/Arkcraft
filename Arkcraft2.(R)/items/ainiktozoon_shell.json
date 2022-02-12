@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:ainiktozoon_shell",
+   "category": "item"
+  },
+  "components": {
+   "minecraft:icon": "ainiktozoon_shell",
+   "minecraft:render_offsets": "ainiktozoon_shell"
+  }
+ }
+}

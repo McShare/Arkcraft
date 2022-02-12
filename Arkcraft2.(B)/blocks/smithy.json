@@ -1,0 +1,22 @@
+{
+   "format_version":"1.16.0",
+   "minecraft:block":{
+      "description":{
+         "identifier":"arkcraft:smithy"
+      },
+      "components":{
+
+         "minecraft:loot":"loot_tables/smithy.json",
+         "minecraft:destroy_time":4.0,
+         "minecraft:map_color":"#946A4E",
+         "minecraft:geometry":"geometry.block",
+         "minecraft:crafting_table":{
+            "grid_size":3,
+            "custom_description":"Craft here Saddles",
+            "crafting_tags":[
+               "smithy"
+            ]
+         }
+      }
+   }
+}

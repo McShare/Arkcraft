@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.pulmonoscorpius": {
+      "geometry": "Geometry.default",
+      "part_visibility": [ { 
+          "montura*": "query.is_saddled" ,
+          "bone2*": "query.is_saddled" ,
+          "bone12*": "query.is_saddled" 
+      }
+      ],
+      "materials": [
+        { "*": "Material.default" }
+      ],
+      "textures": [ "Texture.default"  ]
+    }
+  }
+}

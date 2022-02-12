@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "arkcraft:frozen_demon_soft_meat"
+    },
+
+    
+    "tags": ["furnace"],
+    "input": "arkcraft:frozen_demon_soft_meat",
+    "output": "arkcraft:frozen_demon_meat_cooked"
+  }
+  
+}

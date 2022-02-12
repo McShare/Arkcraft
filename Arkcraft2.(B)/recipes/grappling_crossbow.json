@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "arkcraft:grappling_crossbow"
+        },
+        "tags": [
+            "smithy"
+        ],
+        "pattern": [
+            "XXX",
+            "WSX",
+            "WW"
+        ],
+    "key": {
+      "W": {
+        "item": "minecraft:leather"
+      },
+      "S": {
+        "item": "minecraft:crossbow"
+      },
+      "X": {
+        "item": "minecraft:iron_ingot"
+      }
+        },
+        "result": {
+            "item": "arkcraft:grappling_crossbow",
+            "count": 1
+        }
+    }
+}

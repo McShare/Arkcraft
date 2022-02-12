@@ -1,0 +1,31 @@
+//bridge-file-version: #23
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.healthblood": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"blood": "query.health < 50"
+						}
+					],
+					"on_entry": [
+						"/particle arkcraft:blood ~ ~3 ~"
+					]
+				},
+				"blood": {
+					"transitions": [
+						{
+							"default": "query.health < 50"
+						}
+					],
+					"on_entry": [
+						"/particle arkcraft:blood ~ ~3 ~"
+					]
+				}
+			}
+		}
+	}
+}

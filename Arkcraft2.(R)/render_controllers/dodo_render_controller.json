@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.dodos": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.dodo_normal",
+            "Texture.dodo_negro",
+            "Texture.dodo_rojo",
+            "Texture.dodo_verde",
+            "Texture.dodo_cafe",
+            "Texture.dodo_azul",
+            "Texture.dodo_purpura",
+            "Texture.dodo_cyan",
+            "Texture.dodo_grisclaro",
+            "Texture.dodo_gris",
+            "Texture.dodo_rosado",
+            "Texture.dodo_lima",
+            "Texture.dodo_amarillo",
+            "Texture.dodo_celeste",
+            "Texture.dodo_magenta",
+            "Texture.dodo_anaranjado",
+            "Texture.dodo_hueso",
+            "Texture.dodo_negro2",
+            "Texture.dodo_cafe2",
+            "Texture.dodo_azul2",
+            "Texture.dodo_blanco",
+           "Texture.dodo_fluorescente",
+            "Texture.dodo_miel",
+           "Texture.dodo_plumas_rojas",
+            "Texture.dodo_camuflado",
+            "Texture.dodo_esqueleto",
+           "Texture.dodo_crudo",
+            "Texture.dodo_cocido"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        { "*": "Material.default" }
+      ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}
+ 

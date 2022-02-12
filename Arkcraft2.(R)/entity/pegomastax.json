@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:pegomastax",
+      "materials": {
+        "default": "spider"
+      },  
+      "textures": {
+        "variable1": "textures/entity/pegomastax/pegomastax",
+        "variable2": "textures/entity/pegomastax/pegomastax_orange",
+        "variable3": "textures/entity/pegomastax/pegomastax_lima"
+      },
+      "geometry": {
+        "default": "geometry.pegomastax"
+      },
+      "animations": {
+        "walk": "animation.compy_move",
+        "look_at_target": "animation.common.look_at_target",
+        "pegomastax_default":
+        "animation.pegomastax_default",
+        "sit":
+        "animation.pegomastax.sit"
+      },
+      "scripts": {
+        "animate": [
+          { "walk": "query.modified_move_speed" },
+          { "sit": "query.is_sitting" },
+          { "look_at_target": "!query.is_sitting" },
+        "pegomastax_default"
+        ]
+      },
+      "render_controllers": [ "controller.render.pegomastax" ],
+      "spawn_egg": {
+         "base_color": "#8F2B67",
+        "overlay_color": "#130F12"
+      }
+    }
+  }
+}

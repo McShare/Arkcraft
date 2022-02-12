@@ -1,0 +1,35 @@
+
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:elasmotherium",
+      "materials": { "default": "skeleton"
+      },
+      "textures": {
+        "elasmotherium_1": "textures/entity/elasmotherium/elasmotherium",
+        "elasmotherium_2": "textures/entity/elasmotherium/elasmotherium",
+        "elasmotherium_3": "textures/entity/elasmotherium/elasmotherium"
+    },
+      "geometry": {
+        "default": "geometry.elasmotherium"
+
+      },
+      "animations": {
+        "move": "animation.elasmotherium.move",
+        "elasmotherium_base_pose": "animation.elasmotherium.base_pose",
+        "elasmotherium_cargando": "animation.elasmotherium.cargando"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.elasmotherium.move" },
+        { "elasmotherium_cargando": "controller.animation.elasmotherium.cargando" },
+       { "elasmotherium_base_pose": "controller.animation.elasmotherium.base_pose"}
+      ],
+      "render_controllers": [ "controller.render.elasmotherium" ],
+      "spawn_egg": {
+         "base_color": "#7F4F35",
+        "overlay_color": "#FFFFFF"}
+      
+    }
+  }
+}

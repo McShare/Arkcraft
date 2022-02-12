@@ -1,0 +1,44 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:argentavis",
+      "materials": { "default": "cow",
+          "montura":"skeleton"
+      },
+      "textures": {
+        "color_cafe": "textures/entity/argentavis/color_cafe",
+        "color_loro": "textures/entity/argentavis/color_loro",
+        "color_gris": "textures/entity/argentavis/color_gris"
+      },
+      "geometry": {
+       "default": "geometry.argentavis"
+      },
+	"sound_effects": {
+	"volando2": "mob.enderdragon.flap"
+	},
+      "animations": {
+        "move": "animation.argentavis.move",
+        "volando": "animation.argentavis.volando",
+        "volando2": "animation.argentavis.volando2",
+        "is_sitting": "animation.argentavis.is_sitting",
+        "is_riding": "animation.argentavis.is_riding",
+        "general": "animation.argentavis.general",
+        "general2": "animation.argentavis.general2",
+        "look_at_target": "animation.common.look_at_target",
+        "attack": "animation.argentavis.attack"
+},
+      "animation_controllers": [
+        { "general": "controller.animation.argentavis.general" },
+        { "general2": "controller.animation.argentavis.general2" },
+        { "attack": "controller.animation.argentavis.attack" },
+       { "look_at_target": "controller.animation.argentavis.look_at_target" }
+      ],
+      "render_controllers": [ "controller.render.argentavis" ],
+      "spawn_egg": {
+        "base_color": "#733C13",
+        "overlay_color": "#999999"
+      }
+    }
+  }
+}

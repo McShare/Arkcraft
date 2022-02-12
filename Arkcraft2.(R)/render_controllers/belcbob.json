@@ -1,0 +1,33 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.belcbob": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.belcbob",
+            "Texture.blue_belcbob"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": "!query.is_sitting"},
+ { "montura*": "(query.is_saddled) && (!query.is_sitting)"},
+ { "sentado": "query.is_sitting"},
+ { "triangulo0": "query.is_sitting"},
+{"triangulo1": "query.is_sitting"},
+{"linea1": "query.is_sitting"},
+{"linea2": "query.is_sitting"},
+{"linea3": "query.is_sitting"},
+{"linea4": "query.is_sitting"},
+{"linea5": "query.is_sitting"},
+{"linea6": "query.is_sitting"}
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.variant]" ]
+    }
+  }
+}

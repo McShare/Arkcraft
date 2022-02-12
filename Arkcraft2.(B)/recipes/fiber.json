@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:fiber"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "LLL"
+    ],
+    "key": {
+      "L": {
+        "item": "minecraft:wheat_seeds"
+      }
+    },
+    "result": {
+      "item": "minecraft:string"
+    }
+  }
+}

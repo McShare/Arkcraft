@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:oxygen"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "ZZZ",
+      "ZWZ",
+      "ZZZ"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:iron_block"
+      },
+      "Z": {
+        "item": "minecraft:glass"
+      }
+    },
+    "result": {
+      "item": "arkcraft:oxygen",
+      "count":8
+    }
+  }
+}

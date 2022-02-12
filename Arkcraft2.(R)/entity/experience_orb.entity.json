@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:xp_orb",
+      "materials": {
+        "default": "experience_orb"
+      },
+      "textures": {
+        "default": "textures/entity/experience_orb"
+      },
+      "geometry": {
+        "default": "geometry.experience_orb"
+      },
+      "animations": {
+        "face_player": "animation.actor.billboard"
+      },
+      "scripts": {
+        "scale": "0.6",
+        "pre_animation": [
+          "variable.u = 0;",
+          "variable.v = 0;"
+        ],
+        "animate": [
+          "face_player"
+        ]
+      },
+      "render_controllers": [ "controller.render.experience_orb" ]
+    }
+  }
+}

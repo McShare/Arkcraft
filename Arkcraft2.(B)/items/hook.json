@@ -1,0 +1,24 @@
+//by Alex587
+{
+	"format_version": "1.17.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "arkcraft:hook",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 3,
+			"minecraft:allow_off_hand": true,
+			"minecraft:display_name": {
+				"value": "§6ArkCraft | §Hook"
+			},
+			"minecraft:icon": {
+				"texture": "hook_arkcraft"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.arrow"
+			}
+		},
+		"events": {}
+	}
+}

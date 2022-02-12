@@ -1,0 +1,37 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+        "controller.animation.tapejara_in_air": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "velocidad_4_tapejara":"(query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_moving) && (!query.is_riding)" },
+                        { "velocidad_1_tapejara":"(query.target_x_rotation >= 6 ) && (query.target_x_rotation <= 10 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_moving) && (!query.is_riding)" },
+                        { "velocidad_0_tapejara":"(query.target_x_rotation >= 11 ) && (query.target_x_rotation <= 30 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_riding)"},
+                        
+                        { "velocidad_1_tapejara":"(query.target_x_rotation <= -1 ) && (query.target_x_rotation >= -5 ) && (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (query.is_moving) && (!query.is_riding)"},
+                        {
+"velocidad_1_tapejara":"(query.target_x_rotation <= 1 ) && (query.target_x_rotation >= 5 ) && (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (query.is_moving) && (!query.is_riding)"},
+
+                        
+                        { "velocidad_2_tapejara":"(query.target_x_rotation >= 0 ) && (query.target_x_rotation < 1 ) && (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_riding)"},
+                        { "velocidad_2_tapejara":"(query.target_x_rotation <= -7 ) && (query.target_x_rotation >= -15 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_riding)"},
+                        { "velocidad_3_tapejara":"(query.target_x_rotation <= -16 ) && (query.target_x_rotation >= -90 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_riding)"}
+                    ]
+                }
+            }
+        },
+        "controller.animation.tapejara_in_air2": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "velocidad_5":"(query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_riding)" }
+                    ]
+                }
+            }
+        }
+}}

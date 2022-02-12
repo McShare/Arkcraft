@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:helicoprion",
+      "materials": { "default": "skeleton" },
+      "textures": {
+        "default": "textures/entity/helicoprion"
+      },
+      "geometry": {
+        "default": "geometry.helicoprion"
+      },
+      "animations": {
+        "move": "animation.helicoprion.move"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.helicoprion.general" }
+      ],
+      "render_controllers": [ "controller.render.helicoprion" ],
+      "spawn_egg": {
+         "base_color": "#20273A",
+        "overlay_color": "#BE6060"
+      }
+    }
+  }
+}

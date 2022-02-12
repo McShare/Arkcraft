@@ -1,0 +1,68 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+	    
+		"controller.animation.ovis_aries.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"attacking" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "variable.attack_time < 0.1"
+						}
+					]
+				},
+				"default" : {
+					"transitions" : [
+						{
+							"attacking" : "variable.attack_time >= 0.1"
+						}
+					]
+				}
+			}
+		},
+    "controller.animation.ovis_aries.move": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            { "walk": "query.modified_move_speed" },
+            "move"
+          ],
+          "transitions": [
+            { "grazing": "query.is_grazing" }
+          ]
+        },
+        "grazing": {
+          "animations": [ "grazing" ],
+          "transitions": [
+            { "default": "query.all_animations_finished" }
+          ]
+        }
+      }
+    },
+		"controller.animation.ovis_aries.base_pose" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "ovis_aries_base_pose" ]
+				}
+			}
+		},
+		
+		"controller.animation.ovis_aries.angry" : {
+			"initial_state" : "default",
+			"states" : {
+				"angry" : {
+					"animations" : [ "ovis_aries_angry" ]
+				},
+				"default" : {
+					"transitions" : [
+	{"angry":"!query.is_angry" 	}
+			]
+		}
+	}
+}
+}
+}

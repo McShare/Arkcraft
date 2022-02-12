@@ -1,0 +1,74 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.thorny_dragon_corriendo": {
+			"loop": true,
+			"animation_length": 0.48,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg1": {
+					"rotation": ["math.cos(query.modified_distance_moved * 38.17) * 40.22 * query.modified_move_speed - this", 0, 0]
+				},
+				"leg2": {
+					"rotation": ["math.cos(query.modified_distance_moved * 38.17) * -40.22 * query.modified_move_speed - this", 0, 0]
+				},
+				"leg0": {
+					"rotation": ["math.cos(query.modified_distance_moved * 38.17) * -40.22 * query.modified_move_speed - this", 0, 0]
+				},
+				"leg3": {
+					"rotation": ["math.cos(query.modified_distance_moved * 38.17) * 40.22 * query.modified_move_speed - this", 0, 0]
+				}
+			}
+		},
+		"animation.thorny_dragon_default": {
+			"loop": true,
+			"bones": {
+				"cola2": {
+					"rotation": [0, "math.cos(query.anim_time * 58.17) *  10.0", 0]
+				}
+			}
+		},
+		"animation.thorny_dragon.sit": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"position": [0, -4, 0]
+				},
+				"cola2": {
+					"rotation": [15, 0, 0]
+				},
+				"head": {
+					"rotation": [35, 0, 0]
+				},
+				"leg0": {
+					"rotation": [0, 0, 25]
+				},
+				"leg1": {
+					"rotation": [0, 0, -25]
+				},
+				"leg2": {
+					"rotation": [0, 0, -25]
+				},
+				"leg3": {
+					"rotation": [0, 0, 25]
+				},
+				"montura": {
+					"position": [0, -6, 0]
+				},
+				"cuerda": {
+					"position": [0, -7, 0]
+				},
+				"montura2": {
+					"position": [0, -86, 11],
+					"scale": [0.8, 1.9, 2]
+				},
+				"cuerda2": {
+					"position": [0, -7, 0]
+				},
+				"soporte": {
+					"position": [0, -3, 0]
+				}
+			}
+		}
+	}
+}

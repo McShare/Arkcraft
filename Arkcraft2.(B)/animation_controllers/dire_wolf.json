@@ -1,0 +1,10 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.dire_wolf": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "dire_wolf2":"(query.has_rider) && (!query.is_tamed) " }]}}}}}

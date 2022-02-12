@@ -1,0 +1,46 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.quetzal.general" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						{
+							"move" : "(query.modified_move_speed) "},
+							"piso"
+					],
+					"transitions" : [
+						{
+							"volando" : "(!query.is_on_ground) && (!query.is_in_water)"
+						}
+					],
+					"blend_transition": 0.1
+				},
+			"volando" : {
+					"animations" : [ "volando" , "volando2" ],
+					"transitions" : [
+						{
+							"default" : "(query.is_on_ground) || (query.is_in_water)"}
+					]
+				}
+			}
+		},
+		"controller.animation.quetzal.look_at_target" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "look_at_target" ]
+				}}
+				},
+		"controller.animation.quetzal.general2" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "general2" ]
+				}
+}
+}
+	}
+}
+

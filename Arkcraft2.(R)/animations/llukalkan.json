@@ -1,0 +1,87 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.llukalkan.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leftleg": {
+					"rotation": ["math.cos(query.anim_time * 30.17) *  35.0", 0, 0]
+				},
+				"rightleg": {
+					"rotation": ["math.cos(query.anim_time * 30.17) * -35.0", 0, 0]
+				},
+				"head": {
+					"rotation": ["math.cos(query.anim_time * 150.17) * 5.0", "math.cos(query.anim_time * 30.17) * 5.0", "math.cos(query.anim_time * 30.17) * 7.0"]
+				},
+				"arms": {
+					"rotation": ["math.cos(query.anim_time * 100.17) * 30.0", "math.cos(query.anim_time * 20.17) * 5.0", "math.cos(query.anim_time * 30.17) * 5.0"]
+				},
+				"tail": {
+					"rotation": ["math.cos(query.anim_time * 15.17) * 10.0", "math.cos(query.anim_time * 10.17) * 10.0", "math.cos(query.anim_time * 20.17) * 10.0"]
+				},
+				"montura": {
+					"rotation": ["-2+math.cos(query.anim_time * 105.17) *  2.0", 0, 0],
+					"position": [0, "math.cos(query.anim_time * 1.17) *  -0.2", 2.9]
+				},
+				"body": {
+					"rotation": ["math.cos(query.anim_time * 70.17) *  5.0", 0, 0]
+				},
+				"bottomjaw": {
+					"rotation": ["7.5+math.cos(query.anim_time * 105.17) *  10.0", 0, 0]
+				}
+			}
+		},
+		"animation.llukalkan_default": {
+			"loop": true,
+			"bones": {
+				"bottomjaw": {
+					"rotation": ["math.cos(query.anim_time * 58.17) *  -10.0", 0, 0]
+				},
+				"tail": {
+					"rotation": ["math.cos(query.anim_time * 50.17) * 5.0", "math.cos(query.anim_time * 58.17) * 5.0", "math.cos(query.anim_time * 208.17) * 10.0"]
+				},
+				"tail2": {
+					"rotation": [0, "math.cos(query.anim_time * 58.17) * 5.0", 0]
+				},
+				"tail3": {
+					"rotation": [0, "math.cos(query.anim_time * 58.17) * 15.0", 0]
+				},
+				"arms": {
+					"rotation": ["math.cos(query.anim_time * 28.17) * 10.0", "math.cos(query.anim_time * 28.17) * 10.0", "math.cos(query.anim_time * 28.17) * 10.0"]
+				},
+				"bone": {
+					"rotation": ["math.cos(query.anim_time * 400.17) *  0.4", "math.cos(query.anim_time * 50.17) *  0.4", "math.cos(query.anim_time * 50.17) *  0.4"]
+				}
+			}
+		},
+		"animation.llukalkan.sit": {
+			"loop": true,
+			"bones": {
+				"1": {
+					"rotation": [-20, 0, 0]
+				},
+				"body": {
+					"position": [0, -14, 0]
+				},
+				"neck": {
+					"rotation": [35, 0, 0],
+					"position": [0, -2, 5]
+				},
+				"head": {
+					"rotation": [-37.5, 0, 0],
+					"position": [0, -1, 2]
+				},
+				"leftleg": {
+					"rotation": [65.28381, 14.24, -17.6045]
+				},
+				"rightleg": {
+					"rotation": [65.28381, -14.24, 17.60455]
+				},
+				"montura": {
+					"position": [0, -14, 0]
+				}
+			}
+		}
+	}
+}

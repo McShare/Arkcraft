@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:mawsonia",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/mawsonia"
+      },
+      "geometry": {
+        "default": "geometry.mawsonia"
+      },
+      "animations": {
+        "move": "animation.mawsonia.move"
+      },
+      "scripts": {
+        "animate": [
+          { "move": "query.modified_move_speed" }
+        ]
+      },
+      "render_controllers": [ "controller.render.default" ],
+      "spawn_egg": {
+          "base_color": "#232501",
+          "overlay_color": "#8B4713"
+      }
+    }
+  }
+}

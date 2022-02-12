@@ -1,0 +1,102 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.pesado_montando1": {
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "transitions": [
+                        {"montando": "(query.is_tamed) && (query.is_in_water) && (query.mark_variant == 0)"}
+                    ],
+                    "on_entry":[
+                        "@s minecraft:sentado1"
+                    ]
+                    
+                },
+                "montando": {
+                    "transitions": [
+                        {"default": "(query.is_tamed) && (!query.is_in_water) && (query.mark_variant == 0)"}
+                    ],
+                    "on_entry":[
+                      "@s minecraft:sentado1"
+                    ]
+                }
+            }
+        },
+        "controller.animation.pesado_montando2": {
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "transitions": [
+                        {"montando": "(query.is_tamed) && (query.is_in_water) && (query.mark_variant == 1)"}
+                    ],
+                    "on_entry":[
+                        "@s minecraft:sentado2"
+                    ]
+                    
+                },
+                "montando": {
+                    "transitions": [
+                        {"default": "(query.is_tamed) && (!query.is_in_water) && (query.mark_variant == 1)"}
+                    ],
+                    "on_entry":[
+                      "@s minecraft:sentado2"
+                    ]
+                }
+            }
+        },
+        "controller.animation.pesado_montando3": {
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "transitions": [
+                        {"montando": "(query.is_tamed) && (query.is_in_water) && (query.mark_variant == 2)"}
+                    ],
+                    "on_entry":[
+                        "@s minecraft:sentado3"
+                    ]
+                    
+                },
+                "montando": {
+                    "transitions": [
+                        {"default": "(query.is_tamed) && (!query.is_in_water) && (query.mark_variant == 2)"}
+                    ],
+                    "on_entry":[
+                      "@s minecraft:sentado3"
+                    ]
+                }
+            }
+        },
+        
+        "controller.animation.volador_pesado_en_el_aire": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "velocidad_pesada_4":"(query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_moving) && (!query.is_riding)" },
+                        { "velocidad_pesada_1":"(query.target_x_rotation >= 6 ) && (query.target_x_rotation <= 10 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_moving) && (!query.is_riding)" 
+                        },
+                        { "velocidad_pesada_0":"(query.target_x_rotation >= 11 ) && (query.target_x_rotation <= 30 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_moving) && (!query.is_riding)" 
+                        },
+                        { "velocidad_pesada_1":"(query.target_x_rotation >= -5 ) && (query.target_x_rotation <= 5 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_moving) && (!query.is_riding)" 
+                        },
+                        { "velocidad_pesada_2":"(query.target_x_rotation >= -15 ) && (query.target_x_rotation <= -6 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_moving) && (!query.is_riding)" 
+                        },
+                        { "velocidad_pesada_3":"(query.target_x_rotation >= -30 ) && (query.target_x_rotation <= -16 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_moving) && (!query.is_riding)" 
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.volador_pesado_en_el_aire2": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "velocidad_pesada_5":"(query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_riding)" }
+                    ]
+                }
+            }
+        }
+}}

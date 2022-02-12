@@ -1,0 +1,37 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.healer_daeodon": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.sin_cofre",
+            "Texture.con_cofre"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+ { "tek1*": "query.is_baby && query.is_tamed"},
+ { "tek0*": "query.is_baby && query.is_tamed"},
+ { "tekleg0*": "query.is_baby && query.is_tamed"},
+ { "tekleg1*": "query.is_baby && query.is_tamed"},
+ { "tekleg2*": "query.is_baby && query.is_tamed"},
+ { "tekleg3*": "query.is_baby && query.is_tamed"},
+ { "tekosico*": "query.is_baby && query.is_tamed"},
+ { "tekosico2*": "query.is_baby && query.is_tamed"},
+ { "tekosico3*": "query.is_baby && query.is_tamed"},
+ { "rightarmarmadura*": "query.is_saddled"},
+ { "rightarmadura2*": "query.is_saddled"},
+ { "piernaderecharmadura*": "query.is_saddled"},
+ { "leftlegarmadura*": "query.is_saddled"},
+ { "armadura*": "query.is_saddled"}
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.variant]" ]
+    }
+  }
+}

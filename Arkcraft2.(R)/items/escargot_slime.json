@@ -1,0 +1,14 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:escargot_slime",
+   "category": "Equipment"
+  },
+  "components": {
+   "minecraft:icon": "escargot_slime",
+   "minecraft:use_animation": "drink",
+   "minecraft:render_offsets": "escargot_slime"
+  }
+ }
+}

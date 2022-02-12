@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "arkcraft:crossbowark"
+        },
+        "tags": [
+            "smithy"
+        ],
+        "pattern": [
+            "XXX",
+            " SX",
+            "W X"
+        ],
+    "key": {
+      "W": {
+        "item": "minecraft:lead"
+      },
+      "S": {
+        "item": "minecraft:crossbow"
+      },
+      "X": {
+        "item": "minecraft:iron_ingot"
+      }
+        },
+        "result": {
+            "item": "arkcraft:crossbow",
+            "count": 1
+        }
+    }
+}

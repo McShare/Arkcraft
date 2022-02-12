@@ -1,0 +1,42 @@
+
+
+
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:sopa_de_carne"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "X2C",
+      "1B4"
+    ],
+   "key": {
+      "1": {
+        "item": "minecraft:fish"
+      },
+      "4": {
+        "item": "minecraft:brown_mushroom"
+      },
+      "2": {
+        "item": "arkcraft:helicoprion_shard"
+      },
+      "B": {
+        "item": "minecraft:bowl"
+      },
+
+      "C": {
+        "item": "minecraft:carrot"
+      },
+      "X": {
+        "item": "minecraft:baked_potato"
+      }
+    },
+    "result": {
+      "item": "arkcraft:sopa_de_carne"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:thorny_demon",
+      "materials": { 
+"default": "spider" 
+      },
+      "textures": {
+        "default": "textures/entity/thorny/thorny_demon"
+      },
+      "geometry": {
+        "default": "geometry.thorny_demon"
+      },
+      "animations": {
+        "walk": "animation.thorny_dragon_corriendo",
+        "look_at_target": "animation.common.look_at_target",
+        "thorny_dragon_default":
+        "animation.thorny_dragon_default"
+      },
+      "scripts": {
+        "animate": [
+          { "walk": "query.modified_move_speed" },
+          "look_at_target",
+    "thorny_dragon_default"
+        ]
+      },
+      "render_controllers": [ "controller.render.thorny_demon" ],
+      "spawn_egg": {
+         "base_color": "#3D3737",
+        "overlay_color": "#0"
+      }
+    }
+  }
+}

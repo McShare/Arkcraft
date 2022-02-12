@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.ouranosaurus": {
+      "geometry": "Geometry.default",
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.ouranosaurus1",
+            "Texture.ouranosaurus2",
+            "Texture.ouranosaurus_kratos"
+          ]
+        }
+      },
+      "part_visibility": [ 
+        { "*": true },
+        { "montura*": "query.is_saddled" },
+        { "bone57*": "query.is_saddled" }
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

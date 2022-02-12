@@ -1,0 +1,45 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:pulmonoscorpius",
+      "materials": {
+        "default": "spider",
+        "invisible": "spider"
+      },
+   "textures": {
+    "default": "textures/entity/pulmonoscorpius/pulmonoscorpius"
+   },
+   "geometry": {
+    "default": "geometry.pulmonoscorpius"
+   },
+   "render_controllers": [
+    "controller.render.pulmonoscorpius"
+   ],
+   "animations": {
+        "move": "controller.animation.pulmonoscorpius.move",
+       "default_leg_pose_controller": "controller.animation.pulmonoscorpius.base_pose",
+        "attack_controller": "controller.animation.pulmonoscorpius.attack",
+        "walk": "animation.pulmonoscorpius.move",
+        "sit": "animation.pulmonoscorpius.sit",
+        "attack": "animation.pulmonoscorpius.attack",
+        "default": "animation.pulmonoscorpius.default",
+        "look_at_target": "animation.pulmonoscorpius.look_at_target",
+        "default_leg_pose": "animation.pulmonoscorpius.base_pose"
+   },
+   "scripts": {
+        "scale": "2.0",
+    "animate": [
+     "attack_controller",
+     "default_leg_pose_controller",
+     "move"
+    ]
+   },
+      "spawn_egg": {
+         "base_color": "#330000",
+        "overlay_color": "#E01111"
+      }
+  }
+ }
+}
+ 

@@ -1,0 +1,15 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.kentrosaurus": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "kentrosaurus_tamed":"(query.is_tamed)"
+                        },
+                        { "kentrosaurus_wild":"(!query.is_tamed)"
+                        }
+                            
+                    ]}}}}}

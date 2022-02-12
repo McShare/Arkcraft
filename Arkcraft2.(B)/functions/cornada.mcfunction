@@ -1,0 +1,1 @@
+execute @p[r=10] ~ ~ ~ fill ~-1 ~1 ~1 ~1 ~-1 ~-1 air 1 destroy

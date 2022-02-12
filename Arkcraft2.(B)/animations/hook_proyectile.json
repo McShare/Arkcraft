@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.dire_wolf": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+    "/execute @p[r=3] ~ ~ ~ effect @e[type=!player, r=1] slowness 2 1 true"
+            ]
+      }
+    }
+  }
+}

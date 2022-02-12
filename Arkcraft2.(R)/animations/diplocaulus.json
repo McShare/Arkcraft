@@ -1,0 +1,47 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+
+		"animation.diplocaulus.move" : {
+
+			"loop" : true,
+			"anim_time_update" : "query.modified_distance_moved",
+			"bones": {
+				"legbackleft" : {
+					"rotation" : [ "math.cos(query.anim_time * 35.17) * 55.0", "math.cos(query.anim_time * 35.17) * 10.0" ,0.0 ]
+				}, 
+				"legfrontleft" : {
+					"rotation" : [ "math.cos(query.anim_time * 35.17) * -55.0", 0.0, 0.0 ]
+				},
+				"legbackright" : {
+					"rotation" : [ "math.cos(query.anim_time * 35.17) *  55.0", 0.0, 0.0 ]
+				}, 
+				"legfrontright" : {
+					"rotation" : [ "math.cos(query.anim_time * 35.17) * -55.0", "math.cos(query.anim_time * 35.17) * -10.0" ,0.0 ]
+				}
+}
+			},
+		"animation.diplocaulus.nadando" : {
+
+			"loop" : true,
+			"anim_time_update" : "query.modified_distance_moved",
+			"bones": {
+				"tail" : {
+					"rotation" : [0.0, "math.cos(query.anim_time * 35.17) *  -15.0", 0.0 ]
+				}, 
+				"legbackleft" : {
+					"rotation" : [ 45.0, 0.0, 0.0 ]
+				}, 
+				"legfrontleft" : {
+					"rotation" : [55.0, 10.0, 0.0 ]
+				},
+				"legbackright" : {
+					"rotation" : [ 45.0, 0.0, 0.0 ]
+				}, 
+				"legfrontright" : {
+					"rotation" : [ 55.0, 10.0, 0.0 ]
+				}
+}
+			}
+	}
+}

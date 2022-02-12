@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:montura_para_mamut",
+   "category": "item"
+  },
+  "components": {
+   "minecraft:icon": "montura_para_mamut",
+   "minecraft:render_offsets": "montura_para_mamut"
+  }
+ }
+}

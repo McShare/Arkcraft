@@ -1,0 +1,98 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.elasmotherium.move" : {
+			"anim_time_update" : "query.modified_distance_moved",
+			"loop" : true,
+			"bones" : {
+				"pierna1" : {
+					"rotation" : [ "math.cos(query.modified_distance_moved * 38.17) * 20.0 * query.modified_move_speed", 0.0, 0.0  ]
+				}, 
+				"pierna5" : {
+					"rotation" : [ "math.cos(query.modified_distance_moved * 38.17) * -20.0 * query.modified_move_speed", 0.0, 0.0  ]
+				},
+				"pierna4" : {
+					"rotation" : [ "math.cos(query.modified_distance_moved * 38.17) * -20.0 * query.modified_move_speed", 0.0, 0.0  ]
+				},
+				"pierna3" : {
+					"rotation" : [ "math.cos(query.modified_distance_moved * 38.17) * 20.0 * query.modified_move_speed", 0.0, 0.0  ]
+				}
+}
+			},
+		"animation.elasmotherium.base_pose" : {
+			"loop" : true,
+			"bones" : {
+				"pierna1" : {
+					"rotation" : [ "math.cos(query.modified_distance_moved * 38.17) * 20.0 * query.modified_move_speed", 0.0, 0.0  ]
+				}, 
+				"pierna5" : {
+					"rotation" : [ "math.cos(query.modified_distance_moved * 38.17) * -20.0 * query.modified_move_speed", 0.0, 0.0  ]
+				},
+				"pierna4" : {
+					"rotation" : [ "math.cos(query.modified_distance_moved * 38.17) * -20.0 * query.modified_move_speed", 0.0, 0.0  ]
+				},
+				"pierna3" : {
+					"rotation" : [ "math.cos(query.modified_distance_moved * 38.17) * 20.0 * query.modified_move_speed", 0.0, 0.0  ]
+				},
+				"waist" : {
+					"rotation" : [ 0.0, 0.0, 0.0 ]
+				},
+				"head2": {
+					"rotation": 
+					[-20, 0, 0]
+					},
+				"head": {
+					"rotation": 
+					[-20, 0, 0]
+					}
+				}
+		},
+		"animation.elasmotherium.attack": {
+			"loop": true,
+			"bones": {
+				"head": {
+          "rotation": [ -20.0, 0.0 , 0.0 ]
+				}
+			}
+		},
+		"animation.elasmotherium.con_carga" : {
+			"anim_time_update" : "query.modified_distance_moved",
+			"loop" : true,
+			"bones" : {
+				"head": {
+          "rotation": ["query.variant == 2 ? 1.0 : 20.0", 0.0 , 0.0 ]},
+				"pierna1" : {
+					"rotation" : [ "math.cos(query.modified_distance_moved * 38.17) * 40.0 * query.modified_move_speed", 0.0, 0.0  ]
+				},
+					"pierna5":{
+"rotation": [ "math.cos(query.modified_distance_moved * 38.17) * -40.0 * query.modified_move_speed", 0.0, 0.0  ]
+				},
+					"pierna4":{
+"rotation": [ "math.cos(query.modified_distance_moved * 38.17) * -40.0 * query.modified_move_speed", 0.0, 0.0  ]
+				},
+				"pierna3" : {
+					"rotation" : [ "math.cos(query.modified_distance_moved * 38.17) * 40.0 * query.modified_move_speed", 0.0, 0.0  ]
+				}
+			}
+},
+		"animation.elasmotherium.cargando": {
+			"animation_length": 3.08,
+			"loop" : true,
+			"bones": {
+				"pierna5": {
+					"rotation": {
+						"0.0": [
+-25, 0, 0],
+						"1.0": [
+15, 0, 0],
+						"2.0": [
+-25, 0, 0],
+						"3.0": [
+ 15, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}
+

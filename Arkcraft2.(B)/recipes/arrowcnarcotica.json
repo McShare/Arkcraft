@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:narcotic_arrow"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "1X"
+    ],
+    "key": {
+      "1": {
+        "item": "minecraft:arrow"
+      },
+      "X": {
+        "item": "arkcraft:poisonshock_bowl"
+      }
+    },
+    "result": {
+      "item": "arkcraft:narcotic_arrow"
+    }
+  }
+}

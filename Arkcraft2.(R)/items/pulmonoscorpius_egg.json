@@ -1,0 +1,14 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:pulmonoscorpius_egg",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "pulmonoscorpius_egg",
+   "minecraft:use_animation": "eat",
+   "minecraft:render_offsets": "pulmonoscorpius_egg"
+  }
+ }
+}

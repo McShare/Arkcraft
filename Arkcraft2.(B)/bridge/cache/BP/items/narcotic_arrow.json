@@ -1,0 +1,93 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\ArkCraft B\\items\\narcotic_arrow.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "7cbfbc12_769f_4f75_9d44_541657fea8ce",
+	"file_version": 7,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "arkcraft:narcotic_arrow",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:max_stack_size": 64,
+							"minecraft:allow_off_hand": true,
+							"minecraft:display_name": {
+								"value": "§6Ark | §3Narcotic Arrow"
+							},
+							"minecraft:icon": {
+								"texture": "narcotic_arrow"
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.arrow"
+							}
+						},
+						"events": {}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "arkcraft:narcotic_arrow",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:max_stack_size": 64,
+								"minecraft:allow_off_hand": true,
+								"minecraft:display_name": {
+									"value": "§6Ark | §3Narcotic Arrow"
+								},
+								"minecraft:icon": {
+									"texture": "narcotic_arrow"
+								},
+								"minecraft:creative_category": {
+									"parent": "itemGroup.name.arrow"
+								}
+							},
+							"events": {}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "arkcraft:narcotic_arrow",
+							"category": "equipment"
+						}
+					},
+					{
+						"key": "components",
+						"is_minified": true,
+						"children": {
+							"minecraft:max_stack_size": 64,
+							"minecraft:allow_off_hand": true,
+							"minecraft:display_name": {
+								"value": "§6Ark | §3Narcotic Arrow"
+							},
+							"minecraft:icon": {
+								"texture": "narcotic_arrow"
+							},
+							"minecraft:creative_category": {
+								"parent": "itemGroup.name.arrow"
+							}
+						}
+					},
+					{
+						"key": "events",
+						"is_minified": true,
+						"children": {}
+					}
+				]
+			}
+		]
+	}
+}

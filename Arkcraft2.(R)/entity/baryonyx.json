@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:baryonyx",
+      "materials": { "default": "skeleton"
+      },
+      "textures": {
+        "sin_montura": "textures/entity/baryonyx/sin_montura",
+        "con_montura": "textures/entity/baryonyx/con_montura"
+    },
+      "geometry": {
+        "default": "geometry.baryonyxark"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animations": {
+        "move": "animation.baryonyx.move",
+        "walk": "animation.baryonyx.move",
+        "attack": "animation.baryonyx.attack",
+        "casting": "animation.baryonyx.roar",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.baryonyx.move" },
+        { "attack": "controller.animation.baryonyx.attack" },
+        { "casting": "controller.animation.baryonyx.casting" }
+      ],
+      "render_controllers": [ "controller.render.baryonyx" ],
+      "spawn_egg": {
+         "base_color": "#3B3C3E",
+        "overlay_color": "#2E2F53"}
+      
+    }
+  }
+} 

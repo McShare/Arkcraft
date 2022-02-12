@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.pulmonoscorpius_poison_effect": {
+     "animation_length": 1.0,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "/effect @e[r=2] slowness 5 150 true"
+            ],
+        "0.8": [
+ "/kill @e"
+            ]
+      }
+    }
+  }
+} 

@@ -1,0 +1,21 @@
+
+
+
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:hook_proyectile_3",
+      "materials": {
+        "default": "arrow"
+      },
+      "textures": {
+        "default": "textures/entity/velonasaur/espina2"
+      },
+      "geometry": {
+        "default": "geometry.gancho"
+      },
+      "render_controllers": [ "controller.render.arkcraft_default" ]
+    }
+  }
+}

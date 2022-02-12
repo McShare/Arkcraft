@@ -1,0 +1,26 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.lymantria": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.lymantria1",
+            "Texture.lymantria2",
+            "Texture.lymantria3",
+            "Texture.lymantria4"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+ { "montura": "query.is_saddled"}
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

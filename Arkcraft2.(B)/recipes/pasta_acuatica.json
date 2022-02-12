@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "arkcraft:pastaacuatica222"
+        },
+        "tags": [
+            "smithy"
+        ],
+        "pattern": [
+            "XWX",
+            "WSW",
+            "XWX"
+        ],
+    "key": {
+      "W": {
+        "item": "arkcraft:poisonshock_bowl"
+      },
+      "S": {
+        "item": "minecraft:wheat"
+      },
+      "X": {
+        "item": "arkcraft:raw_mawsonia"
+      }
+        },
+        "result": {
+            "item": "arkcraft:pasta_acuatica",
+            "count": 2
+        }
+    }
+}

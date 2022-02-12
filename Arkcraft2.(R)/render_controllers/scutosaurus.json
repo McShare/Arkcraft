@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.scutosaurus": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [ "Texture.default", "Texture.tamed" ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.is_tamed]" ]
+    }
+  }
+}
+ 

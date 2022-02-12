@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:rexskul4"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "  X",
+      " l "
+    ],
+    "key": {
+      "l": {
+        "item": "arkcraft:whip_t3"
+      },
+      "X": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    "result": {
+      "item": "arkcraft:whip_t4"
+    }
+  }
+}

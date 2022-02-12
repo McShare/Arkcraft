@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:jeringa"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "a",
+      "vc"
+    ],
+   "key": {
+      "a": {
+        "item": "minecraft:gold_nugget"
+      },
+      "v": {
+        "item": "minecraft:soul_soil"
+      },
+      "c": {
+        "item": "minecraft:glass_bottle"
+      }
+    },
+    "result": {
+      "item": "arkcraft:jeringa_r",
+"count": 1
+
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.kentrosaurus_wild": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+    "/effect @s resistance 3 0"
+            ]
+      }
+    },
+    "animation.kentrosaurus_tamed": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+    "/effect @s resistance 3 0"
+            ]
+      }
+    }
+  }
+}

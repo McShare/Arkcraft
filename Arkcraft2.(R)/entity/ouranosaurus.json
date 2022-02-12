@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:ouranosaurus",
+      "materials": {
+        "default": "cow"
+      },
+      "textures": {
+        "ouranosaurus1": "textures/entity/ouranosaurus/ouranosaurus1",
+        "ouranosaurus2": "textures/entity/ouranosaurus/ouranosaurus2",
+        "ouranosaurus_kratos": "textures/entity/ouranosaurus/ouranosaurus_kratos"
+      },
+      "geometry": {
+        "default": "geometry.ouranosaurus"
+      },
+      "animations": {
+        "walk": "animation.ouranosaurus.move",
+      "default":
+        "animation.ouranosaurus.idle",
+      "default2":
+        "animation.ouranosaurus.default",
+        "look_at_target": "animation.ouranosaurus.look_at_target_head"
+      },
+      "scripts": {
+        "animate": [
+      "default2",
+       "default",
+          { "walk": "query.modified_move_speed" },
+          "look_at_target"
+        ]
+      },
+      
+      "render_controllers": [ "controller.render.ouranosaurus" ],
+      "spawn_egg": {
+         "base_color": "#f9913b",
+        "overlay_color": "#10f2f2"
+      }
+    }
+  }
+}
+ 

@@ -1,0 +1,483 @@
+#Lo de aca no lo toques que re corto los dedos#
+
+
+chestScreen.header.small=小箱子
+action.interact.fishing=开始钓鱼！
+death.attack.fall=%1$s §6他想要获得灵魂的无限宝石
+effect.badOmen=El brayan y amigos te buscan
+gameMode.changed=您的游戏模式已更新为 %s §a（如果您没有在 MCPEDL 中下载该模组，您就是狗屎。）
+
+item.diamond_sword.name=宝石剑
+item.golden_sword.name=金匕首
+item.wooden_sword.name=木棍
+
+
+
+
+#Lo de aca ARRIBA no lo toques que te corto los dedos#
+
+
+
+
+
+tile.enchanting_table.name=蓝图速写本
+item.enchanted_book.name=§n§l§8蓝图（附魔书）
+
+item.arkcraft:ark_meat_raw.name=§6ArkCraft | §3方舟生肉
+item.arkcraft:ark_meat_cooked.name=§6ArkCraft | §3方舟肉熟
+tile.arkcraft:narcoberry.name=§6ArkCraft | §3黑莓灌木
+item.arkcraft:narcoberry_seed.name=§6ArkCraft | §3黑莓
+
+
+pack.name=ArkCraft B
+pack.description=按
+
+pack.name=ArkCraft R
+pack.description=按
+entity.ark:white_male_rex.name=白色雄性雷克斯
+entity.ark:black_male_rex.name=黑色雄性雷克斯
+entity.ark:red_male_rex.name=红色雄性雷克斯
+entity.ark:black_female_rex.name=黑色雌性雷克斯
+entity.ark:red_female_rex.name=红色雌性雷克斯
+entity.ark:white_female_rex.name=白色雌性雷克斯
+entity.ark:rex.name=雷克斯
+item.spawn_egg.entity.ark:rex.name=雷克斯
+tile.ark:reaper_egg.name=死神蛋
+entity.ark:black_male_reaper.name=黑色男性收割者
+entity.ark:black_female_reaper.name=黑色女死神
+entity.ark:orange_female_spino.name=橙色女性脊柱
+entity.ark:orange_male_spino.name=橙色男性Spino
+entity.ark:green_female_spino.name=绿色女性脊柱
+entity.ark:green_male_spino.name=绿色男性斯皮诺
+entity.ark:white_female_spino.name=白女斯皮诺
+entity.ark:white_male_spino.name=白人男性斯皮诺
+entity.ark:blue_female_spino.name=蓝色女斯皮诺
+entity.ark:blue_male_spino.name=蓝色男性斯皮诺
+item.spawn_egg.entity.ark:spino.name=Spino
+
+item.arkcraft:cofre_con_cuerdas.name=§6ArkCraft | §3带绳子的箱子
+tile.arkcraft:estructura_tek.name=Tek 结构
+tile.arkcraft:metal.name=钢块
+tile.arkcraft:piedra_mejorada.name=强化石
+item.arkcraft:elemento.name=§6ArkCraft | §3元素
+item.arkcraft:cementing_paste.name=水泥浆
+item.arkcraft:placa_de_metal.name=钢板
+item.arkcraft:aceite.name=§6ArkCraft | §3油
+item.arkcraft:galon_de_aceite.name=§6ArkCraft | §3加仑油
+item.arkcraft:detonador.name=§6ArkCraft | §3Polimer“鞭子”
+item.arkcraft:c4_component.name=电子元件
+item.arkcraft:jaula.name=笼子
+item.arkcraft:visor_helmet.name=带面罩的头盔
+item.arkcraft:bull_helmet.name=带角的头盔
+item.arkcraft:hidden_​​blade.name=袖剑
+item.arkcraft:nightvision_glass.name=夜视玻璃
+item.arkcraft:hero_crown.name=英雄皇冠
+item.arkcraft:nightvision.name=夜视
+item.arkcraft:tek_claws.name=§6ArkCraft | §3Tek爪
+item.arkcraft:toxikarp.name=毒药
+item.arkcraft:frost_daggerfish.name=冰霜匕首鱼
+item.arkcraft:gel.name=凝胶
+item.arkcraft:binoculars.name=双筒望远镜 x5
+item.arkcraft:binoculars2.name=§3双筒望远镜 x7
+item.arkcraft:binoculars3.name=§2夜视双筒望远镜 x7
+item.arkcraft:life_drainer.name=§5生命汲取器
+item.arkcraft:rotten.name=腐烂的身体部位
+item.arkcraft:titanium.name=钛
+item.arkcraft:titanium_armor.name=钛胸甲
+item.arkcraft:titanium_shield.name=钛盾
+item.arkcraft:chaos_fish.name=曹鱼
+item.arkcraft:mom_fish.name=妈妈鱼
+item.arkcraft:double_fish.name=双鱼
+item.arkcraft:oxygen.name=§6ArkCraft | §3氧气杖
+item.minecraft:muttonRaw.name=上等肉
+item.arkcraft:hlapiz.name=超现实青金石
+item.arkcraft:escargot_slime.name=§6ArkCraft | §3蜗牛粘液
+item.arkcraft:big_herbivore_saddle.name=§6ArkCraft | §3大型草食动物马鞍
+item.arkcraft:medium_herbivore_saddle.name=§6ArkCraft | §3中型草食动物鞍座
+item.arkcraft:farmer_saddle.name=§6ArkCraft | §3农夫马鞍
+item.arkcraft:montura_para_tres.name=§6ArkCraft | §3平台猛犸象鞍
+item.arkcraft:montura_de_baryonyx.name=§eBaryonyx鞍
+item.arkcraft:baryonyx_egg.name=§6ArkCraft | §3重爪龙蛋
+item.arkcraft:doedicurus_egg.name=§6ArkCraft | §3Doedicurus 蛋
+
+
+tile.arkcraft:smithy.name=§6ArkCraft | §3“史密斯”工作台
+
+item.arkcraft:dodo_egg.name=§6ArkCraft | §3未经发酵的渡渡鸟蛋
+item.spawn_egg.entity.arkcraft:dodo.name=§6ArkCraft | §3渡渡鸟刷怪蛋
+action.hint.exit.arkcraft:dodo=骑渡渡鸟§e（仅限开箱，不可骑乘）
+action.hint.exit.minecraft:chicken=骑马
+entity.arkcraft:dodo.name=渡渡鸟
+
+item.spawn_egg.entity.arkcraft:hesperornis.name=§6ArkCraft | §3 Hesperornis 刷怪蛋
+action.hint.exit.arkcraft:hesperornis=骑着 Hesperornis
+item.arkcraft:hesperornis_egg.name=§6ArkCraft | §3未发酵的橙子蛋
+entity.arkcraft:hesperornis.name=Hesperornis
+
+item.arkcraft:yutyrannus_egg.name=§6ArkCraft | §3未发酵的玉龙蛋
+item.spawn_egg.entity.arkcraft:yutyrannus.name=§6ArkCraft | §3 Yutyrannus 刷怪蛋
+action.hint.exit.arkcraft:yutyrannus=骑着 Yutyrannus
+entity.arkcraft:yutyrannus.name=Yutyrannus
+
+item.arkcraft:pulmonoscorpius_egg.name=§6ArkCraft | §3Pulmonoscorpius 未发酵的鸡蛋
+item.spawn_egg.entity.arkcraft:pulmonoscorpius.name=§6ArkCraft | §3肺蝎鱼卵
+action.hint.exit.arkcraft:pulmonoscorpius=骑术肺蝎
+item.arkcraft:arthropod_saddle.name=§6ArkCraft | §3节肢动物鞍座
+item.arkcraft:montura_de_pulmonoscorpius_tek.name=§ePulmonoscorpius Tek 鞍座
+entity.arkcraft:pulmonoscorpius.name=肺蝎
+entity.arkcraft:veneno.name=毒药
+
+item.spawn_egg.entity.arkcraft:onc4.name=C4
+entity.arkcraft:onc4.name=C4
+
+item.spawn_egg.entity.arkcraft:offc4.name=C4
+entity.arkcraft:offc4.name=C4
+
+item.spawn_egg.entity.arkcraft:ovis_aries.name=§6ArkCraft | §3绵羊白羊产卵
+entity.arkcraft:ovis_aries.name=绵羊白羊座
+
+item.spawn_egg.entity.arkcraft:daeodon.name=§6ArkCraft | §3Daeodon 刷怪蛋
+item.arkcraft:montura_de_daeodon_tek.name=§eDaeodon Tek 的鞍座
+action.hint.exit.arkcraft:daeodon=骑着 Daeodon
+item.arkcraft:montura_de_daeodon.name=§6ArkCraft | §3 Daeodon 的马鞍
+entity.arkcraft:daeodon.name=Daeodon
+
+item.spawn_egg.entity.arkcraft:ongranada.name=手榴弹
+entity.arkcraft:ongranada.name=手榴弹
+
+item.spawn_egg.entity.arkcraft:granada.name=手榴弹
+entity.arkcraft:granada.name=手榴弹
+
+item.spawn_egg.entity.arkcraft:trilobite.name=§6ArkCraft | §3三叶虫刷怪蛋
+entity.arkcraft:trilobite.name=三叶虫
+
+item.spawn_egg.entity.arkcraft:dune_pulmonoscorpius.name=§6ArkCraft | §3沙丘肺蝎虫卵
+entity.arkcraft:dune_pulmonoscorpius.name=沙丘肺蝎
+
+item.spawn_egg.entity.arkcraft:thorny_dragon.name=§6ArkCraft | §3刺龙刷怪蛋
+action.hint.exit.arkcraft:thorny_dragon=骑着刺龙
+entity.arkcraft:thorny_dragon.name=荆棘龙
+item.arkcraft:casita_para_thorny_dragon.name=§6ArkCraft | §3刺龙盔甲
+item.arkcraft:montura_para_thorny_dragon.name=§6ArkCraft | §3刺龙鞍
+
+item.spawn_egg.entity.arkcraft:pegomastax.name=§6ArkCraft | §3Pegomastax 刷怪蛋
+action.hint.exit.arkcraft:pegomastax=骑乘Pegomastax
+entity.arkcraft:pegomastax.name=Pegomastax
+
+item.spawn_egg.entity.arkcraft:compy.name=§6ArkCraft | §3编译刷怪蛋
+entity.arkcraft:compy.name=Compy
+
+item.spawn_egg.entity.arkcraft:archaeopteryx.name=§6ArkCraft | §3始祖鸟产卵
+entity.arkcraft:archaeopteryx.name=始祖鸟
+
+item.spawn_egg.entity.arkcraft:doedicurus.name=§6ArkCraft | §3Doedicurus 刷怪蛋
+action.hint.exit.arkcraft:doedicurus=骑着 Doedicurus
+entity.arkcraft:doedicurus.name=Doedicurus
+item.arkcraft:montura_de_doedicurus.name=§6ArkCraft | §3Doedicurus 鞍座
+
+item.spawn_egg.entity.arkcraft:baryonyx.name=§6ArkCraft | §3重爪龙刷怪蛋
+action.hint.exit.arkcraft:baryonyx=骑乘重爪龙
+entity.arkcraft:baryonyx.name=Baryonyx
+
+item.spawn_egg.entity.arkcraft:elasmotherium.name=§6ArkCraft | §3Elasmotherium 刷怪蛋
+entity.arkcraft:elasmotherium.name=Elasmotherium
+entity.arkcraft:elasmotherium_trophy.name=Elasmotherium Thorphy
+item.spawn_egg.entity.arkcraft:elasmotherium_trophy.name=Elasmotherium Thorphy
+
+item.spawn_egg.entity.arkcraft:thorny_demon.name=§6ArkCraft | §3多刺恶魔刷怪蛋
+entity.arkcraft:thorny_demon.name=荆棘恶魔
+entity.arkcraft:thorny_demon_proyectil.name=唾沫
+
+item.spawn_egg.entity.arkcraft:mega_raptor.name=§6ArkCraft | §3巨型猛禽刷怪蛋
+entity.arkcraft:mega_raptor.name=巨型猛禽
+
+item.spawn_egg.entity.arkcraft:ainictozoon.name=§6ArkCraft | §3Ainictozoon 刷怪蛋
+entity.arkcraft:ainictozoon.name=Ainictozoon
+item.arkcraft:ainiktozoon_shell.name=§6ArkCraft | §3Ainiktozoon 贝壳
+
+item.spawn_egg.entity.arkcraft:alvarezsaurus.name=§6ArkCraft | §3阿尔瓦雷兹龙刷怪蛋
+entity.arkcraft:alvarezsaurus.name=Alvarezsaurus
+item.arkcraft:pasta_roja.name=§6ArkCraft | §3肉食动物粗磨
+item.arkcraft:pasta_bicho.name=§6ArkCraft | §3节肢动物粗磨
+item.arkcraft:pasta_verde.name=§6ArkCraft | §3草食动物粗磨食品
+item.arkcraft:pasta_acuatica.name=§6ArkCraft | §3鱼食粗磨
+item.arkcraft:raw_mawsonia.name=§6ArkCraft | §3生马索尼亚
+
+item.spawn_egg.entity.arkcraft:helicoprion.name=§6ArkCraft | §3 Helicoprion 刷怪蛋
+entity.arkcraft:helicoprion.name=Helicoprion
+item.arkcraft:helicoprion_tooth.name=§6ArkCraft | §3螺旋齿
+item.arkcraft:helicoprion_shard.name=§6ArkCraft | §3鲨鱼鳍
+item.arkcraft:sopa_de_carne.name=§6ArkCraft | §3鱼翅汤
+item.arkcraft:collar_de_helicoprion.name=§6ArkCraft | §3Helicoprion 项链
+
+item.spawn_egg.entity.arkcraft:achatina.name=§6ArkCraft | §3Achatina 刷怪蛋
+entity.arkcraft:achatina.name=Achatina
+
+item.spawn_egg.entity.arkcraft:mamut.name=§6ArkCraft | §3马穆特刷怪蛋
+action.hint.exit.arkcraft:mamut=骑马穆特
+entity.arkcraft:mamut.name=Mamut
+
+
+entity.arkcraft:healer_daeodon.name=治疗者Daeodon
+action.hint.exit.arkcraft:healer_daeodon=骑术治疗师Daeodon
+item.spawn_egg.entity.arkcraft:healer_daeodon.name=治疗者 Daeodon 刷怪蛋
+
+item.spawn_egg.entity.arkcraft:regeneration.name=再生
+entity.arkcraft:regeneration.name=再生
+
+item.spawn_egg.entity.arkcraft:deinonychus.name=§6ArkCraft | §3恐爪龙刷怪蛋
+entity.arkcraft:deinonychus.name=恐爪龙
+action.hint.exit.arkcraft:deinonychus=骑着恐爪龙
+item.arkcraft:medium_carnivore_saddle.name=§6ArkCraft | §3中型食肉动物鞍座
+
+item.spawn_egg.entity.arkcraft:velociraptor.name=§6ArkCraft | §3犹他盗龙刷怪蛋
+action.hint.exit.arkcraft:velociraptor=骑着犹他盗龙
+item.spawn_egg.entity.arkcraft:water_bug.name=§6ArkCraft | §3水虫产卵
+entity.arkcraft:water_bug.name=水虫
+entity.arkcraft:velociraptor.name=犹他盗龙
+item.arkcraft:montura_de_fire_deinonychus.name=§6ArkCraft | §3中型幻想马鞍
+item.arkcraft:big_fantasy_saddle.name=§6ArkCraft | §3大幻想马鞍
+item.arkcraft:frozen_frame.name=冰冻框架
+item.arkcraft:piel_de_bestia_roja.name=§6ArkCraft | §3防火皮革
+item.arkcraft:fire_meat_raw.name=§6ArkCraft | §3生火肉
+item.arkcraft:fire_meat_cooked.name=§6ArkCraft | §3火肉煮熟
+
+item.spawn_egg.entity.arkcraft:belcbob.name=§6ArkCraft | §3Belcbob 刷怪蛋
+entity.arkcraft:belcbob.name=Belcbob
+action.hint.exit.arkcraft:belcbob=骑着 Belcbob
+
+item.spawn_egg.entity.arkcraft:fire_deinonychus.name=火恐爪龙刷怪蛋
+entity.arkcraft:fire_deinonychus=火恐爪龙
+action.hint.exit.arkcraft:fire_deinonychus=骑火恐爪龙
+item.arkcraft:montura_de_ice_deinonychus.name=§e冰恐爪龙鞍
+item.arkcraft:montura_de_frozen_demon.name=§e冰冻恶魔鞍
+item.arkcraft:metal_frame.name=金属框架
+item.arkcraft:cuerno_de_frozen_demon.name=冰冻恶魔角
+item.arkcraft:big_carnivore_saddle.name=§6ArkCraft | §3大食肉动物马鞍
+item.arkcraft:piel_de_frozen_demon.name=冰冻恶魔皮革
+item.arkcraft:ice_powder.name=冰粉
+item.arkcraft:frozen_demon_meat_raw.name=冷冻恶魔肉
+item.arkcraft:frozen_demon_meat_cooked.name=冷冻恶魔肉熟
+item.arkcraft:frozen_demon_soft_meat.name=冷冻恶魔软肉
+item.spawn_egg.entity.arkcraft:frozen_demon.name=冰冻恶魔刷怪蛋
+entity.arkcraft:frozen_demon.name=冰冻恶魔
+action.hint.exit.arkcraft:frozen_demon=骑着冰冻恶魔
+item.spawn_egg.entity.arkcraft:ice_deinonychus.name=§6ArkCraft | §3冰恐爪龙刷怪蛋
+entity.arkcraft:ice_deinonychus.name=冰恐爪龙
+action.hint.exit.arkcraft:ice_deinonychus=骑冰恐爪龙
+item.spawn_egg.entity.arkcraft:utahraptor.name=§6ArkCraft | §3犹他盗龙刷怪蛋
+entity.arkcraft:utahraptor.name=犹他盗龙
+action.hint.exit.arkcraft:carnotaurus=骑食肉牛龙
+item.spawn_egg.entity.arkcraft:carnotaurus.name=§6ArkCraft | §3食肉牛龙产卵
+entity.arkcraft:carnotaurus.name=食肉牛龙
+
+action.hint.exit.arkcraft:majungasaurus=骑马君龙
+item.spawn_egg.entity.arkcraft:majungasaurus.name=§6ArkCraft | §3玛君龙刷怪蛋
+entity.arkcraft:majungasaurus.name=玛君龙
+
+action.hint.exit.arkcraft:llukalkan=骑着 llukalkan
+item.spawn_egg.entity.arkcraft:llukalkan.name=§6ArkCraft | §3Llukalkan刷怪蛋
+entity.arkcraft:majungasaurus.name=Llukalkan
+
+action.hint.exit.arkcraft:teratophoneus=骑着 Teratophoneus
+item.spawn_egg.entity.arkcraft:teratophoneus.name=§6ArkCraft | §3Teratophoneus 刷怪蛋
+entity.arkcraft:teratophoneus.name=Teratophoneus
+
+action.hint.exit.arkcraft:nanuqsaurus=骑着 Nanuqsaurus
+item.spawn_egg.entity.arkcraft:nanuqsaurus.name=§6ArkCraft | §3Nanuqsaurus 刷怪蛋
+entity.arkcraft:nanuqsaurus.name=Nanuqsaurus
+
+action.hint.exit.arkcraft:velonasaur=骑着 Velonasaur
+item.spawn_egg.entity.arkcraft:velonasaur.name=§6ArkCraft | §3 Velonasaur 刷怪蛋
+entity.arkcraft:velonasaur.name=Velonasaur
+
+action.hint.exit.arkcraft:velonasaur_r=骑着 Velonasaur (R VARIANT)
+item.spawn_egg.entity.arkcraft:velonasaur_r.name=§6ArkCraft | §3 Velonasaur (R VARIANT) 刷怪蛋
+entity.arkcraft:velonasaur_r.name=Velonasaur (R VARIANT)
+
+action.hint.exit.arkcraft:dire_wolf=骑着恐狼
+item.spawn_egg.entity.arkcraft:dire_wolf.name=§6ArkCraft | §3恐狼刷怪蛋
+entity.arkcraft:dire_wolf.name=恐狼
+
+entity.arkcraft:espina.name=Espina
+
+action.hint.exit.arkcraft:argentavis=骑着 Argentavis
+item.spawn_egg.entity.arkcraft:argentavis.name=§6ArkCraft | §3Argentavis 刷怪蛋
+entity.arkcraft:argentavis.name=Argentavis
+
+item.arkcraft:rexskull_on_stick.name=驯马鞭（用于骑术和技能）
+item.arkcraft:raw_prime_meat.name=上等生肉
+item.arkcraft:cooked_prime_meat.name=熟肉
+
+
+
+item.arkcraft:argentavis_saddle.name=§6ArkCraft | §3Argentavis 鞍座
+
+item.spawn_egg.entity.arkcraft:dimetrodon.name=§6ArkCraft | §3异齿龙产卵
+entity.arkcraft:dimetrodon.name=Dimetrodon
+
+item.spawn_egg.entity.arkcraft:pikaia.name=§6ArkCraft | §3Pikaia 刷怪蛋
+entity.arkcraft:pikaia.name=Pikaia
+
+item.spawn_egg.entity.arkcraft:diplocaulus.name=§6ArkCraft | §3双叶虫卵
+entity.arkcraft:diplocaulus.name=Diplocaulus
+action.hint.exit.arkcraft:diplocaulus=骑乘Diplocaulus
+
+item.spawn_egg.entity.arkcraft:quetzal.name=§6ArkCraft | §3格查尔刷怪蛋
+entity.arkcraft:quetzal.name=格查尔
+action.hint.exit.arkcraft:quetzal=骑格查尔
+
+item.spawn_egg.entity.arkcraft:magmasaur.name=§6ArkCraft | §3Magmasaur 刷怪蛋
+entity.arkcraft:magmasaur.name=Magmasaur
+action.hint.exit.arkcraft:magmasaur=骑着 Magmasaur
+
+item.spawn_egg.entity.arkcraft:phiomia.name=§6ArkCraft | §3菲奥米亚刷怪蛋
+entity.arkcraft:phiomia.name=Phiomia
+action.hint.exit.arkcraft:phiomia=骑着 Phiomia
+
+item.spawn_egg.entity.arkcraft:irritator.name=§6ArkCraft | §3刺激物刷怪蛋
+entity.arkcraft:irritator.name=刺激者
+action.hint.exit.arkcraft:irritator=骑马刺激者
+
+item.spawn_egg.entity.arkcraft:bulbdog.name=§6ArkCraft | §3Bulbdog Spawn Egg
+entity.arkcraft:bulbdog.name=灯泡狗
+
+item.spawn_egg.entity.arkcraft:lymantria.name=§6ArkCraft | §3Lymantria 刷怪蛋
+entity.arkcraft:lymantria.name=Lymantria
+action.hint.exit.arkcraft:lymantria=骑着 Lymantria
+
+item.spawn_egg.entity.arkcraft:scutosaurus.name=Scutosaurus 刷怪蛋
+entity.arkcraft:scutosaurus.name=Scutosaurus
+
+item.spawn_egg.entity.arkcraft:ankylosaur.name=§6ArkCraft | §3甲龙刷怪蛋
+entity.arkcraft:ankylosaur.name=甲龙
+action.hint.exit.arkcraft:ankylosaur=骑甲龙
+
+item.spawn_egg.entity.arkcraft:skorpiovenator.name=§6ArkCraft | §3Skorpiovenator 刷怪蛋
+entity.arkcraft:skorpiovenator.name=Skorpiovenator
+action.hint.exit.arkcraft:skorpiovenator=骑乘 Skorpiovenator
+
+
+item.spawn_egg.entity.arkcraft:ouranosaurus.name=§6ArkCraft | §3乌拉诺龙产卵
+entity.arkcraft:ouranosaurus.name=Ouranosaurus
+action.hint.exit.arkcraft:ouranosaurus=骑着Ouranosaurus
+
+item.spawn_egg.entity.arkcraft:hln_a.name=§6ArkCraft | §3HLN-A 刷怪蛋
+entity.arkcraft:hln_a.name=HLN-A
+
+item.spawn_egg.entity.arkcraft:tapejara.name=§6ArkCraft | §3Tapejara 刷怪蛋
+entity.arkcraft:tapejara.name=Tapejara
+action.hint.exit.arkcraft:tapejara=骑着 Tapejara
+
+
+item.arkcraft:quetzal_saddle.name=§6ArkCraft | §3格查尔鞍座
+
+item.arkcraft:quetzal_platform.name=§6ArkCraft | §3格查尔平台鞍座
+
+item.spawn_egg.entity.arkcraft:qilinyu.name=§6ArkCraft | §3麒麟鱼刷怪蛋
+entity.arkcraft:qilinyu.name=麒麟鱼
+
+item.spawn_egg.entity.arkcraft:dunkleosteous.name=§6ArkCraft | §3Dunkleosteous 产卵
+entity.arkcraft:dunkleosteous.name=Dunkleosteous
+
+entity.arkcraft:lystrosaurus.name=Lystrosaurus
+item.spawn_egg.entity.arkcraft:lystrosaurus.name=§6ArkCraft | §3Lystrosaurus 刷怪蛋
+
+entity.arkcraft:ammonite_friend.name=菊石
+item.arkcraft:bucket_ammonite_friend.name=§6ArkCraft | §3一桶菊石
+item.spawn_egg.entity.arkcraft:ammonite_friend.name=§6ArkCraft | §3菊石刷怪蛋
+action.interact.scoop=抓住一个桶
+entity.arkcraft:ammonite_poisonshock.name=毒休克菊石
+item.arkcraft:bucket_ammonite_poisonshock.name=§6ArkCraft | §3一桶毒休克菊石
+item.spawn_egg.entity.arkcraft:ammonite_poisonshock.name=§6ArkCraft | §3毒休克菊石刷怪蛋
+
+item.arkcraft:poisonshock_bowl.name=§6ArkCraft | §3毒品碗
+
+action.interact.add_toxic=变成毒药
+action.interact.remove_toxic=去除毒素
+
+item.arkcraft:bucket_trilobite.name=§6ArkCraft | §3三叶虫桶
+item.arkcraft:bucket_mawsonia.name=§6ArkCraft | §3一桶Mawsonia
+item.arkcraft:bucket_tany.name=§6ArkCraft | §3桶坦尼
+item.spawn_egg.entity.arkcraft:mawsonia.name=§6ArkCraft | §3Mawsonia 刷怪蛋
+
+item.arkcraft:carne_maju.name=§6ArkCraft | §3玛君龙肌肉
+
+entity.arkcraft:weejasperaspididae.name=Weejasperaspididae
+item.spawn_egg.entity.arkcraft:weejasperaspididae.name=§6ArkCraft | §3Weejasperaspididae产卵
+
+action.hint.exit.arkcraft:macrauchenia=骑马克劳切尼亚
+item.spawn_egg.entity.arkcraft:macrauchenia.name=§6ArkCraft | §3Macrauchenia 刷怪蛋
+entity.arkcraft:macrauchenia.name=Macrauchenia
+
+item.spawn_egg.entity.arkcraft:mawsonia.name=§6ArkCraft | §3Mawsonia 刷怪蛋
+entity.arkcraft:mawsonia.name=Mawsonia
+
+action.hint.exit.arkcraft:kentrosaurus=骑着剑龙
+item.spawn_egg.entity.arkcraft:kentrosaurus.name=§6ArkCraft | §3肯特龙产卵
+entity.arkcraft:kentrosaurus.name=kentrosaurus
+
+action.hint.exit.arkcraft:parasaurolophus=骑乘栉龙
+item.spawn_egg.entity.arkcraft:parasaurolophus.name=§6ArkCraft | §3副栉龙产卵
+entity.arkcraft:parasaurolophus.name=副栉龙
+
+action.hint.exit.arkcraft:lambeosaurus=骑着羔羊
+item.spawn_egg.entity.arkcraft:lambeosaurus.name=§6ArkCraft | §3羔羊刷怪蛋
+entity.arkcraft:lambeosaurus.name=羔羊龙
+
+item.spawn_egg.entity.arkcraft:tamer.name=§6ArkCraft | §3驯兽师刷怪蛋
+entity.arkcraft:tamer.name=驯兽师
+
+item.spawn_egg.entity.arkcraft:micro_raptor.name=§6ArkCraft | §3微型猛禽产卵
+entity.arkcraft:micro_raptor.name=微型猛禽
+
+item.arkcraft:whip_t1.name=§6ArkCraft | §3木驯马鞭
+item.arkcraft:whip_t2.name=§6ArkCraft | §3驯铁鞭
+item.arkcraft:whip_t3.name=§6ArkCraft | §3钻石驯马鞭
+item.arkcraft:whip_t4.name=§6ArkCraft | §3下界合金驯马鞭
+
+entity.arkcraft:tanyrhinichthys.name=Tanyrhinichthys
+item.spawn_egg.entity.arkcraft:tanyrhinichthys.name=§6ArkCraft | §3Tanyrhinichthys 产卵
+
+ 
+item.arkcraft:pelt_helmet.name=§6ArkCraft | §3毛皮头盔
+item.arkcraft:pelt_boots.name=§6ArkCraft | §3皮靴
+item.arkcraft:pelt_leggings.name=§6ArkCraft | §3毛皮打底裤
+item.arkcraft:pelt_chestplate.name=§6ArkCraft | §3毛皮胸板
+
+item.arkcraft:narcoberry_seed=§6ArkCraft | §3黑莓
+
+item.arkcraft:hln_a_item.name=§6ArkCraft | §3HLN-A（触摸生成）
+
+item.arkcraft:jeringa_r.name=§6ArkCraft | §3注射器 R 型
+
+item.arkcraft:termic_wool.name=§6ArkCraft | §3Termic 羊毛
+
+item.arkcraft:cloth_helmet.name=§6ArkCraft | §3布制头盔
+item.arkcraft:cloth_boots.name=§6ArkCraft | §3布靴
+item.arkcraft:cloth_leggings.name=§6ArkCraft | §3布打底裤
+item.arkcraft:cloth_chestplate.name=§6ArkCraft | §3布胸板
+
+##bridge 文件版本：#7
+pack.name=ArkCraft R
+pack.description=按
+entity.arkcraft:female_rex.name=§6ArkCraft | §3雌性雷克斯
+entity.arkcraft:male_rex.name=§6ArkCraft | §3雄性雷克斯
+entity.arkcraft:male_spino.name=§6ArkCraft | §3男性斯皮诺
+entity.arkcraft:female_spino.name=§6ArkCraft | §3女性斯皮诺
+item.spawn_egg.entity.arkcraft:male_rex.name=§6ArkCraft | §3雄性雷克斯
+item.spawn_egg.entity.arkcraft:female_rex.name=§6ArkCraft | §3雌性雷克斯
+item.spawn_egg.entity.arkcraft:male_spino.name=§6ArkCraft | §3男性斯皮诺
+item.spawn_egg.entity.arkcraft:female_spino.name=§6ArkCraft | §3女性斯皮诺
+item.spawn_egg.entity.arkcraft:female_yutyrannus.name=§6ArkCraft | §3雌性羽暴龙
+item.spawn_egg.entity.arkcraft:male_yutyrannus.name=§6ArkCraft | §3雄性玉暴龙
+entity.arkcraft:female_yutyrannus.name=§6ArkCraft | §3雌性羽暴龙
+entity.arkcraft:male_yutyrannus.name=§6ArkCraft | §3雄性玉暴龙
+item.spawn_egg.entity.arkcraft:male_baryonyx.name=§6ArkCraft | §3雄性巨龙
+item.spawn_egg.entity.arkcraft:female_baryonyx.name=§6ArkCraft | §3雌性巨龙
+entity.arkcraft:female_baryonyx.name=§6ArkCraft | §3雌性巨龙
+entity.arkcraft:male_baryonyx.name=§6ArkCraft | §3雄性巨龙
+item.spawn_egg.entity.arkcraft:female_shadowmane.name=§6ArkCraft | §3女性影鬃
+item.spawn_egg.entity.arkcraft:male_shadowmane.name=§6ArkCraft | §3男性影鬃
+entity.arkcraft:female_shadowmane.name=§6ArkCraft | §3女性影鬃
+entity.arkcraft:male_shadowmane.name=§6ArkCraft | §3男性影鬃

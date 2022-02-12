@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.tamer_clear": {
+     "animation_length": 2.0,
+      "loop": true,
+      "timeline": {
+        "1.0": [
+"/replaceitem entity @s slot.weapon.mainhand 0 arkcraft:whip_t2 1",
+"/replaceitem entity @s slot.weapon.offhand 0 arkcraft:whip_t3 1"
+            ]
+      }
+    }
+  }
+}

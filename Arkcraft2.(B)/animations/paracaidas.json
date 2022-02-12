@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.paracaidas": {
+     "animation_length": 1.0,
+      "loop": true,
+      "timeline": {
+        "0.5": [
+ "/effect @p[r=5] slow_falling 1 10 true",
+"/title @p[r=5] actionbar §eParachuted by Archaeopteryx"
+            ]
+     }
+    }
+  }
+}

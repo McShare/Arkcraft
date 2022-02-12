@@ -1,0 +1,10 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.desmontar": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "desmontar":"!query.is_tamed" }]}}}}}

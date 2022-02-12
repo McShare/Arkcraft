@@ -1,0 +1,10 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.montura_skorpiovenator": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "montura2":"(query.has_rider) && (query.is_saddled) && (!query.is_tamed) " }]}}}}}

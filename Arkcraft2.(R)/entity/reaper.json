@@ -1,0 +1,51 @@
+//bridge-file-version: #41
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "glace:reaper",
+			"materials": {
+				"default": "iron_golem"
+			},
+			"textures": {
+				"default": "textures/entity/reaper"
+			},
+			"geometry": {
+				"default": "geometry.reaper"
+			},
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FF8596"
+			},
+			"render_controllers": [
+				"controller.render.reaper"
+			],
+			"animations": {
+				"sit": "animation.reaper.bury",
+				"walk": "animation.reaper.walk",
+				"shake": "animation.reaper.shake",
+				"bite": "animation.reaper.bite",
+				"setup": "animation.reaper.setup",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"sit": "query.is_sitting"
+					},
+					{
+						"walk": "query.is_moving"
+					},
+					{
+						"shake": "query.is_shaking"
+					},
+					{
+						"bite": "query.is_delayed_attacking"
+					},
+					"setup",
+					"look_at_target"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.turtlefriend": {
+     "animation_length": 1.0,
+      "loop": true,
+      "timeline": {
+        "0.5": [
+"/execute @e[type=turtle, r=10] ~ ~ ~ execute @e[type=arkcraft:ammonite_friend, r=3] ~ ~ ~ title @a[r=5] actionbar §eAmmonite & Turtle making water paths...",
+
+"/execute @e[type=turtle, r=10] ~ ~ ~ execute @e[type=arkcraft:ammonite_friend, r=5] ~ ~ ~ effect @e[r=5] speed 5 0 true"
+            ]
+      }
+    }
+  }
+}

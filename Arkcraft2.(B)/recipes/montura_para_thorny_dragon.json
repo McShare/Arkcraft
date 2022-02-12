@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:montura_para_thorny_dragon"
+    },
+
+     
+    "tags": [ "smithy" ],
+    "pattern": [
+      "111",
+      "222",
+      "343"
+    ],
+    "key": {
+      "1": {
+        "item": "minecraft:wool"
+      },
+      "2": {
+        "item": "minecraft:planks"
+      },
+      "3": {
+        "item": "minecraft:lead"
+      },
+      "4": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "result": {
+      "item": "arkcraft:montura_para_thorny_dragon"
+    }
+  }
+}

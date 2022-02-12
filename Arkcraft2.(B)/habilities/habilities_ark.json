@@ -1,0 +1,44 @@
+{
+    "format_version": "1.18.0",
+    "minecraft:habilities":{
+        "yutyrannus": {
+            "commands": [
+                "effect @e[r=15,family=tamed] strength 20 2 true",
+                "effect @e[r=15,family=player] strength 20 2 true",
+                "event entity @e[r=15,family=wild] ark:avoid"
+            ]
+        },
+        "rex": {
+            "commands": [
+                "effect @e[r=15,family=wild] slowness 20 1 true"
+            ]
+        },
+        "giga": {
+            "commands": [
+                "effect @e[r=15,family=player] regeneration 20 2 true",
+                "effect @e[r=15,family=tamed] regeneration 20 2 true"
+            ]
+        },
+        "shadowmane_female": {
+            "commands": [
+                "effect @e[r=4,family=player] invisibility 30 1 true",
+                "effect @s invisibility 30 1 true",
+                "execute @e[family=wild,r=6] ~ ~ ~ summon lightning_bolt",
+                "effect @e[family=tamed,r=15] invisibility 30 1 true"
+            ]
+        },
+        "shadowmane_male": {
+            "commands": [
+                "effect @e[r=15,family=player] invisibility 30 1 true",
+                "effect @s invisibility 30 1 true",
+                "execute @e[family=wild,r=6] ~ ~ ~ summon lightning_bolt"
+            ]
+        },
+        "allosaurio": {
+            "commands": [
+                "effect @e[r=15,family=allosaur,family=wild] strength 20 2 true",
+                "effect @e[r=15,family=allosaur,family=tamed] strength 20 2 true"
+            ]
+        }
+    }
+}

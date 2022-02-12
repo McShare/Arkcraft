@@ -1,0 +1,80 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.lystrosaurus.flip": {
+			"loop": true,
+			"animation_length": 13,
+			"bones": {
+				"bofy": {
+					"rotation": {
+						"5": [-2.5, -295, 20],
+						"7": [0, 0, 0],
+						"0.0": [0, 0, 0],
+						"2.5": [177.5, -310, 12.5]
+					},
+					"position": {
+						"5": [0, 17, 0],
+						"7": [0, 0, 0],
+						"0.0": [0, 0, 0],
+						"2.5": [0, 17, 0]
+					}
+				}
+			}
+		},
+		"animation.lystrosaurus.flip.sound": {
+			"loop": true,
+			"animation_length": 15,
+			"sound_effects": {
+				"0.0": {
+					"effect": "lystrosaurus_flip"
+				}
+			}
+		},
+		"animation.lystrosaurus.sit": {
+			"loop": true,
+			"animation_length": 2.08,
+			"bones": {
+				"legleft1": {
+					"rotation": [20, 0, 0]
+				},
+				"legright2": {
+					"rotation": [20, 0, 0]
+				},
+				"legleft2": {
+					"rotation": [-37.5, 0, 0]
+				},
+				"legright3": {
+					"rotation": [-37.5, 0, 0]
+				},
+				"head": {
+					"rotation": {
+						"0.0": [17.5, 0, 0],
+						"0.52": [36.5, 0, 0],
+						"1.04": [17.5, 0, 0],
+						"1.56": [36.5, 0, 0],
+						"2.08": [17.5, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.52": [0, 0.3, 0.87],
+						"1.04": [0, 0, 0],
+						"1.56": [0, 0.3, 0.87],
+						"2.08": [0, 0, 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [42.5, 12.5, 5],
+						"1.04": [42.5, -12.5, -4],
+						"2.08": [42.5, 12.5, 5]
+					},
+					"position": [0, -1, -4]
+				},
+				"bofy": {
+					"rotation": [-20, 0, 0],
+					"position": [0, -2, 0]
+				}
+			}
+		}
+	}
+}

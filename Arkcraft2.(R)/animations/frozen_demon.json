@@ -1,0 +1,159 @@
+
+
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.frozen_demon.attack": {
+			"loop": true,
+			"animation_length": 0.52,
+			"bones": {
+				"bone2": {
+					"rotation": {
+						"0.0": [-10, 0, 0],
+						"0.5167": [0, 0, 0]
+					}
+				},
+				"bone": {
+					"rotation": {
+						"0.0": [5, 0, 0],
+						"0.5167": [0, 0, 0]
+					}
+				},
+				"bone7": {
+					"rotation": {
+						"0.0": [-10, 0, 0],
+						"0.5167": [0, 0, 0]
+					}
+				},
+				"bone6": {
+					"rotation": {
+						"0.0": [5, 0, 0],
+						"0.5167": [0, 0, 0]
+					}
+				},
+				"bone11": {
+					"rotation": {
+						"0.0": [-15, 0, 0],
+						"0.5167": [0, 0, 0]
+					}
+				},
+				"bone10": {
+					"rotation": {
+						"0.0": [5, 0, 0],
+						"0.5167": [0, 0, 0]
+					}
+				},
+				"bone15": {
+					"rotation": {
+						"0.0": [-15, 0, 0],
+						"0.5167": [0, 0, 0]
+					}
+				},
+				"bone14": {
+					"rotation": {
+						"0.0": [5, 0, 0],
+						"0.5167": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.frozen_demon_default" : {
+			"loop" : true,
+			"animation_length": 6.12,
+					"bones" : {
+
+        "bone13": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) *  5.0", 0.0, 0.0 ]
+        },
+        "bone5": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) *  -10.0", 0.0, 0.0 ]
+        },
+        "bone4": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) *  -10.0", 0.0, 0.0 ]
+        },
+        "bone9": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) * -5.0", 0.0, 0.0 ]
+        },
+        "bone2": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) *  -10.0", 0.0, 0.0 ]
+        },
+        "bone": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) * 5.0", 0.0, 0.0 ]
+        },
+        "bone7": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) *  -10.0", 0.0, 0.0 ]
+        },
+        "bone6": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) * 5.0", 0.0, 0.0 ]
+        },
+        "bone11": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) *  -15.0", 0.0, 0.0 ]
+        },
+        "bone10": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) * 5.0", 0.0, 0.0 ]
+        },
+        "bone15": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) *  -15.0", 0.0, 0.0 ]
+        },
+        "bone14": {
+          "rotation": [ "math.cos(query.anim_time * 58.17) * 5.0", 0.0, 0.0 ]
+        }
+        }
+		},
+		"animation.frozen_demon.move": {
+
+			"anim_time_update" : "query.modified_distance_moved",
+			"loop" : true,
+			"bones" : {
+				"leg0" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) *  40.0", 0.0, 0.0 ]
+				},
+				"leg1" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) * -40.0", 0.0, 0.0 ]
+				},
+				"leg2" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) * -40.0", 0.0, 0.0 ]
+				},
+				"leg3" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) *  40.0", 0.0, 0.0 ]
+				},
+				"leg7" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) *  40.0", 0.0, 0.0 ]
+				},
+				"leg5" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) * -40.0", 0.0, 0.0 ]
+				},
+				"leg6" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) * -40.0", 0.0, 0.0 ]
+				},
+				"leg4" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) *  40.0", 0.0, 0.0 ]
+				},
+				"leg10" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) *  40.0", 0.0, 0.0 ]
+				},
+				"leg8" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) * -40.0", 0.0, 0.0 ]
+				},
+				"leg11" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) * -40.0", 0.0, 0.0 ]
+				},
+				"leg9" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) *  40.0", 0.0, 0.0 ]
+				},
+				"leg15" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) *  40.0", 0.0, 0.0 ]
+				},
+				"leg13" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) * -40.0", 0.0, 0.0 ]
+				},
+				"leg14" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) * -40.0", 0.0, 0.0 ]
+				},
+				"leg12" : {
+					"rotation" : [ "math.cos(query.anim_time * 38.17) *  40.0", 0.0, 0.0 ]
+				}
+			}
+			}
+	}
+}

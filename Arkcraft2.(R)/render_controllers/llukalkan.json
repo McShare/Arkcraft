@@ -1,0 +1,16 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.llukalkan": {
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+ { "montura*": "query.is_saddled"}
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Texture.default"  ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.macrauchenia_normal": {
+      "geometry": "Geometry.macrauchenia_normal",
+      "part_visibility": [ 
+        { "*": "query.variant == 0" }
+        ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Texture.macrauchenia_normal" ]
+    },
+    "controller.render.macrauchenia_fat": {
+      "geometry": "Geometry.macrauchenia_fat",
+      "part_visibility": [ 
+        { "*": "query.variant == 1" }
+        ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Texture.macrauchenia_fat" ]
+    },
+    "controller.render.macrauchenia_saddle": {
+      "geometry": "Geometry.saddle",
+      "part_visibility": [ 
+        { "*": "query.is_saddled" }
+        ],
+      "materials": [ { "*": "Material.saddle"}
+    ],
+      "textures": [ "Texture.saddle" ]
+    }
+  }
+}

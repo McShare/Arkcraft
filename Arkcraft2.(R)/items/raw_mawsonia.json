@@ -1,0 +1,14 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:raw_mawsonia",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "raw_mawsonia",
+   "minecraft:use_animation": "eat",
+   "minecraft:render_offsets": "raw_mawsonia"
+  }
+ }
+}

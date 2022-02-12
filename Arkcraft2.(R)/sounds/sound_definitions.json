@@ -1,0 +1,1621 @@
+{
+		"mob.rex.idle": {
+			"sounds": [
+				"sounds/rex/rex_idle",
+				"sounds/rex/rex_idle_2",
+				"sounds/rex/rex_idle_3"
+			]
+		},
+		"mob.rex.hurt": {
+			"sounds": [
+				"sounds/rex/rex_hurt"
+			]
+		},
+		"mob.rex.death": {
+			"sounds": [
+				"sounds/rex/rex_death",
+				"sounds/rex/rex_death_2"
+			]
+		},
+		"mob.rex.attack": {
+			"sounds": [
+				"sounds/rex/rex_attack"
+			]
+		},
+		"mob.rex.step": {
+			"sounds": [
+				"sounds/rex/t_rex_step"
+			]
+		},
+		"player_silbido": {
+			"sounds": [
+				"sounds/player/silbido"
+			]
+		},
+		"spino_idle":{
+			"sounds":[
+				"sounds/spino/spinoidle1"
+			]
+		},
+		"spino_hurt": {
+			"sounds":[
+				"sounds/spino/spinosaurus_hurt1",
+				"sounds/spino/spinosaurus_hurt2",
+				"sounds/spino/spinosaurus_hurt3"
+			]
+		},
+		"spino_death": {
+			"sounds": [
+				"sounds/spino/death"
+			]
+		},
+		"spino_attack": {
+			"sounds": [
+				"sounds/spino/spinoattack1",
+				"sounds/spino/spinoattack2",
+				"sounds/spino/spinoattack3",
+				"sounds/spino/spinoattack4"
+			]
+		},
+		"yuty_roar": {
+			"sounds": [
+				"sounds/yuty/yutyrannussound"
+			]
+		},
+		"rex_roar": {
+			"sounds": [
+				"sounds/rex/Rexsound"
+			]
+		},
+		"yuty_attack": {
+			"sounds": [
+				"sounds/yuty/yuty_attack"
+			]
+		},
+		"shadow_dientes": {
+			"sounds": [
+				"sounds/shadowmane_sabertooth/roar"
+			]
+		},
+		"bary_idle": {
+			"sounds": [
+				"sounds/bary/bary_idle"
+			]
+		},
+		"shadow_ambient": {
+			"sounds": [
+				"sounds/shadowmane_sabertooth/shadow_ambient"
+			]
+		},
+		"shadow_step": {
+			"sounds": [
+				"sounds/shadowmane_sabertooth/step_shadow"
+			]
+		},
+  "mob.lymantria.fly": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/lymantria/lymantria_fly",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+      ]
+  },
+  "mob.macrauchenia": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/macrauchenia/macrauchenia1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/macrauchenia/macrauchenia2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/macrauchenia/macrauchenia3",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "sound.lystrosaurus_flip": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/flip/lystrosaurus_flip",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "sound.attack_mode": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/attack_mode/sound_0",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "mob.parasaurolophus.death": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/parasaurolophus/parasaurolophus_death1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/parasaurolophus/parasaurolophus_death2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+"mob.reaper.hurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/reaper/hurt1",
+				"sounds/mob/reaper/hurt2",
+				"sounds/mob/reaper/hurt3"
+			]
+		},
+		"mob.reaper.say": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/reaper/say1",
+				"sounds/mob/reaper/say2",
+				"sounds/mob/reaper/say3",
+				"sounds/mob/reaper/say4"
+			]
+		},
+		"mob.reaper.step": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/reaper/step1",
+				"sounds/mob/reaper/step2",
+				"sounds/mob/reaper/step3",
+				"sounds/mob/reaper/step4"
+			]
+		},
+		"mob.reaper.death": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/reaper/death"
+			]
+		},
+		"mob.reaper.eat": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/reaper/eat"
+			]
+		},
+  "mob.parasaurolophus.hurt": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/parasaurolophus/parasaurolophus_hurt1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/parasaurolophus/parasaurolophus_hurt2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/parasaurolophus/parasaurolophus_hurt3",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "mob.parasaurolophus.default": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/parasaurolophus/parasaurolophus1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/parasaurolophus/parasaurolophus2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/parasaurolophus/parasaurolophus3",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/parasaurolophus/parasaurolophus4",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/parasaurolophus/parasaurolophus5",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "mob.argentavis": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/argentavis/sonido1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido3",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido4",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido5",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido6",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido7",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido8",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido9",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido10",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido11",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido12",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido13",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido14",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido15",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido16",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido17",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido18",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido19",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido20",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }, 
+      {
+        "name": "sounds/mob/argentavis/sonido21",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido22",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/argentavis/sonido23",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "mob.quetzal": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/quetzal/sonido0",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido3",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido4",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido5",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido6",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido7",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido8",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido9",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido10",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido11",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido12",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido13",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido14",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido15",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/quetzal/sonido16",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "mob.velociraptor": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/velociraptor/1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/3",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/4",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/5",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/6",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/7",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/8",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/9",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/10",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/11",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/12",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/13",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/14",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/15",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/16",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/17",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/18",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/19",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/velociraptor/20",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "mob.teratophoneus": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/teratophoneus/1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/teratophoneus/2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/teratophoneus/3",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/teratophoneus/4",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/teratophoneus/5",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/teratophoneus/6",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/teratophoneus/7",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/teratophoneus/8",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/teratophoneus/9",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/teratophoneus/10",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "mob.nanuqsaurus": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/nanuqsaurus/1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/nanuqsaurus/2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/nanuqsaurus/3",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/nanuqsaurus/4",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/nanuqsaurus/5",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/nanuqsaurus/6",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/nanuqsaurus/7",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/nanuqsaurus/8",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "mob.carnotaurus": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/carnotaurus/1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/21",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/22",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/3",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/4",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/5",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/6",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/7",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/23",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/24",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/25",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/26",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/27",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/8",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/9",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/10",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/11",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/12",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/13",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/14",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/15",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/16",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/17",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/18",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/19",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/20",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "mob.llukalkan": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/carnotaurus/1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/21",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/22",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/3",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/4",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/5",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/6",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/7",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/23",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/24",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/25",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/26",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/27",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/8",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/9",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/10",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/11",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/12",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/13",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/14",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/15",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/16",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/17",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/18",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/19",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/20",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "mob.majungasaurus": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/carnotaurus/1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/21",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/2",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/22",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/3",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/4",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/5",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/6",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/7",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/23",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/24",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/25",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/26",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/27",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/8",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/9",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/10",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/11",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/12",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/13",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/14",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/15",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/16",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/17",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/18",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/19",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/carnotaurus/20",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "mob.deinonychus.step": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mob/deinonychus/paso1",
+      "sounds/mob/deinonychus/paso2",
+      "sounds/mob/deinonychus/paso3"
+    ]
+  },
+  "mob.deinonychus.normal": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/deinonychus/x_1",
+        "volume": 1.5,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/deinonychus/x_2",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_3",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_4",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_5",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_6",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_7",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_8",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_9",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_10",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_11",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_12",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_13",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_14",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_15",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_16",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_17",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_18",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_19",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_20",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_21",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_22",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_23",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_24",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_25",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_26",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_27",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_28",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_29",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_30",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_31",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_32",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_33",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_34",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_35",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_36",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_37",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_38",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_39",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_40",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_41",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_42",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_43",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_44",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_45",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_46",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_47",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_48",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_49",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_50",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_51",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_52",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_53",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_54",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_55",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_56",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_57",
+        "volume": 1
+      },
+{
+        "name": "sounds/mob/deinonychus/x_58",
+        "volume": 1
+}
+    ]
+  },
+  "mob.deinonychus.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/deinonychus/d_1",
+      "sounds/mob/deinonychus/d_2",
+      "sounds/mob/deinonychus/d_3",
+      "sounds/mob/deinonychus/d_4",
+      "sounds/mob/deinonychus/d_5",
+      "sounds/mob/deinonychus/d_6",
+      "sounds/mob/deinonychus/d_7"
+    ]
+  },
+  "mob.mamut.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mob/mamut/1",
+      "sounds/mob/mamut/2",
+      "sounds/mob/mamut/3",
+      "sounds/mob/mamut/4",
+      "sounds/mob/mamut/5",
+      "sounds/mob/mamut/6",
+      "sounds/mob/mamut/7",
+      "sounds/mob/mamut/8",
+      "sounds/mob/mamut/9",
+      "sounds/mob/mamut/10",
+      "sounds/mob/mamut/11",
+      "sounds/mob/mamut/12",
+      "sounds/mob/mamut/13",
+      "sounds/mob/mamut/14"
+    ]
+  },
+  "mob.elasmotherium.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/mamut/1",
+      "sounds/mob/mamut/2",
+      "sounds/mob/mamut/3",
+      "sounds/mob/mamut/4",
+      "sounds/mob/mamut/5",
+      "sounds/mob/mamut/6",
+      "sounds/mob/mamut/7",
+      "sounds/mob/mamut/8",
+      "sounds/mob/mamut/9",
+      "sounds/mob/mamut/10",
+      "sounds/mob/mamut/11",
+      "sounds/mob/mamut/12",
+      "sounds/mob/mamut/13",
+      "sounds/mob/mamut/14"
+    ]
+  },
+  "mob.elasmotherium.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/mamut/1",
+      "sounds/mob/mamut/2",
+      "sounds/mob/mamut/3",
+      "sounds/mob/mamut/4",
+      "sounds/mob/mamut/5",
+      "sounds/mob/mamut/6",
+      "sounds/mob/mamut/7",
+      "sounds/mob/mamut/8",
+      "sounds/mob/mamut/9",
+      "sounds/mob/mamut/10",
+      "sounds/mob/mamut/11",
+      "sounds/mob/mamut/12",
+      "sounds/mob/mamut/13",
+      "sounds/mob/mamut/14"
+    ]
+      },
+  "mob.baryonyx.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mob/baryonyx/1",
+      "sounds/mob/baryonyx/2",
+      "sounds/mob/baryonyx/3",
+      "sounds/mob/baryonyx/4"
+    ]
+  },
+  "mob.baryonyx.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/baryonyx/1",
+      "sounds/mob/baryonyx/2",
+      "sounds/mob/baryonyx/3",
+      "sounds/mob/baryonyx/4"
+    ]
+  },
+  "mob.baryonyx.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/baryonyx/1",
+      "sounds/mob/baryonyx/2",
+      "sounds/mob/baryonyx/3",
+      "sounds/mob/baryonyx/4"
+      ]
+      },
+  "mob.dodo.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mob/dodo/idle1"
+    ]
+  },
+  "mob.dodo.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/dodo/muerte"
+    ]
+  },
+  "mob.dodo.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/dodo/idle1"
+      ]
+      },
+  "mob.elasmotherium.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mob/elasmotherium/1",
+      "sounds/mob/elasmotherium/2",
+      "sounds/mob/elasmotherium/3",
+      "sounds/mob/elasmotherium/4",
+      "sounds/mob/elasmotherium/5",
+      "sounds/mob/elasmotherium/6",
+      "sounds/mob/elasmotherium/7",
+      "sounds/mob/elasmotherium/8",
+      "sounds/mob/elasmotherium/9",
+      "sounds/mob/elasmotherium/10",
+      "sounds/mob/elasmotherium/11",
+      "sounds/mob/elasmotherium/12",
+      "sounds/mob/elasmotherium/13"
+    ]
+  },
+  "mob.doedicurus.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mob/doedicurus/1",
+      "sounds/mob/doedicurus/2",
+      "sounds/mob/doedicurus/3",
+      "sounds/mob/doedicurus/4",
+      "sounds/mob/doedicurus/5",
+      "sounds/mob/doedicurus/6",
+      "sounds/mob/doedicurus/7"
+    ]
+  },
+  "mob.doedicurus.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/doedicurus/1",
+      "sounds/mob/doedicurus/2",
+      "sounds/mob/doedicurus/3",
+      "sounds/mob/doedicurus/4",
+      "sounds/mob/doedicurus/5",
+      "sounds/mob/doedicurus/6",
+      "sounds/mob/doedicurus/7"
+    ]
+  },
+  "mob.doedicurus.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/doedicurus/1",
+      "sounds/mob/doedicurus/2",
+      "sounds/mob/doedicurus/3",
+      "sounds/mob/doedicurus/4",
+      "sounds/mob/doedicurus/5",
+      "sounds/mob/doedicurus/6",
+      "sounds/mob/doedicurus/7"
+      ]
+      },
+  "mob.thorny_dragon.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mob/thorny_dragon/idle1",
+      "sounds/mob/thorny_dragon/idle2",
+      "sounds/mob/thorny_dragon/idle3",
+      "sounds/mob/thorny_dragon/idle4",
+      "sounds/mob/thorny_dragon/idle5"
+    ]
+  },
+  "mob.thorny_dragon.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/thorny_dragon/idle1",
+      "sounds/mob/thorny_dragon/idle2",
+      "sounds/mob/thorny_dragon/idle3",
+      "sounds/mob/thorny_dragon/idle4",
+      "sounds/mob/thorny_dragon/idle5"
+    ]
+  },
+  "mob.thorny_dragon.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/thorny_dragon/idle1",
+      "sounds/mob/thorny_dragon/idle2",
+      "sounds/mob/thorny_dragon/idle3",
+      "sounds/mob/thorny_dragon/idle4",
+      "sounds/mob/thorny_dragon/idle5"
+      ]
+      },
+  "mob.yutyrannus.idle": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/yutyrannus/idle1",
+      "sounds/mob/yutyrannus/idle2"
+   
+    ]
+  },
+  "big.step": {
+    "category": "neutral",
+	"max_distance": 100.0,
+    "sounds": [
+      "sounds/mob/yutyrannus/step1",
+	  "sounds/mob/yutyrannus/step2",
+	  "sounds/mob/yutyrannus/step3"
+    ]
+  },
+  "mob.yutyrannus.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/yutyrannus/hurt1",
+      "sounds/mob/yutyrannus/hurt2"
+      
+    ]
+  },
+   "mob.yutyrannus.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/yutyrannus/muerte"
+
+    ]
+  },
+  "mob.roarsound": {
+    "category": "hostile",
+    "min_distance": 500.0,
+	"max_distance": 1000.0,
+    "sounds": [
+      {
+        "name": "sounds/mob/yutyrannus/roar",
+        "volume": 0.5
+      }  
+      
+      ]
+      },
+
+  "mob.compy.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mob/compy/sonido1",
+      "sounds/mob/compy/sonido2",
+      "sounds/mob/compy/sonido3",
+      "sounds/mob/compy/sonido4",
+      "sounds/mob/compy/sonido5"
+    ]
+  },
+  "mob.compy.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/compy/muerte"
+    ]
+  },
+  "mob.compy.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/compy/dolor"
+      ]
+      },
+  "mob.archaeopteryx.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mob/compy/sonido1",
+      "sounds/mob/compy/sonido2",
+      "sounds/mob/compy/sonido3",
+      "sounds/mob/compy/sonido4"
+    ]
+  },
+  "mob.archaeopteryx.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/compy/sonido1",
+      "sounds/mob/compy/sonido2",
+      "sounds/mob/compy/sonido3",
+      "sounds/mob/compy/sonido4"
+    ]
+  },
+  "mob.archaeopteryx": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/compy/sonido1",
+      "sounds/mob/compy/sonido2",
+      "sounds/mob/compy/sonido3",
+      "sounds/mob/compy/sonido4"
+      ]
+      }
+  }

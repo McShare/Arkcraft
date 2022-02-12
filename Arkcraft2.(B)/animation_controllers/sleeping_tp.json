@@ -1,0 +1,33 @@
+//bridge-file-version: #18
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.sleeping_tp": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"camera": "query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/function tp_sleeping",
+						"/tp @s ~ ~ ~"
+					]
+				},
+				"camera": {
+					"transitions": [
+						{
+							"default": "query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/function tp_sleeping",
+						"/tp @s ~ ~ ~"
+					]
+				}
+			}
+		}
+	}
+}

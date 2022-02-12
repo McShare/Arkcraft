@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.baryonyx_controller": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+"/effect @s slowness 0 254"
+            ]
+      }
+    }
+  }
+}

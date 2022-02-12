@@ -1,0 +1,14 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:doedicurus_egg",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "doedicurus_egg",
+   "minecraft:use_animation": "eat",
+   "minecraft:render_offsets": "doedicurus_egg"
+  }
+ }
+}

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:thorny_dragon",
+      "materials": { 
+"default": "spider" 
+      },
+      "textures": {
+        "thorny_dragon1": "textures/entity/thorny/thorny_dragon1",
+        "thorny_dragon2": "textures/entity/thorny/thorny_dragon2"
+      },
+      "geometry": {
+        "default": "geometry.thorny_dragon"
+      },
+      "animations": {
+        "walk": "animation.thorny_dragon_corriendo",
+        "sit": "animation.thorny_dragon.sit",
+        "look_at_target": "animation.common.look_at_target",
+        "thorny_dragon_default":
+        "animation.thorny_dragon_default"
+      },
+      "scripts": {
+        "animate": [
+          { "walk": "query.modified_move_speed" },
+          { "sit": "query.is_sitting" },
+          "look_at_target",
+    "thorny_dragon_default"
+        ]
+      },
+      "render_controllers": [ "controller.render.thorny_dragon" ],
+      "spawn_egg": {
+         "base_color": "#DB0000",
+        "overlay_color": "#69490A"
+      }
+    }
+  }
+}

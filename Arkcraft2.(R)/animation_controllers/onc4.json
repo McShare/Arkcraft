@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.c4": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "walking": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/fill ~~~ ~2 ~-2 ~2 air 1 replace metal",
+"/fill ~~~ ~-2 ~2 ~-2 air 1 replace metal",
+            "/fill ~~~ ~4 ~-4 ~4 air 1 replace piedra_mejorada",
+            "/fill ~~~ ~-4 ~4 ~-4 air 1 replace piedra_mejorada"
+          ]
+        },
+        "walking": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/fill ~~~ ~2 ~-2 ~2 air 1 replace metal",
+            "/fill ~~~ ~-2 ~2 ~-2 air 1 replace metal",
+            "/fill ~~~ ~4 ~-4 ~4 air 1 replace piedra_mejorada",
+            "/fill ~~~ ~-4 ~4 ~-4 air 1 replace piedra_mejorada"
+          ]
+        }
+      }
+    }
+  }
+}

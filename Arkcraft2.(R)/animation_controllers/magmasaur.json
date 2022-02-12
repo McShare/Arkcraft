@@ -1,0 +1,47 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.magmasaur.general" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ {							"move" : "query.modified_move_speed" },
+					"default",
+                   "look_at_target"
+					],
+					"transitions" : [
+						{
+							"attack" : "variable.attack_time > 0.0"
+						},
+						{
+							"sit" : "query.is_sitting"
+						}
+					]
+				},
+				
+				"sit" : {
+					"animations" : [ "daeodon_sitting" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_sitting"
+						},
+						{
+							"attack" : "variable.attack_time > 0.0"
+						}
+					]
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "(variable.attack_time <= 0.0) && (query.all_animations_finished)"
+						},
+						{
+							"sit" : "(query.is_sitting) && (query.all_animations_finished)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

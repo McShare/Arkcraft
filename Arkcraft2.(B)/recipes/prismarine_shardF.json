@@ -1,0 +1,11 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "minecraft:prismarinenenee"
+    },  
+    "tags": ["furnace"],
+    "input": "minecraft:trident",
+    "output": "minecraft:prismarine_shard"
+  } 
+}

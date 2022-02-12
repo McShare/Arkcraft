@@ -1,0 +1,19 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "arkcraft:quetzal_saddle"
+    },
+
+    "components": {
+	  "minecraft:creative_category": {
+        "parent": "itemGroup.name.Equipment"
+      },
+	  "minecraft:render_offsets": "miscellaneous",
+      "minecraft:display_name": {},
+      "minecraft:stacked_by_data": true,
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": false
+    }
+  }
+}

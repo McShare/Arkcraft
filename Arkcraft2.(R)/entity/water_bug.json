@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:water_bug",
+      "materials": {
+        "default": "spider",
+        "invisible": "spider_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/water_bug"
+      },
+      "geometry": {
+        "default": "geometry.water_bug"
+      },
+      "animations": {
+        "walk": "animation.spider.walk"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.spider.move" }
+      ],
+      "render_controllers": [ "controller.render.spider" ],
+      "spawn_egg": {
+         "base_color": "#112055",
+        "overlay_color": "#0"
+      } 
+    }
+  }
+}

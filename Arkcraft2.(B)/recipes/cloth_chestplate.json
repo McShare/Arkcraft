@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:cloth_chestplate"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "X X",
+      "XXX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:string"
+      }
+    },
+    "result": {
+      "item": "arkcraft:cloth_chestplate"
+    }
+  }
+}

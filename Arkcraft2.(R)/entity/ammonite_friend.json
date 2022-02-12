@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:ammonite_friend",
+      "materials": { "default": "cod" },
+      "textures": {
+        "default": "textures/entity/ammonite_friend"
+      },
+      "geometry": {
+        "default": "geometry.ammonite"
+      },
+      "animations": {
+        "swim": "animation.ammonite.swim",
+        "land": "animation.ammonite.land"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.ammonite.general"
+        }
+      ],
+      "render_controllers": [ "controller.render.default" ],
+      "spawn_egg": {
+        "texture": "egg_ammonite_friend",
+        "texture_index": 0
+      }
+    }
+  }
+}

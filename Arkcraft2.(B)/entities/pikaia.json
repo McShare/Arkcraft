@@ -1,0 +1,249 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "arkcraft:pikaia",
+
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+	    "animate": [ "leech" ]
+	  },
+	  "animations": {
+	    "leech": "controller.animation.leech"
+    }
+    },
+
+    "component_groups": {
+
+  "minecraft:common_pikaia":{
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? Math.Random(1,4) : 0"
+        },
+      "minecraft:follow_range": {
+        "value": 20
+      },
+        "minecraft:scale": {
+          "value": 1.0
+        },
+        "minecraft:type_family": {
+          "family": [ "leach", "mob", "arthropod"]
+        },
+        "minecraft:variant": {
+          "value": 0
+}
+  }
+
+    },
+
+    "components": {
+       "minecraft:behavior.move_to_land": {
+          "priority": 6,
+          "search_range": 16,
+          "search_height": 5,
+          "goal_radius": 0.5
+        },
+      "minecraft:breathable": {
+        "total_supply": 5,
+        "suffocate_time": 0,
+        "breathes_air": false,
+        "breathes_water": true
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 9,
+          "interval": 100
+        },
+        "minecraft:behavior.move_to_water": {
+          "priority": 1,
+          "search_range": 105,
+          "search_height": 1,
+          "goal_radius": 0.1
+        },
+        "minecraft:collision_box": {
+          "width": 0.5,
+          "height": 0.3
+        },
+
+        "minecraft:underwater_movement": {
+          "value": 0.1
+        },
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 3,
+          "entity_types": [
+            {
+              "filters": { "test": "is_family", "subject": "other", "value": "alvarezsaurus" },
+
+              "max_dist": 24,
+              "walk_speed_multiplier": 1.5,
+              "sprint_speed_multiplier": 1.5
+            },
+            {
+              "filters": { "test": "is_family", "subject": "other", "value": "parrot" },
+
+              "max_dist": 24,
+              "walk_speed_multiplier": 1.5,
+              "sprint_speed_multiplier": 1.5
+            }
+          ],
+          "probability_per_strength": 0.0
+        },
+        "minecraft:behavior.find_mount": {
+          "priority": 3,
+          "within_radius": 16,
+          "avoid_water": false,
+          "start_delay":  0,
+          "target_needed": false,
+          "mount_distance": 2.0
+        },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_water": true,
+        "breathes_air": true,
+        "generates_bubbles": false
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "lightning",
+          "deals_damage": true,
+          "damage_multiplier": 2000.0
+        }
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:water_movement": {
+        "drag_factor": 0.1
+      },
+      "minecraft:navigation.generic": {
+        "is_amphibious": false,
+        "can_path_over_water": false,
+        "can_swim": true,
+        "can_walk": true,
+        "can_sink": false,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.amphibious": {
+        "max_turn": 1.0
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+
+
+      "minecraft:behavior.panic": {
+        "priority": 0,
+        "prefer_water": true,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.random_swim": {
+        "priority": 7,
+        "interval": 100,
+        "xz_dist": 100,
+        "y_dist": 150
+      }
+    },
+
+    "events": {
+
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 1000,
+            "add": {
+              "component_groups": [
+                "minecraft:common_pikaia"
+              ]
+            }
+          },
+          {
+            "weight": 800,
+            "add": {
+              "component_groups": [
+                "minecraft:vampire_pikaia"
+              ]
+            }
+          },
+          {
+            "weight": 800,
+            "add": {
+              "component_groups": [
+                "minecraft:medic_pikaia"
+              ]
+            }
+          },
+          {
+            "weight": 900,
+            "add": {
+              "component_groups": [
+                "minecraft:poison_pikaia"
+              ]
+            }
+          },
+          {
+            "weight": 500,
+            "add": {
+              "component_groups": [
+                "minecraft:paralyzing_pikaia"
+              ]
+            }
+          },
+          {
+            "weight": 500,
+            "add": {
+              "component_groups": [
+                "minecraft:raud_pikaia"
+              ]
+            }
+          },
+          {
+            "weight": 30,
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_pikaia"
+              ]
+            }
+          },
+          {
+            "weight": 500,
+            "add": {
+              "component_groups": [
+                "minecraft:parasite_pikaia"
+              ]
+            }
+          },
+          {
+            "weight": 600,
+            "add": {
+              "component_groups": [
+                "minecraft:paralyzing_pikaia_2"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

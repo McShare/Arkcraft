@@ -1,0 +1,63 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.yutyrannus.move": {
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "move": "query.modified_move_speed"
+            }
+          ],
+          "transitions": [
+            {
+              "sit": "(query.is_sitting)"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "sit": {
+          "animations": [
+            "sit"
+          ],
+          "transitions": [
+            {
+              "default": "(!query.is_sitting)"
+            }
+],
+          "blend_transition": 0.2
+        }
+      }
+    },
+    
+    "controller.animation.yutyrannus.general": {
+      "states": {
+        "default": {
+          "animations": [
+"yutyrannus_default_jaw",
+        "look_at_target"    
+          ],
+          "transitions": [
+            {
+              "casting": "(query.is_casting)"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "casting": {
+          "animations": [
+            "look_at_target_head",
+            "roarsound", 
+            "casting"
+          ],
+          "transitions": [
+            {
+              "default": "(!query.is_casting)"
+            }
+],
+          "blend_transition": 0.2
+        }
+      }
+    }
+  }
+} 

@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+  "controller.animation.tamer_pacific": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        { "tamer_clear":"(query.variant == 0)"
+                        }
+                    ]
+                    
+       }}}}      
+}

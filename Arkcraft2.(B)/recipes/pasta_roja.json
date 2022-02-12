@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "arkcraft:pastaroja222"
+        },
+        "tags": [
+            "smithy"
+        ],
+        "pattern": [
+            "XWX",
+            "WSW",
+            "XWX"
+        ],
+    "key": {
+      "W": {
+        "item": "arkcraft:poisonshock_bowl"
+      },
+      "S": {
+        "item": "minecraft:wheat"
+      },
+      "X": {
+        "item": "arkcraft:ark_meat_raw"
+      }
+        },
+        "result": {
+            "item": "arkcraft:pasta_roja",
+            "count": 2
+        }
+    }
+}

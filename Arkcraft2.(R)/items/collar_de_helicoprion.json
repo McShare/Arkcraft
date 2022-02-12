@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:item": {
+    "description": {
+      "identifier": "arkcraft:collar_de_helicoprion",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:use_animation": "drink",
+      "minecraft:icon": "collar_de_helicoprion",
+      "minecraft:render_offsets": "collar_de_helicoprion"
+    }
+  }
+}

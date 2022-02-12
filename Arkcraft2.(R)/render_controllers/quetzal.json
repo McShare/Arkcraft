@@ -1,0 +1,252 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.quetzal": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.color_celeste",
+            "Texture.color_2",
+            "Texture.color_3",
+            "Texture.color_4"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+ { "alamove2*": "query.is_on_ground|| query.is_in_water"},
+ { "leg4": "query.is_on_ground|| query.is_in_water"},
+ { "bone10": "query.is_on_ground|| query.is_in_water"},
+ { "bone12": "query.is_on_ground || query.is_in_water"},
+ { "bone11": "query.is_on_ground || query.is_in_water"},
+ { "bone13": "query.is_on_ground || query.is_in_water"},
+ { "bone14": "query.is_on_ground || query.is_in_water"},
+ { "bone15": "query.is_on_ground || query.is_in_water"},
+ { "bone16": "query.is_on_ground || query.is_in_water"},
+ { "bone17": "query.is_on_ground || query.is_in_water"},
+ { "ala3": "query.is_on_ground || query.is_in_water"},
+ { "bone18": "query.is_on_ground || query.is_in_water"},
+ { "bone19": "query.is_on_ground || query.is_in_water"},
+ { "bone20": "query.is_on_ground || query.is_in_water"},
+ { "bone66": "query.is_on_ground || query.is_in_water"},
+ { "bone67": "query.is_on_ground || query.is_in_water"},
+ { "bone68": "query.is_on_ground || query.is_in_water"},
+ { "bone69": "query.is_on_ground || query.is_in_water"},
+ { "bone70": "query.is_on_ground || query.is_in_water"},
+ { "bone71": "query.is_on_ground || query.is_in_water"},
+ { "bone72": "query.is_on_ground || query.is_in_water"},
+ { "bone73": "query.is_on_ground || query.is_in_water"},
+ { "bone74": "query.is_on_ground || query.is_in_water"},
+ { "bone75": "query.is_on_ground || query.is_in_water"},
+ { "bone76": "query.is_on_ground || query.is_in_water"},
+ { "bone77": "query.is_on_ground || query.is_in_water"},
+ { "bone79": "query.is_on_ground || query.is_in_water"},
+ { "bone80": "query.is_on_ground || query.is_in_water"},
+ { "bone81": "query.is_on_ground || query.is_in_water"},
+ 
+ { "alamove": "query.is_on_ground || query.is_in_water"},
+ { "leg2": "query.is_on_ground || query.is_in_water"},
+ { "bone23": "query.is_on_ground || query.is_in_water"},
+ { "bone24": "query.is_on_ground || query.is_in_water"},
+ { "bone25": "query.is_on_ground || query.is_in_water"},
+ { "bone26": "query.is_on_ground || query.is_in_water"},
+ { "bone27": "query.is_on_ground || query.is_in_water"},
+ { "bone28": "query.is_on_ground || query.is_in_water"},
+ { "bone29": "query.is_on_ground || query.is_in_water"},
+ { "bone30": "query.is_on_ground || query.is_in_water"},
+ { "ala2": "query.is_on_ground || query.is_in_water"},
+ { "bone5": "query.is_on_ground || query.is_in_water"},
+ { "bone8": "query.is_on_ground || query.is_in_water"},
+ { "bone9": "query.is_on_ground || query.is_in_water"},
+ { "bone31": "query.is_on_ground || query.is_in_water"},
+ { "bone32": "query.is_on_ground || query.is_in_water"},
+ { "bone33": "query.is_on_ground || query.is_in_water"},
+ { "bone34": "query.is_on_ground || query.is_in_water"},
+ { "bone35": "query.is_on_ground || query.is_in_water"},
+ { "bone36": "query.is_on_ground || query.is_in_water"},
+ { "bone37": "query.is_on_ground || query.is_in_water"},
+ { "bone38": "query.is_on_ground || query.is_in_water"},
+ { "bone39": "query.is_on_ground || query.is_in_water"},
+ { "bone40": "query.is_on_ground || query.is_in_water"},
+ { "bone60": "query.is_on_ground || query.is_in_water"},
+ { "bone62": "query.is_on_ground || query.is_in_water"},
+ { "bone63": "query.is_on_ground || query.is_in_water"},
+ { "bone64": "query.is_on_ground || query.is_in_water"},
+ { "bone65": "query.is_on_ground || query.is_in_water"},
+ 
+ 
+ 
+ 
+ { "alamoveair": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "leg3": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone59": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone61": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone21": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone82": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone83": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone84": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone85": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone86": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone87": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone88": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "ala5": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone41": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone42": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone43": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone44": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone45": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone46": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone47": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone48": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone49": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone50": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone51": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone22": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone52": "(!query.is_on_ground) && (!query.is_in_water)"},
+ 
+ { "alamoveair2": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "leg5": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone53": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone54": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone55": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone56": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone57": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone58": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone89": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone90": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone91": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone92": "(!query.is_on_ground) && (!query.is_in_water)"},
+ 
+ { "ala4": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone93": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone94": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone95": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone96": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone97": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone98": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone99": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone100": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone101": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone102": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone103": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone104": "(!query.is_on_ground) && (!query.is_in_water)"},
+ { "bone105": "(!query.is_on_ground) && (!query.is_in_water)"},
+ 
+ { "montura": "query.mark_variant == 1"},
+ { "montura1": "query.mark_variant == 1"},
+ { "montura2": "query.mark_variant == 1"},
+ { "montura3": "query.mark_variant == 1"},
+ 
+ { "metal_montura": "query.mark_variant == 2"},
+ { "montura9": "query.mark_variant == 2"},
+ { "bone118": "query.mark_variant == 2"},
+ { "montura10": "query.mark_variant == 2"},
+ { "montura11": "query.mark_variant == 2"},
+ { "montura8": "query.mark_variant == 2"},
+ { "montura12": "query.mark_variant == 2"},
+ { "montura13": "query.mark_variant == 2"},
+ { "montura14": "query.mark_variant == 2"},
+ { "montura15": "query.mark_variant == 2"},
+ { "montura16": "query.mark_variant == 2"},
+ { "montura17": "query.mark_variant == 2"},
+ 
+ { "head2": "(query.is_on_ground) || (query.is_in_water)"},
+ 
+ { "head": "(!query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (!query.is_saddled)"},
+ { "bone7": "(!query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (!query.is_saddled)"},
+ { "bone3": "(!query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (!query.is_saddled)"},
+ { "head5": "(!query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (!query.is_saddled)"},
+ { "head6": "(!query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (!query.is_saddled)"},
+ { "bone6": "(!query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (!query.is_saddled)"},
+ { "head4": "(!query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (!query.is_saddled)"},
+ { "bone": "(!query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (!query.is_saddled)"},
+ { "bone2": "(!query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (!query.is_saddled)"},
+ { "head3": "(!query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (!query.is_saddled)"},
+ { "bone4": "(!query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (!query.is_saddled)"},
+ 
+ { "head7": "(query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (query.is_saddled)"},
+ { "bone106": "(query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (query.is_saddled)"},
+ { "bone107": "(query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (query.is_saddled)"},
+ { "head8": "(query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (query.is_saddled)"},
+ { "head9": "(query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (query.is_saddled)"},
+ { "bone108": "(query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (query.is_saddled)"},
+ { "head10": "(query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (query.is_saddled)"},
+ { "bone109": "(query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (query.is_saddled)"},
+ { "bone110": "(query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (query.is_saddled)"},
+ { "head11": "(query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (query.is_saddled)"},
+ { "bone111": "(query.is_saddled) && (query.is_on_ground) || (query.is_in_water) && (query.is_saddled)"},
+ 
+ { "head32": "(!query.is_on_ground) && (!query.is_in_water)"},
+ 
+ 
+ { "head17": "(!query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "bone119": "(!query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "bone120": "(!query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water) "},
+ { "head18": "(!query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water) "},
+ { "head19": "(!query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "bone121": "(!query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "head20": "(!query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water) "},
+ { "bone122": "(!query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "bone123": "(!query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "head21": "(!query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "bone124": "(!query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ 
+ 
+ { "head22": "(query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "bone125": "(query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "bone126": "(query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "head23": "(query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water) "},
+ { "head24": "(query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "bone127": "(query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "head25": "(query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "bone128": "(query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "bone129": "(query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "head26": "(query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "},
+ { "bone130": "(query.is_saddled)&& (!query.is_on_ground) && (!query.is_in_water)  "}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

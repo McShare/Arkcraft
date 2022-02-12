@@ -1,0 +1,34 @@
+
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:hln_a",
+      "materials": {
+        "default": "spider"
+      },            
+      "textures": {
+        "default": "textures/entity/hln_a"
+      },
+      "geometry": {
+        "default": "geometry.hln_a"
+      },
+      "animations": {
+        "up": "animation.hln_a.up",
+        "sit":
+        "animation.hln_a.sit"
+      },
+      "scripts": {
+        "animate": [
+          { "sit": "query.variant == 0" },
+          { "up": "query.variant == 1" }
+        ]
+      },
+      "render_controllers": [ "controller.render.arkcraft_default" ],
+      "spawn_egg": {
+         "base_color": "#8900",
+        "overlay_color": "#3700"
+      }
+    }
+  }
+}

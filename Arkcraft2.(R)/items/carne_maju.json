@@ -1,0 +1,14 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:carne_maju",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "carne_maju",
+   "minecraft:use_animation": "eat",
+   "minecraft:render_offsets": "carne_maju"
+  }
+ }
+}

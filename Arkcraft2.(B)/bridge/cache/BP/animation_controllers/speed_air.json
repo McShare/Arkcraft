@@ -1,0 +1,272 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\ArkCraft B\\animation_controllers\\speed_air.json",
+	"file_type": "animation_controller",
+	"format_version": 1,
+	"file_uuid": "960e57c1_bae5_49fe_9b66_75dfd73626c1",
+	"file_version": 35,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.speed_air": {
+							"initial_state": "default",
+							"states": {
+								"speed": {
+									"transitions": [
+										{
+											"default": "(1.0)"
+										}
+									],
+									"on_entry": [
+										"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+										"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+									]
+								},
+								"default": {
+									"transitions": [
+										{
+											"speed": "(1.0)"
+										}
+									],
+									"on_entry": [
+										"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+										"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.speed_air": {
+								"initial_state": "default",
+								"states": {
+									"speed": {
+										"transitions": [
+											{
+												"default": "(1.0)"
+											}
+										],
+										"on_entry": [
+											"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+											"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+										]
+									},
+									"default": {
+										"transitions": [
+											{
+												"speed": "(1.0)"
+											}
+										],
+										"on_entry": [
+											"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+											"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.speed_air",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"speed": {
+											"transitions": [
+												{
+													"default": "(1.0)"
+												}
+											],
+											"on_entry": [
+												"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+												"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+											]
+										},
+										"default": {
+											"transitions": [
+												{
+													"speed": "(1.0)"
+												}
+											],
+											"on_entry": [
+												"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+												"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"speed": {
+												"transitions": [
+													{
+														"default": "(1.0)"
+													}
+												],
+												"on_entry": [
+													"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+													"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+												]
+											},
+											"default": {
+												"transitions": [
+													{
+														"speed": "(1.0)"
+													}
+												],
+												"on_entry": [
+													"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+													"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+												]
+											}
+										},
+										"key": "speed",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "(1.0)"
+														}
+													],
+													"on_entry": [
+														"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+														"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"default": "(1.0)"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "(1.0)"
+														}
+													}
+												]
+											},
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "(1.0)"
+														}
+													],
+													"on_entry": [
+														"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+														"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+													]
+												},
+												"key": "on_entry",
+												"is_minified": true,
+												"children": [
+													"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+													"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"speed": {
+												"transitions": [
+													{
+														"default": "(1.0)"
+													}
+												],
+												"on_entry": [
+													"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+													"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+												]
+											},
+											"default": {
+												"transitions": [
+													{
+														"speed": "(1.0)"
+													}
+												],
+												"on_entry": [
+													"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+													"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"speed": "(1.0)"
+														}
+													],
+													"on_entry": [
+														"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+														"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"speed": "(1.0)"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"speed": "(1.0)"
+														}
+													}
+												]
+											},
+											{
+												"open": {
+													"transitions": [
+														{
+															"speed": "(1.0)"
+														}
+													],
+													"on_entry": [
+														"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+														"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+													]
+												},
+												"key": "on_entry",
+												"is_minified": true,
+												"children": [
+													"/execute @s ~ ~ ~ detect ~ ~-10 ~ air 0 effect @s speed 2 10 true",
+													"/execute @s ~ ~ ~ detect ~ ~-3 ~ air 0 effect @s slow_falling 1 0.5 true"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

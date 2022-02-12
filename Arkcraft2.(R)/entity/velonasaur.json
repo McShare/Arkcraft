@@ -1,0 +1,39 @@
+
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:velonasaur",
+      "materials": {
+        "default": "cow",
+        "velonasaur": "cow"
+      },            
+      "textures": {
+        "velonasaur1": "textures/entity/velonasaur/velonasaur1",
+        "velonasaur2": "textures/entity/velonasaur/velonasaur2",
+        "velonasaur3": "textures/entity/velonasaur/velonasaur3"
+      },
+      "geometry": {
+        "default": "geometry.velonasaur"
+      },
+      "animations": {
+        "walk": "animation.velonasaur.move",
+      "default":
+        "animation.velonasaur_default",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+       "default",
+          { "walk": "query.modified_move_speed" },
+          "look_at_target"
+        ]
+      },
+      "render_controllers": [ "controller.render.velonasaur" ],
+      "spawn_egg": {
+         "base_color": "#3B2821",
+        "overlay_color": "#1FE1FF"
+      }
+    }
+  }
+}

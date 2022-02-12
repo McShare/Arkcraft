@@ -1,0 +1,48 @@
+{
+   "num_mip_levels":4,
+   "padding":8,
+   "resource_pack_name":"Arkcraft",
+   "texture_data":{
+		"reaper_egg": {
+			"textures": [
+				"textures/entity/egg/reaper_egg"
+			]
+		},
+      "smithy_bottom":{
+         "textures":"textures/blocks/smithy_bottom"
+      },
+      "smithy_front":{
+         "textures":"textures/blocks/smithy_front"
+      },
+      "smithy_side":{
+         "textures":"textures/blocks/smithy_side"
+      },
+      "smithy_top":{
+         "textures":"textures/blocks/smithy_top"
+      },
+      "grill_front":{
+         "textures":"textures/blocks/grill_front"
+      },
+      "grill_side":{
+         "textures":"textures/blocks/grill_side"
+      },
+      "grill_top":{
+         "textures":"textures/blocks/grill_top"
+      },
+    "arkcraft_narcoberry_stage_0": {
+      "textures": [
+        "textures/blocks/arkcraft_narcoberry_stage_0"
+      ]
+    },
+    "arkcraft_narcoberry_stage_1": {
+      "textures": [
+        "textures/blocks/arkcraft_narcoberry_stage_1"
+      ]
+    },
+    "arkcraft_narcoberry_stage_2": {
+      "textures": [
+        "textures/blocks/arkcraft_narcoberry_stage_2"
+      ]
+      }
+   }
+}

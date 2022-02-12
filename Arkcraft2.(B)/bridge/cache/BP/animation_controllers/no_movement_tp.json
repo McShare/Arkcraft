@@ -1,0 +1,272 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\ArkCraft B\\animation_controllers\\no_movement_tp.json",
+	"file_type": "animation_controller",
+	"format_version": 1,
+	"file_uuid": "3b8ccd41_f059_4b5e_8b93_1f81ea73bf39",
+	"file_version": 34,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.move_tp": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"transitions": [
+										{
+											"camera": "query.is_charged"
+										}
+									],
+									"on_entry": [
+										"/function tp_sleeping",
+										"/tp @s ~ ~ ~"
+									]
+								},
+								"camera": {
+									"transitions": [
+										{
+											"default": "query.is_charged"
+										}
+									],
+									"on_entry": [
+										"/function tp_sleeping",
+										"/tp @s ~ ~ ~"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.move_tp": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"transitions": [
+											{
+												"camera": "query.is_charged"
+											}
+										],
+										"on_entry": [
+											"/function tp_sleeping",
+											"/tp @s ~ ~ ~"
+										]
+									},
+									"camera": {
+										"transitions": [
+											{
+												"default": "query.is_charged"
+											}
+										],
+										"on_entry": [
+											"/function tp_sleeping",
+											"/tp @s ~ ~ ~"
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.move_tp",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"transitions": [
+												{
+													"camera": "query.is_charged"
+												}
+											],
+											"on_entry": [
+												"/function tp_sleeping",
+												"/tp @s ~ ~ ~"
+											]
+										},
+										"camera": {
+											"transitions": [
+												{
+													"default": "query.is_charged"
+												}
+											],
+											"on_entry": [
+												"/function tp_sleeping",
+												"/tp @s ~ ~ ~"
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"camera": "query.is_charged"
+													}
+												],
+												"on_entry": [
+													"/function tp_sleeping",
+													"/tp @s ~ ~ ~"
+												]
+											},
+											"camera": {
+												"transitions": [
+													{
+														"default": "query.is_charged"
+													}
+												],
+												"on_entry": [
+													"/function tp_sleeping",
+													"/tp @s ~ ~ ~"
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"camera": "query.is_charged"
+														}
+													],
+													"on_entry": [
+														"/function tp_sleeping",
+														"/tp @s ~ ~ ~"
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"camera": "query.is_charged"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"camera": "query.is_charged"
+														}
+													}
+												]
+											},
+											{
+												"open": {
+													"transitions": [
+														{
+															"camera": "query.is_charged"
+														}
+													],
+													"on_entry": [
+														"/function tp_sleeping",
+														"/tp @s ~ ~ ~"
+													]
+												},
+												"key": "on_entry",
+												"is_minified": true,
+												"children": [
+													"/function tp_sleeping",
+													"/tp @s ~ ~ ~"
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"camera": "query.is_charged"
+													}
+												],
+												"on_entry": [
+													"/function tp_sleeping",
+													"/tp @s ~ ~ ~"
+												]
+											},
+											"camera": {
+												"transitions": [
+													{
+														"default": "query.is_charged"
+													}
+												],
+												"on_entry": [
+													"/function tp_sleeping",
+													"/tp @s ~ ~ ~"
+												]
+											}
+										},
+										"key": "camera",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "query.is_charged"
+														}
+													],
+													"on_entry": [
+														"/function tp_sleeping",
+														"/tp @s ~ ~ ~"
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"default": "query.is_charged"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "query.is_charged"
+														}
+													}
+												]
+											},
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "query.is_charged"
+														}
+													],
+													"on_entry": [
+														"/function tp_sleeping",
+														"/tp @s ~ ~ ~"
+													]
+												},
+												"key": "on_entry",
+												"is_minified": true,
+												"children": [
+													"/function tp_sleeping",
+													"/tp @s ~ ~ ~"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

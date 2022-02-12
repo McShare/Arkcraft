@@ -1,0 +1,38 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "arkcraft:cloth_helmet",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:enchantable": {
+        "value": 3,
+        "slot": "armor_head"
+      },
+	    "minecraft:icon": {
+         "texture": "cloth_helmet"
+      },
+	    "minecraft:creative_category": {
+          "parent": "itemGroup.name.helmet"
+      },
+      "minecraft:display_name": {
+          "value": "item.arkcraft:cloth_helmet.name"
+      },
+      "minecraft:durability": {
+        "max_durability": 200,
+        "damage_chance": {
+          "min": 200,
+          "max": 300
+        }
+      },
+      "minecraft:armor": {
+        "protection": 1
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.head"
+      }
+    }
+  }
+}

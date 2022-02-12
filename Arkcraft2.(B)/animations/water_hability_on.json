@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.water_hability_on": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+"/title @a[r=10] actionbar Dilocaulus oxygen zone",
+"/effect @e[r=10] water_breathing 30 30",
+"/effect @e[r=10] poison 5 3",
+"/execute @e[r=10] ~ ~ ~ fill ~ ~-1 ~ ~ ~2 ~ bubble_column 1 replace water",
+"/playsound mob.cow.milk @a[r=10]",
+"/playsound mob.cow.milk @a[r=10]",
+"/playsound mob.cow.milk @a[r=10]"
+           ]
+      }
+    }
+  }
+}

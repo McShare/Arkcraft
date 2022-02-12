@@ -1,0 +1,25 @@
+{
+    "format_version": "1.8.0",
+    "animation_controllers": {
+        "controller.animation.baryonyx_attack": {
+            "initial_state" : "default",
+            "states": {
+                "golpe_paralizador": {
+                "transitions": [
+                        {
+                            "default": "variable.attack_time <= 0.0"
+                        }
+                    ],
+             "on_entry": [
+                        "/summon arkcraft:golpe_paralizador ^ ^1 ^3"
+                        ]
+                },
+                "default":{
+                    "transitions": [
+                        {"golpe_paralizador": "variable.attack_time > 0.0"}
+                    ]
+                } 
+            }
+        }
+    }
+}

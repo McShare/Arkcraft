@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:magmasaur",
+      "materials": { "default": "spider" },
+      "textures": {
+        "magmasaur1": "textures/entity/magmasaur/magmasaur1",
+        "magmasaur2": "textures/entity/magmasaur/magmasaur2",
+        "magmasaur3": "textures/entity/magmasaur/magmasaur3",
+        "magmasaur4": "textures/entity/magmasaur/magmasaur4",
+        "magmasaur_egg": "textures/entity/magmasaur/magmasaur_egg"
+      },
+      "geometry": {
+        "default": "geometry.magmasaur",
+        "magmasaur_egg": "geometry.magmasaur_egg"
+      },
+      "scripts": {
+        "scale": "1.0"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "sit": "animation.magmasaur.sit",
+       "move": "animation.magmasaur.move",
+        "attack": "animation.magmasaur.attack"
+      },
+      "animation_controllers": [
+      {"general":
+"controller.animation.magmasaur.general"}
+      ],
+      "render_controllers": [
+         "controller.render.magmasaur",
+         "controller.render.magmasaur_egg"
+      ],
+      "spawn_egg": {
+         "base_color": "#010e70",
+        "overlay_color": "#ff9000"
+      }
+    }
+  }
+}

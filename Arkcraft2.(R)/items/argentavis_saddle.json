@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:argentavis_saddle",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "argentavis_saddle",
+   "minecraft:render_offsets": "argentavis_saddle"
+  }
+ }
+}

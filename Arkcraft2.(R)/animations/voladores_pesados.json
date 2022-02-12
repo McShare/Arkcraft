@@ -1,0 +1,65 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.velocidad_pesada_0": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+    "/effect @s levitation 0 255"
+            ]
+      }
+    },
+    "animation.velocidad_pesada_3": {
+      "animation_length": 1.0,
+      "loop": true,
+      "timeline": {
+        "0.5": [
+       "/effect @s levitation 1 15"
+            ]
+      }
+    },
+  "animation.velocidad_pesada_5": {
+      "animation_length": 3.0,
+      "loop": true,
+      "timeline": {
+        "1.0": [
+       "/effect @s levitation 2 8"
+            ]
+      }
+    },
+  "animation.velocidad_pesada_4": {
+      "animation_length": 1.0,
+      "loop": true,
+      "timeline": {
+        "0.5": [
+       "/effect @s levitation 4 0"
+            ]
+      }
+    },
+    "animation.velocidad_pesada_1": {
+      "animation_length": 1.0,
+      "loop": true,
+      "timeline": {
+        "0.5": [
+        "/effect @s levitation 1 10"
+            ]
+      }
+    },
+    "animation.velocidad_pesada_2": {
+      "animation_length": 1.0,
+      "loop": true,
+      "timeline": {
+        "0.5": [
+    "/effect @s levitation 1 13"
+            ]
+      }
+    }
+  }
+}
+
+
+
+
+
+

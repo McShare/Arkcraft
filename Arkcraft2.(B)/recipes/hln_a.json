@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:hln_a"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "xcx",
+      "cvc",
+      " c "
+    ],
+   "key": {
+      "c": {
+        "item": "minecraft:iron_ingot"
+      },
+      "x": {
+        "item": "minecraft:chain"
+      },
+      "v": {
+        "item": "minecraft:redstone_block"
+      }
+    },
+    "result": {
+      "item": "arkcraft:hln_a_item",
+"count": 1
+
+    }
+  }
+}

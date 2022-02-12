@@ -1,0 +1,14 @@
+{
+ "format_version": "1.12",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:oxygen",
+   "category": "Equipment"
+  },
+  "components": {
+   "minecraft:icon": "oxygen",
+   "minecraft:use_animation": "drink",
+   "minecraft:render_offsets": "oxygen"
+  }
+ }
+}

@@ -1,0 +1,134 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.lymantria_domada_fly": {
+            "initial_state": "fly1noairdemo",
+            "states": {
+                "fly1noairdemo": {
+                    "transitions": [
+                        {"fly2noair": "(query.is_sitting)"},
+                        {"default": "(query.is_on_ground)"},
+                        {"default": "(!query.has_rider)"},
+                        {"default": "(!query.is_saddled)"}
+                    ],
+                    "on_entry":[
+                      "@s minecraft:domado_no_volando_active"
+                    ]
+                },
+                "default":{
+                    "transitions": [
+                        {"fly2noair": "(query.is_sitting)"},
+                        {"fly1air": "(query.is_tamed) && (!query.is_in_water) && (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (!query.mark_variant == 4)"},
+                        {"fly2air": "(query.is_tamed) && (!query.is_in_water) && (!query.has_rider) && (query.is_saddled) && (!query.is_on_ground)"},
+                        {"fly1noair": "(query.is_tamed) && (query.has_rider) && (query.is_saddled) && (query.mark_variant == 4)"},
+                        {"fly1noair": "(query.is_tamed) && (query.has_rider) && (query.is_saddled) && (query.is_on_ground)"},
+                        {"fly2noair": "(query.is_tamed) && (!query.has_rider) && (query.is_saddled) && (query.is_on_ground)"}
+                    ]
+                },
+                "fly1air": {
+                    "transitions": [
+                        {"fly2noair": "(query.is_sitting)"},
+                        {"fly1noair": "(query.is_on_ground)"},
+                        {"fly1noair": "(query.is_in_water) "},
+                        {"fly2noair": "(!query.has_rider)"},
+                        {"fly2noair": "(!query.is_saddled)"}
+                    ],
+                    "on_entry":[
+                      "@s minecraft:domado_volando_active"
+                    ]
+                },
+                "fly2air": {
+                    "transitions": [
+                        {"fly2noair": "(query.is_sitting)"},
+                        {"fly1air": "(query.is_tamed) && (!query.is_in_water) && (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) "},
+                        {"fly2noair": "(query.is_on_ground) "},
+                        {"fly2noair": "(query.is_in_water)"},
+                        {"fly1noair": "(query.has_rider)"}
+                    ],
+                    "on_entry":[
+                      "@s minecraft:domado_volando_active2"
+                    ]
+                },
+                
+                "fly1noair": {
+                    "transitions": [
+                        {"fly2noair": "(query.is_sitting)"},
+                        {"fly1air": "(query.is_tamed) && (!query.is_in_water) && (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) "},
+                        {"default": "(!query.is_on_ground)"},
+                        {"default": "(!query.has_rider)"},
+                        {"default": "(!query.is_saddled)"}
+                    ],
+                    "on_entry":[
+                      "@s minecraft:domado_no_volando_active" 
+                    ]
+                },
+                "fly2noair": {
+                    "transitions": [
+                       {"default": "(!query.is_on_ground)"},
+                       {"default": "(query.has_rider)"}
+                    ],
+                    "on_entry":[
+                      "@s minecraft:domado_no_volando_active2"
+                    ]
+                }
+            }
+        },
+        "controller.animation.ataque_especial_recovery": {
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "animations": [
+{"ataque_especial_recovery_animation_domado": "(query.is_tamed) && (query.skin_id == 3)"},
+{"ataque_especial_recovery_animation": "(!query.is_tamed) && (query.skin_id == 1)"}
+                    ]
+                    
+                }
+                
+            }
+        },
+        "controller.animation.lymantria_salvaje_vl1": {
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "animations": [
+                        {"lymantria_fly1": "(!query.is_tamed) && (!query.is_in_water) && (!query.is_on_ground) && (query.mark_variant == 1)"}
+                    ]
+                    
+                }
+                
+            }
+        },
+        "controller.animation.lymantria_salvaje_vl2": {
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "animations": [
+                        {"lymantria_fly2": "(!query.is_tamed) && (query.mark_variant == 1)"}
+                    ]
+                    
+                }
+                
+            }
+        },
+        "controller.animation.lymantria_domada_fly_on_air": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    
+                    "animations": [
+                        { "lymantria_velocidad_0":"(query.target_x_rotation >= 17 ) && (query.target_x_rotation <= 50 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed)  && (!query.is_riding) && (!query.is_in_water) && (query.mark_variant == 5)" },
+                        
+                        { "lymantria_velocidad_1":"(query.target_x_rotation >= -2 ) && (query.target_x_rotation <= 6 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_riding) && (!query.is_in_water) && (query.mark_variant == 5)" },
+                        
+                        { "lymantria_velocidad_2":"(query.target_x_rotation >= 7 ) && (query.target_x_rotation <= 17 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_riding) && (!query.is_in_water) && (query.mark_variant == 5)" },
+                        
+                        { "lymantria_velocidad_3":"(query.target_x_rotation >= -15 ) && (query.target_x_rotation <= -3 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_riding) && (!query.is_in_water) && (query.mark_variant == 5)" },
+                        
+                        { "lymantria_velocidad_4":"(query.target_x_rotation >= -35 ) && (query.target_x_rotation <= -16 ) &&  (query.has_rider) && (query.is_saddled) && (!query.is_on_ground) && (query.is_tamed) && (!query.is_riding) && (!query.is_in_water) && (query.mark_variant == 5)" }
+                    ]
+                }
+            }
+        }
+    }
+}
+        

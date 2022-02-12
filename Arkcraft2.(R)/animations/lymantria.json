@@ -1,0 +1,148 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.lymantria.volando2": {
+			"loop": true,
+			"animation_length": 28,
+			"sound_effects": {
+				"0.0": {
+					"effect": "volando2"
+				}
+			}
+		},
+		"animation.lymantria.walk": {
+			"loop": true,
+			"animation_length": 1.56,
+			"bones": {
+				"cabeza": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.76": [12.5, 0, 0],
+						"1.56": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.76": [0, 0, 0],
+						"1.56": [0, 0, 0]
+					}
+				},
+				"bone5": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.36": [12.5, 0, 0],
+						"0.76": [0, 0, 0],
+						"1.16": [-12.5, 0, 0],
+						"1.56": [0, 0, 0]
+					}
+				},
+				"bone6": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.36": [-12.5, 0, 0],
+						"0.76": [0, 0, 0],
+						"1.12": [12.5, 0, 0],
+						"1.56": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.lymantria.estatica": {
+			"loop": true,
+			"animation_length": 1.56,
+			"bones": {
+				"bone3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.72": [0, -2.5, 7.5],
+						"1.56": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.72": [0, -0.2, 0],
+						"1.56": [0, 0, 0]
+					}
+				},
+				"bone4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.72": [-7.5, 0, -17.5],
+						"1.56": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.72": [0, -0.7, 0],
+						"1.56": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.lymantria.fly": {
+			"loop": true,
+			"animation_length": 0.68,
+			"bones": {
+				"bone7": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.32": [0, 0, 35],
+						"0.68": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.32": [0, 0, 0],
+						"0.68": [0, 0, 0]
+					}
+				},
+				"bone8": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.32": [0, 0, -35],
+						"0.68": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.32": [0, 0, 0],
+						"0.68": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.lymantria.sit": {
+			"loop": true,
+			"bones": {
+				"animal": {
+					"position": [0, -1, 0]
+				},
+				"cabeza": {
+					"rotation": [33, 0, 0],
+					"position": [0, 0, -0.2]
+				},
+				"cuerpo": {
+					"scale": [1, 1, 1.2]
+				},
+				"alas": {
+					"position": [0, 0, 0],
+					"scale": [0.7, 1, 1]
+				},
+				"bone7": {
+					"rotation": [0, 0, 52.5],
+					"position": [0, -1, 0]
+				},
+				"bone8": {
+					"rotation": [0, 0, -52.5],
+					"position": [0, -1, 0]
+				},
+				"bone5": {
+					"rotation": [0, 0, 15]
+				},
+				"bone6": {
+					"rotation": [0, 0, -15]
+				},
+				"montura": {
+					"rotation": [-18, 0, 0],
+					"position": [0, -3.5, 8.8],
+					"scale": [0.9, 1, 1]
+				}
+			}
+		}
+	}
+}

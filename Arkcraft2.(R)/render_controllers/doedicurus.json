@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.doedicurus": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.doedicurus_1",
+            "Texture.doedicurus_2",
+            "Texture.doedicurus_3"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+ { "montura*": "query.variant == 2"},
+ { "cofre*": "query.variant == 2"}
+],
+
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.variant]" ]
+    }
+  }
+}

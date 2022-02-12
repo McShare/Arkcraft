@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:medium_herbivore_saddle"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "111",
+       "13 ",
+       "121"
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:iron_block"
+      },
+      "3": {
+        "item": "minecraft:leather"
+      },
+      "1": {
+        "item": "minecraft:wool:12"
+      }
+    },
+    "result": {
+      "item": "arkcraft:medium_herbivore_saddle"
+    }
+  }
+}
+
+

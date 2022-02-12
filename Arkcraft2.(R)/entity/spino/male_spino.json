@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"saddle": "textures/entity/spino/saddled/blue_spino_saddled",
+				"variant1": "textures/entity/spino/blue_spino",
+				"variant2": "textures/entity/spino/white_spino",
+				"variant3": "textures/entity/spino/green_spino",
+				"variant4": "textures/entity/spino/orange_spino"
+			},
+			"geometry": {
+				"default": "geometry.spino",
+				"saddle": "geometry.spino_saddled"
+			},
+			"animations": {
+				"idle": "animation.spino.idle",
+				"sleep": "animation.spino.sleep",
+				"attack": "controller.animation.attack",
+				"attacking": "animation.spino.attack",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target": "controller.animation.humanoid.look_at_target",
+				"walk": "animation.spino.move"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 100);"
+				],
+					
+				"animate": [
+					{
+						"sleep": "query.is_sheared"
+					},
+					"attack",
+					"look_at_target",
+					{
+						"idle": "query.is_chested"
+					},
+					{
+						"walk": "query.modified_move_speed"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.variants",
+				"controller.render.dino_saddle"
+			],
+			"spawn_egg": {
+				"base_color": "#8ACF8A",
+				"overlay_color": "#DC862B"
+			},
+			"identifier": "arkcraft:male_spino"
+		}
+	}
+}

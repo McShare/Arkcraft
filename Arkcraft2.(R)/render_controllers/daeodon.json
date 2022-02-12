@@ -1,0 +1,36 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.daeodon": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.default"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.variant]" ]
+    },
+    "controller.render.daeodon_saddle": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+            "Texture.saddle"
+          ]
+        }
+      },
+      "geometry": "Geometry.saddle",
+      "part_visibility": [ 
+        { "*": "query.is_saddled" }
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.variant]" ]
+    }
+    
+  }
+}

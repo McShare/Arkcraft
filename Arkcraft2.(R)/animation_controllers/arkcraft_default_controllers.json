@@ -1,0 +1,12 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+		"controller.animation.arkcraft.look_at_target" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "look_at_target" ]
+				}}
+				}
+    }
+}

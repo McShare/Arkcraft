@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:dimetrodon",
+      "materials": { "default": "spider"
+      },
+      "textures": {
+        "color_uno": "textures/entity/dimetrodon/dimetrodon_cold",
+      "color_dos": "textures/entity/dimetrodon/dimetrodon_warm"
+      },
+      "geometry": {
+         "default": "geometry.dimetrodon"
+      },
+      "animations": {
+        "move": "animation.dimetrodon.move",
+        "sit": "animation.dimetrodon.sit",
+        "default": "animation.dimetrodon.default",
+        "swimming": "animation.dimetrodon.swimming",
+        "look_at_target": "animation.common.look_at_target",
+        "attack": "animation.dimetrodon.attack"
+},
+      "animation_controllers": [
+        { "general": "controller.animation.dimetrodon.general" },
+        { "attack": "controller.animation.dimetrodon.attack" },
+       { "look_at_target": "controller.animation.dimetrodon.look_at_target" }
+      ],
+      "render_controllers": [ "controller.render.dimetrodon" ],
+      "spawn_egg": {
+        "base_color": "#ff6142",
+        "overlay_color": "#5eff42"
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:compy",
+      "materials": {
+        "default": "spider"
+      },            
+      "textures": {
+        "default": "textures/entity/compy"
+      },
+      "geometry": {
+        "default": "geometry.compy"
+      },
+      "animations": {
+        "walk": "animation.compy_move",
+        "sit": "animation.compy.sit",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          { "walk": "query.modified_move_speed" },
+          { "sit": "query.is_sitting" },
+          "look_at_target"
+        ]
+      },
+      "render_controllers": [ "controller.render.compy" ],
+      "spawn_egg": {
+         "base_color": "#3C4605",
+        "overlay_color": "#33300B"
+      }
+    }
+  }
+}

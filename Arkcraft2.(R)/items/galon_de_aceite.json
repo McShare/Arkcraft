@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:galon_de_aceite",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "galon_de_aceite",
+   "minecraft:render_offsets": "galon_de_aceite"
+  }
+ }
+}

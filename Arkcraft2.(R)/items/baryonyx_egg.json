@@ -1,0 +1,14 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:baryonyx_egg",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "baryonyx_egg",
+   "minecraft:use_animation": "eat",
+   "minecraft:render_offsets": "baryonyx_egg"
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:pasta_roja",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "pasta_roja",
+   "minecraft:use_animation": "eat",
+   "minecraft:render_offsets": "pasta_roja"
+  }
+ }
+}

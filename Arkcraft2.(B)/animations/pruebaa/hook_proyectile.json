@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.hook_proyectile_2": {
+     "animation_length": 0.1,
+      "loop": false, 
+      "timeline": {
+        "0.01": [
+    "/ride @e[type=arkcraft:hook_proyectile_3 , r=3] start_riding @s teleport_ride"
+            ]
+      } 
+    },  
+    "animation.hook_proyectile_3": {
+     "animation_length": 0.15,
+      "loop": false,
+      "timeline": {
+        "0.05": [
+    "/ride @p[r=6] start_riding @s"
+            ],
+        "0.1": [
+    "/ride @p[r=6] start_riding @s"
+            ]
+      }
+    }
+  }
+}

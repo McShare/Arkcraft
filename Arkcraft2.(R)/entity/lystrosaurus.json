@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:lystrosaurus",
+      "materials": {
+        "default": "cow"
+      },
+      "textures": {
+        "lystrosaurus_brown": "textures/entity/lystrosaurus/lystrosaurus_brown",
+        "lystrosaurus_green": "textures/entity/lystrosaurus/lystrosaurus_green",
+        "lystrosaurus_lime": "textures/entity/lystrosaurus/lystrosaurus_lime",
+        "lystrosaurus_mustard": "textures/entity/lystrosaurus/lystrosaurus_mustard"
+      },
+	"sound_effects": {
+	"lystrosaurus_flip": "sound.lystrosaurus_flip"
+	},
+      "geometry": {
+        "default": "geometry.lystrosaurus"
+      },
+      "animations": {
+        "lystrosaurus_flip_sound": "animation.lystrosaurus.flip.sound",
+        "lystrosaurus_flip": "animation.lystrosaurus.flip",
+        "move": "animation.lystrosaurus.move",
+        "sit": "animation.lystrosaurus.sit",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.cow.baby_transform"
+      },
+      "scripts": {
+        "scale": "2.0",
+        "animate": [
+          { "move": "query.modified_move_speed" },
+{ "lystrosaurus_flip_sound": "(query.mark_variant == 1) && (!query.is_sitting)"},
+ { "lystrosaurus_flip": "(query.mark_variant == 1) && (!query.is_sitting)" },
+          { "sit": "query.is_sitting" },
+          { "look_at_target": "(!query.mark_variant == 1)"},
+          { "baby_transform": "query.is_baby"}
+        ]
+      },
+      
+      "render_controllers": [ "controller.render.lystrosaurus" ],
+      "spawn_egg": {
+         "base_color": "#6000",
+        "overlay_color": "#DBFF00"
+      }
+    }
+  }
+}

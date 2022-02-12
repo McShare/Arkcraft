@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:cofre_con_cuerdas",
+   "category": "Equipment"
+  },
+  "components": {   
+"minecraft:icon": "cofre_con_cuerdas",
+   "minecraft:render_offsets": "cofre_con_cuerdas"
+  }
+ }
+}

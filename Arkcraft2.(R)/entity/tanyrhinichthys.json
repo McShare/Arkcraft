@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:tanyrhinichthys",
+      "materials": { "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/tanyrhinichthys"
+    },
+      "geometry": {
+        "default": "geometry.tanyrhinichthys"},
+      "animations": {
+        "move": "animation.tanyrhinichthys.move",
+        "default":
+        "animation.tanyrhinichthys.default",
+        "auch": "animation.tanyrhinichthys.auch"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.tanyrhinichthys.general" }
+      ],
+      "render_controllers": [ "controller.render.default" ],
+      "spawn_egg": {
+         "base_color": "#10A9C4",
+        "overlay_color": "#E8D30B"}
+      
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:qilinyu",
+      "materials": { "default": "cow" },
+      "geometry": {
+        "default": "geometry.qilinyu"
+      },
+      "textures": {
+        "default": "textures/entity/qilinyu/qilinyu"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.ZRot = !query.is_in_water ? Math.cos((query.time_stamp + query.frame_alpha) * 14.32) * 90 : 0.0;",
+          "variable.AnimationAmountBlend = Math.lerp(variable.AnimationAmountPrev, variable.AnimationAmount, query.frame_alpha);"
+        ]
+      },
+      "animations": {
+        "flop": "animation.cod.flop",
+        "swim": "animation.cod.swim"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.fish.general"
+        }
+      ],
+      "render_controllers": [ "controller.render.default" ],
+      "spawn_egg": {
+        "base_color": "#29864E",
+        "overlay_color": "#788D78"
+      }
+    }
+  }
+}

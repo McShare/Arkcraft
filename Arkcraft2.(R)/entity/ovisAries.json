@@ -1,0 +1,43 @@
+
+
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:ovis_aries",
+      "materials": { "default": "sheep",
+          "cuernos":"skeleton"
+      },
+      "textures": {
+        "baby": "textures/entity/ovisAries/ovis",
+      "ovis": "textures/entity/ovisAries/ovis",
+        "aries": "textures/entity/ovisAries/aries"
+    },
+      "geometry": {
+        "default": "geometry.ovis_aries",
+        "sheared": "geometry.ovis_aries_sheared"},
+
+      "animations": {
+        "move": "animation.ovis_aries.move",
+        "attack": "animation.ovis_aries.attack",
+        "look_at_target": "animation.common.look_at_target",
+        "ovis_aries_base_pose": "animation.ovis_aries.base_pose",
+        "ovis_aries_angry": "animation.ovis_aries.angry",
+        "grazing": "animation.ovis_aries.grazing"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.ovis_aries.move" },
+      {"look_at_target":
+"controller.animation.daeodon.look_at_target"},
+        { "ovis_aries_angry": "controller.animation.ovis_aries.angry" },
+       { "ovis_aries_base_pose": "controller.animation.ovis_aries.base_pose"},
+        { "attack": "controller.animation.ovis_aries.attack" }
+      ],
+      "render_controllers": [ "controller.render.ovis_aries" ],
+      "spawn_egg": {
+         "base_color": "#808080",
+        "overlay_color": "#FFB7FF"}
+      
+    }
+  }
+}

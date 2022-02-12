@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.dimetrodon_cold": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+"/execute @s ~ ~ ~ fill ~-2 ~2 ~2 ~2 ~-2 ~-2 snow 0 replace flowing_water",
+"/execute @s ~ ~ ~ fill ~-2 ~2 ~2 ~2 ~-2 ~-2 blue_ice 0 replace ice",
+"/execute @s ~ ~ ~ fill ~-2 ~2 ~2 ~2 ~-2 ~-2 air 0 replace fire",
+"/execute @s ~ ~ ~ fill ~-2 ~2 ~2 ~2 ~-2 ~-2 netherack 0 replace magma_block",
+"/execute @s ~ ~ ~ effect @e[r=4] fire_resistance 2 2 true"
+            ]
+      }
+    },
+    "animation.dimetrodon_warm": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": {
+        "0.2": [
+"/execute @s ~ ~ ~ fill ~-2 ~2 ~2 ~2 ~-2 ~-2 air 0 replace snow",
+"/execute @s ~ ~ ~ fill ~-2 ~2 ~2 ~2 ~-2 ~-2 air 0 replace snow_layer",
+"/execute @s ~ ~ ~ fill ~-2 ~2 ~2 ~2 ~-2 ~-2 air 0 replace powder_snow",
+"/execute @s ~ ~ ~ execute @e[r=4, type=!arkcraft:ouranosaurus] ~ ~ ~ detect ~ ~-1 ~ netherrack setblock ~ ~ ~ fire 0 replace air",
+"/effect @s fire_resistance 1 1 true"
+            ]
+      }
+    }
+  }
+}  

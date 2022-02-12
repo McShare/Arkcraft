@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "arkcraft:doedicurus_egg"
+    },
+    
+    "components": {
+      "minecraft:stacked_by_data": true,
+      "minecraft:use_duration": 32,
+      "minecraft:foil": false,
+  
+      "minecraft:food": {
+        "nutrition": 20,
+        "saturation_modifier": "supernatural",
+        "can_always_eat": true,
+        "effects": [
+          {
+            "name": "haste",
+            "chance": 1.0,
+            "duration": 10,
+            "amplifier": 0
+}
+]
+    }
+  }
+}
+}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.ataque_especial_ankylosaurus": {
+     "animation_length": 0.2, 
+      "loop": true,
+      "timeline": {
+        "0.0": [ 
+ "/execute @s ~ ~ ~ fill ~1 ~-1 ~-1 ~-1 ~1 ~1 iron_ore 0 replace copper_ore",
+"/execute @s ~ ~ ~ fill ~1 ~-1 ~-1 ~-1 ~1 ~1 quartz_ore 0 replace stone 4",
+"/execute @s ~ ~ ~ fill ~1 ~-1 ~-1 ~-1 ~1 ~1 oxidized_copper 0 replace stone 1",
+"/execute @s ~ ~ ~ fill ~1 ~-1 ~-1 ~-1 ~1 ~1 coal_ore 0 replace tuff",
+"/effect @s slowness 5 255 true",
+"/effect @e[r=5, type=!arkcraft:ankylosaurus, type=!player] wither 3 3 true"
+            ]
+      }
+    },
+    "animation.ataque_especial_reload": {
+     "animation_length": 7.0, 
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "/execute @s ~ ~ ~ fill ~1 ~-1 ~-1 ~-1 ~1 ~1 iron_ore 0 replace copper_ore",
+"/execute @s ~ ~ ~ fill ~1 ~-1 ~-1 ~-1 ~1 ~1 quartz_ore 0 replace stone 4",
+"/execute @s ~ ~ ~ fill ~1 ~-1 ~-1 ~-1 ~1 ~1 oxidized_copper 0 replace stone 1",
+"/execute @s ~ ~ ~ fill ~1 ~-1 ~-1 ~-1 ~1 ~1 coal_ore 0 replace tuff",
+"/effect @s slowness 5 255 true",
+"/effect @e[r=5, type=!arkcraft:ankylosaurus, type=!player] wither 3 3 true"
+            ],
+        "6.2": [
+"@s minecraft:sin_ataque_especial"
+            ]
+      }
+    }
+  }
+}

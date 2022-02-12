@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:casita_para_thorny_dragon"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "111",
+      "2 2",
+      "333"
+    ],
+    "key": {
+      "1": {
+        "item": "minecraft:planks"
+      },
+      "3": {
+        "item": "minecraft:lead"
+      },
+      "2": {
+        "item": "minecraft:fence"
+      }
+    },
+    "result": {
+      "item": "arkcraft:casita_para_thorny_dragon"
+    }
+  }
+}

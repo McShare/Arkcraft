@@ -1,0 +1,62 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.macrauchenia": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "saltitont1": "(query.variant == 0)"
+            } ,
+            {
+              "saltitont2": "(query.variant == 1)"
+            }
+          ],
+             "animations": [
+        "saltitont1"
+                        ]
+        },
+        "saltitont1": {
+          "transitions": [
+            {
+              "saltito1": "(!query.is_on_ground) && (!query.is_in_water) && (query.variant == 0)"
+            } 
+          ],
+             "animations": [
+        "saltitont1"
+                        ]
+        },
+          "saltitont2": {
+          "transitions": [
+            {
+              "saltito2": "(!query.is_on_ground) && (!query.is_in_water) && (query.variant == 1)"
+            }
+          ],
+             "animations": [
+        "saltitont2"
+                        ]
+        },
+        "saltito1": {
+          "transitions": [
+            {
+              "saltitont1": "(query.is_on_ground) || (query.is_in_water)"
+            }
+        ],
+             "animations": [
+        "saltito1"
+                        ]
+        },
+        "saltito2": {
+          "transitions": [
+            {
+              "saltitont2": "(query.is_on_ground) || (query.is_in_water)"
+            }
+        ],
+             "animations": [
+        "saltito2"
+                        ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:mamut",
+      "materials": { "default": "skeleton"
+      },
+      "textures": {
+        "sin_cofre": "textures/entity/mamut/sin_cofre",
+        "con_cofre": "textures/entity/mamut/con_cofre"
+      },
+      "geometry": {
+        "default": "geometry.mamut"},
+      "animations": {
+        "move": "animation.mamut.move",
+        "mamut_default":
+        "animation.mamut_default",
+        "attack": "animation.mamut.attack",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.mamut.move" },
+       { "mamut_default": "controller.animation.mamut_default"},
+       { "head_movement": "controller.animation.mamut.head_movement"}
+      ],
+      "render_controllers": [ "controller.render.mamut" ],
+      "spawn_egg": {
+         "base_color": "#522A0B",
+        "overlay_color": "#FFFFFF"}
+      
+    }
+  }
+}

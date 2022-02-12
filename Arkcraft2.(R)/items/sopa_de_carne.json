@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:item": {
+    "description": {
+      "identifier": "arkcraft:sopa_de_carne",
+      "category": "item"
+    },
+    "components": {
+      "minecraft:use_animation": "eat",
+      "minecraft:icon": "sopa_de_carne",
+      "minecraft:render_offsets": "sopa_de_carne"
+    }
+  }
+}

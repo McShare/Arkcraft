@@ -1,0 +1,14 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:pasta_bicho",
+   "category": "Nature"
+  },
+  "components": {
+   "minecraft:icon": "pasta_bicho",
+   "minecraft:use_animation": "eat",
+   "minecraft:render_offsets": "pasta_bicho"
+  }
+ }
+}

@@ -1,0 +1,49 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "dino2",
+				"npc_name": { "rawtext": [ { "translate": "Dino" } ] },
+				"text": { "rawtext": [ { "translate": "Ark Survival Evolved", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "Pacifique" } ] },
+						"commands": [
+							"/event entity @s ark:pacifique",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "Neutral" } ] },
+						"commands": [
+							"/event entity @s ark:neutral",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "Agressive" } ] },
+						"commands": [
+							"/event entity @s ark:agressive",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§6§lMale" } ] },
+						"commands": [
+							"/dialogue change @s dino2 @p"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "<<" } ] },
+						"commands": [
+							"/dialogue change @s dino1 @p"
+						]
+					}
+				]
+			}
+		]
+	}
+}

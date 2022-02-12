@@ -1,0 +1,22 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.lystrosaurus": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.lystrosaurus_brown",
+            "Texture.lystrosaurus_green",
+            "Texture.lystrosaurus_lime",
+            "Texture.lystrosaurus_mustard"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

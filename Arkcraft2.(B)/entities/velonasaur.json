@@ -1,0 +1,1732 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "arkcraft:velonasaur",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+        "minecraft:textura_1":{
+        "minecraft:variant": {
+          "value": 0
+      }
+        },
+        "minecraft:textura_2":{
+        "minecraft:variant": {
+          "value": 1
+      }
+        },
+        "minecraft:textura_3":{
+        "minecraft:variant": {
+          "value": 2
+      }
+        },
+  "minecraft:attack_mode":{
+        "minecraft:on_target_escape": {
+          "event": "minecraft:no_attack_mode",
+          "target": "self"
+        },
+        "minecraft:on_target_acquired": {
+        }
+  },
+  "minecraft:default_attack_sistem":{
+      "minecraft:follow_range": {
+        "value": 20
+      }
+  },
+  "minecraft:on_attack_sistem":{
+        "minecraft:angry": {
+          "duration": 5,
+          "broadcast_anger": false
+        },
+      "minecraft:follow_range": {
+        "value": 20
+      },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "no_attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t1"}
+                  ]
+                },
+                "event": "minecraft:attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "Attack Mode"
+            },
+            
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "no_attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t2"}
+                  ]
+                },
+                "event": "minecraft:attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "Attack Mode"
+            },
+            
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "no_attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t3"}
+                  ]
+                },
+                "event": "minecraft:attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "Attack Mode"
+            },
+            
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "no_attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t4"}
+                  ]
+                },
+                "event": "minecraft:attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "Attack Mode"
+            },
+            
+            
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t1"}
+                  ]
+                },
+                "event": "minecraft:no_attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "No Attack Mode"
+            },
+            
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t2"}
+                  ]
+                },
+                "event": "minecraft:no_attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "No Attack Mode"
+            },
+            
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t3"}
+                  ]
+                },
+                "event": "minecraft:no_attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "No Attack Mode"
+            },
+            
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "attack_mode"
+             },
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "arkcraft:whip_t4"}
+                  ]
+                },
+                "event": "minecraft:no_attack_mode",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "No Attack Mode"
+            }
+          ]
+        }},
+  "minecraft:off_attack_sistem":{
+        "minecraft:angry": {
+          "duration": 5,
+          "broadcast_anger": false
+        },
+      "minecraft:follow_range": {
+        "value": 20
+      }
+    },
+        
+        
+        
+        "minecraft:salvaje":{
+        "minecraft:on_target_escape": {
+          "event": "minecraft:off_ataque_lejano_salvaje",
+          "target": "self"
+        },
+        "minecraft:tameable": {
+          "probability": 0.05,
+          "tame_items": [
+            "arkcraft:pasta_roja"],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        },
+	    "minecraft:behavior.nearest_attackable_target": {
+          "reselect_targets": true,
+          "priority": 0,
+          "within_radius": 40,
+          "entity_types": [
+            {
+              "filters": { "other_with_families": [  "player" , "villager"] },
+             "max_dist": 40
+            }
+          ],
+          "must_see": true
+        },
+        "minecraft:target_nearby_sensor": {
+          "inside_range": 17.0,
+          "outside_range": 18.0,
+          "on_inside_range": {
+            "event": "minecraft:on_ataque_lejano_salvaje",
+            "target": "self"
+          },
+          "on_outside_range": {
+            "event": "minecraft:off_ataque_lejano_salvaje",
+            "target": "self"
+          }
+        }
+  },
+        "minecraft:on_ataque_lejano_salvaje":{
+      "minecraft:shooter": {
+        "type": "espina",
+        "def": "arkcraft:espina"
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 4,
+        "attack_interval_min": 1,
+        "attack_interval_max": 2,
+        "charge_charged_trigger": 0.0,
+        "charge_shoot_trigger": 1.0,
+        "attack_radius": 20,
+        "burst_shots": 150,
+        "burst_interval": 0.1
+      },
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+    },
+        "minecraft:off_ataque_lejano_salvaje":{
+      "minecraft:behavior.ranged_attack": {
+        "priority": 4,
+        "attack_interval_min": 1,
+        "attack_interval_max": 2,
+        "charge_charged_trigger": 0.0,
+        "charge_shoot_trigger": 1.0,
+        "attack_radius": 20,
+        "burst_shots": 150,
+        "burst_interval": 0.1
+      },
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+    },
+    
+    
+        "minecraft:domado":{
+				"minecraft:healable": {
+					"items": [
+						{
+							"item": "arkcraft:ark_meat_cooked",
+							"heal_amount": 10
+						},
+						{
+							"item": "arkcraft:ark_meat_raw",
+							"heal_amount": 6
+						},
+						{
+							"item": "arkcraft:raw_mawsonia",
+							"heal_amount": 15
+						},
+						{
+							"item": "minecraft:chicken",
+							"heal_amount": 5
+						},
+						{
+							"item": "minecraft:porkchop",
+							"heal_amount": 6
+						},
+						{
+							"item": "minecraft:muttonraw",
+							"heal_amount": 5
+						},
+						{
+							"item": "minecraft:beef",
+							"heal_amount": 6
+						},
+						{
+							"item": "minecraft:fish",
+							"heal_amount": 4
+						}
+					]
+	 			},
+        "minecraft:inventory": {
+          "inventory_size": 20,
+          "container_type": "horse",
+          "additional_slots_per_strength": 2
+        },
+			"minecraft:behavior.owner_hurt_target": {
+				"priority": 0,
+				"entity_types": [{
+					"filters": {
+						"test": "has_component",
+						"subject": "other",
+						"operator": "!=",
+						"value": "minecraft:is_tamed"
+					},
+					"max_dist": 20
+				}]
+			},
+     "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+        "minecraft:sittable": {
+          "sit_event": {
+            "event": "minecraft:sentado",
+            "target": "self"
+          },
+          "stand_event": {
+            "event": "minecraft:levantado",
+            "target": "self"
+        }
+        },
+
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item": "arkcraft:medium_carnivore_saddle",
+            "accepted_items": ["arkcraft:medium_carnivore_saddle"],
+            "on_equip": {
+              "event": "minecraft:on_saddled"
+            },
+            "on_unequip": {
+              "event": "minecraft:off_saddled"
+            }
+          }
+        ]
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "arkcraft:pasta_roja",
+            "heal_amount": 7
+          }
+        ]
+      },
+        "minecraft:is_tamed": {
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 0,
+          "speed_multiplier": 1.0,
+          "start_distance": 10,
+          "stop_distance": 4
+        },
+"minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      }
+  },
+  "minecraft:controlador_de_ataque":{
+        "minecraft:on_target_escape": {
+          "event": "minecraft:off_ataque_lejano_domado",
+          "target": "self"
+        },
+      
+        "minecraft:target_nearby_sensor": {
+          "inside_range": 17.0,
+          "outside_range": 18.0,
+          "on_inside_range": {
+            "event": "minecraft:on_ataque_lejano_domado",
+            "target": "self"
+          },
+          "on_outside_range": {
+            "event": "minecraft:off_ataque_lejano_domado",
+            "target": "self"
+          }
+        }
+  },
+        "minecraft:on_ataque_lejano_domado":{
+
+      "minecraft:shooter": {
+        "type": "espina",
+        "def": "arkcraft:espina"
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 5,
+        "attack_interval_min": 1,
+        "attack_interval_max": 2,
+        "charge_charged_trigger": 0.0,
+        "charge_shoot_trigger": 1.0,
+        "attack_radius": 20,
+        "burst_shots": 150,
+        "burst_interval": 0.1
+      },
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+    },
+        "minecraft:off_ataque_lejano_domado":{
+      "minecraft:behavior.melee_attack": {
+        "priority": 5,
+        "target_dist": 2.0,
+        "track_target": true,
+        "reach_multiplier": 1.0
+      },
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+    },
+
+"minecraft:on_saddled":{
+        "minecraft:item_controllable": {
+          "control_items": ["arkcraft:whip_t1" , "arkcraft:whip_t2" , "arkcraft:whip_t3" , "arkcraft:whip_t4"]
+        },
+        "minecraft:behavior.controlled_by_player": {
+          "priority": 0
+        },
+        "minecraft:is_saddled": {
+        },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+}
+},
+"minecraft:off_saddled":{
+},
+
+"minecraft:sentado":{
+      "minecraft:movement": {
+        "value": 0.0
+      }
+
+},
+"minecraft:modo_torreta_0":{
+        "minecraft:mark_variant": {
+          "value": 0
+        },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      },
+        "minecraft:interact": {
+          "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t1"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_torreta_0",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode -Attack all mobs",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t2"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_torreta_0",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode -Attack all mobs",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t3"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_torreta_0",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode -Attack all mobs",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t4"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_torreta_0",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode -Attack all mobs",
+              "play_sounds": "shear"
+        }
+        ]
+        }
+},
+"minecraft:modo_torreta_1":{
+        "minecraft:interact": {
+          "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t1"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_torreta_1",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode -Attack only monster and animals",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t2"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_torreta_1",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode -Attack only monster and animals",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t3"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_torreta_1",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode -Attack only monster and animals",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t4"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_torreta_1",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode -Attack only monster and animals",
+              "play_sounds": "shear"
+        }
+        ]
+        },
+       "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": true
+                  }
+                ]
+              },
+              "max_dist": 40
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "mob"},
+     { "test" :  "is_family", "subject" : "other", "value" :  "monster"},
+                 { "test" :  "is_family", "subject" : "other", "value" :  "pulmonoscorpius"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "doedicurus"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "thorny"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
+                ],
+                "all_of": [
+                  { "test" :  "has_component","subject" : "other", "operator": "!=", "value" :  "minecraft:is_tamed"}
+                ]
+              },
+              "max_dist": 40
+            }
+          ],
+          "must_see": true
+},
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+      "minecraft:shooter": {
+        "type": "espina",
+        "def": "arkcraft:espina"
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 4,
+        "attack_interval_min": 1,
+        "attack_interval_max": 2,
+        "charge_charged_trigger": 0.0,
+        "charge_shoot_trigger": 1.0,
+        "attack_radius": 20,
+        "burst_shots": 150,
+        "burst_interval": 0.1
+      }
+},
+"minecraft:modo_torreta_2":{
+        "minecraft:interact": {
+          "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t1"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_torreta_2",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode -Attack only monster and Players",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t2"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_torreta_2",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode -Attack only monster and Players",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t3"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_torreta_2",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode -Attack only monster and Players",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t4"
+                  }
+                ]
+              },
+              "event": "minecraft:modo_torreta_2",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode -Attack only monster and Players",
+              "play_sounds": "shear"
+        }
+        ]
+        },
+       "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "mob"},
+     { "test" :  "is_family", "subject" : "other", "value" :  "monster"},
+                 { "test" :  "is_family", "subject" : "other", "value" :  "pulmonoscorpius"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "doedicurus"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "thorny"}
+                ],
+                "all_of": [
+                  { "test" :  "has_component","subject" : "other", "operator": "!=", "value" :  "minecraft:is_tamed"}
+                ]
+              },
+              "max_dist": 40
+            }
+          ],
+          "must_see": true
+},
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+      "minecraft:shooter": {
+        "type": "espina",
+        "def": "arkcraft:espina"
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 4,
+        "attack_interval_min": 1,
+        "attack_interval_max": 2,
+        "charge_charged_trigger": 0.0,
+        "charge_shoot_trigger": 1.0,
+        "attack_radius": 20,
+        "burst_shots": 150,
+        "burst_interval": 0.1
+      }
+},
+"minecraft:modo_torreta_3":{
+        "minecraft:interact": {
+          "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t1"
+                  }
+                ]
+              },
+              "event": "minecraft:sentado",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode disable",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t2"
+                  }
+                ]
+              },
+              "event": "minecraft:sentado",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode disable",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t3"
+                  }
+                ]
+              },
+              "event": "minecraft:sentado",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode disable",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "arkcraft:whip_t4"
+                  }
+                ]
+              },
+              "event": "minecraft:sentado",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Turret Mode disable",
+              "play_sounds": "shear"
+        }
+        ]
+        },
+       "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+     { "test" :  "is_family", "subject" : "other", "value" :  "monster"}
+                ],
+                "all_of": [
+                  { "test" :  "has_component","subject" : "other", "operator": "!=", "value" :  "minecraft:is_tamed"}
+                ]
+              },
+              "max_dist": 40
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": true
+                  }
+                ]
+              },
+              "max_dist": 40
+            }
+          ],
+          "must_see": true
+},
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+      "minecraft:shooter": {
+        "type": "espina",
+        "def": "arkcraft:espina"
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 4,
+        "attack_interval_min": 1,
+        "attack_interval_max": 2,
+        "charge_charged_trigger": 0.0,
+        "charge_shoot_trigger": 1.0,
+        "attack_radius": 20,
+        "burst_shots": 150,
+        "burst_interval": 0.1
+      }
+},
+"minecraft:levantado":{
+      "minecraft:movement": {
+        "value": 0.3
+      },
+        "minecraft:rideable": {
+          "priority": 0,
+"rider_can_interact": true,
+          "seat_count": 1,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.ride.horse",
+          "seats": {
+            "position": [ 0.0, 1.3, 0.0 ]
+          }
+
+        }
+}},
+    "components": {
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters":{
+            "all_of": [
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "no_attack_mode"
+             },
+                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"}
+            ]
+            },
+            "event":"minecraft:on_attack_sistem"
+          },
+          {
+            "filters":{
+            "all_of": [
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 0
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "sistem_attack_mode"
+             },
+                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"}
+            ]
+            },
+            "event":"minecraft:off_attack_sistem"
+          }
+        ]
+      },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/velonasaur.json"
+        },
+      "minecraft:health": {
+        "value": 60,
+        "max": 60
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:collision_box": {
+        "width": 1.3,
+        "height": 1.4
+      },
+        "minecraft:scale": {
+          "value":1.6 
+        },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1.2
+      },
+     "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(7,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+      },
+      "minecraft:follow_range": {
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:balloonable": {
+        "mass": 0.75
+      },
+      "minecraft:behavior.float": {
+        "priority": 2
+      },
+      "minecraft:nameable": {
+      },
+
+      "minecraft:type_family": {
+        "family": [ "velonasaur"  , "mob"]
+      },
+      "minecraft:breathable": {
+        "total_supply": 25,
+        "suffocate_time": 0
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 3
+          }
+        ]
+      },
+        "minecraft:attack": {
+          "damage": {
+            "range_min": 4,
+            "range_max": 10
+          }
+        },
+      "minecraft:movement": {
+        "value": 0.4
+      },
+      "minecraft:jump.static": {
+      },
+	    "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+
+    "events": {
+      "minecraft:off_attack_sistem": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tag @s remove sistem_attack_mode"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+    "minecraft:on_attack_sistem",
+"minecraft:attack_mode"
+          ]
+        },
+        "add": {
+          "component_groups": [
+      "minecraft:off_attack_sistem",
+               "minecraft:controlador_de_ataque",
+"minecraft:on_ataque_lejano_domado",
+               "minecraft:off_ataque_lejano_domado"
+          ]
+        }
+      },
+      "minecraft:on_attack_sistem": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tag @s add sistem_attack_mode"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+    "minecraft:off_attack_sistem",
+               "minecraft:controlador_de_ataque",
+"minecraft:on_ataque_lejano_domado",
+               "minecraft:off_ataque_lejano_domado"
+          ]
+        },
+        "add": {
+          "component_groups": [
+      "minecraft:on_attack_sistem"
+          ]
+        }
+      },
+      "minecraft:no_attack_mode": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tellraw @p { \"rawtext\": [ { \"text\" : \"§9[Attack Mode Disabled] \" } ] }",
+    "playsound sound.attack_mode @a[r=4] ~~~"
+          ],
+          "target": "self"
+		},
+            "remove": {
+              "component_groups": [
+"minecraft:attack_mode",
+               "minecraft:controlador_de_ataque",
+"minecraft:on_ataque_lejano_domado",
+               "minecraft:off_ataque_lejano_domado"
+              ]
+            },
+            "add": {
+            }
+      },
+      "minecraft:attack_mode": {
+		"run_command": {
+          "command": [
+    "tag @s add attack_mode",
+    "tag @s remove no_attack_mode",
+    "tellraw @p { \"rawtext\": [ { \"text\" : \"§4[Attack Mode Active] \" } ] }",
+    "playsound sound.attack_mode @a[r=4] ~~~"
+          ],
+          "target": "self"
+		},
+            "remove": {
+              "component_groups": [
+              ]
+            },
+            "add": {
+              "component_groups": [
+"minecraft:attack_mode",
+               "minecraft:controlador_de_ataque",
+"minecraft:on_ataque_lejano_domado",
+               "minecraft:off_ataque_lejano_domado"
+              ]
+            }
+      },
+        
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 587,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:salvaje",
+"minecraft:default_attack_sistem",
+"minecraft:textura_1"
+              ]
+            }
+          },
+          {
+            "weight": 587,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:salvaje",
+"minecraft:default_attack_sistem",
+"minecraft:textura_2"
+              ]
+            }
+          },
+          {
+            "weight": 587,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:salvaje",
+"minecraft:default_attack_sistem",
+"minecraft:textura_3"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:on_tame": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tag @s remove sistem_attack_mode"
+          ],
+          "target": "self"
+		},
+            "remove": {
+              "component_groups": [
+               "minecraft:salvaje",
+               "minecraft:on_ataque_lejano_salvaje",
+               "minecraft:off_ataque_lejano_salvaje",
+"minecraft:default_attack_sistem"
+              ]
+            },
+            "add": {
+              "component_groups": [
+  "minecraft:off_attack_sistem",
+               "minecraft:domado",
+               "minecraft:controlador_de_ataque",
+               "minecraft:off_ataque_lejano_domado",
+               "minecraft:sin_montura",
+               "minecraft:levantado"
+              ]
+            }
+      },
+      "minecraft:sentado": {
+        "randomize": [
+          {
+            "remove": {
+              "component_groups": [
+      "minecraft:on_attack_sistem",
+               "minecraft:levantado",
+               "minecraft:controlador_de_ataque",
+               "minecraft:off_ataque_lejano_salvaje",
+               "minecraft:on_ataque_lejano_salvaje"
+              ]
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:sentado",
+               "minecraft:modo_torreta_0"
+              ]
+            }
+          }
+        ]
+      },
+     "minecraft:levantado": {
+        "randomize": [
+          {
+            "remove": {
+              "component_groups": [
+               "minecraft:sentado",
+               "minecraft:modo_torreta_0",
+               "minecraft:modo_torreta_1",
+               "minecraft:modo_torreta_2",
+               "minecraft:modo_torreta_3"
+              ]
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:controlador_de_ataque",
+               "minecraft:off_ataque_lejano_domado",
+  "minecraft:off_attack_sistem",
+               "minecraft:levantado"
+              ]
+            }
+          }
+        ]
+      },
+     "minecraft:on_saddled": {
+        "randomize": [
+          {
+            "remove": {
+              "component_groups": [
+               "minecraft:off_saddled"
+              ]
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:on_saddled"
+              ]
+            }
+          }
+        ]
+      },
+     "minecraft:off_saddled": {
+        "randomize": [
+          {
+            "remove": {
+              "component_groups": [
+               "minecraft:on_saddled"
+              ]
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:off_saddled"
+              ]
+            }
+          }
+        ]
+      },
+     "minecraft:on_ataque_lejano_salvaje": {
+        "randomize": [
+          {
+            "remove": {
+              "component_groups": [
+               "minecraft:off_ataque_lejano_salvaje"
+              ]
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:on_ataque_lejano_salvaje"
+              ]
+            }
+          }
+        ]
+      },
+     "minecraft:off_ataque_lejano_salvaje": {
+        "randomize": [
+          {
+            "remove": {
+              "component_groups": [
+               "minecraft:on_ataque_lejano_salvaje"
+              ]
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:off_ataque_lejano_salvaje"
+              ]
+            }
+          }
+        ]
+      },
+     "minecraft:on_ataque_lejano_domado": {
+        "randomize": [
+          {
+            "remove": {
+              "component_groups": [
+               "minecraft:off_ataque_lejano_domado"
+              ]
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:on_ataque_lejano_domado"
+              ]
+            }
+          }
+        ]
+      },
+     "minecraft:off_ataque_lejano_domado": {
+        "randomize": [
+          {
+            "remove": {
+              "component_groups": [
+               "minecraft:on_ataque_lejano_domado"
+              ]
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:off_ataque_lejano_domado"
+              ]
+            }
+          }
+        ]
+      },
+     "minecraft:modo_torreta_0": {
+        "randomize": [
+          {
+            "remove": {
+              "component_groups": [
+               "minecraft:modo_torreta_0"
+              ]
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:modo_torreta_1"
+              ]
+            }
+          }
+        ]
+      },
+     "minecraft:modo_torreta_1": {
+        "randomize": [
+          {
+            "remove": {
+              "component_groups": [
+               "minecraft:modo_torreta_1"
+              ]
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:modo_torreta_2"
+              ]
+            }
+          }
+        ]
+      },
+     "minecraft:modo_torreta_2": {
+        "randomize": [
+          {
+            "remove": {
+              "component_groups": [
+               "minecraft:modo_torreta_2"
+              ]
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:modo_torreta_3"
+              ]
+            }
+          }
+        ]
+      },
+     "minecraft:modo_torreta_3": {
+        "randomize": [
+          {
+            "remove": {
+              "component_groups": [
+               "minecraft:modo_torreta_3",
+               "minecraft:modo_torreta_1",
+               "minecraft:modo_torreta_2"
+              ]
+            },
+            "add": {
+              "component_groups": [
+               "minecraft:modo_torreta_0"
+              ]
+            }
+          }
+        ]
+      }
+      
+      
+    }
+  }
+}

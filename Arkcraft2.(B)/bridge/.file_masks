@@ -1,0 +1,89 @@
+{
+	"BP/entities/spino/orange_female_spino.json": {
+		"data": {}
+	},
+	"BP/entities/spino/orange_male_spino.json": {
+		"data": {}
+	},
+	"BP/manifest.json": {
+		"data": {}
+	},
+	"BP/entities/spino/green_female_spino.json": {
+		"data": {}
+	},
+	"BP/entities/spino/green_male_spino.json": {
+		"data": {}
+	},
+	"BP/entities/spino/white_female_spino.json": {
+		"data": {}
+	},
+	"BP/entities/spino/white_male_spino.json": {
+		"data": {}
+	},
+	"BP/spawn_rules/rex.json": {
+		"data": {}
+	},
+	"BP/entities/blue_female_spino.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/camerashake_giant.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/swim.json": {
+		"data": {}
+	},
+	"BP/entities/customarrow.json": {
+		"data": {}
+	},
+	"BP/entities/spino/female_spino.json": {
+		"data": {}
+	},
+	"BP/entities/spino/male_spino.json": {
+		"data": {}
+	},
+	"BP/entities/yutyrannus/female_yutyrannus.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/no_movement_tp.json": {
+		"data": {}
+	},
+	"BP/entities/rex/male_rex.json": {
+		"data": {}
+	},
+	"BP/entities/rex/female_rex.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/healthblood.json": {
+		"data": {}
+	},
+	"BP/items/ark_crossbow.json": {
+		"data": {}
+	},
+	"BP/entities/yutyrannus/male_yutyrannus.json": {
+		"data": {}
+	},
+	"BP/items/whip.json": {
+		"data": {}
+	},
+	"BP/items/narcotic_arrow.json": {
+		"data": {}
+	},
+	"BP/entities/baryonyx/male_baryonyx.json": {
+		"data": {}
+	},
+	"BP/entities/baryonyx/female_baryonyx.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/speed_air.json": {
+		"data": {}
+	},
+	"BP/entities/shadowmane/female_shadowmane.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/healthblood2.json": {
+		"data": {}
+	},
+	"BP/entities/shadowmane/male_shadowmane.json": {
+		"data": {}
+	}
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.irritator": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.irritator1",
+            "Texture.irritator2",
+             "Texture.irritator3"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+        { "montura*": "query.is_saddled" },
+        { "bone21*": "query.is_saddled" },
+        { "bone22*": "query.is_saddled" },
+        { "bone23*": "query.is_saddled" }
+  
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

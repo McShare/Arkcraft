@@ -1,0 +1,58 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+	    
+		"controller.animation.pulmonoscorpius.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"attacking" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "variable.attack_time < 0.1"
+						}
+					]
+				},
+				"default" : {
+					"transitions" : [
+						{
+							"attacking" : "variable.attack_time >= 0.1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.pulmonoscorpius.move" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"sit" : "query.is_sitting"
+						}
+					],
+					"animations" : [
+						"default_leg_pose",
+						{
+							"walk" : "query.modified_move_speed"
+						},
+						"look_at_target",
+						"default"
+					]
+				},
+				"sit" : {
+					"transitions" : [
+						{
+							"default" : "!query.is_sitting"
+						}
+					],
+					"animations" : [
+						"sit",
+						"look_at_target",
+						"default"
+					]
+				}
+			}
+		}
+	}
+}

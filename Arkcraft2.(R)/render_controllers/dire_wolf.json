@@ -1,0 +1,28 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.dire_wolf": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.pelaje_rojo",
+            "Texture.pelaje_cafe",
+            "Texture.pelaje_negro",
+            "Texture.pelaje_amarillo",
+            "Texture.pelaje_blanco",
+           "Texture.pelaje_naranja"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true }
+
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

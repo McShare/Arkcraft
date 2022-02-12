@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.saltito1": {
+     "animation_length": 0.3,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "/effect @s speed 1 14 true",
+"@s minecraft:saltito1"
+            ]
+      }
+    },
+    "animation.saltitont1": {
+     "animation_length": 0.3,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "/effect @s speed 0 15 true",
+"@s minecraft:saltitont1"
+            ]
+      }
+    },
+    "animation.saltito2": {
+     "animation_length": 0.3,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "/effect @s speed 1 12 true",
+"@s minecraft:saltito2"
+            ]
+      }
+    },
+    "animation.saltitont2": {
+     "animation_length": 0.3,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "/effect @s speed 0 13 true",
+"@s minecraft:saltitont2"
+            ]
+      }
+    }
+  }
+}

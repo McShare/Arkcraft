@@ -1,0 +1,45 @@
+
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:velonasaur_r",
+      "materials": {
+        "default": "spider",
+        "velonasaur": "cow"
+      },            
+      "textures": {
+        "velonasaur_r1": "textures/entity/velonasaur_r/velonasaur_r1",
+        "velonasaur_r2": "textures/entity/velonasaur_r/velonasaur_r2",
+        "velonasaur_r3": "textures/entity/velonasaur_r/velonasaur_r3",
+        "velonasaur_egg": "textures/entity/velonasaur_r/velonasaur_egg",
+        "copper": "textures/entity/velonasaur_r/copper"
+      },
+      "geometry": {
+        "velonasaur_egg": "geometry.magmasaur_egg",
+        "default": "geometry.velonasaur_r"
+      },
+      "animations": {
+        "walk": "animation.velonasaur_r.move",
+      "disparo":
+        "animation.velonasaur_r.dis",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          { "walk": "query.modified_move_speed" },
+          { "disparo": "query.mark_variant == 1" },
+          "look_at_target"
+        ]
+      },
+      "render_controllers": [ 
+        { "controller.render.velonasaur_r": "!query.skin_id == 0" },
+        { "controller.render.velonasaur_r_egg": "query.skin_id == 0" }
+      ],
+      "spawn_egg": {
+         "base_color": "#f4fc05",
+        "overlay_color": "#f805fc"
+      }
+    }
+  }
+}

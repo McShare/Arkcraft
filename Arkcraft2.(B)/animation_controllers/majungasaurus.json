@@ -1,0 +1,13 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.majungasaurus_saddled": {
+            "initial_state": "default",
+        "states": {
+                "default": {
+                    "animations": [
+                        { "majungasaurus_saddled_buff":"(query.is_saddled)"
+                        }
+                            
+                    ]}}}}}
