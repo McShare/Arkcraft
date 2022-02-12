@@ -321,46 +321,46 @@ entity.arkcraft:pikaia.name=皮卡虫
 
 item.spawn_egg.entity.arkcraft:diplocaulus.name=§6ArkCraft | §3笠头螈刷怪蛋
 entity.arkcraft:diplocaulus.name=笠头螈
-action.hint.exit.arkcraft:diplocaulus=骑乘笠头螈
+action.hint.exit.arkcraft:diplocaulus=骑着笠头螈
 
 item.spawn_egg.entity.arkcraft:quetzal.name=§6ArkCraft | §3魁札尔鸟刷怪蛋
 entity.arkcraft:quetzal.name=魁札尔鸟
-action.hint.exit.arkcraft:quetzal=骑魁札尔鸟
+action.hint.exit.arkcraft:quetzal=骑着魁札尔鸟
 
 item.spawn_egg.entity.arkcraft:magmasaur.name=§6ArkCraft | §3岩浆龙刷怪蛋
 entity.arkcraft:magmasaur.name=岩浆龙
-action.hint.exit.arkcraft:magmasaur=骑岩浆龙
+action.hint.exit.arkcraft:magmasaur=骑着岩浆龙
 
 item.spawn_egg.entity.arkcraft:phiomia.name=§6ArkCraft | §3渐新象刷怪蛋
 entity.arkcraft:phiomia.name=渐新象
-action.hint.exit.arkcraft:phiomia=骑渐新象
+action.hint.exit.arkcraft:phiomia=骑着渐新象
 
 item.spawn_egg.entity.arkcraft:irritator.name=§6ArkCraft | §3激龙刷怪蛋
 entity.arkcraft:irritator.name=激龙
-action.hint.exit.arkcraft:irritator=骑激龙
+action.hint.exit.arkcraft:irritator=骑着激龙
 
 item.spawn_egg.entity.arkcraft:bulbdog.name=§6ArkCraft | §3灯泡犬刷怪蛋
 entity.arkcraft:bulbdog.name=灯泡狗
 
-item.spawn_egg.entity.arkcraft:lymantria.name=§6ArkCraft | §3舞毒蛾刷怪蛋
-entity.arkcraft:lymantria.name=舞毒蛾
-action.hint.exit.arkcraft:lymantria=骑舞毒蛾
+item.spawn_egg.entity.arkcraft:lymantria.name=§6ArkCraft | §3毒蛾刷怪蛋
+entity.arkcraft:lymantria.name=毒蛾
+action.hint.exit.arkcraft:lymantria=骑着毒蛾
 
 item.spawn_egg.entity.arkcraft:scutosaurus.name=盾甲龙刷怪蛋
 entity.arkcraft:scutosaurus.name=盾甲龙
 
 item.spawn_egg.entity.arkcraft:ankylosaur.name=§6ArkCraft | §3甲龙刷怪蛋
 entity.arkcraft:ankylosaur.name=甲龙
-action.hint.exit.arkcraft:ankylosaur=骑甲龙
+action.hint.exit.arkcraft:ankylosaur=骑着甲龙
 
 item.spawn_egg.entity.arkcraft:skorpiovenator.name=§6ArkCraft | §3蝎猎龙刷怪蛋
 entity.arkcraft:skorpiovenator.name=蝎猎龙
-action.hint.exit.arkcraft:skorpiovenator=骑蝎猎龙
+action.hint.exit.arkcraft:skorpiovenator=骑着蝎猎龙
 
 
 item.spawn_egg.entity.arkcraft:ouranosaurus.name=§6ArkCraft | §3无畏龙刷怪蛋
 entity.arkcraft:ouranosaurus.name=无畏龙
-action.hint.exit.arkcraft:ouranosaurus=骑无畏龙
+action.hint.exit.arkcraft:ouranosaurus=骑着无畏龙
 
 item.spawn_egg.entity.arkcraft:hln_a.name=§6ArkCraft | §3HLN-A 刷怪蛋
 entity.arkcraft:hln_a.name=HLN-A
