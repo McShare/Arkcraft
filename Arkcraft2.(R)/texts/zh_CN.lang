@@ -20,11 +20,11 @@ item.wooden_sword.name=木棍
 
 
 
-tile.enchanting_table.name=蓝图速写本
-item.enchanted_book.name=§n§l§8蓝图（附魔书）
+tile.enchanting_table.name=附魔桌
+item.enchanted_book.name=§n§l§8附魔书
 
 item.arkcraft:ark_meat_raw.name=§6ArkCraft | §3方舟生肉
-item.arkcraft:ark_meat_cooked.name=§6ArkCraft | §3方舟肉熟
+item.arkcraft:ark_meat_cooked.name=§6ArkCraft | §3方舟熟肉
 tile.arkcraft:narcoberry.name=§6ArkCraft | §3黑莓灌木
 item.arkcraft:narcoberry_seed.name=§6ArkCraft | §3黑莓
 
@@ -275,90 +275,90 @@ action.hint.exit.arkcraft:majungasaurus=骑马君龙
 item.spawn_egg.entity.arkcraft:majungasaurus.name=§6ArkCraft | §3玛君龙刷怪蛋
 entity.arkcraft:majungasaurus.name=玛君龙
 
-action.hint.exit.arkcraft:llukalkan=骑着 llukalkan
-item.spawn_egg.entity.arkcraft:llukalkan.name=§6ArkCraft | §3Llukalkan刷怪蛋
-entity.arkcraft:majungasaurus.name=Llukalkan
+action.hint.exit.arkcraft:llukalkan=骑慑龙
+item.spawn_egg.entity.arkcraft:llukalkan.name=§6ArkCraft | §3慑龙刷怪蛋
+entity.arkcraft:majungasaurus.name=慑龙
 
-action.hint.exit.arkcraft:teratophoneus=骑着 Teratophoneus
-item.spawn_egg.entity.arkcraft:teratophoneus.name=§6ArkCraft | §3Teratophoneus 刷怪蛋
-entity.arkcraft:teratophoneus.name=Teratophoneus
+action.hint.exit.arkcraft:teratophoneus=骑怪猎龙
+item.spawn_egg.entity.arkcraft:teratophoneus.name=§6ArkCraft | §3怪猎龙刷怪蛋
+entity.arkcraft:teratophoneus.name=怪猎龙
 
-action.hint.exit.arkcraft:nanuqsaurus=骑着 Nanuqsaurus
-item.spawn_egg.entity.arkcraft:nanuqsaurus.name=§6ArkCraft | §3Nanuqsaurus 刷怪蛋
-entity.arkcraft:nanuqsaurus.name=Nanuqsaurus
+action.hint.exit.arkcraft:nanuqsaurus=骑白熊龙
+item.spawn_egg.entity.arkcraft:nanuqsaurus.name=§6ArkCraft | §3白熊龙刷怪蛋
+entity.arkcraft:nanuqsaurus.name=白熊龙
 
-action.hint.exit.arkcraft:velonasaur=骑着 Velonasaur
-item.spawn_egg.entity.arkcraft:velonasaur.name=§6ArkCraft | §3 Velonasaur 刷怪蛋
-entity.arkcraft:velonasaur.name=Velonasaur
+action.hint.exit.arkcraft:velonasaur=骑帷幕速龙
+item.spawn_egg.entity.arkcraft:velonasaur.name=§6ArkCraft | §3 帷幕速龙刷怪蛋
+entity.arkcraft:velonasaur.name=帷幕速龙
 
-action.hint.exit.arkcraft:velonasaur_r=骑着 Velonasaur (R VARIANT)
-item.spawn_egg.entity.arkcraft:velonasaur_r.name=§6ArkCraft | §3 Velonasaur (R VARIANT) 刷怪蛋
-entity.arkcraft:velonasaur_r.name=Velonasaur (R VARIANT)
+action.hint.exit.arkcraft:velonasaur_r=骑着帷幕速龙 (R变异)
+item.spawn_egg.entity.arkcraft:velonasaur_r.name=§6ArkCraft | §3 帷幕速龙 (R变异) 刷怪蛋
+entity.arkcraft:velonasaur_r.name=VARIANT (R变异)
 
-action.hint.exit.arkcraft:dire_wolf=骑着恐狼
+action.hint.exit.arkcraft:dire_wolf=骑恐狼
 item.spawn_egg.entity.arkcraft:dire_wolf.name=§6ArkCraft | §3恐狼刷怪蛋
 entity.arkcraft:dire_wolf.name=恐狼
 
 entity.arkcraft:espina.name=Espina
 
-action.hint.exit.arkcraft:argentavis=骑着 Argentavis
-item.spawn_egg.entity.arkcraft:argentavis.name=§6ArkCraft | §3Argentavis 刷怪蛋
-entity.arkcraft:argentavis.name=Argentavis
+action.hint.exit.arkcraft:argentavis=骑阿根廷巨鹰
+item.spawn_egg.entity.arkcraft:argentavis.name=§6ArkCraft | §3阿根廷巨鹰刷怪蛋
+entity.arkcraft:argentavis.name=阿根廷巨鹰
 
 item.arkcraft:rexskull_on_stick.name=驯马鞭（用于骑术和技能）
 item.arkcraft:raw_prime_meat.name=上等生肉
-item.arkcraft:cooked_prime_meat.name=熟肉
+item.arkcraft:cooked_prime_meat.name=上等熟肉
 
 
 
-item.arkcraft:argentavis_saddle.name=§6ArkCraft | §3Argentavis 鞍座
+item.arkcraft:argentavis_saddle.name=§6ArkCraft | §3阿根廷巨鹰鞍座
 
-item.spawn_egg.entity.arkcraft:dimetrodon.name=§6ArkCraft | §3异齿龙产卵
-entity.arkcraft:dimetrodon.name=Dimetrodon
+item.spawn_egg.entity.arkcraft:dimetrodon.name=§6ArkCraft | §3异齿龙刷怪蛋
+entity.arkcraft:dimetrodon.name=异齿龙
 
-item.spawn_egg.entity.arkcraft:pikaia.name=§6ArkCraft | §3Pikaia 刷怪蛋
-entity.arkcraft:pikaia.name=Pikaia
+item.spawn_egg.entity.arkcraft:pikaia.name=§6ArkCraft | §3皮卡虫刷怪蛋
+entity.arkcraft:pikaia.name=皮卡虫
 
-item.spawn_egg.entity.arkcraft:diplocaulus.name=§6ArkCraft | §3双叶虫卵
+item.spawn_egg.entity.arkcraft:diplocaulus.name=§6ArkCraft | §3双叶虫刷怪蛋
 entity.arkcraft:diplocaulus.name=Diplocaulus
 action.hint.exit.arkcraft:diplocaulus=骑乘Diplocaulus
 
-item.spawn_egg.entity.arkcraft:quetzal.name=§6ArkCraft | §3格查尔刷怪蛋
-entity.arkcraft:quetzal.name=格查尔
-action.hint.exit.arkcraft:quetzal=骑格查尔
+item.spawn_egg.entity.arkcraft:quetzal.name=§6ArkCraft | §3魁札尔鸟刷怪蛋
+entity.arkcraft:quetzal.name=魁札尔鸟
+action.hint.exit.arkcraft:quetzal=骑魁札尔鸟
 
-item.spawn_egg.entity.arkcraft:magmasaur.name=§6ArkCraft | §3Magmasaur 刷怪蛋
-entity.arkcraft:magmasaur.name=Magmasaur
-action.hint.exit.arkcraft:magmasaur=骑着 Magmasaur
+item.spawn_egg.entity.arkcraft:magmasaur.name=§6ArkCraft | §3岩浆龙刷怪蛋
+entity.arkcraft:magmasaur.name=岩浆龙
+action.hint.exit.arkcraft:magmasaur=骑岩浆龙
 
-item.spawn_egg.entity.arkcraft:phiomia.name=§6ArkCraft | §3菲奥米亚刷怪蛋
-entity.arkcraft:phiomia.name=Phiomia
-action.hint.exit.arkcraft:phiomia=骑着 Phiomia
+item.spawn_egg.entity.arkcraft:phiomia.name=§6ArkCraft | §3渐新象刷怪蛋
+entity.arkcraft:phiomia.name=渐新象
+action.hint.exit.arkcraft:phiomia=骑渐新象
 
 item.spawn_egg.entity.arkcraft:irritator.name=§6ArkCraft | §3激龙刷怪蛋
 entity.arkcraft:irritator.name=激龙
 action.hint.exit.arkcraft:irritator=骑激龙
 
-item.spawn_egg.entity.arkcraft:bulbdog.name=§6ArkCraft | §3Bulbdog Spawn Egg
+item.spawn_egg.entity.arkcraft:bulbdog.name=§6ArkCraft | §3灯泡犬刷怪蛋
 entity.arkcraft:bulbdog.name=灯泡狗
 
-item.spawn_egg.entity.arkcraft:lymantria.name=§6ArkCraft | §3舞毒蛾蛋
+item.spawn_egg.entity.arkcraft:lymantria.name=§6ArkCraft | §3舞毒蛾刷怪蛋
 entity.arkcraft:lymantria.name=舞毒蛾
 action.hint.exit.arkcraft:lymantria=骑舞毒蛾
 
 item.spawn_egg.entity.arkcraft:scutosaurus.name=Scutosaurus 刷怪蛋
 entity.arkcraft:scutosaurus.name=Scutosaurus
 
-item.spawn_egg.entity.arkcraft:ankylosaur.name=§6ArkCraft | §3甲龙蛋
+item.spawn_egg.entity.arkcraft:ankylosaur.name=§6ArkCraft | §3甲龙刷怪蛋
 entity.arkcraft:ankylosaur.name=甲龙
 action.hint.exit.arkcraft:ankylosaur=骑甲龙
 
-item.spawn_egg.entity.arkcraft:skorpiovenator.name=§6ArkCraft | §3蝎猎龙蛋
+item.spawn_egg.entity.arkcraft:skorpiovenator.name=§6ArkCraft | §3蝎猎龙刷怪蛋
 entity.arkcraft:skorpiovenator.name=蝎猎龙
 action.hint.exit.arkcraft:skorpiovenator=骑蝎猎龙
 
 
-item.spawn_egg.entity.arkcraft:ouranosaurus.name=§6ArkCraft | §3无畏龙蛋
+item.spawn_egg.entity.arkcraft:ouranosaurus.name=§6ArkCraft | §3无畏龙刷怪蛋
 entity.arkcraft:ouranosaurus.name=Ouranosaurus
 action.hint.exit.arkcraft:ouranosaurus=骑无畏龙
 
@@ -406,9 +406,9 @@ item.arkcraft:carne_maju.name=§6ArkCraft | §3玛君龙肌肉
 entity.arkcraft:weejasperaspididae.name=Weejasperaspididae
 item.spawn_egg.entity.arkcraft:weejasperaspididae.name=§6ArkCraft | §3Weejasperaspididae产卵
 
-action.hint.exit.arkcraft:macrauchenia=骑马克劳切尼亚
-item.spawn_egg.entity.arkcraft:macrauchenia.name=§6ArkCraft | §3Macrauchenia 刷怪蛋
-entity.arkcraft:macrauchenia.name=Macrauchenia
+action.hint.exit.arkcraft:macrauchenia=骑长颈驼
+item.spawn_egg.entity.arkcraft:macrauchenia.name=§6ArkCraft | §3长颈驼刷怪蛋
+entity.arkcraft:macrauchenia.name=长颈驼
 
 item.spawn_egg.entity.arkcraft:mawsonia.name=§6ArkCraft | §3Mawsonia 刷怪蛋
 entity.arkcraft:mawsonia.name=Mawsonia
