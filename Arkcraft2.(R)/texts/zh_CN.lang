@@ -43,16 +43,16 @@ entity.ark:white_female_rex.name=白色雌性霸王龙
 entity.ark:rex.name=霸王龙
 item.spawn_egg.entity.ark:rex.name=霸王龙
 tile.ark:reaper_egg.name=死神蛋
-entity.ark:black_male_reaper.name=黑色男性死神
-entity.ark:black_female_reaper.name=黑色女死神
-entity.ark:orange_female_spino.name=橙色女性棘龙
-entity.ark:orange_male_spino.name=橙色男性棘龙
-entity.ark:green_female_spino.name=绿色女性棘龙
-entity.ark:green_male_spino.name=绿色男性棘龙
-entity.ark:white_female_spino.name=白女棘龙
-entity.ark:white_male_spino.name=白人男性棘龙
-entity.ark:blue_female_spino.name=蓝色女棘龙
-entity.ark:blue_male_spino.name=蓝色男性棘龙
+entity.ark:black_male_reaper.name=黑色雄性死神
+entity.ark:black_female_reaper.name=黑色雌死神
+entity.ark:orange_female_spino.name=橙色雌性棘龙
+entity.ark:orange_male_spino.name=橙色雄性棘龙
+entity.ark:green_female_spino.name=绿色雌性棘龙
+entity.ark:green_male_spino.name=绿色雄性棘龙
+entity.ark:white_female_spino.name=白雌棘龙
+entity.ark:white_male_spino.name=白人雄性棘龙
+entity.ark:blue_female_spino.name=蓝色雌棘龙
+entity.ark:blue_male_spino.name=蓝色雄性棘龙
 item.spawn_egg.entity.ark:spino.name=棘龙
 
 item.arkcraft:cofre_con_cuerdas.name=§6ArkCraft | §3带绳子的箱子
@@ -106,7 +106,7 @@ tile.arkcraft:smithy.name=§6ArkCraft | §3“史密斯”工作台
 item.arkcraft:dodo_egg.name=§6ArkCraft | §3未经受精的渡渡鸟蛋
 item.spawn_egg.entity.arkcraft:dodo.name=§6ArkCraft | §3渡渡鸟刷怪蛋
 action.hint.exit.arkcraft:dodo=骑渡渡鸟§e（仅限开箱，不可骑乘）
-action.hint.exit.minecraft:chicken=骑马
+action.hint.exit.minecraft:chicken=骑着
 entity.arkcraft:dodo.name=渡渡鸟
 
 item.spawn_egg.entity.arkcraft:hesperornis.name=§6ArkCraft | §3黄昏鸟刷怪蛋
@@ -191,9 +191,9 @@ entity.arkcraft:thorny_demon_proyectil.name=荆棘恶灵弹
 item.spawn_egg.entity.arkcraft:mega_raptor.name=§6ArkCraft | §3巨型猛禽刷怪蛋
 entity.arkcraft:mega_raptor.name=巨型猛禽
 
-item.spawn_egg.entity.arkcraft:ainictozoon.name=§6ArkCraft | §3Ainictozoon 刷怪蛋
-entity.arkcraft:ainictozoon.name=Ainictozoon
-item.arkcraft:ainiktozoon_shell.name=§6ArkCraft | §3Ainiktozoon 贝壳
+item.spawn_egg.entity.arkcraft:ainictozoon.name=§6ArkCraft | §3爱尼克托刷怪蛋
+entity.arkcraft:ainictozoon.name=爱尼克托
+item.arkcraft:ainiktozoon_shell.name=§6ArkCraft | §3爱尼克托贝壳
 
 item.spawn_egg.entity.arkcraft:alvarezsaurus.name=§6ArkCraft | §3阿瓦拉慈龙刷怪蛋
 entity.arkcraft:alvarezsaurus.name=阿瓦拉慈龙
@@ -449,7 +449,7 @@ item.arkcraft:narcoberry_seed=§6ArkCraft | §3黑莓
 
 item.arkcraft:hln_a_item.name=§6ArkCraft | §3HLN-A（触摸生成）
 
-item.arkcraft:jeringa_r.name=§6ArkCraft | §3注射器 R 型
+item.arkcraft:jeringa_r.name=§6ArkCraft | §3R型注射剂
 
 item.arkcraft:termic_wool.name=§6ArkCraft | §3Termic 羊毛
 
@@ -463,12 +463,12 @@ pack.name=ArkCraft R
 pack.description=按
 entity.arkcraft:female_rex.name=§6ArkCraft | §3雌性霸王龙
 entity.arkcraft:male_rex.name=§6ArkCraft | §3雄性霸王龙
-entity.arkcraft:male_spino.name=§6ArkCraft | §3男性棘龙
-entity.arkcraft:female_spino.name=§6ArkCraft | §3女性棘龙
+entity.arkcraft:male_spino.name=§6ArkCraft | §3雄性棘龙
+entity.arkcraft:female_spino.name=§6ArkCraft | §3雌性棘龙
 item.spawn_egg.entity.arkcraft:male_rex.name=§6ArkCraft | §3雄性霸王龙
 item.spawn_egg.entity.arkcraft:female_rex.name=§6ArkCraft | §3雌性霸王龙
-item.spawn_egg.entity.arkcraft:male_spino.name=§6ArkCraft | §3男性棘龙
-item.spawn_egg.entity.arkcraft:female_spino.name=§6ArkCraft | §3女性棘龙
+item.spawn_egg.entity.arkcraft:male_spino.name=§6ArkCraft | §3雄性棘龙
+item.spawn_egg.entity.arkcraft:female_spino.name=§6ArkCraft | §3雌性棘龙
 item.spawn_egg.entity.arkcraft:female_yutyrannus.name=§6ArkCraft | §3雌性羽暴龙
 item.spawn_egg.entity.arkcraft:male_yutyrannus.name=§6ArkCraft | §3雄性羽暴龙
 entity.arkcraft:female_yutyrannus.name=§6ArkCraft | §3雌性羽暴龙
