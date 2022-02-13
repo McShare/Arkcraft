@@ -421,9 +421,9 @@ action.hint.exit.arkcraft:parasaurolophus=骑乘栉龙
 item.spawn_egg.entity.arkcraft:parasaurolophus.name=§6ArkCraft | §3副栉龙产卵
 entity.arkcraft:parasaurolophus.name=副栉龙
 
-action.hint.exit.arkcraft:lambeosaurus=骑着羔羊
-item.spawn_egg.entity.arkcraft:lambeosaurus.name=§6ArkCraft | §3羔羊刷怪蛋
-entity.arkcraft:lambeosaurus.name=羔羊龙
+action.hint.exit.arkcraft:lambeosaurus=骑着赖氏龙
+item.spawn_egg.entity.arkcraft:lambeosaurus.name=§6ArkCraft | §3赖氏龙刷怪蛋
+entity.arkcraft:lambeosaurus.name=赖氏龙
 
 item.spawn_egg.entity.arkcraft:tamer.name=§6ArkCraft | §3驯兽师刷怪蛋
 entity.arkcraft:tamer.name=驯兽师
