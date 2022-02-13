@@ -1,4 +1,5 @@
-#请勿随意修改#
+
+#本语言文件由MineBBS提供，请勿随意修改#
 
 
 chestScreen.header.small=小箱子
@@ -14,7 +15,7 @@ item.wooden_sword.name=木棍
 
 
 
-#请勿随意修改#
+#本语言文件由MineBBS提供，请勿随意修改#
 
 
 
@@ -54,6 +55,7 @@ entity.ark:white_male_spino.name=白人雄性棘龙
 entity.ark:blue_female_spino.name=蓝色雌棘龙
 entity.ark:blue_male_spino.name=蓝色雄性棘龙
 item.spawn_egg.entity.ark:spino.name=棘龙
+
 
 item.arkcraft:cofre_con_cuerdas.name=§6ArkCraft | §3带绳子的箱子
 tile.arkcraft:estructura_tek.name=泰克结构
@@ -95,13 +97,15 @@ item.arkcraft:escargot_slime.name=§6ArkCraft | §3蜗牛粘液
 item.arkcraft:big_herbivore_saddle.name=§6ArkCraft | §3大型草食动物马鞍
 item.arkcraft:medium_herbivore_saddle.name=§6ArkCraft | §3中型草食动物鞍座
 item.arkcraft:farmer_saddle.name=§6ArkCraft | §3农夫马鞍
-item.arkcraft:montura_para_tres.name=§6ArkCraft | §3平台猛犸象鞍
-item.arkcraft:montura_de_baryonyx.name=§eBaryonyx鞍
+item.arkcraft:montura_para_tres.name=§6ArkCraft | §3猛犸象平台鞍
+item.arkcraft:montura_de_baryonyx.name=§e重爪龙鞍
 item.arkcraft:baryonyx_egg.name=§6ArkCraft | §3重爪龙蛋
 item.arkcraft:doedicurus_egg.name=§6ArkCraft | §3星尾兽蛋
 
 
-tile.arkcraft:smithy.name=§6ArkCraft | §3“史密斯”工作台
+tile.arkcraft:smithy.name=§6ArkCraft | §3铁匠台
+
+
 
 item.arkcraft:dodo_egg.name=§6ArkCraft | §3未经受精的渡渡鸟蛋
 item.spawn_egg.entity.arkcraft:dodo.name=§6ArkCraft | §3渡渡鸟刷怪蛋
@@ -147,6 +151,9 @@ entity.arkcraft:ongranada.name=手榴弹
 
 item.spawn_egg.entity.arkcraft:granada.name=手榴弹
 entity.arkcraft:granada.name=手榴弹
+
+
+
 
 item.spawn_egg.entity.arkcraft:trilobite.name=§6ArkCraft | §3三叶虫刷怪蛋
 entity.arkcraft:trilobite.name=三叶虫
@@ -458,7 +465,7 @@ item.arkcraft:cloth_boots.name=§6ArkCraft | §3布靴
 item.arkcraft:cloth_leggings.name=§6ArkCraft | §3布打底裤
 item.arkcraft:cloth_chestplate.name=§6ArkCraft | §3布胸板
 
-##bridge 文件版本：#7
+##bridge-file-version: #7
 pack.name=ArkCraft R
 pack.description=按
 entity.arkcraft:female_rex.name=§6ArkCraft | §3雌性霸王龙
