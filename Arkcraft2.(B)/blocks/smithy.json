@@ -7,6 +7,9 @@
       "components":{
 
          "minecraft:loot":"loot_tables/smithy.json",
+			"minecraft:creative_category": {
+				"category": "items"
+			},
          "minecraft:destroy_time":4.0,
          "minecraft:map_color":"#946A4E",
          "minecraft:geometry":"geometry.block",

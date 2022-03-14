@@ -28,7 +28,7 @@
       "scripts": {
         "animate": [
           { "walk": "query.modified_move_speed" },
-          { "disparo": "query.mark_variant == 1" },
+          { "disparo": "query.mark_variant == 1 || query.is_illager_captain" },
           "look_at_target"
         ]
       },

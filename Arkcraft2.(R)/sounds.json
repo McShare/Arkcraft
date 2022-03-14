@@ -1044,6 +1044,20 @@
           }
         }
       },
+      "arkcraft:brontoscorpio": {
+        "volume": 3.5,
+        "pitch": [ 0.2, 0.5 ],
+        "events": {
+          "ambient": "mob.spider.say",
+          "hurt": "mob.spider.say",
+          "death": "mob.spider.death",
+          "step": {
+            "sound": "mob.spider.step",
+            "volume": 0.5,
+            "pitch": 1.0
+          }
+        }
+      },
       "arkcraft:pulmonoscorpius": {
         "volume": 3.5,
         "pitch": [ 0.2, 0.5 ],

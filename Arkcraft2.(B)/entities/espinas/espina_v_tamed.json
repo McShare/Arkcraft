@@ -1,0 +1,79 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "arkcraft:espina_v_tamed",
+          "runtime_identifier":      "minecraft:snowball",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+	    "animate": [ 
+	   "espina"
+	    ]
+	  },
+	  "animations": {
+	    "espina": "animation.espina"
+    }
+    },
+
+    "components": {
+        "minecraft:scale": {
+          "value":1.0
+        },
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:projectile": {
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80.0,
+          "max_dropped_ticks": 10,
+          "use_motion_prediction_hints": true
+        }
+      },
+        "on_hit": {
+          "impact_damage": {
+            "damage": [ 2, 3 ],
+            "knockback": true,
+            "semi_random_diff_damage": false,
+            "destroy_on_hit": true
+          },
+          "stick_in_ground": {
+            "shake_time" : 0.01
+          },
+          "arrow_effect": {
+          }
+        }, 
+        "hit_sound": "bow.hit",
+        "power": 1.8,
+        "gravity": 0.05,
+        "uncertainty_base": 12,
+        "uncertainty_multiplier": 2,
+        "anchor": 1,
+        "should_bounce": true,
+        "offset": [ 0, 1.6,0.0 ]
+      }, 
+      "minecraft:physics": {
+      },  
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      }
+    },
+
+    "events": {
+    }
+
+  }
+}

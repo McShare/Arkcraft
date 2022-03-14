@@ -180,8 +180,8 @@
 			}
 		},
 		"animation.daeodon.attack": {
-			"loop": true,
-			"animation_length": 0.92,
+			"loop": false,
+			"animation_length": 0.91,
 			"bones": {
 				"body2": {
 					"rotation": [0, 0, 0]

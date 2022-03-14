@@ -25,9 +25,9 @@
       "scripts": {
         "animate": [
           { "walk": "query.modified_move_speed" },
-          { "sit": "query.is_sitting" },
+          { "sit": "query.is_baby" },
           { "look_at_target": "!query.is_sitting" },
-        "pegomastax_default"
+        "pegomastax_default" 
         ]
       },
       "render_controllers": [ "controller.render.pegomastax" ],

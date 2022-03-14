@@ -1,0 +1,45 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:tanycolagreus",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "variant1": "textures/entity/tanycolagreus/tanycolagreus1",
+    "variant2": "textures/entity/tanycolagreus/tanycolagreus2",
+    "variant3": "textures/entity/tanycolagreus/tanycolagreus3",
+    "variant4": "textures/entity/tanycolagreus/tanycolagreus4"
+   },
+   "geometry": {
+    "default": "geometry.tanycolagreus"
+   },
+   "render_controllers": [
+    "controller.render.tanycolagreus"  
+   ],
+   "animations": {
+        "general": "controller.animation.tanycolagreus.general",
+        "look_at_target": "animation.tanycolagreus.look_at_target",
+        "sit": "animation.tanycolagreus.sit",
+        "sleep": "animation.tanycolagreus.sleep",
+       "roar": "animation.tanycolagreus.roar",
+       "move": "animation.tanycolagreus.walk",
+       "default": "animation.tanycolagreus.idle",
+        "attack": "animation.tanycolagreus.attack"
+   },
+   "scripts": {
+        "scale": "0.9",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#5e0202",
+        "overlay_color": "#faf5f5"
+      }
+  }
+ }
+}
+ 

@@ -1,0 +1,429 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.thylacoleo_jump": {
+      "states": { 
+        "default": {
+          "transitions": [
+            {
+              "saltitont1": "(query.mark_variant <= 1)"
+            } 
+          ]
+        },
+        "saltitont1": {
+          "transitions": [
+            {
+              "saltito1": "(!query.is_on_ground) && (!query.is_in_water) && (query.mark_variant <= 1)"
+            } ,
+            {
+              "default": "(query.mark_variant > 1)"
+            }
+          ], 
+             "animations": [
+        "thylacoleo_jumpnt"
+                        ]
+        },
+        "saltito1": {
+          "transitions": [
+            {
+              "saltitont1": "(query.is_on_ground) || (query.is_in_water)"
+            },
+            {
+              "default": "(query.mark_variant > 1)"
+            }
+        ],
+             "animations": [
+        "thylacoleo_jump"
+                        ]
+        }
+      }
+    },
+    "controller.animation.thylacoleo": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack": "(variable.attack_time > 0.0)"
+            }
+          ]  
+        },
+        "attack": {
+          "transitions": [
+            {
+              "default": "(variable.attack_time <= 0.0)"
+            }  
+          ], 
+                    "animations": [
+               "attack_thylacoleo"
+                        ]
+        }
+      }
+    },
+        "controller.animation.thylacoleo_climp_tamed": {
+            "initial_state": "default",
+            "states": {  
+                "default":{
+                    "transitions": [
+                        {"mark_variant_0": "(query.is_tamed) && (!query.is_in_water)"}]
+                },   
+                "pose1":{
+                    "transitions": [
+                        {"pose1_2": "(variable.escalando == 1.0) "},
+                        {"pose2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135) "}, 
+                        {"pose3": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"pose4": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose4": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "},
+                        {"default": "(!query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ],    
+                    "on_entry": [
+                        "variable.escalando = 1; return variable.escalando;",
+                        "@s minecraft:indefinida_tamed"
+                    ],
+                    "animations": [
+               "pose1_on"
+                        ]
+                },
+                "pose2":{
+                    "transitions": [
+                        {"pose2_2": "(variable.escalando == 1.0) "},
+                        {"pose1": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose3": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"pose4": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose4": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "},
+                        {"default": "(!query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ],
+                    "animations": [
+               "pose2_on"
+                        ],
+                    "on_entry": [
+                        "variable.escalando = 1; return variable.escalando;",
+                        "@s minecraft:indefinida_tamed"
+                    ]
+                },
+                "pose3":{
+                    "transitions": [
+                        {"pose3_2": "(variable.escalando == 1.0) "},
+                        {"pose1": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135) "},
+                        {"pose4": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose4": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "}, 
+                        {"default": "(!query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                        ],
+                    "animations": [
+               "pose3_on" 
+                        ],
+                    "on_entry": [
+                        "variable.escalando = 1; return variable.escalando;",
+                        "@s minecraft:indefinida_tamed"
+                    ] 
+                },
+                "pose4":{
+                    "transitions": [
+                        {"pose4_2": "(variable.escalando == 1.0) "},
+                        {"pose1": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose3": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"pose2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135) "},
+                        {"default": "(!query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ],
+                    "animations": [
+               "pose4_on"
+                        ],
+                    "on_entry": [
+                        "variable.escalando = 1; return variable.escalando;",
+                        "@s minecraft:indefinida_tamed"
+                    ]
+                }, 
+                "mark_variant_0":{
+                    "transitions": [
+                        {"pose1": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose4": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose3": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"pose4": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "},
+                        {"pose2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135) "},
+                        {"default": "(!query.is_tamed)"}
+                    ], 
+                    "on_entry": [
+                        "variable.escalando = 1; return variable.escalando;"
+                    ],
+                    "animations": [
+               "eliminar_poses"
+                        ] 
+                },
+                "pose1_2":{
+                    "transitions": [
+                        {"pose2_2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135)"}, 
+                        {"pose3_2": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3_2": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"pose4_2": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose4_2": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"default": "(!query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ],
+                    "animations": [
+                        { "thylacoleo_velocidad_0":"(query.target_x_rotation >= 23 ) && (query.target_x_rotation <= 50 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+ { "thylacoleo_velocidad_1":"(query.target_x_rotation >= -5 ) && (query.target_x_rotation <= 22 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+                        { "thylacoleo_velocidad_2":"(query.target_x_rotation >= -35 ) && (query.target_x_rotation <= -6 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+               "pose1_arkcraft_tamed"
+                        ]
+                },
+                "pose2_2":{
+                    "transitions": [
+                        {"pose1_2": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose3_2": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3_2": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"pose4_2": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose4_2": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "},
+                        {"default": "(!query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ], 
+                    "animations": [
+                        { "thylacoleo_velocidad_0":"(query.target_x_rotation >= 23 ) && (query.target_x_rotation <= 50 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+ { "thylacoleo_velocidad_1":"(query.target_x_rotation >= -5 ) && (query.target_x_rotation <= 22 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+                        { "thylacoleo_velocidad_2":"(query.target_x_rotation >= -35 ) && (query.target_x_rotation <= -6 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+               "pose2_arkcraft_tamed"
+                        ]
+                },
+                "pose3_2":{
+                    "transitions": [
+                        {"pose1_2": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose2_2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135) "}, 
+                        {"pose4_2": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose4_2": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "},
+                        {"default": "(!query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ],
+                    "animations": [
+                        { "thylacoleo_velocidad_0":"(query.target_x_rotation >= 23 ) && (query.target_x_rotation <= 50 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+ { "thylacoleo_velocidad_1":"(query.target_x_rotation >= -5 ) && (query.target_x_rotation <= 22 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+                        { "thylacoleo_velocidad_2":"(query.target_x_rotation >= -35 ) && (query.target_x_rotation <= -6 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+               "pose3_arkcraft_tamed"
+                        ]
+                },
+                "pose4_2":{
+                    "transitions": [
+                        {"pose1_2": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose2_2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135) "}, 
+                        {"pose3_2": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3_2": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"default": "(!query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ], 
+                    "animations": [
+                        { "thylacoleo_velocidad_0":"(query.target_x_rotation >= 23 ) && (query.target_x_rotation <= 50 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+ { "thylacoleo_velocidad_1":"(query.target_x_rotation >= -5 ) && (query.target_x_rotation <= 22 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+                        { "thylacoleo_velocidad_2":"(query.target_x_rotation >= -35 ) && (query.target_x_rotation <= -6 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+               "pose4_arkcraft_tamed"
+                        ]
+                }
+            }
+        },
+        "controller.animation.thylacoleo_climp": {
+            "initial_state": "default",
+            "states": {  
+                "default":{
+                    "transitions": [
+                        {"mark_variant_0": "(!query.is_tamed) && (!query.is_in_water)"}]
+                },   
+                "pose1":{
+                    "transitions": [
+                        {"pose1_2": "(variable.escalando == 1.0) "},
+                        {"pose2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135) "}, 
+                        {"pose3": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"pose4": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose4": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "},
+                        {"default": "(query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ],    
+                    "on_entry": [
+                        "variable.escalando = 1; return variable.escalando;",
+                        "@s minecraft:indefinida"
+                    ],
+                    "animations": [
+               "pose1_on"
+                        ]
+                },
+                "pose2":{
+                    "transitions": [
+                        {"pose2_2": "(variable.escalando == 1.0) "},
+                        {"pose1": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose3": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"pose4": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose4": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "},
+                        {"default": "(query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ],
+                    "animations": [
+               "pose2_on"
+                        ],
+                    "on_entry": [
+                        "variable.escalando = 1; return variable.escalando;",
+                        "@s minecraft:indefinida"
+                    ]
+                },
+                "pose3":{
+                    "transitions": [
+                        {"pose3_2": "(variable.escalando == 1.0) "},
+                        {"pose1": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135) "},
+                        {"pose4": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose4": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "}, 
+                        {"default": "(query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                        ],
+                    "animations": [
+               "pose3_on" 
+                        ],
+                    "on_entry": [
+                        "variable.escalando = 1; return variable.escalando;",
+                        "@s minecraft:indefinida"
+                    ] 
+                },
+                "pose4":{
+                    "transitions": [
+                        {"pose4_2": "(variable.escalando == 1.0) "},
+                        {"pose1": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose3": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"pose2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135) "},
+                        {"default": "(query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ],
+                    "animations": [
+               "pose4_on"
+                        ],
+                    "on_entry": [
+                        "variable.escalando = 1; return variable.escalando;",
+                        "@s minecraft:indefinida"
+                    ]
+                }, 
+                "mark_variant_0":{
+                    "transitions": [
+                        {"pose1": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose4": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose3": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"pose4": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "},
+                        {"pose2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135) "},
+                        {"default": "(query.is_tamed)"}
+                    ], 
+                    "on_entry": [
+                        "variable.escalando = 1; return variable.escalando;",
+                       "/effect @s levitation 0 4 true" 
+                    ],
+                    "animations": [
+               "eliminar_poses"
+                        ] 
+                },
+                "pose1_2":{
+                    "transitions": [
+                        {"pose2_2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135)"}, 
+                        {"pose3_2": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3_2": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"pose4_2": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose4_2": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"default": "(query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ],
+                    "animations": [
+                        { "thylacoleo_velocidad_0":"(query.target_x_rotation >= 23 ) && (query.target_x_rotation <= 50 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+ { "thylacoleo_velocidad_1":"(query.target_x_rotation >= -5 ) && (query.target_x_rotation <= 22 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+                        { "thylacoleo_velocidad_2":"(query.target_x_rotation >= -35 ) && (query.target_x_rotation <= -6 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+               "pose1_arkcraft"
+                        ]
+                },
+                "pose2_2":{
+                    "transitions": [
+                        {"pose1_2": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose3_2": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3_2": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"pose4_2": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose4_2": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "},
+                        {"default": "(query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ], 
+                    "animations": [
+                        { "thylacoleo_velocidad_0":"(query.target_x_rotation >= 23 ) && (query.target_x_rotation <= 50 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+ { "thylacoleo_velocidad_1":"(query.target_x_rotation >= -5 ) && (query.target_x_rotation <= 22 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+                        { "thylacoleo_velocidad_2":"(query.target_x_rotation >= -35 ) && (query.target_x_rotation <= -6 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+               "pose2_arkcraft"
+                        ]
+                },
+                "pose3_2":{
+                    "transitions": [
+                        {"pose1_2": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose2_2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135) "}, 
+                        {"pose4_2": "(query.body_y_rotation > -45 && query.body_y_rotation < 0) "},
+                        {"pose4_2": "(query.body_y_rotation > 0 && query.body_y_rotation < 45) "},
+                        {"default": "(query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ],
+                    "animations": [
+                        { "thylacoleo_velocidad_0":"(query.target_x_rotation >= 23 ) && (query.target_x_rotation <= 50 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+ { "thylacoleo_velocidad_1":"(query.target_x_rotation >= -5 ) && (query.target_x_rotation <= 22 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+                        { "thylacoleo_velocidad_2":"(query.target_x_rotation >= -35 ) && (query.target_x_rotation <= -6 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+               "pose3_arkcraft"
+                        ]
+                },
+                "pose4_2":{
+                    "transitions": [
+                        {"pose1_2": "(query.body_y_rotation >= -135 && query.body_y_rotation <= -45) "},
+                        {"pose2_2": "(query.body_y_rotation >= 45 && query.body_y_rotation <= 135) "}, 
+                        {"pose3_2": "(query.body_y_rotation >= -180 && query.body_y_rotation < -135) "},
+                        {"pose3_2": "(query.body_y_rotation > 135 && query.body_y_rotation <= 180) "},
+                        {"default": "(query.is_tamed)"},
+                        {"mark_variant_0": "(query.is_sheared)"},
+                        {"mark_variant_0": "(query.is_in_water)"},
+                        {"mark_variant_0": "(query.mark_variant == 0) "}
+                    ], 
+                    "animations": [
+                        { "thylacoleo_velocidad_0":"(query.target_x_rotation >= 23 ) && (query.target_x_rotation <= 50 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+ { "thylacoleo_velocidad_1":"(query.target_x_rotation >= -5 ) && (query.target_x_rotation <= 22 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+                        { "thylacoleo_velocidad_2":"(query.target_x_rotation >= -35 ) && (query.target_x_rotation <= -6 ) && (!query.is_in_water) && (query.mark_variant == 2)" },
+               "pose4_arkcraft"
+                        ]
+                }
+            }
+        }
+  }
+}  

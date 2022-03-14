@@ -23,7 +23,8 @@
 				"attacking": "animation.rex.attack",
 				"look_at_target_default": "animation.humanoid.look_at_target.default",
 				"look_at_target": "controller.animation.humanoid.look_at_target",
-				"roar": "animation.rex.roar"
+				"roar": "animation.rex.roar",
+				"attack2": "animation.rex.attack"
 			},
 			"scripts": {
 				"pre_animation": [
@@ -43,6 +44,9 @@
 					},
 					{
 						"roar": "query.is_baby"
+					},
+					{
+						"attack2": "query.is_illager_captain"
 					}
 				]
 			},

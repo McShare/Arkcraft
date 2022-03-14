@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.casita_off": {
+     "animation_length": 1.0,
+      "loop": true, 
+      "timeline": {
+        "0.1": [
+ "/effect @s resistance 0 3"
+            ]
+      }
+    },
+    "animation.casita_on": {
+     "animation_length": 1.0,
+      "loop": true,
+      "timeline": {
+        "0.1": [
+ "/effect @s resistance 20000 2"
+            ]
+      }
+    }
+  }
+} 

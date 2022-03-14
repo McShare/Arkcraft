@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.ataque_normal_arkcraft": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "remove_ataque_normal": "(query.is_illager_captain)"
+            }
+          ]
+        },
+        "remove_ataque_normal": {
+          "transitions": [
+            {
+              "default": "!(query.is_illager_captain)"
+            } 
+          ],
+                    "animations": [
+               "remove_ataque_normal"
+                        ]
+        }
+      }
+    }
+  }
+}

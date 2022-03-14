@@ -1,0 +1,45 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes": 
+		[ 
+			{
+				"scene_tag": "dialogo_tameado_arkcraft_turret_mode",
+				"npc_name": { "rawtext": [ { "translate": "Arkcraft" } ] },
+				"text": { "rawtext": [ { "translate": "Turret mode attack Opcions", "with": ["\n"] } ] },
+				"buttons": [
+{
+						"name": { "rawtext": [ { "translate": "§4Monsters-Animals" } ] },
+						"commands": [
+							"/event entity @s minecraft:modo_torreta_1", 
+							"/playsound player_silbido @a[r=6]"
+						]
+					},  
+					{
+						"name": { "rawtext": [ { "translate": "§4Monsters-Players" } ] },
+						"commands": [
+							"/event entity @s minecraft:modo_torreta_2",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§4All Mobs" } ] },
+						"commands": [
+							"/event entity @s minecraft:modo_torreta_0",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+			  		{
+						"name": { "rawtext": [ { "translate": "Off Turret mode" } ] },
+						"commands": [
+							"/event entity @s minecraft:modo_torreta_off",
+							"/playsound player_silbido @a[r=6]",
+							"/dialogue change @s dialogo_tameado_arkcraft_move_velonasaur @p"
+						]
+					}
+				]
+			}
+		]
+	}
+}

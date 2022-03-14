@@ -15,11 +15,13 @@
       },
       "animations": {
         "walk": "animation.teratophoneus.move",
+        "look_at_target": "animation.teratophoneus.look_at_target_head",
       "default":
         "animation.teratophoneus_default"
       },
       "scripts": {
         "animate": [
+            "look_at_target",
        "default",
           { "walk": "query.modified_move_speed" }
         ]

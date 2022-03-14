@@ -1,6 +1,14 @@
 {
 	"format_version" : "1.8.0",
 	"animations" : {
+		"animation.teratophoneus.look_at_target_head": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [ 360, "(query.target_y_rotation)", 360]
+				}
+			}   
+		},  
 		"animation.teratophoneus.move" : {
 
 			"loop" : true,
@@ -19,7 +27,7 @@
 			"bones" : {
 
         "jaw": {
-          "rotation": [ "math.cos(query.anim_time * 58.17) *  -15.0", 0.0, 0.0 ]
+          "rotation": [ "math.cos(query.anim_time * 58.17) *  -5.0", 0.0, 0.0 ]
         },
         "tail": {
           "rotation": [  0.0,"math.cos(query.anim_time * 58.17) * 5.0", 0.0]

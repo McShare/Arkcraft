@@ -1,0 +1,63 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {  
+        "controller.animation.sleeping_night2": {
+            "initial_state": "default",
+            "states": {  
+                "default":{
+                    "transitions": [
+                        {"durmiendo": "(!query.is_tamed) && (query.mark_variant == 3)"}] 
+                },   
+                "durmiendo":{
+                    "transitions": [
+                        {"despierto": "(query.time_of_day >= 0.95 && query.time_of_day <= 0.99) || (query.time_of_day >= 0.0 && query.time_of_day <= 0.01)" },    
+                        {"default": "(query.mark_variant == 2)"},
+                        {"default": "(query.is_tamed)"}
+                    ], 
+                    "animations": [
+               "durmiendo"
+                        ] 
+                }, 
+                "despierto":{
+                    "transitions": [
+                        {"dormido": "(query.time_of_day >= 0.85 ) && (query.time_of_day < 0.95)" },  
+                        {"default": "(query.mark_variant == 2)"},
+                        {"default": "(query.is_tamed)"}
+                    ], 
+                    "on_entry": [
+                        "@s minecraft:despierto"
+                    ]
+                }
+            } 
+        },
+        "controller.animation.sleeping_night_tamed2": {
+            "initial_state": "default",
+            "states": {  
+                "default":{
+                    "transitions": [
+                        {"durmiendo": "(query.is_tamed) && (query.mark_variant == 3)"}] 
+                },   
+                "durmiendo":{
+                    "transitions": [
+                        {"despierto": "(query.time_of_day >= 0.74 && query.time_of_day <= 0.99) || (query.time_of_day >= 0.0 && query.time_of_day <= 0.10)" },    
+                        {"default": "(query.mark_variant == 2)"},
+                        {"default": "(!query.is_tamed)"}
+                    ], 
+                    "animations": [
+               "durmiendo_tamed"
+                        ] 
+                }, 
+                "despierto":{
+                    "transitions": [
+                        {"dormido": "(query.time_of_day >= 0.11 ) && (query.time_of_day < 0.74)" },  
+                        {"default": "(query.mark_variant == 2)"},
+                        {"default": "(!query.is_tamed)"}
+                    ], 
+                    "on_entry": [
+                        "@s minecraft:despierto_tamed"
+                    ]
+                }
+            } 
+        }
+  }
+}    

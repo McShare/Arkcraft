@@ -1,0 +1,74 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.get_up_arkcraft": {
+     "animation_length": 300.1,
+      "loop": true,
+      "timeline": {
+        "300.0": [
+"@s minecraft:get_up"
+            ]
+      }
+    },  
+    "animation.dialogo_tameado_arkcraft_move_volador_basico": {
+     "animation_length": 1.2,
+      "loop": false,
+      "timeline": { 
+        "1.0": [
+            "/dialogue change @s dialogo_tameado_arkcraft_move_volador_basico @p",
+            "/title @a[r=300] actionbar §gSuccesfull taming!"
+            ]
+      }
+    },    
+    "animation.dialogo_tameado_arkcraft_move_pegomastax": {
+     "animation_length": 1.2,
+      "loop": false,
+      "timeline": { 
+        "1.0": [
+            "/dialogue change @s dialogo_tameado_arkcraft_move_pegomastax @p",
+            "/title @a[r=300] actionbar §gSuccesfull taming!"
+            ]
+      }
+    },    
+    "animation.dialogo_tameado_arkcraft_move": {
+     "animation_length": 1.2,
+      "loop": false,
+      "timeline": {
+        "1.0": [
+            "/dialogue change @s dialogo_tameado_arkcraft_move @p",
+            "/title @a[r=300] actionbar §gSuccesfull taming!"
+            ]
+      }
+    },    
+    "animation.dialogo_tameado_arkcraft_move_scutosaurus": {
+     "animation_length": 1.2,
+      "loop": false,
+      "timeline": {
+        "1.0": [
+            "/dialogue change @s dialogo_tameado_arkcraft_move_scutosaurus @p",
+            "/title @a[r=300] actionbar §gSuccesfull taming!"
+            ]
+      }
+    },   
+    "animation.dialogo_tameado_arkcraft_move_velonasaur": {
+     "animation_length": 1.2,
+      "loop": false,
+      "timeline": {
+        "1.0": [
+            "/dialogue change @s dialogo_tameado_arkcraft_move_velonasaur @p",
+            "/title @a[r=300] actionbar §gSuccesfull taming!"
+            ]
+      }
+    },   
+    "animation.dialogo_esperando_tame_arkcraft": {
+     "animation_length": 1.2,
+      "loop": false,
+      "timeline": {
+        "1.0": [ 
+            "/dialogue change @s dialogo_esperando_tame_arkcraft @p",
+"/title @a[r=50] actionbar §gSuccesfull animal release, bye bye"
+            ]
+      }
+    }
+  } 
+}

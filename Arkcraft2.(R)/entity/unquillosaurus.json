@@ -1,0 +1,43 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:unquillosaurus",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/unq/var1",
+    "default2": "textures/entity/unq/var2"
+   },
+   "geometry": {
+    "default": "geometry.unquillosaurus"
+        },
+   "render_controllers": [
+    "controller.render.unquillosaurus"  
+   ],
+   "animations": {
+        "general": "controller.animation.unquillosaurus.general",
+        "look_at_target": "animation.unquillosaurus.look_at_target",
+        "sit": "animation.unquillosaurus.sit",
+        "sleep": "animation.unquillosaurus.sleep",
+       "roar": "animation.unquillosaurus.roar",
+       "move": "animation.unquillosaurus.move",
+       "default": "animation.unquillosaurus.idle",
+        "attack": "animation.unquillosaurus.attack"
+   },
+   "scripts": {
+        "scale": "0.9",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#ff9d00",
+        "overlay_color": "#123d01"
+      }
+  }
+ }
+}
+ 

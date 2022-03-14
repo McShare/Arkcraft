@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.tanycolagreus": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.variant1",
+						"Texture.variant2",
+						"Texture.variant3",
+						"Texture.variant4"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+      "part_visibility": [ { 
+          "montura*": "query.is_saddled" ,
+          "cabello*": "!query.is_saddled" 
+      }
+      ], 
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[query.variant]"
+			]
+		}
+	}
+}

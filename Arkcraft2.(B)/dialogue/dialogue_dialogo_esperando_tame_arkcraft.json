@@ -1,0 +1,23 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "dialogo_esperando_tame_arkcraft",
+				"npc_name": { "rawtext": [ { "translate": "Arkcraft" } ] },
+				"text": { "rawtext": [ { "translate": "Wait Tame...", "with": ["\n"] } ] },
+				"buttons": [
+					{ 
+						"name": { "rawtext": [ { "translate": "§1Tame" } ] },
+						"commands": [
+							"/event entity @s minecraft:on_tame_tame",
+							"/playsound player_silbido @a[r=6]"
+						]
+					}
+				]  
+			}
+		]
+	}
+}

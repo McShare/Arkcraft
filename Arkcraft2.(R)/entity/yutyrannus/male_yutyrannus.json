@@ -10,7 +10,8 @@
 				"variant1": "textures/entity/yuty/yuty1",
 				"variant2": "textures/entity/yuty/yuty2",
 				"variant3": "textures/entity/yuty/yuty3",
-				"variant4": "textures/entity/yuty/yuty4"
+				"variant4": "textures/entity/yuty/yuty4",
+				"variant5": "textures/entity/yuty/nerva"
 			},
 			"geometry": {
 				"default": "geometry.yuty",

@@ -7,22 +7,30 @@
         "default": "spider"
       },            
       "textures": {
-        "default": "textures/entity/alvarezsaurus"
+        "variant1": "textures/entity/alv/alv2",
+        "variant2": "textures/entity/alv/alv1",
+        "variant3": "textures/entity/alv/alv3"
       },
       "geometry": {
-        "default": "geometry.compy"
+        "default": "geometry.alvarezsaurus"
       },
       "animations": {
-        "walk": "animation.compy_move",
-        "look_at_target": "animation.common.look_at_target"
-      },
+        "general": "controller.animation.alvarezsaurus.general",
+        "look_at_target": "animation.common.look_at_target",
+        "sit": "animation.alvarezsaurus.sit",
+        "roar": "animation.alvarezsaurus.roar",
+        "sleep": "animation.alvarezsaurus.sleep",
+       "move": "animation.alvarezsaurus.walk",
+       "default": "animation.alvarezsaurus.idle",
+        "attack": "animation.alvarezsaurus.attack"  
+      }, 
       "scripts": {
         "animate": [
-          { "walk": "query.modified_move_speed" },
-          "look_at_target"
+          "general",
+          "default"
         ]
       },
-      "render_controllers": [ "controller.render.compy" ],
+      "render_controllers": [ "controller.render.alvarezsaurus" ],
       "spawn_egg": {
          "base_color": "#FF6D00",
         "overlay_color": "#920000"

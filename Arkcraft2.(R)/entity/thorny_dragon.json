@@ -23,7 +23,7 @@
       "scripts": {
         "animate": [
           { "walk": "query.modified_move_speed" },
-          { "sit": "query.is_sitting" },
+          { "sit": "query.is_baby" },
           "look_at_target",
     "thorny_dragon_default"
         ]

@@ -24,7 +24,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:ark_meat_raw",
+          "name": "arkcraft:ark_meat_raw",
                     "weight": 100,
                     "functions": [
                         {

@@ -1,0 +1,44 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:cryolopho",
+      "materials": {
+        "default": "cow"
+      }, 
+   "textures": {
+    "variant1": "textures/entity/cryolopho/cryolopho1",
+    "variant2": "textures/entity/cryolopho/cryolopho2",
+    "variant3": "textures/entity/cryolopho/cryolopho3",
+    "variant4": "textures/entity/cryolopho/cryolopho4"
+   },
+   "geometry": {
+    "default": "geometry.cryolopho"
+   },
+   "render_controllers": [
+    "controller.render.variants"  
+   ],
+   "animations": {
+        "general": "controller.animation.cryolopho.general",
+        "look_at_target": "animation.common.look_at_target",
+        "sit": "animation.cryolopho.sit",
+        "sleep": "animation.cryolopho.sleep",
+       "walk": "animation.cryolopho.walk",
+       "default": "animation.cryolopho.idle",
+        "attack": "animation.cryolopho.attack"
+   },
+   "scripts": {
+        "scale": "1.0",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#123754",
+        "overlay_color": "#0a4a19"
+      }
+  }
+ }
+}
+  

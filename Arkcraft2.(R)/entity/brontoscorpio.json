@@ -1,0 +1,45 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:brontoscorpio",
+      "materials": {
+        "default": "spider",
+        "invisible": "spider"
+      },
+   "textures": {
+    "default": "textures/entity/brontoscorpio/brontoscorpio"
+   }, 
+   "geometry": {
+    "default": "geometry.brontoscorpio"
+   },
+   "render_controllers": [
+    "controller.render.pulmonoscorpius"
+   ],
+   "animations": {
+        "escalando": "controller.animation.brontoscorpio.escalando",
+       "normal": "animation.brontoscorpio.normal",
+      "pose1": "animation.brontoscorpio.pose1",
+      "pose5": "animation.brontoscorpio.pose5",
+        "move": "controller.animation.brontoscorpio.move",
+        "walk": "animation.brontoscorpio.move",
+        "sit": "animation.brontoscorpio.sit",
+        "attack": "animation.brontoscorpio.attack",
+        "default": "animation.brontoscorpio.default",
+        "look_at_target": "animation.brontoscorpio.look_at_target"
+   },
+   "scripts": {
+        "scale": "1.0",
+    "animate": [
+        "escalando",
+     "move"
+    ]
+   },
+      "spawn_egg": {
+         "base_color": "#330000",
+        "overlay_color": "#a80027"
+      }
+  }
+ }
+}
+ 

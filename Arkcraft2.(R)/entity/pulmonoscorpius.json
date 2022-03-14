@@ -8,8 +8,8 @@
         "invisible": "spider"
       },
    "textures": {
-    "default": "textures/entity/pulmonoscorpius/pulmonoscorpius"
-   },
+    "default": "textures/entity/pulmonoscorpius/pulmo"
+   }, 
    "geometry": {
     "default": "geometry.pulmonoscorpius"
    },
@@ -17,21 +17,21 @@
     "controller.render.pulmonoscorpius"
    ],
    "animations": {
+        "escalando": "controller.animation.pulmonoscorpius.escalando",
+       "normal": "animation.pulmonoscorpius.normal",
+      "pose1": "animation.pulmonoscorpius.pose1",
+      "pose5": "animation.pulmonoscorpius.pose5",
         "move": "controller.animation.pulmonoscorpius.move",
-       "default_leg_pose_controller": "controller.animation.pulmonoscorpius.base_pose",
-        "attack_controller": "controller.animation.pulmonoscorpius.attack",
         "walk": "animation.pulmonoscorpius.move",
         "sit": "animation.pulmonoscorpius.sit",
         "attack": "animation.pulmonoscorpius.attack",
         "default": "animation.pulmonoscorpius.default",
-        "look_at_target": "animation.pulmonoscorpius.look_at_target",
-        "default_leg_pose": "animation.pulmonoscorpius.base_pose"
+        "look_at_target": "animation.pulmonoscorpius.look_at_target"
    },
    "scripts": {
-        "scale": "2.0",
+        "scale": "1.0",
     "animate": [
-     "attack_controller",
-     "default_leg_pose_controller",
+        "escalando",
      "move"
     ]
    },
@@ -41,5 +41,5 @@
       }
   }
  }
-}
+} 
  

@@ -11,7 +11,7 @@
 					],
 					"transitions" : [
 						{
-							"attack" : "variable.attack_time > 0.0"
+							"attack" : "query.is_delayed_attacking == 1 || query.is_illager_captain"
 						},
 						{
 							"sitting" : "query.is_sitting"
@@ -20,21 +20,27 @@
 				},
 				
 				"sitting" : {
-					"animations" : [ "daeodon_sitting" ],
+					"animations" : [ "daeodon_sitting",
+					"default"
+					],
 					"transitions" : [
 						{
 							"default" : "!query.is_sitting"
 						},
 						{
-							"attack" : "variable.attack_time > 0.0"
+							"attack" : "query.is_delayed_attacking == 0 || query.is_illager_captain"
 						}
-					]
+					] 
 				},
 				"attack" : {
-					"animations" : [ "attack" ],
-					"transitions" : [
+					"animations" : [ "attack",
+{"move" : "query.modified_move_speed" }
+					]
+					,
+          "blend_transition": 0.2,
+					"transitions" : [ 
 						{
-							"default" : "(variable.attack_time <= 0.0) && (query.all_animations_finished)"
+							"default" : "(query.is_delayed_attacking == 0) && (query.all_animations_finished) || (!query.is_illager_captain) " 
 						},
 						{
 							"sitting" : "(query.is_sitting) && (query.all_animations_finished)"
@@ -44,5 +50,5 @@
 			}
 		}
 	}
-}
+} 
  

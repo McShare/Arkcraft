@@ -305,6 +305,46 @@ action.hint.exit.arkcraft:dire_wolf=Riding Dire Wolf
 item.spawn_egg.entity.arkcraft:dire_wolf.name=§6ArkCraft | §3Dire Wolf Spawn Egg
 entity.arkcraft:dire_wolf.name=Dire Wolf
 
+action.hint.exit.arkcraft:longiscuama=Riding longiscuama
+item.spawn_egg.entity.arkcraft:longiscuama.name=§6ArkCraft | §3Longiscuama Spawn Egg
+entity.arkcraft:longiscuama.name=Longiscuama
+
+action.hint.exit.arkcraft:brontoscorpio=Riding Brontoscorpio
+item.spawn_egg.entity.arkcraft:brontoscorpio.name=§6ArkCraft | §3Brontoscorpio Spawn Egg
+entity.arkcraft:brontoscorpio.name=Brontoscorpio
+
+action.hint.exit.arkcraft:camarasaurus=Riding Camarasaurus
+item.spawn_egg.entity.arkcraft:camarasaurus.name=§6ArkCraft | §3Camarasaurus Spawn Egg
+entity.arkcraft:camarasaurus.name=Camarasaurus
+
+action.hint.exit.arkcraft:gualicho=Riding Gualicho
+item.spawn_egg.entity.arkcraft:gualicho.name=§6ArkCraft | §3Gualicho Spawn Egg
+entity.arkcraft:gualicho.name=Gualicho
+
+action.hint.exit.arkcraft:cryolopho=Riding Cryolophosaurus
+item.spawn_egg.entity.arkcraft:cryolopho.name=§6ArkCraft | §3Cryolophosaurus Spawn Egg
+entity.arkcraft:cryolopho.name=Cryolophosaurus
+
+action.hint.exit.arkcraft:raptor=Riding Raptor
+item.spawn_egg.entity.arkcraft:raptor.name=§6ArkCraft | §3Raptor Spawn Egg
+entity.arkcraft:raptor.name=Raptor
+
+action.hint.exit.arkcraft:rosamygale=Riding Rosamygale
+item.spawn_egg.entity.arkcraft:rosamygale.name=§6ArkCraft | §3Rosamygale Spawn Egg
+entity.arkcraft:rosamygale.name=Rosamygale
+
+action.hint.exit.arkcraft:tanycolagreus=Riding Tanycolagreus
+item.spawn_egg.entity.arkcraft:tanycolagreus.name=§6ArkCraft | §3Tanycolagreus Spawn Egg
+entity.arkcraft:tanycolagreus.name=Tanycolagreus
+
+action.hint.exit.arkcraft:thylacoleo=Riding Thylacoleo
+item.spawn_egg.entity.arkcraft:thylacoleo.name=§6ArkCraft | §3Thylacoleo Spawn Egg
+entity.arkcraft:thylacoleo.name=Thylacoleo
+
+action.hint.exit.arkcraft:unquillosaurus=Riding Unquillosaurus
+item.spawn_egg.entity.arkcraft:unquillosaurus.name=§6ArkCraft | §3Unquillosaurus Spawn Egg
+entity.arkcraft:unquillosaurus.name=Unquillosaurus
+
 entity.arkcraft:espina.name=Espina
 
 action.hint.exit.arkcraft:argentavis=Riding Argentavis

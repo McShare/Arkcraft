@@ -19,7 +19,7 @@
         "look_at_target": "animation.common.look_at_target",
         "daeodon_sitting": "animation.daeodon.sit",
        "move": "animation.daeodon.move",
-       "default": "animation.daeodon.defaut",
+       "default": "animation.daeodon.default",
         "attack": "animation.daeodon.attack"
       },
       "animation_controllers": [

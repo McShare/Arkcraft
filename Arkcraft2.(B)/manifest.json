@@ -1,9 +1,9 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "§gArkcraft 2.1 §l§6Behavior",
+		"name": "§gArkcraft 2.5.2 §l§6Behavior",
 		"description": "§3Created by Alex587 and CopperLord44, with help of Halo333, Jellal and EvilRex",
-		"uuid": "19d50184-0153-4627-afd2-90c234a9b14f",
+		"uuid": "66c2674e-cc03-49da-b8ac-96c81ce019b6",
 		"version": [
 			1,
 			0,
@@ -18,7 +18,7 @@
 	"modules": [
 		{
 			"type": "data",
-			"uuid": "d0405307-4e98-46b6-8d6a-248cb5d0a6e4",
+			"uuid": "19a9ca6d-5c07-4489-af98-bcf1a3df5f65",
 			"version": [
 				1,
 				0,
@@ -27,7 +27,7 @@
 		},
 		{
 			"type": "javascript",
-			"uuid": "7ada8507-cfe1-4cbf-818f-e88c3e3d6716",
+			"uuid": "4ce55df6-5c4d-49c3-a84c-dc2654cbd2be",
 			"version": [
 				1,
 				0,

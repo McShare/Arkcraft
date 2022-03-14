@@ -3,7 +3,7 @@
 	"animations": {
 		"animation.skorpiovenator.move": {
 			"loop": true,
-			"animation_length": 1.54,
+			"animation_length": 1.05,
 			"bones": {
 				"leftleg": {
 					"rotation": ["math.cos(query.anim_time * 370.17) *  35.0", 0, 0]
@@ -68,12 +68,12 @@
 				}
 			}
 		},
-		"animation.skorpiovenator_default": {
-			"loop": true,
-			"bones": {
+		"animation.skorpiovenator_default": { 
+			"loop": true,   
+			"bones": { 
 				"bottomjaw": {
-					"rotation": ["math.cos(query.anim_time * 58.17) *  +22.5", 0, 0]
-				},
+					"rotation": ["math.cos(query.anim_time * 58.17) * 2.0", 0, 0]
+				}, 
 				"Tail": {
 					"rotation": ["math.cos(query.anim_time * 25.17) * 2.0", "math.cos(query.anim_time * 25.17) * 2.0", "math.cos(query.anim_time * 108.17) * 2.0"]
 				},
@@ -92,4 +92,4 @@
 			}
 		}
 	}
-}
+} 

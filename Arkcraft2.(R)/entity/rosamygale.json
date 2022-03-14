@@ -1,0 +1,47 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:rosamygale",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/rosamygale/ros1",
+    "default2": "textures/entity/rosamygale/ros1",
+    "default3": "textures/entity/rosamygale/ros1",
+    "default4": "textures/entity/rosamygale/ros1",
+    "default5": "textures/entity/rosamygale/ros1",
+    "default6": "textures/entity/rosamygale/ros1"
+   },
+   "geometry": {
+    "default": "geometry.rosamygale"
+        },
+   "render_controllers": [
+    "controller.render.rosamygale"  
+   ],
+   "animations": {
+        "general": "controller.animation.rosamygale.general",
+        "look_at_target": "animation.rosamygale.look_at_target",
+        "sit": "animation.rosamygale.sit",
+        "sleep": "animation.rosamygale.sleep",
+       "roar": "animation.rosamygale.roar",
+       "move": "animation.rosamygale.walk",
+       "default": "animation.rosamygale.idle",
+        "attack": "animation.rosamygale.attack"
+   },
+   "scripts": {
+        "scale": "0.9",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#8c0343",
+        "overlay_color": "#b5b5b5"
+      }
+  }
+ }
+}
+ 

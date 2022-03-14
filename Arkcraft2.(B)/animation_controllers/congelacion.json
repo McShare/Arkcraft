@@ -1,0 +1,19 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.congelacion": {
+			"initial_state": "default",
+			"states": {
+				"default": {					
+					"on_entry": [
+						"effect @e[type=!arkcraft:cryolopho, r=1.5] slowness 10 1",
+						"effect @e[type=!arkcraft:cryolopho, r=1.5] weakness 10 1",
+						"effect @e[type=!arkcraft:cryolopho, r=1.5] minning_fatigue 10 1",
+						"effect @e[type=!arkcraft:cryolopho, r=1.5] regeneration 5 0"
+
+					]
+				}
+			}
+		}
+	}
+}

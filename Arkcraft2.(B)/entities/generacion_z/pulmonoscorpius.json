@@ -1,0 +1,2006 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "arkcraft:pulmonoscorpius",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false, 
+	  "scripts": {
+ 
+	    "animate": [
+    "pulmonoscorpius",
+    "dialogo_controlador",
+    "pulmonoscorpius_climp_tamed",
+    "pulmonoscorpius_climp",
+  "ataque_normal_arkcraft",
+  "pulmonoscorpius_climp_normal",
+{
+    "get_up":"query.is_sheared"
+    
+} 
+	    ]   
+	  },
+	  "animations": {
+	    "pulmonoscorpius_climp_normal": "controller.animation.pulmonoscorpius_climp_normal",
+	    "pulmonoscorpius_climp_normal_anima": "animation.pulmonoscorpius_climp_normal_anima",
+	    "ataque_normal_arkcraft": "controller.animation.ataque_normal_arkcraft",
+	    "pulmonoscorpius_velocidad_0": "animation.pulmonoscorpius_velocidad_0",
+	    "pulmonoscorpius_velocidad_1": "animation.pulmonoscorpius_velocidad_1",
+	    "pulmonoscorpius_velocidad_2": "animation.pulmonoscorpius_velocidad_2",
+	    "pulmonoscorpius_climp_tamed": "controller.animation.pulmonoscorpius_climp_tamed",
+	    "pulmonoscorpius_climp": "controller.animation.pulmonoscorpius_climp", 
+	    "eliminar_poses": "animation.eliminar_poses",
+	    "pose1_on": "animation.pose1_on",
+	    "pose2_on": "animation.pose2_on",
+	    "pose3_on": "animation.pose3_on",
+	    "pose4_on": "animation.pose4_on",
+	    "pose5_on": "animation.pose5_on",
+	    "pose1_arkcraft_tamed": "animation.pose1_arkcraft_tamed_pulmonoscorpius",
+	    "pose2_arkcraft_tamed": "animation.pose2_arkcraft_tamed_pulmonoscorpius",
+	    "pose3_arkcraft_tamed": "animation.pose3_arkcraft_tamed_pulmonoscorpius",
+	    "pose4_arkcraft_tamed": "animation.pose4_arkcraft_tamed_pulmonoscorpius",
+	    "pose5_arkcraft_tamed": "animation.pose5_arkcraft_tamed_pulmonoscorpius",
+	    "pose6_arkcraft_tamed": "animation.pose6_arkcraft_tamed_pulmonoscorpius",
+	    "pose1_arkcraft": "animation.pose1_arkcraft_pulmonoscorpius",
+	    "pose2_arkcraft": "animation.pose2_arkcraft_pulmonoscorpius",
+	    "pose3_arkcraft": "animation.pose3_arkcraft_pulmonoscorpius",
+	    "pose4_arkcraft": "animation.pose4_arkcraft_pulmonoscorpius",
+	    "pose5_arkcraft": "animation.pose5_arkcraft_pulmonoscorpius",
+	    "pose6_arkcraft": "animation.pose6_arkcraft_pulmonoscorpius",
+	    "pulmonoscorpius": "controller.animation.pulmonoscorpius",
+	    "attack_pulmonoscorpius":  "animation.attack_pulmonoscorpius",
+	    "dialogo_controlador": "controller.animation.dialogo_controlador_arkcraft",
+	    "dialogo_tameado_arkcraft": "animation.dialogo_tameado_arkcraft_move",
+	    "dialogo_esperando_tame_arkcraft": "animation.dialogo_esperando_tame_arkcraft",
+	    "remove_ataque_normal": "animation.remove_ataque_normal_pulmonoscorpius",
+	    "get_up": "animation.get_up_arkcraft"
+    }
+    },  
+
+    "component_groups": {
+        "minecraft:skin_id_0":{
+        "minecraft:skin_id": {
+          "value": 0
+      }
+        },
+        "minecraft:skin_id_1":{
+        "minecraft:skin_id": {
+          "value": 1
+      }
+        },
+
+"minecraft:mark_variant_0":{
+        "minecraft:mark_variant": {
+          "value": 0
+      }
+        },
+    "minecraft:indefinida":{
+        "minecraft:mark_variant": {
+          "value": 1
+      }
+        },
+        "minecraft:pose1":{
+        "minecraft:mark_variant": {
+          "value": 2
+      }
+        }, 
+        "minecraft:pose5":{
+        "minecraft:mark_variant": {
+          "value": 3 
+      } 
+        },
+
+         
+"minecraft:mark_variant_0_tamed":{
+        "minecraft:rideable": {
+          "seat_count": 1,
+"rider_can_interact": false,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.ride.horse",
+          "seats": {
+            "position": [ 0.0, 0.39, -0.1 ]
+          }
+        },
+        "minecraft:mark_variant": {
+          "value": 0
+      }
+        },
+    "minecraft:indefinida_tamed":{
+        "minecraft:rideable": {
+          "seat_count": 1,
+"rider_can_interact": false,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.ride.horse",
+          "seats": {
+            "position": [ 0.0, 0.39, -0.1 ]
+          }
+        },
+        "minecraft:mark_variant": {
+          "value": 1
+      }
+        },
+        "minecraft:pose1_tamed":{
+        "minecraft:rideable": {
+          "seat_count": 1,
+"rider_can_interact": false,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.ride.horse",
+          "seats": {
+            "position": [ 0.0, -0.15, -0.45 ] 
+          } 
+        },
+        "minecraft:mark_variant": {
+          "value": 2
+      }
+        }, 
+        "minecraft:pose5_tamed":{
+        "minecraft:rideable": {
+          "seat_count": 1,
+"rider_can_interact": false,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.ride.horse", 
+          "seats": {
+            "position": [ 0.0, -0.52, -0.1 ] 
+          } 
+        },  
+        "minecraft:mark_variant": {
+          "value": 3 
+      } 
+        },
+        
+        "minecraft:despierto":{
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 0
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:follow_range": {
+        "value": 10
+      },
+        "minecraft:behavior.delayed_attack": {
+          "priority": 4,
+          "attack_once": false,
+          "track_target": true,
+          "require_complete_path": false,
+          "random_stop_interval": 0,
+          "reach_multiplier": 3.4,
+          "speed_multiplier": 1.2,
+          "attack_duration": 1.7,
+          "hit_delay_pct": 0.0
+        },
+      "minecraft:behavior.random_stroll": {
+        "priority": 4,
+        "speed_multiplier": 1.0
+      },
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry",
+          "target": "self"
+        },
+	    "minecraft:behavior.nearest_attackable_target": {
+          "priority": 5,
+        "reselect_targets": true,
+          "within_radius": 15,
+          "entity_types": [
+            {
+              "filters": { "other_with_families": [ "player" ] },
+             "max_dist": 10
+            }
+          ],
+          "must_see": true
+        },
+     "minecraft:attack": {
+        "damage": 4
+      }
+        }, 
+			"ark:sleeping": {
+			"minecraft:is_sheared": {},
+        "minecraft:tameable": {
+          "probability": 0.10,
+          "tame_items": [
+            "arkcraft:pasta_bicho"
+          ],
+          "tame_event": {
+            "event": "minecraft:on_tame_pulmonoscorpius_adult",
+            "target": "self"
+          }
+        }
+			},
+        
+        "minecraft:dialogo":{
+				"minecraft:npc": {
+					"npc_data": {
+						"portrait_offsets": {
+							"translate": [
+								-7,
+				 				50,
+								0
+							],
+							"scale": [
+								1.75,
+								1.75,
+								1.75
+							]
+						},
+						"picker_offsets": {
+							"translate": [
+								0,
+								20,
+								0
+							],
+							"scale": [
+								1.7,
+								1.7,
+								1.7
+							]
+						},
+						"skin_list": [
+							{
+								"variant": 0
+							},
+							{
+								"variant": 1
+							},
+							{
+								"variant": 2
+							},
+							{
+								"variant": 3
+							}
+						]
+					}
+				}
+        },
+        
+        "minecraft:ataque_normal":{
+        "minecraft:is_illager_captain": {
+        }
+        },
+        
+        "minecraft:pacifico":{},
+        "minecraft:neutral":{
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 3
+        },
+			"minecraft:behavior.owner_hurt_target": {
+				"priority": 3,
+				"entity_types": [{
+					"filters": {
+						"test": "has_component",
+						"subject": "other",
+						"operator": "!=",
+						"value": "minecraft:is_tamed"
+					},
+					"max_dist": 15
+				}]
+			},
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      }
+        },
+        "minecraft:agresivo":{
+       "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": true
+                  }
+                ]
+              },
+              "max_dist": 40
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "mob"},
+     { "test" :  "is_family", "subject" : "other", "value" :  "monster"},
+                 { "test" :  "is_family", "subject" : "other", "value" :  "pulmonoscorpius"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "doedicurus"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "thorny"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
+                ],
+                "all_of": [
+                  { "test" :  "has_component","subject" : "other", "operator": "!=", "value" :  "minecraft:is_tamed"}
+                ]
+              },
+              "max_dist": 40
+            }
+          ],
+          "must_see": true
+},
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 3
+        },
+			"minecraft:behavior.owner_hurt_target": {
+				"priority": 3,
+				"entity_types": [{
+					"filters": {
+						"test": "has_component",
+						"subject": "other",
+						"operator": "!=",
+						"value": "minecraft:is_tamed"
+					},
+					"max_dist": 15
+				}]
+			}
+        },
+        
+        "minecraft:quedarse_quieto":{
+        "minecraft:is_baby": {
+        }
+        },
+        "minecraft:deambular":{
+      "minecraft:behavior.random_stroll": {
+        "priority": 4,
+        "speed_multiplier": 1.0
+      }
+        },
+        "minecraft:seguir":{
+        "minecraft:behavior.follow_owner": {
+          "priority": 3,
+          "speed_multiplier": 1.25,
+          "start_distance": 6,
+          "stop_distance": 3
+        }
+        },
+        
+        "minecraft:default":{
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:follow_range": {
+        "value": 16
+      }
+        },
+        
+  "minecraft:on_attack_sistem":{
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+ 
+ 
+      "minecraft:follow_range": {
+        "value": 16
+      }
+
+  
+    },
+  "minecraft:off_attack_sistem":{
+        "minecraft:behavior.delayed_attack": {
+          "priority": 4,
+          "attack_once": false,
+          "track_target": true,
+          "require_complete_path": false,
+          "random_stop_interval": 0,
+          "reach_multiplier": 3.4,
+          "speed_multiplier": 1.2,
+          "attack_duration": 1.7,
+          "hit_delay_pct": 0.0
+        },
+      "minecraft:navigation.climb": {
+              "avoid_water": true,        "avoid_damage_blocks": true, "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      }, 
+      "minecraft:can_climb": {
+      },
+      "minecraft:follow_range": {
+        "value": 16
+      }
+
+  
+    },
+    
+"minecraft:adult_controladores":{
+        "minecraft:scale": {
+          "value": 1.4
+        },
+
+        "minecraft:strength": {
+          "value": 1,
+          "max": 1
+        },
+        "minecraft:movement": { 
+          "value": {
+            "range_min": 0.17,
+            "range_max": 0.17
+          }
+        },
+      "minecraft:health": {
+        "value": 60,
+        "max": 70
+      }
+},
+
+  "minecraft:pulmonoscorpius-wild_adult":{
+      "minecraft:navigation.climb": {
+              "avoid_water": true,        "avoid_damage_blocks": true, "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:type_family": {
+        "family": [ "pulmonoscorpius", "mob" , "wild" , "wild_adult", "spider" ,"arthropod"]
+      },
+                "minecraft:variant": {
+          "value": 0
+                },
+        "minecraft:loot": {
+         "table": "loot_tables/entities/pulmonoscorpius.json"
+        },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 6 : 2"
+      },
+      "minecraft:knockback_resistance": {
+        "value": 0.2
+      }
+  },
+  
+  "minecraft:pulmonoscorpius-adult_esperando_tame":{
+      "minecraft:type_family": {
+        "family": [ "pulmonoscorpius", "mob" , "tamed_adult" , "tamed" , "esperando_tame", "spider" ,"arthropod"]
+      },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/pulmonoscorpius.json"
+        },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 10.0,
+        "max_distance": 14.0
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      },
+     "minecraft:attack": {
+        "damage": 4
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 6 : 2"
+      },
+      "minecraft:knockback_resistance": {
+        "value": 0.2
+      },
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item": "arkcraft:arthropod_saddle",
+            "accepted_items": ["arkcraft:arthropod_saddle" ],
+            "on_equip": {
+              "event": "minecraft:on_saddled"
+            },
+            "on_unequip": {
+              "event": "minecraft:off_saddled"
+            }
+          }
+        ]
+      }
+  },
+  "minecraft:pulmonoscorpius_adult_inventory":{
+        "minecraft:inventory": { 
+        "container_type": "horse",
+        "inventory_size": 27,
+          "additional_slots_per_strength": 3
+        }
+  },
+  "minecraft:pulmonoscorpius-tamed_adult":{
+				"minecraft:damage_sensor": {
+					"triggers": [
+							{
+					"cause": "fall",
+					"deals_damage": true,
+					"damage_modifier": -15
+							    
+							}
+					]
+				},
+      "minecraft:type_family": {
+        "family": [ "pulmonoscorpius", "mob" , "tamed_adult" , "tamed", "spider" ,"arthropod"] 
+      },
+        "minecraft:is_tamed": {
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/pulmonoscorpius.json"
+        },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 10.0,
+        "max_distance": 14.0
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      },
+     "minecraft:attack": {
+        "damage": 4
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 6 : 2"
+      },
+
+      "minecraft:knockback_resistance": {
+        "value": 0.2
+      },
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item": "arkcraft:arthropod_saddle",
+            "accepted_items": ["arkcraft:arthropod_saddle" ],
+            "on_equip": {
+              "event": "minecraft:on_saddled"
+            },
+            "on_unequip": {
+              "event": "minecraft:off_saddled"
+            }
+          }
+        ]
+      }
+  },
+  "minecraft:pulmonoscorpius-on_saddle":{
+        "minecraft:behavior.controlled_by_player": {
+          "priority": 0
+        },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+},
+      "minecraft:horse.jump_strength": {
+        "value": {
+          "range_min": 0.1, 
+          "range_max": 0.1
+        }
+      },
+        "minecraft:is_saddled": {
+        }
+  },
+  "minecraft:pulmonoscorpius-off_saddle":{
+      
+  },
+      "minecraft:pulmonoscorpius-angry": {
+        "minecraft:angry": {
+          "duration": 25,
+          "broadcast_anger": false,
+          "calm_event": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+          }
+        },
+        "minecraft:on_target_acquired": {
+        }
+      },
+ 
+			"ark:narcotic_1": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+							{
+					"cause": "fall",
+					"deals_damage": true,
+					"damage_modifier": -15
+							    
+							},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_2"
+							}
+						}
+					]
+				}
+			},
+			"ark:narcotic_2": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+							{
+					"cause": "fall",
+					"deals_damage": true,
+					"damage_modifier": -15
+							    
+							},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_3"
+							}
+						}
+					]
+				}
+			},
+			"ark:narcotic_3": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+							{
+					"cause": "fall",
+					"deals_damage": true,
+					"damage_modifier": -15
+							    
+							},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_4"
+							}
+						}
+					]
+				}
+			},
+			"ark:narcotic_4": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+							{
+					"cause": "fall",
+					"deals_damage": true,
+					"damage_modifier": -15
+							    
+							},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_5"
+							}
+						}
+					]
+				}
+			},
+			"ark:narcotic_5": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+							{
+					"cause": "fall",
+					"deals_damage": true,
+					"damage_modifier": -15
+							    
+							},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_6"
+							}
+						}
+					]
+				}
+			},
+			"ark:narcotic_6": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+							{
+					"cause": "fall",
+					"deals_damage": true,
+					"damage_modifier": -15
+							    
+							},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_7"
+							}
+						}
+					]
+				}
+			},
+			"ark:narcotic_7": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+							{
+					"cause": "fall",
+					"deals_damage": true,
+					"damage_modifier": -15
+							    
+							},
+					{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_8"
+							}
+						}
+					]
+				}
+			},
+			"ark:narcotic_8": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+							{
+					"cause": "fall",
+					"deals_damage": true,
+					"damage_modifier": -15
+							    
+							},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_9"
+							}
+						}
+					]
+				}
+			},
+			"ark:narcotic_9": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+							{
+					"cause": "fall",
+					"deals_damage": true,
+					"damage_modifier": -15
+							    
+							},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_10"
+							}
+						}
+					]
+				}
+			},
+			"ark:narcotic_10": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+							{
+					"cause": "fall",
+					"deals_damage": true,
+					"damage_modifier": -15
+							    
+							},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_final"
+							}
+						}
+					]
+				}
+			}
+    },
+  
+
+    "components": { 
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 550,
+            "max_wait_time": 700,
+          "spawn_sound": "block.composter.fill",
+            "spawn_item": "arkcraft:pulmonoscorpius_egg"
+          }
+        },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters":{
+            "all_of": [
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "!=",
+              "value": "attacking"
+             },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "attack_solicitud"
+             },
+                  { "test" :  "has_component","subject" : "self", "operator": "!=", "value" :  "minecraft:is_illager_captain"},
+                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"} 
+            ]
+            },
+            "event":"minecraft:in_attack"
+          },
+          {
+            "filters":{
+            "all_of": [
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "attack_solicitud"
+             }
+            ],
+            "any_of": [
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "attacking"
+             },
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 0
+              },
+                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_illager_captain"},
+                  { "test" :  "has_component","subject" : "self", "operator": "!=", "value" :  "minecraft:is_tamed"}
+            ]
+            },
+            "event":"minecraft:remove_tag"
+          },
+          
+          
+           
+           
+          {
+            "filters":{
+            "all_of": [
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "no_attack_mode"
+             },
+                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"}
+            ]
+            },
+            "event":"minecraft:on_attack_sistem"
+          },
+          {
+            "filters":{
+            "all_of": [
+              {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 0
+              },
+             {                                           "test": "has_tag",                         "subject": "self",
+              "operator": "==",
+              "value": "sistem_attack_mode"
+             },
+                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"}
+            ]
+            },
+            "event":"minecraft:off_attack_sistem"
+          }
+        ]
+      }, 
+      "minecraft:nameable": {
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "arkcraft:rotten_flesh",
+            "heal_amount": 5
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 1.0
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 3
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+
+
+    "events": {   
+      "minecraft:skin_id_0": {
+				"add": {
+					"component_groups": [
+						"minecraft:skin_id_0"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:skin_id_1"
+					]
+				}
+      },
+      "minecraft:skin_id_1": {
+				"add": {
+					"component_groups": [
+						"minecraft:skin_id_1"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:skin_id_0"
+					]
+				}
+      },
+      
+ "minecraft:mark_variant_0_tamed": {
+				"add": {
+					"component_groups": [
+						"minecraft:mark_variant_0_tamed"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:mark_variant_0",
+				"minecraft:indefinida",
+						"minecraft:pose1",
+						"minecraft:pose5",
+						"minecraft:indefinida_tamed",
+						"minecraft:pose1_tamed",
+						"minecraft:pose5_tamed"
+					]
+				}
+      },
+      "minecraft:indefinida_tamed": {
+				"add": {
+					"component_groups": [
+						"minecraft:indefinida_tamed"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:indefinida",
+						"minecraft:mark_variant_0",
+						"minecraft:pose1",
+						"minecraft:pose5",
+						"minecraft:mark_variant_0_tamed",
+						"minecraft:pose1_tamed",
+						"minecraft:pose5_tamed"
+					]
+				}
+      },
+      "minecraft:pose1_tamed": {
+				"add": {
+					"component_groups": [
+						"minecraft:pose1_tamed"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:pose1",
+					"minecraft:mark_variant_0",
+						"minecraft:indefinida",
+						"minecraft:pose5",
+					"minecraft:mark_variant_0_tamed",
+						"minecraft:indefinida_tamed",
+						"minecraft:pose5_tamed"
+					]
+				}
+      }, 
+      "minecraft:pose5_tamed": {
+				"add": {
+					"component_groups": [
+						"minecraft:pose5_tamed"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:pose5",
+						"minecraft:mark_variant_0",
+						"minecraft:indefinida",
+			"minecraft:pose1" ,
+				"minecraft:mark_variant_0_tamed",
+						"minecraft:indefinida_tamed",
+						"minecraft:pose1_tamed" 
+					]
+				}
+      }, 
+      
+ "minecraft:mark_variant_0": {
+				"add": {
+					"component_groups": [
+						"minecraft:mark_variant_0"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:mark_variant_0_tamed",
+				"minecraft:indefinida",
+						"minecraft:pose1",
+						"minecraft:pose5",
+						"minecraft:indefinida_tamed",
+						"minecraft:pose1_tamed",
+						"minecraft:pose5_tamed"
+					]
+				}
+      },
+      "minecraft:indefinida": {
+				"add": {
+					"component_groups": [
+						"minecraft:indefinida"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:indefinida_tamed",
+						"minecraft:mark_variant_0",
+						"minecraft:pose1",
+						"minecraft:pose5",
+						"minecraft:mark_variant_0_tamed",
+						"minecraft:pose1_tamed",
+						"minecraft:pose5_tamed"
+					]
+				}
+      },
+      "minecraft:pose1": {
+				"add": {
+					"component_groups": [
+						"minecraft:pose1"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:pose1_tamed",
+					"minecraft:mark_variant_0",
+						"minecraft:indefinida",
+						"minecraft:pose5",
+					"minecraft:mark_variant_0_tamed",
+						"minecraft:indefinida_tamed",
+						"minecraft:pose5_tamed"
+					]
+				}
+      }, 
+      "minecraft:pose5": {
+				"add": {
+					"component_groups": [
+						"minecraft:pose5"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:pose5_tamed",
+						"minecraft:mark_variant_0",
+						"minecraft:indefinida",
+			"minecraft:pose1" ,
+				"minecraft:mark_variant_0_tamed",
+						"minecraft:indefinida_tamed",
+						"minecraft:pose1_tamed" 
+					]
+				}
+      }, 
+      
+			"minecraft:get_up": {
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19",
+						"ark:narcotic_20",
+						"ark:sleeping"
+					] 
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:despierto"
+					]
+				}
+			},
+        
+      "minecraft:neutral": {
+        "remove": {
+          "component_groups": [
+  "minecraft:pacifico",
+  "minecraft:agresivo"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:off_attack_sistem",
+  "minecraft:neutral"
+          ]
+        }
+      },
+      "minecraft:agresivo": {
+        "remove": {
+          "component_groups": [
+  "minecraft:pacifico",
+  "minecraft:neutral"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:off_attack_sistem",
+  "minecraft:agresivo"
+          ]
+        }
+      },
+      "minecraft:pacifico": {
+        "remove": {
+          "component_groups": [
+  "minecraft:off_attack_sistem",
+  "minecraft:agresivo",
+  "minecraft:neutral"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:pacifico"
+          ]
+        }
+      },
+        
+      "minecraft:quedarse_quieto": {
+		"run_command": {
+          "command": [
+    "effect @s slowness 1000000 200 true"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+  "minecraft:deambular",
+  "minecraft:seguir"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:quedarse_quieto"
+          ]
+        }
+      },
+      "minecraft:seguir": {
+		"run_command": {
+          "command": [
+    "effect @s slowness 0 201 true"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+  "minecraft:deambular",
+  "minecraft:quedarse_quieto"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:seguir"
+          ]
+        }
+      },
+      "minecraft:deambular": {
+		"run_command": {
+          "command": [
+    "effect @s slowness 0 201 true"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+  "minecraft:seguir",
+  "minecraft:quedarse_quieto"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:deambular"
+          ]
+        }
+      },
+      
+        
+      "minecraft:in_attack": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_solicitud",
+    "tag @s add in_attack",
+    "tag @p[r=4] add in_attack"
+          ],
+          "target": "self"
+		},
+        "remove": {
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:ataque_normal"
+          ]
+        }
+      },
+      
+      "minecraft:remove_tag": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_solicitud",
+    "tag @p[r=4] remove in_attack"
+          ],
+          "target": "self"
+		},
+        "remove": {
+        },
+        "add": {
+        }
+      },
+      
+      "minecraft:remove_ataque_normal": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_solicitud"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+  "minecraft:ataque_normal"
+          ]
+        },
+        "add": {
+        }
+      },
+        
+     "minecraft:off_attack_sistem": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tag @s remove sistem_attack_mode"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+    "minecraft:on_attack_sistem"
+          ]
+        },
+        "add": {
+          "component_groups": [
+      "minecraft:off_attack_sistem"
+          ]
+        }
+      },
+      "minecraft:on_attack_sistem": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tag @s add sistem_attack_mode"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+    "minecraft:off_attack_sistem"
+          ]
+        },
+        "add": {
+          "component_groups": [
+    "minecraft:on_attack_sistem"
+          ]
+        }
+      },
+      "minecraft:no_attack_mode": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tellraw @p { \"rawtext\": [ { \"text\" : \"§9[Attack Mode Disabled] \" } ] }",
+    "playsound sound.attack_mode @a[r=4] ~~~"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            },
+            "add": {
+            }
+      },
+      "minecraft:attack_mode": {
+		"run_command": {
+          "command": [
+    "tag @s add attack_mode",
+    "tag @s remove no_attack_mode",
+    "tellraw @p { \"rawtext\": [ { \"text\" : \"§4[Attack Mode Active] \" } ] }",
+    "playsound sound.attack_mode @a[r=4] ~~~"
+          ],
+          "target": "self"
+		},
+            "remove": {
+            },
+            "add": {
+            }
+      },
+ 
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:pulmonoscorpius-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1"
+              ]
+            }
+          }
+        ]
+},
+      "minecraft:pulmonoscorpius-on_controlable": {
+        "remove": {
+          "component_groups": [
+    "minecraft:pulmonoscorpius-off_controlable"
+          ]
+        },
+        "add": {
+          "component_groups": [
+      "minecraft:pulmonoscorpius-on_controlable"
+          ]
+        }
+      },
+      "minecraft:pulmonoscorpius-off_controlable": {
+        "add": {
+          "component_groups": [
+    "minecraft:pulmonoscorpius-off_controlable"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+      "minecraft:pulmonoscorpius-on_controlable"
+          ]
+        }
+      },
+      "minecraft:tamednt": {
+        "remove": {
+          "component_groups": [
+    "minecraft:pulmonoscorpius-wild_adult",
+ "minecraft:default_attack_sistem",
+ "minecraft:despierto",
+   "minecraft:pulmonoscorpius-tamed_adult",
+ "minecraft:neutral",
+ "minecraft:seguir",
+ "minecraft:deambular",
+ "minecraft:agresivo"
+          ]
+        },
+        "add": {
+          "component_groups": [
+ "minecraft:pacifico",
+ "minecraft:quedarse_quieto",
+ "minecraft:dialogo",
+   "minecraft:pulmonoscorpius-adult_esperando_tame",
+ "minecraft:off_attack_sistem"
+          ]
+        }
+      },
+      "minecraft:on_tame_tame": {
+        "remove": {
+          "component_groups": [
+    "minecraft:pulmonoscorpius-wild_adult",
+ "minecraft:default_attack_sistem",
+ "minecraft:despierto",
+   "minecraft:pulmonoscorpius-adult_esperando_tame",
+ "minecraft:deambular",
+ "minecraft:agresivo",
+ "minecraft:pacifico",
+ "minecraft:quedarse_quieto"
+          ]
+        },
+        "add": {
+          "component_groups": [
+ "minecraft:neutral",
+ "minecraft:seguir",
+ "minecraft:dialogo",
+   "minecraft:pulmonoscorpius-tamed_adult",
+ "minecraft:off_attack_sistem"
+          ]
+        }
+      },
+      "minecraft:on_tame_pulmonoscorpius_adult": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tag @s remove sistem_attack_mode"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+						"minecraft:mark_variant_0",
+						"minecraft:indefinida",
+						"minecraft:pose1",
+						"minecraft:pose2",
+						"minecraft:pose3",
+						"minecraft:pose4",
+    "minecraft:pulmonoscorpius-wild_adult",
+ "minecraft:default_attack_sistem",
+ "minecraft:despierto",
+ "ark:sleeping"
+          ] 
+        },
+        "add": { 
+          "component_groups": [
+						"minecraft:mark_variant_0_tamed",
+ "minecraft:pulmonoscorpius_adult_inventory",
+ "minecraft:adult_controladores",
+ "minecraft:neutral",
+ "minecraft:seguir",
+ "minecraft:default", 
+ "minecraft:dialogo",
+   "minecraft:pulmonoscorpius-tamed_adult",
+ "minecraft:off_attack_sistem",
+      "minecraft:pulmonoscorpius-off_saddletek",
+      "minecraft:pulmonoscorpius-off_saddle"
+          ]
+        }
+      },
+      "minecraft:on_saddled": {
+        "remove": {
+          "component_groups": [
+      "minecraft:pulmonoscorpius-off_saddle"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:pulmonoscorpius-on_saddle"
+          ]
+        }
+      },
+      
+      "minecraft:off_saddled": {
+        "remove": {
+          "component_groups": [
+      "minecraft:pulmonoscorpius-on_saddle",
+      "minecraft:pulmonoscorpius-off_controlable"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:pulmonoscorpius-off_saddle"
+          ]
+        }
+      },
+      "minecraft:become_angry": {
+        "add": {
+          "component_groups": [
+            "minecraft:pulmonoscorpius-angry"
+          ]
+        }
+      },
+      "minecraft:on_calm": {
+        "remove": {
+          "component_groups": [
+            "minecraft:pulmonoscorpius-angry"
+          ]
+        }
+      },
+			"ark:narcotic_2": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_20",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 20,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_3": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_3"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_20",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 20,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_4": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_4"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_20",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 20,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_5": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_5"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_20",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 20,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_6": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_6"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_20",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 20,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_7": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_7"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_20",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 20,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_8": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_8"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_20",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 20,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_9": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_9"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_20",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 35,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_10": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_10"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_20",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 35,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_final": {
+        "randomize": [
+          {
+            "weight": 80,
+				"remove": {
+					"component_groups": [
+					
+						"minecraft:indefinida",
+						"minecraft:pose1",
+						"minecraft:pose2",
+						"minecraft:pose3",
+						"minecraft:pose4",
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19",
+						"ark:narcotic_20",
+						"minecraft:despierto"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:mark_variant_0",
+						"ark:sleeping"
+					]
+				},
+				"run_command": {
+					"command": [
+						"title @p title 5 min to tame!"
+					]
+				}
+          },
+          {
+            "weight": 35,
+				"remove": {
+				},
+				"add": {
+				}
+          }
+          ]
+			}
+      
+    }
+  }
+}
+  
+

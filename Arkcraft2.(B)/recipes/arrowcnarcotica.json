@@ -8,11 +8,19 @@
     
     "tags": [ "smithy" ],
     "pattern": [
-      "1X"
+      "1X",
+      "2 ",
+      "3 "
     ],
     "key": {
+      "2": {
+        "item": "minecraft:stick"
+      },
       "1": {
-        "item": "minecraft:arrow"
+        "item": "minecraft:flint"
+      },
+      "3": {
+        "item": "minecraft:feather"
       },
       "X": {
         "item": "arkcraft:poisonshock_bowl"

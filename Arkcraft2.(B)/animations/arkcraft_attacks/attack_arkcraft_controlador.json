@@ -1,0 +1,381 @@
+{
+  "format_version": "1.8.0",
+  "animations": {  
+    "animation.remove_ataque_normal_quetzal": {
+     "animation_length": 4.3,
+      "loop": true,
+      "timeline": { 
+          "0.0":[
+            "/tag @s add attacking",
+    "/damage @e[tag=!in_attack , r=6] 10 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ], 
+        "0.7": [
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "3.9": [ 
+            "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ] 
+      }
+    }, 
+    "animation.attack_thorny_dragon": {
+     "animation_length": 0.8, 
+      "loop": true,  
+      "timeline": {  
+          "0.0":[ 
+            "/tag @s add attacking",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+"/effect @e[r=3, tag=!in_attack] slowness 60 0 true",
+"/effect @e[r=3, tag=!in_attack] weakness 60 0 true",
+"/effect @e[r=3, tag=!in_attack] mining_fatigue 60 0 true",
+"/effect @e[r=3, tag=!in_attack] poison 60 0 true",
+"/effect @e[r=3, tag=!in_attack] blindness 1 1 true",
+"/playsound random.fizz @a[r=6] ~ ~ ~",
+
+    "/damage @e[tag=!in_attack , r=3] 1 entity_attack entity @s",
+    
+"/effect @s slowness 0 12 true",
+"/effect @s weakness 0 12 true",
+"/effect @s mining_fatigue 0 12 true",
+"/effect @s poison 0 12 true",
+"/effect @s blindness 0 22 true",
+"/effect @s speed 10 2 true"
+            ],
+          "0.5":[ 
+            "/tag @s remove in_attack",
+            "/tag @s remove attacking"
+              ]
+      }   
+    },  
+    "animation.attack_thylacoleo": {
+     "animation_length": 0.8, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+"/effect @e[r=3, tag=!in_attack] slowness 60 0 true",
+"/effect @e[r=3, tag=!in_attack] weakness 60 0 true",
+"/effect @e[r=3, tag=!in_attack] mining_fatigue 60 0 true",
+"/effect @e[r=3, tag=!in_attack] poison 60 0 true",
+"/effect @e[r=3, tag=!in_attack] blindness 1 1 false",
+"/playsound random.fizz @a[r=6] ~ ~ ~",
+
+    "/damage @e[tag=!in_attack , r=3] 1 entity_attack entity @s",
+    
+"/effect @s slowness 0 12 true",
+"/effect @s weakness 0 12 true",
+"/effect @s mining_fatigue 0 12 true",
+"/effect @s poison 0 12 true",
+"/effect @s blindness 0 22 true",
+"/effect @s speed 10 2 true"
+            ],
+          "0.5":[ 
+            "/tag @s remove in_attack",
+            "/tag @s remove attacking"
+              ]
+      } 
+    },
+    "animation.remove_ataque_normal_thylacoleo": {
+     "animation_length": 0.61, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",
+    "/damage @e[tag=!in_attack , r=4] 4 entity_attack entity @s",
+    "/effect @e[tag=!in_attack , r=4] wither 3 1 true",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_unquillosaurus": {
+     "animation_length": 0.72, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",
+    "/damage @e[tag=!in_attack , r=4] 4 entity_attack entity @s",
+    "/effect @e[tag=!in_attack , r=4] wither 3 1 true",
+    "/fill ~-1 ~-1 ~1 ~1 ~1 ~-1 moss_block 0 replace kelp",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+      },
+    "animation.remove_ataque_normal_rosamygale": {
+     "animation_length": 0.72, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",
+    "/damage @e[tag=!in_attack , r=4] 2 entity_attack entity @s",
+    "/effect @e[tag=!in_attack , r=4] wither 3 1 true",
+    "/execute @s ~ ~ ~ detect ^ ^1 ^4 air 0 setblock ^ ^1 ^2 gravel",
+    "/execute @e[type=!arkcraft:rosamygale, tag=!in_attack , r=4] ^ ^1 ^4 effect @s slowness 4 5",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_raptor": {
+     "animation_length": 0.72, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",
+    "/damage @e[tag=!in_attack , r=4] 4 entity_attack entity @s",
+    "/effect @e[tag=!in_attack , r=4] slowness 3 2 ",
+    "/effect @s levitation 1 2 true",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_gualicho": {
+     "animation_length": 0.72, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",
+    "/damage @e[tag=!in_attack , r=4] 4 entity_attack entity @s",
+    "/execute @e[tag=!in_attack , r=4, type=arkcraft:mega_raptor] ~ ~ ~ effect @s slowness 15 255 ",
+    "/execute @e[tag=!in_attack , r=4, type=arkcraft:mega_raptor] ~ ~ ~ effect @s weakness 15 255 ",
+    "/execute @e[tag=!in_attack , r=4, type=arkcraft:male_rex] ~ ~ ~ event entity @s ark:narcotic_final",
+    "/execute @e[tag=!in_attack , r=4, type=arkcraft:female_rex] ~ ~ ~ event entity @s ark:narcotic_final",
+            "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.attack_pulmonoscorpius": {
+     "animation_length": 2.0, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[  
+    "/effect @e[tag=!in_attack , r=4] slowness 3 200 true",
+    "/effect @e[tag=!in_attack , r=4] blindness 3 200 true",
+    "/effect @e[tag=!in_attack , r=4] weakness 3 2 true",
+    "/damage @e[tag=!in_attack , r=4] 1 entity_attack entity @s",
+    
+    "/effect @s slowness 0 201 true",
+    "/effect @s blindness 0 201 true",
+    "/effect @s weakness 0 3 true"
+              ]
+      } 
+    },
+    "animation.attack_pegomastax": {
+     "animation_length": 0.6, 
+      "loop": true, 
+      "timeline": {
+          "0.1":[  
+"/replaceitem entity @p[r=3] slot.weapon.offhand 1 air 1",
+"/title @a[r=3] actionbar §gPegomastax had steal u second hand",
+"/tp @e[type=item, r=10] ~ ~ ~",
+"/playsound random.pop @a[r=3]"
+              ]
+      } 
+    }, 
+    "animation.remove_ataque_normal_pulmonoscorpius": {
+     "animation_length": 2.4, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",
+    "/damage @e[tag=!in_attack , r=4] 3 entity_attack entity @s",
+    "/effect @e[tag=!in_attack , r=4] slowness 3 200 true",
+    "/effect @e[tag=!in_attack , r=4] blindness 3 200 true",
+    "/effect @e[tag=!in_attack , r=4] weakness 3 2 true",
+                "/tag @s add in_attack"
+              ],
+        "1.7": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_velonasaur": {
+     "animation_length": 1.65, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[  
+            "/tag @s add attacking",
+                "/tag @s add in_attack"
+              ],  
+                      "0.4": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "1.2": [ 
+       "@s minecraft:remove_ataque_normal"
+            ],
+        "1.5": [   
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_velonasaur_r": {
+     "animation_length": 1.65, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[  
+            "/tag @s add attacking",
+                "/tag @s add in_attack",
+                "/effect @s slowness 10000 100 true"
+              ],  
+                      "0.4": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "1.2": [ 
+                "/effect @s slowness 0 101 true",
+            "/tag @s remove attacking",
+       "@s minecraft:remove_ataque_normal"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal": {
+     "animation_length": 1.3, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[  
+            "/tag @s add attacking",
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ],  
+                      "0.4": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "1.2": [ 
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_thorny_dragon": {
+     "animation_length": 2.2,
+      "loop": true,
+      "timeline": {   
+          "0.0":[ 
+            "/tag @s add attacking",
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+                "/tag @s add in_attack",
+"/effect @e[r=3, tag=!in_attack] slowness 60 0 true",
+"/effect @e[r=3, tag=!in_attack] weakness 60 0 true",
+"/effect @e[r=3, tag=!in_attack] mining_fatigue 60 0 true",
+"/effect @e[r=3, tag=!in_attack] poison 60 0 true",
+"/effect @e[r=3, tag=!in_attack] blindness 1 1 true",
+"/playsound random.fizz @a[r=6] ~ ~ ~",
+
+    "/damage @e[tag=!in_attack , r=3] 1 entity_attack entity @s",
+    
+"/effect @s slowness 0 12 true",
+"/effect @s weakness 0 12 true",
+"/effect @s mining_fatigue 0 12 true",
+"/effect @s poison 0 12 true",
+"/effect @s blindness 0 22 true",
+"/effect @s speed 10 2 true"
+              ], 
+        "0.7": [
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "2.0": [
+            "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ] 
+      }
+    },
+    "animation.remove_ataque_normal_skorpiovenator": {
+     "animation_length": 3.0,
+      "loop": true, 
+      "timeline": { 
+          "0.0":[
+            "/tag @s add attacking",
+    "/damage @e[tag=!in_attack , r=4] 10 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ], 
+        "0.7": [
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "2.7": [
+            "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ] 
+      }
+    },
+    "animation.remove_ataque_normal_teratophoneus": {
+     "animation_length": 3.5,
+      "loop": true,
+      "timeline": { 
+          "0.0":[
+            "/tag @s add attacking",
+    "/damage @e[tag=!in_attack , r=6] 9 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ], 
+        "0.7": [
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "3.2": [
+            "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ] 
+      }
+    },
+    "animation.remove_ataque_normal_r2": {
+     "animation_length": 1.64,
+      "loop": true,
+      "timeline": { 
+          "0.0":[
+            "/tag @s add attacking",
+    "/damage @e[tag=!in_attack , r=4] 6 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ], 
+        "0.7": [
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "1.55": [
+            "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ] 
+      }
+    } 
+  }
+} 

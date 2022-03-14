@@ -1,0 +1,43 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "dialogo_tameado_arkcraft_attack_velonasaur",
+				"npc_name": { "rawtext": [ { "translate": "Arkcraft" } ] },
+				"text": { "rawtext": [ { "translate": "Move Modes Opcions", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "§1Pasive" } ] },
+						"commands": [
+							"/event entity @s minecraft:pacifico",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§0Neutral" } ] },
+						"commands": [
+							"/event entity @s minecraft:neutral",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§4Agresive" } ] },
+						"commands": [
+							"/event entity @s minecraft:agresivo",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+			  		{
+						"name": { "rawtext": [ { "translate": "<<" } ] },
+						"commands": [
+							"/dialogue change @s dialogo_tameado_arkcraft_move_velonasaur @p"
+						]
+					}
+				]
+			}
+		]
+	}
+}

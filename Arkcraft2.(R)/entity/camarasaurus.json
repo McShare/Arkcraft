@@ -1,0 +1,45 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:camarasaurus",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "variant1": "textures/entity/cam/cam1",
+    "variant2": "textures/entity/cam/cam2",
+    "variant3": "textures/entity/cam/cam3",
+    "variant4": "textures/entity/cam/cam4"
+   },
+   "geometry": {
+    "default": "geometry.camarasaurus"
+        },
+   "render_controllers": [
+    "controller.render.camarasaurus"  
+   ],
+   "animations": {
+        "general": "controller.animation.camarasaurus.general",
+        "look_at_target": "animation.cam.look_at_target",
+        "sit": "animation.cam.sit",
+        "sleep": "animation.cam.sleep",
+       "roar": "animation.cam.roar",
+       "move": "animation.cam.move",
+       "default": "animation.cam.idle",
+        "attack": "animation.cam.attack"
+   },
+   "scripts": {
+        "scale": "0.9",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#a65e1b",
+        "overlay_color": "#123754"
+      }
+  }
+ }
+}
+ 

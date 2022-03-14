@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "van_wolf:wn_pelaje_cafe_nivel1.player",
+      "item": { "arkcraft:daeodon_old": "query.owner_identifier == 'minecraft:player'" },
+      "materials": {
+        "default": "armor",
+        "enchanted": "armor_enchanted"
+      },
+      "textures": {
+        "default": "textures/entity/daeodon_old",
+        "enchanted": "textures/entity/daeodon_old"
+      },
+      "geometry": {
+        "default": "geometry.daeodon_old"
+      },
+      "render_controllers": [ "controller.render.armor" ]
+    }
+  }
+}

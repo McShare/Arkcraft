@@ -1,0 +1,73 @@
+{
+	"format_version": "1.10.0",
+	"geometry.daeodon_old": {
+		"texturewidth": 256,
+		"textureheight": 256,
+		"visible_bounds_width": 6,
+		"visible_bounds_height": 5,
+		"visible_bounds_offset": [0, 2.5, 0],
+		"bones": [
+			{
+				"name": "head",
+"reset": true,
+				"pivot": [0, 56, 7],
+				"cubes": [
+					{"origin": [-4.407, 52, -1], "size": [8, 8, 8], "uv": [90, 70]}
+				]
+			}, 
+			{
+				"name": "cabeza",
+				"parent": "head",
+				"pivot": [0, 56, 7],
+				"cubes": [
+					{"origin": [-0.407, 61, -1], "size": [1, 6, 9], "uv": [149, 99]},
+					{"origin": [-5.407, 51, -2], "size": [11, 10, 10], "uv": [67, 15]},
+					{"origin": [5.593, 59, 4], "size": [2, 2, 1], "uv": [85, 7]},
+					{"origin": [-7.407, 59, 4], "size": [2, 2, 1], "uv": [72, 41]},
+					{"origin": [5.593, 59, 7], "size": [2, 2, 1], "uv": [58, 52]},
+					{"origin": [-7.407, 59, 7], "size": [2, 2, 1], "uv": [12, 15]},
+					{"origin": [8.593, 58, 5], "size": [1, 2, 1], "uv": [8, 0]},
+					{"origin": [-9.407, 58, 5], "size": [1, 2, 1], "uv": [0, 0]},
+					{"origin": [5.593, 60, 5], "size": [4, 1, 2], "uv": [88, 63]},
+					{"origin": [-9.407, 60, 5], "size": [4, 1, 2], "uv": [52, 49]},
+					{"origin": [-5.407, 51, -7], "size": [11, 3, 5], "uv": [66, 55]},
+					{"origin": [-3.407, 51, -16], "size": [7, 3, 9], "uv": [113, 94]}
+				]
+			},
+			{
+				"name": "colnillo0",
+				"parent": "cabeza",
+				"pivot": [-2, 54, -12],
+				"rotation": [0, 0, -30],
+				"cubes": [
+					{"origin": [-4.407, 53, -14], "size": [1, 5, 1], "uv": [98, 59]},
+					{"origin": [-5.407, 55, -6], "size": [2, 5, 2], "uv": [85, 0]}
+				]
+			},
+			{
+				"name": "colnillo1",
+				"parent": "cabeza",
+				"pivot": [4, 54, -12],
+				"rotation": [0, 0, 30],
+				"cubes": [
+					{"origin": [3.593, 52, -14], "size": [1, 5, 1], "uv": [61, 29]},
+					{"origin": [3.593, 54, -6], "size": [2, 5, 2], "uv": [79, 69]}
+				]
+			},
+			{  
+				"name": "osico",
+				"parent": "cabeza",
+				"pivot": [0, 57, 0]
+			},
+			{
+				"name": "osico2",
+				"parent": "osico",
+				"pivot": [0, 57, 0],
+				"cubes": [
+					{"origin": [-3.407, 54, -8], "size": [7, 5, 6], "uv": [141, 116]},
+					{"origin": [-3.407, 54, -15], "size": [7, 4, 7], "uv": [132, 72]}
+				]
+			}
+		]
+	}
+}

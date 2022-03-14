@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.dialogo_controlador_arkcraft": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "tamed": "query.is_tamed && !query.is_baby"
+            }
+          ]
+        },
+        "tamed": {
+          "transitions": [
+            {
+              "tamed2": "!query.is_tamed"
+            }
+          ],
+                    "animations": [
+               "dialogo_tameado_arkcraft"
+                        ]
+        },
+        "tamed2": {
+          "transitions": [
+            {
+              "tamed": "query.is_tamed"
+            }
+          ],
+                    "animations": [
+  "dialogo_esperando_tame_arkcraft"
+                        ]
+        }
+      }
+    }
+  }
+}

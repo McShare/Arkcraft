@@ -1,0 +1,1411 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "arkcraft:scutosaurus",
+      "is_spawnable": true, 
+      "is_summonable": true,
+      "is_experimental": false, 
+	  "scripts": { 
+
+	    "animate": [ 
+    "dialogo_controlador",
+{
+    "get_up":"query.is_sheared"
+    
+} 
+	    ]
+	  },
+	  "animations": { 
+	    "dialogo_controlador": "controller.animation.dialogo_controlador_arkcraft",
+	    "dialogo_tameado_arkcraft": "animation.dialogo_tameado_arkcraft_move_scutosaurus",
+	    "dialogo_esperando_tame_arkcraft": "animation.dialogo_esperando_tame_arkcraft",
+	    "get_up": "animation.get_up_arkcraft"
+    }
+    },  
+ 
+    "component_groups": {
+         
+        "minecraft:v1":{
+        "minecraft:variant": {
+          "value": 0
+      }
+        },
+
+        "minecraft:despierto":{
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 1.45
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 4,
+        "speed_multiplier": 1.0
+      }
+        },
+			"ark:sleeping": {
+			"minecraft:is_sheared": {},
+        "minecraft:tameable": {
+          "probability": 0.6,
+          "tame_items": [
+         "arkcraft:pasta_verde"],
+          "tame_event": {
+            "event": "minecraft:on_tame_scutosaurus_adult",
+            "target": "self"
+          }
+        } 
+			},
+        
+     "minecraft:no_cultivo":{
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.8
+      }
+     },
+     "minecraft:modo_cultivo":{
+
+      "minecraft:behavior.pickup_items": {
+        "priority": 0,
+        "max_dist": 5,
+        "goal_radius": 0,
+        "speed_multiplier": 1.0
+      },
+        "minecraft:shareables": {
+          "items": [
+            {
+              "item": "minecraft:bread",
+              "want_amount": 3,
+              "surplus_amount": 6
+            },
+            {
+              "item": "minecraft:carrot",
+              "want_amount": 60,
+              "surplus_amount": 4
+            },
+            {
+              "item":"minecraft:potato",
+              "want_amount": 60,
+              "surplus_amount": 24
+            },
+            {
+              "item": "minecraft:beetroot",
+              "want_amount": 60,
+              "surplus_amount": 24
+            },
+            {
+              "item": "minecraft:wheat_seeds",
+              "want_amount": 64,
+              "surplus_amount": 64
+            },
+            {
+              "item": "minecraft:beetroot_seeds",
+              "want_amount": 64,
+              "surplus_amount": 64
+            },
+            {
+              "item":"minecraft:wheat",
+              "want_amount": 45,
+              "surplus_amount": 18,
+              "craft_into": "minecraft:bread"
+            }
+          ]
+        },
+"minecraft:behavior.harvest_farm_block": {
+          "priority": 1,
+          "speed_multiplier": 0.9
+        }
+     },
+        
+        "minecraft:dialogo":{
+				"minecraft:npc": {
+					"npc_data": {
+						"portrait_offsets": {
+							"translate": [
+								-7,
+								50,
+								0
+							],
+							"scale": [
+								1.75,
+								1.75,
+								1.75
+							]
+						},
+						"picker_offsets": {
+							"translate": [
+								0,
+								20,
+								0
+							],
+							"scale": [
+								1.7,
+								1.7,
+								1.7
+							]
+						},
+						"skin_list": [
+							{
+								"variant": 0
+							}
+						]
+					}
+				}
+        },
+        
+        "minecraft:pacifico":{
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 1.45
+      } 
+        },
+        "minecraft:neutral":{
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 3
+        },
+			"minecraft:behavior.owner_hurt_target": {
+				"priority": 0,
+				"entity_types": [{
+					"filters": {
+						"test": "has_component",
+						"subject": "other",
+						"operator": "!=",
+						"value": "minecraft:is_tamed"
+					},
+					"max_dist": 15
+				}]
+			},
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      }
+        },
+        "minecraft:agresivo":{
+       "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": true
+                  }
+                ]
+              },
+              "max_dist": 40
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "mob"},
+     { "test" :  "is_family", "subject" : "other", "value" :  "monster"},
+                 { "test" :  "is_family", "subject" : "other", "value" :  "pulmonoscorpius"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "doedicurus"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "thorny"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
+                ],
+                "all_of": [
+                  { "test" :  "has_component","subject" : "other", "operator": "!=", "value" :  "minecraft:is_tamed"}
+                ]
+              },
+              "max_dist": 40
+            }
+          ],
+          "must_see": true
+},
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+			"minecraft:behavior.owner_hurt_target": {
+				"priority": 0,
+				"entity_types": [{
+					"filters": {
+						"test": "has_component",
+						"subject": "other",
+						"operator": "!=",
+						"value": "minecraft:is_tamed"
+					},
+					"max_dist": 15
+				}]
+			}
+        },
+        
+        "minecraft:quedarse_quieto":{
+        "minecraft:is_baby": {
+        }
+        }, 
+        "minecraft:deambular":{ 
+      "minecraft:behavior.random_stroll": {
+        "priority": 4,
+        "speed_multiplier": 1.0
+      }
+        },
+        "minecraft:seguir":{
+        "minecraft:behavior.follow_owner": {
+          "priority": 3,
+          "speed_multiplier": 1.0,
+          "start_distance": 6,
+          "stop_distance": 5
+        }
+        },
+        
+        "minecraft:default":{
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      }
+        },
+        
+  "minecraft:off_attack_sistem":{
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "track_target": true,
+        "reach_multiplier": 1.0
+      }
+    },
+     
+"minecraft:adult_controladores":{
+      "minecraft:follow_range": {
+        "value": 30
+      },
+      "minecraft:knockback_resistance": {
+        "value": 0.4
+      }, 
+      "minecraft:attack": { 
+        "damage": 3
+      },
+        "minecraft:scale": {
+          "value": 1.35
+        },
+        "minecraft:strength": {
+          "value": 6,
+          "max": 8
+        },
+        "minecraft:movement": {
+          "value": {
+            "range_min": 0.25,
+            "range_max": 0.25
+          }
+        },
+	    "minecraft:health": {
+          "value": 40,
+          "max": 60
+        }
+},
+
+  "minecraft:scutosaurus-wild_adult":{
+      "minecraft:type_family": {
+        "family": [ "scutosaurus", "mob" , "wild" , "wild_adult"]
+      },
+        "minecraft:loot": {
+         "table": "loot_tables/entities/scutosaurus.json"
+        },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 6 : 2"
+      }
+  },
+  
+  "minecraft:scutosaurus-adult_esperando_tame":{
+      "minecraft:type_family": {
+        "family": [ "scutosaurus", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+      },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/scutosaurus.json"
+        },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 10.0,
+        "max_distance": 14.0
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 6 : 2"
+      }
+  },
+  "minecraft:scutosaurus-tamed_adult":{
+        "minecraft:inventory": {
+        "container_type": "container",
+        "inventory_size": 27,
+   "restrict_to_owner": true,
+					"private": false
+        },
+ "minecraft:type_family": {
+        "family": [ "scutosaurus", "mob" , "tamed_adult" , "tamed" ]
+      },
+        "minecraft:is_tamed": {
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/scutosaurus.json"
+        },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 10.0,
+        "max_distance": 14.0
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 6 : 2"
+      }
+  },
+
+			"ark:narcotic_1": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_2"
+							}
+						}
+					]
+				}
+			},
+			"ark:narcotic_2": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_3"
+							}
+						}
+					]
+				}
+			},
+			"ark:narcotic_3": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_4"
+							}
+						}
+					]
+				}
+			},
+			"ark:narcotic_4": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_5"
+							}
+						}
+					]
+				}
+			},
+			"ark:narcotic_5": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "narcotic_arrow"
+								},
+								"event": "ark:narcotic_final"
+							}
+						}
+					]
+				}
+			}
+ 
+    },
+   
+
+    "components": {
+"minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    { "test": "is_family", "subject" : "other", "value" :  "player"},
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"},
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  }
+                  ]    
+                }, 
+                "event": "minecraft:dialogo_off"
+              },
+              "play_sounds": "block.composter.fill_success",
+              "interact_text": "See The Inventory"
+        }
+          ]
+        },
+      "minecraft:nameable": {
+      },
+"minecraft:item_hopper": {
+        },
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 1.3
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:behavior.tempt": {
+        "priority": 5,
+        "speed_multiplier": 1.0,
+        "items": [
+          "apple",
+          "appleenchanted",
+          "beetroot",
+          "beetroot_soup",
+          "bread",
+          "brown_mushroom",
+          "carrot",
+          "double_plant:2",
+          "double_plant:3",
+          "golden_apple",
+          "leaves",
+          "leaves2",
+          "melon",
+          "mushroom_stew",
+          "potato",
+          "pumpkin_pie",
+          "red_mushroom",
+          "reeds",
+          "sweet_berries",
+          "tallgrass",
+          "sugar",
+          "vine",
+          "waterlily",
+          "wheat"
+        ]
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "apple",
+            "heal_amount": 6
+          },
+          {
+            "item": "appleenchanted",
+            "heal_amount": 40
+          },
+          {
+            "item": "beetroot",
+            "heal_amount": 2
+          },
+          {
+            "item": "beetroot_soup",
+            "heal_amount": 3
+          },
+          {
+            "item": "bread",
+            "heal_amount": 4
+          },
+          {
+            "item": "brown_mushroom",
+            "heal_amount": 2
+          },
+          {
+            "item": "carrot",
+            "heal_amount": 4
+          },
+          {
+            "item": "double_plant:2",
+            "heal_amount": 4
+          },
+          {
+            "item": "double_plant:3",
+            "heal_amount": 3
+          },
+          {
+            "item": "golden_apple",
+            "heal_amount": 17
+          },
+          {
+            "item": "leaves",
+            "heal_amount": 4
+          },
+          {
+            "item": "leaves2",
+            "heal_amount": 4
+          },
+          {
+            "item": "melon",
+            "heal_amount": 3
+          },
+          {
+            "item": "mushroom_stew",
+            "heal_amount": 5
+          },
+          {
+            "item": "potato",
+            "heal_amount": 2
+          },
+          {
+            "item": "pumpkin_pie",
+            "heal_amount": 6
+          },
+          {
+            "item": "red_mushroom",
+            "heal_amount": 2
+          },
+          {
+            "item": "reeds",
+            "heal_amount": 2
+          },
+          {
+            "item": "sweet_berries",
+            "heal_amount": 3
+          },
+          {
+            "item": "tallgrass",
+            "heal_amount": 3
+          },
+          {
+            "item": "sugar",
+            "heal_amount": 1
+          },
+          {
+            "item": "vine",
+            "heal_amount": 3
+          },
+          {
+            "item": "waterlily",
+            "heal_amount": 3
+          },
+          {
+            "item": "wheat",
+            "heal_amount": 4
+          }
+        ]
+      },
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? Math.Random(5,3) : 3.4"
+        },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 3
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+
+ 
+    "events": {
+      "minecraft:dialogo_on": {
+        "add": {
+          "component_groups": [
+            "minecraft:dialogo"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:dialogo_off"
+          ]
+        }
+      },
+      "minecraft:dialogo_off": {
+        "remove": {
+          "component_groups": [
+"minecraft:search_mode",
+            "minecraft:dialogo"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:dialogo_off"
+          ]
+        }
+      },
+      "minecraft:modo_cultivo": {
+        "remove": {
+          "component_groups": [
+            "minecraft:no_cultivo"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:modo_cultivo"
+          ]
+        }
+      },
+      "minecraft:modo_no_cultivo": {
+        "remove": {
+          "component_groups": [
+            "minecraft:modo_cultivo"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:no_cultivo"
+          ]
+        }
+      },
+      "minecraft:on_tame_scutosaurus": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tag @s remove sistem_attack_mode"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+            "minecraft:scutosaurus_salvaje",
+      "minecraft:default_attack_sistem"
+          ]
+        },
+        "add": {
+          "component_groups": [  "minecraft:scutosaurus_domado",
+            "minecraft:sin_montura",
+"minecraft:scutosaurus_sin_casa",
+"minecraft:off_attack_sistem"
+          ]
+        }
+      },
+			"minecraft:get_up": {
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19",
+						"ark:narcotic_20",
+						"ark:sleeping"
+					] 
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:despierto"
+					]
+				}
+			},
+        
+      "minecraft:neutral": {
+        "remove": {
+          "component_groups": [
+  "minecraft:pacifico",
+  "minecraft:agresivo"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:neutral"
+          ]
+        } 
+      },
+      "minecraft:agresivo": {
+        "remove": {
+          "component_groups": [
+  "minecraft:pacifico",
+  "minecraft:neutral"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:agresivo"
+          ]
+        }
+      },
+      "minecraft:pacifico": {
+        "remove": {
+          "component_groups": [
+  "minecraft:agresivo",
+  "minecraft:neutral"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:pacifico"
+          ]
+        }
+      },
+        
+      "minecraft:quedarse_quieto": {
+		"run_command": {
+          "command": [
+    "effect @s slowness 100000 200 true"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+  "minecraft:deambular",
+  "minecraft:seguir"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:quedarse_quieto"
+          ]
+        }
+      },
+      "minecraft:seguir": {
+		"run_command": {
+          "command": [
+    "effect @s slowness 0 201 true"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+  "minecraft:deambular",
+  "minecraft:quedarse_quieto"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:seguir"
+          ]
+        }
+      },
+      "minecraft:deambular": {
+		"run_command": {
+          "command": [
+    "effect @s slowness 0 201 true"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+  "minecraft:seguir",
+  "minecraft:quedarse_quieto"
+          ]
+        },
+        "add": {
+          "component_groups": [
+  "minecraft:deambular"
+          ]
+        }
+      },
+      
+        
+ 
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 95,
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+            "minecraft:no_cultivo",
+"minecraft:scutosaurus-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v1"
+              ]
+            }
+          }
+        ]
+},
+      "minecraft:tamednt": {
+        "remove": {
+          "component_groups": [
+    "minecraft:scutosaurus-wild_adult",
+ "minecraft:default_attack_sistem",
+ "minecraft:despierto",
+   "minecraft:scutosaurus-tamed_adult",
+ "minecraft:neutral",
+ "minecraft:seguir",
+ "minecraft:deambular",
+ "minecraft:agresivo"
+          ]
+        },
+        "add": {
+          "component_groups": [
+ "minecraft:pacifico",
+ "minecraft:quedarse_quieto",
+ "minecraft:dialogo",
+   "minecraft:scutosaurus-adult_esperando_tame",
+ "minecraft:off_attack_sistem"
+          ]
+        }
+      },
+      "minecraft:on_tame_tame": {
+        "remove": {
+          "component_groups": [
+    "minecraft:scutosaurus-wild_adult",
+ "minecraft:default_attack_sistem",
+ "minecraft:despierto",
+   "minecraft:scutosaurus-adult_esperando_tame",
+ "minecraft:deambular",
+ "minecraft:agresivo",
+ "minecraft:pacifico",
+ "minecraft:quedarse_quieto"
+          ]
+        },
+        "add": {
+          "component_groups": [
+ "minecraft:neutral",
+ "minecraft:seguir",
+ "minecraft:dialogo",
+   "minecraft:scutosaurus-tamed_adult",
+ "minecraft:off_attack_sistem"
+          ]
+        }
+      },
+      "minecraft:on_tame_scutosaurus_adult": {
+		"run_command": {
+          "command": [
+    "tag @s remove attack_mode",
+    "tag @s add no_attack_mode",
+    "tag @s remove sistem_attack_mode"
+          ],
+          "target": "self"
+		},
+        "remove": {
+          "component_groups": [
+    "minecraft:scutosaurus-wild_adult",
+ "minecraft:default_attack_sistem",
+ "minecraft:despierto",
+ "ark:sleeping"
+          ]
+        },
+        "add": { 
+          "component_groups": [
+ "minecraft:scutosaurus_adult_inventory",
+ "minecraft:adult_controladores",
+ "minecraft:neutral",
+ "minecraft:seguir",
+ "minecraft:default", 
+ "minecraft:dialogo",
+   "minecraft:scutosaurus-tamed_adult",
+ "minecraft:off_attack_sistem",
+      "minecraft:scutosaurus-off_saddletek",
+      "minecraft:scutosaurus-off_saddle",
+    "minecraft:scutosaurus-off_chested"
+          ]
+        }
+      },
+			"ark:narcotic_2": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_20",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 40,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_3": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_3"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_20",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 20,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_4": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_4"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_20",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 20,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_5": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_5"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_20",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 50,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_6": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_6"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_20",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 40,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_7": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_7"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_20",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 40,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_8": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_8"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_20",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 70,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_9": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_9"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_20",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 70,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_10": {
+        "randomize": [
+          {
+            "weight": 80,
+				"add": {
+					"component_groups": [
+						"ark:narcotic_10"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_20",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19"
+					]
+				}
+          }, 
+          {
+            "weight": 90,
+				"add": {
+				},
+				"remove": {
+				}
+          }
+          ]
+		},
+			"ark:narcotic_final": {
+        "randomize": [
+          {
+            "weight": 80,
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:narcotic_11",
+						"ark:narcotic_12",
+						"ark:narcotic_13",
+						"ark:narcotic_14",
+						"ark:narcotic_15",
+						"ark:narcotic_16",
+						"ark:narcotic_17",
+						"ark:narcotic_18",
+						"ark:narcotic_19",
+						"ark:narcotic_20",
+						"minecraft:despierto"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ark:sleeping"
+					]
+				},
+				"run_command": {
+					"command": [
+						"title @p title 5 min to tame!"
+					]
+				}
+          },
+          {
+            "weight": 20,
+				"remove": {
+				},
+				"add": {
+				}
+          }
+          ]
+			}
+    }
+  }
+}
+  
+
+
+

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.sleeping_night": {
+     "animation_length": 15.0,
+      "loop": true,
+      "timeline": {
+        "14.0": [
+"@s minecraft:sleeping_night"
+            ]
+      }
+    },
+    "animation.sleeping_night_tamed": {
+     "animation_length": 15.0,
+      "loop": true,
+      "timeline": {
+        "14.0": [
+"@s minecraft:sleeping_night_tamed"
+            ]
+      }
+    }
+  }
+} 

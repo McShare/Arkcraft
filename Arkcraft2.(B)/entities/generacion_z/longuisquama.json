@@ -1,0 +1,240 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "arkcraft:longuisquama",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+			"scripts": {
+				"animate": [
+					"longuisquama"
+				]
+			},
+			"animations": {			
+"longuisquama": "controller.animation.longuisquama",
+"longuisquama_levantado": "animation.longuisquama_levantado"
+			}
+    },
+
+    "component_groups": {
+        
+        "minecraft:levantado":{
+
+      "minecraft:behavior.look_at_player": {
+        "priority": 0,
+        "target_distance": 10.0,
+        "probability": 4.0
+      },
+        "minecraft:variant": {
+          "value": 1
+        },
+      "minecraft:movement": {
+        "value": 0.3
+      }
+      
+        },
+        
+        "minecraft:sentado":{
+      "minecraft:behavior.random_stroll": {
+        "priority": 1,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                    { "test": "is_variant", "subject": "self", "operator": "==", "value": 0}
+                ]
+              }
+            },
+            "deals_damage": true,
+         "damage_multiplier": 2000.0
+          }
+        ]
+      },
+        "minecraft:leashable": {
+          "soft_distance": 4.0,
+          "hard_distance": 6.0,
+          "max_distance": 10.0
+        },
+      "minecraft:behavior.random_stroll": {
+        "priority": 8,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      },
+        "minecraft:variant": {
+          "value": 0
+        },
+      "minecraft:movement": {
+        "value": 0.0
+      }
+   }
+
+
+    },
+
+
+    "components": {
+        "minecraft:interact": {
+          "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                    { "test": "is_variant", "subject": "self", "operator": "==", "value": 0},
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:levantado",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Get Up",
+              "play_sounds": "shear"
+        },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                    { "test": "is_variant", "subject": "self", "operator": "==", "value": 1},
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:sentado",
+              "target": "self"
+            },
+              "use_item": false,
+              "hurt_item": 0,
+            "interact_text": "Sit",
+              "play_sounds": "shear"
+        }
+        
+        ]
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/longuisquama.json"
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        },
+      "minecraft:nameable": {
+      },
+      "minecraft:type_family": {
+        "family": [ "longuisquama", "mob" ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 0.8
+      },
+      "minecraft:health": {
+        "value": 8,
+        "max": 8
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 3
+      },
+	    "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 9,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:sentado"
+              ]
+            }
+          }
+        ]
+      },
+
+      "minecraft:levantado": {
+        "remove": {
+          "component_groups": [
+            "minecraft:sentado"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:levantado"
+          ]
+        }
+      },
+      "minecraft:sentado": {
+        "remove": {
+          "component_groups": [
+            "minecraft:levantado"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:sentado"
+          ]
+        }
+      }
+
+
+ 
+    }
+  }
+}

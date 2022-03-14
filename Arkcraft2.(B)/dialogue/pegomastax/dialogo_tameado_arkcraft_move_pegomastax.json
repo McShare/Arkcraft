@@ -1,0 +1,57 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[ 
+			{
+				"scene_tag": "dialogo_tameado_arkcraft_move_pegomastax",
+				"npc_name": { "rawtext": [ { "translate": "Arkcraft" } ] },
+				"text": { "rawtext": [ { "translate": "Move Modes Opcions", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "§1Follow Me" } ] },
+						"commands": [
+							"/event entity @s minecraft:seguir",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§2Wait Here" } ] },
+						"commands": [
+							"/event entity @s minecraft:quedarse_quieto",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§1Wander" } ] },
+						"commands": [
+							"/event entity @s minecraft:deambular",
+							"/playsound player_silbido @a[r=6]"
+						] 
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§6Pickup Up Items" } ] },
+						"commands": [
+							"/event entity @s minecraft:recoge_items_on",
+							"/playsound player_silbido @a[r=6]"
+						]
+					}, 
+					{
+						"name": { "rawtext": [ { "translate": "§6Dont Pickup Up Items" } ] },
+						"commands": [
+							"/event entity @s minecraft:recoge_items_off",
+							"/playsound player_silbido @a[r=6]"
+						]
+					}, 
+					{
+						"name": { "rawtext": [ { "translate": ">>" } ] },
+						"commands": [
+							"/dialogue change @s dialogo_tameado_arkcraft_attack_pegomastax @p"
+						]
+					}
+				]
+			}
+		]
+	}
+}

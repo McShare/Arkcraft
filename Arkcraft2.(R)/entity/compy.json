@@ -13,15 +13,19 @@
         "default": "geometry.compy"
       },
       "animations": {
-        "walk": "animation.compy_move",
+        "general": "controller.animation.compy.general",
+        "look_at_target": "animation.common.look_at_target",
         "sit": "animation.compy.sit",
-        "look_at_target": "animation.common.look_at_target"
-      },
+        "roar": "animation.compy.roar",
+        "sleep": "animation.compy.sit",
+       "move": "animation.compy.walk",
+       "default": "animation.compy.idle",
+        "attack": "animation.compy.attack"  
+      }, 
       "scripts": {
         "animate": [
-          { "walk": "query.modified_move_speed" },
-          { "sit": "query.is_sitting" },
-          "look_at_target"
+          "general",
+          "default"
         ]
       },
       "render_controllers": [ "controller.render.compy" ],

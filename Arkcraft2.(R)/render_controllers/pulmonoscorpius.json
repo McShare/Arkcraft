@@ -1,18 +1,28 @@
 {
-  "format_version": "1.8.0",
-  "render_controllers": {
-    "controller.render.pulmonoscorpius": {
-      "geometry": "Geometry.default",
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.pulmonoscorpius": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.default"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
       "part_visibility": [ { 
           "montura*": "query.is_saddled" ,
-          "bone2*": "query.is_saddled" ,
-          "bone12*": "query.is_saddled" 
+          "cabello*": "!query.is_saddled" 
       }
-      ],
-      "materials": [
-        { "*": "Material.default" }
-      ],
-      "textures": [ "Texture.default"  ]
-    }
-  }
+      ], 
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[query.variant]"
+			]
+		}
+	}
 }

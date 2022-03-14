@@ -1,0 +1,48 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:thylacoleo",
+      "materials": {
+        "default": "cow" 
+      }, 
+   "textures": {
+    "variant1": "textures/entity/thylacoleo/thylacoleo_1",
+    "variant2": "textures/entity/thylacoleo/thylacoleo_2",
+    "variant3": "textures/entity/thylacoleo/thylacoleo_3",
+    "variant4": "textures/entity/thylacoleo/thylacoleo_4"
+   },
+   "geometry": { 
+    "default": "geometry.thylacoleo"
+   }, 
+   "render_controllers": [
+    "controller.render.thylacoleo"
+   ],
+   "animations": {
+        "escalando": "controller.animation.thylacoleo.escalando",
+       "normal": "animation.thylacoleo.normal",
+      "pose1": "animation.thylacoleo.pose1",
+        "general": "controller.animation.thylacoleo.general",
+        "look_at_target": "animation.common.look_at_target",
+        "sit": "animation.thylacoleo.sit",
+        "sleep": "animation.thylacoleo.sleep",
+       "move": "animation.thylacoleo.move",
+       "run": "animation.thylacoleo.run",
+       "default": "animation.thylacoleo.idle",
+        "attack": "animation.thylacoleo.attack"
+   }, 
+   "scripts": {
+        "scale": "1.1",
+    "animate": [
+       "general",
+       "escalando"
+    ]
+   },
+      "spawn_egg": {
+         "base_color": "#362101",
+        "overlay_color": "#b87306"
+      }
+  }
+ }
+}
+ 

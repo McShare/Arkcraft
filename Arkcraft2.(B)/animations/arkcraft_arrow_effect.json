@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.arkcraft_arrow_effect": {
+     "animation_length": 0.1,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "/effect @a[r=2] slowness 10 200 true",
+ "/effect @a[r=2] blindness 10 200 true",
+ "/effect @e[r=2] slowness 2 200 true",
+ "/effect @e[r=2] blindness 2 200 true",
+ "/title @[r=2] actionbar §gNarcotic Arrow hitted you!"
+            ]
+      }
+    } 
+  } 
+} 

@@ -1,0 +1,47 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:raptor",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/raptor/rap1",
+    "default2": "textures/entity/raptor/rap2",
+    "default3": "textures/entity/raptor/rap3",
+    "default4": "textures/entity/raptor/rap4",
+    "default5": "textures/entity/raptor/rap5",
+    "default6": "textures/entity/raptor/rap6"
+   },
+   "geometry": {
+    "default": "geometry.raptor"
+        },
+   "render_controllers": [
+    "controller.render.raptor"  
+   ],
+   "animations": {
+        "general": "controller.animation.raptor.general",
+        "look_at_target": "animation.raptor.look_at_target",
+        "sit": "animation.raptor.sit",
+        "sleep": "animation.raptor.sleep",
+       "roar": "animation.raptor.roar",
+       "move": "animation.raptor.walk",
+       "default": "animation.raptor.idle",
+        "attack": "animation.raptor.attack"
+   },
+   "scripts": {
+        "scale": "0.9",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#5d9e37",
+        "overlay_color": "#686b66"
+      }
+  }
+ }
+}
+ 

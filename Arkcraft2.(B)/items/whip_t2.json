@@ -23,15 +23,15 @@
         "repair_items": [
           "string"
         ]
-      },
+      }, 
 			"minecraft:icon": {
 				"texture": "whip_t2"
 			},
-			      "minecraft:use_duration": 30,
+			      "minecraft:use_duration": 15, 
 			      "minecraft:damage": 4,
 			"minecraft:cooldown": {
 				"category": "ender_pearl",
-				"duration": 5
+				"duration": 0.55
 			},
 			"minecraft:display_name": {
 				"value": "§6ArkCraft | §3Whip T2"
@@ -39,12 +39,14 @@
 		},
 		"events": {
 			"ark:roar_special": {
-				"run_command": {
+				"run_command": { 
 					"command": [
-						"event entity @e[family=tamed,r=5] ark:roar_special"
-					]
-				}
+						"event entity @e[family=tamed,r=5] ark:roar_special",
+						"execute @s[tag=!in_attack] ~~~ tag @e[family=tamed_adult,r=4] add attack_solicitud",
+						"execute @s[tag=in_attack] ~~~ tag @s remove in_attack"
+					] 
+				} 
 			}
-		}
+		} 
 	}
 }

@@ -1,0 +1,24 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes": 
+		[  
+			{
+				"scene_tag": "dialogo_tameado_arkcraft_pegomastax_search_mode",
+				"npc_name": { "rawtext": [ { "translate": "Arkcraft" } ] },
+				"text": { "rawtext": [ { "translate": "Pegomastax Search Mode", "with": ["\n"] } ] },
+				"buttons": [
+			  		{
+						"name": { "rawtext": [ { "translate": "Off Search Mode" } ] },
+						"commands": [
+							"/event entity @s minecraft:recoge_items_off",
+							"/playsound player_silbido @a[r=6]",
+							"/dialogue change @s dialogo_tameado_arkcraft_move_pegomastax @p"
+						]
+					}
+				]
+			}
+		]
+	}
+}

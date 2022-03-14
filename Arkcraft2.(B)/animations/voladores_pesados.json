@@ -1,11 +1,38 @@
 {
   "format_version": "1.8.0",
   "animations": {
+    "animation.flyontamed": { 
+     "animation_length": 6.0,
+      "loop": true,
+      "timeline": {
+        "3.0": [
+"/event entity @s minecraft:domado_en_aire"
+            ]
+      }  
+    }, 
+    "animation.salvaje_volador": { 
+     "animation_length": 35.0,
+      "loop": true,
+      "timeline": {
+        "15.0": [
+"/event entity @s minecraft:salvaje_volador"
+            ]
+      }  
+    }, 
+    "animation.quetzal_slow_falling": {
+     "animation_length": 0.5,
+      "loop": true,
+      "timeline": { 
+        "0.2": [
+    "/effect @s slow_falling 3 15 true"
+            ]
+      }
+    },
     "animation.velocidad_pesada_0": {
      "animation_length": 0.5,
       "loop": true,
       "timeline": {
-        "0.2": [
+        "0.0": [
     "/effect @s levitation 0 255 true"
             ]
       }
@@ -15,7 +42,7 @@
       "loop": true,
       "timeline": {
         "0.5": [
-       "/effect @s levitation 1 15 true"
+       "/effect @s levitation 1 8 true"
             ]
       }
     },
@@ -33,7 +60,7 @@
       "loop": true,
       "timeline": {
         "0.5": [
-       "/effect @s levitation 4 0 true"
+       "/effect @s levitation 4 5 true"
             ]
       }
     },
@@ -42,16 +69,16 @@
       "loop": true,
       "timeline": {
         "0.5": [
-        "/effect @s levitation 1 4 true"
+        "/effect @s levitation 1 3 true"
             ]
       }
     },
     "animation.velocidad_pesada_2": {
       "animation_length": 1.0,
-      "loop": true,
+      "loop": true, 
       "timeline": {
         "0.5": [
-    "/effect @s levitation 1 7 true"
+    "/effect @s levitation 1 6 true"
             ]
       }
     }

@@ -7,37 +7,10 @@
         "default": "spider"
       },            
       "textures": {
-        "dodo_normal": "textures/entity/dodos/dodo_normal",
-      "dodo_negro": "textures/entity/dodos/dodo_negro",
-        "dodo_rojo": "textures/entity/dodos/dodo_rojo",
-      "dodo_verde": "textures/entity/dodos/dodo_verde",
-        "dodo_cafe": "textures/entity/dodos/dodo_cafe",
-      "dodo_azul": "textures/entity/dodos/dodo_azul",
-        "dodo_purpura": "textures/entity/dodos/dodo_purpura",
-      "dodo_cyan": "textures/entity/dodos/dodo_cyan",
-        "dodo_grisclaro": "textures/entity/dodos/dodo_grisclaro",
-      "dodo_gris": "textures/entity/dodos/dodo_gris",
-        "dodo_rosado": "textures/entity/dodos/dodo_rosado",
-      "dodo_lima": "textures/entity/dodos/dodo_lima",
-        "dodo_amarillo": "textures/entity/dodos/dodo_amarillo",
-      "dodo_celeste": "textures/entity/dodos/dodo_celeste",
-        "dodo_magenta": "textures/entity/dodos/dodo_magenta",
-      "dodo_anaranjado": "textures/entity/dodos/dodo_anaranjado",
-        "dodo_hueso": "textures/entity/dodos/dodo_hueso",
-      "dodo_negro2": "textures/entity/dodos/dodo_negro2",
-        "dodo_cafe2": "textures/entity/dodos/dodo_cafe2",
-      "dodo_azul2": "textures/entity/dodos/dodo_azul2",
-        "dodo_blanco": "textures/entity/dodos/dodo_blanco",
-        "dodo_fluorescente": "textures/entity/dodos/dodo_fluorescente",
-        "dodo_miel": "textures/entity/dodos/dodo_miel",
-        "dodo_plumas_rojas": "textures/entity/dodos/dodo_plumas_rojas",
-        "dodo_camuflado": "textures/entity/dodos/dodo_camuflado",
-        "dodo_esqueleto": "textures/entity/dodos/dodo_esqueleto",
-        "dodo_crudo": "textures/entity/dodos/dodo_crudo",
-        "dodo_cocido": "textures/entity/dodos/dodo_cocido"
+        "variant1": "textures/entity/dodos/dodo_normal"
       },
       "geometry": {
-        "default":"geometry.chicken.v1.12"
+        "default":"geometry.dodo"
       },
       "animations": {
         "move": "animation.chicken.move",
@@ -46,6 +19,7 @@
         "baby_transform": "animation.chicken.baby_transform"
       },
       "scripts": {
+        "scale": "1.45",
         "animate": [
           "general",
           { "move": "query.modified_move_speed" },
@@ -53,7 +27,7 @@
           { "baby_transform": "query.is_baby" }
         ]
       },
-      "render_controllers": [ "controller.render.dodos" ],
+      "render_controllers": [ "controller.render.variants" ],
       "spawn_egg": {
          "base_color": "#D1B284",
         "overlay_color": "#AE151C"

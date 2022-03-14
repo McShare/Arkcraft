@@ -1,0 +1,12 @@
+        
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.longuisquama": {
+            "initial_state": "default",
+            "states": {
+                 "default": {
+                    "animations": [
+                        { "longuisquama_levantado":"query.variant == 1" }
+                        
+                        ]}}}}} 

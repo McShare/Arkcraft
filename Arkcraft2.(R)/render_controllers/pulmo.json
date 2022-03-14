@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.pulmo": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.default"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+      "part_visibility": [ { 
+          "montura*": "query.is_saddled" ,
+          "cabello*": "!query.is_saddled" 
+      }
+      ], 
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[query.variant]"
+			]
+		}
+	}
+}

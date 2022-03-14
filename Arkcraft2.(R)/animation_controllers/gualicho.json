@@ -1,0 +1,62 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.gualicho.general" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ {							"move" : "query.modified_move_speed" },
+					"default",
+                   "look_at_target"
+					],
+					"transitions" : [
+						{
+							"attack" : "query.is_delayed_attacking == 1 || query.is_illager_captain"
+						},
+						{
+							"sleep" : "query.is_sheared"
+						},
+						{
+							"sitting" : "query.is_baby"
+						}
+					]
+				},
+				
+				"sitting" : {
+					"animations" : [ "sit" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_baby"
+						},
+						{
+							"sleep" : "query.is_sheared"
+						},
+						{
+							"attack" : "query.is_delayed_attacking == 1 || query.is_illager_captain"
+						}
+					]
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "(query.is_delayed_attacking == 0) && (query.all_animations_finished) || (!query.is_illager_captain) && (query.all_animations_finished)"
+						},
+						{
+							"sitting" : "(query.is_baby) && (query.all_animations_finished)"
+						}
+					]
+				},
+				"sleep" : {
+					"animations" : [ "sleep" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_sheared"
+						}
+					]
+				}
+			}
+		}
+	}
+}
+ 

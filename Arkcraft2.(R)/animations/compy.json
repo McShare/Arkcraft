@@ -1,9 +1,9 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.compy_move": {
+		"animation.compy.walk": {
 			"loop": true,
-			"animation_length": 22.913,
+			"animation_length": 0.48,
 			"anim_time_update": "query.modified_distance_moved",
 			"bones": {
 				"cuello1": {
@@ -31,6 +31,54 @@
 				"bone8": {
 					"rotation": ["math.cos(query.anim_time * 200.17) * 3.5", 0, 0],
 					"position": [0, 0, -0.9]
+				},
+				"bone4": {
+					"rotation": {
+						"0.0": [-30, 0, 0],
+						"0.24": [30, 0, 0],
+						"0.48": [-30, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.24": [0, 0, 0],
+						"0.48": [0, 0, 0]
+					}
+				},
+				"bone6": {
+					"rotation": {
+						"0.0": [30, 0, 0],
+						"0.24": [-30, 0, 0],
+						"0.48": [30, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.24": [0, 0, 0],
+						"0.48": [0, 0, 0]
+					}
+				},
+				"cuerpo": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.24": [4, 0, 0],
+						"0.48": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.24": [0, -0.3, 0],
+						"0.48": [0, 0, 0]
+					}
+				},
+				"Neck5": {
+					"rotation": {
+						"0.0": [4, 0, 0],
+						"0.24": ["¿", 0, 0],
+						"0.48": [4, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.24": [0, 0, 0],
+						"0.48": [0, 0, 0]
+					}
 				}
 			}
 		},
@@ -51,8 +99,28 @@
 					"rotation": [-65.96729, 26.79524, 6.42848]
 				},
 				"cola": {
-					"rotation": [-2.5, 0, 0],
-					"position": [0, 0, -1]
+					"rotation": [-11, 0, 0]
+				},
+				"Neck5": {
+					"rotation": [17, 0, 0],
+					"position": [0, -0.7, -1.1]
+				},
+				"cuerpo": {
+					"position": [0, -9.5, 0]
+				},
+				"piernas": {
+					"rotation": [-81.00415, -0.58777, 0.80905],
+					"position": [0, -8.8, 0]
+				},
+				"bone6": {
+					"rotation": [0, 0, 30]
+				},
+				"bone4": {
+					"rotation": [0, 0, -30]
+				},
+				"bone2": {
+					"rotation": [-38.25621, 1.54797, 1.68934],
+					"position": [0, 1.1, -8]
 				}
 			}
 		}
