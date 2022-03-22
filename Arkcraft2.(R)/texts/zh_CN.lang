@@ -71,7 +71,7 @@ item.arkcraft:c4_component.name=电子元件
 item.arkcraft:jaula.name=笼子
 item.arkcraft:visor_helmet.name=带面罩的头盔
 item.arkcraft:bull_helmet.name=带角的头盔
-item.arkcraft:hidden_​​blade.name=袖剑
+item.arkcraft:hidden_blade.name=袖剑
 item.arkcraft:nightvision_glass.name=夜视玻璃
 item.arkcraft:hero_crown.name=英雄皇冠
 item.arkcraft:nightvision.name=夜视
@@ -151,7 +151,6 @@ entity.arkcraft:ongranada.name=手榴弹
 
 item.spawn_egg.entity.arkcraft:granada.name=手榴弹
 entity.arkcraft:granada.name=手榴弹
-
 
 
 
@@ -305,6 +304,46 @@ entity.arkcraft:velonasaur_r.name=VARIANT (R变异)
 action.hint.exit.arkcraft:dire_wolf=骑恐狼
 item.spawn_egg.entity.arkcraft:dire_wolf.name=§6ArkCraft | §3恐狼刷怪蛋
 entity.arkcraft:dire_wolf.name=恐狼
+
+action.hint.exit.arkcraft:longiscuama=骑着长鳞龙
+item.spawn_egg.entity.arkcraft:longiscuama.name=§6ArkCraft | §3长鳞龙刷怪蛋
+entity.arkcraft:longiscuama.name=长鳞龙
+
+action.hint.exit.arkcraft:brontoscorpio=骑着布龙度蝎
+item.spawn_egg.entity.arkcraft:brontoscorpio.name=§6ArkCraft | §3布龙度蝎刷怪蛋
+entity.arkcraft:brontoscorpio.name=布龙度蝎
+
+action.hint.exit.arkcraft:camarasaurus=骑着圆顶龙
+item.spawn_egg.entity.arkcraft:camarasaurus.name=§6ArkCraft | §3圆顶龙刷怪蛋
+entity.arkcraft:camarasaurus.name=圆顶龙
+
+action.hint.exit.arkcraft:gualicho=骑着瓜利乔龙
+item.spawn_egg.entity.arkcraft:gualicho.name=§6ArkCraft | §3瓜利乔龙刷怪蛋
+entity.arkcraft:gualicho.name=瓜利乔龙
+
+action.hint.exit.arkcraft:cryolopho=骑着冰冠龙
+item.spawn_egg.entity.arkcraft:cryolopho.name=§6ArkCraft | §3冰冠龙刷怪蛋
+entity.arkcraft:cryolopho.name=冰冠龙
+
+action.hint.exit.arkcraft:raptor=骑着猛禽
+item.spawn_egg.entity.arkcraft:raptor.name=§6ArkCraft | §3猛禽刷怪蛋
+entity.arkcraft:raptor.name=猛禽
+
+action.hint.exit.arkcraft:rosamygale=骑着格氏玫瑰古狼蛛
+item.spawn_egg.entity.arkcraft:rosamygale.name=§6ArkCraft | §3R格氏玫瑰古狼蛛刷怪蛋
+entity.arkcraft:rosamygale.name=格氏玫瑰古狼蛛
+
+action.hint.exit.arkcraft:tanycolagreus=骑着长臂猎龙
+item.spawn_egg.entity.arkcraft:tanycolagreus.name=§6ArkCraft | §3长臂猎龙刷怪蛋
+entity.arkcraft:tanycolagreus.name=长臂猎龙
+
+action.hint.exit.arkcraft:thylacoleo=骑着袋狮
+item.spawn_egg.entity.arkcraft:thylacoleo.name=§6ArkCraft | §3袋狮刷怪蛋
+entity.arkcraft:thylacoleo.name=袋狮
+
+action.hint.exit.arkcraft:unquillosaurus=骑着乌奎洛龙
+item.spawn_egg.entity.arkcraft:unquillosaurus.name=§6ArkCraft | §3乌奎洛龙刷怪蛋
+entity.arkcraft:unquillosaurus.name=乌奎洛龙
 
 entity.arkcraft:espina.name=Espina
 
@@ -466,7 +505,7 @@ item.arkcraft:cloth_leggings.name=§6ArkCraft | §3布打底裤
 item.arkcraft:cloth_chestplate.name=§6ArkCraft | §3布胸板
 
 ##bridge-file-version: #7
-pack.name=ArkCraft R
+pack.name=ArkCraft 资源包
 pack.description=按
 entity.arkcraft:female_rex.name=§6ArkCraft | §3雌性霸王龙
 entity.arkcraft:male_rex.name=§6ArkCraft | §3雄性霸王龙
