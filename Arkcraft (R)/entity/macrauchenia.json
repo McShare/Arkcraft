@@ -8,17 +8,26 @@
         "saddle": "skeleton"
       },
       "textures": {
-        "macrauchenia_normal": "textures/entity/macrauchenia/macrauchenia_normal",
-        "macrauchenia_fat": "textures/entity/macrauchenia/macrauchenia_fat",
+        "macrauchenia1": "textures/entity/macrauchenia/mn1",
+        "macrauchenia2": "textures/entity/macrauchenia/mn2",
+        "macrauchenia3": "textures/entity/macrauchenia/mn3",
+        "macrauchenia4": "textures/entity/macrauchenia/mf1",
+        "macrauchenia5": "textures/entity/macrauchenia/mf2",
+        "macrauchenia6": "textures/entity/macrauchenia/mf3",
         "saddle": "textures/entity/macrauchenia/macrauchenia_saddle"
       },
       "geometry": {
         "macrauchenia_normal": "geometry.macrauchenia_normal",
         "macrauchenia_fat": "geometry.macrauchenia_fat",
+        "macrauchenia_normal2": "geometry.macrauchenia_normal",
+        "macrauchenia_fat2": "geometry.macrauchenia_fat",
+        "macrauchenia_normal3": "geometry.macrauchenia_normal",
+        "macrauchenia_fat3": "geometry.macrauchenia_fat",
         "saddle": "geometry.macrauchenia_saddle"
       },
       "animations": {
         "move": "animation.macrauchenia.move",
+        "sit": "animation.macrauchenia.sit",
         "jump": "animation.macrauchenia.jump",
         "look_at_target": "animation.common.look_at_target"
       },
@@ -34,6 +43,10 @@
       "render_controllers": [ 
           "controller.render.macrauchenia_normal",
           "controller.render.macrauchenia_fat",
+          "controller.render.macrauchenia_normal2",
+          "controller.render.macrauchenia_fat2",
+          "controller.render.macrauchenia_normal3",
+          "controller.render.macrauchenia_fat3",
           "controller.render.macrauchenia_saddle"
           ],
       "spawn_egg": {

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "arkcraft:hamburger",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "hamburger",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

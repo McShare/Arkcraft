@@ -4,27 +4,32 @@
   "description": {
    "identifier": "arkcraft:cryolopho",
       "materials": {
-        "default": "cow"
+        "default": "skeleton"
       }, 
    "textures": {
-    "variant1": "textures/entity/cryolopho/cryolopho1",
-    "variant2": "textures/entity/cryolopho/cryolopho2",
-    "variant3": "textures/entity/cryolopho/cryolopho3",
-    "variant4": "textures/entity/cryolopho/cryolopho4"
+    "default": "textures/entity/cryolopho/cryolopho1",
+    "default2": "textures/entity/cryolopho/cryolopho2",
+    "default3": "textures/entity/cryolopho/cryolopho3",
+    "default4": "textures/entity/cryolopho/cryolopho4",
+    "default5": "textures/entity/cryolopho/cryolopho5",
+    "default6": "textures/entity/cryolopho/cryolopho6",
+    "default7": "textures/entity/cryolopho/cryolopho7"
    },
    "geometry": {
     "default": "geometry.cryolopho"
    },
    "render_controllers": [
-    "controller.render.variants"  
+    "controller.render.cryolopho"  
    ],
    "animations": {
         "general": "controller.animation.cryolopho.general",
         "look_at_target": "animation.common.look_at_target",
         "sit": "animation.cryolopho.sit",
-        "sleep": "animation.cryolopho.sleep",
+        "sleep": "animation.cryolopho.sit",
+        "roar": "animation.cryolopho.roar",
        "walk": "animation.cryolopho.walk",
        "default": "animation.cryolopho.idle",
+       "turret": "animation.cryolopho.turret",
         "attack": "animation.cryolopho.attack"
    },
    "scripts": {
@@ -35,8 +40,8 @@
     ] 
    },
       "spawn_egg": {
-         "base_color": "#123754",
-        "overlay_color": "#0a4a19"
+         "base_color": "#d7f6f7",
+        "overlay_color": "#02faff"
       }
   }
  }

@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:tropical_wyvern",
+      "materials": { "default": "spider"
+      },
+      "textures": {
+        "color_celeste": "textures/entity/wyvern/Twyvern1",
+        "color_2": "textures/entity/wyvern/Twyvern2",
+        "color_3": "textures/entity/wyvern/Twyvern3",
+        "color_4": "textures/entity/wyvern/Twyvern4"
+      },
+      "scripts": {
+           "scale": "1.3"
+      },
+      "geometry": {
+        "default": "geometry.wyvern"
+      },
+	"sound_effects": {
+	"volando2": "mob.wyvern.fly"
+	},
+      "animations": {
+        "move": "animation.wyvern.walk",
+        "estatica": "animation.wyvern.idle",
+        "volando": "animation.wyvern.fly",
+        "volando2": "animation.argentavis.volando2", 
+        "sit": "animation.wyvern.idle",
+	"attack": "animation.wyvern.fly_attack"
+},
+      "animation_controllers": [
+        { "general": "controller.animation.ptera.general" }
+      ],
+      "render_controllers": [ "controller.render.ptera" ],
+      "spawn_egg": {
+        "base_color": "#a1f4fc",
+        "overlay_color": "#eafafc"
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:ptera",
+      "materials": { "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/ptera/ptera1",
+        "default2": "textures/entity/ptera/ptera2",
+        "default3": "textures/entity/ptera/ptera3",
+        "default4": "textures/entity/ptera/ptera4",
+        "default5": "textures/entity/ptera/ptera5",
+        "default6": "textures/entity/ptera/ptera6",
+        "default7": "textures/entity/ptera/ptera7",
+        "default8": "textures/entity/ptera/ptera8",
+        "default9": "textures/entity/ptera/ptera9",
+        "default10": "textures/entity/ptera/ptera10",
+        "default11": "textures/entity/ptera/ptera11"
+      },
+      "geometry": {
+        "default": "geometry.ptera"
+      },
+	"sound_effects": {
+	"volando2": "mob.ptera.fly"
+	},
+      "animations": {
+        "move": "animation.ptera.move",
+        "estatica": "animation.ptera.estatica",
+        "volando": "animation.ptera.fly",
+        "volando2": "animation.argentavis.volando2", 
+        "sit": "animation.ptera.sit",
+	"attack": "animation.ptera.attack"
+},
+      "animation_controllers": [
+        { "general": "controller.animation.ptera.general" }
+      ],
+      "render_controllers": [ "controller.render.ptera" ],
+      "spawn_egg": {
+        "base_color": "#ff8a4c",
+        "overlay_color": "#90dd02"
+      }
+    }
+  }
+}

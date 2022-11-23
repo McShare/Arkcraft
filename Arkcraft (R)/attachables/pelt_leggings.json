@@ -1,8 +1,9 @@
 {
-  "format_version": "1.8.0",
+  "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
       "identifier": "arkcraft:pelt_leggings",
+      "item": { "arkcraft:pelt_leggings": "query.owner_identifier == 'minecraft:player'" },
       "materials": {
         "default": "armor",
         "enchanted": "armor_enchanted"
@@ -12,7 +13,7 @@
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {
-        "default": "geometry.humanoid.armor.leggings"
+        "default": "geometry.player.armor.leggings"
       },
       "scripts": {
         "parent_setup": "variable.leg_layer_visible = 0.0;"

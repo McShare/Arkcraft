@@ -1,0 +1,47 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:scutosaurus",
+      "materials": {
+        "default": "spider"
+      }, 
+   "textures": { 
+    "default": "textures/entity/scutosaurus/scutosaurus",
+    "default2": "textures/entity/scutosaurus/scutosaurus2",
+    "default3": "textures/entity/scutosaurus/scutosaurus3",
+    "default4": "textures/entity/scutosaurus/scutosaurus4",
+    "default5": "textures/entity/scutosaurus/scutosaurus5",
+    "default6": "textures/entity/scutosaurus/scutosaurus6"
+   },
+   "geometry": {
+    "default": "geometry.scutosaurus"
+        },
+   "render_controllers": [
+    "controller.render.scutosaurus"  
+   ],
+   "animations": {
+        "general": "controller.animation.scutosaurus.general",
+        "look_at_target": "animation.scutosaurus.look_at_target",
+        "sit": "animation.scutosaurus.sit",
+        "sleep": "animation.scutosaurus.sleep",
+       "roar": "animation.scutosaurus.roar",
+       "move": "animation.scutosaurus.walk",
+       "default": "animation.scutosaurus.idle",
+        "attack": "animation.scutosaurus.attack"
+   },
+   "scripts": {
+        "scale": "0.9",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#f8fcba",
+        "overlay_color": "#fffa0c"
+      }
+  }
+ }
+}
+ 

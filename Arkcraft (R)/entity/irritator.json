@@ -1,39 +1,45 @@
 {
-  "format_version": "1.8.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "arkcraft:irritator",
-      "materials": { "default": "skeleton"
-      },
-      "textures": {
-        "irritator1": "textures/entity/irritator/irritator1",
-        "irritator2": "textures/entity/irritator/irritator2",
-        "irritator3": "textures/entity/irritator/irritator3"
-    },
-      "geometry": {
-        "default": "geometry.irritator"
-      },
-      "scripts": {
-        "pre_animation": [
-          "variable.attack = Math.sin(variable.attack_time * 38.17);"
-        ]
-      },
-      "animations": {
-        "pudrir": "animation.irritator.pudrir",
-        "walk": "animation.irritator.move",
-        "attack": "animation.irritator.attack",
-        "look_at_target": "animation.common.look_at_target"
-      },
-      "animation_controllers": [
-        { "move": "controller.animation.irritator.move" },
-        { "attack": "controller.animation.irritator.attack" },
-        { "casting": "controller.animation.irritator.casting" }
-      ],
-      "render_controllers": [ "controller.render.irritator" ],
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:irritator",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/irritator/irritator1",
+    "default2": "textures/entity/irritator/irritator2",
+    "default3": "textures/entity/irritator/irritator3"
+   },
+   "geometry": {
+    "default": "geometry.irritator"
+        },
+   "render_controllers": [
+    "controller.render.irritator"  
+   ],
+   "animations": {
+      "pudrir": "animation.irritator.pudrir",
+      "general": "controller.animation.irritator.general",
+      "look_at_target": "animation.irritator.look_at_target",
+      "sit": "animation.irritator.sit",
+      "sleep": "animation.irritator.sleep",
+     "roar": "animation.irritator.attack",
+     "move": "animation.irritator.move",
+     "default": "animation.irritator.idle",
+      "attack": "animation.irritator.attack"
+   },
+   "scripts": {
+        "scale": "0.85",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
       "spawn_egg": {
          "base_color": "#7bcea1",
-        "overlay_color": "#ceb97b"}
-      
-    }
+        "overlay_color": "#ceb97b"
+      }
   }
-} 
+ }
+}
+ 

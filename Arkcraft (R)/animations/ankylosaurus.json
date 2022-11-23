@@ -63,6 +63,7 @@
 				"ankylosaurus": {
 					"rotation": {
 						"0.56": {
+							"pre": [0, 0, 0],
 							"post": [0, 0, 0],
 							"lerp_mode": "catmullrom"
 						},
@@ -73,6 +74,7 @@
 					},
 					"position": {
 						"0.56": {
+							"pre": [0, 0, 0],
 							"post": [0, 0, 0],
 							"lerp_mode": "catmullrom"
 						},

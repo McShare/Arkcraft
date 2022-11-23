@@ -1,38 +1,47 @@
-
 {
-  "format_version": "1.10.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "arkcraft:llukalkan",
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:llukalkan",
       "materials": {
         "default": "spider"
-      },            
-      "textures": {
-        "default": "textures/entity/llukalkan"
-      },
-      "geometry": {
-        "default": "geometry.llukalkan"
-      },
-      "animations": {
-        "walk": "animation.llukalkan.move",
+      }, 
+   "textures": { 
+    "default": "textures/entity/llukalkan/llukalkan1",
+    "default2": "textures/entity/llukalkan/llukalkan2",
+    "default3": "textures/entity/llukalkan/llukalkan3",
+    "default4": "textures/entity/llukalkan/llukalkan4",
+    "default5": "textures/entity/llukalkan/llukalkan5",
+    "default6": "textures/entity/llukalkan/llukalkan6"
+   },
+   "geometry": {
+    "default": "geometry.llukalkan"
+        },
+   "render_controllers": [
+    "controller.render.llukalkan"  
+   ],
+   "animations": {
+        "general": "controller.animation.llukalkan.general",
+        "look_at_target": "animation.llukalkan.look_at_target",
         "sit": "animation.llukalkan.sit",
-      "default":
-        "animation.llukalkan_default",
-        "look_at_target": "animation.common.look_at_target"
-      },
-      "scripts": {
-        "animate": [
-       "default",
-          { "walk": "query.modified_move_speed" },
-          { "sit": "query.is_sitting" },
-          "look_at_target"
-        ]
-      },
-      "render_controllers": [ "controller.render.llukalkan" ],
+        "sleep": "animation.llukalkan.sleep",
+       "roar": "animation.llukalkan.roar",
+       "move": "animation.llukalkan.move",
+       "default": "animation.llukalkan.idle",
+        "attack": "animation.llukalkan.attack"
+   },
+   "scripts": {
+        "scale": "0.9",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
       "spawn_egg": {
-         "base_color": "#6aea02",
-        "overlay_color": "#cffc94"
+         "base_color": "#5d9e37",
+        "overlay_color": "#686b66"
       }
-    }
   }
+ }
 }
+ 

@@ -1,0 +1,47 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:neocartathes",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/neocartathes/neocartathes1",
+    "default2": "textures/entity/neocartathes/neocartathes1",
+    "default3": "textures/entity/neocartathes/neocartathes1",
+    "default4": "textures/entity/neocartathes/neocartathes1",
+    "default5": "textures/entity/neocartathes/neocartathes1",
+    "default6": "textures/entity/neocartathes/neocartathes1"
+   },
+   "geometry": {
+    "default": "geometry.neocartathes"
+        },
+   "render_controllers": [
+    "controller.render.neocartathes"  
+   ],
+   "animations": {
+        "general": "controller.animation.neocartathes.general",
+        "look_at_target": "animation.neocartathes.look_at_target",
+        "sit": "animation.neocartathes.sit",
+        "sleep": "animation.neocartathes.sleep",
+       "roar": "animation.neocartathes.roar",
+       "move": "animation.neocartathes.walk",
+       "default": "animation.neocartathes.idle",
+        "attack": "animation.neocartathes.attack"
+   },
+   "scripts": {
+        "scale": "0.9",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#b59f6e",
+        "overlay_color": "#b59f6e"
+      }
+  }
+ }
+}
+ 

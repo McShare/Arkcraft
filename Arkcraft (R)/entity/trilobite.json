@@ -5,11 +5,12 @@
     "description": {
       "identifier": "arkcraft:trilobite",
       "materials": {
-        "default": "cow"
+        "default": "spider"
       },
       "textures": {
         "trilobite1": "textures/entity/trilobite/trilobite1",
-        "trilobite2": "textures/entity/trilobite/trilobite2"
+        "trilobite2": "textures/entity/trilobite/trilobite2",
+        "trilobite3": "textures/entity/trilobite/trilobite3"
       },
       "geometry": {
         "default": "geometry.trilobite"

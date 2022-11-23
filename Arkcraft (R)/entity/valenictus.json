@@ -1,0 +1,46 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:valenictus",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "variant1": "textures/entity/valenictus/b1",
+    "variant2": "textures/entity/valenictus/b2",
+    "variant3": "textures/entity/valenictus/b3",
+    "variant4": "textures/entity/valenictus/b4",
+    "variant5": "textures/entity/valenictus/b5"
+   },
+   "geometry": {
+    "default": "geometry.valenictus"
+        },
+   "render_controllers": [
+    "controller.render.shringasaurus"  
+   ],
+   "animations": {
+        "general": "controller.animation.raptor.general",
+        "look_at_target": "animation.valenictus.look_at_target",
+        "sit": "animation.valenictus.sit",
+        "sleep": "animation.valenictus.sit",
+       "roar": "animation.valenictus.attack",
+       "move": "animation.valenictus.walk",
+       "default": "animation.valenictus.idle",
+        "attack": "animation.valenictus.attack"
+   },
+   "scripts": {
+        "scale": "1.1",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#a91e1b",
+        "overlay_color": "#190754"
+      }
+  }
+ }
+}
+ 

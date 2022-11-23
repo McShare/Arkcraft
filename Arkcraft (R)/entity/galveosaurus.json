@@ -1,0 +1,47 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:galveosaurus",
+      "materials": {
+        "default": "spider"
+      }, 
+   "textures": { 
+    "variant1": "textures/entity/galveosaurus/galveosaurus1",
+    "variant2": "textures/entity/galveosaurus/galveosaurus2",
+    "variant3": "textures/entity/galveosaurus/galveosaurus3",
+    "variant4": "textures/entity/galveosaurus/galveosaurus4",
+    "variant5": "textures/entity/galveosaurus/galveosaurus5",
+    "variant6": "textures/entity/galveosaurus/galveosaurus6"
+   },
+   "geometry": {
+    "default": "geometry.galveosaurus"
+        },
+   "render_controllers": [
+    "controller.render.galveosaurus"  
+   ],
+   "animations": {
+        "general": "controller.animation.galveosaurus.general",
+        "look_at_target": "animation.galveosaurus.look_at_target",
+        "sit": "animation.galveosaurus.sit",
+        "sleep": "animation.galveosaurus.sleep",
+       "roar": "animation.galveosaurus.roar",
+       "move": "animation.galveosaurus.walk",
+       "default": "animation.galveosaurus.idle",
+        "attack": "animation.galveosaurus.attack"
+   },
+   "scripts": {
+        "scale": "2.2",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#e88d04",
+        "overlay_color": "#a6fc07"
+      }
+  }
+ }
+}
+ 

@@ -8,7 +8,9 @@
       },
       "textures": {
         "thorny_dragon1": "textures/entity/thorny/thorny_dragon1",
-        "thorny_dragon2": "textures/entity/thorny/thorny_dragon2"
+        "thorny_dragon2": "textures/entity/thorny/thorny_dragon2",
+        "thorny_dragon3": "textures/entity/thorny/thorny_dragon3",
+        "thorny_dragon4": "textures/entity/thorny/thorny_dragon4"
       },
       "geometry": {
         "default": "geometry.thorny_dragon"

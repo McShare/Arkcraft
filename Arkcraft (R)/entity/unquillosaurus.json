@@ -8,7 +8,9 @@
       }, 
    "textures": { 
     "default": "textures/entity/unq/var1",
-    "default2": "textures/entity/unq/var2"
+    "default2": "textures/entity/unq/var2",
+    "default3": "textures/entity/unq/var3",
+    "default4": "textures/entity/unq/var4"
    },
    "geometry": {
     "default": "geometry.unquillosaurus"

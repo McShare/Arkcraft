@@ -5,7 +5,7 @@
       "identifier": "arkcraft:tamer",
       "materials": { "default": "vindicator" },
       "textures": { "default": "textures/entity/tamer/tamer" },
-      "geometry": { "default": "geometry.vindicator" },
+      "geometry": { "default": "geometry.tamer" },
       "scripts": {
         "scale": "0.9375"
       },

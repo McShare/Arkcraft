@@ -9,7 +9,10 @@
       "textures": {
         "variant1": "textures/entity/alv/alv2",
         "variant2": "textures/entity/alv/alv1",
-        "variant3": "textures/entity/alv/alv3"
+        "variant3": "textures/entity/alv/alv3",
+        "variant4": "textures/entity/alv/alv4",
+        "variant5": "textures/entity/alv/alv5",
+        "variant6": "textures/entity/alv/alv6"
       },
       "geometry": {
         "default": "geometry.alvarezsaurus"

@@ -5,7 +5,7 @@
     "description": {
       "identifier": "arkcraft:micro_raptor",
       "materials": {
-        "default": "cow"
+        "default": "spider"
       },            
       "textures": {
         "micro_raptor1": "textures/entity/micro_raptor/micro_raptor1",
@@ -16,15 +16,15 @@
         "default": "geometry.micro_raptor"
       },
       "animations": {
-        "walk": "animation.archaeopteryx.move",
+        "walk": "animation.microraptor2.move",
       "default":
-        "animation.archaeopteryx_default",
+        "animation.microraptor2.idle",
       "sit":
-        "animation.micro_raptor.sit",
+        "animation.microraptor2.sit",
         "look_at_target": "animation.common.look_at_target"
       },
       "scripts": {
-        "scale": "0.4",
+        "scale": "1.2",
         "animate": [
        "default",
           { "walk": "query.modified_move_speed" },

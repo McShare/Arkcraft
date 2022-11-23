@@ -1,36 +1,43 @@
 {
   "format_version": "1.10.0",
   "minecraft:client_entity": {
-    "description": {
-      "identifier": "arkcraft:doedicurus",
-      "materials": { 
-"default": "skeleton" 
-      },
-      "textures": {
-        "doedicurus_1": "textures/entity/doedicurus/doedicurus_1",
-          "doedicurus_2": "textures/entity/doedicurus/doedicurus_2",
-        "doedicurus_3": "textures/entity/doedicurus/doedicurus_1"
-      },
-      "geometry": {
-        "default": "geometry.doedicurus"
-      },
-      "animations": {
-        "walk": "animation.doedicurus.move",
-        "look_at_target": "animation.common.look_at_target",
-        "doedicurus_default": "animation.doedicurus_default"
-      },
-      "scripts": {
-        "animate": [
-"doedicurus_default",
-          { "walk": "query.modified_move_speed" },
-          "look_at_target"
-        ]
-      },
-      "render_controllers": [ "controller.render.doedicurus" ],
-      "spawn_egg": {
-         "base_color": "#B09D89",
+   "description": {
+    "identifier": "arkcraft:doedicurus",
+       "materials": {
+         "default": "skeleton"
+       }, 
+    "textures": { 
+      "doedicurus_1": "textures/entity/doedicurus/doedicurus_1",
+      "doedicurus_2": "textures/entity/doedicurus/doedicurus_2",
+    "doedicurus_3": "textures/entity/doedicurus/doedicurus_1"
+    },
+    "geometry": {
+     "default": "geometry.doedicurus"
+         },
+    "render_controllers": [
+     "controller.render.doedicurus"  
+    ],
+    "animations": {
+         "general": "controller.animation.doedicurus.general",
+         "look_at_target": "animation.doedicurus.look_at_target",
+         "sit": "animation.doedicurus.sit",
+         "sleep": "animation.doedicurus.sleep",
+        "roar": "animation.doedicurus.roar",
+        "move": "animation.doedicurus.move",
+        "default": "animation.doedicurus_default",
+         "attack": "animation.doedicurus.attack"
+    },
+    "scripts": {
+     "animate": [
+        "general",
+        "default"
+     ] 
+    },
+       "spawn_egg": {
+        "base_color": "#B09D89",
         "overlay_color": "#8D6D59"
-      }
-    }
+       }
+   }
   }
-}
+ }
+  

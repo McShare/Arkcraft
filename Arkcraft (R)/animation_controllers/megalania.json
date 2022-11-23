@@ -1,0 +1,125 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.megalania.escalando" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+							"normal"
+					],
+					"transitions" : [
+						{
+							"pose1" : "(query.mark_variant == 2)"
+						},
+						{
+							"pose1" : "(query.mark_variant == 3)"
+						}
+					],
+					"blend_transition": 0.2
+				}, 
+				"pose1" : {
+					"animations" : [
+							"pose1"
+					],
+					"transitions" : [
+						{
+							"default" : "(query.mark_variant == 0) || (query.mark_variant == 1)"
+						},
+						{
+							"pose5" : "(query.mark_variant == 3)"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"pose5" : {
+					"animations" : [
+							"pose5"
+					],
+ 					"transitions" : [
+						{
+							"default" : "(query.mark_variant == 0) || (query.mark_variant == 1)"
+						},
+						{
+							"pose1" : "(query.mark_variant == 2)"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}, 
+	 	"controller.animation.megalania.move" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ {							"walk" : "query.modified_move_speed" }, 
+						"look_at_target",
+						"default"
+					],
+					"transitions" : [
+						{
+							"attack" : "query.is_delayed_attacking == 1 || query.is_illager_captain"
+						},
+						{
+							"sit" : "query.is_sitting"
+						},
+						{
+							"sleep" : "query.is_sheared"
+						},
+						{
+							"en_aire" : "(query.is_levitating) && (!query.is_in_water)"
+						}
+					]  
+				},
+				"attack" : {
+          "blend_transition": 0.2,
+					"animations" : [
+					    "attack" ],
+					"transitions" : [
+						{
+							"default" : "(query.is_delayed_attacking == 0 ) && (query.all_animations_finished) || (!query.is_illager_captain)"
+						}
+					]
+				}, 
+				"sit" : {
+					"transitions" : [
+						{
+							"default" : "!query.is_sitting"
+						}
+					],
+					"animations" : [
+						"sit",
+						"look_at_target",
+						"default"
+					]
+				},
+				"en_aire" : {
+					"animations" : [ 							"move"  ],
+					"transitions" : [
+						{
+							"default" : "!query.is_levitating || (query.is_in_water)"
+						},
+						{
+							"sit" : "query.is_sitting"
+						},
+						{
+							"attack" : "query.is_delayed_attacking == 1 || query.is_illager_captain"
+						},
+						{
+							"sleep" : "query.is_sheared"
+						}
+					]
+				},
+				"sleep" : {
+					"animations" : [ "sleep" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_sheared"
+						}
+					]
+				}
+			}
+		}
+		
+	}
+}

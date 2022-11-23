@@ -1,0 +1,44 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:giraffatitan",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "variant1": "textures/entity/giraffatitan/giraffatitan1",
+    "variant2": "textures/entity/giraffatitan/giraffatitan2",
+    "variant3": "textures/entity/giraffatitan/giraffatitan3"
+   },
+   "geometry": {
+    "default": "geometry.giraffatitan"
+        },
+   "render_controllers": [
+    "controller.render.giraffatitan"  
+   ],
+   "animations": {
+        "general": "controller.animation.giraffatitan.general",
+        "look_at_target": "animation.giraffatitan.look_at_target",
+        "sit": "animation.giraffatitan.sit",
+        "sleep": "animation.giraffatitan.sleep",
+       "roar": "animation.giraffatitan.roar",
+       "move": "animation.giraffatitan.move",
+       "default": "animation.giraffatitan.idle",
+        "attack": "animation.giraffatitan.attack"
+   },
+   "scripts": {
+        "scale": "0.65",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#c1c1c1",
+        "overlay_color": "#f4fca9"
+      }
+  }
+ }
+}
+ 

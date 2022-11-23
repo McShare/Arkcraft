@@ -1,0 +1,44 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.rex": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.variant1",
+						"Texture.variant2",
+						"Texture.variant3",
+						"Texture.variant4",
+						"Texture.variant5",
+						"Texture.variant6",
+						"Texture.variant7"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+      "part_visibility": [ { 
+          "montura*": "query.is_saddled" ,
+		  "montura1*": "query.is_saddled" ,
+		  "montura2*": "query.is_saddled" ,
+		  "montura3*": "query.is_saddled" ,
+		  "montura4*": "query.is_saddled" ,
+		  "montura5*": "query.is_saddled" ,
+		  "montura6*": "query.is_saddled" ,
+		  "montura7*": "query.is_saddled" ,
+		  "montura8*": "query.is_saddled" ,
+		  "montura9*": "query.is_saddled" ,
+		  "montura10*": "query.is_saddled" ,
+          "cabello*": "!query.is_saddled" 
+      }
+      ], 
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[query.variant]"
+			]
+		}
+	}
+}

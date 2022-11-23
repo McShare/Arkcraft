@@ -1,0 +1,37 @@
+
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.lopho": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.color_celeste",
+            "Texture.color_2",
+            "Texture.color_3",
+            "Texture.color_4",
+            "Texture.color_5",
+            "Texture.color_6",
+            "Texture.color_7",
+            "Texture.color_8"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+ { "Montura": "query.is_saddled"},
+ { "Montura2": "query.is_saddled"},
+ { "Montura3": "query.is_saddled"},
+ { "Montura4": "query.is_saddled"},
+ { "Montura5": "query.is_saddled"},
+ { "Montura1": "query.is_saddled"},
+ { "Montura6": "query.is_saddled"},
+ { "cofre": "query.is_chested"}
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

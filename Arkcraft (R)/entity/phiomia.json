@@ -1,34 +1,47 @@
 {
-  "format_version": "1.10.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "arkcraft:phiomia",
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:phiomia",
       "materials": {
-        "default": "spider"
-      },            
-      "textures": {
-        "variant1": "textures/entity/phiomia/phiomia_1",
-        "variant2": "textures/entity/phiomia/phiomia_2"
-      },
-      "geometry": {
-        "default": "geometry.phiomia"
-      },
-      "animations": {
-        "walk": "animation.phiomia.walk",
-        "look_at_target": "animation.common.look_at_target"
-      },
-      "scripts": {
-        "scale": "2.0", 
-        "animate": [
-          { "walk": "query.modified_move_speed" },
-          "look_at_target"
-        ]
-      },
-      "render_controllers": [ "controller.render.variants" ],
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/phiomia/phiomia_1",
+    "default2": "textures/entity/phiomia/phiomia_2",
+    "default3": "textures/entity/phiomia/phiomia_3",
+    "default4": "textures/entity/phiomia/phiomia_4",
+    "default5": "textures/entity/phiomia/phiomia_5",
+    "default6": "textures/entity/phiomia/phiomia_6"
+   },
+   "geometry": {
+    "default": "geometry.phiomia"
+        },
+   "render_controllers": [
+    "controller.render.phiomia"  
+   ],
+   "animations": {
+        "general": "controller.animation.phiomia.general",
+        "look_at_target": "animation.phiomia.look_at_target",
+        "sit": "animation.phiomia.sit",
+        "sleep": "animation.phiomia.sleep",
+       "roar": "animation.phiomia.roar",
+       "move": "animation.phiomia.walk",
+       "default": "animation.phiomia.idle",
+        "attack": "animation.phiomia.attack"
+   },
+   "scripts": {
+        "scale": "2.0",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
       "spawn_egg": {
-         "base_color": "#3C2105",
-        "overlay_color": "#32100B"
+         "base_color": "#ff9891",
+        "overlay_color": "#a88661"
       }
-    }
   }
+ }
 }
+ 

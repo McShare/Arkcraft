@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.backpack.first_person": {
+			"loop": true,
+			"bones": {
+				"All": {
+					"position": [0, 0, -163],
+					"scale": 0
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:diente",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "armor_stand"
+      },
+      "textures": {
+        "default": "textures/entity/diente"
+      },
+
+      "scripts": {
+	"scale": "2.3"
+      },
+      "geometry": {
+        "default": "geometry.diente"
+      },
+      "render_controllers": [ "controller.render.arkcraft_default" ],
+      "enable_attachables": true
+    }
+  }
+}

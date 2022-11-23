@@ -8,7 +8,8 @@
         "default": "spider"
       },            
       "textures": {
-        "default": "textures/entity/longuisquama"
+    "default": "textures/entity/longuisquama/2",
+    "default2": "textures/entity/longuisquama/2"
       },
       "geometry": {
         "default": "geometry.longuisquama"
@@ -21,7 +22,7 @@
           { "move": "query.modified_move_speed" }
         ]
       },
-      "render_controllers": [ "controller.render.arkcraft_default" ],
+      "render_controllers": [ "controller.render.raptor" ],
       "spawn_egg": {
          "base_color": "#8900",
         "overlay_color": "#3700"

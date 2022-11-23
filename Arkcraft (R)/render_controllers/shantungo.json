@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.shantungosaurus": {
+      "arrays": {
+        "textures": {
+          "Array.skin": [
+                "Texture.shantungosaurus1",
+            "Texture.shantungosaurus2",
+            "Texture.shantungosaurus3",
+            "Texture.shantungosaurus4",
+            "Texture.shantungosaurus5",
+            "Texture.shantungosaurus6"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [ 
+        { "*": true },
+ { "Montura*": "query.is_saddled"},
+ { "Montura2*": "query.is_saddled"},
+ { "bone30*": "query.variant == 1"},
+ { "bone37*": "query.variant == 1"},
+ { "bone38*": "query.variant == 1"},
+ { "Accesorios*": "query.variant == 1"},
+ { "techo3*": "query.variant == 1"},
+ { "techo5*": "query.variant == 1"},
+ { "techo8*": "query.variant == 1"},
+ { "techo6*": "query.variant == 1"},
+ { "techo7*": "query.variant == 1"},
+ { "techo4*": "query.variant == 1"},
+{ "montura2": "query.variant ==1"}
+      ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Array.skin[query.mark_variant]" ]
+    }
+  }
+}

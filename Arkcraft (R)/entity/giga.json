@@ -1,0 +1,47 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:giga",
+      "materials": {
+        "default": "spider"
+      }, 
+   "textures": { 
+    "default": "textures/entity/giga/giga1",
+    "default2": "textures/entity/giga/giga2",
+    "default3": "textures/entity/giga/giga3",
+    "default4": "textures/entity/giga/giga4",
+    "default5": "textures/entity/giga/giga5",
+    "default6": "textures/entity/giga/giga2"
+   },
+   "geometry": {
+    "default": "geometry.giga"
+        },
+   "render_controllers": [
+    "controller.render.giga"  
+   ],
+   "animations": {
+        "general": "controller.animation.giga.general",
+        "look_at_target": "animation.giga.look_at_target",
+        "sit": "animation.giga.sleep",
+        "sleep": "animation.giga.sleep",
+       "roar": "animation.giga.roar",
+       "move": "animation.giga.walk",
+       "default": "animation.giga.idle",
+        "attack": "animation.giga.attack"
+   },
+   "scripts": {
+        "scale": "2.05",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#8c0343",
+        "overlay_color": "#b5b5b5"
+      }
+  }
+ }
+}
+ 

@@ -1,0 +1,221 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.armadillono",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "All",
+					"pivot": [0, 15, -9],
+					"rotation": [-87.5, 0, 0]
+				},
+				{
+					"name": "Cuerpo",
+					"parent": "All",
+					"pivot": [0, 15.1, -9]
+				},
+				{
+					"name": "Cola",
+					"parent": "Cuerpo",
+					"pivot": [0, 15.5, -9.6],
+					"rotation": [-2.5, 0, 0],
+					"cubes": [
+						{
+							"origin": [-9, 34.5, -2.5],
+							"size": [7, 4.2, 4.7],
+							"pivot": [0, 34.5, 1.4],
+							"rotation": [-1.05993, -4.76521, -64.93283],
+							"uv": {
+								"north": {"uv": [76, 66], "uv_size": [8, 4]},
+								"east": {"uv": [50, 43], "uv_size": [20, 4]},
+								"south": {"uv": [76, 70], "uv_size": [8, 4]},
+								"west": {"uv": [50, 47], "uv_size": [20, 4]},
+								"up": {"uv": [0, 29], "uv_size": [8, 20]},
+								"down": {"uv": [8, 49], "uv_size": [8, -20]}
+							}
+						},
+						{
+							"origin": [0, 35.2, -5.1],
+							"size": [0, 1.4, 6.2],
+							"pivot": [0, 15.5, -9.6],
+							"rotation": [-5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [0, 1]},
+								"east": {"uv": [82, 34], "uv_size": [20, 1]},
+								"south": {"uv": [0, 0], "uv_size": [0, 1]},
+								"west": {"uv": [83, 0], "uv_size": [20, 1]},
+								"up": {"uv": [0, 0], "uv_size": [0, 20]},
+								"down": {"uv": [0, 20], "uv_size": [0, -20]}
+							}
+						},
+						{
+							"origin": [1, 34.6, -2.5],
+							"size": [7, 4.2, 4.7],
+							"pivot": [0, 34.5, -9.6],
+							"rotation": [-1.05993, 4.76521, 64.93283],
+							"uv": {
+								"north": {"uv": [76, 58], "uv_size": [8, 4]},
+								"east": {"uv": [50, 0], "uv_size": [20, 4]},
+								"south": {"uv": [76, 62], "uv_size": [8, 4]},
+								"west": {"uv": [50, 4], "uv_size": [20, 4]},
+								"up": {"uv": [20, 9], "uv_size": [8, 20]},
+								"down": {"uv": [28, 29], "uv_size": [8, -20]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "Cola",
+					"pivot": [0, 15.5, 1.4],
+					"cubes": [
+						{
+							"origin": [-4.1, 28.2, -5.1],
+							"size": [8.2, 6.4, 5.2],
+							"pivot": [0, 15.5, 1.4],
+							"rotation": [-5, 0, 0],
+							"uv": {
+								"north": {"uv": [49, 9], "uv_size": [10, 9]},
+								"east": {"uv": [0, 20], "uv_size": [20, 9]},
+								"south": {"uv": [49, 18], "uv_size": [10, 9]},
+								"west": {"uv": [20, 0], "uv_size": [20, 9]},
+								"up": {"uv": [0, 0], "uv_size": [10, 20]},
+								"down": {"uv": [10, 20], "uv_size": [10, -20]}
+							}
+						}
+					]
+				},
+				{
+					"name": "Armadura",
+					"parent": "Cuerpo",
+					"pivot": [0, 15.1, -9],
+					"cubes": [
+						{
+							"origin": [3, 34.1, -18.3],
+							"size": [6, 4.2, 16.3],
+							"pivot": [0, 34.1, -9],
+							"rotation": [0, 2.5, 65],
+							"uv": {
+								"north": {"uv": [76, 58], "uv_size": [8, 4]},
+								"east": {"uv": [50, 0], "uv_size": [20, 4]},
+								"south": {"uv": [76, 62], "uv_size": [8, 4]},
+								"west": {"uv": [50, 4], "uv_size": [20, 4]},
+								"up": {"uv": [20, 9], "uv_size": [8, 20]},
+								"down": {"uv": [28, 29], "uv_size": [8, -20]}
+							}
+						},
+						{
+							"origin": [-9, 34.1, -18.3],
+							"size": [6, 4.2, 16.3],
+							"pivot": [0, 34.1, -9],
+							"rotation": [0, -2.5, -65],
+							"uv": {
+								"north": {"uv": [76, 66], "uv_size": [8, 4]},
+								"east": {"uv": [50, 43], "uv_size": [20, 4]},
+								"south": {"uv": [76, 70], "uv_size": [8, 4]},
+								"west": {"uv": [50, 47], "uv_size": [20, 4]},
+								"up": {"uv": [0, 29], "uv_size": [8, 20]},
+								"down": {"uv": [8, 49], "uv_size": [8, -20]}
+							}
+						},
+						{
+							"origin": [2, 35.1, -15.3],
+							"size": [4, 1.2, 9.3],
+							"pivot": [0, 30.1, -9],
+							"rotation": [0, 2.5, 65],
+							"uv": {
+								"north": {"uv": [76, 58], "uv_size": [8, 4]},
+								"east": {"uv": [50, 0], "uv_size": [20, 4]},
+								"south": {"uv": [76, 62], "uv_size": [8, 4]},
+								"west": {"uv": [50, 4], "uv_size": [20, 4]},
+								"up": {"uv": [20, 9], "uv_size": [8, 20]},
+								"down": {"uv": [28, 29], "uv_size": [8, -20]}
+							}
+						},
+						{
+							"origin": [-6, 35.1, -15.3],
+							"size": [4, 1.2, 9.3],
+							"pivot": [0, 30.1, -9],
+							"rotation": [0, -2.5, -65],
+							"uv": {
+								"north": {"uv": [76, 66], "uv_size": [8, 4]},
+								"east": {"uv": [50, 43], "uv_size": [20, 4]},
+								"south": {"uv": [76, 70], "uv_size": [8, 4]},
+								"west": {"uv": [50, 47], "uv_size": [20, 4]},
+								"up": {"uv": [0, 29], "uv_size": [8, 20]},
+								"down": {"uv": [8, 49], "uv_size": [8, -20]}
+							}
+						},
+						{
+							"origin": [-5.1, 27.8, -17.9],
+							"size": [10.2, 6.8, 16.8],
+							"pivot": [0, 15.1, -9],
+							"rotation": [2.5, 0, 0],
+							"uv": {
+								"north": {"uv": [49, 9], "uv_size": [10, 9]},
+								"east": {"uv": [0, 20], "uv_size": [20, 9]},
+								"south": {"uv": [49, 18], "uv_size": [10, 9]},
+								"west": {"uv": [20, 0], "uv_size": [20, 9]},
+								"up": {"uv": [0, 0], "uv_size": [10, 20]},
+								"down": {"uv": [10, 20], "uv_size": [10, -20]}
+							}
+						},
+						{
+							"origin": [0, 33.8, -17.9],
+							"size": [0, 1.4, 16.8],
+							"pivot": [0, 15.1, -9],
+							"rotation": [2.5, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [0, 1]},
+								"east": {"uv": [82, 34], "uv_size": [20, 1]},
+								"south": {"uv": [0, 0], "uv_size": [0, 1]},
+								"west": {"uv": [83, 0], "uv_size": [20, 1]},
+								"up": {"uv": [0, 0], "uv_size": [0, 20]},
+								"down": {"uv": [0, 20], "uv_size": [0, -20]}
+							}
+						}
+					]
+				},
+				{
+					"name": "Cuello",
+					"parent": "Cuerpo",
+					"pivot": [0, 29.18391, -23.51363],
+					"rotation": [10, 0, 0]
+				},
+				{
+					"name": "bone",
+					"parent": "Cuello",
+					"pivot": [0, 34.1, -22.7],
+					"cubes": [
+						{
+							"origin": [-3.4, 27.3, -23.5],
+							"size": [6.8, 5.1, 5.5],
+							"pivot": [0, 34.1, -22.7],
+							"rotation": [10, 0, 0],
+							"uv": {
+								"north": {"uv": [76, 22], "uv_size": [7, 5]},
+								"east": {"uv": [10, 49], "uv_size": [6, 5]},
+								"south": {"uv": [76, 53], "uv_size": [7, 5]},
+								"west": {"uv": [77, 0], "uv_size": [6, 5]},
+								"up": {"uv": [69, 57], "uv_size": [7, 6]},
+								"down": {"uv": [70, 6], "uv_size": [7, -6]}
+							}
+						}
+					]
+				},
+				{
+					"name": "tongue",
+					"parent": "Cuerpo",
+					"pivot": [0, 24.6, -11.5]
+				}
+			]
+		}
+	]
+}

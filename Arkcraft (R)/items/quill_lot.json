@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:quill_lot",
+   "category": "item"
+  },
+  "components": {
+   "minecraft:icon": "quill_lot",
+   "minecraft:render_offsets": "quill_lot"
+  }
+ }
+}

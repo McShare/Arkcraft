@@ -6,7 +6,8 @@
         "textures": {
           "Array.skins": [
             "Texture.trilobite1",
-            "Texture.trilobite2"
+            "Texture.trilobite2",
+            "Texture.trilobite3"
           ]
         }
       },

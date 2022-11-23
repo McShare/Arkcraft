@@ -1,0 +1,87 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.lopho.general" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						{
+							"move" : "(query.modified_move_speed)"}, 
+							"estatica"
+					],
+					"transitions" : [
+						{
+							"volando" : "(!query.is_on_ground) && (!query.is_in_water)"
+						},
+						{
+							"attack" : "query.is_delayed_attacking == 1 || query.is_illager_captain"
+						},
+						{
+							"sleep" : "query.is_sheared"
+						},
+						{
+							"is_sitting" : "(query.is_baby) && (!query.is_riding) && (query.is_on_ground)"
+						}
+					],
+					"blend_transition": 0.2
+				},
+			"is_sitting" : {
+					"animations" : [       "sit" ,
+"estatica"
+							],
+					"transitions" : [
+						{
+							"volando" : "(!query.is_on_ground) && (!query.is_in_water)"
+						},
+						{
+							"attack" : "query.is_delayed_attacking == 1 || query.is_illager_captain"
+						},
+						{
+							"sleep" : "query.is_sheared"
+						},
+						{
+							"default" : "(!query.is_baby)"}
+					]
+				},
+			"volando" : {
+					"animations" : [
+	"estatica" ,"volando" , "volando2" 
+					],
+					"transitions" : [
+						{
+							"is_sitting" : "(query.is_baby) && (query.is_on_ground)"
+						},
+						{
+							"attack" : "query.is_delayed_attacking == 1 || query.is_illager_captain"
+						},
+						{
+							"sleep" : "query.is_sheared"
+						},
+						{
+							"default" : "  (query.is_on_ground)  || (query.is_in_water)"}
+					]
+				},
+				"sleep" : {
+					"animations" : [ "sleep" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_sheared"
+						}
+					]
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "(query.is_delayed_attacking == 0) && (query.all_animations_finished) || (!query.is_illager_captain) && (query.all_animations_finished)"
+						},
+						{
+							"sitting" : "(query.is_baby) && (query.all_animations_finished)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

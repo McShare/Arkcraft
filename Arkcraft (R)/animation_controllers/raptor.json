@@ -5,7 +5,8 @@
 			"initial_state" : "default",
 			"states" : {
 				"default" : { 
-					"animations" : [ {"move" : "query.modified_move_speed" },
+					"animations" : [ 
+					    {"move" : "query.modified_move_speed" },
 					"default",
                    "look_at_target"
 					],
@@ -62,7 +63,10 @@
 					"blend_transition": 0.2
 				},
 				"attack" : {
-					"animations" : [ "attack" ],
+					"animations" : [
+					    
+					    {"move" : "query.modified_move_speed" },
+					    "attack" ],
 					"transitions" : [
 						{
 							"default" : "(variable.attack_time <= 0.0) && (query.all_animations_finished) || !query.is_illager_captain && (query.all_animations_finished)"

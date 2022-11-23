@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.shringasaurus": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.variant1",
+						"Texture.variant2",
+						"Texture.variant3",
+						"Texture.variant4",
+						"Texture.variant5"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+      "part_visibility": [ { 
+          "montura*": "query.is_saddled" ,
+          "cabello*": "!query.is_saddled" ,
+	  "cofre": "query.is_chested"
+      }
+      ], 
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[query.variant]"
+			]
+		}
+	}
+}

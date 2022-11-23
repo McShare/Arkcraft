@@ -16,7 +16,10 @@
           "Array.skin": [
             "Texture.ankylosaurus1",
             "Texture.ankylosaurus2",
-            "Texture.ankylosaurus3"
+            "Texture.ankylosaurus3",
+            "Texture.ankylosaurus4",
+            "Texture.ankylosaurus5",
+            "Texture.ankylosaurus6"
           ]
         }
       },

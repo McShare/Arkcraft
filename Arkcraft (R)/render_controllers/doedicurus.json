@@ -12,10 +12,10 @@
         }
       },
       "geometry": "Geometry.default",
-      "part_visibility": [ 
-        { "*": true },
- { "montura*": "query.variant == 2"},
- { "cofre*": "query.variant == 2"}
+      "part_visibility": [ { 
+          "montura*": "query.is_saddled" ,
+          "cofre*": "!query.is_saddled" 
+        }
 ],
 
       "materials": [ { "*": "Material.default"}

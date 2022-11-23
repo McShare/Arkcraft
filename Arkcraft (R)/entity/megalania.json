@@ -1,0 +1,48 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:megalania",
+      "materials": {
+        "default": "spider",
+        "invisible": "spider"
+      },
+   "textures": {
+    "variant1": "textures/entity/megalania/Variante1",
+    "variant2": "textures/entity/megalania/Variante2",
+    "variant3": "textures/entity/megalania/Variante3",
+    "variant4": "textures/entity/megalania/Variante4"
+   }, 
+   "geometry": {
+    "default": "geometry.megalania"
+   },
+   "render_controllers": [
+    "controller.render.megalania"
+   ],
+   "animations": {
+        "escalando": "controller.animation.megalania.escalando",
+       "normal": "animation.megalania.normal",
+      "pose1": "animation.megalania.pose1",
+      "pose5": "animation.megalania.pose5",
+        "move": "controller.animation.megalania.move",
+        "walk": "animation.megalania.move",
+        "sit": "animation.megalania.sit",
+        "attack": "animation.megalania.attack",
+        "default": "animation.megalania.default",
+        "look_at_target": "animation.megalania.look_at_target"
+   },
+   "scripts": {
+        "scale": "1.0",
+    "animate": [
+        "escalando",
+     "move"
+    ]
+   },
+      "spawn_egg": {
+         "base_color": "#330000",
+        "overlay_color": "#E01111"
+      }
+  }
+ }
+} 
+ 

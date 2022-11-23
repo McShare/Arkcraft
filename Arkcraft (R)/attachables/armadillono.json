@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "arkcraft:armadillo_chestplate",
+      "item": { "arkcraft:armadillo_chestplate": "query.owner_identifier == 'minecraft:player'" },
+      "materials": {
+        "default": "armor",
+        "enchanted": "armor_enchanted"
+      },
+      "textures": {
+        "default": "textures/entity/armadillosuchus/armadillosuchus1",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.armadillono"
+      },
+      "scripts": {
+        "parent_setup": "variable.chestplate_layer_visible = 0.0;"
+      },
+      "render_controllers": [ "controller.render.armor" ]
+    }
+  }
+}

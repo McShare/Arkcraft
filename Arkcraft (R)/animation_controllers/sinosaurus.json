@@ -1,0 +1,65 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.sinosaurus.general" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ {							"walk" : "query.modified_move_speed" },
+					"default",
+                   "look_at_target"
+					],
+					"transitions" : [
+						{
+							"attack" : "query.mark_variant == 1"
+						},
+						{
+							"sleep" : "query.is_sheared"
+						},
+						{
+							"sitting" : "query.is_baby"
+						}
+					]
+				},
+				
+				"sitting" : {
+					"animations" : [ "sit" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_baby"
+						},
+						{
+							"sleep" : "query.is_sheared"
+						},
+						{
+							"attack" : "query.mark_variant == 1"
+						}
+					]
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "(query.mark_variant == 0) && (query.all_animations_finished)"
+						},
+						{
+							"sleep" : "query.is_sheared"
+						},
+						{
+							"sitting" : "(query.is_baby) && (query.all_animations_finished) && (query.mark_variant == 0)"
+						}
+					]
+				},
+				"sleep" : {
+					"animations" : [ "sleep" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_sheared"
+						}
+					]
+				}
+			}
+		}
+	}
+}
+ 

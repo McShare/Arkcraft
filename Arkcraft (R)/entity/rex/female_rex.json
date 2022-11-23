@@ -6,14 +6,16 @@
 				"default": "skeleton"
 			},
 			"textures": {
-				"saddle": "textures/entity/rex/saddled/black_rex",
 				"variant1": "textures/entity/rex/black_rex",
 				"variant2": "textures/entity/rex/red_rex",
-				"variant3": "textures/entity/rex/white_rex"
+				"variant3": "textures/entity/rex/white_rex",
+				"variant4": "textures/entity/rex/green_rex",
+				"variant5": "textures/entity/rex/granate_rex",
+				"variant6": "textures/entity/rex/rexy",
+				"variant7": "textures/entity/rex/walk_rex"
 			},
 			"geometry": {
-				"default": "geometry.rex",
-				"saddle": "geometry.rex_saddled"
+				"default": "geometry.rex_saddled"
 			},
 			"animations": {
 				"idle": "animation.rex.idle",
@@ -51,14 +53,13 @@
 				]
 			},
 			"render_controllers": [
-				"controller.render.variants",
-				"controller.render.dino_saddle"
+				"controller.render.rex"
 			],
 			"spawn_egg": {
 				"base_color": "#502600",
 				"overlay_color": "#A50B0B"
 			},
-			"identifier": "arkcraft:female_rex"
+			"identifier": "arkcraft:male_rex"
 		}
 	}
 }

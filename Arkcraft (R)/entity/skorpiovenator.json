@@ -1,38 +1,44 @@
-
 {
-  "format_version": "1.10.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "arkcraft:skorpiovenator",
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:skorpiovenator",
       "materials": {
-        "default": "spider"
-      },            
-      "textures": {
-        "default": "textures/entity/skorpiovenator/skorpiovenator_red",
-        "default2": "textures/entity/skorpiovenator/skorpiovenator_orange",
-        "default3": "textures/entity/skorpiovenator/skorpiovenator_lima"
-      },
-      "geometry": {
-        "default": "geometry.skorpiovenator"
-      },
-      "animations": {
-        "walk": "animation.skorpiovenator.move",
-      "default":
-        "animation.skorpiovenator_default",
-        "look_at_target": "animation.common.look_at_target"
-      },
-      "scripts": {
-        "animate": [
-       "default",
-          { "walk": "query.modified_move_speed" },
-          "look_at_target"
-        ]
-      },
-      "render_controllers": [ "controller.render.skorpiovenator" ],
-      "spawn_egg": {
-         "base_color": "#96663f",
-        "overlay_color": "#dbdbdb"
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/skorpiovenator/skorpiovenator_red",
+    "default2": "textures/entity/skorpiovenator/skorpiovenator_orange",
+    "default3": "textures/entity/skorpiovenator/skorpiovenator_lima"
+   },
+   "geometry": {
+    "default": "geometry.skorpiovenator"
+        },
+   "render_controllers": [
+    "controller.render.skorpiovenator"  
+   ],
+   "animations": {
+        "general": "controller.animation.skorpiovenator.general",
+        "look_at_target": "animation.skorpiovenator.look_at_target",
+        "sit": "animation.skorpiovenator.sit",
+        "sleep": "animation.skorpiovenator.sleep",
+       "roar": "animation.skorpiovenator.roar",
+       "move": "animation.skorpiovenator.move",
+       "default": "animation.skorpiovenator_default",
+        "attack": "animation.skorpiovenator.attack"
+   },
+   "scripts": {
+        "scale": "0.9",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+   "spawn_egg": {
+    "base_color": "#96663f",
+   "overlay_color": "#dbdbdb"
       }
-    }
   }
+ }
 }
+ 

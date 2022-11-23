@@ -128,11 +128,69 @@
 					"attack": "mob.rex.attack",
 					"step": "mob.rex.step"
 				}
+      },
+			"arkcraft:giga": {
+				"volume": 3.0,
+				"pitch": [
+					0.4,
+					0.55
+				],
+				"events": {
+					"ambient": "mob.rex.idle",
+					"hurt": "mob.rex.hurt",
+					"death": "mob.rex.death",
+					"attack": "mob.rex.attack",
+					"step": {
+            "sound": "mob.rex.step",
+            "volume": 0.15,
+            "pitch": 0.7
+          }
+				}
+      },
+			"arkcraft:tralkasaurus": {
+				"volume": 1,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.rex.idle",
+					"hurt": "mob.rex.hurt",
+					"death": "mob.rex.death",
+					"attack": "mob.rex.attack",
+					"step": "mob.rex.step"
+				}
+      },
+			"arkcraft:longuisquama": {
+				"volume": 1,
+				"pitch": [
+					1.0, 0.8, 1.2, 0.6, 1.4
+				],
+				"events": {
+					"ambient": "binomo",
+					"hurt": "binomo",
+					"death": "binomo",
+					"attack": "binomo",
+					"step": "binomo"
+				}
 			},
 			"arkcraft:female_spino": {
 				"volume": 1,
 				"pitch": [
 					0.8, 1.2
+				],
+				"events": {
+					"ambient": "spino_idle",
+					"hurt": "spino_hurt",
+					"death": "spino_death",
+					"attack": "spino_attack",
+					"step": "mob.rex.step"
+				}
+      },
+			"arkcraft:oxalaia": {
+				"volume": 1,
+				"pitch": [
+					1.0, 1.5
 				],
 				"events": {
 					"ambient": "spino_idle",
@@ -183,6 +241,32 @@
 				"volume": 1,
 				"pitch": [
 					0.8, 1.2
+				],
+				"events": {
+					"hurt": "shadow_dientes",
+					"death": "shadow_dientes",
+					"attack": "shadow_dientes",
+					"step": "shadow_step",
+					"ambient": "shadow_ambient"
+				}
+      },
+			"arkcraft:thylacoleo": {
+				"volume": 1,
+				"pitch": [
+					0.8, 1.2
+				],
+				"events": {
+					"hurt": "shadow_dientes",
+					"death": "shadow_dientes",
+					"attack": "shadow_dientes",
+					"step": "shadow_step",
+					"ambient": "shadow_ambient"
+				}
+      },
+			"arkcraft:wakaleo": {
+				"volume": 0.8,
+				"pitch": [
+					0.2, 0.8
 				],
 				"events": {
 					"hurt": "shadow_dientes",
@@ -443,6 +527,29 @@
             },
             "pitch" : [ 0.80, 1.20 ],
             "volume" : 1.0
+          },
+          "arkcraft:ouranosaurus" : {
+                "events" : {
+                   "ambient" : "mob.parasaurolophus.default",
+                   "death" : "mob.parasaurolophus.death",
+                   "hurt" : "mob.parasaurolophus.hurt"
+                },
+                "pitch" : [ 0.50, 0.90 ],
+                "volume" : 1.0
+              },
+              "arkcraft:shantungosaurus" : {
+                    "events" : {
+                       "ambient" : "mob.parasaurolophus.default",
+                       "death" : "mob.parasaurolophus.death",
+                       "step": {
+                        "sound": "mob.rex.step",
+                        "volume": 0.15,
+                        "pitch": 1.0
+                      },
+                       "hurt" : "mob.parasaurolophus.hurt"
+                    },
+                    "pitch" : [ 0.50, 0.90 ],
+                    "volume" : 1.3
          },
          "arkcraft:tamer" : {
             "events" : {
@@ -458,24 +565,24 @@
             },
             "pitch" : [ 0.80, 1.20 ],
             "volume" : 1.0
-         },
-      "arkcraft:ammonite_friend": {
-       "volume": 0.2,
-        "pitch": [ 0.8, 1.2 ],
-        "events": {
-          "ambient": "",
-          "hurt": "",
-          "death": "",
-          "step": {
-            "sound": "mob.cow.step",
-            "volume": 0.05,
-            "pitch": 1.0
-          }
-        }
       },
       "arkcraft:quetzal": {
         "volume": 2.5,
         "pitch": [ 0.5, 0.7 ],
+        "events": {
+          "ambient": "mob.quetzal",
+          "hurt": "mob.quetzal",
+          "death": "mob.quetzal",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
+      },
+      "arkcraft:ptera": {
+        "volume": 2.5,
+        "pitch": [ 1.4, 1.9 ],
         "events": {
           "ambient": "mob.quetzal",
           "hurt": "mob.quetzal",
@@ -587,6 +694,21 @@
           }
         }
       },
+      "arkcraft:thery": {
+       "volume": 1.5,
+        "pitch": [ 0.4, 0.8 ],
+        "events": {
+          "ambient": "mob.dodo.idle",
+          "hurt": "mob.dodo.hurt",
+          "death": "mob.dodo.death",
+          "step": {
+            "sound": "mob.chicken.step",
+            "volume": 0.45,
+            "pitch": 1.0
+          },
+          "plop": "mob.chicken.plop"
+        }
+      },
       "arkcraft:dodo": {
        "volume": 1.0,
         "pitch": [ 0.8, 1.2 ],
@@ -602,13 +724,71 @@
           "plop": "mob.chicken.plop"
         }
       },
-      "arkcraft:velociraptor": {
+      "arkcraft:neocartathes": {
        "volume": 1.0,
         "pitch": [ 0.8, 1.2 ],
         "events": {
-          "ambient": "mob.velociraptor",
-          "hurt": "mob.velociraptor",
-          "death": "mob.velociraptor",
+          "ambient": "mob.dodo.idle",
+          "hurt": "mob.dodo.hurt",
+          "death": "mob.dodo.death",
+          "step": {
+            "sound": "mob.chicken.step",
+            "volume": 0.15,
+            "pitch": 1.5
+          },
+          "plop": "mob.chicken.plop"
+        }
+      },
+      "arkcraft:hesperornis": {
+       "volume": 1.0,
+        "pitch": [ 0.4, 0.8 ],
+        "events": {
+          "ambient": "mob.dodo.idle",
+          "hurt": "mob.dodo.hurt",
+          "death": "mob.dodo.death",
+          "step": {
+            "sound": "mob.chicken.step",
+            "volume": 0.15,
+            "pitch": 1.5
+          },
+          "plop": "mob.chicken.plop"
+        }
+      },
+      "arkcraft:raptor": {
+       "volume": 0.05,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.raptor",
+          "hurt": "mob.raptor",
+          "death": "mob.raptor",
+          "step": {
+            "sound": "mob.chicken.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "arkcraft:pyroraptor": {
+       "volume": 0.05,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.raptor",
+          "hurt": "mob.raptor",
+          "death": "mob.raptor",
+          "step": {
+            "sound": "mob.chicken.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "arkcraft:unquillosaurus": {
+       "volume": 0.05,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.raptor",
+          "hurt": "mob.raptor",
+          "death": "mob.raptor",
           "step": {
             "sound": "mob.chicken.step",
             "volume": 0.15,
@@ -617,12 +797,12 @@
         }
       },
       "arkcraft:velonasaur": {
-       "volume": 1.0,
+       "volume": 0.05,
         "pitch": [ 0.4, 1.0 ],
         "events": {
-          "ambient": "mob.velociraptor",
-          "hurt": "mob.velociraptor",
-          "death": "mob.velociraptor",
+          "ambient": "mob.raptor",
+          "hurt": "mob.raptor",
+          "death": "mob.raptor",
           "step": {
             "sound": "mob.chicken.step",
             "volume": 0.15,
@@ -630,7 +810,128 @@
           }
         }
       },
+      "arkcraft:velonasaur_r": {
+       "volume": 0.05,
+        "pitch": [ 0.4, 1.0 ],
+        "events": {
+          "ambient": "mob.raptor",
+          "hurt": "mob.raptor",
+          "death": "mob.raptor",
+          "step": {
+            "sound": "mob.chicken.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "arkcraft:llukalkan": {
+       "volume": 1.0,
+        "pitch": [ 1.6, 1.2 ],
+        "events": {
+          "ambient": "mob.carnotaurus",
+          "hurt": "mob.carnotaurus",
+          "death": "mob.carnotaurus",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
       "arkcraft:skorpiovenator": {
+       "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.carnotaurus",
+          "hurt": "mob.carnotaurus",
+          "death": "mob.carnotaurus",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "arkcraft:carnotaurus": {
+       "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.carnotaurus",
+          "hurt": "mob.carnotaurus",
+          "death": "mob.carnotaurus",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "arkcraft:bulbdog": {
+        "volume": 1,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.frog.ambient",
+          "hurt": "mob.wolf.hurt",
+          "death": "mob.wolf.death",
+          "step": "mob.cow.step",
+          "eat": "mob.frog.eat",
+          "ambient.baby": {
+            "sound": "mob.frog.ambient",
+            "volume": 2.5,
+            "pitch": 1.2
+          },
+          "jump_to_block": "mob.frog.jump_to_block"
+        }
+      },
+      "arkcraft:sclerothorax": {
+        "volume": 0.8,
+        "pitch": [ 0.4, 0.8 ],
+        "events": {
+          "ambient": "mob.frog.ambient",
+          "hurt": "mob.frog.hurt",
+          "death": "mob.frog.death",
+          "step": "mob.frog.step",
+          "eat": "mob.frog.eat",
+          "ambient.baby": {
+            "sound": "mob.frog.ambient",
+            "volume": 2.5,
+            "pitch": 1.2
+          },
+          "jump_to_block": "mob.frog.jump_to_block"
+        }
+      },
+      "arkcraft:diplocaulus": {
+        "volume": 0.8,
+        "pitch": [ 1.1, 1.5 ],
+        "events": {
+          "ambient": "mob.frog.ambient",
+          "hurt": "mob.frog.hurt",
+          "death": "mob.frog.death",
+          "step": "mob.frog.step",
+          "eat": "mob.frog.eat",
+          "ambient.baby": {
+            "sound": "mob.frog.ambient",
+            "volume": 2.5,
+            "pitch": 1.2
+          },
+          "jump_to_block": "mob.frog.jump_to_block"
+        }
+      },
+      "arkcraft:majungasaurus": {
+       "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.carnotaurus",
+          "hurt": "mob.carnotaurus",
+          "death": "mob.carnotaurus",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "arkcraft:cryolopho": {
        "volume": 1.0,
         "pitch": [ 0.8, 1.2 ],
         "events": {
@@ -658,8 +959,77 @@
           }
         }
       },
-   "arkcraft:nanuqsaurus": {
-       "volume": 1.0,
+      "arkcraft:lopho": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": {
+            "sound": "mob.parrot.idle",
+            "volume": 0.7
+          },
+          "hurt": {
+            "sound": "mob.parrot.hurt",
+            "volume": 1.0,
+            "pitch": [ 0.8, 1.0 ]
+          },
+		   "death": {
+            "sound": "mob.parrot.death",
+            "volume": 1.0,
+            "pitch": [ 0.8, 1.0 ]
+		  },
+          "step": "mob.parrot.step",
+          "eat": "mob.parrot.eat",
+          "fly": "mob.parrot.fly"
+        }
+      },
+      "arkcraft:phiomia": {
+        "volume": 1.0,
+        "pitch": [ 0.6, 1.0 ],
+        "events": {
+          "ambient": "mob.pig.say",
+          "hurt": "mob.pig.say",
+          "death": "mob.pig.death",
+          "step": {
+            "sound": "mob.pig.step",
+            "volume": 0.2,
+            "pitch": 1.0
+          },
+          "boost": {
+            "sound": "mob.pig.boost",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "death.to.zombie": {
+            "sound": "mob.pig.death",
+            "volume": 2.0
+          }
+        }
+      },
+      "arkcraft:scutosaurus": {
+        "volume": 1.0,
+        "pitch": [ 0.3, 0.5 ],
+        "events": {
+          "ambient": "mob.pig.say",
+          "hurt": "mob.pig.say",
+          "death": "mob.pig.death",
+          "step": {
+            "sound": "mob.pig.step",
+            "volume": 0.2,
+            "pitch": 1.0
+          },
+          "boost": {
+            "sound": "mob.pig.boost",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "death.to.zombie": {
+            "sound": "mob.pig.death",
+            "volume": 2.0
+          }
+        }
+      },
+   "arkcraft:gualicho": {
+       "volume": 1.5,
         "pitch": [ 0.5, 0.8],
         "events": {
           "ambient": "mob.nanuqsaurus",
@@ -672,8 +1042,22 @@
           }
         }
       },
-      "arkcraft:baryonyx": {
-       "volume": 1.0,
+      "arkcraft:tanycolagreus": {
+          "volume": 1.3,
+           "pitch": [ 0.7, 1.0],
+           "events": {
+             "ambient": "mob.nanuqsaurus",
+             "hurt": "mob.nanuqsaurus",
+             "death": "mob.nanuqsaurus",
+             "step": {
+               "sound": "mob.cow.step",
+               "volume": 0.15,
+               "pitch": 1.0
+             }
+           }
+      },
+      "arkcraft:female_baryonyx": {
+       "volume": 0.8,
         "pitch": [ 0.6, 1.0 ],
         "events": {
           "ambient": "mob.baryonyx.idle",
@@ -687,13 +1071,43 @@
           "plop": "mob.chicken.plop"
         }
       },
-      "arkcraft:elasmotherium": {
+      "arkcraft:baryonyx": {
+        "volume": 0.8,
+        "pitch": [ 0.6, 1.0 ],
+        "events": {
+          "ambient": "mob.baryonyx.idle",
+          "hurt": "mob.baryonyx.hurt",
+          "death": "mob.baryonyx.death",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.7,
+            "pitch": 1.0
+          },
+          "plop": "mob.chicken.plop"
+        }
+      },
+      "arkcraft:irritator": {
+        "volume": 0.8,
+        "pitch": [ 0.4, 0.7 ],
+        "events": {
+          "ambient": "mob.baryonyx.idle",
+          "hurt": "mob.baryonyx.hurt",
+          "death": "mob.baryonyx.death",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.7,
+            "pitch": 1.0
+          },
+          "plop": "mob.chicken.plop"
+        }
+      },
+      "arkcraft:giraffatitan": {
        "volume": 1.0,
         "pitch": [ 0.8, 1.2 ],
         "events": {
-          "ambient": "mob.elasmotherium.idle",
-          "hurt": "mob.elasmotherium.hurt",
-          "death": "mob.elasmotherium.death",
+          "ambient": "bronto.idle",
+          "hurt": "bronto.hurt",
+          "death": "bronto.death",
           "step": {
             "sound": "mob.irongolem.step",
             "volume": 0.15,
@@ -701,6 +1115,48 @@
           }
         }
       },
+      "arkcraft:ankylosaurus": {
+       "volume": 1.0,
+        "pitch": [ 0.3, 0.6 ],
+        "events": {
+          "ambient": "bronto.idle",
+          "hurt": "bronto.hurt",
+          "death": "bronto.death",
+          "step": {
+            "sound": "mob.irongolem.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "arkcraft:camarasaurus": {
+       "volume": 1.2,
+        "pitch": [ 1.5, 1.9 ],
+        "events": {
+          "ambient": "bronto.idle",
+          "hurt": "bronto.hurt",
+          "death": "bronto.death",
+          "step": {
+            "sound": "mob.irongolem.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "arkcraft:galveosaurus": {
+       "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "bronto.idle",
+          "hurt": "bronto.hurt",
+          "death": "bronto.death",
+          "step": {
+            "sound": "mob.irongolem.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      }, 
       "arkcraft:doedicurus": {
        "volume": 1.0,
         "pitch": [ 0.8, 1.2 ],
@@ -717,7 +1173,7 @@
         }
       },
       "arkcraft:thorny_dragon": {
-       "volume": 1.0,
+       "volume": 0.6,
         "pitch": [ 0.8, 1.2 ],
         "events": {
           "ambient": "mob.thorny_dragon.idle",
@@ -730,35 +1186,35 @@
           }
         }
       },
-      "arkcraft:ammonite_poisonshock": {
-       "volume": 0.2,
-        "pitch": [ 0.8, 1.2 ],
+      "arkcraft:megalania": {
+       "volume": 1.0,
+        "pitch": [ 1.5, 1.9 ],
         "events": {
-          "ambient": "",
-          "hurt": "",
-          "death": "",
+          "ambient": "mob.thorny_dragon.idle",
+          "hurt": "mob.thorny_dragon.hurt",
+          "death": "mob.thorny_dragon.death",
           "step": {
             "sound": "mob.cow.step",
-            "volume": 0.05,
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "arkcraft:shringasaurus": {
+       "volume": 0.6,
+        "pitch": [ 1.5, 1.9 ],
+        "events": {
+          "ambient": "mob.thorny_dragon.idle",
+          "hurt": "mob.thorny_dragon.hurt",
+          "death": "mob.thorny_dragon.death",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.15,
             "pitch": 1.0
           }
         }
       },
       "arkcraft:qilinyu": {
-       "volume": 0.2,
-        "pitch": [ 0.8, 1.2 ],
-        "events": {
-          "ambient": "",
-          "hurt": "",
-          "death": "",
-          "step": {
-            "sound": "mob.cow.step",
-            "volume": 0.05,
-            "pitch": 1.0
-          }
-        }
-      },
-      "arkcraft:diplocaulus": {
        "volume": 0.2,
         "pitch": [ 0.8, 1.2 ],
         "events": {
@@ -815,6 +1271,20 @@
         }
       },
       "arkcraft:daeodon": {
+       "volume": 9.9,
+        "pitch": [ 0.1, 0.5 ],
+        "events": {
+          "ambient": "mob.zombiepig.zpig",
+          "hurt": "mob.pig.say",
+          "death": "mob.zombiepig.zpig",
+          "step": {
+            "sound": "mob.pig.step",
+            "volume": 0.5,
+            "pitch": 2.0
+          }
+        }
+      },
+      "arkcraft:desmodus": {
        "volume": 9.9,
         "pitch": [ 0.1, 0.5 ],
         "events": {
@@ -944,6 +1414,60 @@
           }
         }
       },
+      "arkcraft:dunckleosteus": {
+        "volume": 1.5,
+        "pitch": [ 0.4, 0.8 ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "arkcraft:ammonite_friend": {
+        "volume": 1.1,
+        "pitch": [ 0.8, 1.1 ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "arkcraft:ammonite_poisonshock": {
+        "volume": 1.1,
+        "pitch": [ 0.8, 1.1 ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
       "arkcraft:offc4": {
         "volume": 0.0,
         "pitch": [ 0.2, 0.5 ],
@@ -1058,6 +1582,20 @@
           }
         }
       },
+      "arkcraft:rosamygale": {
+        "volume": 3.5,
+        "pitch": [ 0.4, 0.8 ],
+        "events": {
+          "ambient": "mob.spider.say",
+          "hurt": "mob.spider.say",
+          "death": "mob.spider.death",
+          "step": {
+            "sound": "mob.spider.step",
+            "volume": 0.5,
+            "pitch": 1.0
+          }
+        }
+      },
       "arkcraft:pulmonoscorpius": {
         "volume": 3.5,
         "pitch": [ 0.2, 0.5 ],
@@ -1087,6 +1625,20 @@
         }
       },
       "arkcraft:compy": {
+       "volume": 0.25,
+        "pitch": [ 1.3, 1.5 ],
+        "events": {
+          "ambient": "mob.compy.idle",
+          "hurt": "mob.compy.hurt",
+          "death": "mob.compy.death",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.10,
+            "pitch": 1.0
+          }
+        }
+      },
+      "arkcraft:sinosaurus": {
        "volume": 0.5,
         "pitch": [ 0.8, 1.2 ],
         "events": {
@@ -1130,18 +1682,19 @@
         }
       },
       "arkcraft:mega_raptor": {
-       "volume": 2.0,
-        "pitch": [ 0.5, 0.8 ],
+       "volume": 1.5,
+        "pitch": [ 0.3, 0.5 ],
         "events": {
           "ambient": "mob.compy.idle",
           "hurt": "mob.compy.hurt",
           "death": "mob.compy.death",
           "step": {
-            "sound": "mob.cow.step",
-            "volume": 0.10,
+            "sound": "mob.rex.step",
+            "volume": 0.15,
             "pitch": 1.0
           }
         }
+        
       },
       "arkcraft:pegomastax": {
        "volume": 1.0,

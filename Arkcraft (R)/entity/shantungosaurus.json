@@ -1,0 +1,48 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:shantungosaurus",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "shantungosaurus1": "textures/entity/shantungosaurus/Shantungosaurus1",
+    "shantungosaurus2": "textures/entity/shantungosaurus/Shantungosaurus2",
+    "shantungosaurus3": "textures/entity/shantungosaurus/Shantungosaurus3",
+    "shantungosaurus4": "textures/entity/shantungosaurus/Shantungosaurus4",
+    "shantungosaurus5": "textures/entity/shantungosaurus/Shantungosaurus5",
+    "shantungosaurus6": "textures/entity/shantungosaurus/Shantungosaurus6"
+   },
+   "geometry": {
+    "default": "geometry.shantungosaurus"
+        },
+   "render_controllers": [
+    "controller.render.shantungosaurus"  
+   ],
+   "animations": {
+        "general": "controller.animation.shantungosaurus.general",
+        "look_at_target": "animation.shantungosaurus.look_at_target",
+        "sit": "animation.shantungosaurus.sit",
+        "sleep": "animation.shantungosaurus.sleep",
+       "roar": "animation.shantungosaurus.roar",
+       "move": "animation.shantungosaurus.walk",
+       "default": "animation.shantungosaurus.idle",
+       "algo": "animation.shantungosaurus.algo",
+        "attack": "animation.shantungosaurus.attack"
+   },
+   "scripts": {
+        "scale": "0.9",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#fcca55",
+        "overlay_color": "#878685"
+      }
+  }
+ }
+}
+ 

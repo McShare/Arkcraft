@@ -4,7 +4,7 @@
   "description": {
    "identifier": "arkcraft:raptor",
       "materials": {
-        "default": "skeleton"
+        "default": "spider"
       }, 
    "textures": { 
     "default": "textures/entity/raptor/rap1",
@@ -12,7 +12,14 @@
     "default3": "textures/entity/raptor/rap3",
     "default4": "textures/entity/raptor/rap4",
     "default5": "textures/entity/raptor/rap5",
-    "default6": "textures/entity/raptor/rap6"
+    "default6": "textures/entity/raptor/rap6",
+    "default7": "textures/entity/raptor/blue",
+    "default8": "textures/entity/raptor/rap7",
+    "default9": "textures/entity/raptor/rap8",
+    "default10": "textures/entity/raptor/rap9",
+    "default11": "textures/entity/raptor/rap10",
+    "default12": "textures/entity/raptor/rap11",
+    "default13": "textures/entity/raptor/rap12"
    },
    "geometry": {
     "default": "geometry.raptor"
@@ -38,8 +45,8 @@
     ] 
    },
       "spawn_egg": {
-         "base_color": "#5d9e37",
-        "overlay_color": "#686b66"
+         "base_color": "#edc917",
+        "overlay_color": "#028413"
       }
   }
  }

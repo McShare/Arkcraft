@@ -6,9 +6,12 @@
       "arrays": {
         "textures": {
           "Array.skins": [
-            "Texture.textura_0",
-            "Texture.textura_1",
-            "Texture.textura_2"
+            "Texture.default",
+            "Texture.default2",
+            "Texture.default3",
+            "Texture.default4",
+            "Texture.default5",
+            "Texture.default6"
           ]
         }
       },

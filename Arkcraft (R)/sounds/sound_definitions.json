@@ -10,6 +10,11 @@
 			"sounds": [
 				"sounds/rex/rex_hurt"
 			]
+    },
+		"ark.sleep": {
+			"sounds": [
+				"sounds/mob/ada"
+			]  
 		},
 		"mob.rex.death": {
 			"sounds": [
@@ -30,6 +35,26 @@
 		"player_silbido": {
 			"sounds": [
 				"sounds/player/silbido"
+			]
+    },
+		"latigo": {
+			"sounds": [
+				"sounds/player/latigo"
+			]
+    },
+		"bronto_dead": {
+			"sounds": [
+				"sounds/mob/elasmotherium/bronto_dead"
+			]
+		},
+		"bronto_hurt": {
+			"sounds": [
+				"sounds/elasmotherium/bronto_hurt"
+			]
+		},
+		"bronto_idle": {
+			"sounds": [
+				"sounds/elasmotherium/bronto_idle"
 			]
 		},
 		"spino_idle":{
@@ -80,6 +105,11 @@
 		"bary_idle": {
 			"sounds": [
 				"sounds/bary/bary_idle"
+			]
+    },
+		"binomo": {
+			"sounds": [
+				"sounds/longui/binomo"
 			]
 		},
 		"shadow_ambient": {
@@ -455,7 +485,7 @@
       }
     ]
   },
-  "mob.velociraptor": {
+  "mob.raptor": {
     "category": "neutral",
     "sounds": [
       {

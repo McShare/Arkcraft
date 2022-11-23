@@ -1,0 +1,48 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:tralkasaurus",
+      "materials": {
+        "default": "spider"
+      }, 
+   "textures": { 
+    "default": "textures/entity/tralkasaurus/tralkasaurus",
+    "default2": "textures/entity/tralkasaurus/tralkasaurus2",
+    "default3": "textures/entity/tralkasaurus/tralkasaurus3",
+    "default4": "textures/entity/tralkasaurus/tralkasaurus4",
+    "default5": "textures/entity/tralkasaurus/tralkasaurus5",
+    "default6": "textures/entity/tralkasaurus/tralkasaurus4"
+   },
+   "geometry": {
+    "default": "geometry.tralkasaurus"
+        },
+   "render_controllers": [
+    "controller.render.tralkasaurus"  
+   ],
+   "animations": {
+        "general": "controller.animation.tralkasaurus.general",
+        "look_at_target": "animation.tralkasaurus.look_at_target",
+        "sit": "animation.tralkasaurus.sit",
+        "sleep": "animation.tralkasaurus.sleep",
+       "roar": "animation.tralkasaurus.roar",
+       "detonation": "animation.tralkasaurus.detonation",
+       "move": "animation.tralkasaurus.move",
+       "default": "animation.tralkasaurus.idle",
+        "attack": "animation.tralkasaurus.attack"
+   },
+   "scripts": {
+        "scale": "2.0",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#e0af5c",
+        "overlay_color": "#ffefdb"
+      }
+  }
+ }
+}
+ 

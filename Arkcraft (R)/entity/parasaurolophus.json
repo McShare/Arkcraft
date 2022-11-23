@@ -1,51 +1,54 @@
 {
-  "format_version": "1.8.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "arkcraft:parasaurolophus",
-      "materials": { 
-          "default": "spider",
-          "saddle": "sheep"
-      },
-      "textures": {
-        "textura_0": "textures/entity/parasaurolophus/textura_0",
-        "textura_1": "textures/entity/parasaurolophus/textura_1",
-        "textura_2": "textures/entity/parasaurolophus/textura_2",
-        "saddle": "textures/entity/saddle/parasaurolophus_saddle",
-        "chest": "textures/entity/chest/parasaurolophus_chest"
-      },
-      "geometry": {
-        "default": "geometry.parasaurolophus",
-        "saddle": "geometry.parasaurolophus_saddle",
-        "chest": "geometry.parasaurolophus_chest"
-      },
-      "scripts": {
-        "scale": "1.0"
-      },
-      "animations": {
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:parasaurolophus",
+      "materials": {
+         "default": "spider",
+         "saddle": "sheep"
+      }, 
+   "textures": { 
+    "default": "textures/entity/parasaurolophus/textura",
+    "default2": "textures/entity/parasaurolophus/textura2",
+    "default3": "textures/entity/parasaurolophus/textura3",
+    "default4": "textures/entity/parasaurolophus/textura4",
+    "default5": "textures/entity/parasaurolophus/textura5",
+    "default6": "textures/entity/parasaurolophus/textura1",
+    "saddle": "textures/entity/saddle/parasaurolophus_saddle",
+    "chest": "textures/entity/chest/parasaurolophus_chest"
+   },
+   "geometry": {
+      "default": "geometry.parasaurolophus",
+      "saddle": "geometry.parasaurolophus_saddle",
+      "chest": "geometry.parasaurolophus_chest"
+    },
+        "render_controllers": [ 
+         "controller.render.parasaurolophus",
+         "controller.render.parasaurolophus_saddle",
+         "controller.render.parasaurolophus_chest"
+     ],
+   "animations": {
+        "general": "controller.animation.parasaurolophus.general",
         "look_at_target": "animation.parasaurolophus.look_at_target",
-        "parasaurolophus_sitting": "animation.parasaurolophus.sitting",
-       "parasaurolophus_move": "animation.parasaurolophus.move",
-       "parasaurolophus_baby": "animation.parasaurolophus.baby",
-       "parasaurolophus_default": "animation.parasaurolophus.default"
-      },
-      "animation_controllers": [
-      {"general":
-"controller.animation.parasaurolophus.general"},
-   {"baby":
-"controller.animation.parasaurolophus.baby"},
-      {"default":
-"controller.animation.parasaurolophus.default"}
-      ],
-      "render_controllers": [ 
-          "controller.render.parasaurolophus",
-          "controller.render.parasaurolophus_saddle",
-          "controller.render.parasaurolophus_chest"
-      ],
+        "sit": "animation.parasaurolophus.sit",
+        "sleep": "animation.parasaurolophus.sleep",
+       "roar": "animation.parasaurolophus.roar",
+       "move": "animation.parasaurolophus.walk",
+       "default": "animation.parasaurolophus.idle",
+        "attack": "animation.parasaurolophus.attack"
+   },
+   "scripts": {
+        "scale": "0.8",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
       "spawn_egg": {
          "base_color": "#401C0D",
         "overlay_color": "#7F3919"
       }
-    }
   }
+ }
 }
+ 

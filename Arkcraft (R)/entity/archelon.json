@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:archelon",
+      "materials": { "default": "spider" },
+      "geometry": {
+        "default": "geometry.archelon"
+      },
+      "textures": {
+        "diplocaulus_green": "textures/entity/archelon/ar4",
+        "diplocaulus_albino": "textures/entity/archelon/ar3",
+        "diplocaulus_blue": "textures/entity/archelon/ar2"
+      },
+      "animations": {
+        "move": "animation.archelon.move",
+        "look_at_target": "animation.common.look_at_target",
+        "nadando": "animation.archelon.nadando"
+},
+      "animation_controllers": [
+        { "general": "controller.animation.diplocaulus.general" }
+      ],
+      "render_controllers": [ "controller.render.diplocaulus" ],
+      "spawn_egg": {
+        "base_color": "#254A00",
+        "overlay_color": "#464903"
+      }
+    }
+  }
+}

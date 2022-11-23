@@ -1,0 +1,13 @@
+{
+ "format_version": "1.10",
+ "minecraft:item": {
+  "description": {
+   "identifier": "arkcraft:shell2",
+   "category": "item"
+  },
+  "components": {
+   "minecraft:icon": "shell2",
+   "minecraft:render_offsets": "shell2"
+  }
+ }
+}

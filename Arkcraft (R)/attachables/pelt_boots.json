@@ -1,8 +1,9 @@
 {
-  "format_version": "1.8.0",
+  "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
       "identifier": "arkcraft:pelt_boots",
+      "item": { "arkcraft:pelt_boots": "query.owner_identifier == 'minecraft:player'" },
       "materials": {
         "default": "armor",
         "enchanted": "armor_enchanted"
@@ -12,10 +13,16 @@
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {
-        "default": "geometry.humanoid.armor.boots"
+        "default": "geometry.player.armor.boots"
       },
       "scripts": {
-        "parent_setup": "variable.boot_layer_visible = 0.0;"
+        "parent_setup": "variable.boot_layer_visible = 0.0;",
+        "animate": [
+          "offset"
+        ]
+      },
+      "animations": {
+        "offset": "animation.armor.boots.offset"
       },
       "render_controllers": [ "controller.render.armor" ]
     }

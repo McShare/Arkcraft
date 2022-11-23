@@ -1,0 +1,47 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:thery",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/Thery/Thery",
+    "default2": "textures/entity/Thery/Thery2",
+    "default3": "textures/entity/Thery/Thery3",
+    "default4": "textures/entity/Thery/Thery4",
+    "default5": "textures/entity/Thery/Thery5",
+    "default6": "textures/entity/Thery/Thery6"
+   },
+   "geometry": {
+    "default": "geometry.thery"
+        },
+   "render_controllers": [
+    "controller.render.thery"  
+   ],
+   "animations": {
+        "general": "controller.animation.thery.general",
+        "look_at_target": "animation.thery.look_at_target",
+        "sit": "animation.Thery.sit",
+        "sleep": "animation.Thery.sleep",
+       "roar": "animation.Thery.roar",
+       "move": "animation.Thery.walk",
+       "default": "animation.Thery.idle",
+        "attack": "animation.Thery.attack"
+   },
+   "scripts": {
+        "scale": "1.4",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#bacffc",
+        "overlay_color": "#f8fcba"
+      }
+  }
+ }
+}
+ 

@@ -4,14 +4,14 @@
   "description": {
    "identifier": "arkcraft:rosamygale",
       "materials": {
-        "default": "skeleton"
+        "default": "spider"
       }, 
    "textures": { 
     "default": "textures/entity/rosamygale/ros1",
-    "default2": "textures/entity/rosamygale/ros1",
-    "default3": "textures/entity/rosamygale/ros1",
-    "default4": "textures/entity/rosamygale/ros1",
-    "default5": "textures/entity/rosamygale/ros1",
+    "default2": "textures/entity/rosamygale/ros2",
+    "default3": "textures/entity/rosamygale/ros3",
+    "default4": "textures/entity/rosamygale/ros4",
+    "default5": "textures/entity/rosamygale/ros5",
     "default6": "textures/entity/rosamygale/ros1"
    },
    "geometry": {

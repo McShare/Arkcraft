@@ -1,36 +1,46 @@
 {
-  "format_version": "1.8.0",
+  "format_version": "1.10.0",
   "minecraft:client_entity": {
-    "description": {
-      "identifier": "arkcraft:ankylosaurus",
-      "materials": { "default": "spider" },
-      "textures": {
-        "ankylosaurus1": "textures/entity/ankylosaurus/ankylosaurus1",
-        "ankylosaurus2": "textures/entity/ankylosaurus/ankylosaurus2",
-        "ankylosaurus3": "textures/entity/ankylosaurus/ankylosaurus3"
-      },
-      "geometry": {
-        "default": "geometry.ankylosaurus"
-      },
-      "scripts": {
-        "scale": "1.0"
-      },
-      "animations": {
-        "look_at_target": "animation.common.look_at_target",
-        "sit": "animation.ankylosaurus.sit",
-       "move": "animation.ankylosaurus.move",
-        "attack": "animation.ankylosaurus.attack"
-      },
-      "animation_controllers": [
-      {"general":
-"controller.animation.ankylosaurus.general"}
-      ],
-      "render_controllers": [ "controller.render.ankylosaurus"
-      ],
-      "spawn_egg": {
-         "base_color": "#75422a",
-        "overlay_color": "#d4e8bb"
-      }
-    }
+   "description": {
+    "identifier": "arkcraft:ankylosaurus",
+       "materials": {
+         "default": "skeleton"
+       }, 
+    "textures": { 
+      "ankylosaurus1": "textures/entity/ankylosaurus/ankylosaurus1",
+      "ankylosaurus2": "textures/entity/ankylosaurus/ankylosaurus2",
+      "ankylosaurus3": "textures/entity/ankylosaurus/ankylosaurus3",
+      "ankylosaurus4": "textures/entity/ankylosaurus/ankylosaurus4",
+      "ankylosaurus5": "textures/entity/ankylosaurus/ankylosaurus5",
+      "ankylosaurus6": "textures/entity/ankylosaurus/ankylosaurus6"
+    },
+    "geometry": {
+     "default": "geometry.ankylosaurus"
+         },
+    "render_controllers": [
+     "controller.render.ankylosaurus"  
+    ],
+    "animations": {
+         "general": "controller.animation.ankylosaurus.general",
+         "look_at_target": "animation.ankylosaurus.look_at_target",
+         "sit": "animation.ankylosaurus.sit",
+         "sleep": "animation.ankylosaurus.sleep",
+        "roar": "animation.ankylosaurus.roar",
+        "move": "animation.ankylosaurus.move",
+        "default": "animation.ankylosaurus.idle",
+         "attack": "animation.ankylosaurus.attack"
+    },
+    "scripts": {
+         "scale": "0.9",
+     "animate": [
+        "general",
+        "default"
+     ] 
+    },
+       "spawn_egg": {
+        "base_color": "#b7915b",
+        "overlay_color": "#d8cd34"
+       }
+   }
   }
-}
+ }

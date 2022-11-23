@@ -26,6 +26,7 @@
 				"walk": "animation.spino.move"
 			},
 			"scripts": {
+				"scale": "0.9",
 				"pre_animation": [
 					"variable.attack = Math.sin(variable.attack_time * 100);"
 				],

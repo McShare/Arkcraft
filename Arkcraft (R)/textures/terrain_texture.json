@@ -29,20 +29,24 @@
       "grill_top":{
          "textures":"textures/blocks/grill_top"
       },
-    "arkcraft_narcoberry_stage_0": {
-      "textures": [
-        "textures/blocks/arkcraft_narcoberry_stage_0"
-      ]
-    },
-    "arkcraft_narcoberry_stage_1": {
-      "textures": [
-        "textures/blocks/arkcraft_narcoberry_stage_1"
-      ]
-    },
-    "arkcraft_narcoberry_stage_2": {
-      "textures": [
-        "textures/blocks/arkcraft_narcoberry_stage_2"
-      ]
-      }
+      "narco_shrub_0": {
+			"textures": "textures/blocks/narco_shrub_stage0"
+		},
+		"narco_shrub_1": {
+			"textures": "textures/blocks/narco_shrub_stage1"
+		},
+		"narco_shrub_2": {
+			"textures": "textures/blocks/narco_shrub_stage2"
+		},
+		"narco_shrub_3": {
+			"textures": "textures/blocks/narco_shrub_stage3"
+		},
+		"narco_bean_block": {
+			"textures": "textures/blocks/narco_bean_block"
+		},
+		"ground_narco_block": {
+			"textures": "textures/blocks/ground_narco_block"
+		}
+
    }
 }

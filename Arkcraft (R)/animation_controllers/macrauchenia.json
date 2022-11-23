@@ -2,6 +2,7 @@
   "format_version": "1.10.0",
   "animation_controllers": {
     "controller.animation.macrauchenia": {
+      "initial_state" : "default",
       "states": {
         "default": {
           "transitions": [
@@ -10,9 +11,15 @@
             } ,
             {
               "saltitont2": "(query.variant == 1)"
-            }
+            },
+            {
+							"sitting" : "query.is_baby"
+						}
           ],
              "animations": [
+              {							"move" : "query.modified_move_speed" },
+              "default",
+                       "look_at_target",
         "saltitont1"
                         ]
         },
@@ -54,8 +61,19 @@
         ],
              "animations": [
         "saltito2"
-                        ]
-        }
+        ]
+        },
+        "sitting" : {
+          "animations" : [ 
+          "sit" 
+        ],
+           "transitions" : [
+             {
+               "default" : "!query.is_baby"
+            }
+        ],
+            "blend_transition": 0.2
+       }
       }
     }
   }

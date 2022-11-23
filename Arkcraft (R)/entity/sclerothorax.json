@@ -1,0 +1,47 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:sclerothorax",
+      "materials": {
+        "default": "spider"
+      }, 
+   "textures": { 
+    "default": "textures/entity/sclerothorax/sl1",
+    "default2": "textures/entity/sclerothorax/sl2",
+    "default3": "textures/entity/sclerothorax/sl3",
+    "default4": "textures/entity/sclerothorax/sl4",
+    "default5": "textures/entity/sclerothorax/sl5",
+    "default6": "textures/entity/sclerothorax/sl6"
+   },
+   "geometry": {
+    "default": "geometry.sclerothorax"
+        },
+   "render_controllers": [
+    "controller.render.sclerothorax"  
+   ],
+   "animations": {
+        "general": "controller.animation.sclerothorax.general",
+        "look_at_target": "animation.sclerothorax.look_at_target",
+        "sit": "animation.sclerothorax.sleep",
+        "sleep": "animation.sclerothorax.sleep",
+       "roar": "animation.sclerothorax.roar",
+       "move": "animation.sclerothorax.walk",
+       "default": "animation.sclerothorax.idle",
+        "attack": "animation.sclerothorax.attack"
+   },
+   "scripts": {
+        "scale": "1.3",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#9a00bc",
+        "overlay_color": "#f9f502"
+      }
+  }
+ }
+}
+ 

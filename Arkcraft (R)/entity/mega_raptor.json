@@ -1,38 +1,47 @@
 {
-  "format_version": "1.8.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "arkcraft:mega_raptor",
-      "materials": { "default": "skeleton"
-      },
-      "textures": {
-        "mega_raptor1": "textures/entity/mega_raptor/mega_raptor1",
-        "mega_raptor2": "textures/entity/mega_raptor/mega_raptor2",
-        "mega_raptor3": "textures/entity/mega_raptor/mega_raptor3",
-        "mega_raptor4": "textures/entity/mega_raptor/mega_raptor4",
-        "mega_raptor5": "textures/entity/mega_raptor/mega_raptor5"
-    },
-      "geometry": {
-        "default": "geometry.mega_raptor"},
-      "animations": {
-        "move": "animation.mega_raptor.move",
-        "mega_raptor_default":
-        "animation.mega_raptor_default",
-        "attack": "animation.mega_raptor.attack",
-        "look_at_target": "animation.common.look_at_target"
-      },
-      "animation_controllers": [
-        { "move": "controller.animation.mega_raptor.move" },
-       { "mega_raptor_default": "controller.animation.mega_raptor_default"},
-      {"look_at_target":
-"controller.animation.humanoid.look_at_target"},
-        { "attack": "controller.animation.mega_raptor.attack" }
-      ],
-      "render_controllers": [ "controller.render.mega_raptor" ],
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:mega_raptor",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/mega_raptor/Megaraptor",
+    "default2": "textures/entity/mega_raptor/Megaraptor2",
+    "default3": "textures/entity/mega_raptor/Megaraptor3",
+    "default4": "textures/entity/mega_raptor/Megaraptor4",
+    "default5": "textures/entity/mega_raptor/Megaraptor5",
+    "default6": "textures/entity/mega_raptor/Megaraptor6"
+   },
+   "geometry": {
+    "default": "geometry.mega_raptor"
+        },
+   "render_controllers": [
+    "controller.render.mega_raptor"  
+   ],
+   "animations": {
+        "general": "controller.animation.mega_raptor.general",
+        "look_at_target": "animation.mega_raptor.look_at_target",
+        "sit": "animation.mega_raptor.sit",
+        "sleep": "animation.mega_raptor.sleep",
+       "roar": "animation.mega_raptor.roar",
+       "move": "animation.mega_raptor.move",
+       "default": "animation.mega_raptor.idle",
+        "attack": "animation.mega_raptor.attack"
+   },
+   "scripts": {
+        "scale": "1.5",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
       "spawn_egg": {
-         "base_color": "#10A9C4",
-        "overlay_color": "#E8D30B"}
-      
-    }
+         "base_color": "#5d9e37",
+        "overlay_color": "#686b66"
+      }
   }
+ }
 }
+ 

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "arkcraft:backpack",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/models/backpack"
+      },
+      "geometry": {
+        "default": "geometry.backpack"
+      },
+      "animations": {
+        "backpack": "animation.backpack.first_person"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "backpack": "query.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": ["controller.render.default"]
+    }
+  }
+}

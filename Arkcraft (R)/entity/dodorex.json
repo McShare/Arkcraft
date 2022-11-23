@@ -1,0 +1,47 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:dodorex",
+      "materials": {
+        "default": "spider"
+      }, 
+   "textures": { 
+    "default": "textures/entity/dodorex/dodorex",
+    "default2": "textures/entity/dodorex/dodorex",
+    "default3": "textures/entity/dodorex/dodorex",
+    "default4": "textures/entity/dodorex/dodorex",
+    "default5": "textures/entity/dodorex/dodorex",
+    "default6": "textures/entity/dodorex/dodorex"
+   },
+   "geometry": {
+    "default": "geometry.dodorex"
+        },
+   "render_controllers": [
+    "controller.render.giga"  
+   ],
+   "animations": {
+        "general": "controller.animation.oxalaia.general",
+        "look_at_target": "animation.dodorex.look_at_target",
+        "sit": "animation.dodorex.sleep",
+        "sleep": "animation.dodorex.sleep",
+       "roar": "animation.dodorex.attack",
+       "move": "animation.dodorex.move",
+       "default": "animation.dodorex.idle",
+        "attack": "animation.dodorex.attack"
+   },
+   "scripts": {
+        "scale": "1.95",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#9c0343",
+        "overlay_color": "#b1b5b5"
+      }
+  }
+ }
+}
+ 

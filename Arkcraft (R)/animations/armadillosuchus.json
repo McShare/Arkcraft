@@ -1,0 +1,182 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.armadillosuchus.attack": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"Cola": {
+					"rotation": [-60, 0, 0],
+					"position": [0, 15.7, -13.5],
+					"scale": [1.4, 1.1, 1.1]
+				},
+				"Ptc2": {
+					"rotation": [-97.5, 0, 0],
+					"position": [0, 2, 0]
+				},
+				"Ptc3": {
+					"rotation": [-12.5, 0, 0],
+					"position": [0, 0, -2]
+				},
+				"Armadura": {
+					"position": [0, -9.6, 1.2],
+					"scale": [1.1, 1.5, 1.06]
+				},
+				"Cuello": {
+					"rotation": [18, 0, 0],
+					"position": [0, 0, 2]
+				},
+				"Cabeza": {
+					"rotation": [97.5, 0, 0],
+					"position": [0, -4, 8]
+				},
+				"Brazos": {
+					"position": [0, 8, 0],
+					"scale": [1, 0.4, 1]
+				},
+				"Piernas": {
+					"position": [0, 8, -4],
+					"scale": [1, 0.4, 1]
+				},
+				"tongue": {
+					"position": [0, -12, -1],
+					"scale": [1, 20, 1]
+				},
+				"bone": {
+					"scale": [1.5, 2.1, 1.7]
+				},
+				"bone2": {
+					"position": [0, -4, 2],
+					"scale": [1, 1.2, 1.2]
+				}
+			}
+		},
+		"animation.armadillosuchus.sleep": {
+			"loop": true,
+			"bones": {
+				"Cuerpo": {
+					"position": [0, -7, 0]
+				},
+				"Cola": {
+					"rotation": [-11.24538, 24.3683, -5.7632],
+					"position": [-3, 1, -4]
+				},
+				"Cabeza": {
+					"rotation": [32.5, 0, 0],
+					"position": [0, -2, 5],
+					"scale": [1, 1, 0.7]
+				},
+				"Brazo1": {
+					"scale": [1, 0.5, 1]
+				},
+				"Brazo2": {
+					"scale": [1, 0.5, 1]
+				},
+				"Pierna1": {
+					"scale": [1, 0.5, 1]
+				},
+				"Pierna2": {
+					"scale": [1, 0.5, 1]
+				},
+				"Ptc2": {
+					"rotation": [0, 0, -82.5]
+				},
+				"Cuello": {
+					"rotation": [4.84347, 1.52928, -73.27393]
+				},
+				"Brazos": {
+					"position": [0, -4, 0]
+				},
+				"Piernas": {
+					"position": [0, -5, 0]
+				}
+			}
+		},
+		"animation.armadillosuchus.sit": {
+			"loop": true,
+			"bones": {
+				"Cuerpo": {
+					"position": [0, -7, 0]
+				},
+				"Brazo1": {
+					"scale": [1, 0.5, 1]
+				},
+				"Brazo2": {
+					"scale": [1, 0.5, 1]
+				},
+				"Pierna1": {
+					"scale": [1, 0.5, 1]
+				},
+				"Pierna2": {
+					"scale": [1, 0.5, 1]
+				},
+				"Brazos": {
+					"position": [0, -4, 0]
+				},
+				"Piernas": {
+					"position": [0, -5, 0]
+				}
+			}
+		},
+		"animation.armadillosuchus.walk": {
+			"loop": true,
+			"animation_length": 2.04167,
+			"bones": {
+				"Cuerpo": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [180, 0, 0],
+						"2.0": [360, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, 9.09, 9],
+						"1.0": [0, 19, 0],
+						"1.5": [0, 9.09, -8],
+						"2.0": [0, 0, 0]
+					}
+				},
+				"Cola": {
+					"rotation": [-60, 0, 0],
+					"position": [0, 15.7, -13.5],
+					"scale": [1.4, 1.1, 1.1]
+				},
+				"bone2": {
+					"position": [0, -4, 2],
+					"scale": [1, 1.2, 1.2]
+				},
+				"Ptc2": {
+					"rotation": [-97.5, 0, 0],
+					"position": [0, 2, 0]
+				},
+				"Ptc3": {
+					"rotation": [-12.5, 0, 0],
+					"position": [0, 0, -2]
+				},
+				"Armadura": {
+					"position": [0, -9.6, 1.2],
+					"scale": [1.1, 1.5, 1.06]
+				},
+				"Cuello": {
+					"rotation": [18, 0, 0],
+					"position": [0, 0, 2]
+				},
+				"bone": {
+					"scale": [1.5, 2.1, 1.7]
+				},
+				"Cabeza": {
+					"rotation": [97.5, 0, 0],
+					"position": [0, -4, 8]
+				},
+				"Brazos": {
+					"position": [0, 7, 6],
+					"scale": 0
+				},
+				"Piernas": {
+					"position": [0, 7, -6],
+					"scale": 0
+				}
+			}
+		}
+	}
+}

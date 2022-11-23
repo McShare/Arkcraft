@@ -8,16 +8,52 @@
         ],
       "materials": [ { "*": "Material.default"}
     ],
-      "textures": [ "Texture.macrauchenia_normal" ]
+      "textures": [ "Texture.macrauchenia1" ]
     },
-    "controller.render.macrauchenia_fat": {
-      "geometry": "Geometry.macrauchenia_fat",
+    "controller.render.macrauchenia_normal2": {
+      "geometry": "Geometry.macrauchenia_normal",
       "part_visibility": [ 
         { "*": "query.variant == 1" }
         ],
       "materials": [ { "*": "Material.default"}
     ],
-      "textures": [ "Texture.macrauchenia_fat" ]
+      "textures": [ "Texture.macrauchenia2" ]
+    },
+    "controller.render.macrauchenia_normal3": {
+      "geometry": "Geometry.macrauchenia_normal",
+      "part_visibility": [ 
+        { "*": "query.variant == 2" }
+        ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Texture.macrauchenia3" ]
+    },
+    "controller.render.macrauchenia_fat": {
+      "geometry": "Geometry.macrauchenia_fat",
+      "part_visibility": [ 
+        { "*": "query.variant == 3" }
+        ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Texture.macrauchenia4" ]
+    },
+    "controller.render.macrauchenia_fat2": {
+      "geometry": "Geometry.macrauchenia_fat",
+      "part_visibility": [ 
+        { "*": "query.variant == 4" }
+        ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Texture.macrauchenia5" ]
+    },
+    "controller.render.macrauchenia_fat3": {
+      "geometry": "Geometry.macrauchenia_fat",
+      "part_visibility": [ 
+        { "*": "query.variant == 5" }
+        ],
+      "materials": [ { "*": "Material.default"}
+    ],
+      "textures": [ "Texture.macrauchenia6" ]
     },
     "controller.render.macrauchenia_saddle": {
       "geometry": "Geometry.saddle",

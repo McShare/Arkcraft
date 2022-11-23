@@ -1,0 +1,47 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:pyroraptor",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/pyro/pyro1",
+    "default2": "textures/entity/pyro/pyro2",
+    "default3": "textures/entity/pyro/pyro3",
+    "default4": "textures/entity/pyro/pyro4",
+    "default5": "textures/entity/pyro/pyro5",
+    "default6": "textures/entity/pyro/pyro6"
+   },
+   "geometry": {
+    "default": "geometry.pyroraptor"
+        },
+   "render_controllers": [
+    "controller.render.pyroraptor"  
+   ],
+   "animations": {
+        "general": "controller.animation.pyroraptor.general",
+        "look_at_target": "animation.pyroraptor.look_at_target",
+        "sit": "animation.Pyroraptor.sit",
+        "sleep": "animation.Pyroraptor.sleep",
+       "roar": "animation.Pyroraptor.roar",
+       "move": "animation.Pyroraptor.walk",
+       "default": "animation.Pyroraptor.idle",
+        "attack": "animation.Pyroraptor.attack"
+   },
+   "scripts": {
+        "scale": "1.0",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#f90000",
+        "overlay_color": "#cccccc"
+      }
+  }
+ }
+}
+ 

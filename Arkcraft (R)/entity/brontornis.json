@@ -1,0 +1,46 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:brontornis",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "variant1": "textures/entity/brontornis/b1",
+    "variant2": "textures/entity/brontornis/b2",
+    "variant3": "textures/entity/brontornis/b3",
+    "variant4": "textures/entity/brontornis/b4",
+    "variant5": "textures/entity/brontornis/b5"
+   },
+   "geometry": {
+    "default": "geometry.brontornis"
+        },
+   "render_controllers": [
+    "controller.render.shringasaurus"  
+   ],
+   "animations": {
+        "general": "controller.animation.raptor.general",
+        "look_at_target": "animation.brontornis.look_at_target",
+        "sit": "animation.brontornis.sit",
+        "sleep": "animation.brontornis.sit",
+       "roar": "animation.brontornis.roar",
+       "move": "animation.brontornis.walk",
+       "default": "animation.brontornis.idle",
+        "attack": "animation.brontornis.attack"
+   },
+   "scripts": {
+        "scale": "0.7",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#a65e1b",
+        "overlay_color": "#123754"
+      }
+  }
+ }
+}
+ 

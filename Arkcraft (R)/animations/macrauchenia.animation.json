@@ -167,6 +167,35 @@
 					"rotation": [17.5, 0, 0]
 				}
 			}
+		},
+		"animation.macrauchenia.sit": {
+			"loop": true,
+			"bones": {
+				"all": {
+					"position": [0, -14, 0]
+				},
+				"legrightfront": {
+					"rotation": [-82.5, 0, 0]
+				},
+				"rightlegback": {
+					"rotation": [-79.55418, 11.73507, 4.3361]
+				},
+				"legleftfront3": {
+					"rotation": [-82.5, 0, 0]
+				},
+				"tail": {
+					"position": [0, 0, -4]
+				},
+				"leftlegback4": {
+					"rotation": [-78.77804, -17.24991, -0.49339]
+				},
+				"body": {
+					"position": [0, 0, -5]
+				},
+				"allneck": {
+					"position": [0, 0, -5]
+				}
+			}
 		}
 	}
 }

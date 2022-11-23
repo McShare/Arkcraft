@@ -1,9 +1,9 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "§gArkcraft 2.5.2 §l§6Resource",
-		"description": "§3Created by Alex587 and CopperLord44, with help of Halo333, Jellal and EvilRex",
-		"uuid": "d7649336-d860-4080-bb22-831c1364a972",
+		"name": "§gArkcraft 3.0.0.7 §l§6Resource",
+		"description": "§3Created by CopperLord44, with the Discord Staff (Credits on MCPEDL)",
+		"uuid": "799f8b99-9b17-4aaf-b3e2-3c38c70a84af",
 		"version": [
 			1,
 			0,
@@ -18,7 +18,7 @@
 	"modules": [
 		{
 			"type": "resources",
-			"uuid": "0476d791-4fb7-47bb-b3e8-21a1265e7b98",
+			"uuid": "a3cd5ee9-27d0-4260-bb94-b4e54b4b344d",
 			"version": [
 				1,
 				0,

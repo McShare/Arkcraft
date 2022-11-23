@@ -13,7 +13,7 @@
 				"variant4": "textures/entity/shadowmane/4"
 			},
 			"geometry": {
-				"default": "geometry.shadowmane"
+				"default": "geometry.fshadowmane"
 			},
 			"animations": {
 				"idle": "animation.shadowmane.idle",

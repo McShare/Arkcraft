@@ -1,38 +1,49 @@
-
 {
-  "format_version": "1.10.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "arkcraft:carnotaurus",
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:carnotaurus",
       "materials": {
         "default": "spider"
-      },            
-      "textures": {
-        "default": "textures/entity/carnotaurus/carnotaurus1",
-        "default2": "textures/entity/carnotaurus/carnotaurus2",
-        "default3": "textures/entity/carnotaurus/carnotaurus3"
-      },
-      "geometry": {
-        "default": "geometry.carnotaurus"
-      },
-      "animations": {
-        "walk": "animation.skorpiovenator.move",
-      "default":
-        "animation.skorpiovenator_default",
-        "look_at_target": "animation.common.look_at_target"
-      },
-      "scripts": {
-        "animate": [
-       "default",
-          { "walk": "query.modified_move_speed" },
-          "look_at_target"
-        ]
-      },
-      "render_controllers": [ "controller.render.skorpiovenator" ],
+      }, 
+   "textures": { 
+    "default": "textures/entity/carnotaurus/carno (1)",
+    "default2": "textures/entity/carnotaurus/carno (2)",
+    "default3": "textures/entity/carnotaurus/carno (3)",
+    "default4": "textures/entity/carnotaurus/carno (4)",
+    "default5": "textures/entity/carnotaurus/carno (5)",
+    "default6": "textures/entity/carnotaurus/carno (6)",
+    "default7": "textures/entity/carnotaurus/carno (7)",
+    "default8": "textures/entity/carnotaurus/carno (8)"
+   },
+   "geometry": {
+    "default": "geometry.carnotaurus"
+        },
+   "render_controllers": [
+    "controller.render.carnotaurus"  
+   ],
+   "animations": {
+        "general": "controller.animation.carnotaurus.general",
+        "look_at_target": "animation.carnotaurus.look_at_target",
+        "sit": "animation.carnotaurus.sit",
+        "sleep": "animation.carnotaurus.sleep",
+       "roar": "animation.carnotaurus.roar",
+       "move": "animation.carnotaurus.move",
+       "default": "animation.carnotaurus.idle",
+        "attack": "animation.carnotaurus.attack"
+   },
+   "scripts": {
+        "scale": "0.9",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
       "spawn_egg": {
-         "base_color": "#960505",
-        "overlay_color": "#C0C0C"
+         "base_color": "#5d1e37",
+        "overlay_color": "#696b66"
       }
-    }
   }
+ }
 }
+ 

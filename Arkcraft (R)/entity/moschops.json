@@ -1,0 +1,46 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:moschops",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "variant1": "textures/entity/moschops/m1",
+    "variant2": "textures/entity/moschops/m2",
+    "variant3": "textures/entity/moschops/m3",
+    "variant4": "textures/entity/moschops/m6",
+    "variant5": "textures/entity/moschops/m5"
+   },
+   "geometry": {
+    "default": "geometry.moschops"
+        },
+   "render_controllers": [
+    "controller.render.shringasaurus"  
+   ],
+   "animations": {
+        "general": "controller.animation.raptor.general",
+        "look_at_target": "animation.moschops.look_at_target",
+        "sit": "animation.moschops.sit",
+        "sleep": "animation.moschops.sleep",
+       "roar": "animation.moschops.roar",
+       "move": "animation.moschops.walk",
+       "default": "animation.moschops.idle",
+        "attack": "animation.moschops.attack"
+   },
+   "scripts": {
+        "scale": "1.7",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#a65e1b",
+        "overlay_color": "#123754"
+      }
+  }
+ }
+}
+ 

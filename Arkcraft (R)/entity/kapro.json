@@ -1,0 +1,47 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:kapro",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "variant1": "textures/entity/kapro/b1",
+    "variant2": "textures/entity/kapro/b2",
+    "variant3": "textures/entity/kapro/b3",
+    "variant4": "textures/entity/kapro/b4",
+    "variant5": "textures/entity/kapro/b5",
+    "variant6": "textures/entity/kapro/b1"
+   },
+   "geometry": {
+    "default": "geometry.kapro"
+        },
+   "render_controllers": [
+    "controller.render.galveosaurus"  
+   ],
+   "animations": {
+        "general": "controller.animation.raptor.general",
+        "look_at_target": "animation.kapro.look_at_target",
+        "sit": "animation.kapro.sit",
+        "sleep": "animation.kapro.sit",
+       "roar": "animation.kapro.attack",
+       "move": "animation.kapro.walk",
+       "default": "animation.kapro.idle",
+        "attack": "animation.kapro.attack"
+   },
+   "scripts": {
+        "scale": "1.1",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#a01e1b",
+        "overlay_color": "#100754"
+      }
+  }
+ }
+}
+ 

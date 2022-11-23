@@ -77,7 +77,10 @@
 			"initial_state" : "default",
 			"states" : {
 				"attacking" : {
-					"animations" : [ "attack" ],
+					"animations" : [
+					    
+					    {"move" : "query.modified_move_speed" },
+					    "attack" ],
 					"transitions" : [
 						{
 							"default" : "variable.attack_time < 0.1"

@@ -4,8 +4,8 @@
 		"texturewidth": 64,
 		"textureheight": 64,
 		"visible_bounds_width": 3,
-		"visible_bounds_height": 3,
-		"visible_bounds_offset": [0, 0.5, 0],
+		"visible_bounds_height": 4,
+		"visible_bounds_offset": [0, 1, 0],
 		"bones": [
 			{
 				"name": "bone5",
@@ -84,10 +84,9 @@
 				"rotation": [0, 0, 45]
 			},
 			{
-	 			"name": "head",
+				"name": "head",
 				"parent": "bone8",
 				"pivot": [-12.2981, 9.11308, 0],
-				"rotation": [0, 0, 0],
 				"cubes": [
 					{"origin": [-14.74526, 5.53269, -1], "size": [3, 3, 2], "uv": [0, 24]},
 					{"origin": [-13.74526, 0.53269, -0.5], "size": [1, 6, 1], "uv": [4, 29], "inflate": -0.1}

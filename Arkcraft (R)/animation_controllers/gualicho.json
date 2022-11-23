@@ -37,7 +37,10 @@
 					]
 				},
 				"attack" : {
-					"animations" : [ "attack" ],
+					"animations" : [
+					    
+					    {"move" : "query.modified_move_speed" },
+					    "attack" ],
 					"transitions" : [
 						{
 							"default" : "(query.is_delayed_attacking == 0) && (query.all_animations_finished) || (!query.is_illager_captain) && (query.all_animations_finished)"

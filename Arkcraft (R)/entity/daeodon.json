@@ -5,7 +5,13 @@
       "identifier": "arkcraft:daeodon",
       "materials": { "default": "spider" },
       "textures": {
-        "default": "textures/entity/daeodon/daeodon_default",
+        "default1": "textures/entity/daeodon/dae1",
+        "default2": "textures/entity/daeodon/dae2",
+        "default3": "textures/entity/daeodon/dae3",
+        "default4": "textures/entity/daeodon/dae4",
+        "default5": "textures/entity/daeodon/dae5",
+        "default6": "textures/entity/daeodon/dae6",
+        "default7": "textures/entity/daeodon/dae7",
         "saddle": "textures/entity/saddle/daeodon_saddle"
       },
       "geometry": {

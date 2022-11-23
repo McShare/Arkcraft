@@ -1,0 +1,49 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:wakaleo",
+      "materials": {
+        "default": "skeleton" 
+      }, 
+   "textures": {
+    "variant1": "textures/entity/wakaleo/wakaleo1",
+    "variant2": "textures/entity/wakaleo/wakaleo2",
+    "variant3": "textures/entity/wakaleo/wakaleo3",
+    "variant4": "textures/entity/wakaleo/wakaleo4",
+    "variant5": "textures/entity/wakaleo/wakaleo5",
+    "variant6": "textures/entity/wakaleo/wakaleo6"
+   },
+   "geometry": { 
+    "default": "geometry.wakaleo"
+   }, 
+   "render_controllers": [
+    "controller.render.wakaleo"
+   ],
+   "animations": {
+        "escalando": "controller.animation.wakaleo.escalando",
+       "normal": "animation.wakaleo.normal",
+      "pose1": "animation.wakaleo.escalar",
+        "general": "controller.animation.wakaleo.general",
+        "sit": "animation.wakaleo.sit",
+        "sleep": "animation.wakaleo.sleep",
+       "move": "animation.wakaleo.walk",
+       "run": "animation.wakaleo.walk",
+       "default": "animation.wakaleo.idle",
+        "attack": "animation.wakaleo.attack"
+   }, 
+   "scripts": {
+        "scale": "0.35",
+    "animate": [
+       "general",
+       "escalando"
+    ]
+   },
+      "spawn_egg": {
+         "base_color": "#362101",
+        "overlay_color": "#b87306"
+      }
+  }
+ }
+}
+ 

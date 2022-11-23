@@ -6,7 +6,9 @@
         "textures": {
           "Array.skin": [
             "Texture.thorny_dragon1",
-            "Texture.thorny_dragon2"
+            "Texture.thorny_dragon2",
+            "Texture.thorny_dragon3",
+            "Texture.thorny_dragon4"
           ]
         }
       },
@@ -17,8 +19,8 @@
  { "cuerda*": "query.is_saddled"},
  { "cuerda2*": "query.is_saddled"},
  { "soporte*": "query.variant == 1 || query.is_saddled"},
- { "techo0*": "query.variant == 1"},
- { "techo2*": "query.variant == 1"},
+ { "casita*": "query.variant == 1"},
+ { "Accesorios*": "query.variant == 1"},
  { "techo3*": "query.variant == 1"},
  { "techo5*": "query.variant == 1"},
  { "techo8*": "query.variant == 1"},

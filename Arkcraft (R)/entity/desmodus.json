@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "arkcraft:desmodus",
+      "materials": { "default": "skeleton"
+      },
+      "textures": {
+        "color_1": "textures/entity/desmodus/desmodus1",
+        "color_2": "textures/entity/desmodus/desmodus2",
+        "color_3": "textures/entity/desmodus/desmodus3",
+        "color_4": "textures/entity/desmodus/desmodus4",
+        "color_5": "textures/entity/desmodus/desmodus5",
+        "color_6": "textures/entity/desmodus/desmodus6"
+      },
+      "geometry": {
+        "default": "geometry.desmodus"
+      },
+      "scripts": {
+           "scale": "1.2"
+      },
+	"sound_effects": {
+	"volando2": "mob.ptera.fly"
+	},
+      "animations": {
+        "move": "animation.desmodus.move",
+        "estatica": "animation.desmodus.estatica",
+        "volando": "animation.desmodus.fly",
+        "volando2": "animation.argentavis.volando2", 
+        "sit": "animation.desmodus.sit",
+	"attack": "animation.desmodus.fly_attack"
+},
+      "animation_controllers": [
+        { "general": "controller.animation.ptera.general" }
+      ],
+      "render_controllers": [ "controller.render.desmodus" ],
+      "spawn_egg": {
+        "base_color": "#305170",
+        "overlay_color": "#ad2663"
+      }
+    }
+  }
+}

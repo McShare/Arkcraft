@@ -16,6 +16,176 @@
 			"textures": [
 				"textures/items/ark_crossbow"
 			]
+    },
+    "tame_guide": {
+			"textures": [
+				"textures/items/tame_guide"
+			]
+    },
+    "shell2": {
+			"textures": [
+				"textures/items/shell2"
+			]
+    },
+    "spike": {
+			"textures": [
+				"textures/items/spike"
+			]
+    },
+		"ark_crossbow_a": {
+			"textures": [
+				"textures/items/ark_crossbow_a"
+			]
+    },
+		"armadillo_chestplate": {
+			"textures": [
+				"textures/items/armadillo_chestplate"
+			]
+    },
+		"friendly_incense_pot": {
+			"textures": [
+				"textures/items/friendly_incense_pot"
+			]
+    },
+		"follow_horn": {
+			"textures": [
+				"textures/items/follow_horn"
+			]
+    },
+		"angry_incense_pot": {
+			"textures": [
+				"textures/items/angry_incense_pot"
+			]
+    },
+		"dodorex_helmet": {
+			"textures": [
+				"textures/items/dodorex_helmet"
+			]
+    },
+		"oil_jar": {
+			"textures": [
+				"textures/items/oil_jar"
+			]
+    },
+		"food_jar": {
+			"textures": [
+				"textures/items/food_jar"
+			]
+    },
+		"quill_lot": {
+			"textures": [
+				"textures/items/quill_lot"
+			]
+    },
+    "ark_fish_cooked": {
+      "textures": [
+        "textures/items/pez_cocido"
+      ]
+    },
+    "leche": {
+      "textures": [
+        "textures/items/leche"
+      ]
+    },
+    "ark_cactus": {
+      "textures": [
+        "textures/items/cactus"
+      ]
+    },
+    "thery_hoe": {
+      "textures": [
+        "textures/items/thery_hoe"
+      ]
+    },
+    "ark_fish_raw": {
+      "textures": [
+        "textures/items/pez"
+      ]
+    },
+    "long_helmet": {
+      "textures": [
+        "textures/items/armadura/long_helmet"
+      ]
+    },
+		"ark_bow": {
+			"textures": [
+				"textures/items/ark_bow"
+			]
+		},
+		"tek_claws": {
+			"textures": [
+				"textures/items/tek_claws"
+			]
+		},
+		"ark_drill": {
+			"textures": [
+				"textures/items/drill"
+			]
+		},
+		"taza": {
+			"textures": [
+				"textures/items/taza"
+			]
+		},
+		"bola": {
+			"textures": [
+				"textures/items/bola"
+			]
+		},
+		"backpack": {
+			"textures": [
+				"textures/items/backpack"
+			]
+		},
+		"stimulant": {
+			"textures": [
+				"textures/items/stimulant"
+			]
+		},
+		"fishingspear": {
+			"textures": [
+				"textures/items/spear"
+			]
+		},
+		"fishnet": {
+			"textures": [
+				"textures/items/fishnet"
+			]
+		},
+		"sickle": {
+			"textures": [
+				"textures/items/sickle"
+			]
+    },
+		"sickle2": {
+			"textures": [
+				"textures/items/sickle_diamond"
+			]
+    },
+		"sickle3": {
+			"textures": [
+				"textures/items/sickle_nether"
+			]
+		},
+		"dodo_bread": {
+			"textures": [
+				"textures/items/megapan"
+			]
+		},
+		"hamburger": {
+			"textures": [
+				"textures/items/burger"
+			]
+		},
+		"ark_meat_special": {
+			"textures": [
+				"textures/items/ark_meat_special"
+			]
+		},
+		"ark_longneck": {
+			"textures": [
+				"textures/items/longneck"
+			]
 		},
 		"ark_crossbow_charged": {
 			"textures": [
@@ -49,6 +219,9 @@
       "arkcraft_narcoberry": {
       "textures": "textures/items/arkcraft_narcoberry"
     },
+      "santiagos_axe": {
+      "textures": "textures/items/santiagos_axe"
+    },
     "ark_meat_cooked": {
       "textures": "textures/items/pamobile/arkcraft_ark_meat_cooked"
     },
@@ -67,17 +240,29 @@
     "pelt_boots": {
       "textures": "textures/items/armadura/pelt_boots"
     },
-    "cloth_helmet": {
-      "textures": "textures/items/armadura/cloth_helmet"
+    "dessert_helmet": {
+      "textures": "textures/items/armadura/dessert_helmet"
     },
-    "cloth_chestplate": {
-      "textures": "textures/items/armadura/cloth_chestplate"
+    "dessert_chestplate": {
+      "textures": "textures/items/armadura/dessert_chestplate"
     },
-    "cloth_leggings": {
-      "textures": "textures/items/armadura/cloth_leggings"
+    "dessert_leggings": {
+      "textures": "textures/items/armadura/dessert_leggings"
     },
-    "cloth_boots": {
-      "textures": "textures/items/armadura/cloth_boots"
+    "dessert_boots": {
+      "textures": "textures/items/armadura/dessert_boots"
+     },
+    "shadow_helmet": {
+      "textures": "textures/items/armadura/shadow_helmet"
+    },
+    "shadow_chestplate": {
+      "textures": "textures/items/armadura/shadow_chestplate"
+    },
+    "shadow_leggings": {
+      "textures": "textures/items/armadura/shadow_leggings"
+    },
+    "shadow_boots": {
+      "textures": "textures/items/armadura/shadow_boots"
     },
     "egg_ammonite_friend": {
       "textures": "textures/items/egg_ammonite_friend"
@@ -264,9 +449,6 @@
  },
   "nightvision": {
    "textures": "textures/items/armadura/nightvision"
- },
-  "tek_claws": {
-   "textures": "textures/items/armadura/tekclaws"
  },
   "toxikarp": {
    "textures": "textures/items/armadura/toxikarp"

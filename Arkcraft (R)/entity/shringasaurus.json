@@ -1,0 +1,46 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:shringasaurus",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "variant1": "textures/entity/shringasaurus/shringasaurus1",
+    "variant2": "textures/entity/shringasaurus/shringasaurus2",
+    "variant3": "textures/entity/shringasaurus/shringasaurus3",
+    "variant4": "textures/entity/shringasaurus/shringasaurus4",
+    "variant5": "textures/entity/shringasaurus/shringasaurus5"
+   },
+   "geometry": {
+    "default": "geometry.shringasaurus"
+        },
+   "render_controllers": [
+    "controller.render.shringasaurus"  
+   ],
+   "animations": {
+        "general": "controller.animation.shringasaurus.general",
+        "look_at_target": "animation.shringasaurus.look_at_target",
+        "sit": "animation.shringasaurus.sit",
+        "sleep": "animation.shringasaurus.sleep",
+       "roar": "animation.shringasaurus.roar",
+       "move": "animation.shringasaurus.walk",
+       "default": "animation.shringasaurus.idle",
+        "attack": "animation.shringasaurus.attack"
+   },
+   "scripts": {
+        "scale": "0.9",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#a65e1b",
+        "overlay_color": "#123754"
+      }
+  }
+ }
+}
+ 

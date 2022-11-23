@@ -1,10 +1,33 @@
 {
 	"format_version": "1.8.0",
 	"render_controllers": {
-    "controller.render.phiomia": {
-      "geometry": "Geometry.default",
-      "materials": [ { "*": "Material.default" } ],
-      "textures": [ "Texture.default" ]
-		} 
+		"controller.render.phiomia": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.default",
+						"Texture.default2",
+						"Texture.default3",
+						"Texture.default4",
+						"Texture.default5",
+						"Texture.default6"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+      "part_visibility": [ { 
+          "montura*": "query.is_saddled" ,
+          "cabello*": "!query.is_saddled" 
+      }
+      ], 
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[query.variant]"
+			]
+		}
 	}
 }

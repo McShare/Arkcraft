@@ -1,0 +1,47 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:oxalaia",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/oxalaia/oxalaia1",
+    "default2": "textures/entity/oxalaia/oxalaia2",
+    "default3": "textures/entity/oxalaia/oxalaia3",
+    "default4": "textures/entity/oxalaia/oxalaia4",
+    "default5": "textures/entity/oxalaia/oxalaia5",
+    "default6": "textures/entity/oxalaia/oxalaia6"
+   },
+   "geometry": {
+    "default": "geometry.oxalaia"
+        },
+   "render_controllers": [
+    "controller.render.oxalaia"  
+   ],
+   "animations": {
+        "general": "controller.animation.oxalaia.general",
+        "look_at_target": "animation.oxalaia.look_at_target",
+        "sit": "animation.oxalaia.sit",
+        "sleep": "animation.oxalaia.sleep",
+       "roar": "animation.oxalaia.attack",
+       "move": "animation.oxalaia.walk",
+       "default": "animation.oxalaia.idle",
+        "attack": "animation.oxalaia.attack"
+   },
+   "scripts": {
+        "scale": "1.4",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#0214dd",
+        "overlay_color": "#a1f4fc"
+      }
+  }
+ }
+}
+ 

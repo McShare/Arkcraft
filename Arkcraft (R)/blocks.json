@@ -14,20 +14,21 @@
          "up":"smithy_top",
          "west":"smithy_side"
 	         }
-        },
-  "arkcraft:narcoberry": {
-    "textures": "arkcraft_narcoberry_stage_0",
-    "sound": "grass"
-        },
+         },
+         "arkcraft:narco_shrub": {
+            "sound": "sweet_berry_bush",
+            "textures": "narco_plant_0"
+         },
+        
    "arkcraft:grill":{
       "sound":"stone",
       "textures":{
          "down":"grill_bottom",
-         "east":"grill_side",
-         "north":"grill_side",
+         "east":"grill_front",
+         "north":"grill_front",
          "south":"grill_front",
          "up":"grill_top",
-         "west":"grill_side"
+         "west":"grill_front"
       }
    }
 } 

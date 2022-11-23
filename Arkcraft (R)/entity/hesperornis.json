@@ -8,13 +8,16 @@
         "legs": "chicken_legs"
       },
       "textures": {
-        "default": "textures/entity/hesperornis"
+        "default": "textures/entity/hesperornis/hesperornis",
+        "default2": "textures/entity/hesperornis/hesperornis2",
+        "default3": "textures/entity/hesperornis/hesperornis3"
       },
       "geometry": {
         "default": "geometry.hesperornis"
       },
       "animations": {
         "move": "animation.hesperornis.move",
+        "complete": "animation.hesperornis.complete",
         "hesperornis_default":
         "animation.hesperornis_default",
         "general": "animation.hesperornis.general",
@@ -29,7 +32,7 @@
         ]
       },
       
-      "render_controllers": [ "controller.render.chicken" ],
+      "render_controllers": [ "controller.render.hesperornis" ],
       "spawn_egg": {
          "base_color": "#68AD9B",
         "overlay_color": "#6B422C"

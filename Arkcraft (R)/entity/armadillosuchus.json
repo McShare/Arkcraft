@@ -1,0 +1,47 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:armadillosuchus",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/armadillosuchus/armadillosuchus1",
+    "default2": "textures/entity/armadillosuchus/armadillosuchus2",
+    "default3": "textures/entity/armadillosuchus/armadillosuchus3",
+    "default4": "textures/entity/armadillosuchus/armadillosuchus4",
+    "default5": "textures/entity/armadillosuchus/armadillosuchus5",
+    "default6": "textures/entity/armadillosuchus/armadillosuchus6"
+   },
+   "geometry": {
+    "default": "geometry.armadillosuchus"
+        },
+   "render_controllers": [
+    "controller.render.armadillosuchus"  
+   ],
+   "animations": {
+        "general": "controller.animation.armadillosuchus.general",
+        "look_at_target": "animation.armadillosuchus.look_at_target",
+        "sit": "animation.armadillosuchus.sit",
+        "sleep": "animation.armadillosuchus.sleep",
+       "roar": "animation.armadillosuchus.roar",
+       "move": "animation.armadillosuchus.walk",
+       "default": "animation.armadillosuchus.idle",
+        "attack": "animation.armadillosuchus.attack"
+   },
+   "scripts": {
+        "scale": "0.9",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#ccad53",
+        "overlay_color": "#686b66"
+      }
+  }
+ }
+}
+ 

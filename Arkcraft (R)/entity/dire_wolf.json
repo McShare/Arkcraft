@@ -1,39 +1,49 @@
-
 {
-  "format_version": "1.10.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "arkcraft:dire_wolf",
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:dire_wolf",
       "materials": {
-        "default": "spider"
-      },            
-      "textures": {
-        "pelaje_rojo": "textures/entity/dire_wolf/pelaje_rojo",
-      "pelaje_cafe": "textures/entity/dire_wolf/pelaje_cafe",
-        "pelaje_negro": "textures/entity/dire_wolf/pelaje_negro",
-      "pelaje_amarillo": "textures/entity/dire_wolf/pelaje_amarillo",
-        "pelaje_blanco": "textures/entity/dire_wolf/pelaje_blanco",
-      "pelaje_naranja": "textures/entity/dire_wolf/pelaje_naranja"
-
-      },
-      "geometry": {
-        "default": "geometry.dire_wolf"
-      },
-      "animations": {
-        "walk": "animation.dire_wolf.move",
-        "look_at_target": "animation.common.look_at_target"
-      },
-      "scripts": {
-        "animate": [
-          { "walk": "query.modified_move_speed" },
-          "look_at_target"
-        ]
-      },
-      "render_controllers": [ "controller.render.dire_wolf" ],
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/dire_wolf/dire1",
+    "default2": "textures/entity/dire_wolf/dire2",
+    "default3": "textures/entity/dire_wolf/dire3",
+    "default4": "textures/entity/dire_wolf/dire4",
+    "default5": "textures/entity/dire_wolf/dire5",
+    "default6": "textures/entity/dire_wolf/dire6",
+    "default7": "textures/entity/dire_wolf/dire7",
+    "default8": "textures/entity/dire_wolf/dire8"
+   },
+   "geometry": {
+    "default": "geometry.dire_wolf"
+        },
+   "render_controllers": [
+    "controller.render.dire"  
+   ],
+   "animations": {
+        "general": "controller.animation.raptor.general",
+        "look_at_target": "animation.dire_wolf.look_at_target",
+        "sit": "animation.dire_wolf.sit",
+        "sleep": "animation.dire_wolf.sleep",
+       "roar": "animation.dire_wolf.roar",
+       "move": "animation.dire_wolf.walk",
+       "default": "animation.dire_wolf.idle",
+        "attack": "animation.dire_wolf.attack"
+   },
+   "scripts": {
+        "scale": "2.4",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
       "spawn_egg": {
-         "base_color": "#FFFFFF",
-        "overlay_color": "#50549"
+         "base_color": "#1d1e11",
+        "overlay_color": "#944b94"
       }
-    }
   }
-} 
+ }
+}
+ 

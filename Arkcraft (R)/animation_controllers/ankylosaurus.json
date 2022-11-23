@@ -4,41 +4,85 @@
 		"controller.animation.ankylosaurus.general" : {
 			"initial_state" : "default",
 			"states" : {
-				"default" : {
-					"animations" : [ {							"move" : "query.modified_move_speed" },
+				"default" : { 
+					"animations" : [ {"move" : "query.modified_move_speed" },
+					"default",
                    "look_at_target"
 					],
 					"transitions" : [
 						{
-							"attack" : "query.is_roaring == 1"
+							"roar" : "query.is_roaring == 1"
 						},
 						{
-							"sit" : "query.is_sitting"
+							"attack" : "variable.attack_time > 0.0 || query.is_illager_captain"
+						},
+						{
+							"sleep" : "query.is_sheared"
+						},
+						{
+							"sitting" : "query.is_baby"
 						}
-					]
+					],
+					"blend_transition": 0.2
 				},
-				
-				"sit" : {
+				"roar" : {
+					"animations" : [ "roar" ],
+					"transitions" : [
+						{
+							"default" : "query.is_roaring == 0 && (query.all_animations_finished)"
+						},
+						{
+							"default" : "(!query.is_baby) && (query.all_animations_finished)"
+						},
+						{
+							"sleep" : "(query.is_sheared) && (query.all_animations_finished)"
+						},
+						{ 
+							"attack" : "variable.attack_time > 0.0 || query.is_illager_captain"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"sitting" : {
 					"animations" : [ "sit" ],
 					"transitions" : [
 						{
-							"default" : "!query.is_sitting"
+							"roar" : "query.is_roaring == 1"
 						},
 						{
-							"attack" : "query.is_roaring == 1"
+							"default" : "!query.is_baby"
+						},
+						{
+							"sleep" : "query.is_sheared"
+						},
+						{
+							"attack" : "variable.attack_time > 0.0 || query.is_illager_captain"
 						}
-					]
+					],
+					"blend_transition": 0.2
 				},
 				"attack" : {
-					"animations" : [ "attack" ],
+					"animations" : [
+					    
+					    {"move" : "query.modified_move_speed" },
+					    "attack" ],
 					"transitions" : [
 						{
-							"default" : "query.is_roaring == 0"
-						},
+							"default" : "(variable.attack_time <= 0.0) && (query.all_animations_finished) || !query.is_illager_captain && (query.all_animations_finished)"
+						}, 
 						{
-							"sit" : "(query.is_sitting) && (query.all_animations_finished)"
+							"sitting" : "(query.is_baby) && (query.all_animations_finished)"
 						}
-					]
+					],
+					"blend_transition": 0.2
+				},
+				"sleep" : {
+					"animations" : [ "sleep" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_sheared"
+						}
+					] 
 				}
 			}
 		}

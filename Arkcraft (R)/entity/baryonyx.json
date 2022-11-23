@@ -1,39 +1,47 @@
 {
-  "format_version": "1.8.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "arkcraft:baryonyx",
-      "materials": { "default": "skeleton"
-      },
-      "textures": {
-        "sin_montura": "textures/entity/baryonyx/sin_montura",
-        "con_montura": "textures/entity/baryonyx/con_montura"
-    },
-      "geometry": {
-        "default": "geometry.baryonyxark"
-      },
-      "scripts": {
-        "pre_animation": [
-          "variable.attack = Math.sin(variable.attack_time * 38.17);"
-        ]
-      },
-      "animations": {
-        "move": "animation.baryonyx.move",
-        "walk": "animation.baryonyx.move",
-        "attack": "animation.baryonyx.attack",
-        "casting": "animation.baryonyx.roar",
-        "look_at_target": "animation.common.look_at_target"
-      },
-      "animation_controllers": [
-        { "move": "controller.animation.baryonyx.move" },
-        { "attack": "controller.animation.baryonyx.attack" },
-        { "casting": "controller.animation.baryonyx.casting" }
-      ],
-      "render_controllers": [ "controller.render.baryonyx" ],
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:baryonyx",
+      "materials": {
+        "default": "skeleton"
+      }, 
+   "textures": { 
+    "default": "textures/entity/bary/bary1",
+    "default2": "textures/entity/bary/bary2",
+    "default3": "textures/entity/bary/bary3",
+    "default4": "textures/entity/bary/bary4",
+    "default5": "textures/entity/bary/bary5",
+    "default6": "textures/entity/bary/bary6"
+   },
+   "geometry": {
+    "default": "geometry.baryonyx2"
+        },
+   "render_controllers": [
+    "controller.render.baryonyx"  
+   ],
+   "animations": {
+        "general": "controller.animation.baryonyx2.general",
+        "look_at_target": "animation.baryonyx2.look_at_target",
+        "sit": "animation.baryonyx2.sit",
+        "sleep": "animation.baryonyx2.sleep",
+       "roar": "animation.baryonyx2.roar",
+       "move": "animation.baryonyx2.move",
+       "default": "animation.baryonyx2.idle",
+        "attack": "animation.baryonyx2.attack"
+   },
+   "scripts": {
+        "scale": "1.2",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
       "spawn_egg": {
-         "base_color": "#3B3C3E",
-        "overlay_color": "#2E2F53"}
-      
-    }
+         "base_color": "#ba02f7",
+        "overlay_color": "#ba02f7"
+      }
   }
-} 
+ }
+}
+ 

@@ -1,0 +1,44 @@
+{
+ "format_version": "1.10.0",
+ "minecraft:client_entity": {
+  "description": {
+   "identifier": "arkcraft:sinosaurus",
+      "materials": {
+        "default": "cow"
+      }, 
+   "textures": {
+    "variant1": "textures/entity/sinosaurus/sinosaurus1",
+    "variant2": "textures/entity/sinosaurus/sinosaurus2",
+    "variant3": "textures/entity/sinosaurus/sinosaurus3",
+    "variant4": "textures/entity/sinosaurus/sinosaurus4"
+   },
+   "geometry": {
+    "default": "geometry.sinosaurus"
+   },
+   "render_controllers": [
+    "controller.render.variants"  
+   ],
+   "animations": {
+        "general": "controller.animation.sinosaurus.general",
+        "look_at_target": "animation.common.look_at_target",
+        "sit": "animation.sinosaurus.sit",
+        "sleep": "animation.sinosaurus.sleep",
+       "walk": "animation.sinosaurus.walk",
+       "default": "animation.sinosaurus.idle",
+        "attack": "animation.sinosaurus.attack"
+   },
+   "scripts": {
+        "scale": "1.0",
+    "animate": [
+       "general",
+       "default"
+    ] 
+   },
+      "spawn_egg": {
+         "base_color": "#123754",
+        "overlay_color": "#0a4a19"
+      }
+  }
+ }
+}
+  
