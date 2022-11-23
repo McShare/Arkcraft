@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.16.100",
   "minecraft:entity": {
     "description": {
       "identifier": "arkcraft:espina_c",
@@ -23,9 +23,12 @@
         "minecraft:scale": {
           "value":2.0
         },
+        "minecraft:type_family": {
+          "family": [ "proyectile", "espina", "espina_c"]
+        },
       "minecraft:collision_box": {
-        "width": 0.4,
-        "height": 0.4
+        "width": 0.5,
+        "height": 0.5
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -58,13 +61,13 @@
           }
         }, 
         "hit_sound": "random.fizz",
-        "power": 1.0,
+        "power": 1.1,
         "gravity": 0.20,
         "uncertainty_base": 12,
         "uncertainty_multiplier": 2,
         "anchor": 3,
         "should_bounce": true,
-        "offset": [ 0, 0,0.0 ]
+        "offset": [ 0.0, 0.1, 2.0 ]
       }, 
       "minecraft:physics": {
       },  

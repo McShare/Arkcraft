@@ -3,16 +3,20 @@
   "minecraft:item": {
     "description": {
       "identifier": "arkcraft:hln_a_item",
-      "category": "Items"
+      "category": "equipment"
     },
 
     "components": {
       "minecraft:entity_placer": {
         "entity": "arkcraft:hln_a"
       },
-	  "minecraft:creative_category": {
+      "minecraft:creative_category": {
         "parent": "itemGroup.name.Equipment"
       },
+      "tag:minecraft:is_sword": {},
+			"minecraft:display_name": {
+				"value": "§6ArkCraft | §3Follower HLNA"
+			},
 	    "minecraft:icon": {
          "texture": "hln_a_item"
       },
@@ -20,8 +24,7 @@
       "minecraft:max_stack_size": 1,
       "minecraft:foil": false,
       "minecraft:stacked_by_data": false,
-	  "minecraft:render_offsets": "apple",
-      "minecraft:display_name": {}
+	  "minecraft:render_offsets": "apple"
     },
 	"events": {
 	}

@@ -30,12 +30,13 @@
 		}
 	  },
 	  "minecraft:render_offsets": "miscellaneous",
-      "minecraft:display_name": {}
+      "minecraft:display_name": {    "value": "§6ArkCraft | §3Bucket of Ammonite §o§a(Poisonus)"}
     },
 	"events": {
 	  "minecraft:empty_bucket": {
 		"run_command": {
-          "command": ["give @s bucket"],
+          "command": ["give @s bucket",
+          "setblock ~ ~ ~ water"],
           "target": "holder"
 		}
       }

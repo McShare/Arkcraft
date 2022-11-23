@@ -6,13 +6,13 @@
     },
 
     
-    "tags": [ "crafting_table" ],
+    "tags": [ "smithy" ],
     "pattern": [
       "LLL"
     ],
     "key": {
       "L": {
-        "item": "minecraft:wheat_seeds"
+        "item": "minecraft:seeds"
       }
     },
     "result": {

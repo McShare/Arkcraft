@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:narcotic_arrowow2"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X1"
+    ],
+    "key": {
+      "1": {
+        "item": "minecraft:log"
+      },
+      "X": {
+        "item": "arkcraft:poisonshock_bowl"
+      }
+    },
+    "result": {
+      "item": "arkcraft:narcotic_arrow",
+            "count": 8
+    }
+  }
+}

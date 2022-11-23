@@ -19,7 +19,10 @@
       "minecraft:icon": {
         "texture": "bucket_mawsonia",
 		"frame": 0
-      },
+  },
+  "minecraft:display_name": {
+    "value": "§6ArkCraft | §3Bucket of Mawsonia"
+  },
       "minecraft:max_stack_size": 1,
       "minecraft:stacked_by_data": false,
      "minecraft:liquid_clipped": true,
@@ -29,13 +32,13 @@
           "target": "self"
 		}
 	  },
-	  "minecraft:render_offsets": "miscellaneous",
-      "minecraft:display_name": {}
+	  "minecraft:render_offsets": "miscellaneous"
     },
 	"events": {
 	  "minecraft:empty_bucket": {
 		"run_command": {
-          "command": ["give @s bucket"],
+          "command": ["give @s bucket",
+          "setblock ~ ~ ~ water"],
           "target": "holder"
 		}
       }

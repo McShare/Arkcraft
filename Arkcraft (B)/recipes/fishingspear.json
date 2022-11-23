@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:fishingspear"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "lX"
+    ],
+    "key": {
+      "X": {
+        "item": "arkcraft:fishnet"
+      },
+      "l": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "result": {
+      "item": "arkcraft:fishingspear"
+    }
+  }
+}

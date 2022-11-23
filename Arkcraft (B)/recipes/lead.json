@@ -1,0 +1,29 @@
+
+
+
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:webosxdddlol11"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "121",
+      "222"
+    ],
+   "key": {
+      "1": {
+        "item": "minecraft:web"
+      },
+      "2": {
+        "item": "minecraft:leather"
+      }
+    },
+    "result": {
+      "item": "minecraft:lead"
+    }
+  }
+}

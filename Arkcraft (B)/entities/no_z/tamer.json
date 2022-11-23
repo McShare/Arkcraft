@@ -19,6 +19,11 @@
     },
 
     "component_groups": {
+      "minecraft:mooshroom_become_cow": {
+        "minecraft:transformation": {
+          "into": "minecraft:villager"
+        }
+      },
       "minecraft:tamer_aggro": {
       "minecraft:variant": {
         "value": 1
@@ -31,7 +36,7 @@
                "broadcast_anger": true,
           "broadcast_range": 20,
           "broadcast_targets": [
-            "mega_raptor"
+            "galveosaurus"
           ],
           "broadcast_filters": { "test": "is_leashed_to", "subject": "other", "value": true },
           "calm_event": {
@@ -68,7 +73,7 @@
           {
             "min_wait_time": 0,
             "max_wait_time": 0,
-            "spawn_entity": "arkcraft:mega_raptor",
+            "spawn_entity": "arkcraft:galveosaurus",
             "spawn_event": "minecraft:from_wandering_trader",
             "single_use": true,
             "num_to_spawn": 1,
@@ -155,10 +160,97 @@
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
+      },
+
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "iron_shovel"},
+                  { "test" :  "has_component", "operator": "!=", "value" :  "minecraft:transformation"}
+                ]
+              },
+              "event": "become_cow",
+              "target": "self"
+            },
+            "use_item": true,
+            "play_sounds": "shear",            
+            "spawn_items": { "table": "loot_tables/entities/tamer.json" },
+            "particle_on_start": { "particle_type": "largeexplode", "particle_y_offset": 0.25, "particle_offset_towards_interactor": true },
+            "interact_text": "action.interact.mooshear"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "wooden_shovel"},
+                  { "test" :  "has_component", "operator": "!=", "value" :  "minecraft:transformation"}
+                ]
+              },
+              "event": "become_cow",
+              "target": "self"
+            },
+            "use_item": true,
+            "play_sounds": "shear",            
+            "spawn_items": { "table": "loot_tables/entities/tamer.json" },
+            "particle_on_start": { "particle_type": "largeexplode", "particle_y_offset": 0.25, "particle_offset_towards_interactor": true },
+            "interact_text": "action.interact.mooshear"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "stone_shovel"},
+                  { "test" :  "has_component", "operator": "!=", "value" :  "minecraft:transformation"}
+                ]
+              },
+              "event": "become_cow",
+              "target": "self"
+            },
+            "use_item": true,
+            "play_sounds": "shear",            
+            "spawn_items": { "table": "loot_tables/entities/tamer.json" },
+            "particle_on_start": { "particle_type": "largeexplode", "particle_y_offset": 0.25, "particle_offset_towards_interactor": true },
+            "interact_text": "action.interact.mooshear"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "red_flower"}
+                ]
+              },
+              "event": "ana",
+              "target": "self"
+            },
+            "use_item": true,        
+            "interact_text": "For me? :D"
+          }
+        ]
       }
+    
     },
 
     "events": {
+      "become_cow": {
+        "remove": {
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:mooshroom_become_cow"
+          ]
+        }
+      },
+      "ana": {
+        "run_command": {
+          "command": [
+    "summon arkcraft:longuisquama Binooomoooo"
+          ],
+          "target": "self"
+		}
+      },
       "minecraft:entity_spawned": {
         "add": {
           "component_groups": [

@@ -6,7 +6,8 @@
       "loop": true,
       "timeline": {
         "14.0": [
-"@s minecraft:sleeping_night"
+"@s minecraft:sleeping_night",
+"effect @s slowness 4 10 true"
             ]
       }
     },
@@ -15,7 +16,8 @@
       "loop": true,
       "timeline": {
         "14.0": [
-"@s minecraft:sleeping_night_tamed"
+"@s minecraft:sleeping_night_tamed",
+"effect @s slowness 4 10 true"
             ]
       }
     }

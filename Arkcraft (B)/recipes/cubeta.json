@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "arkcraft:carneark34211"
+    },
+
+    
+    "tags": ["furnace"],
+    "input": "minecraft:bucket",
+    "output": "minecraft:iron_nugget"
+  }
+  
+}

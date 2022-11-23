@@ -221,7 +221,7 @@
           "table": "loot_tables/entities/achatina.json"
         },
       "minecraft:type_family": {
-        "family": [ "achatina", "mob" ]
+        "family": [ "achatina", "mob", "acorazado", "wild" ]
       },
       "minecraft:breathable": {
         "total_supply": 15,

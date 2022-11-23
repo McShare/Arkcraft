@@ -42,9 +42,10 @@
           "speed_multiplier": 1.0
         },
         "minecraft:tameable": {
-          "probability": 0.08,
+          "probability": 1.98,
           "tame_items": [
                         "wheat_seeds",
+                        "arkcraft:pasta_verde",
             "beetroot_seeds",
             "melon_seeds",
             "pumpkin_seeds",
@@ -100,7 +101,7 @@
           "target": "self"
         },
      "minecraft:attack": {
-        "damage": 6
+        "damage": 2
       }
         },
         "minecraft:dialogo":{
@@ -162,7 +163,7 @@
 						"operator": "!=",
 						"value": "minecraft:is_tamed"
 					},
-					"max_dist": 15
+					"max_dist": 50
 				}]
 			},
       "minecraft:behavior.hurt_by_target": {
@@ -223,7 +224,7 @@
 						"operator": "!=",
 						"value": "minecraft:is_tamed"
 					},
-					"max_dist": 15
+					"max_dist": 50
 				}]
 			}
         },
@@ -326,13 +327,13 @@
         },
       "minecraft:health": {
         "value": 10,
-        "max": 14
+        "max": 10
       }
 },
 
   "minecraft:dodo-wild_adult":{
       "minecraft:type_family": {
-        "family": [ "dodo", "mob" , "wild" , "wild_adult"]
+        "family": [ "dodo", "mob" , "herbivore" , "wild" , "wild_adult" , "smallest" ]
       },
         "minecraft:scale": {
           "value": 1.2
@@ -352,7 +353,7 @@
   },
   "minecraft:dodo-wild_baby":{
       "minecraft:type_family": {
-        "family": [ "dodo", "mob" , "wild" , "wild_baby"]
+        "family": [ "dodo", "mob" , "herbivore" , "wild" , "wild_baby" , "smallest"]
       },
       
       "minecraft:behavior.random_stroll": {
@@ -504,7 +505,7 @@
           }
         },
      "minecraft:attack": {
-        "damage": 0
+        "damage": 2
       },
       "minecraft:health": {
         "value": 6,
@@ -514,7 +515,7 @@
   
   "minecraft:dodo-adult_esperando_tame":{
       "minecraft:type_family": {
-        "family": [ "dodo", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "dodo", "mob" , "herbivore" , "tamed_adult" , "tamed" , "esperando_tame"  , "smallest"]
       },
         "minecraft:scale": {
           "value": 1.2
@@ -531,7 +532,7 @@
         "priority": 0
       },
      "minecraft:attack": {
-        "damage": 3
+        "damage": 2
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -550,7 +551,7 @@
   },
   "minecraft:dodo-tamed_adult":{
       "minecraft:type_family": {
-        "family": [ "dodo", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "dodo", "mob" , "herbivore" , "tamed_adult" , "tamed"  , "smallest"]
       },
         "minecraft:is_tamed": {
         },
@@ -569,7 +570,7 @@
         "priority": 0
       },
      "minecraft:attack": {
-        "damage": 3
+        "damage": 2
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -581,7 +582,7 @@
   },
   "minecraft:dodo-tamed_baby":{
       "minecraft:type_family": {
-        "family": [ "dodo", "mob" , "tamed_baby" , "tamed"]
+        "family": [ "dodo", "mob" , "herbivore" , "tamed_baby" , "tamed" , "smallest"]
       },
         "minecraft:sittable": {},
       "minecraft:behavior.random_stroll": {
@@ -680,7 +681,7 @@
               "growth": 0.010
             },
             {
-              "item": "vine",
+              "item": "seeds",
               "growth": 0.010
             },
             {
@@ -704,7 +705,7 @@
           "stop_distance": 2
         },
      "minecraft:attack": {
-        "damage": 0
+        "damage": 2
       },
       "minecraft:health": {
         "value": 6,
@@ -741,6 +742,42 @@
           "deals_damage": false
         }
       },
+      "minecraft:interact": {
+        "interactions": [
+        {
+          "on_interact": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_owner",
+                  "subject": "other",
+                  "operator": "==",
+                  "value": true
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "subject": "other",
+                  "value": "arkcraft:jeringa_r"
+                }
+              ]
+            },
+            "event": "minecraft:copperiron",
+            "target": "self"
+          },
+            "use_item": true,
+            "hurt_item": 0,
+          "interact_text": "Dodorex?",
+            "play_sounds": "random.break"
+
+          }
+          ]
+       },
       "minecraft:behavior.tempt": {
         "priority": 5,
         "speed_multiplier": 3.0,
@@ -765,8 +802,32 @@
             "heal_amount": 6
           },
           {
+            "item": "seeds",
+            "heal_amount": 1
+          },
+          {
+            "item": "beetroot_seeds",
+            "heal_amount": 1
+          },
+          {
+            "item": "melon_seeds",
+            "heal_amount": 1
+          },
+          {
+            "item": "pumpkin_seeds",
+            "heal_amount": 1
+          },
+          {
+            "item": "arkcraft:cactus",
+            "heal_amount": 2
+          },
+          {
+            "item": "cactus",
+            "heal_amount": 4
+          },
+          {
             "item": "appleenchanted",
-            "heal_amount": 40
+            "heal_amount": 4000
           },
           {
             "item": "beetroot",
@@ -781,16 +842,40 @@
             "heal_amount": 4
           },
           {
+            "item": "brown_mushroom",
+            "heal_amount": 2
+          },
+          {
             "item": "carrot",
             "heal_amount": 4
           },
           {
+            "item": "double_plant:2",
+            "heal_amount": 4
+          },
+          {
+            "item": "double_plant:3",
+            "heal_amount": 3
+          },
+          {
             "item": "golden_apple",
-            "heal_amount": 17
+            "heal_amount": 1700
+          },
+          {
+            "item": "leaves",
+            "heal_amount": 4
+          },
+          {
+            "item": "leaves2",
+            "heal_amount": 4
           },
           {
             "item": "melon",
             "heal_amount": 3
+          },
+          {
+            "item": "mushroom_stew",
+            "heal_amount": 5
           },
           {
             "item": "potato",
@@ -801,8 +886,48 @@
             "heal_amount": 6
           },
           {
+            "item": "pumpkin",
+            "heal_amount": 6
+          },
+          {
+            "item": "carved_pumpkin",
+            "heal_amount": 6
+          },
+          {
+            "item": "melon",
+            "heal_amount": 6
+          },
+          {
+            "item": "red_mushroom",
+            "heal_amount": 2
+          },
+          {
+            "item": "reeds",
+            "heal_amount": 2
+          },
+          {
             "item": "sweet_berries",
             "heal_amount": 3
+          },
+          {
+            "item": "tallgrass",
+            "heal_amount": 3
+          },
+          {
+            "item": "sugar",
+            "heal_amount": 1
+          },
+          {
+            "item": "vine",
+            "heal_amount": 3
+          },
+          {
+            "item": "waterlily",
+            "heal_amount": 3
+          },
+          {
+            "item": "wheat",
+            "heal_amount": 4
           }
         ]
       },
@@ -852,8 +977,44 @@
     },
 
 
-    "events": {
-        
+        "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6Seeds or Herbivore passively",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        },
+      "minecraft:copperiron": {
+        "randomize": [
+          {
+              
+            "weight": 100,
+		"run_command": {
+          "command": [
+    "execute @p[hasitem={item=carved_pumpkin, location=slot.armor.head}] ~~~ execute @p[hasitem={item=arkcraft:dessert_chestplate, location=slot.armor.chest}] ~~~ execute @e[type=arkcraft:dodo, r=20] ~~~ detect ~~-1~ ancient_debris 0 execute @e[type=arkcraft:dodo, r=20] ~~~ detect ~~-2~ ancient_debris 0 execute @e[type=arkcraft:dodo, r=20] ~~~ detect ~~-3~ ancient_debris 0 summon arkcraft:dodorex Dodorex",
+    "execute @p[hasitem={item=carved_pumpkin, location=slot.armor.head}] ~~~ execute @p[hasitem={item=arkcraft:dessert_chestplate, location=slot.armor.chest}] ~~~ kill @e[type=arkcraft:dodo, r=20]",
+    "execute @p[hasitem={item=carved_pumpkin, location=slot.armor.head}] ~~~ execute @p[hasitem={item=arkcraft:dessert_chestplate, location=slot.armor.chest}] ~~~ execute @e[type=arkcraft:dodo, r=20] ~~~ detect ~~-1~ ancient_debris 0 fill ~-6 ~-6 ~6 ~6 ~6 ~-6 air 0 replace ancient_debris"
+          ],
+          "target": "self"
+		}
+          },
+          {
+            "weight": 100
+          }
+        ]
+      },
 
       "minecraft:neutral": {
         "remove": {

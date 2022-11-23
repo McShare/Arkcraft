@@ -82,26 +82,36 @@
           "event": "minecraft:become_angry",
           "target": "self"
         },
-	    "minecraft:behavior.nearest_attackable_target": {
-          "priority": 5,
-        "reselect_targets": true,
-          "within_radius": 20,
-          "entity_types": [
-            {
-              "filters": { "other_with_families": [ "player"] },
-             "max_dist": 100
-            }
-          ],
-          "must_see": true
-        },
+        "minecraft:behavior.nearest_attackable_target": { 
+            "priority": 1,
+          "reselect_targets": false,
+            "within_radius": 30, 
+            "entity_types": [ 
+              {
+                "filters": { "other_with_families": [ "player"] },
+               "max_dist": 30
+              },
+              {
+                "filters": {
+                  "any_of": [
+                    { "test" :  "is_family", "subject" : "other", "value" :  "tamed"},
+                    { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+                    { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
+                  ] 
+                },
+                "max_dist": 30
+              }
+            ],
+            "must_see": true
+          },
      "minecraft:attack": {
-        "damage": 6
+        "damage": 16
       }
         },
 			"ark:sleeping": {
 			"minecraft:is_sheared": {},
         "minecraft:tameable": {
-          "probability": 0.07,
+          "probability": 0.09,
           "tame_items": [
             "arkcraft:pasta_roja"
           ],
@@ -138,7 +148,7 @@
 								1.7,
 								1.7
 							]
-						},
+            },
 						"skin_list": [
 							{
 								"variant": 0
@@ -151,10 +161,13 @@
 							},
 							{
 								"variant": 3
-							},
+              },
 							{
 								"variant": 4
-							}
+              },
+							{
+								"variant": 5
+              }
 						]
 					}
 				}
@@ -320,20 +333,6 @@
               "on_interact": {
                 "filters": {
                   "all_of": [
-                    { "test": "is_family", "subject" : "other", "value" :  "player"},
-                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "podzol"}
-                  ]
-                }
-              },
-              "use_item": true,
-              "transform_to_item": "brown_mushroom",
-              "play_sounds": "block.composter.fill_success",
-              "interact_text": "Brown Mushroom"
-            },
-            {
-              "on_interact": {
-                "filters": {
-                  "all_of": [
                   {
                     "test": "has_equipment", "subject": "other", "domain": "hand", "value": "arkcraft:cofre_con_cuerdas"},
                   { "test" :  "has_component","subject" : "self", "operator": "!=", "value" :  "minecraft:is_chested"} ]},
@@ -342,7 +341,39 @@
               "use_item": true,
               "play_sounds": "saddle",
               "interact_text": "action.interact.attachchest"
-            }
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_owner",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "minecraft:enchanted_book"
+                    }
+                  ]
+                },
+                "event": "minecraft:cobbleiron",
+                "target": "self"
+              },
+                "use_item": true,
+                "hurt_item": 0,
+              "interact_text": "Book to bookshelf",
+                "play_sounds": "random.break"
+    
+              }
           ]},
       "minecraft:follow_range": {
         "value": 16
@@ -364,17 +395,17 @@
           }
         },
       "minecraft:health": {
-        "value": 40,
-        "max": 60
+        "value": 80,
+        "max": 80
       }
 },
 
   "minecraft:gualicho-wild_adult":{
       "minecraft:type_family": {
-        "family": [ "gualicho", "mob" , "wild" , "wild_adult"]
+        "family": [ "gualicho", "mob" , "wild" , "wild_adult", "temperatura" , "big" ]
       },
         "minecraft:loot": {
-         "table": "loot_tables/entities/gualicho.json"
+         "table": "loot_tables/entities/woolbig.json"
         },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -386,7 +417,7 @@
   
   "minecraft:gualicho-adult_esperando_tame":{
       "minecraft:type_family": {
-        "family": [ "gualicho", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "gualicho", "mob" , "tamed_adult" , "tamed" , "esperando_tame", "temperatura" , "big" ]
       },
         "minecraft:interact": {
           "interactions": [
@@ -422,8 +453,9 @@
           ]
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/gualicho.json"
+          "table": "loot_tables/entities/mega_raptor.json"
         },
+
       "minecraft:leashable": {
         "soft_distance": 4.0,
         "hard_distance": 10.0,
@@ -578,7 +610,7 @@
         ]
       },
      "minecraft:attack": {
-        "damage": 6
+        "damage": 16
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -590,8 +622,8 @@
         "slots": [
           {
             "slot": 0,
-            "item": "arkcraft:big_herbivore_saddle",
-            "accepted_items": ["arkcraft:big_herbivore_saddle" , "arkcraft:big_herbivore_saddle" ],
+            "item": "arkcraft:big_carnivore_saddle",
+            "accepted_items": ["arkcraft:big_carnivore_saddle" , "arkcraft:big_carnivore_saddle" ],
             "on_equip": {
               "event": "minecraft:on_saddled"
             },
@@ -614,7 +646,7 @@
   },
   "minecraft:gualicho-tamed_adult":{
       "minecraft:type_family": {
-        "family": [ "gualicho", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "gualicho", "mob" , "tamed_adult" , "tamed", "temperatura"  , "big" ]
       },
         "minecraft:interact": {
           "interactions": [
@@ -652,7 +684,7 @@
         "minecraft:is_tamed": {
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/gualicho.json"
+          "table": "loot_tables/entities/woolbig.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -808,7 +840,7 @@
         ]
       },
      "minecraft:attack": {
-        "damage": 6
+        "damage": 16
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -1165,7 +1197,25 @@
     },
 
 
-    "events": {
+        "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6You put him to sleep and give him carnivore kibble",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        },
         
 			"minecraft:get_up": {
 				"remove": {
@@ -1199,6 +1249,24 @@
 					]
 				}
 			},
+      "minecraft:cobbleiron": {
+        "randomize": [
+          {
+              
+            "weight": 100,
+		"run_command": {
+          "command": [
+    "give @p[r=12] minecraft:bookshelf 3 3",
+    "playanimation @s animation.gualicho.attack"
+          ],
+          "target": "self"
+		}
+          },
+          {
+            "weight": 100
+          }
+        ]
+      },
         
       "minecraft:neutral": {
         "remove": {
@@ -2044,7 +2112,8 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+												"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           },

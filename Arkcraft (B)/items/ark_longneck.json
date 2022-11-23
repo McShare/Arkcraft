@@ -1,0 +1,50 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "arkcraft:longneck",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:cooldown": {
+        "category": "ender_pearl",
+        "duration": 5
+      },
+      "minecraft:icon": {
+        "texture": "ark_longneck"
+      },
+      "minecraft:display_name": {
+        "value": "§6ArkCraft | §3Taming Longneck §o§a(Use full leather armor & consume Taming Arrows)"
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "shooter",
+          "condition": "query.get_equipped_item_name('off_hand') == 'narcotic_arrow' && query.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots') && query.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings') && query.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate') && query.is_item_name_any('slot.armor.head', 'minecraft:leather_helmet')"
+        }
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.bows"
+      }
+    },
+    "events": {
+      "shooter": {
+        "run_command": {
+          "command": [
+            "playsound crossbow.shoot @a[r=5] ~ ~ ~ 10",
+            "effect @s slowness 7 2 true",
+            "effect @s invisibility 7 2 true",
+            "effect @s weakness 7 2 true",
+            "clear @s arkcraft:narcotic_arrow 0 1"
+          ]
+        },
+        "shoot": {
+          "projectile": "arkcraft:arrow2",
+          "launch_power": 2,
+          "angle_offset": "query.cardinal_facing"
+        }
+      }
+    }
+  }
+}

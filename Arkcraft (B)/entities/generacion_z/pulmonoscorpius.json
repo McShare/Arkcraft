@@ -208,15 +208,15 @@
           "must_see": true
         },
      "minecraft:attack": {
-        "damage": 4
+        "damage": 5
       }
         }, 
 			"ark:sleeping": {
 			"minecraft:is_sheared": {},
         "minecraft:tameable": {
-          "probability": 0.10,
+          "probability": 0.65,
           "tame_items": [
-            "arkcraft:pasta_bicho"
+            "arkcraft:pasta_bicho", "minecraft:rotten_flesh"
           ],
           "tame_event": {
             "event": "minecraft:on_tame_pulmonoscorpius_adult",
@@ -451,8 +451,8 @@
           }
         },
       "minecraft:health": {
-        "value": 60,
-        "max": 70
+        "value": 20,
+        "max": 20
       }
 },
 
@@ -467,13 +467,13 @@
       "minecraft:can_climb": {
       },
       "minecraft:type_family": {
-        "family": [ "pulmonoscorpius", "mob" , "wild" , "wild_adult", "spider" ,"arthropod"]
+        "family": [ "pulmonoscorpius", "mob" , "wild" , "wild_adult", "spider" ,"arthropod","narcotic_arrow" , "small"]
       },
                 "minecraft:variant": {
           "value": 0
                 },
         "minecraft:loot": {
-         "table": "loot_tables/entities/pulmonoscorpius.json"
+         "table": "loot_tables/entities/insecto.json"
         },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -485,10 +485,10 @@
   
   "minecraft:pulmonoscorpius-adult_esperando_tame":{
       "minecraft:type_family": {
-        "family": [ "pulmonoscorpius", "mob" , "tamed_adult" , "tamed" , "esperando_tame", "spider" ,"arthropod"]
+        "family": [ "pulmonoscorpius", "mob" , "tamed_adult" , "tamed" , "esperando_tame", "spider" ,"arthropod","narcotic_arrow" , "small"]
       },
         "minecraft:loot": {
-          "table": "loot_tables/entities/pulmonoscorpius.json"
+          "table": "loot_tables/entities/insecto.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -499,7 +499,7 @@
         "priority": 0
       },
      "minecraft:attack": {
-        "damage": 4
+        "damage": 5
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -542,12 +542,12 @@
 					]
 				},
       "minecraft:type_family": {
-        "family": [ "pulmonoscorpius", "mob" , "tamed_adult" , "tamed", "spider" ,"arthropod"] 
+        "family": [ "pulmonoscorpius", "mob" , "tamed_adult" , "tamed", "spider" ,"arthropod","narcotic_arrow" , "small"] 
       },
         "minecraft:is_tamed": {
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/pulmonoscorpius.json"
+          "table": "loot_tables/entities/insecto.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -558,7 +558,7 @@
         "priority": 0
       },
      "minecraft:attack": {
-        "damage": 4
+        "damage": 5
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -698,7 +698,7 @@
 									"subject": "other",
 									"value": "narcotic_arrow"
 								},
-								"event": "ark:narcotic_5"
+								"event": "ark:narcotic_final"
 							}
 						}
 					]
@@ -972,7 +972,25 @@
     },
 
 
-    "events": {   
+        "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6I sleep and give him insectivore kibble or rotten meat",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        },   
       "minecraft:skin_id_0": {
 				"add": {
 					"component_groups": [
@@ -1985,7 +2003,8 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+												"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           },

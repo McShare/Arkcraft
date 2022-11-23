@@ -6,7 +6,8 @@
     },
     
     "components": {
-      "minecraft:max_stack_size": 2
+      "minecraft:max_stack_size": 16,
+      "minecraft:fuel": true
     }
   }
 }

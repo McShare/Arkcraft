@@ -1,0 +1,29 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "arkcraft:backpack",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:render_offsets": {
+                "main_hand": {
+                  "first_person": {
+                    "position": [0, -10, 0],
+                    "scale": [0, 0, 0]
+                  }
+                }
+              },
+              "minecraft:display_name": {
+                "value": "§6ArkCraft | §3Sinomacrops §o§a(Backpack)"
+              },
+            "minecraft:max_stack_size": 1,
+            "minecraft:icon": {
+                "texture": "backpack"
+            },
+            "minecraft:item_storage": {
+				"capacity": 192
+			}
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:narcotih435lna1rowow2"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X"
+    ],
+    "key": {
+      "X": {
+        "item": "arkcraft:hln_a_tp"
+      }
+    },
+    "result": {
+      "item": "arkcraft:hln_a_item"
+    }
+  }
+}

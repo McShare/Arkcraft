@@ -5,7 +5,7 @@
             "identifier": "arkcraft:grill"
         },
         "tags": [
-            "crafting_table"
+            "smithy"
         ],
         "pattern": [
             "SS",
@@ -13,13 +13,13 @@
         ],
     "key": {
       "W": {
-        "item": "minecraft:crafting_table"
+        "item": "minecraft:smoker"
       },
       "S": {
         "item": "minecraft:flower_pot"
       },
       "X": {
-        "item": "minecraft:furnace"
+        "item": "minecraft:stone_shovel"
       }
         },
         "result": {

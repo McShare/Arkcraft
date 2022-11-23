@@ -2,22 +2,25 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "arkcraft:cloth_chestplate"
+    "identifier": "arkcraft:dessert_chestplate"
     },
 
     
     "tags": [ "smithy" ],
     "pattern": [
       "X X",
-      "XXX"
+      "X#X"
     ],
     "key": {
+      "#": {
+        "item": "minecraft:sand"
+      },
       "X": {
         "item": "minecraft:string"
       }
     },
     "result": {
-      "item": "arkcraft:cloth_chestplate"
+      "item": "arkcraft:dessert_chestplate"
     }
   }
 }

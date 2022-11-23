@@ -18,6 +18,19 @@
 "/kill @s"
             ]
       }
+    },
+    "animation.awa": {
+     "animation_length": 10.0,
+      "loop": true,
+      "timeline": 
+      {
+        "3.0": [
+          "/effect @e[r=1] poison"
+                      ],
+        "6.0": [
+"/kill @s"
+            ]
+      }
     }
   }
 }

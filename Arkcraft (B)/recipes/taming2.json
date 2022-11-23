@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:axex4545eeee"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:leather"
+      }
+    },
+    "result": {
+      "item": "arkcraft:tame_guide"
+    }
+  }
+}

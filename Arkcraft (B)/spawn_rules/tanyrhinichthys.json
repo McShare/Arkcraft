@@ -35,7 +35,7 @@
         },
         "minecraft:density_limit": {
           "surface": 20,
-          "underground": 0
+          "underground": 20
         },
         "minecraft:herd": {
           "min_size": 2,

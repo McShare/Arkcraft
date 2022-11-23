@@ -56,8 +56,76 @@
         "minecraft:v6":{
                 "minecraft:variant": {
           "value": 5
-     		}
+        }
+         },
+        
+     "minecraft:v7":{
+             "minecraft:variant": {
+       "value": 6
+      },
+      "minecraft:health": {
+          "value": 70,
+          "max": 70
         },
+        "minecraft:scale": {
+          "value": 1.5
+        },
+        "minecraft:attack": { 
+          "damage": 10
+        },
+        "minecraft:tameable": {
+          "probability": 1.3,
+          "tame_items": [
+         "arkcraft:pasta_roja"],
+          "tame_event": {
+            "event": "minecraft:on_tame_raptor_adult",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.controlled_by_player": {
+          "priority": 0
+        },
+        "minecraft:behavior.player_ride_tamed": {
+
+        },
+        "minecraft:input_ground_controlled": {
+        }
+        }, 
+   "minecraft:v8":{
+           "minecraft:variant": {
+     "value": 7
+    }
+    },
+   "minecraft:v9":{
+           "minecraft:variant": {
+     "value": 8
+   }
+    },
+    "minecraft:v10":{
+      "minecraft:variant": {
+"value": 9
+}
+},
+"minecraft:v11":{
+      "minecraft:variant": {
+"value": 10
+}
+},
+"minecraft:v12":{
+  "minecraft:variant": {
+"value": 11
+}
+},
+"minecraft:v13":{
+  "minecraft:variant": {
+"value": 12
+}
+},
+"minecraft:v14":{
+  "minecraft:variant": {
+"value": 13
+}
+},
       "minecraft:raptor_angry": {
         "minecraft:angry": {
           "duration": 15,
@@ -108,122 +176,24 @@
 	    "minecraft:behavior.nearest_attackable_target": { 
           "priority": 1,
         "reselect_targets": false,
-          "within_radius": 30, 
+          "within_radius": 60, 
           "entity_types": [ 
             {
               "filters": { "other_with_families": [ "player"] },
-             "max_dist": 30
+             "max_dist": 60
             },
             {
               "filters": {
                 "any_of": [
-                  { "test" :  "is_family", "subject" : "other", "value" :  "cow"},
-     { "test" :  "is_family", "subject" : "other", "value" :  "player"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "sheep"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "rabbit"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "fox"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "chicken"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "llama"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "horse"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "donkey"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "pig"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "tamed"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"},
                   { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
                 ] 
               },
-              "max_dist": 30
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "baby_turtle"
-                  },
-                  {
-                    "test": "in_water",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 30
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "cod"
-                  },
-                  {
-                    "test": "is_underwater",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 30
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "salmon"
-                  },
-                  {
-                    "test": "is_underwater",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 30
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "fish"
-                  },
-                  {
-                    "test": "is_underwater",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 30
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "pufferfish"
-                  },
-                  {
-                    "test": "is_underwater",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 30
-            } 
+              "max_dist": 60
+            }
           ],
-          "must_see": true
+          "must_see": false
         }
         },
 			"ark:sleeping": {
@@ -269,7 +239,43 @@
 						"skin_list": [
 							{
 								"variant": 0
-							}
+							},
+							{
+								"variant": 1
+							},
+							{
+								"variant": 2
+							},
+							{
+								"variant": 3
+              },
+							{
+								"variant": 4
+              },
+							{
+								"variant": 5
+              },
+              {
+								"variant": 6
+							},
+							{
+								"variant": 7
+							},
+							{
+								"variant": 8
+							},
+							{
+								"variant": 9
+              },
+							{
+								"variant": 10
+              },
+							{
+								"variant": 11
+              },
+							{
+								"variant": 12
+              }
 						]
 					}
 				}
@@ -374,7 +380,7 @@
           ],
           "interact_text": "action.interact.ride.horse",
           "seats": {
-            "position": [ 0.0, 1.6, -0.1] 
+            "position": [ 0.0, 1.4, 0.1] 
           } 
         },
       "minecraft:behavior.random_stroll": {
@@ -392,7 +398,7 @@
           ],
           "interact_text": "action.interact.ride.horse",
           "seats": {
-            "position": [ 0.0, 1.6, -0.1] 
+            "position": [ 0.0, 1.4, -0.1] 
           } 
         },
         "minecraft:behavior.follow_owner": {
@@ -437,33 +443,33 @@
         "value": 0.1
       }, 
       "minecraft:attack": { 
-        "damage": 4
+        "damage": 3
       },
         "minecraft:scale": {
-          "value": 1.2
+          "value": 1.1
         },
         "minecraft:strength": {
-          "value": 6,
-          "max": 8
+          "value": 4,
+          "max": 6
         },
         "minecraft:movement": {
           "value": {
-            "range_min": 0.2,
-            "range_max": 0.3
+            "range_min": 0.33,
+            "range_max": 0.4
           }
         },
 	    "minecraft:health": {
-          "value": 30,
-          "max": 30
+          "value": 24,
+          "max": 24
         }
 },
 
   "minecraft:raptor-wild_adult":{
       "minecraft:type_family": {
-        "family": [ "raptor", "mob" , "wild" , "wild_adult"]
+        "family": [ "raptor", "mob" , "wild" , "wild_adult" , "small"]
       },
         "minecraft:loot": {
-         "table": "loot_tables/entities/raptor.json"
+         "table": "loot_tables/entities/plumamedium.json"
         },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -472,11 +478,12 @@
   
   "minecraft:raptor-adult_esperando_tame":{
       "minecraft:type_family": {
-        "family": [ "raptor", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "raptor", "mob" , "tamed_adult" , "tamed" , "esperando_tame"  , "small"]
       },
         "minecraft:loot": {
-          "table": "loot_tables/entities/raptor.json"
+          "table": "loot_tables/entities/mega_plumamedium.json"
         },
+
       "minecraft:leashable": {
         "soft_distance": 4.0,
         "hard_distance": 10.0,
@@ -513,12 +520,12 @@
   },
   "minecraft:raptor-tamed_adult":{
       "minecraft:type_family": {
-        "family": [ "raptor", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "raptor", "mob" , "tamed_adult" , "tamed"  , "small"]
       },
         "minecraft:is_tamed": {
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/raptor.json"
+          "table": "loot_tables/entities/plumamedium.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -575,7 +582,7 @@
 									"subject": "other",
 									"value": "narcotic_arrow"
 								},
-								"event": "ark:narcotic_2"
+								"event": "ark:narcotic_final"
 							}
 						}
 					]
@@ -809,15 +816,25 @@
             "event":"minecraft:off_attack_sistem"
           }
         ]
-      }, 
+      },
+      "minecraft:can_power_jump": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:horse.jump_strength": {
+        "value": {
+          "range_min": 0.6,
+          "range_max": 0.7
+        }
+      },
       "minecraft:nameable": {
       },
       "minecraft:collision_box": {
-        "width": 0.6,
-        "height": 1.4
+        "width": 1.4,
+        "height": 1.6
       },
       "minecraft:breathable": {
-        "total_supply": 15,
+        "total_supply": 1500,
         "suffocate_time": 0
       },
       "minecraft:hurt_on_condition": {
@@ -931,8 +948,6 @@
       },
       "minecraft:movement.basic": {
       },
-      "minecraft:jump.static": {
-      },
       "minecraft:can_climb": {
       },
       "minecraft:despawn": {
@@ -952,7 +967,25 @@
     },
 
  
-    "events": {
+        "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6Put him to sleep either with balls or narcotic arrows. Once asleep, feed him Carnivore Kibble. If it is black and featherless it passively tames with carnivore kibble.",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        },
       "minecraft:on_tame_raptor": {
 		"run_command": {
           "command": [
@@ -1348,7 +1381,107 @@
 	"minecraft:v6"
               ]
             }
+          },
+          {
+            "weight": 5,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:raptor-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v7"
+              ]
+            }
+          },
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:raptor-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v8"
+              ]
+            }
+          },
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:raptor-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v9"
+              ]
+            }
+          },
+          {
+            "weight": 5,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:raptor-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v10"
+              ]
+            }
+          },
+          {
+            "weight": 5,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:raptor-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v11"
+              ]
+            }
+          },
+          {
+            "weight": 5,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:raptor-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v12"
+              ]
+            }
+          },
+          {
+            "weight": 5,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:raptor-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v13"
+              ]
+            }
           }
+        
+        
         
         ]
 },
@@ -1501,7 +1634,7 @@
 				}
           }, 
           {
-            "weight": 40,
+            "weight": 1,
 				"add": {
 				},
 				"remove": {
@@ -1543,7 +1676,7 @@
 				}
           }, 
           {
-            "weight": 20,
+            "weight": 1,
 				"add": {
 				},
 				"remove": {
@@ -1585,7 +1718,7 @@
 				}
           }, 
           {
-            "weight": 20,
+            "weight": 1,
 				"add": {
 				},
 				"remove": {
@@ -1627,7 +1760,7 @@
 				}
           }, 
           {
-            "weight": 50,
+            "weight": 1,
 				"add": {
 				},
 				"remove": {
@@ -1669,7 +1802,7 @@
 				}
           }, 
           {
-            "weight": 40,
+            "weight": 1,
 				"add": {
 				},
 				"remove": {
@@ -1711,7 +1844,7 @@
 				}
           }, 
           {
-            "weight": 40,
+            "weight": 1,
 				"add": {
 				},
 				"remove": {
@@ -1795,7 +1928,7 @@
 				}
           }, 
           {
-            "weight": 70,
+            "weight": 1,
 				"add": {
 				},
 				"remove": {
@@ -1837,7 +1970,7 @@
 				}
           }, 
           {
-            "weight": 90,
+            "weight": 1,
 				"add": {
 				},
 				"remove": {
@@ -1881,12 +2014,13 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+												"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           },
           {
-            "weight": 20,
+            "weight": 1,
 				"remove": {
 				},
 				"add": {

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:lantern3434333"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "###",
+      "#x#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:prismarine_crystals"
+      },
+      "x": {
+        "item": "arkcraft:aceite"
+      }
+    },
+    "result": {
+      "item": "minecraft:soul_lantern",
+      "count": 1
+    }
+  }
+}

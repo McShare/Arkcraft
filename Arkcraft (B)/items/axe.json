@@ -1,0 +1,100 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "arkcraft:santiagos_axe",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "first_person": {
+            "position": [1.8, -1.0, -5],
+	     "rotation": [120, 10, -130],
+            "scale": [-0.1, -0.1, -0.1]
+          },
+          "third_person": {
+            "position": [0.3, 1, -0.47],	
+	    "scale": [0.05, 0.05, 0.05] 
+          }
+        }
+      },
+      "minecraft:weapon": {
+				"on_hurt_entity": {
+				  "event": "tool_durability"
+				},
+				"on_hit_block": {
+				  "event": "tool_durability"
+				},
+				"on_not_hurt_entity": {
+				  "event": "tool_durability"
+				}
+			  },
+			  "minecraft:on_use_on": {
+				"on_use_on": {
+				  "event": "on_tool_used"
+				}
+			  },
+      "tag:minecraft:is_sword": {},
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.Equipment"
+      },
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "sword"
+			  },
+			"minecraft:hand_equipped": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "ark:raptor1"
+				}
+	
+				},
+			      "minecraft:damageable": {
+        "repair_items": [
+          "raw_iron"
+        ]
+      }, 
+			"minecraft:icon": {
+				"texture": "santiagos_axe"
+			},
+			      "minecraft:use_duration": 15, 
+			      "minecraft:damage": 6,
+				  "minecraft:durability": {
+					"max_durability": 200
+				  },
+			"minecraft:cooldown": {
+				"category": "ender_pearl",
+				"duration": 4.0
+			},
+			"minecraft:display_name": {
+				"value": "§6ArkCraft | §3Santiago's Axe §o§a(Press for area attack)"
+			}
+		},
+		"events": {
+			"ark:raptor1": {
+				"damage": {
+					"type": "none",
+					"target": "self",
+					"amount": 105
+				  },
+				"run_command": { 
+					"command": [
+            "damage @e[family=wild, r=6] 39 entity_attack entity @s",
+            "effect @e[r=6] slowness 5 1",
+            "effect @s[r=6] weakness 5 5",
+            "playsound random.break @a[r=6] ~ ~ ~ "
+					] 
+				} 
+			},
+			"tool_durability": {
+				"damage": {
+				  "type": "none",
+				  "target": "self",
+				  "amount": 1
+				}
+			  }
+		} 
+	}
+}

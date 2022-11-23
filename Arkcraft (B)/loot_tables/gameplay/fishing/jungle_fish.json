@@ -5,13 +5,38 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:fish",
-          "weight": 60
+          "name": "arkcraft:ark_fish_raw",
+          "weight": 300
         },
         {
           "type": "item",
-          "name": "minecraft:salmon",
-          "weight": 40
+          "name": "arkcraft:bucket_tany",
+          "weight": 225
+        },
+        {
+          "type": "item",
+          "name": "arkcraft:bucket_ammonite_friend",
+          "weight": 205
+        },
+        {
+          "type": "item",
+          "name": "arkcraft:bucket_trilobite",
+          "weight": 205
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pufferfish",
+          "weight": 213
+        },
+        {
+          "type": "item",
+          "name": "arkcraft:bucket_mawsonia",
+          "weight": 213
+        },
+        {
+          "type": "item",
+          "name": "arkcraft:bucket_ammonite_poisonshock",
+          "weight": 113
         }
       ]
     }

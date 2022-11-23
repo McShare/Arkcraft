@@ -52,6 +52,16 @@
           "value": 1
       }
         },
+        "minecraft:v3":{
+          "minecraft:mark_variant": {
+            "value": 2
+        }
+          },
+          "minecraft:v4":{
+          "minecraft:mark_variant": {
+            "value": 3
+        }
+          },
 "minecraft:thorny_dragon_casa":{
         "minecraft:variant": {
           "value": 1
@@ -59,6 +69,18 @@
       "minecraft:collision_box": {
         "width": 1.8,
         "height": 1.9
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "subject": "other"
+              },
+              "event": "ark:pincho"
+            }
+          }
+        ]
       }
 },
 "minecraft:thorny_dragon_sin_casa":{
@@ -128,23 +150,33 @@
         "priority": 4,
         "speed_multiplier": 1.0
       },
-	    "minecraft:behavior.nearest_attackable_target": {
-          "priority": 5,
-        "reselect_targets": true,
-          "within_radius": 20,
-          "entity_types": [
+	    "minecraft:behavior.nearest_attackable_target": { 
+          "priority": 1,
+        "reselect_targets": false,
+          "within_radius": 60, 
+          "entity_types": [ 
             {
               "filters": { "other_with_families": [ "player"] },
-             "max_dist": 20
+             "max_dist": 60
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "tamed"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
+                ] 
+              },
+              "max_dist": 60
             }
           ],
-          "must_see": true
+          "must_see": false
         }
         },
 			"ark:sleeping": {
 			"minecraft:is_sheared": {},
         "minecraft:tameable": {
-          "probability": 0.05,
+          "probability": 0.09,
           "tame_items":[ "arkcraft:pasta_bicho" 
           ],
           "tame_event": {
@@ -187,7 +219,19 @@
 							},
 							{
 								"variant": 1
-							}
+							},
+							{
+								"variant": 2
+							},
+							{
+								"variant": 3
+              },
+							{
+								"variant": 4
+              },
+							{
+								"variant": 5
+              }
 						]
 					}
 				}
@@ -385,7 +429,7 @@
         "value": 0.65
       },
       "minecraft:attack": {
-        "damage": 5,
+        "damage": 16,
         "effect_name": "weakness",
         "effect_duration": 10
       },
@@ -398,22 +442,22 @@
         },
         "minecraft:movement": {
           "value": {
-            "range_min": 0.25,
-            "range_max": 0.3
+            "range_min": 0.15,
+            "range_max": 0.2
           }
         },
       "minecraft:health": {
-        "value": 40,
-        "max": 40
+        "value": 120,
+        "max": 120
       }
 },
 
   "minecraft:thorny_dragon-wild_adult":{
       "minecraft:type_family": {
-        "family": [ "thorny_dragon", "mob" , "wild" , "wild_adult"]
+        "family": [ "thorny_dragon", "mob" , "acorazado" , "herbivore" , "wild" , "wild_adult" , "medium", "temperatura" ]
       },
         "minecraft:loot": {
-         "table": "loot_tables/entities/thorny_dragon.json"
+         "table": "loot_tables/entities/bonelbig.json"
         },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -422,10 +466,10 @@
   
   "minecraft:thorny_dragon-adult_esperando_tame":{
       "minecraft:type_family": {
-        "family": [ "thorny_dragon", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "thorny_dragon", "mob" , "acorazado" , "herbivore" , "tamed_adult" , "tamed" , "esperando_tame" , "medium" , "temperatura" ]
       },
         "minecraft:loot": {
-          "table": "loot_tables/entities/thorny_dragon.json"
+          "table": "loot_tables/entities/bonelbig.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -442,8 +486,8 @@
         "slots": [
 {
             "slot": 0,
-            "item":"arkcraft:montura_para_thorny_dragon",
-            "accepted_items": ["arkcraft:montura_para_thorny_dragon"],
+            "item": "arkcraft:medium_carnivore_saddle",
+            "accepted_items": ["arkcraft:medium_carnivore_saddle", "arkcraft:medium_herbivore_saddle"],
             "on_equip": {
               "event": "minecraft:on_saddled"
             },
@@ -474,12 +518,12 @@
   },
   "minecraft:thorny_dragon-tamed_adult":{
       "minecraft:type_family": {
-        "family": [ "thorny_dragon", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "thorny_dragon", "mob" , "acorazado" , "herbivore" , "tamed_adult" , "tamed"  , "medium" , "temperatura"]
       },
         "minecraft:is_tamed": {
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/thorny_dragon.json"
+          "table": "loot_tables/entities/bonelbig.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -496,8 +540,8 @@
         "slots": [
 {
             "slot": 0,
-            "item":"arkcraft:montura_para_thorny_dragon",
-            "accepted_items": ["arkcraft:montura_para_thorny_dragon"],
+            "item": "arkcraft:medium_carnivore_saddle",
+            "accepted_items": ["arkcraft:medium_carnivore_saddle", "arkcraft:medium_herbivore_saddle"],
             "on_equip": {
               "event": "minecraft:on_saddled"
             },
@@ -917,7 +961,25 @@
     },
 
  
-    "events": {
+        "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6Put him to sleep and feed him with insectivore kibble",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        },
       "minecraft:on_tame_thorny_dragon": {
 		"run_command": {
           "command": [
@@ -952,6 +1014,17 @@
           "component_groups": [
             "minecraft:thorny_dragon_casa"
           ]
+        }
+      },
+        
+      "ark:pincho": {
+		"run_command": {
+          "command": [
+    "damage @e[r=6, type=!arkcraft:thorny_dragon, type=!player] 20 stalagmite",
+    "damage @e[r=4, type=player] 2 stalagmite",
+    "playanimation @s animation.thorny_dragon.attack"
+          ],
+          "target": "self"
         }
       },
       "minecraft:off_casita": {
@@ -1269,7 +1342,7 @@
             }
           },
           {
-            "weight": 16,
+            "weight": 95,
             "remove": {
             },
             "add": {
@@ -1279,6 +1352,34 @@
 "minecraft:adult_controladores",
 	"ark:narcotic_1",
 	"minecraft:v2"
+              ]
+            }
+          },
+          {
+            "weight": 95,
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+"minecraft:thorny_dragon-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v4"
+              ]
+            }
+          },
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:thorny_dragon-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v3"
               ]
             }
           }
@@ -1813,7 +1914,8 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+												"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           },

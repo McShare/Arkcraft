@@ -7,6 +7,9 @@
       "components":{
  
          "minecraft:loot":"loot_tables/grill.json",
+			"minecraft:creative_category": {
+				"category": "Items"
+			},
          "minecraft:destroy_time":4.0,
          "minecraft:map_color":"#946A4E",
          "minecraft:geometry":"geometry.block",

@@ -141,7 +141,7 @@
               ]
         },
       "minecraft:type_family": {
-        "family": [ "cephalopod", "ammonite_friend" ,"nautilos" ]
+        "family": [ "ammonite_friend" ,"fishable", "acorazado" ]
       },
       "minecraft:collision_box": {
         "width": 0.6,

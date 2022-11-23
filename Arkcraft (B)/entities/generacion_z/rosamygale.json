@@ -108,130 +108,32 @@
 	    "minecraft:behavior.nearest_attackable_target": { 
           "priority": 1,
         "reselect_targets": false,
-          "within_radius": 30, 
+          "within_radius": 60, 
           "entity_types": [ 
             {
               "filters": { "other_with_families": [ "player"] },
-             "max_dist": 30
+             "max_dist": 60
             },
             {
               "filters": {
                 "any_of": [
-                  { "test" :  "is_family", "subject" : "other", "value" :  "cow"},
-     { "test" :  "is_family", "subject" : "other", "value" :  "player"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "sheep"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "rabbit"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "fox"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "chicken"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "llama"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "horse"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "donkey"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "pig"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "tamed"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"},
                   { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
                 ] 
               },
-              "max_dist": 30
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "baby_turtle"
-                  },
-                  {
-                    "test": "in_water",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 30
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "cod"
-                  },
-                  {
-                    "test": "is_underwater",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 30
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "salmon"
-                  },
-                  {
-                    "test": "is_underwater",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 30
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "fish"
-                  },
-                  {
-                    "test": "is_underwater",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 30
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "pufferfish"
-                  },
-                  {
-                    "test": "is_underwater",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 30
-            } 
+              "max_dist": 60
+            }
           ],
-          "must_see": true
+          "must_see": false
         }
         },
 			"ark:sleeping": {
 			"minecraft:is_sheared": {},
         "minecraft:tameable": {
-          "probability": 0.03,
+          "probability": 0.35,
           "tame_items": [
-         "arkcraft:pasta_bicho"],
+         "arkcraft:pasta_bicho", "minecraft:stone"],
           "tame_event": {
             "event": "minecraft:on_tame_rosamygale_adult",
             "target": "self"
@@ -265,11 +167,26 @@
 								1.7,
 								1.7
 							]
-						},
+            },
 						"skin_list": [
 							{
 								"variant": 0
-							}
+							},
+							{
+								"variant": 1
+							},
+							{
+								"variant": 2
+							},
+							{
+								"variant": 3
+              },
+							{
+								"variant": 4
+              },
+							{
+								"variant": 5
+              }
 						]
 					}
 				}
@@ -437,7 +354,7 @@
         "value": 0.1
       }, 
       "minecraft:attack": { 
-        "damage": 4
+        "damage": 5
       },
         "minecraft:scale": {
           "value": 1.2
@@ -453,17 +370,17 @@
           }
         },
 	    "minecraft:health": {
-          "value": 30,
-          "max": 30
+          "value": 10,
+          "max": 10
         }
 },
 
   "minecraft:rosamygale-wild_adult":{
       "minecraft:type_family": {
-        "family": [ "rosamygale", "mob" , "wild" , "wild_adult"]
+        "family": [ "rosamygale", "mob" , "wild" , "wild_adult" , "small"]
       },
         "minecraft:loot": {
-         "table": "loot_tables/entities/rosamygale.json"
+         "table": "loot_tables/entities/insecto.json"
         },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -472,10 +389,10 @@
   
   "minecraft:rosamygale-adult_esperando_tame":{
       "minecraft:type_family": {
-        "family": [ "rosamygale", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "rosamygale", "mob" , "tamed_adult" , "tamed" , "esperando_tame"  , "small"]
       },
         "minecraft:loot": {
-          "table": "loot_tables/entities/rosamygale.json"
+          "table": "loot_tables/entities/insecto.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -513,12 +430,12 @@
   },
   "minecraft:rosamygale-tamed_adult":{
       "minecraft:type_family": {
-        "family": [ "rosamygale", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "rosamygale", "mob" , "tamed_adult" , "tamed" , "small" ]
       },
         "minecraft:is_tamed": {
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/rosamygale.json"
+          "table": "loot_tables/entities/insecto.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -575,7 +492,7 @@
 									"subject": "other",
 									"value": "narcotic_arrow"
 								},
-								"event": "ark:narcotic_2"
+								"event": "ark:narcotic_final"
 							}
 						}
 					]
@@ -952,7 +869,25 @@
     },
 
  
-    "events": {
+        "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6Put him to sleep either with balls or narcotic arrows. Once asleep, feed him kibble or rock bugs (Normal)",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        },
       "minecraft:on_tame_rosamygale": {
 		"run_command": {
           "command": [
@@ -1881,7 +1816,8 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+												"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           },

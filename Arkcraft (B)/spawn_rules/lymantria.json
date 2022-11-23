@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "arkraft:lymantria",
+      "identifier": "arkcraft:lymantria",
       "population_control": "animal"
     },
     "conditions": [
@@ -14,7 +14,11 @@
           "adjust_for_weather": false
         },
         "minecraft:weight": {
-          "default": 20
+          "default": 200
+        },
+        "minecraft:herd": {
+          "min_size":4,
+          "max_size":5
         },
         "minecraft:biome_filter": {
           "any_of": [
@@ -29,12 +33,16 @@
       {
         "minecraft:spawns_on_surface": {},
         "minecraft:brightness_filter": {
-          "min": 7,
+          "min": 0,
           "max": 15,
           "adjust_for_weather": false
         },
+        "minecraft:herd": {
+          "min_size":4,
+          "max_size":5
+        },
         "minecraft:weight": {
-          "default": 20
+          "default": 400
         },
         "minecraft:biome_filter": {
             "test": "has_biome_tag", "operator":"==", "value": "flower_forest"

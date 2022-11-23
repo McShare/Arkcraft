@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:charcoal2"
+    },
+
+    
+    "tags": [ "grill" ],
+    "pattern": [
+      "121",
+      " W "
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:log"
+      },
+      "1": {
+        "item": "arkcraft:aceite"
+      },
+      "W": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "minecraft:charcoal",
+            "count": 3
+    }
+  }
+}

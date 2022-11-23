@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:burgesapan2"
+    },
+
+    
+    "tags": [ "grill" ],
+    "pattern": [
+      "212"
+    ],
+   "key": {
+      "2": {
+        "item": "arkcraft:dodo_bread"
+      },
+      "1": {
+        "item": "arkcraft:ark_meat_special"
+      }
+    },
+    "result": {
+      "item": "arkcraft:hamburger",
+            "count": 1
+    }
+  }
+}

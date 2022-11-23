@@ -5,12 +5,14 @@
             "commands": [
                 "effect @e[r=15,family=tamed] strength 20 2 true",
                 "effect @e[r=15,family=player] strength 20 2 true",
-                "event entity @e[r=15,family=wild] ark:avoid"
+                "event entity @e[r=15,family=wild] ark:avoid",
+                "damage @e[r=6, type=!player, family=!tamed] 20 entity_attack entity @s"
             ]
         },
         "rex": {
             "commands": [
-                "effect @e[r=15,family=wild] slowness 20 1 true"
+                "effect @e[r=15,family=wild] slowness 20 1 true",
+                "damage @e[r=7, type=!player, family=!tamed] 20 entity_attack entity @s"
             ]
         },
         "giga": {
@@ -23,15 +25,17 @@
             "commands": [
                 "effect @e[r=4,family=player] invisibility 30 1 true",
                 "effect @s invisibility 30 1 true",
-                "execute @e[family=wild,r=6] ~ ~ ~ summon lightning_bolt",
+                "execute @e[family=wild,r=3] ~ ~ ~ summon lightning_bolt",
+                "damage @e[r=6, type=!player, family=!tamed] 10 entity_attack entity @s",
                 "effect @e[family=tamed,r=15] invisibility 30 1 true"
             ]
         },
         "shadowmane_male": {
             "commands": [
-                "effect @e[r=15,family=player] invisibility 30 1 true",
-                "effect @s invisibility 30 1 true",
-                "execute @e[family=wild,r=6] ~ ~ ~ summon lightning_bolt"
+                "effect @e[r=15,family=player] strength 30 1 true",
+                "effect @s strength 30 1 true",
+                "damage @e[r=6, type=!player, family=!tamed] 10 entity_attack entity @s",
+                "execute @e[family=wild,r=3] ~ ~ ~ summon lightning_bolt"
             ]
         },
         "allosaurio": {

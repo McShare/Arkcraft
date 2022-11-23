@@ -115,7 +115,41 @@
           "seats": {
             "position": [ 0.0, 3.1, -1.0 ]
           }
-       } },
+        },
+        "minecraft:equippable": {
+          "slots": [
+            {
+              "slot": 0,
+              "item":"arkcraft:argentavis_saddle",
+              "accepted_items": ["arkcraft:argentavis_saddle"],
+              "on_equip": {
+                "event": "minecraft:montura_2"
+              },
+              "on_unequip": {
+                "event": "minecraft:montura_2_off"
+              }
+            },
+            
+            {
+              "slot": 1,
+              "item":"arkcraft:montura_para_tres",
+              "accepted_items": ["arkcraft:montura_para_tres"],
+              "on_equip": {
+                "event": "minecraft:montura_3"
+              },
+              "on_unequip": {
+                "event": "minecraftmontura_3_off"
+              }
+            }
+            ]
+        },  
+          "minecraft:inventory": { 
+            "container_type": "horse",
+            "inventory_size": 27,
+              "additional_slots_per_strength": 3
+            }
+          
+          },
  "minecraft:montable_1_aire":{ 
         "minecraft:rideable": {
           "seat_count": 1,
@@ -128,7 +162,40 @@
             "position": [ 0.0, 3.4, -0.2 ]
           }
 
-       } },
+        },
+        "minecraft:equippable": {
+          "slots": [
+            {
+              "slot": 0,
+              "item":"arkcraft:argentavis_saddle",
+              "accepted_items": ["arkcraft:argentavis_saddle"],
+              "on_equip": {
+                "event": "minecraft:montura_2"
+              },
+              "on_unequip": {
+                "event": "minecraft:montura_2_off"
+              }
+            },
+            
+            {
+              "slot": 1,
+              "item":"arkcraft:montura_para_tres",
+              "accepted_items": ["arkcraft:montura_para_tres"],
+              "on_equip": {
+                "event": "minecraft:montura_3"
+              },
+              "on_unequip": {
+                "event": "minecraftmontura_3_off"
+              }
+            }
+            ]
+        },  
+          "minecraft:inventory": { 
+            "container_type": "horse",
+            "inventory_size": 27,
+              "additional_slots_per_strength": 3
+            }
+           },
       
  "minecraft:domado_con_montura1":{
         "minecraft:loot": {
@@ -145,7 +212,40 @@
 },
         "minecraft:mark_variant": {
           "value": 1
-        }
+        },
+        "minecraft:equippable": {
+          "slots": [
+            {
+              "slot": 0,
+              "item":"arkcraft:argentavis_saddle",
+              "accepted_items": ["arkcraft:argentavis_saddle"],
+              "on_equip": {
+                "event": "minecraft:montura_2"
+              },
+              "on_unequip": {
+                "event": "minecraft:montura_2_off"
+              }
+            },
+            
+            {
+              "slot": 1,
+              "item":"arkcraft:montura_para_tres",
+              "accepted_items": ["arkcraft:montura_para_tres"],
+              "on_equip": {
+                "event": "minecraft:montura_3"
+              },
+              "on_unequip": {
+                "event": "minecraftmontura_3_off"
+              }
+            }
+            ]
+        },  
+          "minecraft:inventory": { 
+            "container_type": "horse",
+            "inventory_size": 27,
+              "additional_slots_per_strength": 3
+            }
+          
  },
  "minecraft:montable_2_piso":{
         "minecraft:rideable": {
@@ -159,7 +259,40 @@
             "position": [ 0.0, 4.1, -1.0]
           }
 
-       } }, 
+        },
+        "minecraft:equippable": {
+          "slots": [
+            {
+              "slot": 0,
+              "item":"arkcraft:argentavis_saddle",
+              "accepted_items": ["arkcraft:argentavis_saddle"],
+              "on_equip": {
+                "event": "minecraft:montura_2"
+              },
+              "on_unequip": {
+                "event": "minecraft:montura_2_off"
+              }
+            },
+            
+            {
+              "slot": 1,
+              "item":"arkcraft:montura_para_tres",
+              "accepted_items": ["arkcraft:montura_para_tres"],
+              "on_equip": {
+                "event": "minecraft:montura_3"
+              },
+              "on_unequip": {
+                "event": "minecraftmontura_3_off"
+              }
+            }
+            ]
+        },  
+          "minecraft:inventory": { 
+            "container_type": "horse",
+            "inventory_size": 27,
+              "additional_slots_per_strength": 3
+            }
+           }, 
  "minecraft:montable_2_aire":{
         "minecraft:rideable": {
           "seat_count": 1,
@@ -172,7 +305,40 @@
             "position": [ 0.0, 3.9, 0.2]
           }
  
-       } },
+        },
+        "minecraft:equippable": {
+          "slots": [
+            {
+              "slot": 0,
+              "item":"arkcraft:argentavis_saddle",
+              "accepted_items": ["arkcraft:argentavis_saddle"],
+              "on_equip": {
+                "event": "minecraft:montura_2"
+              },
+              "on_unequip": {
+                "event": "minecraft:montura_2_off"
+              }
+            },
+            
+            {
+              "slot": 1,
+              "item":"arkcraft:montura_para_tres",
+              "accepted_items": ["arkcraft:montura_para_tres"],
+              "on_equip": {
+                "event": "minecraft:montura_3"
+              },
+              "on_unequip": {
+                "event": "minecraftmontura_3_off"
+              }
+            }
+            ]
+        },  
+          "minecraft:inventory": { 
+            "container_type": "horse",
+            "inventory_size": 27,
+              "additional_slots_per_strength": 3
+            }
+           },
  
  
  
@@ -191,7 +357,40 @@
 },
         "minecraft:mark_variant": {
           "value":2
-        }
+        },
+        "minecraft:equippable": {
+          "slots": [
+            {
+              "slot": 0,
+              "item":"arkcraft:argentavis_saddle",
+              "accepted_items": ["arkcraft:argentavis_saddle"],
+              "on_equip": {
+                "event": "minecraft:montura_2"
+              },
+              "on_unequip": {
+                "event": "minecraft:montura_2_off"
+              }
+            },
+            
+            {
+              "slot": 1,
+              "item":"arkcraft:montura_para_tres",
+              "accepted_items": ["arkcraft:montura_para_tres"],
+              "on_equip": {
+                "event": "minecraft:montura_3"
+              },
+              "on_unequip": {
+                "event": "minecraftmontura_3_off"
+              }
+            }
+            ]
+        },  
+          "minecraft:inventory": { 
+            "container_type": "horse",
+            "inventory_size": 27,
+              "additional_slots_per_strength": 3
+            }
+          
  },
  "minecraft:montable_3_piso":{
       "minecraft:rideable": {
@@ -224,7 +423,40 @@
             "max_rider_count": 5
           }
         ]
-      } },
+      },
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item":"arkcraft:argentavis_saddle",
+            "accepted_items": ["arkcraft:argentavis_saddle"],
+            "on_equip": {
+              "event": "minecraft:montura_2"
+            },
+            "on_unequip": {
+              "event": "minecraft:montura_2_off"
+            }
+          },
+          
+          {
+            "slot": 1,
+            "item":"arkcraft:montura_para_tres",
+            "accepted_items": ["arkcraft:montura_para_tres"],
+            "on_equip": {
+              "event": "minecraft:montura_3"
+            },
+            "on_unequip": {
+              "event": "minecraftmontura_3_off"
+            }
+          }
+          ]
+      },  
+        "minecraft:inventory": { 
+          "container_type": "horse",
+          "inventory_size": 27,
+            "additional_slots_per_strength": 3
+          }
+         },
  "minecraft:montable_3_aire":{
       "minecraft:rideable": {
         "seat_count": 5,
@@ -256,7 +488,40 @@
             "max_rider_count": 5
           }
         ]
-      } },
+      },
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item":"arkcraft:argentavis_saddle",
+            "accepted_items": ["arkcraft:argentavis_saddle"],
+            "on_equip": {
+              "event": "minecraft:montura_2"
+            },
+            "on_unequip": {
+              "event": "minecraft:montura_2_off"
+            }
+          },
+          
+          {
+            "slot": 1,
+            "item":"arkcraft:montura_para_tres",
+            "accepted_items": ["arkcraft:montura_para_tres"],
+            "on_equip": {
+              "event": "minecraft:montura_3"
+            },
+            "on_unequip": {
+              "event": "minecraftmontura_3_off"
+            }
+          }
+          ]
+      },  
+        "minecraft:inventory": { 
+          "container_type": "horse",
+          "inventory_size": 27,
+            "additional_slots_per_strength": 3
+          }
+         },
          
         "minecraft:v1":{ 
         "minecraft:variant": {
@@ -385,7 +650,7 @@
       },
 			"minecraft:is_sheared": {},
                 "minecraft:tameable": {
-          "probability": 0.08,
+          "probability": 0.019,
           "tame_items": [
 						"arkcraft:pasta_acuatica"],
           "tame_event": {
@@ -570,7 +835,7 @@
         "value": 10.0
       }, 
       "minecraft:attack": { 
-        "damage": 10
+        "damage": 26
       },
         "minecraft:scale": { 
           "value": 1.2  
@@ -586,14 +851,14 @@
           }
         },
       "minecraft:health": {
-        "value": 120,
-        "max": 140
+        "value": 400,
+        "max": 400
       }
 },
 
   "minecraft:quetzal-wild_adult":{
       "minecraft:type_family": {
-        "family": [ "quetzal", "mob" , "wild" , "wild_adult"]
+        "family": [ "quetzal", "mob" , "wild" , "wild_adult" , "biggest"]
       },
         "minecraft:loot": {
          "table": "loot_tables/entities/quetzal.json"
@@ -615,7 +880,7 @@
 					]
 				},
       "minecraft:type_family": {
-        "family": [ "quetzal", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "quetzal", "mob" , "tamed_adult" , "tamed" , "esperando_tame" , "biggest"]
       },
         "minecraft:loot": {
           "table": "loot_tables/entities/quetzal.json"
@@ -646,7 +911,7 @@
 					] 
 				},
       "minecraft:type_family": {
-        "family": [ "quetzal", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "quetzal", "mob" , "tamed_adult" , "tamed"  , "biggest"]
       },
         "minecraft:is_tamed": {
         },
@@ -663,7 +928,40 @@
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
-      }
+      },
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item":"arkcraft:argentavis_saddle",
+            "accepted_items": ["arkcraft:argentavis_saddle"],
+            "on_equip": {
+              "event": "minecraft:montura_2"
+            },
+            "on_unequip": {
+              "event": "minecraft:montura_2_off"
+            }
+          },
+          
+          {
+            "slot": 1,
+            "item":"arkcraft:montura_para_tres",
+            "accepted_items": ["arkcraft:montura_para_tres"],
+            "on_equip": {
+              "event": "minecraft:montura_3"
+            },
+            "on_unequip": {
+              "event": "minecraftmontura_3_off"
+            }
+          }
+          ]
+      },  
+        "minecraft:inventory": { 
+          "container_type": "horse",
+          "inventory_size": 27,
+            "additional_slots_per_strength": 3
+          }
+        
   },
 
       
@@ -672,6 +970,39 @@
 },
 
     "minecraft:saddled": {
+    "minecraft:equippable": {
+      "slots": [
+        {
+          "slot": 0,
+          "item":"arkcraft:argentavis_saddle",
+          "accepted_items": ["arkcraft:argentavis_saddle"],
+          "on_equip": {
+            "event": "minecraft:montura_2"
+          },
+          "on_unequip": {
+            "event": "minecraft:montura_2_off"
+          }
+        },
+        
+        {
+          "slot": 1,
+          "item":"arkcraft:montura_para_tres",
+          "accepted_items": ["arkcraft:montura_para_tres"],
+          "on_equip": {
+            "event": "minecraft:montura_3"
+          },
+          "on_unequip": {
+            "event": "minecraftmontura_3_off"
+          }
+        }
+        ]
+    },  
+      "minecraft:inventory": { 
+        "container_type": "horse",
+        "inventory_size": 27,
+          "additional_slots_per_strength": 3
+        }
+      
 },
 			"ark:narcotic_1": {
 				"minecraft:damage_sensor": {
@@ -914,7 +1245,7 @@
                 "filters": {
                   "all_of": [
                 { "test": "has_component", "subject": "self", "operator": "!=", "value": "minecraft:is_baby" },
-                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "arkcraft:quetzal_saddle"},
+                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "arkcraft:argentavis_saddle"},
                   {
                     "test": "is_owner",
                     "subject": "other",
@@ -937,7 +1268,7 @@
                 "filters": {
                   "all_of": [
                 { "test": "has_component", "subject": "self", "operator": "!=", "value": "minecraft:is_baby" },
-                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "arkcraft:quetzal_saddle"},
+                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "arkcraft:argentavis_saddle"},
                   {
                     "test": "is_owner",
                     "subject": "other",
@@ -963,7 +1294,7 @@
                 "filters": {
                   "all_of": [
                 { "test": "has_component", "subject": "self", "operator": "!=", "value": "minecraft:is_baby" },
-                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "arkcraft:quetzal_platform"},
+                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "arkcraft:montura_para_tres"},
                   {
                     "test": "is_owner",
                     "subject": "other",
@@ -986,7 +1317,7 @@
                 "filters": {
                   "all_of": [
                 { "test": "has_component", "subject": "self", "operator": "!=", "value": "minecraft:is_baby" },
-                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "arkcraft:quetzal_platform"},
+                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "arkcraft:arkcraft:montura_para_tres"},
                   {
                     "test": "is_owner",
                     "subject": "other",
@@ -1393,7 +1724,25 @@
     },
 
  
-    "events": { 
+        "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6Put him to sleep either with balls or narcotic arrows. Once asleep, feed him aquatic kibble.",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        }, 
      "minecraft:domado_en_piso_saddle": {
         "remove": {
           "component_groups": [
@@ -1533,6 +1882,44 @@
           ]
         }
       },
+      "minecraft:montura_2_0ff": {
+         "remove": {
+           "component_groups": [
+            "minecraft:domado_con_montura1",
+            "minecraft:montable_2_piso"
+           ]
+         },
+         "add": {
+           "component_groups": [
+
+             "minecraft:montable_3_piso",
+             "minecraft:montable_3_aire",
+             "minecraft:domado_con_montura2",
+             "minecraft:domado_sin_montura",
+             "minecraft:montable_1_aire",
+             "minecraft:montable_1_piso"
+           ]
+         }
+       },
+      "minecraft:montura_3_off": {
+         "remove": {
+           "component_groups": [
+            "minecraft:montable_3_piso",
+            "minecraft:domado_con_montura2"
+           ]
+         },
+         "add": {
+           "component_groups": [
+
+             "minecraft:domado_con_montura1",
+             "minecraft:montable_2_aire",
+             "minecraft:montable_2_piso",
+             "minecraft:domado_sin_montura",
+             "minecraft:montable_1_aire",
+             "minecraft:montable_1_piso"
+           ]
+         }
+       },
       "minecraft:domado_con_montura1_air_on": {
         "remove": {
           "component_groups": [
@@ -2532,7 +2919,8 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+												"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           },

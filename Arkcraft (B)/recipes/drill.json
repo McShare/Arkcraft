@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:arkadrilll"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "  E",
+      "LWX"
+
+    ],
+    "key": {
+      "L": {
+        "item": "minecraft:netherite_pickaxe"
+      },
+      "X": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "E": {
+        "item": "minecraft:cauldron"
+      },
+      "W": {
+        "item": "arkcraft:galon_de_aceite"
+      }
+    },
+    "result": {
+      "item": "arkcraft:ark_drill"
+    }
+  }
+}

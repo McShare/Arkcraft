@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:tpudrir"
+    },
+
+    
+    "tags": [ "grill" ],
+    "pattern": [
+      "1X1"
+    ],
+   "key": {
+      "X": {
+        "item": "arkcraft:aceite"
+      },
+      "1": {
+        "item": "arkcraft:ark_meat_raw"
+      }
+    },
+    "result": {
+      "item": "minecraft:rotten_flesh",
+            "count": 4
+    }
+  }
+}

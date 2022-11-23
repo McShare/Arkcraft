@@ -1,0 +1,51 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "dialogo_tameado_arkcraft_farming_alv",
+				"npc_name": { "rawtext": [ { "translate": "Arkcraft - Download it on MCPEDL" } ] },
+				"text": { "rawtext": [ { "translate": "For updates, spoilers test and betas: \n- https://discord.gg/hCudpfDhW8 \n\nThanks for play!", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "§1Stick" } ] },
+						"commands": [
+							"/replaceitem entity @s slot.weapon.mainhand 0 minecraft:stick 1",
+							"/replaceitem entity @s slot.weapon.mainhand 1 minecraft:stick 1",
+							"/effect @s speed 20 2 true"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§1Oak Log" } ] },
+						"commands": [
+							"/replaceitem entity @s slot.weapon.mainhand 0 minecraft:log 1",
+							"/replaceitem entity @s slot.weapon.mainhand 1 minecraft:log 1"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§1Stripped oak" } ] },
+						"commands": [
+							"/replaceitem entity @s slot.weapon.mainhand 0 minecraft:stripped_oak_log 1",
+							"/replaceitem entity @s slot.weapon.mainhand 1 minecraft:stripped_oak_log 1"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§1Apple" } ] },
+						"commands": [
+							"/replaceitem entity @s slot.weapon.mainhand 0 minecraft:apple 1",
+							"/replaceitem entity @s slot.weapon.mainhand 1 minecraft:apple 1"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": ">>" } ] },
+						"commands": [
+							"/dialogue change @s dialogo_tameado_arkcraft_move_alv @p"
+						]
+					}
+				]
+			}
+		]
+	}
+}

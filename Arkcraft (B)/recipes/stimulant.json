@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:sieedckleke"
+    },
+
+    
+    "tags": [ "grill" ],
+    "pattern": [
+      "lX"
+
+    ],
+    "key": {
+      "l": {
+        "item": "minecraft:gunpowder"
+      },
+      "X": {
+        "item": "arkcraft:poisonshock_bowl"
+      }
+    },
+    "result": {
+      "item": "arkcraft:stimulant"
+    }
+  }
+}

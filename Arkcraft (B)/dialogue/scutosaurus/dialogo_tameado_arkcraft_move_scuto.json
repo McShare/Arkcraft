@@ -1,0 +1,59 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "dialogo_tameado_arkcraft_move_scuto",
+				"npc_name": { "rawtext": [ { "translate": "Arkcraft - Download it on MCPEDL" } ] },
+				"text": { "rawtext": [ { "translate": "For updates, spoilers test and betas: \n- https://discord.gg/hCudpfDhW8 \n\nThanks for play!", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "§1Follow Me" } ] },
+						"commands": [
+							"/event entity @s minecraft:seguir",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§2Wait Here" } ] },
+						"commands": [
+							"/event entity @s minecraft:quedarse_quieto",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§1Wander" } ] },
+						"commands": [
+							"/event entity @s minecraft:deambular",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§0Release Dino" } ] },
+						"commands": [
+							"/event entity @s minecraft:tamednt",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§gVillgr. Protect" } ] },
+						"commands": [
+							"/effect @e[r=15, type=villager] slowness 20 20",
+							"/effect @e[r=15, type=villager] resistance 20 20",
+							"/effect @e[r=15, type=villager] regeneration 20 20",
+							"/playsound player_silbido @a[r=15]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": ">>" } ] },
+						"commands": [
+							"/dialogue change @s dialogo_tameado_arkcraft_attack_scuto @p"
+						]
+					}
+				]
+			}
+		]
+	}
+}

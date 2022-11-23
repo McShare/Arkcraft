@@ -2,7 +2,8 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "arkcraft:big_herbivore_saddle"
+      "identifier": "arkcraft:big_herbivore_saddle",
+      "category": "equipment"
     },
 
     "components": {

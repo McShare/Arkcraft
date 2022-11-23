@@ -172,26 +172,36 @@
           "event": "minecraft:become_angry",
           "target": "self"
         },
-	    "minecraft:behavior.nearest_attackable_target": {
-          "priority": 5,
-        "reselect_targets": true,
-          "within_radius": 25,
-          "entity_types": [
-            {
-              "filters": { "other_with_families": [ "player"  , "spider", "pulmonoscorpius" , "arthropod"] },
-             "max_dist": 100
-            }
-          ],
-          "must_see": true
-        },
+        "minecraft:behavior.nearest_attackable_target": { 
+            "priority": 1,
+          "reselect_targets": false,
+            "within_radius": 60, 
+            "entity_types": [ 
+              {
+                "filters": { "other_with_families": [ "player"] },
+               "max_dist": 60
+              },
+              {
+                "filters": {
+                  "any_of": [
+                    { "test" :  "is_family", "subject" : "other", "value" :  "tamed"},
+                    { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+                    { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
+                  ] 
+                },
+                "max_dist": 60
+              }
+            ],
+            "must_see": false
+          },
      "minecraft:attack": {
-        "damage": 4
+        "damage": 14
       }
         },
 			"ark:sleeping": {
 			"minecraft:is_sheared": {},
         "minecraft:tameable": {
-          "probability": 0.10,
+          "probability": 0.09,
           "tame_items": [
             "arkcraft:pasta_bicho"
           ],
@@ -241,7 +251,13 @@
 							},
 							{
 								"variant": 3
-							}
+              },
+							{
+								"variant": 4
+              },
+							{
+								"variant": 5
+              }
 						]
 					}
 				}
@@ -419,8 +435,8 @@
           }
         },
       "minecraft:health": {
-        "value": 40,
-        "max": 50
+        "value": 80,
+        "max": 80
       }
 },
 
@@ -435,13 +451,13 @@
       "minecraft:can_climb": {
       },
       "minecraft:type_family": {
-        "family": [ "thylacoleo", "mob" , "wild" , "wild_adult"]
+        "family": [ "thylacoleo", "mob" , "wild" , "wild_adult", "temperatura" , "medium" ]
       },
                 "minecraft:variant": {
           "value": 0
                 },
         "minecraft:loot": {
-         "table": "loot_tables/entities/thylacoleo.json"
+         "table": "loot_tables/entities/woolbig.json"
         },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -453,11 +469,12 @@
   
   "minecraft:thylacoleo-adult_esperando_tame":{
       "minecraft:type_family": {
-        "family": [ "thylacoleo", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "thylacoleo", "mob" , "tamed_adult" , "tamed" , "esperando_tame", "temperatura" , "medium"  ]
       },
         "minecraft:loot": {
-          "table": "loot_tables/entities/thylacoleo.json"
+          "table": "loot_tables/entities/mega_raptor.json"
         },
+
       "minecraft:leashable": {
         "soft_distance": 4.0,
         "hard_distance": 10.0,
@@ -467,7 +484,7 @@
         "priority": 0
       },
      "minecraft:attack": {
-        "damage": 4
+        "damage": 16
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -510,12 +527,12 @@
 					]
 				},
       "minecraft:type_family": {
-        "family": [ "thylacoleo", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "thylacoleo", "mob" , "tamed_adult" , "tamed", "temperatura"  , "medium" ]
       },
         "minecraft:is_tamed": {
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/thylacoleo.json"
+          "table": "loot_tables/entities/woolbig.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -526,7 +543,7 @@
         "priority": 0
       },
      "minecraft:attack": {
-        "damage": 4
+        "damage": 16
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -600,7 +617,7 @@
 									"subject": "other",
 									"value": "narcotic_arrow"
 								},
-								"event": "ark:narcotic_2"
+								"event": "ark:narcotic_4"
 							}
 						}
 					]
@@ -1037,7 +1054,25 @@
     },
 
 
-    "events": {
+        "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6Put him to sleep either with balls or narcotic arrows. Once asleep, feed it with insectivore kibble",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        },
       "minecraft:mark_variant_0": {
 				"add": {
 					"component_groups": [
@@ -2441,7 +2476,8 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+												"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           },

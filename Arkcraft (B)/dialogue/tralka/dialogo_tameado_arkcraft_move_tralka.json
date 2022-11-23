@@ -1,0 +1,66 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "dialogo_tameado_arkcraft_move_tralka",
+				"npc_name": { "rawtext": [ { "translate": "Arkcraft" } ] },
+				"text": { "rawtext": [ { "translate": "Move Modes Opcions", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "§1Follow Me" } ] },
+						"commands": [
+							"/event entity @s minecraft:seguir",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§2Wait Here" } ] },
+						"commands": [
+							"/event entity @s minecraft:quedarse_quieto",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§1Wander" } ] },
+						"commands": [
+							"/event entity @s minecraft:deambular",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§0Release Dino" } ] },
+						"commands": [
+							"/event entity @s minecraft:tamednt",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "§0Detonate!" } ] },
+						"commands": [
+							"/execute @e[r=300, type=arkcraft:diente] ~ ~ ~ effect @e[r=6] slowness 10 10 true",						
+							"/execute @e[r=300, type=arkcraft:diente] ~ ~ ~ damage @e[r=1, type=!arkcraft:diente] 12 lightning entity @s",	
+							"/execute @e[r=300, type=arkcraft:diente] ~ ~ ~ damage @e[r=2, type=!arkcraft:diente] 12 lightning entity @s",	
+							"/execute @e[r=300, type=arkcraft:diente] ~ ~ ~ damage @e[r=3, type=!arkcraft:diente] 12 lightning entity @s",	
+							"/execute @e[r=300, type=arkcraft:diente] ~ ~ ~ damage @e[r=4, type=!arkcraft:diente] 12 lightning entity @s",								"/execute @e[r=300, type=arkcraft:diente] ~ ~ ~ damage @e[r=6, type=!arkcraft:diente] 12 lightning entity @s",	
+							"/execute @e[r=300, type=arkcraft:diente] ~ ~ ~ damage @e[r=5, type=!arkcraft:diente] 12 lightning entity @s",	
+							"/execute @e[r=300, type=arkcraft:diente] ~ ~ ~ damage @e[r=6, type=!arkcraft:diente] 12 lightning entity @s",		
+							"/execute @e[r=300, type=arkcraft:diente] ~ ~ ~ summon lightning_bolt",
+							"/kill @e[r=300, type=arkcraft:diente]",
+							"/playanimation @s detonation",
+							"/playsound player_silbido @a[r=6]"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": ">>" } ] },
+						"commands": [
+							"/dialogue change @s dialogo_tameado_arkcraft_attack_tralka @p"
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:aammonitemuelamiguitotoarmne"
+    },
+
+    
+    "tags": [ "grill" ],
+    "pattern": [
+      "2",
+      "1"
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:stick"
+      },
+      "1": {
+        "item": "arkcraft:bucket_ammonite_friend"
+      }
+    },
+    "result": [
+      { "item": "minecraft:nautilus_shell",
+    "count": 1 },
+      { "item": "minecraft:bucket", "count": 1, "data": 0 },
+      { "item": "arkcraft:pasta_acuatica", "count": 3, "data": 0 }
+    ]
+  }
+}

@@ -6,19 +6,20 @@
                 {
                     "type": "item",
                     "name": "minecraft:leather",
-                    "weight": 1,
+                    "weight": 100,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 0,
-                                "max": 4                         }
+                                "min": 1,
+                                "max": 1
+                            }
                         },
                         {
                             "function": "looting_enchant",
                             "count": {
-                                "min": 0,
-                                "max": 3
+                                "min": 1,
+                                "max": 4
                             }
                         }
                     ]
@@ -31,24 +32,124 @@
                 {
                     "type": "item",
                     "name": "arkcraft:ark_meat_raw",
-                    "weight": 1,
+                    "weight": 100,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 0,
-                                "max": 4                         }
+                                "min": 2,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "function": "furnace_smelt",
+                            "conditions": [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "properties": {
+                                        "on_fire": true
+                                    }
+                                }
+                            ]
                         },
                         {
                             "function": "looting_enchant",
                             "count": {
-                                "min": 0,
-                                "max": 3
+                                "min": 2,
+                                "max": 6
                             }
                         }
                     ]
                 }
             ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:bone",
+                    "weight": 100,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+                    "rolls": 1,
+                    "entries": [
+                        
+                        {
+                            "type": "item",
+                            "name": "minecraft:name_tag",
+                            "weight": 5
+                        },
+                        {
+                            "type": "item",
+                            "name": "minecraft:golden_sword",
+                            "weight": 5,
+                            "functions": [
+                                {
+                                    "function": "set_damage",
+                                    "damage": {
+                                        "min": 0,
+                                        "max": 0.25
+                                    }
+                                },
+                                {
+                                    "function": "enchant_with_levels",
+                                    "levels": 20
+                                    
+                                }
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "minecraft:fishing_rod",
+                            "weight": 5,
+                            "functions": [
+                                {
+                                    "function": "set_damage",
+                                    "damage": {
+                                        "min": 0,
+                                        "max": 0.25
+                                    }
+                                },
+                                {
+                                    "function": "enchant_with_levels",
+                                    "levels": 30
+                                    
+                                }
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "minecraft:book",
+                            "weight": 6,
+                            "functions": [
+                                {
+                                    "function": "enchant_with_levels",
+                                    "levels": 5
+                                    
+                                }
+                            ]
+                        }
+                   ]    
         }
     ]
 }

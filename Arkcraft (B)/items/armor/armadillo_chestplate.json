@@ -1,0 +1,32 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+        "description": {
+      "category": "equipment",
+      "identifier": "arkcraft:armadillo_chestplate"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.leggings"
+     },
+            "minecraft:display_name": { "value": "§6ArkCraft | §3Armadillosuchus Shell §o§a(Leggings)"},
+     "minecraft:icon": {
+        "texture": "armadillo_chestplate"
+     },
+    "minecraft:render_offsets": "chestplates",
+      "minecraft:max_stack_size": 1,
+      "minecraft:durability": {
+        "max_durability": 250
+      },
+      "minecraft:item_storage": {
+        "capacity": 2
+      },
+      "minecraft:armor": {
+        "protection": 6
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.legs"
+      }
+    }
+  }
+}

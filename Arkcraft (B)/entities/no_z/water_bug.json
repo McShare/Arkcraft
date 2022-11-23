@@ -11,6 +11,7 @@
 
     "component_groups": {
       "minecraft:normal": {
+        
       "minecraft:behavior.avoid_mob_type": {
         "priority": 4,
         "entity_types":[
@@ -27,6 +28,24 @@
             "sprint_speed_multiplier": 0.5
           }
         ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                  {"test": "is_family", "subject": "other", "value": "skorpiovenator"},
+                  {"test": "is_family", "subject": "other", "value": "arkcraft:skorpiovenator"}
+                ]
+              },
+              "event": "ark:plash"
+            }
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/insecto.json"
       },
         "minecraft:interact": {
           "interactions": [
@@ -54,7 +73,139 @@
               "hurt_item": 0,
             "interact_text": "Water",
              "play_sounds": "block.composter.ready"
-        }
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_owner",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "arkcraft:friendly_incense_pot"
+                    }
+                  ]
+                },
+                "event": "minecraft:copperiron",
+                "target": "self"
+              },
+                "use_item": false,
+                "hurt_item": 16,
+              "interact_text": "Relax near Lymantrias",
+                "play_sounds": "random.fizz"
+    
+              },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "arkcraft:whip_t1"
+                    }
+                  ]
+                },
+                "event": "minecraft:agua",
+                "target": "self"
+              },
+                "use_item": false,
+                "hurt_item": 0,
+              "interact_text": "Water",
+               "play_sounds": "block.composter.ready"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "arkcraft:whip_t2"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:agua",
+                  "target": "self"
+                },
+                  "use_item": false,
+                  "hurt_item": 0,
+                "interact_text": "Water",
+                 "play_sounds": "block.composter.ready"
+                },
+                {
+                  "on_interact": {
+                    "filters": {
+                      "all_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "player"
+                        },
+                        {
+                          "test": "has_equipment",
+                          "domain": "hand",
+                          "subject": "other",
+                          "value": "arkcraft:whip_t3"
+                        }
+                      ]
+                    },
+                    "event": "minecraft:agua",
+                    "target": "self"
+                  },
+                    "use_item": false,
+                    "hurt_item": 0,
+                  "interact_text": "Water",
+                   "play_sounds": "block.composter.ready"
+                  },
+                  {
+                    "on_interact": {
+                      "filters": {
+                        "all_of": [
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "player"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "domain": "hand",
+                            "subject": "other",
+                            "value": "arkcraft:whip_t4"
+                          }
+                        ]
+                      },
+                      "event": "minecraft:agua",
+                      "target": "self"
+                    },
+                      "use_item": false,
+                      "hurt_item": 0,
+                    "interact_text": "Water",
+                     "play_sounds": "block.composter.ready"
+                    }
         ]
         },
         "minecraft:spell_effects": {
@@ -68,6 +219,9 @@
             }
           ]
         }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/insecto.json"
       },
 
       "minecraft:corriendo": {
@@ -139,6 +293,21 @@
         "minecraft:scale": {
           "value":1.2
         },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "on_damage": {
+                "filters": {
+                  "any_of": [
+                    {"test": "is_family", "subject": "other", "value": "skorpiovenator"},
+                    {"test": "is_family", "subject": "other", "value": "arkcraft:skorpiovenator"}
+                  ]
+                },
+                "event": "ark:plash"
+              }
+            }
+          ]
+        },
       "minecraft:behavior.panic": {
         "priority": 1,
         "speed_multiplier": 1.25
@@ -208,6 +377,27 @@
     },
 
     "events": {
+      "minecraft:copperiron": {
+        "randomize": [
+          {
+              
+            "weight": 95,
+		"run_command": {
+          "command": [
+"event entity @e[r=20, type=arkcraft:lymantria] minecraft:salvaje_no_volando",
+"event entity @e[r=20, type=arkcraft:lymantria] minecraft:salvaje_no_volando",
+"event entity @e[r=20, type=arkcraft:lymantria] minecraft:salvaje_no_volando",
+"effect @s speed 100 5 true",
+"effect @s jump_boost 100 5 true"
+          ],
+          "target": "self"
+		}
+          },
+          {
+            "weight": 100
+          }
+        ]
+      },
       "minecraft:entity_spawned": {
         "sequence": [
           {
@@ -226,6 +416,15 @@
           }
         ]
       },
+			        
+			"ark:plash": {
+				"run_command": {
+				  "command": [
+			"give @p arkcraft:oil 10" 
+				  ],
+				  "target": "self"
+				}
+			  },
       "minecraft:normal": {
         "remove": {
           "component_groups": [
@@ -241,7 +440,7 @@
       "minecraft:agua": {
         "randomize": [
           {
-            "weight": 5,
+            "weight": 90,
             "remove": {
               "component_groups": [
                 "minecraft:normal"

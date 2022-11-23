@@ -10,10 +10,6 @@
     "conditions": [
       {
         "minecraft:spawns_on_surface": {},
-        "minecraft:spawns_on_block_filter": [
-          "minecraft:leaves",
-          "minecraft:leaves2"
-        ],
 
         "minecraft:difficulty_filter": {
           "min": "easy",
@@ -55,10 +51,6 @@
       },
       {
         "minecraft:spawns_on_surface": {},
-        "minecraft:spawns_on_block_filter": [
-          "minecraft:leaves",
-          "minecraft:leaves2"
-        ],
         "minecraft:brightness_filter": {
           "min": 7,
           "max": 15,
@@ -79,10 +71,6 @@
       },
       {
         "minecraft:spawns_on_surface": {},
-        "minecraft:spawns_on_block_filter": [
-          "minecraft:leaves",
-          "minecraft:leaves2"
-        ],
         "minecraft:brightness_filter": {
           "min": 7,
           "max": 15,
@@ -103,10 +91,6 @@
       },
       {
         "minecraft:spawns_on_surface": {},
-        "minecraft:spawns_on_block_filter": [
-          "minecraft:leaves",
-          "minecraft:leaves2"
-        ],
         "minecraft:brightness_filter": {
           "min": 0,
           "max": 15,
@@ -132,10 +116,6 @@
       },
       {
         "minecraft:spawns_on_surface": {},
-        "minecraft:spawns_on_block_filter": [
-          "minecraft:leaves",
-          "minecraft:leaves2"
-        ],
         "minecraft:brightness_filter": {
           "min": 0,
           "max": 15,
@@ -161,17 +141,13 @@
       },
       {
         "minecraft:spawns_on_surface": {},
-        "minecraft:spawns_on_block_filter": [
-          "minecraft:leaves",
-          "minecraft:leaves2"
-        ],
         "minecraft:brightness_filter": {
           "min": 0,
           "max": 15,
           "adjust_for_weather": false
         },
         "minecraft:weight": {
-          "default": 15
+          "default": 25
         },
         "minecraft:herd": {
           "min_size":2,

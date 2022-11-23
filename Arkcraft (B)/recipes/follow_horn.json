@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:axfffxe"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "lW ",
+      "XXX"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:lead"
+      },
+      "l": {
+        "item": "arkcraft:friendly_incense_pot"
+      },
+      "X": {
+        "item": "minecraft:deepslate"
+      }
+    },
+    "result": {
+      "item": "arkcraft:follow_horn"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:aammonitemueltoarmne"
+    },
+
+    
+    "tags": [ "grill" ],
+    "pattern": [
+      "2",
+      "1"
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:stick"
+      },
+      "1": {
+        "item": "arkcraft:bucket_ammonite_poisonshock"
+      }
+    },
+    "result": [
+      { "item": "arkcraft:poisonshock_bowl",
+    "count": 7 },
+      { "item": "minecraft:bucket", "count": 1, "data": 0 }
+    ]
+  }
+}

@@ -2,7 +2,8 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "arkcraft:jeringa_r"
+      "identifier": "arkcraft:jeringa_r",
+      "category": "equipment"
     },
     
     "components": {

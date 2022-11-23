@@ -1,0 +1,84 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "arkcraft:oil_jar",
+			"category": "equipment"
+		},
+		"components": {
+			
+            "minecraft:weapon": {
+				"on_hurt_entity": {
+				  "event": "tool_durability"
+				},
+				"on_hit_block": {
+				  "event": "tool_durability"
+				},
+				"on_not_hurt_entity": {
+				  "event": "tool_durability"
+				}
+			  },
+			  "minecraft:on_use_on": {
+				"on_use_on": {
+				  "event": "on_tool_used"
+				}
+			  },
+      "minecraft:render_offsets": "tools",
+      "tag:minecraft:is_sword": {},
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.Equipment"
+      },
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "ark:berry"
+				}
+	
+				},
+			      "minecraft:damageable": {
+      }, 
+			"minecraft:icon": {
+				"texture": "oil_jar"
+			},
+			      "minecraft:use_duration": 15,
+				  "minecraft:durability": {
+					"max_durability": 3
+				  },
+			"minecraft:cooldown": {
+				"category": "ender_pearl",
+				"duration": 2.60
+			},
+			"minecraft:display_name": {
+				"value": "§6ArkCraft | §3Oil Jar §o§a(Burn near mobs / Counter temperature mobs)"
+			}
+		},
+		"events": {
+			"ark:berry": {
+				"damage": {
+					"type": "none",
+					"target": "self",
+					"amount": 1
+				  },
+				"run_command": { 
+					"command": [
+						"execute @e[r=10, family=temperatura] ~ ~ ~ effect @e[r=5, family=temperatura] wither 10 3 ",
+						"execute @e[r=10, family=temperatura] ~ ~ ~ effect @e[r=5, family=temperatura] weakness 10 3 ",
+						"execute @e[r=10, family=temperatura] ~ ~ ~ effect @e[r=5, family=temperatura] slowness 10 2 ",
+						"execute @e[r=10, family=!tamed, type=!player] ~ ~ ~ detect ~~~ air 0 setblock ~~~ fire ",
+						"playsound random.glass @a[r=10] ~ ~ ~",
+						"execute @e[r=3, family=tamed, type=arkcraft:irritator] ~ ~ ~ execute @e[r=10, family=!tamed, type=!player] ~ ~ ~ detect ~~~ air 0 setblock ~~~ fire ",
+						"execute @e[r=3, family=tamed, type=arkcraft:irritator] ~ ~ ~ execute @e[r=10, family=!tamed, type=!player] ~ ~ ~ detect ~~~ air 0 effect @s poison 10 3 "
+					] 
+				} 
+			},
+			"tool_durability": {
+				"damage": {
+				  "type": "none",
+				  "target": "self",
+				  "amount": 0
+				}
+			  }
+		} 
+	}
+}

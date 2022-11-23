@@ -45,120 +45,28 @@
         }
             } ,
         "minecraft:despierto":{
-        "minecraft:behavior.nearest_attackable_target": {
-          "priority": 4,
-          "reselect_targets": true,
-          "entity_types": [
-            {
-              "filters": {
-                "any_of": [
-                  { "test" :  "is_family", "subject" : "other", "value" :  "cow"},
-     { "test" :  "is_family", "subject" : "other", "value" :  "player"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "sheep"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "rabbit"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "fox"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "chicken"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "llama"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "horse"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "donkey"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "pig"}
-                ] 
+        "minecraft:behavior.nearest_attackable_target": { 
+            "priority": 1,
+          "reselect_targets": false,
+            "within_radius": 30, 
+            "entity_types": [ 
+              {
+                "filters": { "other_with_families": [ "player"] },
+               "max_dist": 30
               },
-              "max_dist": 16
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "baby_turtle"
-                  },
-                  {
-                    "test": "in_water",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 16
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "cod"
-                  },
-                  {
-                    "test": "is_underwater",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 16
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "salmon"
-                  },
-                  {
-                    "test": "is_underwater",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 16
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "fish"
-                  },
-                  {
-                    "test": "is_underwater",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 16
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "pufferfish"
-                  },
-                  {
-                    "test": "is_underwater",
-                    "subject": "other",
-                    "operator": "!=",
-                    "value": true
-                  }
-                ]
-              },
-              "max_dist": 16
-            }
-          ],
-          "must_see": true
-},
+              {
+                "filters": {
+                  "any_of": [
+                    { "test" :  "is_family", "subject" : "other", "value" :  "tamed"},
+                    { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+                    { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
+                  ] 
+                },
+                "max_dist": 30
+              }
+            ],
+            "must_see": true
+          },
         "minecraft:tameable": {
           "probability": 1.18,
           "tame_items": [
@@ -401,7 +309,7 @@
 
   "minecraft:compy-wild_adult":{
       "minecraft:type_family": {
-        "family": [ "compy", "mob" , "wild" , "wild_adult"]
+        "family": [ "compy", "mob" , "wild" , "wild_adult" , "smallest"]
       },
         "minecraft:scale": {
           "value": 0.5
@@ -410,7 +318,7 @@
           "value": 0
                 },
         "minecraft:loot": {
-         "table": "loot_tables/entities/compy.json"
+         "table": "loot_tables/entities/normalsmall.json"
         },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -421,13 +329,13 @@
   },
   "minecraft:compy-adult_esperando_tame":{
       "minecraft:type_family": {
-        "family": [ "compy", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "compy", "mob" , "tamed_adult" , "tamed" , "esperando_tame" , "smallest" ]
       },
         "minecraft:scale": {
           "value": 0.5
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/compy.json"
+          "table": "loot_tables/entities/normalsmall.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -446,7 +354,7 @@
   },
   "minecraft:compy-tamed_adult":{
       "minecraft:type_family": {
-        "family": [ "compy", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "compy", "mob" , "tamed_adult" , "tamed"  , "smallest"]
       },
         "minecraft:is_tamed": {
         },
@@ -454,7 +362,7 @@
           "value": 0.5
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/compy.json"
+          "table": "loot_tables/entities/normalsmall.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -648,7 +556,25 @@
     },
 
 
-    "events": {
+        "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6Passively, feeding it with normal meat",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        },
       "minecraft:to_velonasaur_r": {
         "remove": {
           "component_groups": [

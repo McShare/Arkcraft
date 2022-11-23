@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:asdangacaffffdsfdsrmne"
+    },
+
+    
+    "tags": [ "grill" ],
+    "pattern": [
+      "12",
+      "3 "
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:slime"
+      },
+      "3": {
+        "item": "minecraft:glass_bottle"
+      },
+      "1": {
+        "item": "minecraft:double_plant"
+      }
+    },
+    "result": {
+      "item": "arkcraft:aceite"
+    }
+  }
+}

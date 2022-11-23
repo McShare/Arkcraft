@@ -54,7 +54,13 @@
 	    "dialogo_tameado_arkcraft": "animation.dialogo_tameado_arkcraft_move",
 	    "dialogo_esperando_tame_arkcraft": "animation.dialogo_esperando_tame_arkcraft",
 	    "remove_ataque_normal": "animation.remove_ataque_normal_pulmonoscorpius",
-	    "get_up": "animation.get_up_arkcraft"
+	    "get_up": "animation.get_up_arkcraft",
+      "nadador": "controller.animation.nadador",
+      "nadador_velocidad_0": "animation.nadador_velocidad_0",
+      "nadador_velocidad_1": "animation.nadador_velocidad_1",
+      "nadador_velocidad_2": "animation.nadador_velocidad_2",
+      "nadador_velocidad_3": "animation.nadador_velocidad_3",
+      "nadador_velocidad_4": "animation.nadador_velocidad_4"
     } 
     },  
 
@@ -181,9 +187,6 @@
       "minecraft:behavior.hurt_by_target": {
         "priority": 0
       },
-      "minecraft:behavior.float": {
-        "priority": 0
-      },
       "minecraft:behavior.look_at_player": {
         "priority": 6,
         "target_distance": 6.0,
@@ -224,15 +227,15 @@
           "must_see": true
         },
      "minecraft:attack": {
-        "damage": 4
+        "damage": 5
       }
         }, 
 			"ark:sleeping": {
 			"minecraft:is_sheared": {},
         "minecraft:tameable": {
-          "probability": 1.10,
+          "probability": 0.35,
           "tame_items": [
-            "arkcraft:pasta_bicho"
+            "arkcraft:pasta_bicho", "arkcraft:pasta_acuatica"
           ],
           "tame_event": {
             "event": "minecraft:on_tame_brontoscorpio_adult",
@@ -407,9 +410,7 @@
         },
         
         "minecraft:default":{
-      "minecraft:behavior.float": {
-        "priority": 0
-      },
+
       "minecraft:behavior.look_at_player": {
         "priority": 6,
         "target_distance": 6.0,
@@ -493,7 +494,7 @@
           }
         },
       "minecraft:health": {
-        "value": 30,
+        "value": 40,
         "max": 40
       }
 },
@@ -515,13 +516,13 @@
       "minecraft:can_climb": {
       },
       "minecraft:type_family": {
-        "family": [ "brontoscorpio", "mob" , "wild" , "wild_adult", "spider" ,"arthropod"]
+        "family": [ "brontoscorpio", "mob" , "wild" , "wild_adult", "spider" ,"arthropod" , "small"]
       },
                 "minecraft:variant": {
           "value": 0
                 },
         "minecraft:loot": {
-         "table": "loot_tables/entities/brontoscorpio.json"
+         "table": "loot_tables/entities/insecto.json"
         },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -533,10 +534,10 @@
   
   "minecraft:brontoscorpio-adult_esperando_tame":{
       "minecraft:type_family": {
-        "family": [ "brontoscorpio", "mob" , "tamed_adult" , "tamed" , "esperando_tame", "spider" ,"arthropod"]
+        "family": [ "brontoscorpio", "mob" , "tamed_adult" , "tamed" , "esperando_tame", "spider" ,"arthropod" , "small"]
       },
         "minecraft:loot": {
-          "table": "loot_tables/entities/brontoscorpio.json"
+          "table": "loot_tables/entities/insecto.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -590,12 +591,12 @@
 					]
 				},
       "minecraft:type_family": {
-        "family": [ "brontoscorpio", "mob" , "tamed_adult" , "tamed", "spider" ,"arthropod"] 
+        "family": [ "brontoscorpio", "mob" , "tamed_adult" , "tamed", "spider" ,"arthropod" , "small"] 
       },
         "minecraft:is_tamed": {
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/pulmonoscorpius.json"
+          "table": "loot_tables/entities/insecto.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -768,7 +769,7 @@
 									"subject": "other",
 									"value": "narcotic_arrow"
 								},
-								"event": "ark:narcotic_6"
+								"event": "ark:narcotic_final"
 							}
 						}
 					]
@@ -897,6 +898,9 @@
       },
       "minecraft:water_movement": {
         "drag_factor": 0.25
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.1
       },
         "minecraft:spawn_entity": {
           "entities": {
@@ -1027,6 +1031,24 @@
 
 
     "events": {   
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6I sleep and give him insectivore or aquatic kibble",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        },
       "minecraft:skin_id_0": {
 				"add": {
 					"component_groups": [
@@ -2039,7 +2061,8 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+												"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           },

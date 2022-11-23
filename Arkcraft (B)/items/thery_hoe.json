@@ -1,0 +1,187 @@
+{
+    "format_version": "1.17.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "arkcraft:thery_hoe",
+            "category": "equipment"
+        },
+		"components": {
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"first_person": {
+							"position": [1.8, -1.0, -5],
+						 "rotation": [120, 1, -130],
+							"scale": [-0.1, -0.1, -0.1]
+					},
+				  "third_person": {
+					"position": [0.6, 1.7, -0.9],	
+				"scale": [0.05, 0.1, 0.1] 
+				  }
+				}
+				
+			  },
+            "minecraft:on_use_on": {
+				"on_use_on": {
+					"event": "arkcraft:on_use"
+				}
+			},
+            "minecraft:icon": {
+                "texture": "thery_hoe"
+            },
+            "minecraft:display_name": {
+  				"value": "§6ArkCraft | §3Thery Hoe"
+				},
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.hoe"
+			},
+            "minecraft:weapon": {
+                "on_hurt_entity": {
+                    "event": "arkcraft:damage_eventb",
+                    "target": "self"
+                }
+            },
+            "minecraft:hand_equipped": true,
+            "minecraft:max_stack_size": 1,
+				"tag:minecraft:is_hoe": {},
+            "minecraft:allow_off_hand": false,
+            "minecraft:enchantable": {
+                "value": 12,
+                "slot": "axe"
+            },
+            "minecraft:durability": {
+                "max_durability": 450,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+						 {
+                        "items": [
+                            "arkcraft:thery_hoe"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"
+                    }
+                ]
+            },
+            "minecraft:mining_speed": 1,
+            "minecraft:damage": 6,
+            "minecraft:can_destroy_in_creative": true,
+            "minecraft:digger": {
+                "on_dig": {
+                    "event": "arkcraft:damage_event",
+                    "target": "self"
+                },
+                "use_efficiency": true,
+                "destroy_speeds": [
+					{
+						"block": "minecraft:nether_wart_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "arkcraft:damage_event"
+						}
+					},
+					{
+						"block": "minecraft:hay_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "arkcraft:damage_event"
+						}
+					},
+					{
+						"block": "minecraft:target",
+						"speed": 9,
+						"on_dig": {
+							"event": "arkcraft:damage_event"
+						}
+					},
+					{
+						"block": "minecraft:shroomlight",
+						"speed": 9,
+						"on_dig": {
+							"event": "arkcraft:damage_event"
+						}
+					},
+					{
+						"block": "minecraft:leaves",
+						"speed": 9,
+						"on_dig": {
+							"event": "arkcraft:damage_event"
+						}
+					},
+					{
+						"block": "minecraft:leaves2",
+						"speed": 9,
+						"on_dig": {
+							"event": "arkcraft:damage_event"
+						}
+					},
+					{
+						"block": "minecraft:azalea_leaves_flowered",
+						"speed": 9,
+						"on_dig": {
+							"event": "arkcraft:damage_event"
+						}
+					},
+					{
+						"block": "minecraft:azalea_leaves",
+						"speed": 9,
+						"on_dig": {
+							"event": "arkcraft:damage_event"
+						}
+					},
+					{
+						"block": "minecraft:warped_wart_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "arkcraft:damage_event"
+						}
+					},
+					{
+						"block": "minecraft:mangrove_leaves",
+						"speed": 9,
+						"on_dig": {
+							"event": "arkcraft:damage_event"
+						}
+					}
+				]
+          }
+        },
+        "events": {
+			"arkcraft:damage_event": {
+                "damage": {
+                    "type": "durability",
+                    "amount": 1
+                }
+            },
+            "arkcraft:damage_eventb": {
+                "damage": {
+                    "type": "durability",
+                    "amount": 2
+                }
+            },
+            "on_tool_used": {
+                "damage": {
+                    "type": "durability",
+                    "amount": 1
+                }
+            },
+			"arkcraft:on_use": {
+				"damage": {
+					"type": "none",
+					"target": "self",
+					"amount": 4
+				  },
+				"run_command": { 
+					"command": [
+						"fill ~-1~-1~1 ~1~~-1 farmland -1 replace grass",
+						"fill ~-1~-1~1 ~1~~-1 farmland -1 replace dirt",
+						"fill ~-1~-1~1 ~1~~-1 farmland -1 replace grass_path",
+						"fill ~-1~-1~1 ~1~~-1 farmland 1 replace dirt_with_roots"
+					] 
+				} 
+			}
+        }
+    }
+}

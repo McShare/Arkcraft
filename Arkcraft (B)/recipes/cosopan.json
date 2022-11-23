@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:tcosopan2"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "212"
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:bread"
+      },
+      "1": {
+        "item": "arkcraft:dodo_egg"
+      }
+    },
+    "result": {
+      "item": "arkcraft:dodo_bread",
+            "count": 2
+    }
+  }
+}

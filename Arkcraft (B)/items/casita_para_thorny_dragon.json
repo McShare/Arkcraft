@@ -2,7 +2,8 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "arkcraft:casita_para_thorny_dragon"
+      "identifier": "arkcraft:casita_para_thorny_dragon",
+      "category": "equipment"
     },
 
     "components": {

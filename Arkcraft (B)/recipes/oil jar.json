@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:axefffxe"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "WWW",
+      "XlX"
+    ],
+    "key": {
+      "W": {
+        "item": "arkcraft:aceite"
+      },
+      "l": {
+        "item": "minecraft:flower_pot"
+      },
+      "X": {
+        "item": "minecraft:string"
+      }
+    },
+    "result": {
+      "item": "arkcraft:oil_jar"
+    }
+  }
+}

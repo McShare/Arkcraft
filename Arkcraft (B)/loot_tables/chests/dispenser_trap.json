@@ -1,0 +1,48 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 7
+              }
+            }
+          ],
+          "weight": 30
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "arkcraft:narcotic_arrow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 12,
+                "max": 25
+              }
+            }
+          ],
+          "weight": 30
+        }
+      ]
+    }
+  ]
+}

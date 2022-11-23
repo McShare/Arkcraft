@@ -25,7 +25,7 @@
 	    "sleeping_night_tamed": "controller.animation.sleeping_night_tamed2",
 	   "durmiendo_tamed": "animation.sleeping_night_tamed",
 	    "ataque_normal_arkcraft": "controller.animation.ataque_normal_arkcraft",
-	    "remove_ataque_normal": "animation.remove_ataque_normal",
+	    "remove_ataque_normal": "animation.remove_ataque_fuerte",
 	    "dialogo_controlador": "controller.animation.dialogo_controlador_arkcraft",
 	    "dialogo_tameado_arkcraft": "animation.dialogo_tameado_arkcraft_move",
 	    "dialogo_esperando_tame_arkcraft": "animation.dialogo_esperando_tame_arkcraft",
@@ -151,7 +151,7 @@
           "must_see": true
         },
      "minecraft:attack": {
-        "damage": 15
+        "damage": 26
       }
         },
 			"ark:sleeping": {
@@ -160,7 +160,7 @@
                 },
 			"minecraft:is_sheared": {},
         "minecraft:tameable": {
-          "probability": 0.05,
+          "probability": 0.09,
           "tame_items": [
             "arkcraft:pasta_verde"
           ],
@@ -171,18 +171,6 @@
         }
 			},
 			"ark:sleeping_night": {
-	    "minecraft:behavior.nearest_attackable_target": {
-          "priority": 5,
-        "reselect_targets": true,
-          "within_radius": 15,
-          "entity_types": [
-            {
-              "filters": { "other_with_families": [ "player"  ] },
-             "max_dist": 15
-            }
-          ],
-          "must_see": true
-        },
         "minecraft:target_nearby_sensor": {
           "inside_range": 6.0,
           "on_inside_range": {
@@ -201,7 +189,7 @@
                 },
 			"minecraft:is_sheared": {},
         "minecraft:tameable": {
-          "probability": 0.10,
+          "probability": 0.09,
           "tame_items": [
             "arkcraft:pasta_verde"
           ],
@@ -251,7 +239,13 @@
 							},
 							{
 								"variant": 3
-							}
+              },
+							{
+								"variant": 4
+              },
+							{
+								"variant": 5
+              }
 						]
 					}
 				}
@@ -400,13 +394,13 @@
         },
         "minecraft:movement": {
           "value": {
-            "range_min": 0.22,
-            "range_max": 0.25
+            "range_min": 0.14,
+            "range_max": 0.17
           }
         },
       "minecraft:health": {
-        "value": 140,
-        "max": 140
+        "value": 160,
+        "max": 160
       }
 },
 
@@ -421,11 +415,12 @@
       "minecraft:can_climb": {
       },
       "minecraft:type_family": {
-        "family": [ "camarasaurus", "mob" , "wild" , "wild_adult"]
+        "family": [ "camarasaurus", "mob" , "herbivore" , "wild" , "wild_adult" , "big" ]
       },
         "minecraft:loot": {
-         "table": "loot_tables/entities/thylacoleo.json"
+          "table": "loot_tables/entities/mega_raptor.json"
         },
+
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
       },
@@ -443,10 +438,10 @@
   
   "minecraft:camarasaurus-adult_esperando_tame":{
       "minecraft:type_family": {
-        "family": [ "camarasaurus", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "camarasaurus", "mob" , "herbivore" , "tamed_adult" , "tamed" , "esperando_tame" , "big"  ]
       },
         "minecraft:loot": {
-          "table": "loot_tables/entities/camarasaurus.json"
+          "table": "loot_tables/entities/bonebig.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -469,7 +464,7 @@
         "slots": [
           {
             "slot": 0,
-            "item": "arkcraft:camarasaurus_saddle",
+            "item": "arkcraft:big_herbivore_saddle",
             "accepted_items": ["arkcraft:big_herbivore_saddle" ],
             "on_equip": {
               "event": "minecraft:on_saddled"
@@ -490,12 +485,12 @@
   },
   "minecraft:camarasaurus-tamed_adult":{
       "minecraft:type_family": {
-        "family": [ "camarasaurus", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "camarasaurus", "mob" , "herbivore" , "tamed_adult" , "tamed" , "big"  ]
       },
         "minecraft:is_tamed": {
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/camarasaurus.json"
+          "table": "loot_tables/entities/bonebig.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -519,7 +514,7 @@
         "slots": [
           {
             "slot": 0,
-            "item": "arkcraft:camarasaurus_saddle",
+            "item": "arkcraft:big_herbivore_saddle",
             "accepted_items": ["arkcraft:big_herbivore_saddle" ],
             "on_equip": {
               "event": "minecraft:on_saddled"
@@ -822,8 +817,32 @@
             "heal_amount": 6
           },
           {
+            "item": "seeds",
+            "heal_amount": 1
+          },
+          {
+            "item": "beetroot_seeds",
+            "heal_amount": 1
+          },
+          {
+            "item": "melon_seeds",
+            "heal_amount": 1
+          },
+          {
+            "item": "pumpkin_seeds",
+            "heal_amount": 1
+          },
+          {
+            "item": "arkcraft:cactus",
+            "heal_amount": 2
+          },
+          {
+            "item": "cactus",
+            "heal_amount": 4
+          },
+          {
             "item": "appleenchanted",
-            "heal_amount": 40
+            "heal_amount": 4000
           },
           {
             "item": "beetroot",
@@ -855,7 +874,7 @@
           },
           {
             "item": "golden_apple",
-            "heal_amount": 17
+            "heal_amount": 1700
           },
           {
             "item": "leaves",
@@ -879,6 +898,18 @@
           },
           {
             "item": "pumpkin_pie",
+            "heal_amount": 6
+          },
+          {
+            "item": "pumpkin",
+            "heal_amount": 6
+          },
+          {
+            "item": "carved_pumpkin",
+            "heal_amount": 6
+          },
+          {
+            "item": "melon",
             "heal_amount": 6
           },
           {
@@ -946,6 +977,24 @@
 
   
     "events": { 
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6During the day when he sleeps you approach him invisibly and feed him with herbivore kibble      ",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        },
       "minecraft:despierto_tamed": {
 				"add": {
 					"component_groups": [
@@ -2346,7 +2395,8 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+												"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           },

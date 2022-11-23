@@ -473,10 +473,10 @@
           "on_death": "query.last_hit_by_player ? Math.Random(5,3) : 3.4"
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/dimetrodon.json"
+          "table": "loot_tables/entities/pezsmall.json"
         },
       "minecraft:type_family": {
-        "family": [ "dimetrodon", "mob" ]
+        "family": [ "dimetrodon", "mob", "temperatura" ]
       },
       "minecraft:breathable": {
         "total_supply": 15000,
@@ -501,8 +501,8 @@
       "minecraft:nameable": {
       },
       "minecraft:health": {
-        "value": 20,
-        "max": 20
+        "value": 10,
+        "max": 10
       },
       "minecraft:movement": {
         "value": 0.25

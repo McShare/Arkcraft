@@ -6,7 +6,7 @@
       "loop": false,
       "timeline": { 
         "0.25": [
-    "/effect @s speed 0 41 true",
+    "/effect @s speed 0 10 true",
     "/effect @s slow_falling 0 254 true"
             ]
       } 
@@ -16,7 +16,7 @@
       "loop": false,
       "timeline": {
         "0.25": [
-    "/effect @s speed 2 8 true"
+    "/effect @s speed 0 3 true"
             ]
       }  
     },

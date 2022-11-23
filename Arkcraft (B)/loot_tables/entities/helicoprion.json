@@ -31,14 +31,14 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:fish",
+                    "name": "arkcraft:ark_fish_raw",
                     "weight": 100,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 1,
-                                "max": 2
+                                "min": 5,
+                                "max": 10
                             }
                         },
                         {
@@ -56,8 +56,8 @@
                         {
                             "function": "looting_enchant",
                             "count": {
-                                "min": 0,
-                                "max": 1
+                                "min": 10,
+                                "max": 20
                             }
                         }
                     ]

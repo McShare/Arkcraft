@@ -2,22 +2,25 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "arkcraft:cloth_helmet"
+    "identifier": "arkcraft:dessert_helmet"
     },
 
     
     "tags": [ "smithy" ],
     "pattern": [
-      "  X",
-      "XXX"
+      "X#",
+      "XX"
     ],
     "key": {
+      "#": {
+        "item": "minecraft:sand"
+      },
       "X": {
         "item": "minecraft:string"
       }
     },
     "result": {
-      "item": "arkcraft:cloth_helmet"
+      "item": "arkcraft:dessert_helmet"
     }
   }
 }

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:sickleke3"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "Xl"
+
+    ],
+    "key": {
+      "X": {
+        "item": "arkcraft:diamond_sickle"
+      },
+      "l": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    "result": {
+      "item": "arkcraft:netherite_sickle"
+    }
+  }
+}

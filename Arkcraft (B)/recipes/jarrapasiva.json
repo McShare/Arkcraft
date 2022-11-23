@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:a765fffrrrrrrxe"
+    },
+
+    
+    "tags": [ "grill" ],
+    "pattern": [
+      "WWW",
+      "XlX"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:bone"
+      },
+      "l": {
+        "item": "minecraft:flower_pot"
+      },
+      "X": {
+        "item": "minecraft:web"
+      }
+    },
+    "result": {
+      "item": "arkcraft:friendly_incense_pot"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:detonadododor"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "lX"
+    ],
+    "key": {
+      "l": {
+        "item": "minecraft:iron_block"
+      },
+      "X": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    "result": {
+      "item": "arkcraft:detonador"
+    }
+  }
+}

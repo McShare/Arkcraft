@@ -6,7 +6,8 @@
       "loop": true,
       "timeline": {
         "0.2": [
-    "/effect @s slow_falling 10000 255 true"
+    "/effect @s slow_falling 10000 255 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     },
@@ -15,7 +16,8 @@
       "loop": true,
       "timeline": {
         "0.2": [
-    "/effect @s levitation 0 254 true"
+    "/effect @s levitation 0 254 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     },
@@ -24,7 +26,8 @@
       "loop": true,
       "timeline": {
         "0.2": [
-       "/effect @s levitation 1 9 true"
+       "/effect @s levitation 1 9 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     },
@@ -33,7 +36,8 @@
       "loop": true,
       "timeline": {
         "0.2": [
-       "/effect @s levitation 1 11 true"
+       "/effect @s levitation 1 11 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     },
@@ -42,7 +46,8 @@
       "loop": true,
       "timeline": {
         "1.0": [
-       "/effect @s levitation 2 1 true"
+       "/effect @s levitation 2 1 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     },
@@ -51,7 +56,8 @@
       "loop": true,
       "timeline": {
         "0.3": [
-       "/effect @s levitation 1 5 true"
+       "/effect @s levitation 1 5 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     },
@@ -60,7 +66,8 @@
       "loop": true,
       "timeline": {
         "0.2": [
-        "/effect @s levitation 1 5 true"
+        "/effect @s levitation 1 5 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     },
@@ -69,7 +76,8 @@
       "loop": true,
       "timeline": {
         "0.2": [
-    "/effect @s levitation 1 7 true"
+    "/effect @s levitation 1 7 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     }

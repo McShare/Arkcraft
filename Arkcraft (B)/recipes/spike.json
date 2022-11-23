@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:axeaangassdsxe"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "XlX",
+      "XlX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:log"
+      },
+      "l": {
+        "item": "minecraft:leather"
+      }
+    },
+    "result": {
+      "item": "arkcraft:spike_item",
+      "count": 2
+    }
+  }
+}

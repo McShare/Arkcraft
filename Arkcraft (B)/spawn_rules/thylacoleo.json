@@ -14,7 +14,7 @@
           "adjust_for_weather": false
         },
         "minecraft:weight": {
-          "default": 5
+          "default": 45
         },
         "minecraft:biome_filter": {
             "test": "has_biome_tag", "operator":"==", "value": "desert"
@@ -28,7 +28,7 @@
           "adjust_for_weather": false
         },
         "minecraft:weight": {
-          "default": 50
+          "default": 150
         },
         "minecraft:biome_filter": {
             "test": "has_biome_tag", "operator":"==", "value": "taiga"

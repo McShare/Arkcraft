@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:fishnet"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "XX",
+      "lX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:web"
+      },
+      "l": {
+        "item": "minecraft:fishing_rod"
+      }
+    },
+    "result": {
+      "item": "arkcraft:fishnet"
+    }
+  }
+}

@@ -8,17 +8,23 @@
     
     "tags": [ "smithy" ],
     "pattern": [
-      "xxx",
-      "ccc",
-      "xxx"
+      "111",
+      "cWc",
+      "xcx"
     ],
    "key": {
       "x": {
-        "item": "minecraft:horsearmorleather"
+        "item": "minecraft:wool:12"
       },
       "c": {
         "item": "minecraft:iron_block"
-      }
+      },
+      "W": {
+      "item": "arkcraft:medium_herbivore_saddle"
+    },
+    "1": {
+    "item": "minecraft:horsearmorleather"
+    }
     },
     "result": {
       "item": "arkcraft:big_herbivore_saddle"

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:sickleke2"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      " XX",
+      "  X",
+      "ll "
+
+    ],
+    "key": {
+      "l": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "result": {
+      "item": "arkcraft:diamond_sickle"
+    }
+  }
+}

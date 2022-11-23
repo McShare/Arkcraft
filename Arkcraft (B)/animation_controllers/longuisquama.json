@@ -7,6 +7,12 @@
             "states": {
                  "default": {
                     "animations": [
-                        { "longuisquama_levantado":"query.variant == 1" }
+                        { "longuisquama_levantado":"query.variant == 1" },
+                        { "longuisquama_sentado":"query.variant == 0" }
                         
-                        ]}}}}} 
+                        ]
+                     }
+                   }
+                 }
+              }
+            } 

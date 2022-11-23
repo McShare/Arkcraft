@@ -5,21 +5,21 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:feather",
-                    "weight": 1,
+                    "name": "minecraft:leather",
+                    "weight": 100,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 0,
-                                "max": 3
+                                "min": 1,
+                                "max": 1
                             }
                         },
                         {
                             "function": "looting_enchant",
                             "count": {
-                                "min": 0,
-                                "max": 3
+                                "min": 1,
+                                "max": 4
                             }
                         }
                     ]
@@ -31,21 +31,21 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:leather",
-                    "weight": 1,
+                    "name": "arkcraft:pasta_roja",
+                    "weight": 50,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
                                 "min": 0,
-                                "max": 4
+                                "max": 2
                             }
                         },
                         {
                             "function": "looting_enchant",
                             "count": {
-                                "min": 0,
-                                "max": 3
+                                "min": 2,
+                                "max": 6
                             }
                         }
                     ]
@@ -58,8 +58,15 @@
                 {
                     "type": "item",
                     "name": "arkcraft:ark_meat_raw",
-                    "weight": 2,
+                    "weight": 100,
                     "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 2
+                            }
+                        },
                         {
                             "function": "furnace_smelt",
                             "conditions": [
@@ -75,8 +82,60 @@
                         {
                             "function": "looting_enchant",
                             "count": {
-                                "min": 0,
+                                "min": 2,
+                                "max": 6
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:bone",
+                    "weight": 100,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
                                 "max": 1
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:feather",
+                    "weight": 100,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 2,
+                                "max": 6
                             }
                         }
                     ]

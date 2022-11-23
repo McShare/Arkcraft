@@ -27,7 +27,7 @@
 					]
 				},
         "minecraft:loot": {
-          "table": "loot_tables/entities/dunkleosteous.json"
+          "table": "loot_tables/entities/pezbig.json"
         },
         "minecraft:scale": {
           "value": 2.4
@@ -61,7 +61,7 @@
         "effect_duration": 15
       },
       "minecraft:type_family": {
-        "family": [ "dunkleosteous" ]
+        "family": [ "dunkleosteous", "acorazado", "wild" ]
       },
       "minecraft:collision_box": {
         "width": 0.3,

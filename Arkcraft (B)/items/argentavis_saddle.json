@@ -3,7 +3,8 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "arkcraft:argentavis_saddle"
+      "identifier": "arkcraft:argentavis_saddle",
+      "category": "equipment"
     },
 
     "components": {

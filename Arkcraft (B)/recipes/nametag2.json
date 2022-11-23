@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:nametaga"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "12"
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:iron_nugget"
+      },
+      "1": {
+        "item": "minecraft:string"
+      }
+    },
+    "result": {
+      "item": "minecraft:nametag",
+            "count": 2
+    }
+  }
+}

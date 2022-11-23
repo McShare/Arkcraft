@@ -228,7 +228,17 @@
                     "on_entry": [
     "/execute @s ~~~ detect ~~2~ air 0 execute @s ~~~ detect ~~1~ air 0 event entity @s minecraft:mark_variant_0_tamed",
     "/execute @s ~~~ detect ~~2~ flowing_water 0 execute @s ~~~ detect ~~1~ air 0 event entity @s minecraft:mark_variant_0_tamed",
-    "/execute @s ~~~ detect ~~2~ flowing_water 0 execute @s ~~~ detect ~~1~ water 0 event entity @s minecraft:mark_variant_0_tamed"
+    "/execute @s ~~~ detect ~~2~ flowing_water 0 execute @s ~~~ detect ~~1~ water 0 event entity @s minecraft:mark_variant_0_tamed",
+    "/execute @s ~~~ detect ~~2~ water 0 execute @s ~~~ detect ~~1~ air 0 event entity @s minecraft:mark_variant_0_tamed",
+    "/execute @s ~~~ detect ~~2~ water 0 execute @s ~~~ detect ~~1~ water 0 event entity @s minecraft:mark_variant_0_tamed",
+    "/execute @s ~~~ detect ~~2~ flowing_water 1 execute @s ~~~ detect ~~1~ air 0 event entity @s minecraft:mark_variant_0_tamed",
+    "/execute @s ~~~ detect ~~2~ flowing_water 1 execute @s ~~~ detect ~~1~ water 0 event entity @s minecraft:mark_variant_0_tamed",
+    "/execute @s ~~~ detect ~~2~ water 1 execute @s ~~~ detect ~~1~ air 0 event entity @s minecraft:mark_variant_0_tamed",
+    "/execute @s ~~~ detect ~~2~ water 1 execute @s ~~~ detect ~~1~ water 0 event entity @s minecraft:mark_variant_0_tamed",
+    "/execute @s ~~~ detect ~~2~ flowing_water 2 execute @s ~~~ detect ~~1~ air 0 event entity @s minecraft:mark_variant_0_tamed",
+    "/execute @s ~~~ detect ~~2~ flowing_water 2 execute @s ~~~ detect ~~1~ water 0 event entity @s minecraft:mark_variant_0_tamed",
+    "/execute @s ~~~ detect ~~2~ water 2 execute @s ~~~ detect ~~1~ air 0 event entity @s minecraft:mark_variant_0_tamed",
+    "/execute @s ~~~ detect ~~2~ water 2 execute @s ~~~ detect ~~1~ water 0 event entity @s minecraft:mark_variant_0_tamed"
                     ] 
                 },
                 "pose6_2":{

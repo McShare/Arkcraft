@@ -6,7 +6,7 @@
       "loop": false, 
       "timeline": {
         "0.01": [
-    "/ride @e[type=arkcraft:hook_proyectile_3 , r=3] start_riding @s teleport_ride"
+    "/ride @e[type=arkcraft:hook_proyectile_3 , r=5] start_riding @s teleport_ride"
             ]
       } 
     },  
@@ -15,10 +15,10 @@
       "loop": false,
       "timeline": {
         "0.05": [
-    "/ride @p[r=6] start_riding @s"
+    "/ride @p[r=8] start_riding @s"
             ],
         "0.1": [
-    "/ride @p[r=6] start_riding @s"
+    "/ride @p[r=8] start_riding @s"
             ]
       }
     }

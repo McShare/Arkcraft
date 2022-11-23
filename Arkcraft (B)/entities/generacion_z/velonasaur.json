@@ -95,7 +95,7 @@
 			"ark:sleeping": {
 			"minecraft:is_sheared": {},
         "minecraft:tameable": {
-          "probability": 0.05,
+          "probability": 0.35,
           "tame_items": [
             "arkcraft:pasta_roja"
           ],
@@ -572,14 +572,14 @@
           }
         },
       "minecraft:health": {
-        "value": 60,
-        "max": 60
+        "value": 70,
+        "max": 70
       }
 },
 
   "minecraft:velonasaur-wild_adult":{
       "minecraft:type_family": {
-        "family": [ "velonasaur", "mob" , "wild" , "wild_adult"]
+        "family": [ "velonasaur", "mob" , "wild" , "wild_adult" , "small"]
       },
         "minecraft:scale": {
           "value": 1.6
@@ -588,7 +588,7 @@
           "value": 0
                 },
         "minecraft:loot": {
-         "table": "loot_tables/entities/velonasaur.json"
+         "table": "loot_tables/entities/normalmedium.json"
         },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -600,13 +600,13 @@
 
   "minecraft:velonasaur-adult_esperando_tame":{ 
       "minecraft:type_family": {
-        "family": [ "velonasaur", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "velonasaur", "mob" , "tamed_adult" , "tamed" , "esperando_tame"  , "small"]
       },
         "minecraft:scale": {
           "value": 1.6
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/velonasaur.json"
+          "table": "loot_tables/entities/normalmedium.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -650,7 +650,7 @@
   },
   "minecraft:velonasaur-tamed_adult":{
       "minecraft:type_family": {
-        "family": [ "velonasaur", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "velonasaur", "mob" , "tamed_adult" , "tamed" , "small" ]
       },
         "minecraft:is_tamed": {
         },
@@ -658,7 +658,7 @@
           "value": 1.6
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/velonasaur.json"
+          "table": "loot_tables/entities/normalmedium.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -1100,10 +1100,6 @@
             },
             "event":"minecraft:remove_tag"
           },
-          
-          
-           
-           
           {
             "filters":{
             "all_of": [
@@ -1218,7 +1214,25 @@
     },
 
 
-    "events": { 
+        "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6Put him to sleep either with balls or narcotic arrows. Once asleep, feed him Carnivore Kibble.",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        }, 
      "minecraft:off_attack_sistem": {
 		"run_command": {
           "command": [
@@ -2706,7 +2720,8 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+												"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           },

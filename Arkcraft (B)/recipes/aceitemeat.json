@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:asdangacafdsfdsrmne"
+    },
+
+    
+    "tags": [ "grill" ],
+    "pattern": [
+      "111",
+      " 23"
+    ],
+   "key": {
+      "2": {
+        "item": "arkcraft:aceite"
+      },
+      "3": {
+        "item": "minecraft:stick"
+      },
+      "1": {
+        "item": "arkcraft:ark_meat_raw"
+      }
+    },
+    "result": {
+      "item": "arkcraft:ark_meat_cooked"
+    }
+  }
+}

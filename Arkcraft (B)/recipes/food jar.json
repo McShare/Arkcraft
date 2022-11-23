@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:axe4u35765fffxe"
+    },
+
+    
+    "tags": [ "grill" ],
+    "pattern": [
+      "WWW",
+      "XlX"
+    ],
+    "key": {
+      "W": {
+        "item": "arkcraft:ark_meat_raw"
+      },
+      "l": {
+        "item": "minecraft:flower_pot"
+      },
+      "X": {
+        "item": "minecraft:string"
+      }
+    },
+    "result": {
+      "item": "arkcraft:food_jar"
+    }
+  }
+}

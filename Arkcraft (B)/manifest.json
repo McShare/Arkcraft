@@ -1,46 +1,30 @@
 {
-	"format_version": 2,
-	"header": {
-		"name": "§gArkcraft 2.5.2 §l§6Behavior",
-		"description": "§3Created by Alex587 and CopperLord44, with help of Halo333, Jellal and EvilRex",
-		"uuid": "66c2674e-cc03-49da-b8ac-96c81ce019b6",
-		"version": [
-			1,
-			0,
-			0
-		],
-		"min_engine_version": [
-			1,
-			17,
-			0
-		]
-	},
-	"modules": [
-		{
-			"type": "data",
-			"uuid": "19a9ca6d-5c07-4489-af98-bcf1a3df5f65",
-			"version": [
-				1,
-				0,
-				0
-			]
-		},
-		{
-			"type": "javascript",
-			"uuid": "4ce55df6-5c4d-49c3-a84c-dc2654cbd2be",
-			"version": [
-				1,
-				0,
-				0
-			],
-			"entry": "scripts/main.js"
-		}
-	],
-	"metadata": {
-		"generated_with": {
-			"bridge": [
-				"1.8.4"
-			]
-		}
-	}
+  "format_version": 2,
+  "header": {
+    "name": "§gArkcraft 3.0.0.7 §l§6Behavior",
+    "description": "§3Created by CopperLord44, and Staff  (Credits on MCPEDL)",
+    "uuid": "d017feb0-60b6-4bb6-8bf8-9432e687ae27",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 17, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "6f5b5048-4ded-4def-a089-e585febebd5d",
+      "version": [1, 0, 0]
+    },
+    {
+      "language": "javascript",
+      "type": "script",
+      "uuid": "55a90f1a-e212-460b-bb2d-60fd4c9be0f3",
+      "version": [0, 0, 1],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "f80a68be-f000-44b3-83f3-34a1e03c72c3",
+      "version": "1.0.0-beta"
+    }
+  ]
 }

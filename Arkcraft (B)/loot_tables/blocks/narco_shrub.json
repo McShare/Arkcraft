@@ -1,0 +1,14 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "arkcraft:narcoberry_seed",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

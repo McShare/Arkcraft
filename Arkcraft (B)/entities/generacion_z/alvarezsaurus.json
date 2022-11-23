@@ -21,7 +21,7 @@
 	  "animations": {
 	    "get_up": "animation.get_up_arkcraft",
 	    "dialogo_controlador": "controller.animation.dialogo_controlador_arkcraft",
-	    "dialogo_tameado_arkcraft": "animation.dialogo_tameado_arkcraft_move",
+	    "dialogo_tameado_arkcraft": "animation.dialogo_tameado_arkcraft_move_alv",
 	    "dialogo_esperando_tame_arkcraft": "animation.dialogo_esperando_tame_arkcraft",
 	    "walk": "controller.animation.ramita"
     }
@@ -30,19 +30,132 @@
     "component_groups": {
         "minecraft:v1":{
                 "minecraft:variant": {
-          "value": 1
+          "value": 0
                 }
         },
         "minecraft:v2":{
                 "minecraft:variant": {
-          "value": 2
+          "value": 1
                 }
         },
         "minecraft:v3":{
                 "minecraft:variant": {
-          "value": 3
+          "value": 2
                 }
-        },
+			},
+			"minecraft:v4":{
+					"minecraft:variant": {
+			  "value": 4
+					}
+				},
+				"minecraft:v5":{
+						"minecraft:variant": {
+				  "value": 5
+						}
+			},
+			"pickup_item": {
+			  "minecraft:behavior.pickup_items": {
+				"priority": 2,
+				"max_dist": 64,
+				"search_height": 32,
+				"goal_radius": 2.2,
+				"speed_multiplier": 1.3,
+				"pickup_based_on_chance": false,
+				"can_pickup_any_item": false,
+				"can_pickup_to_hand_or_equipment": false,
+				"pickup_same_items_as_in_hand": true
+			  }
+				},
+				"pickup_item_delay": {
+				  "minecraft:timer": {
+					"looping": false,
+					"time": 3,
+					"time_down_event": {
+					  "event": "pickup_item_delay_complete"
+					}
+				  }
+				},
+			"minecraft:alvarezsaurus_wandering_trader": {
+			  "minecraft:on_hurt_by_player": {
+				"event": "minecraft:defend_wandering_trader"
+			  },
+			  "minecraft:behavior.hurt_by_target": {
+				"event": "minecraft:defend_wandering_trader",
+				"priority": 2
+			},
+			"minecraft:timer": {
+			  "looping": false,
+			  "random_time_choices": [
+				{ "weight": 50, "value": 24000 },
+				{ "weight": 50, "value": 36000 }
+			  ],
+			  "time_down_event": {
+				"event": "minecraft:start_despawn",
+				"target": "self"
+			  }
+			},
+			"minecraft:despawn": {
+			  "remove_child_entities": true,
+			  "filters": {
+				"all_of": [
+				  {
+					"any_of": [
+					  { "test": "is_family", "subject": "self", "value": "wandering_trader_despawning" },
+					  { "test": "has_trade_supply", "subject": "self", "value": false }
+					]
+				  },
+				  { "test": "distance_to_nearest_player", "operator": ">", "value": 24 }
+				]
+			  }
+			},
+			"minecraft:collision_box": {
+			  "width": 0.9,
+			  "height": 1.3
+			},
+			"minecraft:health": {
+			  "value": 20,
+			  "max": 22
+			},
+			"minecraft:type_family": {
+			  "family": [ "alvarezsaurus", "mob" ,  "smallest"]
+			},
+			"minecraft:scale": {
+				"value": 0.9
+			  },
+			"minecraft:leashable": {
+			  "soft_distance": 4.5,
+			  "hard_distance": 8.0,
+			  "max_distance": 42.0
+			},
+			"minecraft:follow_range": {
+			  "value": 60,
+			  "max": 60
+			},
+			"minecraft:movement": {
+			  "value": 0.6
+			},
+			"minecraft:variant": {
+				"value": 3
+			},
+			  "minecraft:on_friendly_anger": {
+				"event": "minecraft:defend_wandering_trader",
+				"target": "self"
+			  }, 
+			  "minecraft:persistent": {
+			},
+			"minecraft:damage_sensor": {
+			  "triggers": [
+				{
+				  "on_damage": {
+					"filters": {
+					  "subject": "other"
+					},
+					"event": "ark:skorpio"
+				  }
+				}
+			  ]
+			}
+			},
         "minecraft:despierto":{
       "minecraft:behavior.float": {
         "priority": 0
@@ -83,7 +196,7 @@
 			"ark:sleeping": {
 			"minecraft:is_sheared": {},
         "minecraft:tameable": {
-          "probability": 0.10,
+          "probability": 1.10,
           "tame_items": [
             "arkcraft:pasta_bicho"
           ],
@@ -133,7 +246,13 @@
 							},
 							{
 								"variant": 3
-							}
+              },
+							{
+								"variant": 4
+              },
+							{
+								"variant": 5
+              }
 						]
 					}
 				}
@@ -280,10 +399,10 @@
 
   "minecraft:alvarezsaurus-wild_adult":{
       "minecraft:type_family": {
-        "family": [ "alvarezsaurus", "mob" , "wild" , "wild_adult"]
+        "family": [ "alvarezsaurus", "mob" , "wild" , "wild_adult" , "smallest"]
       },
         "minecraft:loot": {
-         "table": "loot_tables/entities/alvarezsaurus.json"
+         "table": "loot_tables/entities/normalsmall.json"
         },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -295,10 +414,10 @@
   
   "minecraft:alvarezsaurus-adult_esperando_tame":{
       "minecraft:type_family": {
-        "family": [ "alvarezsaurus", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "alvarezsaurus", "mob" , "tamed_adult" , "tamed" , "esperando_tame" , "smallest" ]
       },
         "minecraft:loot": {
-          "table": "loot_tables/entities/alvarezsaurus.json"
+          "table": "loot_tables/entities/normalsmall.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -320,21 +439,32 @@
   },
   "minecraft:alvarezsaurus-tamed_adult":{
       "minecraft:type_family": {
-        "family": [ "alvarezsaurus", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "alvarezsaurus", "mob" , "tamed_adult" , "tamed" , "smallest" ]
       },
         "minecraft:is_tamed": {
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/alvarezsaurus.json"
+          "table": "loot_tables/entities/normalsmall.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
         "hard_distance": 10.0,
         "max_distance": 14.0
-      },
+	},
+	"minecraft:behavior.go_and_give_items_to_owner": {
+	"priority": 4,
+	"run_speed": 8,
+	"throw_sound": "item_thrown",
+	"on_item_throw": [
+	  {
+		"event": "pickup_item_delay",
+		"target": "self"
+	  }
+	]
+  },
       "minecraft:behavior.stay_while_sitting": {
         "priority": 0
-      },
+	},
      "minecraft:attack": {
         "damage": 4
       },
@@ -387,7 +517,10 @@
         "avoid_damage_blocks": true
       },
       "minecraft:movement.basic": {
-      },
+	},
+	"minecraft:inventory": {
+		"inventory_size": 2
+	},
       "minecraft:jump.static": {
       },
       "minecraft:can_climb": {
@@ -544,6 +677,58 @@
 
 
     "events": {
+		"ark:tameinfo": {
+			"randomize": [
+			  {
+				  
+				"weight": 100,
+			"run_command": {
+			  "command": [
+		"say @a[r=30] §o§a-How to tame: §6Put him to sleep and then give him insect kibble",
+		"playsound random.orb @a[r=15]"
+			  ],
+			  "target": "self"
+			}
+			  },
+			  {
+				"weight": 100
+			  }
+			]
+		}, 
+		
+		"pickup_item_delay": {
+		  "remove": {
+			"component_groups": [
+			  "pickup_item"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "pickup_item_delay"
+			]
+		  }
+		},
+		"pickup_item_delay_complete": {
+		  "run_command": {
+			"command": [
+			  "playanimation @s animation.alvarezsaurus.roar",
+			  "effect @s slowness 3 3 true",
+			  "effect @s regeneration 3 3 true",
+			  "effect @s jump_boost 3 3 true"
+			],
+			"target": "self"
+		  },
+		  "remove": {
+			"component_groups": [
+			  "pickup_item_delay"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "pickup_item"
+			]
+		  }
+		},
 			"minecraft:get_up": {
 				"remove": {
 					"component_groups": [
@@ -575,6 +760,43 @@
 						"minecraft:despierto"
 					]
 				}
+			},
+			"minecraft:start_despawn": {
+			  "add": {
+				"component_groups": [
+				  "despawning"
+				]
+			  }
+			},
+			        
+			"ark:skorpio": {
+				"run_command": {
+				  "command": [
+			"give @p[r=3] arkcraft:pasta_bicho"
+				  ],
+				  "target": "self"
+				}
+			  },
+			"minecraft:from_wandering_trader": {
+			  "add": {
+				"component_groups": [
+				  "minecraft:alvarezsaurus_wandering_trader"
+				]
+			  },
+			  "run_command": {
+				"command": [
+		  "effect @s resistance 9999999 1 true",
+		  "effect @s jump_boost 9999999 4 true"
+				],
+				"target": "self"
+			  }
+		},
+			"minecraft:defend_wandering_trader": {
+			  "add": {
+				"component_groups": [
+				  "minecraft:alvarezsaurus_defend_trader"
+				]
+			  }
 			},
         
       "minecraft:neutral": {
@@ -722,6 +944,34 @@
 	"minecraft:v3"
               ]
             }
+          },
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:alvarezsaurus-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v4"
+              ]
+            }
+          },
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:alvarezsaurus-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v5"
+              ]
+            }
           }
         ]
 },
@@ -796,6 +1046,7 @@
         },
         "add": { 
           "component_groups": [
+			"pickup_item",
 						"minecraft:mark_variant_0_tamed",
  "minecraft:alvarezsaurus_adult_inventory",
  "minecraft:adult_controladores",
@@ -1665,7 +1916,8 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+						"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           }

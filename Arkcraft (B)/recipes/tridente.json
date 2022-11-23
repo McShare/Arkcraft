@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:ax432exe"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      " X ",
+      "XlX",
+      " l"
+    ],
+    "key": {
+      "l": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "arkcraft:diente_tralka"
+      }
+    },
+    "result": {
+      "item": "minecraft:trident"
+    }
+  }
+}

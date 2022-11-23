@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.catch": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "walking": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/function catch",
+           "/effect @e[tag=catch, r=2] slowness 1 2 false",
+"/effect @e[tag=catch, r=2] weakness 1 2 false",
+"/tp @e[tag=catch, r=2] ^ ^ ^-1"
+          ]
+        },
+        "walking": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/function catch",
+            "/effect @e[tag=catch, r=2] slowness 1 2 false",
+ "/effect @e[tag=catch, r=2] weakness 1 2 false",
+ "/tp @e[tag=catch, r=2] ^ ^ ^-1"
+          ]
+        }
+      }
+    }
+  }
+}

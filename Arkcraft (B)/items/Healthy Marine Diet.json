@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "arkcraft:shell2"
+    },
+    
+    "components": {
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

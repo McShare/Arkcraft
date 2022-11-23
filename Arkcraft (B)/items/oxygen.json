@@ -2,7 +2,8 @@
   "format_version": "1.12",
   "minecraft:item": {
     "description": {
-      "identifier": "arkcraft:oxygen"
+      "identifier": "arkcraft:oxygen",
+      "category": "equipment"
 	 
     },
     

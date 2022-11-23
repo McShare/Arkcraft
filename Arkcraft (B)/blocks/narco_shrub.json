@@ -1,0 +1,207 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "arkcraft:narco_shrub",
+			"properties": {
+				"arkcraft:age": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('arkcraft:age') < 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "narco_shrub_0",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false,
+							"face_dimming": false
+						}
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-3,
+							0,
+							-3
+						],
+						"size": [
+							6,
+							6,
+							6
+						]
+					},
+					"minecraft:random_ticking": {
+						"on_tick": {
+							"event": "age",
+							"target": "self"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('arkcraft:age') > 1 && query.block_property('arkcraft:age') < 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "narco_shrub_1",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false,
+							"face_dimming": false
+						}
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-5,
+							0,
+							-5
+						],
+						"size": [
+							10,
+							12,
+							10
+						]
+					},
+					"minecraft:random_ticking": {
+						"on_tick": {
+							"event": "age",
+							"target": "self"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('arkcraft:age') > 3 && query.block_property('arkcraft:age') < 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "narco_shrub_2",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false,
+							"face_dimming": false
+						}
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-7,
+							0,
+							-7
+						],
+						"size": [
+							14,
+							16,
+							14
+						]
+					},
+					"minecraft:random_ticking": {
+						"on_tick": {
+							"event": "age",
+							"target": "self"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('arkcraft:age') == 7",
+				"components": {
+					"minecraft:loot": "loot_tables/gameplay/narco_shrub_harvest.json",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "narco_shrub_3",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false,
+							"face_dimming": false
+						}
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-7,
+							0,
+							-7
+						],
+						"size": [
+							14,
+							16,
+							14
+						]
+					}
+				}
+			}
+		],
+		"components": {
+
+			"minecraft:breathability": "air",
+			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_filter": 1,
+			"minecraft:destroy_time": 0,
+			"minecraft:entity_collision": false,
+			"minecraft:explosion_resistance": 0,
+			"minecraft:flammable": {
+				"burn_odds": 150,
+				"flame_odds": 30
+			},
+			"minecraft:geometry": "geometry.narco_shrub",
+			"minecraft:loot": "loot_tables/blocks/narco_shrub.json",
+			"minecraft:on_interact": {
+				"event": "on_interact",
+				"target": "self"
+			},
+			"tag:plant": {}
+		},
+		"events": {
+			"age": {
+				"set_block_property": {
+					"arkcraft:age": "query.block_property('arkcraft:age')+math.random_integer(0,1)"
+				}
+			},
+			"fertilize_block": {
+				"decrement_stack": {},
+				"run_command": {
+					"command": [
+						"particle minecraft:crop_growth_emitter ~ ~ ~",
+						"playsound item.bone_meal.use @a[r=10]"
+					]
+				},
+				"set_block_property": {
+					"arkcraft:age": "math.clamp(query.block_property('arkcraft:age')+4,0,7)"
+				},
+				"swing": {}
+			},
+			"harvest": {
+				"run_command": {
+					"command": [
+						"playsound random.fizz @a"
+					]
+				},
+				"set_block_property": {
+					"arkcraft:age": 1
+				},
+				"spawn_loot": {
+					"table": "loot_tables/gameplay/narco_shrub_harvest.json"
+				},
+				"swing": {}
+			},
+			"on_interact": {
+				"sequence": [
+					{
+						"condition": "temp.is_harvested=(query.block_property('arkcraft:age')==7);return temp.is_harvested;",
+						"trigger": "harvest"
+					},
+					{
+						"condition": "query.get_equipped_item_name=='bone_meal'&&!temp.is_harvested&&query.block_property('arkcraft:age')<7",
+						"trigger": "fertilize_block"
+					}
+				]
+			}
+		}
+	}
+}

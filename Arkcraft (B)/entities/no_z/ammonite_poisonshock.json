@@ -94,7 +94,7 @@
     },
     "components": {
       "minecraft:type_family": {
-        "family": [ "cephalopod", "ammonite_poisonshock" , "nautilos"]
+        "family": [ "ammonite_poisonshock" , "fishable", "acorazado"]
       },
       "minecraft:collision_box": {
         "width": 0.6,

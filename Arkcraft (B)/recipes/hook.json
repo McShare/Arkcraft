@@ -8,9 +8,8 @@
             "smithy"
         ],
         "pattern": [
-            " X ",
-            "XXX",
-            "WXW"
+            "X",
+            "W"
         ],
     "key": {
       "W": {

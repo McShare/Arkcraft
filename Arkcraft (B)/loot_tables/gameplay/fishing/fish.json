@@ -5,58 +5,38 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:fish",
-          "weight": 240
+          "name": "arkcraft:ark_fish_raw",
+          "weight": 600
         },
         {
           "type": "item",
-          "name": "arkcraft:raw_prime_meat",
-          "weight": 203
+          "name": "arkcraft:bucket_tany",
+          "weight": 125
         },
         {
           "type": "item",
-          "name": "arkcraft:elemento",
-          "weight": 1
+          "name": "arkcraft:bucket_ammonite_friend",
+          "weight": 105
         },
         {
           "type": "item",
-          "name": "minecraft:salmon",
-          "weight": 225
-        },
-        {
-          "type": "item",
-          "name": "minecraft:clownfish",
-          "weight": 205
-        },
-        {
-          "type": "item",
-          "name": "arkcraft:toxikarp",
-          "weight": 205
-        },
-        {
-          "type": "item",
-          "name": "arkcraft:frost_daggerfish",
-          "weight": 205
-        },
-        {
-          "type": "item",
-          "name": "arkcraft:mom_fish",
-          "weight": 201
-        },
-        {
-          "type": "item",
-          "name": "arkcraft:double_fish",
-          "weight": 205
-        },
-        {
-          "type": "item",
-          "name": "arkcraft:chaos_fish",
-          "weight": 205
+          "name": "arkcraft:bucket_trilobite",
+          "weight": 105
         },
         {
           "type": "item",
           "name": "minecraft:pufferfish",
-          "weight": 213
+          "weight": 113
+        },
+        {
+          "type": "item",
+          "name": "arkcraft:bucket_mawsonia",
+          "weight": 113
+        },
+        {
+          "type": "item",
+          "name": "arkcraft:bucket_ammonite_poisonshock",
+          "weight": 53
         }
       ]
     }

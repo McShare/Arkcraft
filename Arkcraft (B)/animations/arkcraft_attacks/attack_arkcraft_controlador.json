@@ -1,14 +1,146 @@
 {
   "format_version": "1.8.0",
-  "animations": {  
+  "animations": {
+  "animation.remove_ataque_debil": {
+   "animation_length": 1.0, 
+    "loop": true, 
+    "timeline": {
+        "0.0":[  
+          "/tag @s add attacking",  
+
+  "/damage @e[tag=!in_attack , r=4] 2 entity_attack entity @s",
+              "/tag @s add in_attack"
+            ],  
+                    "0.4": [ 
+          "/tag @s remove in_attack",
+          "/tag @p[r=5] remove in_attack"
+          ],
+      "0.9": [ 
+     "@s minecraft:remove_ataque_normal",
+          "/tag @s remove attacking"
+          ]
+        }
+    },
+  "animation.remove_ataque_normal": {
+   "animation_length": 1.0, 
+    "loop": true, 
+    "timeline": {
+        "0.0":[  
+          "/tag @s add attacking",  
+  "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+              "/tag @s add in_attack"
+            ],  
+                    "0.4": [ 
+          "/tag @s remove in_attack",
+          "/tag @p[r=5] remove in_attack"
+          ],
+      "0.9": [ 
+     "@s minecraft:remove_ataque_normal",
+          "/tag @s remove attacking"
+          ]
+       }
+      },
+      "animation.remove_ataque_fuerte": {
+       "animation_length": 1.3, 
+        "loop": true, 
+        "timeline": {
+            "0.0":[  
+              "/tag @s add attacking",  
+
+      "/damage @e[tag=!in_attack , r=4] 16 entity_attack entity @s",
+                  "/tag @s add in_attack",
+                  "/fill ~-3 ~3 ~3  ~3 ~ ~-3 air 0 replace leaves",
+                  "/fill ~-3 ~3 ~3  ~3 ~ ~-3 air 0 replace leaves2"
+                ],  
+                        "0.4": [ 
+              "/tag @s remove in_attack",
+              "/tag @p[r=5] remove in_attack"
+              ],
+          "1.2": [ 
+         "@s minecraft:remove_ataque_normal",
+              "/tag @s remove attacking"
+              ]
+           }
+          },
+          "animation.remove_ataque_fuerte_megaraptor": {
+           "animation_length": 1.3, 
+            "loop": true, 
+            "timeline": {
+                "0.0":[  
+                  "/tag @s add attacking",  
+
+          "/damage @e[tag=!in_attack , r=4] 16 entity_attack entity @s",
+          "/effect @p[r=4] invisibility 15 1 true",
+          "tell @p[r=4] Sneaky mode",
+          "/fill ~-3 ~3 ~3  ~3 ~ ~-3 air 0 replace leaves",
+          "/fill ~-3 ~3 ~3  ~3 ~ ~-3 air 0 replace leaves2",
+                      "/tag @s add in_attack"
+                    ],  
+                            "0.4": [ 
+                  "/tag @s remove in_attack",
+                  "/tag @p[r=5] remove in_attack"
+                  ],
+              "1.2": [ 
+             "@s minecraft:remove_ataque_normal",
+                  "/tag @s remove attacking"
+                  ]
+               }
+              },
+          "animation.remove_ataque_muyfuerte": {
+           "animation_length": 1.9, 
+            "loop": true, 
+            "timeline": {
+                "0.0":[  
+                  "/tag @s add attacking",  
+
+          "/damage @e[tag=!in_attack , r=5] 26 entity_attack entity @s",
+                      "/tag @s add in_attack",
+                      "/fill ~-4 ~4 ~4  ~4 ~ ~-4 air 0 replace leaves",
+                      "/fill ~-4 ~4 ~4  ~4 ~ ~-4 air 0 replace leaves2"
+                    ],  
+                            "0.4": [ 
+                  "/tag @s remove in_attack",
+                  "/tag @p[r=6] remove in_attack"
+                  ],
+              "1.2": [ 
+             "@s minecraft:remove_ataque_normal",
+                  "/tag @s remove attacking"
+                  ]
+               }
+              },
+              "animation.remove_ataque_jodido": {
+               "animation_length": 2.3, 
+                "loop": true, 
+                "timeline": {
+                    "0.0":[  
+                      "/tag @s add attacking",  
+
+              "/damage @e[tag=!in_attack , r=6] 36 entity_attack entity @s",
+                          "/tag @s add in_attack",
+                          "/fill ~-4 ~6 ~4  ~4 ~ ~-4 air 0 replace leaves",
+                          "/fill ~-4 ~6 ~4  ~4 ~ ~-4 air 0 replace leaves2"
+                        ],  
+                                "0.4": [ 
+                      "/tag @s remove in_attack",
+                      "/tag @p[r=7] remove in_attack"
+                      ],
+                  "1.2": [ 
+                 "@s minecraft:remove_ataque_normal",
+                      "/tag @s remove attacking"
+                      ]
+                   }
+                },
     "animation.remove_ataque_normal_quetzal": {
      "animation_length": 4.3,
       "loop": true,
       "timeline": { 
           "0.0":[
-            "/tag @s add attacking",
-    "/damage @e[tag=!in_attack , r=6] 10 entity_attack entity @s",
-                "/tag @s add in_attack"
+            "/tag @s add attacking",  
+
+    "/damage @e[tag=!in_attack , r=6] 26 entity_attack entity @s",
+                "/tag @s add in_attack",
+                "/fill ~-4 ~6 ~4  ~4 ~-4 ~-4 air 0 replace leaves",
+                "/fill ~-4 ~6 ~4  ~4 ~-4 ~-4 air 0 replace leaves2"
               ], 
         "0.7": [
             "/tag @s remove in_attack",
@@ -23,60 +155,47 @@
     "animation.attack_thorny_dragon": {
      "animation_length": 0.8, 
       "loop": true,  
-      "timeline": {  
-          "0.0":[ 
-            "/tag @s add attacking",
-                "/tag @s add in_attack"
-              ],
-        "0.3": [ 
-"/effect @e[r=3, tag=!in_attack] slowness 60 0 true",
-"/effect @e[r=3, tag=!in_attack] weakness 60 0 true",
-"/effect @e[r=3, tag=!in_attack] mining_fatigue 60 0 true",
-"/effect @e[r=3, tag=!in_attack] poison 60 0 true",
-"/effect @e[r=3, tag=!in_attack] blindness 1 1 true",
+      "timeline": {   
+        "0.0":[ 
+          "/tag @s add attacking",  
+  "/damage @e[tag=!in_attack , r=6] 5 entity_attack entity @s",
+              "/tag @s add in_attack",
+"/effect @e[r=6, tag=!in_attack] slowness 60 0 true",
+"/effect @e[r=6, tag=!in_attack] weakness 60 0 true",
+"/effect @e[r=6, tag=!in_attack] mining_fatigue 60 0 true",
+"/effect @e[r=6, tag=!in_attack] poison 60 0 true",
+"/effect @e[r=6, tag=!in_attack] blindness 1 1 true",
 "/playsound random.fizz @a[r=6] ~ ~ ~",
-
-    "/damage @e[tag=!in_attack , r=3] 1 entity_attack entity @s",
-    
+  
 "/effect @s slowness 0 12 true",
 "/effect @s weakness 0 12 true",
 "/effect @s mining_fatigue 0 12 true",
 "/effect @s poison 0 12 true",
-"/effect @s blindness 0 22 true",
-"/effect @s speed 10 2 true"
-            ],
-          "0.5":[ 
-            "/tag @s remove in_attack",
-            "/tag @s remove attacking"
-              ]
-      }   
+"/effect @s blindness 0 22 true"
+            ], 
+      "0.3": [
+          "/tag @s remove in_attack",
+          "/tag @p[r=8] remove in_attack"
+          ],
+      "0.45": [
+          "@s minecraft:remove_ataque_normal",
+          "/tag @s remove attacking"
+          ] 
+    }   
     },  
     "animation.attack_thylacoleo": {
-     "animation_length": 0.8, 
+     "animation_length": 0.4, 
       "loop": true, 
       "timeline": {
           "0.0":[ 
-            "/tag @s add attacking",
+            "/tag @s add attacking",  
                 "/tag @s add in_attack"
               ],
-        "0.3": [ 
-"/effect @e[r=3, tag=!in_attack] slowness 60 0 true",
-"/effect @e[r=3, tag=!in_attack] weakness 60 0 true",
-"/effect @e[r=3, tag=!in_attack] mining_fatigue 60 0 true",
-"/effect @e[r=3, tag=!in_attack] poison 60 0 true",
-"/effect @e[r=3, tag=!in_attack] blindness 1 1 false",
-"/playsound random.fizz @a[r=6] ~ ~ ~",
-
-    "/damage @e[tag=!in_attack , r=3] 1 entity_attack entity @s",
-    
-"/effect @s slowness 0 12 true",
-"/effect @s weakness 0 12 true",
-"/effect @s mining_fatigue 0 12 true",
-"/effect @s poison 0 12 true",
-"/effect @s blindness 0 22 true",
-"/effect @s speed 10 2 true"
+        "0.2": [ 
+"/effect @e[r=3, tag=!in_attack] wither 5 0 true",
+    "/damage @e[tag=!in_attack , r=3] 20 entity_attack entity @s"
             ],
-          "0.5":[ 
+          "0.3":[ 
             "/tag @s remove in_attack",
             "/tag @s remove attacking"
               ]
@@ -87,8 +206,8 @@
       "loop": true, 
       "timeline": {
           "0.0":[ 
-            "/tag @s add attacking",
-    "/damage @e[tag=!in_attack , r=4] 4 entity_attack entity @s",
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 16 entity_attack entity @s",
     "/effect @e[tag=!in_attack , r=4] wither 3 1 true",
                 "/tag @s add in_attack"
               ],
@@ -105,10 +224,12 @@
       "loop": true, 
       "timeline": {
           "0.0":[ 
-            "/tag @s add attacking",
+            "/tag @s add attacking",  
     "/damage @e[tag=!in_attack , r=4] 4 entity_attack entity @s",
     "/effect @e[tag=!in_attack , r=4] wither 3 1 true",
-    "/fill ~-1 ~-1 ~1 ~1 ~1 ~-1 moss_block 0 replace kelp",
+    "/fill ~-1 ~-1 ~1 ~1 ~1 ~-1 moss_block 0 replace water",
+    "/fill ~-1 ~-1 ~1 ~1 ~1 ~-1 grass 0 replace dirt",
+    "/fill ~-1 ~-1 ~1 ~1 ~1 ~-1 moss_block 0 replace flowing_water",
                 "/tag @s add in_attack"
               ],
         "0.3": [ 
@@ -119,15 +240,89 @@
             ]
       }
       },
+    "animation.remove_ataque_normal_giraffatitan": {
+     "animation_length": 0.72, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=5, type=!player] 36 entity_attack entity @s",
+    "/effect @e[tag=!in_attack , r=5, type=!player] mining_fatigue 10 5 true",
+    "/effect @s slowness 3 255 true",
+    "/camerashake add @a[r=10] 4 2 rotational",
+	     "/camerashake stop @p",
+       "/fill ~-4 ~6 ~4  ~4 ~-4 ~-4 air 0 replace leaves",
+       "/fill ~-4 ~6 ~4  ~4 ~-4 ~-4 air 0 replace leaves2",
+                "/tag @s add in_attack"
+              ],
+        "0.7": [ 
+            "/tag @s remove in_attack",
+	     "/camerashake stop @p",
+            "/tag @p[r=7] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_morschops": {
+     "animation_length": 1.3, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[  
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+    "/execute @s[hasitem={item=arkcraft:metal_sickle}] ~ ~ ~ fill ~-1 ~1 ~-1  ~1 ~-1 ~1 arkcraft:narco_shrub 0 replace yellow_flower ",
+    "/execute @s[hasitem={item=arkcraft:diamond_sickle}] ~ ~ ~ fill ~-1 ~1 ~-1  ~1 ~-1 ~1 arkcraft:narco_shrub 0 replace yellow_flower ",
+    "/execute @s[hasitem={item=arkcraft:netherite_sickle}] ~ ~ ~ fill ~-1 ~1 ~1  ~1 ~-1 ~1 arkcraft:narco_shrub 0 replace yellow_flower ",
+
+    "/execute @s[hasitem={item=arkcraft:metal_sickle}] ~ ~ ~ damage @e[tag=!in_attack , r=4] 2 entity_attack entity @s ",
+    "/execute @s[hasitem={item=arkcraft:diamond_sickle}] ~ ~ ~ damage @e[tag=!in_attack , r=4] 6 entity_attack entity @s",
+    "/execute @s[hasitem={item=arkcraft:netherite_sickle}] ~ ~ ~ damage @e[tag=!in_attack , r=4] 10 entity_attack entity @s ",
+                "/tag @s add in_attack"
+              ],  
+                      "0.4": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+            "/effect @s speed 3 3",
+            "/tp @s ~ ~ ~ facing ^ ^ ^-2"
+            ],
+        "1.2": [ 
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+         }
+        },
+    "animation.remove_ataque_normal_galveosaurus": {
+     "animation_length": 0.73, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=5, type=!player] 26 entity_attack entity @s",
+    "/fill ~-2 ~6 ~2  ~2 ~-2 ~-2 stonebrick 0 replace cobblestone",
+    "/fill ~-4 ~6 ~4  ~4 ~-4 ~-4 air 0 replace leaves",
+    "/fill ~-4 ~6 ~4  ~4 ~-4 ~-4 air 0 replace leaves2",
+    "/effect @s slowness 2 255 true",
+    "/effect @s resistance 2 255 true",
+    "/effect @p[r=5] invisibility 2 1 true",
+                "/tag @s add in_attack"
+              ],
+        "0.7": [ 
+            "/fill ~-2 ~6 ~2  ~2 ~-2 ~-2 cobblestone 0 replace stone",
+            "/tag @p[r=7] remove in_attack",
+            "/tag @s remove attacking",
+            "@s minecraft:remove_ataque_normal"
+            ]
+      }
+      },
     "animation.remove_ataque_normal_rosamygale": {
      "animation_length": 0.72, 
       "loop": true, 
       "timeline": {
           "0.0":[ 
-            "/tag @s add attacking",
-    "/damage @e[tag=!in_attack , r=4] 2 entity_attack entity @s",
-    "/effect @e[tag=!in_attack , r=4] wither 3 1 true",
-    "/execute @s ~ ~ ~ detect ^ ^1 ^4 air 0 setblock ^ ^1 ^2 gravel",
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+    "/execute @s ~ ~ ~ detect ^ ^1 ^4 air 0 setblock ^ ^1 ^4 gravel",
     "/execute @e[type=!arkcraft:rosamygale, tag=!in_attack , r=4] ^ ^1 ^4 effect @s slowness 4 5",
                 "/tag @s add in_attack"
               ],
@@ -139,15 +334,77 @@
             ]
       }
     },
-    "animation.remove_ataque_normal_raptor": {
+    "animation.remove_ataque_normal_bary": {
+     "animation_length": 1.6, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[  
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+    "/effect @e[tag=!in_attack , r=4] slowness 2 2 true",
+    "/effect @e[tag=!in_attack , r=4] blindness 2 2 true",
+                "/tag @s add in_attack"
+              ],  
+                      "0.4": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "1.2": [ 
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+         }
+        },
+    "animation.remove_ataque_normal_shringasaurus": {
      "animation_length": 0.72, 
       "loop": true, 
       "timeline": {
           "0.0":[ 
-            "/tag @s add attacking",
-    "/damage @e[tag=!in_attack , r=4] 4 entity_attack entity @s",
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4 , type=!arkcraft:alvarezsaurus ] 16 entity_attack entity @s",
+     "/fill ~-2 ~2 ~2 ~2 ~-2 ~-2 air 0 replace leaves",
+      "/fill ~-2 ~7 ~2 ~2 ~-2 ~-2 deadbush 0 replace leaves",
+	"/fill ~-2 ~7 ~2 ~2 ~-2 ~-2 mangrove_roots 0 replace log",
+	"/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/execute @s[hasitem={item=arkcraft:pasta_verde}] ~ ~ ~ clear @s",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_lopho": {
+     "animation_length": 0.72, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+                "/tag @s add in_attack",
+		"/execute @s[name=Mauricio] ~ ~ ~ playsound mob.cat.meow @a[r=5] ~ ~ ~ ",
+		"/execute @p[r=2, hasitem={item=bone_meal}] ~ ~ ~ execute @e[r=3, type=arkcraft:lopho] ~ ~ ~ fill ~-3 ~1 ~3  ~3 ~-5 ~-3 leaves 0 replace tallgrass",
+		            "/clear @p[r=2, hasitem={item=bone_meal}] bone_meal 0 1"
+              ],
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_raptor": {
+     "animation_length": 0.32, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
     "/effect @e[tag=!in_attack , r=4] slowness 3 2 ",
-    "/effect @s levitation 1 2 true",
+    "/effect @s jump_boost 1 2 true",
                 "/tag @s add in_attack"
               ],
         "0.3": [ 
@@ -158,17 +415,935 @@
             ]
       }
     },
-    "animation.remove_ataque_normal_gualicho": {
+    "animation.remove_ataque_normal_lambeo": {
+     "animation_length": 1.3, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[  
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+                "/tag @s add in_attack",
+                "/effect @e[r=6] water_breathing 15 15 true"
+              ],  
+                      "0.4": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "1.2": [ 
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+         }
+        },
+        "animation.remove_ataque_fuerte_thery": {
+         "animation_length": 1.3, 
+          "loop": true, 
+          "timeline": {
+              "0.0":[  
+                "/tag @s add attacking",  
+        "/damage @e[tag=!in_attack , r=4] 16 entity_attack entity @s",
+                    "/tag @s add in_attack",
+                    "/fill ~-5 ~15 ~5  ~5 ~ ~-5 air 0 replace leaves",
+                    "/fill ~-5 ~15 ~5  ~5 ~ ~-5 air 0 replace tallgrass",
+                    "/fill ~-5 ~15 ~5  ~5 ~ ~-5 air 0 replace double_plant",
+                    "/fill ~-5 ~15 ~5  ~5 ~ ~-5 air 0 replace leaves2",
+                    "/fill ~-5 ~15 ~5  ~5 ~ ~-5 air 0 replace vine",
+                    "/fill ~-5 ~15 ~5  ~5 ~ ~-5 air 0 replace red_flower",
+                    "/fill ~-5 ~15 ~5  ~5 ~ ~-5 air 0 replace yellow_flower",
+                    "/fill ~-2 ~15 ~2  ~2 ~4 ~-2 air 0 replace log",
+                    "/fill ~-2 ~15 ~2  ~2 ~4 ~-2 air 0 replace log2"
+                  ],  
+                          "0.4": [ 
+                "/tag @s remove in_attack",
+                "/tag @p[r=5] remove in_attack",
+                "/execute @p[hasitem={item=arkcraft:thery_hoe}] ~~~ tp ~~-0.3~",
+                "/execute @p[hasitem={item=arkcraft:thery_hoe}] ~~~ tell @p Don't ride a Theryzinosaurus while you have an arm of it in your inventory!",
+                "/execute @p[hasitem={item=arkcraft:thery_hoe}] ~~~ playanimation @e[type=arkcraft:thery, family=tamed, r=5] sleep",
+                "/execute @p[hasitem={item=arkcraft:thery_hoe}] ~~~ effect @e[type=arkcraft:thery, family=tamed, r=5] slowness 2 15 true",
+                "/execute @p[hasitem={item=arkcraft:thery_hoe}] ~~~ effect @e[type=arkcraft:thery, family=tamed, r=5] speed 8 3 true",
+                "/execute @p[hasitem={item=arkcraft:thery_hoe}] ~~~ event entity @e[type=arkcraft:thery, family=tamed, r=5] minecraft:deambular",                
+                "/execute @p[hasitem={item=arkcraft:thery_hoe}] ~~~ event entity @e[type=arkcraft:thery, family=tamed, r=5] minecraft:agresivo",
+                "/give @p[hasitem={item=sweet_berries}] arkcraft:narcoberry_seed 10",
+						"/clear @p[hasitem={item=sweet_berries}] sweet_berries 0 1",
+						"/give @p[hasitem={item=tallgrass}] sweet_berries 10",
+						"/clear @p[hasitem={item=tallgrass}] tallgrass 1 1",
+            "/clear @p[hasitem={item=tallgrass}] tallgrass 0 1",
+            "/clear @p[hasitem={item=tallgrass}] tallgrass 2 1",
+            "/clear @p[hasitem={item=tallgrass}] tallgrass 3 1",
+            "/clear @p[hasitem={item=tallgrass}] tallgrass 4 1",
+						"/give @p[hasitem={item=wheat}]  string 6",
+						"/clear @p[hasitem={item=wheat}] wheat 0 1"
+                ],
+            "1.2": [ 
+           "@s minecraft:remove_ataque_normal",
+                "/tag @s remove attacking"
+                ]
+             }
+            },
+    "animation.remove_ataque_normal_parasaurio": {
+     "animation_length": 5.6, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[  
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 1 entity_attack entity @s",
+                "/tag @s add in_attack",
+                "/execute @e[family=!tamed, type=!player, r=100] ~ ~ ~ particle minecraft:sonic_explosion ~ ~3 ~"
+              ],  
+                      "0.4": [ 
+            "/give @p[hasitem={item=sweet_berries}] arkcraft:narcoberry_seed 9",
+						"/clear @p[hasitem={item=sweet_berries}] sweet_berries 0 1",
+						"/give @p[hasitem={item=tallgrass}] sweet_berries 9",
+						"/clear @p[hasitem={item=tallgrass}] tallgrass 1 1",
+            "/clear @p[hasitem={item=tallgrass}] tallgrass 0 1",
+            "/clear @p[hasitem={item=tallgrass}] tallgrass 2 1",
+            "/clear @p[hasitem={item=tallgrass}] tallgrass 3 1",
+            "/clear @p[hasitem={item=tallgrass}] tallgrass 4 1",
+						"/give @p[hasitem={item=wheat}]  string 3",
+						"/clear @p[hasitem={item=wheat}] wheat 0 1"
+          ],
+          "1.2": [ 
+            "/execute @e[family=!tamed, type=!player, r=100, type=!item, type=!xp_orb] ~ ~ ~ particle minecraft:sonic_explosion ~ ~3 ~"
+          ],
+          "2.2": [ 
+            "/execute @e[family=!tamed, type=!player, r=100, type=!item, type=!xp_orb] ~ ~ ~ particle minecraft:sonic_explosion ~ ~3 ~"
+          ],
+          "3.2": [ 
+            "/execute @e[family=!tamed, type=!player, r=100, type=!item, type=!xp_orb] ~ ~ ~ particle minecraft:sonic_explosion ~ ~3 ~"
+          ],
+          "4.2": [ 
+            "/execute @e[family=!tamed, type=!player, r=100, type=!item, type=!xp_orb] ~ ~ ~ particle minecraft:sonic_explosion ~ ~3 ~"
+          ],
+          "5.4": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+              ]
+         }
+        },
+        "animation.remove_ataque_normal_wolf": {
+         "animation_length": 0.3, 
+          "loop": true, 
+          "timeline": {
+              "0.01":[  
+                "/tag @s add attacking",  
+        "/damage @e[tag=!in_attack , r=4] 6 entity_attack entity @s",
+        "/effect @e[r=20, type=arkcraft:dire_wolf, family=tamed] strength 1 30",
+                    "/tag @s add in_attack",
+                    "/execute @e[type=item, r=100] ~ ~ ~ particle minecraft:sonic_explosion ~ ~3 ~",
+                    "/tp @e[type=item, r=10] ~ ~ ~"
+              ],
+              "0.2": [ 
+                "/tag @s remove in_attack",
+                "/tag @p[r=5] remove in_attack",
+           "@s minecraft:remove_ataque_normal",
+                "/tag @s remove attacking"
+                  ]
+             }
+            },
+            "animation.remove_ataque_normal_archelon": {
+             "animation_length": 0.6, 
+              "loop": true, 
+              "timeline": {
+                  "0.0":[  
+                    "/tag @s add attacking",  
+                    "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 0 tp ~~-1~",
+                    "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 1 tp ~~-1~",
+                    "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 2 tp ~~-1~",
+                    "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 3 tp ~~-1~",
+                    "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 4 tp ~~-1~",
+                    "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 5 tp ~~-1~",
+                    "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 0 tp ~~2.5~",
+                    "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 1 tp ~~2.5~",
+                    "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 2 tp ~~2.5~",
+                    "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 3 tp ~~2.5~",
+                    "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 4 tp ~~2.5~",
+                    "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 5 tp ~~2.5~",
+                        "/tag @s add in_attack"
+                      ],  
+                              "0.1": [ 
+                    "/tag @s remove in_attack",
+                    "/tag @p[r=5] remove in_attack"
+                    ],
+                    "0.2":[  
+                    "/tag @s add attacking",  
+                    "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 0 tp ~~-1~",
+                    "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 1 tp ~~-1~",
+                    "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 2 tp ~~-1~",
+                    "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 3 tp ~~-1~",
+                    "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 4 tp ~~-1~",
+                    "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 5 tp ~~-1~",
+                    "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 0 tp ~~2.5~",
+                    "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 1 tp ~~2.5~",
+                    "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 2 tp ~~2.5~",
+                    "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 3 tp ~~2.5~",
+                    "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 4 tp ~~2.5~",
+                    "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 5 tp ~~2.5~",
+                        "/tag @s add in_attack"
+                      ],
+                      "0.3":[  
+                      "/tag @s add attacking",  
+                      "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 0 tp ~~-1~",
+                      "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 1 tp ~~-1~",
+                      "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 2 tp ~~-1~",
+                      "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 3 tp ~~-1~",
+                      "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 4 tp ~~-1~",
+                      "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 5 tp ~~-1~",
+                      "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 0 tp ~~2.5~",
+                      "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 1 tp ~~2.5~",
+                      "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 2 tp ~~2.5~",
+                      "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 3 tp ~~2.5~",
+                      "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 4 tp ~~2.5~",
+                      "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 5 tp ~~2.5~",
+                          "/tag @s add in_attack"
+                        ],
+                        "0.4":[  
+                        "/tag @s add attacking",  
+                        "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 0 tp ~~-1~",
+                        "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 1 tp ~~-1~",
+                        "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 2 tp ~~-1~",
+                        "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 3 tp ~~-1~",
+                        "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 4 tp ~~-1~",
+                        "/execute @p[hasitem={item=arkcraft:fishnet, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~-1 ~ water 5 tp ~~-1~",
+                        "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 0 tp ~~2.5~",
+                        "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 1 tp ~~2.5~",
+                        "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 2 tp ~~2.5~",
+                        "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 3 tp ~~2.5~",
+                        "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 4 tp ~~2.5~",
+                        "/execute @p[hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=5, type=arkcraft:archelon, family=tamed] ~~~ detect ~ ~1 ~ water 5 tp ~~2.5~",
+                            "/tag @s add in_attack"
+                          ],        
+                "0.5": [ 
+               "@s minecraft:remove_ataque_normal",
+                    "/tag @s remove attacking"
+                    ]
+                 }
+                },
+                "animation.remove_ataque_normal_kapro": {
+                 "animation_length": 0.65, 
+                  "loop": true, 
+                  "timeline": {
+                      "0.0":[  
+                        "/tag @s add attacking",  
+                        "/effect @s slow_falling 3 1 true",
+                        "/effect @s speed 3 25 true",
+                        "/effect @s jump_boost 3 2 true",
+                        "/execute @e[family=!in_attack, r=3.5, type=!player, tag=!attacking] ~~~ detect ^^-1 ^-1 air 0  effect @e[type=arkcraft:kapro, family=tamed, r=5] resistance 3 2 true",
+                        "/execute @e[family=!in_attack, r=3.5, type=!player, tag=!attacking] ~~~ detect ^^-1 ^-1 air 0  tp @e[type=arkcraft:kapro, family=tamed, r=5] ^^-1 ^-1",
+                "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+                "/damage @e[family=fishable , r=6] 5 entity_attack entity @s",
+                            "/tag @s add in_attack"
+                          ],  
+                          "0.1": [ 
+                            "/execute @e[family=!in_attack, r=3.5, type=!player, tag=!attacking] ~~~ detect ^^-1 ^-1 air 0  tp @e[type=arkcraft:kapro, family=tamed, r=5] ^^-1 ^1"
+                          ],  
+                          "0.2": [ 
+                            "/execute @e[family=!in_attack, r=3.5, type=!player, tag=!attacking] ~~~ detect ^^-1 ^-1 air 0  tp @e[type=arkcraft:kapro, family=tamed, r=5] ^^-1 ^-1"
+                          ],  
+                          "0.3": [ 
+                            "/execute @e[family=!in_attack, r=3.5, type=!player, tag=!attacking] ~~~ detect ^^-1 ^-1 air 0  tp @e[type=arkcraft:kapro, family=tamed, r=5] ^^-1 ^1"
+                ],     
+                                  "0.4": [ 
+                                    "/execute @e[family=!in_attack, r=3.5, type=!player, tag=!attacking] ~~~ detect ^^-1 ^-1 air 0  tp @e[type=arkcraft:kapro, family=tamed, r=5] ^^-1 ^-1",
+                        "/tag @s remove in_attack",
+                        "/tag @p[r=5] remove in_attack"
+                      ],  
+                      "0.5": [ 
+                        "/execute @e[family=!in_attack, r=3.5, type=!player, tag=!attacking] ~~~ detect ^^-1 ^-1 air 0  tp @e[type=arkcraft:kapro, family=tamed, r=5] ^^-1 ^1"
+                      ],       
+                    "0.6": [ 
+                      "/execute @e[family=!in_attack, r=3.5, type=!player, tag=!attacking] ~~~ detect ^^-1 ^-1 air 0 tp @e[type=arkcraft:kapro, family=tamed, r=5] ^^-1 ^-1",
+                   "@s minecraft:remove_ataque_normal",
+                        "/tag @s remove attacking"
+                        ]
+                     }
+                    },
+    "animation.remove_ataque_normal_carnotaurus": {
      "animation_length": 0.72, 
       "loop": true, 
       "timeline": {
           "0.0":[ 
-            "/tag @s add attacking",
-    "/damage @e[tag=!in_attack , r=4] 4 entity_attack entity @s",
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 10 entity_attack entity @s",
+    "/effect @s speed 5 2 true",
+                "/tag @s add in_attack"
+              ],
+        "0.6": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+       "/effect @s slowness 3 2 true",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_brontornis": {
+     "animation_length": 0.3, 
+      "loop": true, 
+      "timeline": {
+          "0.01":[  
+            "/tag @s add attacking",  
+            "/effect @s slow_falling 1000000000 30 true",
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+    "/tp @e[type=xp_orb, r=30] @p",
+                "/tag @s add in_attack"
+              ],  
+                      "0.1": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack"
+            ],
+        "0.2": [ 
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+         }
+        },
+    "animation.remove_ataque_normal_tralka": {
+     "animation_length": 0.72, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=6] 38 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=7] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_sclerothorax": {
+     "animation_length": 0.72, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 18 entity_attack entity @s",
+    "/effect @e[tag=!in_attack , r=4] nausea 3 2 ",
+    "/execute @s ~ ~ ~ fill ~-1 ~-1 ~1 ~1 ~1 ~-1 twisting_vines 0 replace red_flower",
+    "/execute @s ~ ~ ~ fill ~-1 ~-1 ~1 ~1 ~1 ~-1 twisting_vines 0 replace yellow_flower",
+    "/execute @s ~ ~ ~ detect ~ ~-1 ~ grass 0 fill ~-1 ~-1 ~1 ~1 ~1 ~-1 moss 0 replace grass",
+    "/execute @s ~ ~ ~ fill ~-1 ~-1 ~1 ~1 ~1 ~-1 crying_obsidian 0 replace obsidian",
+    "/execute @s ~ ~ ~ fill ~-5 ~-5 ~5 ~5 ~5 ~-5 air 0 replace portal",
+    "/execute @s ~ ~ ~ detect ~ ~-1 ~ grass 0 fill ~-1 ~-1 ~1 ~1 ~1 ~-1 moss_block 0 replace grass",
+    "/execute @s ~ ~ ~ detect ~ ~-1 ~ cobblestone 0 fill ~-1 ~-1 ~1 ~1 ~1 ~-1 mossy_cobblestone 0 replace cobblestone",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_neocartathes": {
+     "animation_length": 0.9, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+    "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ damage @e[tag=!in_attack , r=6] 30 entity_attack entity @s",
+"/playsound firework.launch @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ ",
+    "/tp @s ~ ~-0.3 ~",
+   "/tp @s ^ ^ ^0.2",
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6",
+    "/effect @s levitation 1 1 true",
+    "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ effect @e[r=1, type=arkcraft:neocartathes] levitation 2 4 true",
+    "/effect @s slow_falling 5 5 true",
+                "/tag @s add in_attack"
+                ],
+        "0.1": [ 
+   "/tp @s ^ ^ ^0.35",
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.11": [ 
+   "/tp @s ^ ^ ^0.35",
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.12": [ 
+   "/tp @s ^ ^ ^0.35",
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.13": [ 
+          "/tp @s ^ ^ ^0.35",
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.14": [ 
+          "/tp @s ^ ^ ^0.35",
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.15": [ 
+          "/tp @s ^ ^ ^0.35",
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.16": [ 
+          "/tp @s ^ ^ ^0.35",
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.17": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.18": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.19": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+  ],
+  "0.191": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.192": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.193": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.194": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.195": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.196": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.197": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.198": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.199": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.1991": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+        "0.20": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.21": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.22": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.23": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.24": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.25": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.26": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.27": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.28": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.29": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.291": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.292": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.293": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.294": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.295": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.296": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.297": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.298": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.299": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+		],
+        "0.2991": [ 
+   "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+  ],
+  "0.30": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.31": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.32": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.33": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.34": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.35": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.36": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.37": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.38": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.39": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.391": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.392": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.393": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.394": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.395": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.396": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.397": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.398": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.399": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.3991": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+        "0.6": [ 
+            "/clear @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] firework_rocket 0 1",
+	    "/tag @s remove in_attack",
+ 	    "/tp @s ~ ~-0.1 ~",
+            "/tag @p[r=25] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+          ],
+          "0.3993": [ 
+        "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+        ],
+          "0.4": [ 
+        "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+      ],
+      "0.42": [ 
+    "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+    ],
+      "0.45": [ 
+    "/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.46": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.47": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.48": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.49": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.491": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.492": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.493": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.494": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.495": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.496": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.497": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.498": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.499": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+  "0.4991": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.50": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.51": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.52": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.53": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.54": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.55": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.56": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.57": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.58": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.59": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.591": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.592": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.593": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.594": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.595": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.596": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.597": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.598": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.599": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+],
+"0.5991": [ 
+"/execute @p[r=2, hasitem={item=firework_rocket, location=slot.weapon.offhand}] ~ ~ ~ execute @e[r=1, type=arkcraft:neocartathes] ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ^ ^ ^1 air 0 tp @s ^ ^ ^1.6"
+]
+      }
+    },
+    "animation.remove_ataque_normal_oxalaia": {
+     "animation_length": 0.72, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",  
+    "/execute @s ~ ~ ~ detect ~ ~ ~ water 0 effect @s strength 3 3",
+    "/execute @s ~ ~ ~ detect ~ ~-1 ~ water 0 effect @s strength 3 3",
+    "/execute @s ~ ~ ~ detect ~ ~ ~ water 0 effect @s water_breathing 3 3",
+    "/execute @s ~ ~ ~ detect ~ ~-1 ~ water 0 effect @s water_breathing 3 3",
+    "/execute @s ~ ~ ~ detect ~ ~ ~ flowing_water 0 effect @s strength 3 3",
+    "/execute @s ~ ~ ~ detect ~ ~-1 ~ flowing_water 0 effect @s strength 3 3",
+    "/execute @s ~ ~ ~ detect ~ ~ ~ flowing_water 0 effect @s water_breathing 3 3",
+    "/execute @s ~ ~ ~ detect ~ ~-1 ~ flowing_water 0 effect @s water_breathing 3 3",
+    "/damage @e[tag=!in_attack , r=4] 26 entity_attack entity @s",
+    "/effect @e[tag=!in_attack , r=4] slowness 3 2 ",
+    "/fill ~-20 ~-20 ~20 ~20 ~20 ~-20 sand 0 replace sand",
+    "/fill ~-20 ~-20 ~20 ~20 ~20 ~-20 sand 1 replace sand",
+    "/fill ~-20 ~-20 ~20 ~20 ~20 ~-20 sand 2 replace sand",
+    "/fill ~-20 ~-20 ~20 ~20 ~20 ~-20 sand 3 replace sand",
+    "/fill ~-20 ~-20 ~20 ~20 ~20 ~-20 gravel 0 replace gravel",
+    "/fill ~-20 ~-20 ~20 ~20 ~20 ~-20 gravel 1 replace gravel",
+    "/fill ~-20 ~-20 ~20 ~20 ~20 ~-20 gravel 2 replace gravel",
+    "/fill ~-20 ~-20 ~20 ~20 ~20 ~-20 gravel 3 replace gravel",
+    "/fill ~-20 ~-20 ~20 ~20 ~20 ~-20 red_sand 0 replace red_sand",
+    "/fill ~-20 ~-20 ~20 ~20 ~20 ~-20 red_sand 1 replace red_sand",
+    "/fill ~-20 ~-20 ~20 ~20 ~20 ~-20 red_sand 2 replace red_sand",
+    "/fill ~-20 ~-20 ~20 ~20 ~20 ~-20 red_sand 3 replace red_sand",
+    "/fill ~-4 ~6 ~4  ~4 ~-4 ~-4 air 0 replace leaves",
+    "/fill ~-4 ~6 ~4  ~4 ~-4 ~-4 air 0 replace leaves2",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_shantungosaurus": {
+     "animation_length": 1.5, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+	"/execute @s[hasitem={item=arkcraft:casita_para_thorny_dragon}] ~ ~ ~ damage @e[tag=!in_attack , r=6] 40 entity_attack entity @s",
+  "/damage @e[tag=!in_attack , r=6] 20 entity_attack entity @s",
+  "/damage @e[tag=!in_attack , r=6, family=biggest] 40 entity_attack entity @s",
+	"/execute @s[hasitem={item=arkcraft:casita_para_thorny_dragon}] ~ ~ ~ effect @s resistance 3 3 false",
+	"/execute @s[hasitem={item=arkcraft:casita_para_thorny_dragon}] ~ ~ ~ effect @s slowness 3 3 false",
+       "/execute @s[hasitem={item=arkcraft:casita_para_thorny_dragon}] ~ ~ ~ playanimation @e[type=arkcraft:shantungosaurus, r=3] algo",
+       "/fill ~-6 ~10 ~6  ~6 ~-6 ~-6 air 0 replace leaves",
+       "/fill ~-6 ~10 ~6  ~6 ~-6 ~-6 air 0 replace leaves2",
+            "/tag @s add attacking",  
+                "/tag @s add in_attack"
+              ],
+        "1.4": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+	 "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_desmodus": {
+     "animation_length": 1.3, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[  
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=8] 10 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ],  
+                      "0.4": [ 
+            "/tag @s remove in_attack",
+            "/execute @e[family=!tamed, type=!player, r=7] ~ ~ ~ effect @e[type=arkraft:desmodus, family=tamed, r=4] regeneration 2 2",
+            "/tag @p[r=8] remove in_attack",
+            "/execute @s ~~~ detect ^^^-3 air 0 tp @s ^^^-3",
+            "/tag @s add in_attack"
+          ],  
+                  "0.41": [ 
+        "/execute @p[r=3, hasitem={item=shield, location=slot.weapon.offhand}] ~~~ execute @e[type=arkraft:desmodus, family=tamed, r=4] ~~~  detect ^^^-3 air 0 tp @s ^^^-3"
+         ],  
+      "0.42": [ 
+        "/execute @p[r=3, hasitem={item=shield, location=slot.weapon.offhand}] ~~~ execute @e[type=arkraft:desmodus, family=tamed, r=4] ~~~ detect ^^^-3 air 0 tp @s ^^^-3"
+      ],  
+      "0.43": [ 
+"/execute @p[r=3, hasitem={item=shield, location=slot.weapon.offhand}] ~~~ execute @e[type=arkraft:desmodus, family=tamed, r=4] ~~~  detect ^^^-3 air 0 tp @s ^^^-3"
+],  
+"0.44": [ 
+"/execute @p[r=3, hasitem={item=shield, location=slot.weapon.offhand}] ~~~ execute @e[type=arkraft:desmodus, family=tamed, r=4] ~~~  detect ^^^-3 air 0 tp @s ^^^-3"
+],
+        "1.2": [ 
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+         }
+        },
+        "animation.remove_ataque_normal_val": {
+         "animation_length": 1.3, 
+          "loop": true, 
+          "timeline": {
+              "0.0":[  
+                "/tag @s add attacking",  
+        "/damage @e[tag=!in_attack , r=6] 16 entity_attack entity @s",
+        "/damage @e[tag=!in_attack, family=acorazado, r=6] 28 entity_attack entity @s",
+                    "/tag @s add in_attack"
+                  ],  
+                          "0.4": [ 
+                "/tag @s remove in_attack",
+                "/tag @p[r=7] remove in_attack"
+                ],
+            "1.2": [ 
+           "@s minecraft:remove_ataque_normal",
+                "/tag @s remove attacking"
+                ]
+             }
+        },
+    "animation.remove_ataque_normal_armadillosuchus": {
+     "animation_length": 0.72, 
+      "loop": true, 
+      "timeline": {
+          "0.1":[ 
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 16 entity_attack entity @s",
+                "/tag @s add in_attack"
+          ],
+ 	        "0.3":[ 
+
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/effect @s slow_falling 2 2 true",
+            "/effect @s jump_boost 3 3 true",
+            "/effect @s speed 2 2 true",
+            "/tag @s remove attacking"
+          
+          ],
+          "0.31":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.32":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.33":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.34":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.35": [ 
+
+	 "/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+          ],
+          "0.36":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.37":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.38":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.39":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.40": [ 
+
+	 "/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+          ],
+          "0.41":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.42":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.43":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.44":[ 
+
+  "/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+          ],
+          "0.45": [ 
+
+	 "/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+          ],
+          "0.46":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.47":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.48":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.49":[ 
+
+	"/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+              ],
+          "0.50": [ 
+
+	 "/execute @s ~ ~ ~ execute @p[r=2] ~ ~ ~ execute @e[r=2, type=arkcraft:armadillosuchus] ~ ~ ~ detect ^ ^1 ^2 air 0 execute @s ~ ~ ~ detect ~ ~ ~ air 0 execute @s ~ ~ ~ detect ~ ~2 ~ air 0 execute @s ~ ~ ~ detect ~ ~1 ~ air 0 execute @s ~ ~ ~ detect ~ ~ ~1 air 0 execute @s ~ ~ ~ detect ~ ~1 ~1 air 0 execute @s ~ ~ ~ detect ~ ~2 ~1 air 0 tp @s ^ ^1.3 ^5.1"
+
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_pyroraptor": {
+     "animation_length": 0.42, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 16 entity_attack entity @s",
+    "/execute @s ~ ~ ~ detect ^ ^1 ^2 air 0 setblock ^ ^1 ^2 fire",
+    "/execute @s ~ ~ ~ detect ^ ^1 ^2 obsidian 0 setblock ^ ^1 ^2 lava",
+    "/effect @s fire_resistance 5 5 true",
+    "/effect @s slowness 3 3 true",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/execute @s[name=Pistacho] ~ ~ ~ fill ~-3 ~3 ~3 ~3 ~-3 ~-3 azalea_leaves_flowered 0 replace fire ",
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_daeodon": {
+     "animation_length": 0.42, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/execute @s[hasitem={item=arkcraft:ark_meat_raw}] ~ ~ ~ effect @s regeneration 1 10",
+            "/tag @s add attacking",  
+           "/effect @s jump_boost 2 2 true",
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+                "/tag @s add in_attack"
+              ],
+        "0.3": [ 
+            "/execute @s[hasitem={item=arkcraft:ark_meat_raw, quantity=5}] ~ ~ ~ clear @s arkcraft:ark_meat_raw 5",
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+            "/tag @s remove attacking"
+            ]
+      }
+    },
+    "animation.remove_ataque_normal_gualicho": {
+     "animation_length": 1.52, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 16 entity_attack entity @s",
     "/execute @e[tag=!in_attack , r=4, type=arkcraft:mega_raptor] ~ ~ ~ effect @s slowness 15 255 ",
     "/execute @e[tag=!in_attack , r=4, type=arkcraft:mega_raptor] ~ ~ ~ effect @s weakness 15 255 ",
     "/execute @e[tag=!in_attack , r=4, type=arkcraft:male_rex] ~ ~ ~ event entity @s ark:narcotic_final",
     "/execute @e[tag=!in_attack , r=4, type=arkcraft:female_rex] ~ ~ ~ event entity @s ark:narcotic_final",
+    "/execute @e[tag=!in_attack , r=4, type=arkcraft:mega_raptor] ~ ~ ~ event entity @s ark:narcotic_final",
             "/tag @s add in_attack"
               ],
         "0.3": [ 
@@ -179,6 +1354,46 @@
             ]
       }
     },
+    "animation.remove_ataque_debil_ptera": {
+      "animation_length": 1.0, 
+       "loop": true, 
+       "timeline": {
+           "0.0":[  
+             "/tag @s add attacking",  
+   
+     "/damage @e[tag=!in_attack , r=4, type=!arkcraft:ptera] 2 entity_attack entity @s",
+                 "/tag @s add in_attack",
+                 "/execute @s ~ ~ ~ detect ^ ^0.2 ^2 air 0 tp ^ ^0.1 ^2"
+                ], 
+                "0.15":[  
+                  "/execute @s ~ ~ ~ detect ^ ^0.2 ^2 air 0 tp ^ ^0.1 ^2"
+                    ], 
+                    "0.2":[  
+                      "/execute @s ~ ~ ~ detect ^ ^0.2 ^2 air 0 tp ^ ^0.1 ^2"
+                ], 
+                "0.25":[  
+                  "/execute @s ~ ~ ~ detect ^ ^0.2 ^2 air 0 tp ^ ^0.1 ^2"
+                ], 
+                "0.30":[  
+                  "/execute @s ~ ~ ~ detect ^ ^0.2 ^2 air 0 tp ^ ^0.1 ^2"
+                    ], 
+                    "0.35":[  
+                      "/execute @s ~ ~ ~ detect ^ ^0.2 ^2 air 0 tp ^ ^0.1 ^2"
+                ], 
+                "0.38":[  
+                  "/execute @s ~ ~ ~ detect ^ ^0.2 ^2 air 0 tp ^ ^0.1 ^2"
+                    ],  
+               
+                       "0.41": [ 
+             "/tag @s remove in_attack",
+             "/tag @p[r=5] remove in_attack"
+             ],
+         "0.52": [ 
+        "@s minecraft:remove_ataque_normal",
+             "/tag @s remove attacking"
+             ]
+           }
+       },
     "animation.attack_pulmonoscorpius": {
      "animation_length": 2.0, 
       "loop": true, 
@@ -187,7 +1402,8 @@
     "/effect @e[tag=!in_attack , r=4] slowness 3 200 true",
     "/effect @e[tag=!in_attack , r=4] blindness 3 200 true",
     "/effect @e[tag=!in_attack , r=4] weakness 3 2 true",
-    "/damage @e[tag=!in_attack , r=4] 1 entity_attack entity @s",
+    "/event entity @e[tag=!in_attack , r=4, family=smallest] ark:narcotic_final",
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
     
     "/effect @s slowness 0 201 true",
     "/effect @s blindness 0 201 true",
@@ -212,10 +1428,11 @@
       "loop": true, 
       "timeline": {
           "0.0":[ 
-            "/tag @s add attacking",
-    "/damage @e[tag=!in_attack , r=4] 3 entity_attack entity @s",
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
     "/effect @e[tag=!in_attack , r=4] slowness 3 200 true",
     "/effect @e[tag=!in_attack , r=4] blindness 3 200 true",
+    "/event entity @e[tag=!in_attack , r=4, family=smallest] ark:narcotic_final",
     "/effect @e[tag=!in_attack , r=4] weakness 3 2 true",
                 "/tag @s add in_attack"
               ],
@@ -225,6 +1442,30 @@
        "@s minecraft:remove_ataque_normal",
             "/tag @s remove attacking"
             ]
+      }}, 
+    "animation.remove_ataque_normal_megalania": {
+     "animation_length": 2.4, 
+      "loop": true, 
+      "timeline": {
+          "0.0":[ 
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+    "/execute @e[tag=!in_attack , r=4] ~ ~ ~ effect @e[r=3, type=!arkcraft:megalania] hunger 200 3 true",
+    "/execute @e[tag=!in_attack , r=4] ~ ~ ~ effect @e[r=3, type=!arkcraft:megalania] weakness 200 0 true",
+    "/execute @e[tag=!in_attack , r=4] ~ ~ ~ effect @e[r=3, type=!arkcraft:megalania] poison 200 0 true",
+
+    "/execute @e[tag=!in_attack , r=4] ~ ~ ~ /execute @e[r=4] ~ ~ ~ effect @e[r=3, type=!arkcraft:megalania] hunger 200 3 true",
+    "/execute @e[tag=!in_attack , r=4] ~ ~ ~ /execute @e[r=4] ~ ~ ~ effect @e[r=3, type=!arkcraft:megalania] weakness 200 0 true",
+    "/execute @e[tag=!in_attack , r=4] ~ ~ ~ /execute @e[r=4] ~ ~ ~ effect @e[r=3, type=!arkcraft:megalania] poison 200 0 true",
+                "/tag @s add in_attack"
+              ],
+        "1.7": [ 
+            "/tag @s remove in_attack",
+            "/tag @p[r=5] remove in_attack",
+       "@s minecraft:remove_ataque_normal",
+       "/effect @p[r=2] clear",
+            "/tag @s remove attacking"
+            ]
       }
     },
     "animation.remove_ataque_normal_velonasaur": {
@@ -232,89 +1473,132 @@
       "loop": true, 
       "timeline": {
           "0.0":[  
-            "/tag @s add attacking",
+            "/tag @s add attacking",  
                 "/tag @s add in_attack"
               ],  
-                      "0.4": [ 
-            "/tag @s remove in_attack",
-            "/tag @p[r=5] remove in_attack"
-            ],
-        "1.2": [ 
-       "@s minecraft:remove_ataque_normal"
-            ],
-        "1.5": [   
-            "/tag @s remove attacking"
-            ]
-      }
-    },
-    "animation.remove_ataque_normal_velonasaur_r": {
+              "0.4": [ 
+    "/tag @s remove in_attack",
+    "/tag @p[r=5] remove in_attack"
+    ],
+"1.2": [ 
+        "/effect @s slowness 0 101 true",
+    "/tag @s remove attacking"
+    ],
+"1.3": [ 
+"@s minecraft:remove_ataque_normal"
+    ]
+}
+},
+"animation.remove_ataque_normal_tropical_wyvern": {
+ "animation_length": 1.95, 
+  "loop": true, 
+  "timeline": {
+      "0.0":[  
+        "/tp ^ ^0.5 ^-1",  
+        "/tag @s add attacking",  
+            "/tag @s add in_attack"
+          ],  
+          "0.1":[  
+            "/damage @e[tag=!in_attack , r=7] 30 entity_attack entity @s",
+            "/effect @e[tag=!in_attack , r=7] poison",
+            "/tp ^ ^0.5 ^-1"
+              ], 
+              "0.15":[  
+                "/tp ^ ^0.5 ^-1"
+                  ], 
+                  "0.2":[  
+            "/tp ^ ^0.5 ^-1"
+              ], 
+              "0.25":[  
+                "/tp ^ ^0.5 ^-1"
+                  ], 
+          "0.4": [ 
+"/tag @s remove in_attack",
+"/tag @p[r=5] remove in_attack"
+],
+"1.2": [ 
+"/tag @s remove attacking"
+],
+"1.6": [ 
+"@s minecraft:remove_ataque_normal",
+"/execute @e[type=arkcraft:espina_a_tamed] ~~~ effect @e[r=3, family=wild] poison",
+"/execute @e[type=arkcraft:espina_a_tamed] ~~~damage @e[family=wild , r=3] 5 entity_attack entity @s"
+]
+}
+},
+    "animation.remove_ataque_normal_cryolopho": {
      "animation_length": 1.65, 
       "loop": true, 
       "timeline": {
           "0.0":[  
-            "/tag @s add attacking",
+            "/tag @s add attacking",  
                 "/tag @s add in_attack",
-                "/effect @s slowness 10000 100 true"
+                "/effect @e[r=7, type=!arkcraft:cryolopho, family=tamed] resistance 5 5 true",
+                "/event entity @e[tag=!in_attack, r=4, family=smallest] ark:narcotic_final",
+                "/event entity @e[tag=!in_attack, r=4, family=small] ark:narcotic_final",
+                "/effect @e[r=7, type=!arkcraft:cryolopho, tag=!in_attack] slowness 5 5 true"
               ],  
-                      "0.4": [ 
-            "/tag @s remove in_attack",
-            "/tag @p[r=5] remove in_attack"
-            ],
-        "1.2": [ 
-                "/effect @s slowness 0 101 true",
-            "/tag @s remove attacking",
-       "@s minecraft:remove_ataque_normal"
-            ]
-      }
+              "0.4": [ 
+    "/tag @s remove in_attack",
+    "/tag @p[r=5] remove in_attack"
+    ],
+"1.2": [ 
+        "/effect @s slowness 0 101 true",
+    "/tag @s remove attacking"
+    ],
+"1.3": [ 
+"@s minecraft:remove_ataque_normal"
+    ]
+}
     },
-    "animation.remove_ataque_normal": {
-     "animation_length": 1.3, 
-      "loop": true, 
-      "timeline": {
-          "0.0":[  
-            "/tag @s add attacking",
-    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
-                "/tag @s add in_attack"
-              ],  
-                      "0.4": [ 
-            "/tag @s remove in_attack",
-            "/tag @p[r=5] remove in_attack"
-            ],
-        "1.2": [ 
-       "@s minecraft:remove_ataque_normal",
-            "/tag @s remove attacking"
-            ]
-      }
-    },
+    "animation.remove_ataque_normal_velonasaur_r": {
+      "animation_length": 1.65, 
+       "loop": true, 
+       "timeline": {
+           "0.0":[  
+             "/tag @s add attacking",
+                 "/tag @s add in_attack",
+                 "/effect @s slowness 10000 100 true"
+               ],  
+                       "0.4": [ 
+             "/tag @s remove in_attack",
+             "/tag @p[r=5] remove in_attack"
+             ],
+         "1.2": [ 
+                 "/effect @s slowness 0 101 true",
+             "/tag @s remove attacking"
+             ],
+         "1.3": [ 
+        "@s minecraft:remove_ataque_normal"
+             ]
+       }
+     },
     "animation.remove_ataque_normal_thorny_dragon": {
-     "animation_length": 2.2,
+     "animation_length": 2.6,
       "loop": true,
       "timeline": {   
           "0.0":[ 
-            "/tag @s add attacking",
-    "/damage @e[tag=!in_attack , r=4] 5 entity_attack entity @s",
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=6] 5 entity_attack entity @s",
                 "/tag @s add in_attack",
-"/effect @e[r=3, tag=!in_attack] slowness 60 0 true",
-"/effect @e[r=3, tag=!in_attack] weakness 60 0 true",
-"/effect @e[r=3, tag=!in_attack] mining_fatigue 60 0 true",
-"/effect @e[r=3, tag=!in_attack] poison 60 0 true",
-"/effect @e[r=3, tag=!in_attack] blindness 1 1 true",
+"/effect @e[r=6, tag=!in_attack] slowness 60 0 true",
+"/effect @e[r=6, tag=!in_attack] weakness 60 0 true",
+"/effect @e[r=6, tag=!in_attack] mining_fatigue 60 0 true",
+"/effect @e[r=6, tag=!in_attack] poison 60 0 true",
+"/effect @e[r=6, tag=!in_attack] blindness 1 1 true",
 "/playsound random.fizz @a[r=6] ~ ~ ~",
-
-    "/damage @e[tag=!in_attack , r=3] 1 entity_attack entity @s",
     
 "/effect @s slowness 0 12 true",
 "/effect @s weakness 0 12 true",
 "/effect @s mining_fatigue 0 12 true",
 "/effect @s poison 0 12 true",
-"/effect @s blindness 0 22 true",
-"/effect @s speed 10 2 true"
+"/effect @s blindness 0 22 true"
               ], 
-        "0.7": [
+        "0.3": [
             "/tag @s remove in_attack",
-            "/tag @p[r=5] remove in_attack"
+            "/tag @p[r=8] remove in_attack"
             ],
-        "2.0": [
+        "0.45": [
             "@s minecraft:remove_ataque_normal",
             "/tag @s remove attacking"
             ] 
@@ -325,17 +1609,22 @@
       "loop": true, 
       "timeline": { 
           "0.0":[
-            "/tag @s add attacking",
-    "/damage @e[tag=!in_attack , r=4] 10 entity_attack entity @s",
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=4, type=!arkcraft:alvarezsaurus] 16 entity_attack entity @s",
+    "/execute @e[r=10, type=arkcraft:alvarezsaurus] ~~~ playanimation @s animation.alvarezsaurus.roar",
+    "/execute @e[r=10, type=arkcraft:alvarezsaurus] ~~~ effect @e[r=5, type=arkcraft:skorpiovenator, family=tamed] instant_health 1 1",
+    "/execute @e[r=4, family=arthropod] ~ ~ ~ tp ~ ~-1.3 ~",
                 "/tag @s add in_attack"
               ], 
         "0.7": [
             "/tag @s remove in_attack",
-            "/tag @p[r=5] remove in_attack"
+            "/tag @p[r=5] remove in_attack",
+            "/execute @e[r=10, type=arkcraft:alvarezsaurus] ~~~ playanimation @s animation.alvarezsaurus.roar"
             ],
         "2.7": [
             "@s minecraft:remove_ataque_normal",
-            "/tag @s remove attacking"
+            "/tag @s remove attacking",
+            "/execute @e[r=10, type=arkcraft:alvarezsaurus] ~~~ playanimation @s animation.alvarezsaurus.roar"
             ] 
       }
     },
@@ -344,8 +1633,8 @@
       "loop": true,
       "timeline": { 
           "0.0":[
-            "/tag @s add attacking",
-    "/damage @e[tag=!in_attack , r=6] 9 entity_attack entity @s",
+            "/tag @s add attacking",  
+    "/damage @e[tag=!in_attack , r=6] 16 entity_attack entity @s",
                 "/tag @s add in_attack"
               ], 
         "0.7": [
@@ -363,7 +1652,7 @@
       "loop": true,
       "timeline": { 
           "0.0":[
-            "/tag @s add attacking",
+            "/tag @s add attacking",  
     "/damage @e[tag=!in_attack , r=4] 6 entity_attack entity @s",
                 "/tag @s add in_attack"
               ], 

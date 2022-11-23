@@ -62,7 +62,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:fish",
+                    "name": "arkcraft:ark_fish_raw",
                     "weight": 100,
                     "functions": [
                         {

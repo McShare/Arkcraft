@@ -1,0 +1,861 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"tp": "controller.animation.sleeping_tp",
+				"nomove": "controller.animation.move_tp",
+				"tag": "controller.animation.rider",
+				"tagremove": "controller.animation.norider",
+				"swimanim": "controller.animation.swimanim",
+				"blood": "controller.animation.healthblood2",
+				"speedair": "controller.animation.speed_air"
+			},
+			"scripts": {
+				"animate": [
+					"camera",
+					"tp",
+					"nomove",
+					"tag",
+					"tagremove",
+					"blood",
+					"speedair"
+				]
+			},
+			"identifier": "arkcraft:female_shadowmane"
+		},
+		"component_groups": {
+			"ark:wild": {
+				"minecraft:behavior.hurt_by_target": {
+					"priority": 1
+				},
+				"minecraft:behavior.melee_attack": {
+					"priority": 3
+				},
+				"minecraft:behavior.look_at_player": {
+					"priority": 10,
+					"look_distance": 15,
+					"probability": 0.2
+				},
+				"minecraft:behavior.look_at_target": {
+					"priority": 3,
+					"look_distance": 15,
+					"probability": 0.2
+				},
+				"minecraft:is_chested": {
+
+				},
+	    "minecraft:behavior.nearest_attackable_target": { 
+          "priority": 1,
+        "reselect_targets": false,
+          "within_radius": 30, 
+          "entity_types": [ 
+            {
+              "filters": { "other_with_families": [ "player"] },
+             "max_dist": 30
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "tamed"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
+                ] 
+              },
+              "max_dist": 30
+            }
+          ],
+          "must_see": true
+        },
+				"minecraft:type_family": {
+					"family": [
+						"wild",
+						"shadowmane",
+						"dangerous",
+						"shadowmane_female" , "medium" , "acorazado" 
+					]
+				},
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "regeneration",
+							"duration": 100000,
+							"amplifier": 0,
+							"visible": false
+						}
+					]
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						100,
+						800
+					],
+					"time_down_event": {
+						"event": "ark:sleeping"
+					}
+				}
+			},
+			"ark:sleeping": {
+				"minecraft:is_sheared": {},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 300,
+					"time_down_event": {
+						"event": "minecraft:entity_spawned"
+					}
+				},
+				"minecraft:entity_sensor": {
+					"sensor_range": 2.2,
+					"event_filters": {
+						"test": "is_family",
+						"subject": "other",
+						"value": "player"
+					},
+					"event": "ark:get_up"
+				},
+				"minecraft:tameable": {
+					"probability": 0.35,
+					"tame_items": [
+						"minecraft:cod_bucket",
+						"minecraft:pufferfish_bucket",
+						"minecraft:salmon_bucket",
+						"minecraft:tropical_fish_bucket",
+"arkcraft:bucket_ammonite_friend",
+"arkcraft:bucket_ammonite_poisonshock",
+"arkcraft:bucket_trilobite",
+"arkcraft:bucket_mawsonia",
+"arkcraft:bucket_tany" 
+					],
+					"tame_event": {
+						"event": "ark:tamed"
+					}
+				}
+			},
+			"ark:follow_owner": {
+				"minecraft:behavior.follow_owner": {
+					"priority": 6,
+					"speed_multiplier": 1,
+					"start_distance": 10,
+					"stop_distance": 2
+				}
+			},
+			"ark:neutral": {
+				"minecraft:behavior.owner_hurt_target": {
+					"priority": 2
+				},
+				"minecraft:behavior.hurt_by_target": {
+					"priority": 1
+				},
+				"minecraft:behavior.melee_attack": {
+					"priority": 3
+				}
+			},
+			"ark:agressive": {
+				"minecraft:behavior.owner_hurt_target": {
+					"priority": 2
+				},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 2,
+					"set_persistent": true,
+					"within_radius": 15,
+					"must_see": true,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "villager",
+										"operator": "=="
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player",
+										"operator": "=="
+									}
+								]
+							}
+						}
+					]
+				},
+				"minecraft:behavior.hurt_by_target": {
+					"priority": 1
+				},
+				"minecraft:behavior.melee_attack": {
+					"priority": 3
+				}
+			},
+			"ark:tamed": {
+				"minecraft:is_tamed": {},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 0.1,
+					"time_down_event": {
+						"event": "ark:dialogue"
+					}
+				},
+				"minecraft:nameable": {},
+				"minecraft:behavior.player_ride_tamed": {},
+				"minecraft:rideable": {
+					"controlling_seat": 2,
+					"family_types": [
+						"player"
+					],
+					"seats": [
+						{
+							"position": [
+								0,
+								1.2,
+								0
+							]
+						}
+					]
+				},
+				"minecraft:npc": {
+					"npc_data": {
+						"portrait_offsets": {
+							"translate": [
+								-7,
+								50,
+								0
+							],
+							"scale": [
+								1.75,
+								1.75,
+								1.75
+							]
+						},
+						"picker_offsets": {
+							"translate": [
+								0,
+								20,
+								0
+							],
+							"scale": [
+								1.7,
+								1.7,
+								1.7
+							]
+						},
+						"skin_list": [
+							{
+								"variant": 0
+							},
+							{
+								"variant": 1
+							},
+							{
+								"variant": 2
+							},
+							{
+								"variant": 3
+							},
+							{
+								"variant": 4
+							},
+							{
+								"variant": 5
+							},
+							{
+								"variant": 6
+							},
+							{
+								"variant": 7
+							},
+							{
+								"variant": 8
+							},
+							{
+								"variant": 9
+							},
+							{
+								"variant": 10
+							},
+							{
+								"variant": 11
+							},
+							{
+								"variant": 12
+							},
+							{
+								"variant": 13
+							},
+							{
+								"variant": 14
+							},
+							{
+								"variant": 15
+							},
+							{
+								"variant": 16
+							},
+							{
+								"variant": 17
+							},
+							{
+								"variant": 18
+							},
+							{
+								"variant": 19
+							}
+						]
+					}
+				},
+				"minecraft:breedable": {
+					"require_tame": true,
+					"inherit_tamed": false,
+					"breed_items": [
+						"minecraft:muttonraw",
+						"minecraft:fish",
+						"minecraft:beef",
+						"minecraft:chicken",
+						"minecraft:porkchop",
+"arkcraft:ark_meat_cooked",
+"arkcraft:ark_meat_raw",
+"arkcraft:raw_mawsonia"
+					]
+				},
+				"minecraft:is_chested": {},
+				"minecraft:behavior.beg": {
+					"priority": 9,
+					"look_distance": 8,
+					"look_time": [
+						2,
+						4
+					],
+					"items": [
+						"bone",
+						"porkchop",
+						"cooked_porkchop",
+						"chicken",
+						"cooked_chicken",
+						"beef",
+						"cooked_beef",
+						"rotten_flesh",
+						"muttonraw",
+						"muttoncooked",
+						"rabbit",
+						"cooked_rabbit",
+						"arkcraft:ark_meat_cooked",
+"arkcraft:ark_meat_raw",
+"arkcraft:raw_mawsonia"
+					]
+				},
+				"minecraft:type_family": {
+					"family": [
+						"tamed",
+						"shadowmane",
+						"dangerous",
+						"shadowmane_female" , "medium" , "acorazado" 
+					]
+				},
+				"minecraft:can_power_jump": {},
+				"minecraft:horse.jump_strength": {
+					"value": 1.4
+				},
+				"minecraft:input_ground_controlled": {},
+				"minecraft:is_saddled": {},
+				"minecraft:inventory": {
+					"container_type": "container",
+					"inventory_size": 27,
+					"restrict_to_owner": true,
+					"private": true
+				},
+				"minecraft:healable": {
+					"force_use": true,
+					"items": [
+						{
+							"item": "minecraft:fish",
+							"heal_amount": 10
+						},
+						{
+							"item": "minecraft:salmon",
+							"heal_amount": 10
+						}
+					]
+				}
+			},
+			"ark:variant1": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"ark:variant2": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"ark:variant3": {
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+			"ark:variant4": {
+				"minecraft:variant": {
+					"value": 3
+				}
+			},
+			"ark:knockback": {
+				"minecraft:behavior.knockback_roar": {
+					"priority": 1,
+					"cooldown_time": 5,
+					"knockback_strength": 2,
+					"knockback_range": 8,
+					"knockback_damage": 4,
+					"duration": 0.75,
+					"on_roar_end": {
+						"event": "ark:no_knockback"
+					}
+				},
+				"minecraft:is_baby": {},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 2.25,
+					"time_down_event": {
+						"event": "ark:no_knockback"
+					}
+				}
+			},
+			"ark:sleeping_time_run": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": [
+						10,
+						20
+					],
+					"time_down_event": {
+						"event": "ark:sleeping"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player ? (query.is_baby ? 12 : 5) + (Math.die_roll(query.equipment_count,1,3)) : 0"
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:collision_box": {
+				"width": 1.7,
+				"height": 1.4
+			},
+        "minecraft:loot": {
+          "table": "loot_tables/entities/shadowmane.json"
+        },
+			"minecraft:health": {
+				"value": 40,
+				"max": 120
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:attack": {
+				"damage": 16
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:follow_range": {
+				"value": 64
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 9,
+				"speed_multiplier": 1
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:movement": {
+				"value": 0.4
+			},
+			"minecraft:knockback_resistance": {
+				"value": 0.2
+			},
+			"minecraft:underwater_movement": {
+				"value": 0.1
+			},
+			"minecraft:walk_animation_speed": {
+				"value": 0.1
+			},
+			"minecraft:scale": {
+				"value": 1.5
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"test": "is_daytime",
+							"operator": "==",
+							"value": false
+						},
+						"event": "ark:sleeping_time_run"
+					}
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"filters": {
+								"test": "has_damage",
+								"subject": "self",
+								"value": "fall"
+							}
+						},
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:fire_immune": true
+		},
+		    "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6At night it sleeps, feed it with fish (or marine animals) in a bucket",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        },
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"randomize": [
+							{
+								"add": {
+									"component_groups": [
+										"ark:variant1",
+										"ark:wild",
+										"ark:narcotic_1"
+									]
+								},
+								"weight": 33,
+								"remove": {
+									"component_groups": [
+										"ark:sleeping",
+										"ark:tamed"
+									]
+								}
+							},
+							{
+								"add": {
+									"component_groups": [
+										"ark:variant2",
+										"ark:wild",
+										"ark:narcotic_1"
+									]
+								},
+								"weight": 33,
+								"remove": {
+									"component_groups": [
+										"ark:sleeping",
+										"ark:tamed"
+									]
+								}
+							},
+							{
+								"add": {
+									"component_groups": [
+										"ark:variant3",
+										"ark:wild",
+										"ark:narcotic_1"
+									]
+								},
+								"weight": 33,
+								"remove": {
+									"component_groups": [
+										"ark:sleeping",
+										"ark:tamed"
+									]
+								}
+							},
+							{
+								"add": {
+									"component_groups": [
+										"ark:variant4",
+										"ark:wild",
+										"ark:narcotic_1"
+									]
+								},
+								"weight": 33,
+								"remove": {
+									"component_groups": [
+										"ark:sleeping",
+										"ark:tamed"
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"ark:sleeping": {
+				"remove": {
+					"component_groups": [
+						"ark:narcotic_10",
+						"ark:wild"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ark:sleeping"
+					]
+				}
+			},
+			"ark:tamed": {
+				"remove": {
+					"component_groups": [
+						"ark:sleeping",
+						"ark:wild",
+						"ark:narcotic_1",
+						"ark:narcotic_2",
+						"ark:narcotic_3",
+						"ark:narcotic_4",
+						"ark:narcotic_5",
+						"ark:narcotic_6",
+						"ark:narcotic_7",
+						"ark:narcotic_8",
+						"ark:narcotic_9",
+						"ark:narcotic_10",
+						"ark:follow_owner",
+						"ark:neutral",
+						"ark:agressive"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ark:tamed"
+					]
+				}
+			},
+			"ark:follow_owner": {
+				"add": {
+					"component_groups": [
+						"ark:follow_owner"
+					]
+				}
+			},
+			"ark:stop_follow_owner": {
+				"remove": {
+					"component_groups": [
+						"ark:follow_owner"
+					]
+				}
+			},
+			"ark:neutral": {
+				"add": {
+					"component_groups": [
+						"ark:neutral"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:agressive"
+					]
+				}
+			},
+			"ark:pacifique": {
+				"remove": {
+					"component_groups": [
+						"ark:neutral",
+						"ark:agressive"
+					]
+				}
+			},
+			"ark:agressive": {
+				"add": {
+					"component_groups": [
+						"ark:agressive"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ark:neutral"
+					]
+				}
+			},
+			"ark:saddled": {
+				"add": {
+					"component_groups": [
+						"ark:saddled"
+					]
+				}
+			},
+			"minecraft:entity_born": {
+				"sequence": [
+					{
+						"randomize": [
+							{
+								"add": {
+									"component_groups": [
+										"ark:variant1",
+										"ark:wild",
+										"ark:narcotic_1"
+									]
+								},
+								"weight": 33,
+								"remove": {
+									"component_groups": [
+										"ark:sleeping",
+										"ark:tamed"
+									]
+								}
+							},
+							{
+								"add": {
+									"component_groups": [
+										"ark:variant2",
+										"ark:wild",
+										"ark:narcotic_1"
+									]
+								},
+								"weight": 33,
+								"remove": {
+									"component_groups": [
+										"ark:sleeping",
+										"ark:tamed"
+									]
+								}
+							},
+							{
+								"add": {
+									"component_groups": [
+										"ark:variant3",
+										"ark:wild",
+										"ark:narcotic_1"
+									]
+								},
+								"weight": 33,
+								"remove": {
+									"component_groups": [
+										"ark:sleeping",
+										"ark:tamed"
+									]
+								}
+							},
+							{
+								"add": {
+									"component_groups": [
+										"ark:variant4",
+										"ark:wild",
+										"ark:narcotic_1"
+									]
+								},
+								"weight": 33,
+								"remove": {
+									"component_groups": [
+										"ark:sleeping",
+										"ark:tamed"
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"ark:move": {
+				"run_command": {
+					"command": [
+						"effect @s slowness 0 0 true"
+					]
+				}
+			},
+			"ark:stop_move": {
+				"run_command": {
+					"command": [
+						"effect @s slowness 10000 254 true"
+					]
+				}
+			},
+			"ark:dialogue": {
+				"run_command": {
+					"command": [
+						"dialogue change @s female_special1 @p"
+					]
+				}
+			},
+			"ark:no_knockback": {
+				"remove": {
+					"component_groups": [
+						"ark:knockback"
+					]
+				}
+			},
+			"ark:roar_special": {
+				"run_command": {
+					"command": [
+						"effect @e[r=4,family=player] invisibility 10 1 true",
+						"effect @s invisibility 10 1 true",
+						"execute @e[family=wild,r=10] ~ ~ ~ summon lightning_bolt",
+						"effect @e[family=tamed,r=15] invisibility 10 1 true",
+						"effect @s speed 2 5 true",
+						"playsound beacon.power @a[r=7] ~ ~ ~",
+						"particle minecraft:totem_particle ~ ~2 ~",
+						"particle minecraft:totem_particle ~1 ~2 ~",
+						"particle minecraft:totem_particle ~ ~2 ~1",
+						"particle minecraft:totem_particle ~-1 ~2 ~",
+						"particle minecraft:totem_particle ~ ~2 ~-1",
+						"playsound beacon.power @a[r=7] ~ ~ ~",
+						"playsound beacon.power @a[r=7] ~ ~ ~",
+						"playsound shadow_dientes @a[r=7] ~ ~ ~"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ark:knockback"
+					]
+				}
+			},
+			"ark:get_up": {
+				"remove": {
+					"component_groups": [
+						"ark:sleeping"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ark:wild"
+					]
+				}
+			}
+		}
+	}
+}

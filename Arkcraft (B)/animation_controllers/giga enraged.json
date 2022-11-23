@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.gigaraged": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"blood": "query.health < 150"
+						}
+					],
+					"on_entry": [
+						"/particle arkcraft:blood ~ ~3 ~",
+						"/event entity @s ark:malo"
+					]
+				},
+				"blood": {
+					"transitions": [
+						{
+							"default": "query.health < 150"
+						}
+					],
+					"on_entry": [
+						"/particle arkcraft:blood ~ ~3 ~",
+						"/event entity @s ark:malo"
+					]
+				}
+			}
+		}
+	}
+}

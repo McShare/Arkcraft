@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:nadrragontaga"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "232"   ,   
+      "313",
+      "232"
+    ],
+   "key": {
+      "2": {
+        "item": "arkcraft:oil"
+      },
+      "1": {
+        "item": "minecraft:bottle"
+            },
+      "3": {
+        "item": "minecraft:gunpowder"
+      }
+    },
+    "result": {
+      "item": "minecraft:dragon_breath",
+            "count": 1
+    }
+  }
+}

@@ -2,14 +2,23 @@
   "format_version": "1.8.0",
   "animations": {
     "animation.longuisquama_levantado": {
-     "animation_length": 0.05,
+     "animation_length": 0.02,
       "loop": true,
       "timeline": {
         "0.0": [
-"/execute @s ~ ~ ~ execute @p[r=6] ~ ~ ~", 
-"/execute @e[type=arkcraft:longuisquama, r=6] ~ ~ ~ execute @p[r=6] ~ ~ ~ tp @e[type=arkcraft:longuisquama, r=6] ~ ~2.2 ~"
+          "/tag @s add tamed",
+"/execute @s ~ ~ ~ execute @p[r=3] ~ ~ ~ tp @e[type=arkcraft:longuisquama, tag=tamed, r=6] ~ ~2.2 ~"
             ]
       }
-    }
+    },
+    "animation.longuisquama_sentado": {
+      "animation_length": 0.02,
+       "loop": true,
+       "timeline": {
+         "0.0": [
+           "/tag @s remove tamed"
+             ]
+       }
+     }
   }
 } 

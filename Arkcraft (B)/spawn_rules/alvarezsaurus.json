@@ -8,14 +8,13 @@
     "conditions": [
       {
         "minecraft:spawns_on_surface": {},
-        "minecraft:spawns_on_block_filter": "minecraft:grass",
         "minecraft:brightness_filter": {
-          "min": 7,
+          "min": 0,
           "max": 15,
           "adjust_for_weather": false
         },
         "minecraft:weight": {
-          "default": 4
+          "default": 40
         },
         "minecraft:herd": {
           "min_size":2,
@@ -25,7 +24,31 @@
         "minecraft:biome_filter": {
           "test": "has_biome_tag", "operator":"==", "value": "animal"
         }
+      },
+      {
+        "minecraft:spawns_on_surface": {},
+
+      "minecraft:difficulty_filter": {
+        "min": "easy",
+        "max": "hard"
+      },
+      "minecraft:brightness_filter": {
+        "min": 7,
+        "max": 15,
+        "adjust_for_weather": false
+      },
+      "minecraft:weight": {
+        "default": 100
+      },
+      "minecraft:herd": {
+        "min_size":4,
+        "max_size":7
+      },
+      
+      "minecraft:biome_filter": {
+          "test": "has_biome_tag", "operator":"==", "value": "birch_forest"
       }
+    }
     ]
   }
 }

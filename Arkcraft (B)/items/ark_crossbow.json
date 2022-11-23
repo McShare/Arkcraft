@@ -12,12 +12,25 @@
 			"minecraft:cooldown": {
 				"category": "ender_pearl",
 				"duration": 2
+			
 			},
+			"minecraft:damageable": {
+			  "repair_items": [
+				"iron_ingot"
+  				]
+			}, 
+			"minecraft:enchantable": {
+				"value": 1,
+				"slot": "crossbow"
+			  },
 			"minecraft:icon": {
 				"texture": "ark_crossbow"
 			},
+			"minecraft:durability": {
+				"max_durability": 300
+			  },
 			"minecraft:display_name": {
-				"value": "§6ArkCraft | §3Crossbow"
+				"value": "§6ArkCraft | §3Taming Crossbow §o§a(Consume Taming arrows)"
 			},
 			"minecraft:on_use": {
 				"on_use": {
@@ -31,6 +44,11 @@
 		},
 		"events": {
 			"shooter": {
+				"damage": {
+					"type": "none",
+					"target": "self",
+					"amount": 1
+				  },
 				"run_command": {
 					"command": [
 						"playsound crossbow.shoot @a[r=5] ~ ~ ~ 10",

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:brujula"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      " 2 ",
+      "212",
+      " 2 "
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:iron_ingot"
+      },
+      "1": {
+        "item": "arkcraft:aceite"
+      }
+    },
+    "result": {
+      "item": "minecraft:compass",
+            "count": 1
+    }
+  }
+}

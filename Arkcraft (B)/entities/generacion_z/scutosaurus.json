@@ -18,7 +18,7 @@
 	  },
 	  "animations": { 
 	    "dialogo_controlador": "controller.animation.dialogo_controlador_arkcraft",
-	    "dialogo_tameado_arkcraft": "animation.dialogo_tameado_arkcraft_move_scutosaurus",
+	    "dialogo_tameado_arkcraft": "animation.dialogo_tameado_arkcraft_move_scuto",
 	    "dialogo_esperando_tame_arkcraft": "animation.dialogo_esperando_tame_arkcraft",
 	    "get_up": "animation.get_up_arkcraft"
     }
@@ -26,17 +26,51 @@
  
     "component_groups": {
          
-        "minecraft:v1":{
+      "minecraft:v1":{
         "minecraft:variant": {
-          "value": 0
-      }
-        },
+  "value": 0
+        }
+},
+"minecraft:v2":{
+        "minecraft:variant": {
+  "value": 1
+ }
+ },
+"minecraft:v3":{
+        "minecraft:variant": {
+  "value": 2
+ }
+ },
+"minecraft:v4":{
+        "minecraft:variant": {
+  "value": 3
+ }
+ },
+"minecraft:v5":{
+        "minecraft:variant": {
+  "value": 4
+ }
+ },
+"minecraft:v6":{
+        "minecraft:variant": {
+  "value": 5
+ }
+},
 
         "minecraft:despierto":{
       "minecraft:behavior.panic": {
         "priority": 1,
         "speed_multiplier": 1.45
       },
+      "minecraft:tameable": {
+        "probability": 0.35,
+        "tame_items": [
+       "arkcraft:pasta_verde"],
+        "tame_event": {
+          "event": "minecraft:on_tame_scutosaurus_adult",
+          "target": "self"
+        } 
+    },
       "minecraft:behavior.hurt_by_target": {
         "priority": 1
       },
@@ -56,18 +90,6 @@
         "speed_multiplier": 1.0
       }
         },
-			"ark:sleeping": {
-			"minecraft:is_sheared": {},
-        "minecraft:tameable": {
-          "probability": 0.6,
-          "tame_items": [
-         "arkcraft:pasta_verde"],
-          "tame_event": {
-            "event": "minecraft:on_tame_scutosaurus_adult",
-            "target": "self"
-          }
-        } 
-			},
         
      "minecraft:no_cultivo":{
       "minecraft:behavior.random_stroll": {
@@ -129,41 +151,56 @@
         }
      },
         
-        "minecraft:dialogo":{
-				"minecraft:npc": {
-					"npc_data": {
-						"portrait_offsets": {
-							"translate": [
-								-7,
-								50,
-								0
-							],
-							"scale": [
-								1.75,
-								1.75,
-								1.75
-							]
-						},
-						"picker_offsets": {
-							"translate": [
-								0,
-								20,
-								0
-							],
-							"scale": [
-								1.7,
-								1.7,
-								1.7
-							]
-						},
-						"skin_list": [
-							{
-								"variant": 0
-							}
-						]
-					}
-				}
-        },
+     "minecraft:dialogo":{
+      "minecraft:npc": {
+        "npc_data": {
+          "portrait_offsets": {
+            "translate": [
+              -7,
+              50,
+              0
+            ],
+            "scale": [
+              1.75,
+              1.75,
+              1.75
+            ]
+          },
+          "picker_offsets": {
+            "translate": [
+              0,
+              20,
+              0
+            ],
+            "scale": [
+              1.7,
+              1.7,
+              1.7
+            ]
+          },
+          "skin_list": [
+            {
+              "variant": 0
+            },
+            {
+              "variant": 1
+            },
+            {
+              "variant": 2
+            },
+            {
+              "variant": 3
+            },
+            {
+              "variant": 4
+            },
+            {
+              "variant": 5
+            }
+          ]
+        }
+      }
+      },
         
         "minecraft:pacifico":{
       "minecraft:behavior.panic": {
@@ -212,7 +249,7 @@
                   }
                 ]
               },
-              "max_dist": 40
+              "max_dist": 60
             },
             {
               "filters": {
@@ -221,14 +258,15 @@
      { "test" :  "is_family", "subject" : "other", "value" :  "monster"},
                  { "test" :  "is_family", "subject" : "other", "value" :  "pulmonoscorpius"},
                   { "test" :  "is_family", "subject" : "other", "value" :  "doedicurus"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "thorny"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
+                  { "test" :  "is_family", "subject" : "other", "value" :  "thorny"}
+
                 ],
                 "all_of": [
-                  { "test" :  "has_component","subject" : "other", "operator": "!=", "value" :  "minecraft:is_tamed"}
+                  { "test" :  "has_component","subject" : "other", "operator": "!=", "value" :  "minecraft:is_tamed"},
+                  { "test" :  "is_family", "subject" : "other",  "operator": "!=", "value" :  "villager"}
                 ]
               },
-              "max_dist": 40
+              "max_dist": 60
             }
           ],
           "must_see": true
@@ -263,8 +301,8 @@
         "minecraft:seguir":{
         "minecraft:behavior.follow_owner": {
           "priority": 3,
-          "speed_multiplier": 1.0,
-          "start_distance": 6,
+          "speed_multiplier": 1.2,
+          "start_distance": 25,
           "stop_distance": 5
         }
         },
@@ -296,7 +334,7 @@
         "value": 0.4
       }, 
       "minecraft:attack": { 
-        "damage": 3
+        "damage": 5
       },
         "minecraft:scale": {
           "value": 1.35
@@ -312,29 +350,53 @@
           }
         },
 	    "minecraft:health": {
-          "value": 40,
-          "max": 60
+          "value": 160,
+          "max": 160
         }
 },
 
   "minecraft:scutosaurus-wild_adult":{
+    "minecraft:behavior.defend_village_target": {
+      "priority": 1
+    },
+    "minecraft:dweller": {
+      "dwelling_type": "village",
+      "dweller_role": "defender",
+      "update_interval_base": 60,
+      "update_interval_variant": 40,
+      "can_find_poi": false,
+      "can_migrate": true,
+      "first_founding_reward": 0
+    },
       "minecraft:type_family": {
-        "family": [ "scutosaurus", "mob" , "wild" , "wild_adult"]
+        "family": [ "scutosaurus", "mob" , "acorazado" , "herbivore" , "wild" , "wild_adult" , "small"]
       },
         "minecraft:loot": {
-         "table": "loot_tables/entities/scutosaurus.json"
+         "table": "loot_tables/entities/scuto.json"
         },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "subject": "other"
+              },
+              "event": "ark:pincho"
+            }
+          }
+        ]
       }
   },
   
   "minecraft:scutosaurus-adult_esperando_tame":{
       "minecraft:type_family": {
-        "family": [ "scutosaurus", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "scutosaurus", "mob" , "acorazado" , "herbivore" , "tamed_adult" , "tamed" , "esperando_tame"  , "small", "villager"]
       },
         "minecraft:loot": {
-          "table": "loot_tables/entities/scutosaurus.json"
+          "table": "loot_tables/entities/scuto.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -346,22 +408,38 @@
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
-      }
+      },
+	    "minecraft:health": {
+          "value": 280,
+          "max": 280
+        }
   },
   "minecraft:scutosaurus-tamed_adult":{
-        "minecraft:inventory": {
-        "container_type": "container",
-        "inventory_size": 27,
-   "restrict_to_owner": true,
-					"private": false
-        },
+    "minecraft:behavior.defend_village_target": {
+      "priority": 1
+    },
+    "minecraft:dweller": {
+      "dwelling_type": "village",
+      "dweller_role": "defender",
+      "update_interval_base": 60,
+      "update_interval_variant": 40,
+      "can_find_poi": false,
+      "can_migrate": true,
+      "first_founding_reward": 0
+    },
+    "minecraft:movement": {
+      "value": {
+        "range_min": 0.40,
+        "range_max": 0.40
+      }
+    },
  "minecraft:type_family": {
-        "family": [ "scutosaurus", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "scutosaurus", "mob" , "acorazado" , "herbivore" , "tamed_adult" , "tamed"  , "small", "villager"]
       },
         "minecraft:is_tamed": {
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/scutosaurus.json"
+          "table": "loot_tables/entities/scuto.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -373,6 +451,18 @@
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "subject": "other"
+              },
+              "event": "ark:pincho"
+            }
+          }
+        ]
       }
   },
 
@@ -461,42 +551,11 @@
    
 
     "components": {
-"minecraft:interact": {
-          "interactions": [
-            {
-              "on_interact": {
-                "filters": {
-                  "all_of": [
-                    { "test": "is_family", "subject" : "other", "value" :  "player"},
-                  {
-                    "test": "is_sneaking",
-                    "subject": "other",
-                    "operator": "==",
-                    "value": true
-                  },
-                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"},
-                  {
-                    "test": "is_owner",
-                    "subject": "other",
-                    "operator": "==",
-                    "value": true
-                  }
-                  ]    
-                }, 
-                "event": "minecraft:dialogo_off"
-              },
-              "play_sounds": "block.composter.fill_success",
-              "interact_text": "See The Inventory"
-        }
-          ]
-        },
       "minecraft:nameable": {
       },
-"minecraft:item_hopper": {
-        },
       "minecraft:collision_box": {
-        "width": 0.9,
-        "height": 1.3
+        "width": 2.1,
+        "height": 1.4
       },
       "minecraft:breathable": {
         "total_supply": 15,
@@ -548,8 +607,32 @@
             "heal_amount": 6
           },
           {
+            "item": "seeds",
+            "heal_amount": 1
+          },
+          {
+            "item": "beetroot_seeds",
+            "heal_amount": 1
+          },
+          {
+            "item": "melon_seeds",
+            "heal_amount": 1
+          },
+          {
+            "item": "pumpkin_seeds",
+            "heal_amount": 1
+          },
+          {
+            "item": "arkcraft:cactus",
+            "heal_amount": 2
+          },
+          {
+            "item": "cactus",
+            "heal_amount": 4
+          },
+          {
             "item": "appleenchanted",
-            "heal_amount": 40
+            "heal_amount": 4000
           },
           {
             "item": "beetroot",
@@ -581,7 +664,7 @@
           },
           {
             "item": "golden_apple",
-            "heal_amount": 17
+            "heal_amount": 1700
           },
           {
             "item": "leaves",
@@ -605,6 +688,18 @@
           },
           {
             "item": "pumpkin_pie",
+            "heal_amount": 6
+          },
+          {
+            "item": "pumpkin",
+            "heal_amount": 6
+          },
+          {
+            "item": "carved_pumpkin",
+            "heal_amount": 6
+          },
+          {
+            "item": "melon",
             "heal_amount": 6
           },
           {
@@ -667,60 +762,42 @@
         "is_pushable_by_piston": true
       },
       "minecraft:conditional_bandwidth_optimization": {
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "subject": "other"
+              },
+              "event": "ark:pincho"
+            }
+          }
+        ]
       }
     },
 
  
-    "events": {
-      "minecraft:dialogo_on": {
-        "add": {
-          "component_groups": [
-            "minecraft:dialogo"
-          ]
-        },
-        "remove": {
-          "component_groups": [
-            "minecraft:dialogo_off"
-          ]
+        "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6Passively, feeding it herbivore kibble",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
         }
-      },
-      "minecraft:dialogo_off": {
-        "remove": {
-          "component_groups": [
-"minecraft:search_mode",
-            "minecraft:dialogo"
-          ]
+          },
+          {
+          "weight": 100
+          }
+        ]
         },
-        "add": {
-          "component_groups": [
-            "minecraft:dialogo_off"
-          ]
-        }
-      },
-      "minecraft:modo_cultivo": {
-        "remove": {
-          "component_groups": [
-            "minecraft:no_cultivo"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "minecraft:modo_cultivo"
-          ]
-        }
-      },
-      "minecraft:modo_no_cultivo": {
-        "remove": {
-          "component_groups": [
-            "minecraft:modo_cultivo"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "minecraft:no_cultivo"
-          ]
-        }
-      },
+     
       "minecraft:on_tame_scutosaurus": {
 		"run_command": {
           "command": [
@@ -836,6 +913,19 @@
           ]
         }
       },
+        
+      "ark:pincho": {
+		"run_command": {
+          "command": [
+    "damage @e[r=6, type=!arkcraft:scutosaurus, type=!villager, type=!player] 20 stalagmite",
+    "damage @e[r=4, type=player] 6 stalagmite",
+    "playanimation @s animation.scutosaurus.attack",
+    "effect @s resistance 3 1",
+    "effect @s speed 3 2"
+          ],
+          "target": "self"
+        }
+      },
       "minecraft:seguir": {
 		"run_command": {
           "command": [
@@ -891,6 +981,81 @@
 "minecraft:adult_controladores",
 	"ark:narcotic_1",
 	"minecraft:v1"
+              ]
+            }
+          },
+          {
+            "weight": 95,
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+            "minecraft:no_cultivo",
+"minecraft:scutosaurus-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v2"
+              ]
+            }
+          },
+          {
+            "weight": 95,
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+            "minecraft:no_cultivo",
+"minecraft:scutosaurus-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v3"
+              ]
+            }
+          },
+          {
+            "weight": 95,
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+            "minecraft:no_cultivo",
+"minecraft:scutosaurus-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v4"
+              ]
+            }
+          },
+          {
+            "weight": 95,
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+            "minecraft:no_cultivo",
+"minecraft:scutosaurus-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v5"
+              ]
+            }
+          },
+          {
+            "weight": 5,
+            "remove": {
+            }, 
+            "add": {
+              "component_groups": [
+            "minecraft:no_cultivo",
+"minecraft:scutosaurus-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v6"
               ]
             }
           }
@@ -1389,7 +1554,8 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+												"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           },

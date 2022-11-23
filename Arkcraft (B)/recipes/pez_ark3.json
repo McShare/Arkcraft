@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "arkcraft:carneark223"
+    },
+
+    
+    "tags": ["campfire"],
+    "input": "arkcraft:ark_fish_raw",
+    "output": "arkcraft:ark_fish_cooked"
+  }
+  
+}

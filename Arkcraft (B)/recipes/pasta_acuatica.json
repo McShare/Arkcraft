@@ -8,24 +8,20 @@
             "smithy"
         ],
         "pattern": [
-            "XWX",
-            "WSW",
-            "XWX"
+            "XW",
+            "XX "
         ],
     "key": {
       "W": {
         "item": "arkcraft:poisonshock_bowl"
       },
-      "S": {
-        "item": "minecraft:wheat"
-      },
       "X": {
-        "item": "arkcraft:raw_mawsonia"
+        "item": "arkcraft:ark_fish_raw"
       }
         },
         "result": {
             "item": "arkcraft:pasta_acuatica",
-            "count": 2
+            "count": 4
         }
     }
 }

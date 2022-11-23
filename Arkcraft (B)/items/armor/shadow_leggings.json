@@ -1,0 +1,43 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+        "description": {
+      "category": "equipment",
+      "identifier": "arkcraft:shadow_leggings"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.leggings"
+     },
+            "minecraft:display_name": { "value": "§6ArkCraft | §3Shadowmane Leggings"},
+     "minecraft:icon": {
+        "texture": "shadow_leggings"
+     },
+    "minecraft:render_offsets": "leggings",
+      "minecraft:max_stack_size": 1,
+      "minecraft:enchantable": {
+        "value": 600,
+        "slot": "armor_torso"
+      },
+      "minecraft:durability": {
+        "max_durability": 200
+      },
+      "minecraft:armor": {
+        "protection": 4
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.legs"
+      },
+                  "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                           "minecraft:iron_ingot"
+                            ],
+                            "repair_amount": 100
+          }
+        ]
+      }
+    }
+  }
+}

@@ -25,7 +25,7 @@
 	    "sleeping_night_tamed": "controller.animation.sleeping_night_tamed",
 	   "durmiendo_tamed": "animation.sleeping_night_tamed",
 	    "ataque_normal_arkcraft": "controller.animation.ataque_normal_arkcraft",
-	    "remove_ataque_normal": "animation.remove_ataque_normal",
+	    "remove_ataque_normal": "animation.remove_ataque_fuerte",
 	    "dialogo_controlador": "controller.animation.dialogo_controlador_arkcraft",
 	    "dialogo_tameado_arkcraft": "animation.dialogo_tameado_arkcraft_move",
 	    "dialogo_esperando_tame_arkcraft": "animation.dialogo_esperando_tame_arkcraft",
@@ -83,6 +83,42 @@
       },
       "minecraft:can_climb": {
       },
+      "minecraft:interact": {
+        "interactions": [
+        {
+          "on_interact": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_owner",
+                  "subject": "other",
+                  "operator": "==",
+                  "value": true
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "subject": "other",
+                  "value": "minecraft:string"
+                }
+              ]
+            },
+            "event": "minecraft:copperiron",
+            "target": "self"
+          },
+            "use_item": true,
+            "hurt_item": 0,
+          "interact_text": "String to Lead",
+            "play_sounds": "random.break"
+
+          }
+          ]
+       },
       "minecraft:follow_range": {
         "value": 16
       }
@@ -138,20 +174,30 @@
         "priority": 4,
         "speed_multiplier": 1.0
       },
-	    "minecraft:behavior.nearest_attackable_target": {
-          "priority": 5,
-        "reselect_targets": true,
-          "within_radius": 15,
-          "entity_types": [
+	    "minecraft:behavior.nearest_attackable_target": { 
+          "priority": 1,
+        "reselect_targets": false,
+          "within_radius": 60, 
+          "entity_types": [ 
             {
-              "filters": { "other_with_families": [ "player"  ] },
-             "max_dist": 15
+              "filters": { "other_with_families": [ "player"] },
+             "max_dist": 60
+            },
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "tamed"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
+                ] 
+              },
+              "max_dist": 60
             }
           ],
-          "must_see": true
+          "must_see": false
         },
      "minecraft:attack": {
-        "damage": 4
+        "damage": 16
       }
         },
 			"ark:sleeping": {
@@ -160,7 +206,7 @@
                 },
 			"minecraft:is_sheared": {},
         "minecraft:tameable": {
-          "probability": 0.10,
+          "probability": 0.65,
           "tame_items": [
             "arkcraft:pasta_roja"
           ],
@@ -201,7 +247,7 @@
                 },
 			"minecraft:is_sheared": {},
         "minecraft:tameable": {
-          "probability": 0.10,
+          "probability": 0.65,
           "tame_items": [
             "arkcraft:pasta_roja"
           ],
@@ -251,7 +297,13 @@
 							},
 							{
 								"variant": 3
-							}
+              },
+							{
+								"variant": 4
+              },
+							{
+								"variant": 5
+              }
 						]
 					}
 				}
@@ -405,8 +457,8 @@
           }
         },
       "minecraft:health": {
-        "value": 40,
-        "max": 40
+        "value": 80,
+        "max": 80
       }
 },
 
@@ -421,7 +473,7 @@
       "minecraft:can_climb": {
       },
       "minecraft:type_family": {
-        "family": [ "tanycolagreus", "mob" , "wild" , "wild_adult"]
+        "family": [ "tanycolagreus", "mob" , "wild" , "wild_adult" , "medium" ]
       },
         "minecraft:loot": {
          "table": "loot_tables/entities/thylacoleo.json"
@@ -436,10 +488,10 @@
   
   "minecraft:tanycolagreus-adult_esperando_tame":{
       "minecraft:type_family": {
-        "family": [ "tanycolagreus", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "tanycolagreus", "mob" , "tamed_adult" , "tamed" , "esperando_tame" , "medium"  ]
       },
         "minecraft:loot": {
-          "table": "loot_tables/entities/tanycolagreus.json"
+          "table": "loot_tables/entities/woolmedium.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -450,7 +502,7 @@
         "priority": 0
       },
      "minecraft:attack": {
-        "damage": 4
+        "damage": 16
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -483,13 +535,49 @@
   },
   "minecraft:tanycolagreus-tamed_adult":{
       "minecraft:type_family": {
-        "family": [ "tanycolagreus", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "tanycolagreus", "mob" , "tamed_adult" , "tamed" , "medium" ]
       },
         "minecraft:is_tamed": {
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/tanycolagreus.json"
+          "table": "loot_tables/entities/woolmedium.json"
         },
+        "minecraft:interact": {
+          "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "minecraft:string"
+                  }
+                ]
+              },
+              "event": "minecraft:copperiron",
+              "target": "self"
+            },
+              "use_item": true,
+              "hurt_item": 0,
+            "interact_text": "String to Lead",
+              "play_sounds": "random.break"
+  
+            }
+            ]
+         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
         "hard_distance": 10.0,
@@ -499,7 +587,7 @@
         "priority": 0
       },
      "minecraft:attack": {
-        "damage": 4
+        "damage": 16
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -949,7 +1037,25 @@
     },
 
   
-    "events": { 
+        "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6During the day when he sleeps you approach him invisibly and feed him with carnivore kibble",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        }, 
       "minecraft:despierto_tamed": {
 				"add": {
 					"component_groups": [
@@ -964,6 +1070,7 @@
 				}
       },
       "minecraft:sleeping_night_tamed": {
+        
 				"remove": {
 					"component_groups": [
 						"minecraft:despierto_tamed",
@@ -977,6 +1084,24 @@
 						"minecraft:dormido_tamed"
 					]
 				}
+      },
+      "minecraft:cobbleiron": {
+        "randomize": [
+          {
+              
+            "weight": 45,
+		"run_command": {
+          "command": [
+    "give @p[r=8] minecraft:lead 1 1",
+    "playanimation @s animation.tanycolagreus.attack"
+          ],
+          "target": "self"
+		}
+          },
+          {
+            "weight": 100
+          }
+        ]
       },
       "minecraft:no_roar": {
 				"add": {
@@ -2350,7 +2475,8 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+												"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           },

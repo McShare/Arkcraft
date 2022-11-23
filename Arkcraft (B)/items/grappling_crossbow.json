@@ -6,7 +6,7 @@
 			"identifier": "arkcraft:grappling_crossbow",
 			"category": "equipment"
 		},
-		//By Alex587
+	
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
@@ -18,7 +18,7 @@
 				"texture": "grappling_crossbow_arkcraft"
 			},
 			"minecraft:display_name": {
-				"value": "§6ArkCraft | §Grappling Crossbow"
+				"value": "§6ArkCraft | §Grappling Crossbow §o§a(Consume hooks)"
 			},
 			"minecraft:on_use": {
 				"on_use": {
@@ -34,13 +34,13 @@
 			"shooter": {
 				"run_command": {
 					"command": [
-						"playsound crossbow.shoot @a[r=5] ~ ~ ~ 10",
+						"playsound crossbow.shoot @a[r=10] ~ ~ ~ 10",
 						"clear @s arkcraft:hook 0 1"
 					]
 				},
 				"shoot": {
 					"projectile": "arkcraft:hook_proyectile_1",
-					"launch_power": 1,
+					"launch_power": 1.3,
 					"angle_offset": "query.cardinal_facing"
 				}
 			}

@@ -1,0 +1,58 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "minecraft:rabbit",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": {
+          "min": 7,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 0
+        },
+        "minecraft:herd": {
+          "min_size":2,
+          "max_size":3
+        },
+    
+        "minecraft:biome_filter": {
+          "any_of": [
+			{
+			  "all_of": [
+				{ "test": "has_biome_tag", "operator":"==", "value": "taiooooga"},
+				{ "test": "has_biome_tag", "operator":"!=", "value": "meoooooga"}
+			  ]
+			},
+            {"test": "is_snow_covered", "operator":"==", "value": true},
+            {"test": "has_biome_tag", "operator":"==", "value":"oooooooooo"}
+          ]
+        }
+      },
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": {
+          "min": 7,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 0
+        },
+        "minecraft:herd": {
+          "min_size":2,
+          "max_size":4
+        },
+    
+        "minecraft:biome_filter": {
+            "test": "has_biome_tag", "operator":"==", "value": "floweroooooooo_forest"
+        }
+      }
+    ]
+  }
+}

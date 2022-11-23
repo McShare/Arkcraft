@@ -1,57 +1,127 @@
 {
     "pools": [
-    {
-      "rolls": 1,
-      "conditions": [
-        {
-          "condition": "random_chance",
-          "chance": 0.08
-        }
-      ],
-      "entries": [
-        {
-          "type": "item",
-          "name": "minecraft:phantom_membrane",
-          "weight": 5,
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 2
-                            }
-                        },
-                        {
-                            "function": "looting_enchant",
-                            "count": {
-                                "min": 0,
-                                "max": 1
-                            }
-                        }
-                    ]
-        }
-      ]
-    },
         {
             "rolls": 1,
             "entries": [
                 {
                     "type": "item",
-                    "name": "arkcraft:ark_meat_raw",
-                    "weight": 1,
+                    "name": "minecraft:leather",
+                    "weight": 100,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 4,
-                                "max": 8
+                                "min": 5,
+                                "max": 5
                             }
                         },
                         {
                             "function": "looting_enchant",
                             "count": {
-                                "min": 0,
+                                "min": 5,
+                                "max": 9
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:rotten_flesh",
+                    "weight": 100,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 10,
+                                "max": 10
+                            }
+                        },
+                        {
+                            "function": "furnace_smelt",
+                            "conditions": [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "properties": {
+                                        "on_fire": true
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 10,
+                                "max": 14
+                            }
+                        }
+                    ]
+                }
+            ]
+                },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:spider_eye",
+                    "weight": 100,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
                                 "max": 1
+                            }
+                        },
+                        {
+                            "function": "furnace_smelt",
+                            "conditions": [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "properties": {
+                                        "on_fire": true
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 3,
+                                "max": 7
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:slimeball",
+                    "weight": 100,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 3
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 3,
+                                "max": 7
                             }
                         }
                     ]
@@ -64,46 +134,20 @@
                 {
                     "type": "item",
                     "name": "minecraft:wool",
-                    "weight": 1,
+                    "weight": 100,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 0,
-                                "max": 2
+                                "min": 3,
+                                "max": 3
                             }
                         },
                         {
                             "function": "looting_enchant",
                             "count": {
-                                "min": 0,
-                                "max": 1
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "minecraft:string",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 4
-                            }
-                        },
-                        {
-                            "function": "looting_enchant",
-                            "count": {
-                                "min": 0,
-                                "max": 1
+                                "min": 3,
+                                "max": 7
                             }
                         }
                     ]

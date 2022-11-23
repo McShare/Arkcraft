@@ -1,4 +1,4 @@
-//by Alex587
+
 {
 	"format_version": "1.17.0",
 	"minecraft:item": {
@@ -7,10 +7,10 @@
 			"category": "equipment"
 		},
 		"components": {
-			"minecraft:max_stack_size": 3,
+			"minecraft:max_stack_size": 16,
 			"minecraft:allow_off_hand": true,
 			"minecraft:display_name": {
-				"value": "§6ArkCraft | §Hook"
+				"value": "§6ArkCraft | §Hook §o§a(Second Hand)"
 			},
 			"minecraft:icon": {
 				"texture": "hook_arkcraft"

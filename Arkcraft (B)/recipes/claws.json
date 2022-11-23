@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:esotiilin"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      " EE",
+      "L E",
+      "XL "
+
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:netherite_sword"
+      },
+      "E": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "L": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    "result": {
+      "item": "arkcraft:tek_claws"
+    }
+  }
+}

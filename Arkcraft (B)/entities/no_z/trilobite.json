@@ -1,11 +1,11 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.17.0",
   "minecraft:entity": {
     "description": {
       "identifier": "arkcraft:trilobite",
 
       "is_spawnable": true,
-      "is_summonable": false,
+      "is_summonable": true,
       "is_experimental": false
     },
 
@@ -23,11 +23,16 @@
         "minecraft:textura_2":{
         "minecraft:variant": {
           "value": 1
-      }
+        }
+      },
+      "minecraft:textura_3":{
+      "minecraft:variant": {
+        "value": 2
+    }
         },
       "minecraft:trilobite": {
         "minecraft:type_family": {
-          "family": [ "trilobite", "mob", "pig" , "cod" ]
+          "family": [ "trilobite", "mob", "fishable" , "cod", "acorazado", "wild" ]
         },
         "minecraft:collision_box": {
           "width": 0.5,
@@ -189,6 +194,15 @@
               "component_groups": [
                 "minecraft:trilobite",
 "minecraft:textura_2"
+              ]
+            }
+          },
+          {
+            "weight": 1,
+            "add": {
+              "component_groups": [
+                "minecraft:trilobite",
+"minecraft:textura_3"
               ]
             }
           }

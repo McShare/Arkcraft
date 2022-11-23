@@ -8,7 +8,6 @@
     "conditions": [
       {
         "minecraft:spawns_on_surface": {},
-        "minecraft:spawns_on_block_filter": "minecraft:grass",
         "minecraft:brightness_filter": {
           "min": 5,
           "max": 20,
@@ -25,6 +24,46 @@
     
         "minecraft:biome_filter": {
           "test": "has_biome_tag", "operator":"==", "value": "animal"
+        }
+      },
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": {
+          "min": 5,
+          "max": 20,
+          "adjust_for_weather": false
+        },
+        "minecraft:herd": {
+          "min_size":2,
+          "max_size":4
+        },
+        "minecraft:weight": {
+          "default": 5
+        },
+
+    
+        "minecraft:biome_filter": {
+          "test": "has_biome_tag", "operator":"==", "value": "dessert"
+        }
+      },
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": {
+          "min": 5,
+          "max": 20,
+          "adjust_for_weather": false
+        },
+        "minecraft:herd": {
+          "min_size":2,
+          "max_size":4
+        },
+        "minecraft:weight": {
+          "default": 5
+        },
+
+    
+        "minecraft:biome_filter": {
+          "test": "has_biome_tag", "operator":"==", "value": "mesa"
         }
       }
     ]

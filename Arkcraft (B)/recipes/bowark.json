@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:axexdsfbolae"
+    },
+
+    
+    "tags": [ "smithy", "crafting_table" ],
+    "pattern": [
+      "X1",
+      "1 "
+    ],
+    "key": {
+      "1": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:wheat_seeds"
+      }
+    },
+    "result": {
+      "item": "arkcraft:arkbow",
+      "count": 1
+    }
+  }
+}

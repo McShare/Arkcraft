@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:as2222222ne"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "111",
+      "111",
+      "111"
+    ],
+   "key": {
+
+      "1": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "minecraft:mangrove_roots",
+      "count": 1
+    }
+  }
+}

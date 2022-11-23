@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "arkcraft:narcoberry_seed",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "arkcraft_narcoberry"
+			},
+			"minecraft:block_placer": {
+				"block": "arkcraft:narco_shrub",
+				"use_on": [
+"farmland"
+				]
+			}
+		}
+	}
+}

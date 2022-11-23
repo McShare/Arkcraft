@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "arkcraft:carneark22"
+    },
+
+    
+    "tags": ["smoker"],
+    "input": "arkcraft:ark_fish_raw",
+    "output": "arkcraft:ark_fish_cooked"
+  }
+  
+}

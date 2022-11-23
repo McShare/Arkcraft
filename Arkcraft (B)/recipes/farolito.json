@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:lantern333"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "###",
+      "#x#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:iron_nugget"
+      },
+      "x": {
+        "item": "arkcraft:aceite"
+      }
+    },
+    "result": {
+      "item": "minecraft:lantern",
+      "count": 1
+    }
+  }
+}

@@ -2,7 +2,8 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "arkcraft:montura_para_tres"
+      "identifier": "arkcraft:montura_para_tres",
+      "category": "equipment"
     },
 
     "components": {

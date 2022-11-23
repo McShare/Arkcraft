@@ -20,11 +20,12 @@
       }  
     }, 
     "animation.quetzal_slow_falling": {
-     "animation_length": 0.5,
+     "animation_length": 0.6,
       "loop": true,
       "timeline": { 
-        "0.2": [
-    "/effect @s slow_falling 3 15 true"
+        "0.1": [
+    "/effect @s slow_falling 3 15 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     },
@@ -33,7 +34,8 @@
       "loop": true,
       "timeline": {
         "0.0": [
-    "/effect @s levitation 0 255 true"
+    "/effect @s levitation 0 255 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     },
@@ -42,7 +44,8 @@
       "loop": true,
       "timeline": {
         "0.5": [
-       "/effect @s levitation 1 8 true"
+       "/effect @s levitation 1 8 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     },
@@ -51,7 +54,8 @@
       "loop": true,
       "timeline": {
         "1.0": [
-       "/effect @s levitation 2 8 true"
+       "/effect @s levitation 2 8 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     },
@@ -60,7 +64,8 @@
       "loop": true,
       "timeline": {
         "0.5": [
-       "/effect @s levitation 4 5 true"
+       "/effect @s levitation 4 5 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     },
@@ -69,7 +74,8 @@
       "loop": true,
       "timeline": {
         "0.5": [
-        "/effect @s levitation 1 3 true"
+        "/effect @s levitation 1 3 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     },
@@ -78,7 +84,8 @@
       "loop": true, 
       "timeline": {
         "0.5": [
-    "/effect @s levitation 1 6 true"
+    "/effect @s levitation 1 6 true",
+"/gamemode s LophoTheDilo535"
             ]
       }
     }

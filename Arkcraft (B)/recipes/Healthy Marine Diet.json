@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:HealthyMarineDiet"
+    },
+
+    
+    "tags": [ "grill" ],
+    "pattern": [
+      "324",
+      "241",
+      "411"
+    ],
+   "key": {
+      "2": {
+        "item": "arkcraft:helicoprion_shard"
+      },
+      "3": {
+        "item": "minecraft:nautilus_shell"
+      },
+      "1": {
+        "item": "minecraft:seagrass"
+      },
+      "4": {
+        "item": "minecraft:dried_kelp"
+      }
+    },
+    "result": {
+      "item": "arkcraft:shell2"
+    }
+  }
+}

@@ -2,7 +2,8 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "arkcraft:collar_de_helicoprion"
+      "identifier": "arkcraft:collar_de_helicoprion",
+      "category": "equipment"
     },
     
     "components": {

@@ -6,7 +6,11 @@
       "loop": true,
       "timeline": {
         "300.0": [
-"@s minecraft:get_up"
+"@s minecraft:get_up",
+"/title @a[r=300] title §gThe creature got up!",
+"/effect @s speed 10 0 true",
+"/effect @s resistance 10 0 true",
+"/effect @s regeneration 10 10 true"
             ]
       }
     },  
@@ -16,17 +20,63 @@
       "timeline": { 
         "1.0": [
             "/dialogue change @s dialogo_tameado_arkcraft_move_volador_basico @p",
-            "/title @a[r=300] actionbar §gSuccesfull taming!"
+            "/title @a[r=300] actionbar §gSuccesfull Taming!",
+      "playsound random.orb @a[r=300]"
             ]
       }
-    },    
+     },  
+    "animation.dialogo_tameado_arkcraft_move_tralka": {
+     "animation_length": 1.2,
+      "loop": false,
+      "timeline": { 
+        "1.0": [
+            "/dialogue change @s dialogo_tameado_arkcraft_move_tralka @p",
+            "/title @a[r=300] actionbar §gSuccesfull Taming!",
+      "playsound random.orb @a[r=300]"
+            ]
+      }
+    },  
+    "animation.dialogo_tameado_arkcraft_move_hespe": {
+     "animation_length": 1.2,
+      "loop": false,
+      "timeline": { 
+        "1.0": [
+            "/dialogue change @s dialogo_tameado_arkcraft_move_hespe @p",
+            "/title @a[r=300] actionbar §gSuccesfull Taming!",
+      "playsound random.orb @a[r=300]"
+            ]
+      }
+    },  
+    "animation.dialogo_tameado_arkcraft_move_alv": {
+     "animation_length": 1.2,
+      "loop": false,
+      "timeline": { 
+        "1.0": [
+            "/dialogue change @s dialogo_tameado_arkcraft_move_alv @p",
+            "/title @a[r=300] actionbar §gSuccesfull Taming!",
+      "playsound random.orb @a[r=300]"
+            ]
+      }
+    },        
+    "animation.dialogo_tameado_arkcraft_move_scuto": {
+     "animation_length": 1.2,
+      "loop": false,
+      "timeline": { 
+        "1.0": [
+            "/dialogue change @s dialogo_tameado_arkcraft_move_scuto @p",
+            "/title @a[r=300] actionbar §gSuccesfull Taming!",
+      "playsound random.orb @a[r=300]"
+            ]
+      }
+    },        
     "animation.dialogo_tameado_arkcraft_move_pegomastax": {
      "animation_length": 1.2,
       "loop": false,
       "timeline": { 
         "1.0": [
             "/dialogue change @s dialogo_tameado_arkcraft_move_pegomastax @p",
-            "/title @a[r=300] actionbar §gSuccesfull taming!"
+            "/title @a[r=300] actionbar §gSuccesfull Taming!",
+      "playsound random.orb @a[r=300]"
             ]
       }
     },    
@@ -36,7 +86,8 @@
       "timeline": {
         "1.0": [
             "/dialogue change @s dialogo_tameado_arkcraft_move @p",
-            "/title @a[r=300] actionbar §gSuccesfull taming!"
+            "/title @a[r=300] actionbar §gSuccesfull Taming!",
+      "playsound random.orb @a[r=300]"
             ]
       }
     },    
@@ -46,7 +97,8 @@
       "timeline": {
         "1.0": [
             "/dialogue change @s dialogo_tameado_arkcraft_move_scutosaurus @p",
-            "/title @a[r=300] actionbar §gSuccesfull taming!"
+            "/title @a[r=300] actionbar §gSuccesfull Taming!",
+      "playsound random.orb @a[r=300]"
             ]
       }
     },   
@@ -56,7 +108,8 @@
       "timeline": {
         "1.0": [
             "/dialogue change @s dialogo_tameado_arkcraft_move_velonasaur @p",
-            "/title @a[r=300] actionbar §gSuccesfull taming!"
+            "/title @a[r=300] actionbar §gSuccesfull Taming!",
+      "playsound random.orb @a[r=300]"
             ]
       }
     },   

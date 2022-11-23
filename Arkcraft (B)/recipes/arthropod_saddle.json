@@ -8,8 +8,8 @@
     
     "tags": [ "smithy" ],
     "pattern": [
-      "121",
-       "242",
+       "121",
+       "424",
        "333"
     ],
    "key": {
@@ -17,7 +17,7 @@
         "item": "minecraft:horsearmorleather"
       },
       "2": {
-        "item": "minecraft:wool"
+        "item": "minecraft:wool:12"
       },
       "3": {
         "item": "minecraft:iron_ingot"

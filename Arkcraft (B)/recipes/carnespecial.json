@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:carneespecial"
+    },
+
+    
+    "tags": [ "grill" ],
+    "pattern": [
+      "111",
+      "111",
+      "2X2"
+    ],
+   "key": {
+      "2": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "arkcraft:aceite"
+      },
+      "1": {
+        "item": "arkcraft:ark_meat_cooked"
+      }
+    },
+    "result": {
+      "item": "arkcraft:ark_meat_special",
+            "count": 3
+    }
+  }
+}

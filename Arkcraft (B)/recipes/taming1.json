@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:aeee4555xexe"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "XX"
+    ],
+    "key": {
+
+      "X": {
+        "item": "minecraft:leather"
+      }
+    },
+    "result": {
+      "item": "arkcraft:tame_guide"
+    }
+  }
+}

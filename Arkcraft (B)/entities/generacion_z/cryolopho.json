@@ -22,7 +22,7 @@
 	    "dialogo_controlador": "controller.animation.dialogo_controlador_arkcraft",
 	    "dialogo_tameado_arkcraft": "animation.dialogo_tameado_arkcraft_move_velonasaur",
 	    "dialogo_esperando_tame_arkcraft": "animation.dialogo_esperando_tame_arkcraft",
-	    "remove_ataque_normal": "animation.remove_ataque_normal_velonasaur",
+	    "remove_ataque_normal": "animation.remove_ataque_normal_cryolopho",
 	    "get_up": "animation.get_up_arkcraft"
     }
     },   
@@ -48,7 +48,21 @@
           "value": 3
       }
         },
-        
+        "minecraft:v5":{
+          "minecraft:variant": {
+            "value": 4
+        }
+          },     
+          "minecraft:v6":{
+          "minecraft:variant": {
+            "value": 5
+          }
+        },     
+        "minecraft:v7":{
+        "minecraft:variant": {
+          "value": 6
+      }
+          },  
         "minecraft:despierto":{
       "minecraft:behavior.hurt_by_target": {
         "priority": 0
@@ -75,18 +89,18 @@
 	    "minecraft:behavior.nearest_attackable_target": {
           "reselect_targets": true,
           "priority": 0,
-          "within_radius": 40,
+          "within_radius": 14,
           "entity_types": [
             {
               "filters": { "other_with_families": [  "player" , "villager"] },
-             "max_dist": 40
+             "max_dist": 14
             }
           ],
           "must_see": true
         }, 
         "minecraft:target_nearby_sensor": {
-          "inside_range": 17.0,
-          "outside_range": 18.0,
+          "inside_range": 4,
+          "outside_range": 5.0,
           "on_inside_range": {
             "event": "minecraft:on_ataque_lejano_salvaje",
             "target": "self"
@@ -100,7 +114,7 @@
 			"ark:sleeping": {
 			"minecraft:is_sheared": {},
         "minecraft:tameable": {
-          "probability": 0.09,
+          "probability": 0.65,
           "tame_items": [
             "arkcraft:pasta_roja"
           ],
@@ -121,7 +135,7 @@
         "attack_interval_max": 2,
         "charge_charged_trigger": 0.0,
         "charge_shoot_trigger": 1.0,
-        "attack_radius": 10,
+        "attack_radius": 20,
         "burst_shots": 150,
         "burst_interval": 0.1
       },
@@ -148,8 +162,8 @@
         },
       
         "minecraft:target_nearby_sensor": {
-          "inside_range": 17.0,
-          "outside_range": 18.0,
+          "inside_range": 4.0,
+          "outside_range": 5.0,
           "on_inside_range": {
             "event": "minecraft:on_ataque_lejano_domado",
             "target": "self"
@@ -171,8 +185,8 @@
         "attack_interval_max": 2,
         "charge_charged_trigger": 0.0,
         "charge_shoot_trigger": 1.0,
-        "attack_radius": 10,
-        "burst_shots": 150,
+        "attack_radius": 20,
+        "burst_shots": 250,
         "burst_interval": 0.1
       },
         "minecraft:mark_variant": {
@@ -242,7 +256,7 @@
           {
             "min_wait_time": 0,
             "max_wait_time": 0,
-            "spawn_entity": "arkcraft:espina_c_tamed",
+            "spawn_entity": "arkcraft:espina_c",
             "single_use": false,
             "num_to_spawn": 1,
             "should_leash": false
@@ -341,6 +355,18 @@
         }
         },
         "minecraft:deambular":{
+          "minecraft:rideable": {
+            "seat_count": 1,
+  "rider_can_interact": false,
+            "crouching_skip_interact": true,
+            "family_types": [
+              "player"
+            ],
+            "interact_text": "action.interact.ride.horse",
+            "seats": {
+              "position": [ 0.0, 1.65,0.15 ]
+            }
+          }, 
        
       "minecraft:behavior.random_stroll": {
         "priority": 4,
@@ -348,7 +374,18 @@
       }
         },
         "minecraft:seguir":{
-       
+          "minecraft:rideable": {
+            "seat_count": 1,
+  "rider_can_interact": false,
+            "crouching_skip_interact": true,
+            "family_types": [
+              "player"
+            ],
+            "interact_text": "action.interact.ride.horse",
+            "seats": {
+              "position": [ 0.0, 1.65,0.15 ]
+            }
+          }, 
         "minecraft:behavior.follow_owner": {
           "priority": 0,
           "speed_multiplier": 1.0,
@@ -420,8 +457,15 @@
         "charge_charged_trigger": 0.0,
         "charge_shoot_trigger": 1.0,
         "attack_radius": 20,
-        "burst_shots": 150,
+        "burst_shots": 250,
         "burst_interval": 0.1
+      },
+      "minecraft:timer": {
+        "looping": false,
+        "time": 1,
+        "time_down_event": {
+          "event": "ark:torreta"
+        }
       }
 },
 "minecraft:modo_torreta_2":{
@@ -460,8 +504,15 @@
         "charge_charged_trigger": 0.0,
         "charge_shoot_trigger": 1.0,
         "attack_radius": 20,
-        "burst_shots": 150,
+        "burst_shots": 250,
         "burst_interval": 0.1
+      },
+      "minecraft:timer": {
+        "looping": false,
+        "time": 1,
+        "time_down_event": {
+          "event": "ark:torreta"
+        }
       }
 },
 "minecraft:modo_torreta_3":{
@@ -514,8 +565,15 @@
         "charge_charged_trigger": 0.0,
         "charge_shoot_trigger": 1.0,
         "attack_radius": 20,
-        "burst_shots": 150,
+        "burst_shots": 250,
         "burst_interval": 0.1
+      },
+      "minecraft:timer": {
+        "looping": false,
+        "time": 1,
+        "time_down_event": {
+          "event": "ark:torreta"
+        }
       }
 },
         
@@ -555,14 +613,14 @@
           }
         },
       "minecraft:health": {
-        "value": 30,
-        "max": 30
+        "value": 80,
+        "max": 80
       }
 },
 
   "minecraft:cryolopho-wild_adult":{
       "minecraft:type_family": {
-        "family": [ "cryolopho", "mob" , "wild" , "wild_adult"]
+        "family": [ "cryolopho", "mob" , "wild" , "wild_adult" , "medium", "temperatura"]
       },
         "minecraft:scale": {
           "value": 1.6
@@ -571,7 +629,7 @@
           "value": 0
                 },
         "minecraft:loot": {
-         "table": "loot_tables/entities/compy.json"
+         "table": "loot_tables/entities/normalmedium.json"
         },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 6 : 2"
@@ -583,13 +641,13 @@
 
   "minecraft:cryolopho-adult_esperando_tame":{ 
       "minecraft:type_family": {
-        "family": [ "cryolopho", "mob" , "tamed_adult" , "tamed" , "esperando_tame" ]
+        "family": [ "cryolopho", "mob" , "tamed_adult" , "tamed" , "esperando_tame" , "medium", "temperatura" ]
       },
         "minecraft:scale": {
           "value": 1.6
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/cryolopho.json"
+          "table": "loot_tables/entities/normalsmall.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -633,7 +691,7 @@
   },
   "minecraft:cryolopho-tamed_adult":{
       "minecraft:type_family": {
-        "family": [ "cryolopho", "mob" , "tamed_adult" , "tamed" ]
+        "family": [ "cryolopho", "mob" , "tamed_adult" , "tamed"  , "medium", "temperatura"]
       },
         "minecraft:is_tamed": {
         },
@@ -641,7 +699,7 @@
           "value": 1.6
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/cryolopho.json"
+          "table": "loot_tables/entities/normalsmall.json"
         },
       "minecraft:leashable": {
         "soft_distance": 4.0,
@@ -707,17 +765,15 @@
         "minecraft:on_target_acquired": {
         }
       },
- 
 			"ark:narcotic_1": {
 				"minecraft:damage_sensor": {
 					"triggers": [
 						{
 							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
+							"on_damage": {
+                "filters": {
+                  "subject": "other"
+                }},
 								"event": "ark:narcotic_2"
 							}
 						}
@@ -729,11 +785,10 @@
 					"triggers": [
 						{
 							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
+							"on_damage": {
+                "filters": {
+                  "subject": "other"
+                }},
 								"event": "ark:narcotic_3"
 							}
 						}
@@ -745,11 +800,10 @@
 					"triggers": [
 						{
 							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
+							"on_damage": {
+                "filters": {
+                  "subject": "other"
+                }},
 								"event": "ark:narcotic_4"
 							}
 						}
@@ -761,11 +815,10 @@
 					"triggers": [
 						{
 							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
+							"on_damage": {
+                "filters": {
+                  "subject": "other"
+                }},
 								"event": "ark:narcotic_5"
 							}
 						}
@@ -777,11 +830,10 @@
 					"triggers": [
 						{
 							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
+							"on_damage": {
+                "filters": {
+                  "subject": "other"
+                }},
 								"event": "ark:narcotic_6"
 							}
 						}
@@ -793,11 +845,10 @@
 					"triggers": [
 						{
 							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
+							"on_damage": {
+                "filters": {
+                  "subject": "other"
+                }},
 								"event": "ark:narcotic_7"
 							}
 						}
@@ -809,11 +860,10 @@
 					"triggers": [
 						{
 							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
+							"on_damage": {
+                "filters": {
+                  "subject": "other"
+                }},
 								"event": "ark:narcotic_8"
 							}
 						}
@@ -825,11 +875,10 @@
 					"triggers": [
 						{
 							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
+							"on_damage": {
+                "filters": {
+                  "subject": "other"
+                }},
 								"event": "ark:narcotic_9"
 							}
 						}
@@ -841,11 +890,10 @@
 					"triggers": [
 						{
 							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
+							"on_damage": {
+                "filters": {
+                  "subject": "other"
+                }},
 								"event": "ark:narcotic_10"
 							}
 						}
@@ -857,171 +905,10 @@
 					"triggers": [
 						{
 							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
-								"event": "ark:narcotic_11"
-							}
-						}
-					]
-				}
-			},
-			"ark:narcotic_11": {
-				"minecraft:damage_sensor": {
-					"triggers": [
-						{
 							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
-								"event": "ark:narcotic_12"
-							}
-						}
-					]
-				}
-			},
-			"ark:narcotic_12": {
-				"minecraft:damage_sensor": {
-					"triggers": [
-						{
-							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
-								"event": "ark:narcotic_13"
-							}
-						}
-					]
-				}
-			},
-			"ark:narcotic_13": {
-				"minecraft:damage_sensor": {
-					"triggers": [
-						{
-							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
-								"event": "ark:narcotic_14"
-							}
-						}
-					]
-				}
-			},
-			"ark:narcotic_14": {
-				"minecraft:damage_sensor": {
-					"triggers": [
-						{
-							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
-								"event": "ark:narcotic_15"
-							}
-						}
-					]
-				}
-			},
-			"ark:narcotic_15": {
-				"minecraft:damage_sensor": {
-					"triggers": [
-						{
-							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
-								"event": "ark:narcotic_16"
-							}
-						}
-					]
-				}
-			},
-			"ark:narcotic_16": {
-				"minecraft:damage_sensor": {
-					"triggers": [
-						{
-							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
-								"event": "ark:narcotic_17"
-							}
-						}
-					]
-				}
-			},
-			"ark:narcotic_17": {
-				"minecraft:damage_sensor": {
-					"triggers": [
-						{
-							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
-								"event": "ark:narcotic_18"
-							}
-						}
-					]
-				}
-			},
-			"ark:narcotic_18": {
-				"minecraft:damage_sensor": {
-					"triggers": [
-						{
-							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
-								"event": "ark:narcotic_19"
-							}
-						}
-					]
-				}
-			},
-			"ark:narcotic_19": {
-				"minecraft:damage_sensor": {
-					"triggers": [
-						{
-							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
-								"event": "ark:narcotic_20"
-							}
-						}
-					]
-				}
-			},
-			"ark:narcotic_20": {
-				"minecraft:damage_sensor": {
-					"triggers": [
-						{
-							"on_damage": {
-								"filters": {
-									"test": "is_family",
-									"subject": "other",
-									"value": "narcotic_arrow"
-								},
+                "filters": {
+                  "subject": "other"
+                }},
 								"event": "ark:narcotic_final"
 							}
 						}
@@ -1039,86 +926,86 @@
             "range_max": 6
           }
         },
-      "minecraft:environment_sensor": {
-        "triggers": [
-          {
-            "filters":{
-            "all_of": [
-              {
-              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters":{
+              "all_of": [
+                {
+                "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+                },
+               {                                           "test": "has_tag",                         "subject": "self",
+                "operator": "!=",
+                "value": "attacking"
+               },
+               {                                           "test": "has_tag",                         "subject": "self",
+                "operator": "==",
+                "value": "attack_solicitud"
+               },
+                    { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"},
+                    { "test" :  "has_component","subject" : "self", "operator": "!=", "value" :  "minecraft:is_illager_captain"}
+              ]
               },
-             {                                           "test": "has_tag",                         "subject": "self",
-              "operator": "!=",
-              "value": "attacking"
-             },
-             {                                           "test": "has_tag",                         "subject": "self",
-              "operator": "==",
-              "value": "attack_solicitud"
-             },
-                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"},
-                  { "test" :  "has_component","subject" : "self", "operator": "!=", "value" :  "minecraft:is_illager_captain"}
-            ]
+              "event":"minecraft:in_attack"
             },
-            "event":"minecraft:in_attack"
-          },
-          {
-            "filters":{
-            "all_of": [
-                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_illager_captain"}, 
-             {                                           "test": "has_tag",                         "subject": "self",
-              "operator": "==",
-              "value": "attack_solicitud"
-             }
-            ],
-            "any_of": [
-             {                                           "test": "has_tag",                         "subject": "self",
-              "operator": "==",
-              "value": "attacking"
-             },
-              {
-              "test": "rider_count", "subject": "self", "operator": "==", "value": 0
+            {
+              "filters":{
+              "all_of": [
+                    { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_illager_captain"}, 
+               {                                           "test": "has_tag",                         "subject": "self",
+                "operator": "==",
+                "value": "attack_solicitud"
+               }
+              ],
+              "any_of": [
+               {                                           "test": "has_tag",                         "subject": "self",
+                "operator": "==",
+                "value": "attacking"
+               },
+                {
+                "test": "rider_count", "subject": "self", "operator": "==", "value": 0
+                },
+                    { "test" :  "has_component","subject" : "self", "operator": "!=", "value" :  "minecraft:is_tamed"}
+              ]
               },
-                  { "test" :  "has_component","subject" : "self", "operator": "!=", "value" :  "minecraft:is_tamed"}
-            ]
+              "event":"minecraft:remove_tag"
             },
-            "event":"minecraft:remove_tag"
-          },
-          
-          
-           
-           
-          {
-            "filters":{
-            "all_of": [
-              {
-              "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+            
+            
+             
+             
+            {
+              "filters":{
+              "all_of": [
+                {
+                "test": "rider_count", "subject": "self", "operator": "==", "value": 1
+                },
+               {                                           "test": "has_tag",                         "subject": "self",
+                "operator": "==",
+                "value": "no_attack_mode"
+               },
+                    { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"}
+              ]
               },
-             {                                           "test": "has_tag",                         "subject": "self",
-              "operator": "==",
-              "value": "no_attack_mode"
-             },
-                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"}
-            ]
+              "event":"minecraft:on_attack_sistem"
             },
-            "event":"minecraft:on_attack_sistem"
-          },
-          {
-            "filters":{
-            "all_of": [
-              {
-              "test": "rider_count", "subject": "self", "operator": "==", "value": 0
+            {
+              "filters":{
+              "all_of": [
+                {
+                "test": "rider_count", "subject": "self", "operator": "==", "value": 0
+                },
+               {                                           "test": "has_tag",                         "subject": "self",
+                "operator": "==",
+                "value": "sistem_attack_mode"
+               },
+                    { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"}
+              ]
               },
-             {                                           "test": "has_tag",                         "subject": "self",
-              "operator": "==",
-              "value": "sistem_attack_mode"
-             },
-                  { "test" :  "has_component","subject" : "self", "operator": "==", "value" :  "minecraft:is_tamed"}
-            ]
-            },
-            "event":"minecraft:off_attack_sistem"
-          }
-        ]
-      }, 
+              "event":"minecraft:off_attack_sistem"
+            }
+          ]
+        }, 
       "minecraft:nameable": {
       },
       "minecraft:breathable": {
@@ -1201,7 +1088,34 @@
     },
 
 
-    "events": { 
+        "events": {
+      "ark:tameinfo": {
+        "randomize": [
+          {
+            
+          "weight": 100,
+        "run_command": {
+          "command": [
+      "say @a[r=30] §o§a-How to tame: §6He falls asleep when taking damage from his own attacks, then you give him carnivore kibble",
+      "playsound random.orb @a[r=15]"
+          ],
+          "target": "self"
+        }
+          },
+          {
+          "weight": 100
+          }
+        ]
+        }, 
+        
+    "ark:torreta": {
+  "run_command": {
+        "command": [
+  "playanimation @s animation.cryolopho.turret"
+        ],
+        "target": "self"
+      }
+    },
      "minecraft:off_attack_sistem": {
 		"run_command": {
           "command": [
@@ -1737,6 +1651,48 @@
 "minecraft:adult_controladores",
 	"ark:narcotic_1",
 	"minecraft:v3"
+              ]
+            }
+          },
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:cryolopho-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v5"
+              ]
+            }
+          }, 
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:cryolopho-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v6"
+              ]
+            }
+          }, 
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+"minecraft:cryolopho-wild_adult",
+ "minecraft:despierto",
+"minecraft:adult_controladores",
+	"ark:narcotic_1",
+	"minecraft:v7"
               ]
             }
           }
@@ -2703,7 +2659,8 @@
 				},
 				"run_command": {
 					"command": [
-						"title @p title 5 min to tame!"
+												"tell @a[r=30] §o§aThe creature is sleeping, feed it with its respective food to tame it! On 5 minutes will awake up!",
+						"playsound ark.sleep @a[r=30] ~ ~ ~"
 					]
 				}
           },

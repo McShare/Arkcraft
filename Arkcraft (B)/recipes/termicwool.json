@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "arkcraft:axfsdfsdfsdfsdexe"
+    },
+
+    
+    "tags": [ "smithy" ],
+    "pattern": [
+      "XXX",
+      "XlX",
+      "XXX"
+    ],
+    "key": {
+      "l": {
+        "item": "arkcraft:aceite"
+      },
+      "X": {
+        "item": "minecraft:string"
+      }
+    },
+    "result": {
+      "item": "arkcraft:termic_wool",
+      "count": 4
+    }
+  }
+}

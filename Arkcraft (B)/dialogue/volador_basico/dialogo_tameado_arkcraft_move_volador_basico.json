@@ -6,8 +6,8 @@
 		[
 			{
 				"scene_tag": "dialogo_tameado_arkcraft_move_volador_basico",
-				"npc_name": { "rawtext": [ { "translate": "Arkcraft" } ] },
-				"text": { "rawtext": [ { "translate": "Move Modes Opcions", "with": ["\n"] } ] },
+				"npc_name": { "rawtext": [ { "translate": "Arkcraft - Download it on MCPEDL" } ] },
+				"text": { "rawtext": [ { "translate": "For updates, spoilers test betas: \n- https://discord.gg/hCudpfDhW8 \n\nThanks for play!", "with": ["\n"] } ] },
 				"buttons": [
 					{
 						"name": { "rawtext": [ { "translate": "§1Follow Me" } ] },

@@ -24,6 +24,75 @@
               ]
             }
           ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 30,
+              "wants": [
+                {
+                  "item": "minecraft:smoker",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:grill",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+              "quantity": {
+                "min": 10,
+                "max": 25
+              }
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:follow_horn",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        },  
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "minecraft:dirt",
+              "quantity": {
+                "min": 1,
+                "max": 1
+              }
+                }
+              ],
+              "gives": [
+                {
+                  "item": "arkcraft:long_helmet",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
         }, 
         {
           "num_to_select": 1,
@@ -60,7 +129,7 @@
               "gives": [
                 {
                   "item": "arkcraft:pulmonoscorpius_egg",
-                  "quantity": 3
+                  "quantity": 5
                 }
               ]
             },
@@ -90,7 +159,10 @@
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 1
+                  "quantity": {
+                    "min": 1,
+                    "max": 6
+                  }
                 }
               ],
               "gives": [
@@ -110,13 +182,28 @@
               "wants": [
                 {
                   "item": "arkcraft:carne_maju",
-                  "quantity": 20
+                  "quantity": 1
                 }
               ],
               "gives": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 4
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:gunpowder",
+                  "quantity": 3
                 }
               ]
             },
@@ -131,7 +218,7 @@
               "gives": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 3
+                  "quantity": 15
                 }
               ]
             }
@@ -145,7 +232,7 @@
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 20
+                  "quantity": 10
                 }
               ],
               "gives": [
@@ -165,7 +252,7 @@
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 20
+                  "quantity": 10
                 }
               ],
               "gives": [
@@ -185,7 +272,7 @@
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 20
+                  "quantity": 10
                 }
               ],
               "gives": [
@@ -204,7 +291,7 @@
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 20
+                  "quantity": 10
                 }
               ],
               "gives": [
@@ -221,7 +308,7 @@
           "num_to_select": 1,
           "trades": [
             {
-              "max_uses": 20,
+              "max_uses": 2,
               "wants": [
                 {
                   "item": "minecraft:emerald",
@@ -241,17 +328,20 @@
           "num_to_select": 1,
           "trades": [
             {
-              "max_uses": 20,
+              "max_uses": 1,
               "wants": [
                 {
                   "item": "minecraft:horsearmorleather",
-                  "quantity": 4
+                  "quantity": 1
                 }
               ],
               "gives": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 28
+                  "quantity": {
+                    "min": 1,
+                    "max": 6
+                  }
                 }
               ]
             }
@@ -284,7 +374,7 @@
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 10
+                  "quantity": 3
                 }
               ],
               "gives": [
@@ -305,7 +395,7 @@
               "gives": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 4
+                  "quantity": 8
                 }
               ]
             }
@@ -334,13 +424,13 @@
               "wants": [
                 {
                   "item": "arkcraft:poisonshock_bowl",
-                  "quantity": 3
+                  "quantity": 32
                 }
               ],
               "gives": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 11
+                  "quantity": 20
                 }
               ]
 	 }
@@ -350,7 +440,7 @@
           "num_to_select": 1,
           "trades": [
             {
-              "max_uses": 1,
+              "max_uses": 5,
               "wants": [
                 {
                   "item": "minecraft:emerald",
@@ -379,7 +469,7 @@
               "gives": [
                 {
                   "item": "arkcraft:raw_mawsonia",
-                  "quantity": 2
+                  "quantity": 4
                 }
               ]
             },
@@ -387,14 +477,14 @@
               "max_uses": 16,
               "wants": [
                 {
-                  "item": "arkcraft:poisonshock_bowl",
-                  "quantity": 3
+                  "item": "arkcraft:raw_mawsonia",
+                  "quantity": 4
                 }
               ],
               "gives": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 4
+                  "quantity": 15
                 }
               ]
             }

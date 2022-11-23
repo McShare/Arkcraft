@@ -8,17 +8,23 @@
     
     "tags": [ "smithy" ],
     "pattern": [
-      "A A",
-       "cAA",
-       " cc"
+      "111",
+      "cWc",
+      "xcx"
     ],
    "key": {
-      "c": {
-        "item": "minecraft:iron_block"
-      },
-      "A": {
-        "item": "minecraft:horsearmorleather"
-      }
+    "x": {
+      "item": "minecraft:lead"
+    },
+    "c": {
+      "item": "minecraft:iron_block"
+    },
+    "W": {
+    "item": "arkcraft:medium_carnivore_saddle"
+  },
+  "1": {
+  "item": "minecraft:horsearmorleather"
+  }
     },
     "result": {
       "item": "arkcraft:big_carnivore_saddle"
