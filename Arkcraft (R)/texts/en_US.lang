@@ -12,6 +12,15 @@ item.diamond_sword.name=Gem Sword
 item.golden_sword.name=Golden Dagger
 item.wooden_sword.name=Wooden Club
 
+item.iron_helmet.name=Iron "Flak" Helmet
+item.iron_chestplate.name=Iron "Flak" Chestplate
+item.iron_boots.name=Iron "Flak" Boots
+item.iron_leggings.name=Iron "Flak" Leggings
+
+item.leather_helmet.name=Cloth Helmet
+item.leather_chestplate.name=Cloth Chestplate
+item.leather_boots.name=Cloth Boots
+item.leather_leggings.name=Cloth Leggings
 
 
 
@@ -21,39 +30,44 @@ item.wooden_sword.name=Wooden Club
 
 
 
-tile.enchanting_table.name=Blueprints Sketchbook
-item.enchanted_book.name=§n§l§8Blueprint (Enchanted Book)
+#tile.enchanting_table.name=Blueprints Sketchbook
+#item.enchanted_book.name=§n§l§8Blueprint §o§a(Enchanted Book)
 
 item.arkcraft:ark_meat_raw.name=§6ArkCraft | §3ARK Meat Raw
 item.arkcraft:ark_meat_cooked.name=§6ArkCraft | §3ARK Meat Cooked
+item.arkcraft:ark_fish_raw.name=§6ArkCraft | §3ARK Fish Raw
+item.arkcraft:ark_fish_cooked.name=§6ArkCraft | §3ARK Fish Cooked
 tile.arkcraft:narcoberry.name=§6ArkCraft | §3Narcoberry Bush
 item.arkcraft:narcoberry_seed.name=§6ArkCraft | §3Narcoberry
 
+item.arkcraft:cactus.name=§6ArkCraft | §3ARK Cactus Piece
+item.arkcraft:leche.name=§6ArkCraft | §3Wyvern Milk §o§a(Remove effects)
+item.1uill_lot.name=Quill Lot §o§a(Furnace Fuel)
 
 pack.name=ArkCraft B
 pack.description=By
 
 pack.name=ArkCraft R
 pack.description=By
-entity.ark:white_male_rex.name=White Male Rex
-entity.ark:black_male_rex.name=Black Male Rex
-entity.ark:red_male_rex.name=Red Male Rex
-entity.ark:black_female_rex.name=Black Female Rex
-entity.ark:red_female_rex.name=Red Female Rex
-entity.ark:white_female_rex.name=White Female Rex
+entity.ark:white_male_rex.name=Rex
+entity.ark:black_male_rex.name=Rex
+entity.ark:red_male_rex.name=Rex
+entity.ark:black_female_rex.name=Rex
+entity.ark:red_female_rex.name=Rex
+entity.ark:white_female_rex.name=Rex
 entity.ark:rex.name=Rex
 item.spawn_egg.entity.ark:rex.name=Rex
 tile.ark:reaper_egg.name=Reaper Egg
 entity.ark:black_male_reaper.name=Black Male Reaper
 entity.ark:black_female_reaper.name=Black Female Reaper
-entity.ark:orange_female_spino.name=Orange Female Spino
-entity.ark:orange_male_spino.name=Orange Male Spino
-entity.ark:green_female_spino.name=Green Female Spino
-entity.ark:green_male_spino.name=Green Male Spino
-entity.ark:white_female_spino.name=White Female Spino
-entity.ark:white_male_spino.name=White Male Spino
-entity.ark:blue_female_spino.name=Blue Female Spino
-entity.ark:blue_male_spino.name=Blue Male Spino
+entity.ark:orange_female_spino.name=Spino
+entity.ark:orange_male_spino.name=Spino
+entity.ark:green_female_spino.name=Spino
+entity.ark:green_male_spino.name=Spino
+entity.ark:white_female_spino.name=Spino
+entity.ark:white_male_spino.name=Spino
+entity.ark:blue_female_spino.name=Spino
+entity.ark:blue_male_spino.name=Spino
 item.spawn_egg.entity.ark:spino.name=Spino
 
 
@@ -66,7 +80,7 @@ item.arkcraft:cementing_paste.name=Cementing Paste
 item.arkcraft:placa_de_metal.name=Steel plate
 item.arkcraft:aceite.name=§6ArkCraft | §3Oil
 item.arkcraft:galon_de_aceite.name=§6ArkCraft | §3Gallon of oil
-item.arkcraft:detonador.name=§6ArkCraft | §3Polimer "Whip"
+item.arkcraft:detonador.name=§6ArkCraft | §3Teleport Node §o§a(Teleport HLN-A ammo)
 item.arkcraft:c4_component.name=Electrical Component
 item.arkcraft:jaula.name=Cage
 item.arkcraft:visor_helmet.name=Helmet with visor
@@ -97,18 +111,28 @@ item.arkcraft:escargot_slime.name=§6ArkCraft | §3Escargot slime
 item.arkcraft:big_herbivore_saddle.name=§6ArkCraft | §3Big Herbivore Saddle
 item.arkcraft:medium_herbivore_saddle.name=§6ArkCraft | §3Medium Herbivore Saddle
 item.arkcraft:farmer_saddle.name=§6ArkCraft | §3Farmer Saddle
-item.arkcraft:montura_para_tres.name=§6ArkCraft | §3Platform Mammoth Saddle
+item.arkcraft:montura_para_tres.name=§6ArkCraft | §3Platform
 item.arkcraft:montura_de_baryonyx.name=§eBaryonyx Saddle
 item.arkcraft:baryonyx_egg.name=§6ArkCraft | §3Baryonyx Egg
 item.arkcraft:doedicurus_egg.name=§6ArkCraft | §3Doedicurus Egg
+item.arkcraft:bucket_ammonite_friend.name=§6ArkCraft | §3Bucket of Ammonite
+item.arkcraft:bucket_ammonite_poisonshock.name=§6ArkCraft | §3Bucket of Ammonite-Bad
+item.arkcraft:backpack.name=§6ArkCraft | §3Sinomacrops backpack-mode
+item.arkcraft:bucket_mawsonia.name=§6ArkCraft | §3Bucket of Mawsonia
+item.arkcraft:bucket_tany.name=§6ArkCraft | §3Bucket of Tany
+item.arkcraft:bucket_trilobite.name=§6ArkCraft | §3Bucket of Trilobite
+item.arkcraft:diente_tralka.name=§6ArkCraft | §3Fang of Tralkasaurus
+item.arkcraft:hln_a_item.name=§6ArkCraft | §3HLN-A
+item.arkcraft:backpack.name=§6ArkCraft | §3Sinomacrops §o§a(Backpack)
 
 
-tile.arkcraft:smithy.name=§6ArkCraft | §3"Smithy" crafting table
-
+tile.arkcraft:smithy.name=§6ArkCraft | §3"Smithy" Table §o§a(Craft here the ArkCraft-Mod items)
+tile.arkcraft:grill.name=§6ArkCraft | §3"Grill" Furnace §o§a(Cook here ArkCraft-Mod items)
 
 
 item.arkcraft:dodo_egg.name=§6ArkCraft | §3Not fermented Dodo egg
 item.spawn_egg.entity.arkcraft:dodo.name=§6ArkCraft | §3Dodo Spawn Egg
+action.interact.dientetralka=Remove Fang! §o§a(Will be regenerated on a few seconds)
 action.hint.exit.arkcraft:dodo=Riding Dodo §e(For open chest Only, isnt rideable)
 action.hint.exit.minecraft:chicken=Riding
 entity.arkcraft:dodo.name=Dodo
@@ -163,7 +187,7 @@ entity.arkcraft:dune_pulmonoscorpius.name=Dune Pulmonoscorpius
 item.spawn_egg.entity.arkcraft:thorny_dragon.name=§6ArkCraft | §3Thorny Dragon Spawn Egg
 action.hint.exit.arkcraft:thorny_dragon=Riding Thorny Dragon
 entity.arkcraft:thorny_dragon.name=Thorny Dragon
-item.arkcraft:casita_para_thorny_dragon.name=§6ArkCraft | §3Thorny Dragon armor
+item.arkcraft:casita_para_thorny_dragon.name=§6ArkCraft | §3Saddle Accesory
 item.arkcraft:montura_para_thorny_dragon.name=§6ArkCraft | §3Thorny Dragon saddle
 
 item.spawn_egg.entity.arkcraft:pegomastax.name=§6ArkCraft | §3Pegomastax Spawn Egg
@@ -185,6 +209,28 @@ item.spawn_egg.entity.arkcraft:baryonyx.name=§6ArkCraft | §3Baryonyx Spawn Egg
 action.hint.exit.arkcraft:baryonyx=Riding Baryonyx
 entity.arkcraft:baryonyx.name=Baryonyx
 
+item.spawn_egg.entity.arkcraft:moschops.name=§6ArkCraft | §3Moschops Spawn Egg
+action.hint.exit.arkcraft:moschops=Riding Moschops
+entity.arkcraft:moschops.name=Moschops
+
+item.spawn_egg.entity.arkcraft:tropical_wyvern.name=§6ArkCraft | §3Tropical Wyvern Spawn Egg
+action.hint.exit.arkcraft:tropical_wyvern=Riding Tropical Wyvern
+entity.arkcraft:tropical_wyvern.name=Tropical Wyvern
+
+item.spawn_egg.entity.arkcraft:sinosaurus.name=§6ArkCraft | §3Sinosaurus Spawn Egg
+action.hint.exit.arkcraft:sinosaurus=Riding Sinosaurus
+entity.arkcraft:sinosaurus.name=Sinosaurus
+
+item.spawn_egg.entity.arkcraft:thery.name=§6ArkCraft | §3Thery Spawn Egg
+action.hint.exit.arkcraft:thery=Riding Thery
+entity.arkcraft:thery.name=Thery
+
+item.spawn_egg.entity.arkcraft:desmodus.name=§6ArkCraft | §3Desmodus Spawn Egg
+action.hint.exit.arkcraft:desmodus=Riding Desmodus
+entity.arkcraft:desmodus.name=Desmodus
+
+
+
 item.spawn_egg.entity.arkcraft:elasmotherium.name=§6ArkCraft | §3Elasmotherium Spawn Egg
 entity.arkcraft:elasmotherium.name=Elasmotherium
 entity.arkcraft:elasmotherium_trophy.name=Elasmotherium Thorphy
@@ -203,10 +249,10 @@ item.arkcraft:ainiktozoon_shell.name=§6ArkCraft | §3Ainiktozoon shell
 
 item.spawn_egg.entity.arkcraft:alvarezsaurus.name=§6ArkCraft | §3Alvarezsaurus Spawn Egg
 entity.arkcraft:alvarezsaurus.name=Alvarezsaurus
-item.arkcraft:pasta_roja.name=§6ArkCraft | §3Carnivore Kibble
-item.arkcraft:pasta_bicho.name=§6ArkCraft | §3Arthopod Kibble
-item.arkcraft:pasta_verde.name=§6ArkCraft | §3Herbivore Kibble
-item.arkcraft:pasta_acuatica.name=§6ArkCraft | §3Fishivore Kibble
+item.arkcraft:pasta_roja.name=§6ArkCraft | §3Meat Kibble §o§a(Use on CARNIVORES for taming)
+item.arkcraft:pasta_bicho.name=§6ArkCraft | §3Insect Kibble §o§a(Use on INSECTS OR INSECT-EATERS for taming)
+item.arkcraft:pasta_verde.name=§6ArkCraft | §3Natural Kibble §o§a(Use on HERBIVORES for taming)
+item.arkcraft:pasta_acuatica.name=§6ArkCraft | §3Acuatic Kibble §o§a(Use on FISH EATERS for taming)
 item.arkcraft:raw_mawsonia.name=§6ArkCraft | §3Raw Mawsonia
 
 item.spawn_egg.entity.arkcraft:helicoprion.name=§6ArkCraft | §3Helicoprion Spawn Egg
@@ -215,6 +261,8 @@ item.arkcraft:helicoprion_tooth.name=§6ArkCraft | §3Helicoprion Tooth
 item.arkcraft:helicoprion_shard.name=§6ArkCraft | §3Shark fin
 item.arkcraft:sopa_de_carne.name=§6ArkCraft | §3Shark-fin soup
 item.arkcraft:collar_de_helicoprion.name=§6ArkCraft | §3Helicoprion Necklace
+
+item.arkcraft:shell2.name=§6ArkCraft | §3Healthy Marine Diet §o§a(100% chance for Valenictus)
 
 item.spawn_egg.entity.arkcraft:achatina.name=§6ArkCraft | §3Achatina Spawn Egg
 entity.arkcraft:achatina.name=Achatina
@@ -281,13 +329,17 @@ action.hint.exit.arkcraft:majungasaurus=Riding majungasaurus
 item.spawn_egg.entity.arkcraft:majungasaurus.name=§6ArkCraft | §3Majungasaurus Spawn Egg
 entity.arkcraft:majungasaurus.name=Majungasaurus
 
+action.hint.exit.arkcraft:dodorex=Riding dodorex
+item.spawn_egg.entity.arkcraft:dodorex.name=§6ArkCraft | §3Dodorex Spawn Egg
+entity.arkcraft:dodorex.name=Dodorex
+
 action.hint.exit.arkcraft:llukalkan=Riding llukalkan
 item.spawn_egg.entity.arkcraft:llukalkan.name=§6ArkCraft | §3Llukalkan Spawn Egg
 entity.arkcraft:majungasaurus.name=Llukalkan
 
-action.hint.exit.arkcraft:teratophoneus=Riding Teratophoneus
-item.spawn_egg.entity.arkcraft:teratophoneus.name=§6ArkCraft | §3Teratophoneus Spawn Egg
-entity.arkcraft:teratophoneus.name=Teratophoneus
+action.hint.exit.arkcraft:brontornis=Riding Brontornis
+item.spawn_egg.entity.arkcraft:brontornis.name=§6ArkCraft | §3Brontornis Spawn Egg
+entity.arkcraft:brontornis.name=Brontornis
 
 action.hint.exit.arkcraft:nanuqsaurus=Riding Nanuqsaurus
 item.spawn_egg.entity.arkcraft:nanuqsaurus.name=§6ArkCraft | §3Nanuqsaurus Spawn Egg
@@ -357,7 +409,7 @@ item.arkcraft:cooked_prime_meat.name=Cooked Prime Meat
 
 
 
-item.arkcraft:argentavis_saddle.name=§6ArkCraft | §3Argentavis Saddle
+item.arkcraft:argentavis_saddle.name=§6ArkCraft | §3Flyer Saddle
 
 item.spawn_egg.entity.arkcraft:dimetrodon.name=§6ArkCraft | §3Dimetrodon Spawn Egg
 entity.arkcraft:dimetrodon.name=Dimetrodon
@@ -392,7 +444,7 @@ item.spawn_egg.entity.arkcraft:lymantria.name=§6ArkCraft | §3Lymantria Spawn E
 entity.arkcraft:lymantria.name=Lymantria
 action.hint.exit.arkcraft:lymantria=Riding Lymantria
 
-item.spawn_egg.entity.arkcraft:scutosaurus.name=Scutosaurus Spawn Egg
+item.spawn_egg.entity.arkcraft:scutosaurus.name=§6ArkCraft | §3Scutosaurus Spawn Egg
 entity.arkcraft:scutosaurus.name=Scutosaurus
 
 item.spawn_egg.entity.arkcraft:ankylosaur.name=§6ArkCraft | §3Ankylosaur Spawn Egg
@@ -414,6 +466,84 @@ entity.arkcraft:hln_a.name=HLN-A
 item.spawn_egg.entity.arkcraft:tapejara.name=§6ArkCraft | §3Tapejara Spawn Egg
 entity.arkcraft:tapejara.name=Tapejara
 action.hint.exit.arkcraft:tapejara=Riding Tapejara
+
+item.spawn_egg.entity.arkcraft:shantungosaurus.name=§6ArkCraft | §3Shantungosaurus Spawn Egg
+entity.arkcraft:shantungosaurus.name=Shantungosaurus
+action.hint.exit.arkcraft:shantungosaurus=Riding Shantungosaurus
+
+item.spawn_egg.entity.arkcraft:wakaleo.name=§6ArkCraft | §3Wakaleo Spawn Egg
+entity.arkcraft:wakaleo.name=Wakaleo
+action.hint.exit.arkcraft:wakaleor=Riding Wakaleo
+
+item.spawn_egg.entity.arkcraft:ptera.name=§6ArkCraft | §3Ptera Spawn Egg
+entity.arkcraft:ptera.name=Ptera
+action.hint.exit.arkcraft:ptera=Riding Ptera
+
+item.spawn_egg.entity.arkcraft:shringasaurus.name=§6ArkCraft | §3Shringasaurus Spawn Egg
+entity.arkcraft:shringasaurus.name=Shringasaurus
+action.hint.exit.arkcraft:shringasaurus=Riding Shringasaurus
+
+item.spawn_egg.entity.arkcraft:giga.name=§6ArkCraft | §3Giga Spawn Egg
+entity.arkcraft:giga.name=Giga
+action.hint.exit.arkcraft:giga=Riding Giga
+
+item.spawn_egg.entity.arkcraft:tralkasaurus.name=§6ArkCraft | §3Tralkasaurus Spawn Egg
+entity.arkcraft:tralkasaurus.name=Tralkasaurus
+action.hint.exit.arkcraft:tralkasaurus=Riding Tralkasaurus
+
+item.spawn_egg.entity.arkcraft:sclerothorax.name=§6ArkCraft | §3Sclerothorax Spawn Egg
+entity.arkcraft:sclerothorax.name=Sclerothorax
+action.hint.exit.arkcraft:sclerothorax=Riding Sclerothorax
+
+item.spawn_egg.entity.arkcraft:pyroraptor.name=§6ArkCraft | §3Pyroraptor Spawn Egg
+entity.arkcraft:pyroraptor.name=Pyroraptor
+action.hint.exit.arkcraft:pyroraptor=Riding Pyroraptor
+
+item.spawn_egg.entity.arkcraft:valenicius.name=§6ArkCraft | §3Valenicius Spawn Egg
+entity.arkcraft:valenicius.name=Valenicius
+action.hint.exit.arkcraft:valenicius=Riding Valenicius
+
+item.spawn_egg.entity.arkcraft:oxalaia.name=§6ArkCraft | §3Oxalaia Spawn Egg
+entity.arkcraft:oxalaia.name=Oxalaia
+action.hint.exit.arkcraft:oxalaia=Riding Oxalaia
+
+item.spawn_egg.entity.arkcraft:neocartathes.name=§6ArkCraft | §3Neocarthates Spawn Egg
+entity.arkcraft:neocartathes.name=Neocarthates
+action.hint.exit.arkcraft:neocartathes=Riding Neocarthates
+
+item.spawn_egg.entity.arkcraft:megalania.name=§6ArkCraft | §3Megalania Spawn Egg
+entity.arkcraft:megalania.name=Megalania
+action.hint.exit.arkcraft:megalania=Riding Megalania
+
+item.spawn_egg.entity.arkcraft:lopho.name=§6ArkCraft | §3Lopho Spawn Egg
+entity.arkcraft:lopho.name=Lopho
+action.hint.exit.arkcraft:lopho=Riding Lopho
+
+
+
+
+item.spawn_egg.entity.arkcraft:longuisquama.name=§6ArkCraft | §3Longuisquama Spawn Egg
+entity.arkcraft:longuisquama.name=Longuisquama
+action.hint.exit.arkcraft:longuisquama=Riding Longuisquama
+
+item.spawn_egg.entity.arkcraft:giraffatitan.name=§6ArkCraft | §3Giraffatitan Spawn Egg
+entity.arkcraft:giraffatitan.name=Giraffatitan
+action.hint.exit.arkcraft:giraffatitan=Riding Giraffatitan
+
+item.spawn_egg.entity.arkcraft:galveosaurus.name=§6ArkCraft | §3Galveosaurus Spawn Egg
+entity.arkcraft:galveosaurus.name=Galveosaurus
+action.hint.exit.arkcraft:galveosaurus=Riding Galveosaurus
+
+item.spawn_egg.entity.arkcraft:armadillosuchus.name=§6ArkCraft | §3Armadillosuchus Spawn Egg
+entity.arkcraft:armadillosuchus.name=Armadillosuchus
+action.hint.exit.arkcraft:armadillosuchus=Riding Armadillosuchus
+
+
+item.spawn_egg.entity.arkcraft:ankylosaurus.name=§6ArkCraft | §3Ankylosaurus Spawn Egg
+entity.arkcraft:ankylosaurus.name=Ankylosaurus
+action.hint.exit.arkcraft:ankylosaurusr=Riding Ankylosaurus
+
+
 
 
 item.arkcraft:quetzal_saddle.name=§6ArkCraft | §3Quetzal Saddle
@@ -467,9 +597,9 @@ action.hint.exit.arkcraft:parasaurolophus=Riding Parasaurolophus
 item.spawn_egg.entity.arkcraft:parasaurolophus.name=§6ArkCraft | §3Parasaurolophus Spawn Egg
 entity.arkcraft:parasaurolophus.name=Parasaurolophus
 
-action.hint.exit.arkcraft:lambeosaurus=Riding Lambeosaurus
-item.spawn_egg.entity.arkcraft:lambeosaurus.name=§6ArkCraft | §3Lambeosaurus Spawn Egg
-entity.arkcraft:lambeosaurus.name=Lambeosaurus
+action.hint.exit.arkcraft:kamuysaurus=Riding Kamuysaurus
+item.spawn_egg.entity.arkcraft:kamuysaurus.name=§6ArkCraft | §3Kamuysaurus Spawn Egg
+entity.arkcraft:kamuysaurus.name=Kamuysaurus
 
 item.spawn_egg.entity.arkcraft:tamer.name=§6ArkCraft | §3Tamer Spawn Egg
 entity.arkcraft:tamer.name=Tamer
@@ -482,6 +612,16 @@ item.arkcraft:whip_t2.name=§6ArkCraft | §3Iron Tamer Whip
 item.arkcraft:whip_t3.name=§6ArkCraft | §3Diamond Tamer Whip
 item.arkcraft:whip_t4.name=§6ArkCraft | §3Netherite Tamer Whip
 
+item.arkcraft:diente_tralka.name=§6ArkCraft | §3Tralkasaurus Fang
+item.arkcraft:hamburger.name=§6ArkCraft | §3Hamburger
+item.arkcraft:ark_meat_special.name=§6ArkCraft | §3ARK Meat Dried 
+item.arkcraft:dodo_bread.name=§6ArkCraft | §3Dodo Bread
+
+item.arkcraft:shadow_boots.name=§6ArkCraft | §3Shadowmane Boots
+item.arkcraft:shadow_leggings.name=§6ArkCraft | §3Shadowmane Leggings
+item.arkcraft:shadow_helmet.name=§6ArkCraft | §3Shadowmane Helmet
+item.arkcraft:shadow_chestplate.name=§6ArkCraft | §3Shadowmane Chestplate
+
 entity.arkcraft:tanyrhinichthys.name=Tanyrhinichthys
 item.spawn_egg.entity.arkcraft:tanyrhinichthys.name=§6ArkCraft | §3Tanyrhinichthys Spawn Egg
 
@@ -491,39 +631,39 @@ item.arkcraft:pelt_boots.name=§6ArkCraft | §3Pelt boots
 item.arkcraft:pelt_leggings.name=§6ArkCraft | §3Pelt leggins
 item.arkcraft:pelt_chestplate.name=§6ArkCraft | §3Pelt chest plate
 
-item.arkcraft:narcoberry_seed=§6ArkCraft | §3Narcoberry
+item.arkcraft:narcoberry_seed=§6ArkCraft | §3Narcoberry §o§a(Plant it on farmland)
+
 
 item.arkcraft:hln_a_item.name=§6ArkCraft | §3HLN-A (Touch to spawn)
 
-item.arkcraft:jeringa_r.name=§6ArkCraft | §3Syringe R Variant
+item.arkcraft:jeringa_r.name=§6ArkCraft | §3Syringe R Variant §o§a(Use on Compy and Giga for mutations)
 
-item.arkcraft:termic_wool.name=§6ArkCraft | §3Termic Wool
+item.arkcraft:termic_wool.name=§6ArkCraft | §3Termic Wool §o§a(Use for hatch eggs)
 
 item.arkcraft:cloth_helmet.name=§6ArkCraft | §3Cloth helmet
 item.arkcraft:cloth_boots.name=§6ArkCraft | §3Cloth boots
 item.arkcraft:cloth_leggings.name=§6ArkCraft | §3Cloth leggins
 item.arkcraft:cloth_chestplate.name=§6ArkCraft | §3Cloth chest plate
 
-##bridge-file-version: #7
-pack.name=ArkCraft R
-pack.description=By
-entity.arkcraft:female_rex.name=§6ArkCraft | §3Female Rex
-entity.arkcraft:male_rex.name=§6ArkCraft | §3Male Rex
-entity.arkcraft:male_spino.name=§6ArkCraft | §3Male Spino
-entity.arkcraft:female_spino.name=§6ArkCraft | §3Female Spino
-item.spawn_egg.entity.arkcraft:male_rex.name=§6ArkCraft | §3Male Rex
-item.spawn_egg.entity.arkcraft:female_rex.name=§6ArkCraft | §3Female Rex
-item.spawn_egg.entity.arkcraft:male_spino.name=§6ArkCraft | §3Male Spino
-item.spawn_egg.entity.arkcraft:female_spino.name=§6ArkCraft | §3Female Spino
-item.spawn_egg.entity.arkcraft:female_yutyrannus.name=§6ArkCraft | §3Female Yutyrannus
-item.spawn_egg.entity.arkcraft:male_yutyrannus.name=§6ArkCraft | §3Male Yutyrannus
-entity.arkcraft:female_yutyrannus.name=§6ArkCraft | §3Female Yutyrannus
-entity.arkcraft:male_yutyrannus.name=§6ArkCraft | §3Male Yutyrannus
-item.spawn_egg.entity.arkcraft:male_baryonyx.name=§6ArkCraft | §3Male Suchosaurus
-item.spawn_egg.entity.arkcraft:female_baryonyx.name=§6ArkCraft | §3Female Suchosaurus
-entity.arkcraft:female_baryonyx.name=§6ArkCraft | §3Female Suchosaurus
-entity.arkcraft:male_baryonyx.name=§6ArkCraft | §3Male Suchosaurus
+
+
+entity.arkcraft:female_rex.name=Rex
+entity.arkcraft:male_rex.name=Rex
+entity.arkcraft:male_spino.name=Spino
+entity.arkcraft:female_spino.name=Spino
+item.spawn_egg.entity.arkcraft:male_rex.name=§6ArkCraft | §3Rex
+item.spawn_egg.entity.arkcraft:female_rex.name=§6ArkCraft | §3Rex
+item.spawn_egg.entity.arkcraft:male_spino.name=§6ArkCraft | §3Spino
+item.spawn_egg.entity.arkcraft:female_spino.name=§6ArkCraft | §3Spino
+item.spawn_egg.entity.arkcraft:female_yutyrannus.name=§6ArkCraft | §3Yutyrannus
+item.spawn_egg.entity.arkcraft:male_yutyrannus.name=§6ArkCraft | §3Yutyrannus
+entity.arkcraft:female_yutyrannus.name=Yutyrannus
+entity.arkcraft:male_yutyrannus.name=Yutyrannus
+item.spawn_egg.entity.arkcraft:male_baryonyx.name=§6ArkCraft | §3Suchosaurus
+item.spawn_egg.entity.arkcraft:female_baryonyx.name=§6ArkCraft | §3Suchosaurus
+entity.arkcraft:female_baryonyx.name=Suchosaurus
+entity.arkcraft:male_baryonyx.name=Suchosaurus
 item.spawn_egg.entity.arkcraft:female_shadowmane.name=§6ArkCraft | §3Female Shadowmane
 item.spawn_egg.entity.arkcraft:male_shadowmane.name=§6ArkCraft | §3Male Shadowmane
-entity.arkcraft:female_shadowmane.name=§6ArkCraft | §3Female Shadowmane
-entity.arkcraft:male_shadowmane.name=§6ArkCraft | §3Male Shadowmane
+entity.arkcraft:female_shadowmane.name=Female Shadowmane
+entity.arkcraft:male_shadowmane.name=Male Shadowmane
