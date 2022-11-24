@@ -12,15 +12,15 @@ item.diamond_sword.name=宝石剑
 item.golden_sword.name=金匕首
 item.wooden_sword.name=木棍
 
-item.iron_helmet.name=Iron "Flak" Helmet
-item.iron_chestplate.name=Iron "Flak" Chestplate
-item.iron_boots.name=Iron "Flak" Boots
-item.iron_leggings.name=Iron "Flak" Leggings
+item.iron_helmet.name=铁制防弹头盔
+item.iron_chestplate.name=铁质防弹胸甲
+item.iron_boots.name=铁质防弹靴
+item.iron_leggings.name=铁质防弹裤
 
-item.leather_helmet.name=Cloth Helmet
-item.leather_chestplate.name=Cloth Chestplate
-item.leather_boots.name=Cloth Boots
-item.leather_leggings.name=Cloth Leggings
+item.leather_helmet.name=麻布帽子
+item.leather_chestplate.name=麻布胸甲
+item.leather_boots.name=麻布靴子
+item.leather_leggings.name=麻布裤子
 
 
 
@@ -35,13 +35,13 @@ item.leather_leggings.name=Cloth Leggings
 
 item.arkcraft:ark_meat_raw.name=§6ArkCraft | §3方舟生肉
 item.arkcraft:ark_meat_cooked.name=§6ArkCraft | §3方舟熟肉
-item.arkcraft:ark_fish_raw.name=§6ArkCraft | §3ARK Fish Raw
-item.arkcraft:ark_fish_cooked.name=§6ArkCraft | §3ARK Fish Cooked
+item.arkcraft:ark_fish_raw.name=§6ArkCraft | §3方舟生鱼肉
+item.arkcraft:ark_fish_cooked.name=§6ArkCraft | §3方舟熟鱼肉
 tile.arkcraft:narcoberry.name=§6ArkCraft | §3黑莓灌木
 item.arkcraft:narcoberry_seed.name=§6ArkCraft | §3黑莓
 
-item.arkcraft:cactus.name=§6ArkCraft | §3ARK Cactus Piece
-item.arkcraft:leche.name=§6ArkCraft | §3Wyvern Milk §o§a(Remove effects)
+item.arkcraft:cactus.name=§6ArkCraft | §3方舟仙人掌片
+item.arkcraft:leche.name=§6ArkCraft | §3飞龙奶 §o§a(Remove effects)
 item.1uill_lot.name=Quill Lot §o§a(Furnace Fuel)
 
 pack.name=ArkCraft B
@@ -80,7 +80,7 @@ item.arkcraft:cementing_paste.name=水泥浆
 item.arkcraft:placa_de_metal.name=钢板
 item.arkcraft:aceite.name=§6ArkCraft | §3油
 item.arkcraft:galon_de_aceite.name=§6ArkCraft | §3加仑油
-item.arkcraft:detonador.name=§6ArkCraft | §3Teleport Node §o§a(Teleport HLN-A ammo)
+item.arkcraft:detonador.name=§6ArkCraft | §3传送节点 §o§a(Teleport HLN-A ammo)
 item.arkcraft:c4_component.name=电子元件
 item.arkcraft:jaula.name=笼子
 item.arkcraft:visor_helmet.name=带面罩的头盔
@@ -115,13 +115,13 @@ item.arkcraft:montura_para_tres.name=§6ArkCraft | §3平台
 item.arkcraft:montura_de_baryonyx.name=§e重爪龙鞍
 item.arkcraft:baryonyx_egg.name=§6ArkCraft | §3重爪龙蛋
 item.arkcraft:doedicurus_egg.name=§6ArkCraft | §3星尾兽蛋
-item.arkcraft:bucket_ammonite_friend.name=§6ArkCraft | §3Bucket of Ammonite
-item.arkcraft:bucket_ammonite_poisonshock.name=§6ArkCraft | §3Bucket of Ammonite-Bad
+item.arkcraft:bucket_ammonite_friend.name=§6ArkCraft | §3一桶菊石
+item.arkcraft:bucket_ammonite_poisonshock.name=§6ArkCraft | §3一桶有攻击性的菊石
 item.arkcraft:backpack.name=§6ArkCraft | §3Sinomacrops backpack-mode
-item.arkcraft:bucket_mawsonia.name=§6ArkCraft | §3Bucket of Mawsonia
-item.arkcraft:bucket_tany.name=§6ArkCraft | §3Bucket of Tany
-item.arkcraft:bucket_trilobite.name=§6ArkCraft | §3Bucket of Trilobite
-item.arkcraft:diente_tralka.name=§6ArkCraft | §3Fang of Tralkasaurus
+item.arkcraft:bucket_mawsonia.name=§6ArkCraft | §3一桶莫森氏鱼
+item.arkcraft:bucket_tany.name=§6ArkCraft | §3一桶唐鱼
+item.arkcraft:bucket_trilobite.name=§6ArkCraft | §3一桶三叶兽
+item.arkcraft:diente_tralka.name=§6ArkCraft | §3雷霆龙的尖牙
 item.arkcraft:hln_a_item.name=§6ArkCraft | §3HLN-A
 item.arkcraft:backpack.name=§6ArkCraft | §3Sinomacrops §o§a(Backpack)
 
@@ -132,7 +132,7 @@ tile.arkcraft:grill.name=§6ArkCraft | §3"Grill" Furnace §o§a(Cook here ArkCr
 
 item.arkcraft:dodo_egg.name=§6ArkCraft | §3未经受精的渡渡鸟蛋
 item.spawn_egg.entity.arkcraft:dodo.name=§6ArkCraft | §3渡渡鸟刷怪蛋
-action.interact.dientetralka=Remove Fang! §o§a(Will be regenerated on a few seconds)
+action.interact.dientetralka=拔出尖牙! §o§a(将会在几秒后长出来)
 action.hint.exit.arkcraft:dodo=骑渡渡鸟§e（仅限开箱，不可骑乘）
 action.hint.exit.minecraft:chicken=骑着
 entity.arkcraft:dodo.name=渡渡鸟
