@@ -329,17 +329,17 @@ action.hint.exit.arkcraft:majungasaurus=骑玛君龙
 item.spawn_egg.entity.arkcraft:majungasaurus.name=§6ArkCraft | §3玛君龙刷怪蛋
 entity.arkcraft:majungasaurus.name=玛君龙
 
-action.hint.exit.arkcraft:dodorex=Riding dodorex
-item.spawn_egg.entity.arkcraft:dodorex.name=§6ArkCraft | §3Dodorex Spawn Egg
-entity.arkcraft:dodorex.name=Dodorex
+action.hint.exit.arkcraft:dodorex=骑嘟嘟暴龙
+item.spawn_egg.entity.arkcraft:dodorex.name=§6ArkCraft | §3嘟嘟暴龙刷怪蛋
+entity.arkcraft:dodorex.name=嘟嘟暴龙
 
 action.hint.exit.arkcraft:llukalkan=骑着慑龙
 item.spawn_egg.entity.arkcraft:llukalkan.name=§6ArkCraft | §3慑龙刷怪蛋
 entity.arkcraft:majungasaurus.name=慑龙
 
-action.hint.exit.arkcraft:brontornis=Riding Brontornis
-item.spawn_egg.entity.arkcraft:brontornis.name=§6ArkCraft | §3Brontornis Spawn Egg
-entity.arkcraft:brontornis.name=Brontornis
+action.hint.exit.arkcraft:brontornis=骑雷鸣鸟
+item.spawn_egg.entity.arkcraft:brontornis.name=§6ArkCraft | §3雷鸣鸟刷怪蛋
+entity.arkcraft:brontornis.name=雷鸣鸟
 
 action.hint.exit.arkcraft:nanuqsaurus=骑着白熊龙
 item.spawn_egg.entity.arkcraft:nanuqsaurus.name=§6ArkCraft | §3白熊龙刷怪蛋
@@ -409,7 +409,7 @@ item.arkcraft:cooked_prime_meat.name=上等熟肉
 
 
 
-item.arkcraft:argentavis_saddle.name=§6ArkCraft | §3Flyer Saddle
+item.arkcraft:argentavis_saddle.name=§6ArkCraft | §3飞行鞍
 
 item.spawn_egg.entity.arkcraft:dimetrodon.name=§6ArkCraft | §3异齿龙刷怪蛋
 entity.arkcraft:dimetrodon.name=异齿龙
@@ -498,9 +498,9 @@ item.spawn_egg.entity.arkcraft:pyroraptor.name=§6ArkCraft | §3火盗龙刷怪�
 entity.arkcraft:pyroraptor.name=火盗龙
 action.hint.exit.arkcraft:pyroraptor=骑火盗龙
 
-item.spawn_egg.entity.arkcraft:valenicius.name=§6ArkCraft | §3Valenicius Spawn Egg
-entity.arkcraft:valenicius.name=Valenicius
-action.hint.exit.arkcraft:valenicius=Riding Valenicius
+item.spawn_egg.entity.arkcraft:valenicius.name=§6ArkCraft | §3强海象刷怪蛋
+entity.arkcraft:valenicius.name=强海象
+action.hint.exit.arkcraft:valenicius=骑强海象
 
 item.spawn_egg.entity.arkcraft:oxalaia.name=§6ArkCraft | §3奥沙拉龙刷怪蛋
 entity.arkcraft:oxalaia.name=奥沙拉龙
