@@ -474,9 +474,9 @@ item.spawn_egg.entity.arkcraft:wakaleo.name=§6ArkCraft | §3袋狮刷怪蛋
 entity.arkcraft:wakaleo.name=袋狮
 action.hint.exit.arkcraft:wakaleor=骑袋狮
 
-item.spawn_egg.entity.arkcraft:ptera.name=§6ArkCraft | §3Ptera Spawn Egg
-entity.arkcraft:ptera.name=Ptera
-action.hint.exit.arkcraft:ptera=Riding Ptera
+item.spawn_egg.entity.arkcraft:ptera.name=§6ArkCraft | §3无齿翼龙刷怪蛋
+entity.arkcraft:ptera.name=无齿翼龙
+action.hint.exit.arkcraft:ptera=骑无齿翼龙
 
 item.spawn_egg.entity.arkcraft:shringasaurus.name=§6ArkCraft | §3Shringasaurus Spawn Egg
 entity.arkcraft:shringasaurus.name=Shringasaurus
