@@ -514,9 +514,9 @@ item.spawn_egg.entity.arkcraft:megalania.name=§6ArkCraft | §3古巨蜥刷怪�
 entity.arkcraft:megalania.name=古巨蜥
 action.hint.exit.arkcraft:megalania=骑古巨蜥
 
-item.spawn_egg.entity.arkcraft:lopho.name=§6ArkCraft | §3Lopho Spawn Egg
-entity.arkcraft:lopho.name=Lopho
-action.hint.exit.arkcraft:lopho=Riding Lopho
+item.spawn_egg.entity.arkcraft:lopho.name=§6ArkCraft | §3洛福鸟刷怪蛋
+entity.arkcraft:lopho.name=洛福鸟
+action.hint.exit.arkcraft:lopho=骑洛福鸟
 
 
 
