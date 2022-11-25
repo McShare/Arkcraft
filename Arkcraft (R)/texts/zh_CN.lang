@@ -478,9 +478,9 @@ item.spawn_egg.entity.arkcraft:ptera.name=§6ArkCraft | §3无齿翼龙刷怪蛋
 entity.arkcraft:ptera.name=无齿翼龙
 action.hint.exit.arkcraft:ptera=骑无齿翼龙
 
-item.spawn_egg.entity.arkcraft:shringasaurus.name=§6ArkCraft | §3Shringasaurus Spawn Egg
-entity.arkcraft:shringasaurus.name=Shringasaurus
-action.hint.exit.arkcraft:shringasaurus=Riding Shringasaurus
+item.spawn_egg.entity.arkcraft:shringasaurus.name=§6ArkCraft | §3犄龙刷怪蛋
+entity.arkcraft:shringasaurus.name=犄龙
+action.hint.exit.arkcraft:shringasaurus=骑犄龙
 
 item.spawn_egg.entity.arkcraft:giga.name=§6ArkCraft | §3Giga Spawn Egg
 entity.arkcraft:giga.name=Giga
