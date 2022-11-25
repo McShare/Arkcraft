@@ -117,13 +117,13 @@ item.arkcraft:baryonyx_egg.name=§6ArkCraft | §3重爪龙蛋
 item.arkcraft:doedicurus_egg.name=§6ArkCraft | §3星尾兽蛋
 item.arkcraft:bucket_ammonite_friend.name=§6ArkCraft | §3一桶菊石
 item.arkcraft:bucket_ammonite_poisonshock.name=§6ArkCraft | §3一桶有攻击性的菊石
-item.arkcraft:backpack.name=§6ArkCraft | §3Sinomacrops backpack-mode
+item.arkcraft:backpack.name=§6ArkCraft | §3中华大眼翼龙 背包模式
 item.arkcraft:bucket_mawsonia.name=§6ArkCraft | §3一桶莫森氏鱼
 item.arkcraft:bucket_tany.name=§6ArkCraft | §3一桶唐鱼
 item.arkcraft:bucket_trilobite.name=§6ArkCraft | §3一桶三叶兽
 item.arkcraft:diente_tralka.name=§6ArkCraft | §3雷霆龙的尖牙
 item.arkcraft:hln_a_item.name=§6ArkCraft | §3HLN-A
-item.arkcraft:backpack.name=§6ArkCraft | §3Sinomacrops §o§a(Backpack)
+item.arkcraft:backpack.name=§6ArkCraft | §3中华大眼翼龙 §o§a(Backpack)
 
 
 tile.arkcraft:smithy.name=§6ArkCraft | §3"铁匠台" Table §o§a(在这里建造 ArkCraft 的物品)
@@ -213,21 +213,21 @@ item.spawn_egg.entity.arkcraft:moschops.name=§6ArkCraft | §3麝足兽刷怪蛋
 action.hint.exit.arkcraft:moschops=骑麝足兽
 entity.arkcraft:moschops.name=麝足兽
 
-item.spawn_egg.entity.arkcraft:tropical_wyvern.name=§6ArkCraft | §3Tropical Wyvern Spawn Egg
-action.hint.exit.arkcraft:tropical_wyvern=Riding Tropical Wyvern
-entity.arkcraft:tropical_wyvern.name=Tropical Wyvern
+item.spawn_egg.entity.arkcraft:tropical_wyvern.name=§6ArkCraft | §3热带双足飞龙刷怪蛋
+action.hint.exit.arkcraft:tropical_wyvern=骑热带双足飞龙
+entity.arkcraft:tropical_wyvern.name=热带双足飞龙
 
-item.spawn_egg.entity.arkcraft:sinosaurus.name=§6ArkCraft | §3Sinosaurus Spawn Egg
-action.hint.exit.arkcraft:sinosaurus=Riding Sinosaurus
-entity.arkcraft:sinosaurus.name=Sinosaurus
+item.spawn_egg.entity.arkcraft:sinosaurus.name=§6ArkCraft | §3中国龙刷怪蛋
+action.hint.exit.arkcraft:sinosaurus=骑中国龙
+entity.arkcraft:sinosaurus.name=中国龙
 
 item.spawn_egg.entity.arkcraft:thery.name=§6ArkCraft | §3Thery Spawn Egg
 action.hint.exit.arkcraft:thery=Riding Thery
 entity.arkcraft:thery.name=Thery
 
-item.spawn_egg.entity.arkcraft:desmodus.name=§6ArkCraft | §3Desmodus Spawn Egg
-action.hint.exit.arkcraft:desmodus=Riding Desmodus
-entity.arkcraft:desmodus.name=Desmodus
+item.spawn_egg.entity.arkcraft:desmodus.name=§6ArkCraft | §3吸血蝙蝠刷怪蛋
+action.hint.exit.arkcraft:desmodus=骑吸血蝙蝠
+entity.arkcraft:desmodus.name=吸血蝙蝠
 
 
 
