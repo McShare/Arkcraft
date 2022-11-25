@@ -490,29 +490,29 @@ item.spawn_egg.entity.arkcraft:tralkasaurus.name=§6ArkCraft | §3雷霆龙刷�
 entity.arkcraft:tralkasaurus.name=雷霆龙
 action.hint.exit.arkcraft:tralkasaurus=骑雷霆龙
 
-item.spawn_egg.entity.arkcraft:sclerothorax.name=§6ArkCraft | §3Sclerothorax Spawn Egg
-entity.arkcraft:sclerothorax.name=Sclerothorax
-action.hint.exit.arkcraft:sclerothorax=Riding Sclerothorax
+item.spawn_egg.entity.arkcraft:sclerothorax.name=§6ArkCraft | §3坚胸螈刷怪蛋
+entity.arkcraft:sclerothorax.name=坚胸螈
+action.hint.exit.arkcraft:sclerothorax=骑坚胸螈
 
-item.spawn_egg.entity.arkcraft:pyroraptor.name=§6ArkCraft | §3Pyroraptor Spawn Egg
-entity.arkcraft:pyroraptor.name=Pyroraptor
-action.hint.exit.arkcraft:pyroraptor=Riding Pyroraptor
+item.spawn_egg.entity.arkcraft:pyroraptor.name=§6ArkCraft | §3火盗龙刷怪蛋
+entity.arkcraft:pyroraptor.name=火盗龙
+action.hint.exit.arkcraft:pyroraptor=骑火盗龙
 
 item.spawn_egg.entity.arkcraft:valenicius.name=§6ArkCraft | §3Valenicius Spawn Egg
 entity.arkcraft:valenicius.name=Valenicius
 action.hint.exit.arkcraft:valenicius=Riding Valenicius
 
-item.spawn_egg.entity.arkcraft:oxalaia.name=§6ArkCraft | §3Oxalaia Spawn Egg
-entity.arkcraft:oxalaia.name=Oxalaia
-action.hint.exit.arkcraft:oxalaia=Riding Oxalaia
+item.spawn_egg.entity.arkcraft:oxalaia.name=§6ArkCraft | §3奥沙拉龙刷怪蛋
+entity.arkcraft:oxalaia.name=奥沙拉龙
+action.hint.exit.arkcraft:oxalaia=骑奥沙拉龙
 
 item.spawn_egg.entity.arkcraft:neocartathes.name=§6ArkCraft | §3Neocarthates Spawn Egg
 entity.arkcraft:neocartathes.name=Neocarthates
 action.hint.exit.arkcraft:neocartathes=Riding Neocarthates
 
-item.spawn_egg.entity.arkcraft:megalania.name=§6ArkCraft | §3Megalania Spawn Egg
-entity.arkcraft:megalania.name=Megalania
-action.hint.exit.arkcraft:megalania=Riding Megalania
+item.spawn_egg.entity.arkcraft:megalania.name=§6ArkCraft | §3古巨蜥刷怪蛋
+entity.arkcraft:megalania.name=古巨蜥
+action.hint.exit.arkcraft:megalania=骑古巨蜥
 
 item.spawn_egg.entity.arkcraft:lopho.name=§6ArkCraft | §3Lopho Spawn Egg
 entity.arkcraft:lopho.name=Lopho
@@ -521,26 +521,26 @@ action.hint.exit.arkcraft:lopho=Riding Lopho
 
 
 
-item.spawn_egg.entity.arkcraft:longuisquama.name=§6ArkCraft | §3Longuisquama Spawn Egg
-entity.arkcraft:longuisquama.name=Longuisquama
-action.hint.exit.arkcraft:longuisquama=Riding Longuisquama
+item.spawn_egg.entity.arkcraft:longuisquama.name=§6ArkCraft | §3长鳞龙刷怪蛋
+entity.arkcraft:longuisquama.name=长鳞龙
+action.hint.exit.arkcraft:longuisquama=骑长鳞龙
 
-item.spawn_egg.entity.arkcraft:giraffatitan.name=§6ArkCraft | §3Giraffatitan Spawn Egg
-entity.arkcraft:giraffatitan.name=Giraffatitan
-action.hint.exit.arkcraft:giraffatitan=Riding Giraffatitan
+item.spawn_egg.entity.arkcraft:giraffatitan.name=§6ArkCraft | §3长颈巨龙刷怪蛋
+entity.arkcraft:giraffatitan.name=长颈巨龙
+action.hint.exit.arkcraft:giraffatitan=骑长颈巨龙
 
-item.spawn_egg.entity.arkcraft:galveosaurus.name=§6ArkCraft | §3Galveosaurus Spawn Egg
-entity.arkcraft:galveosaurus.name=Galveosaurus
-action.hint.exit.arkcraft:galveosaurus=Riding Galveosaurus
+item.spawn_egg.entity.arkcraft:galveosaurus.name=§6ArkCraft | §3加尔瓦龙刷怪蛋
+entity.arkcraft:galveosaurus.name=加尔瓦龙
+action.hint.exit.arkcraft:galveosaurus=骑加尔瓦龙
 
-item.spawn_egg.entity.arkcraft:armadillosuchus.name=§6ArkCraft | §3Armadillosuchus Spawn Egg
-entity.arkcraft:armadillosuchus.name=Armadillosuchus
-action.hint.exit.arkcraft:armadillosuchus=Riding Armadillosuchus
+item.spawn_egg.entity.arkcraft:armadillosuchus.name=§6ArkCraft | §3犰狳鳄刷怪蛋
+entity.arkcraft:armadillosuchus.name=犰狳鳄
+action.hint.exit.arkcraft:armadillosuchus=骑犰狳鳄
 
 
-item.spawn_egg.entity.arkcraft:ankylosaurus.name=§6ArkCraft | §3Ankylosaurus Spawn Egg
-entity.arkcraft:ankylosaurus.name=Ankylosaurus
-action.hint.exit.arkcraft:ankylosaurusr=Riding Ankylosaurus
+item.spawn_egg.entity.arkcraft:ankylosaurus.name=§6ArkCraft | §3甲龙刷怪蛋
+entity.arkcraft:ankylosaurus.name=甲龙
+action.hint.exit.arkcraft:ankylosaurusr=骑甲龙
 
 
 
