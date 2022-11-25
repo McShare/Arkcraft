@@ -466,7 +466,6 @@ entity.arkcraft:hln_a.name=HLN-A
 item.spawn_egg.entity.arkcraft:tapejara.name=§6ArkCraft | §3古神翼龙刷怪蛋
 entity.arkcraft:tapejara.name=古神翼龙
 action.hint.exit.arkcraft:tapejara=骑古神翼龙
-
 item.spawn_egg.entity.arkcraft:shantungosaurus.name=§6ArkCraft | §3山东龙刷怪蛋
 entity.arkcraft:shantungosaurus.name=山东龙
 action.hint.exit.arkcraft:shantungosaurus=骑山东龙
