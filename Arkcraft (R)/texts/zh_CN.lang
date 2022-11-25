@@ -126,8 +126,8 @@ item.arkcraft:hln_a_item.name=§6ArkCraft | §3HLN-A
 item.arkcraft:backpack.name=§6ArkCraft | §3Sinomacrops §o§a(Backpack)
 
 
-tile.arkcraft:smithy.name=§6ArkCraft | §3"铁匠台" Table §o§a(Craft here the ArkCraft-Mod items)
-tile.arkcraft:grill.name=§6ArkCraft | §3"Grill" Furnace §o§a(Cook here ArkCraft-Mod items)
+tile.arkcraft:smithy.name=§6ArkCraft | §3"铁匠台" Table §o§a(在这里建造 ArkCraft 的物品)
+tile.arkcraft:grill.name=§6ArkCraft | §3"烤架" Furnace §o§a(在这里烹饪 ArkCraft 的物品)
 
 
 item.arkcraft:dodo_egg.name=§6ArkCraft | §3未经受精的渡渡鸟蛋
@@ -209,9 +209,9 @@ item.spawn_egg.entity.arkcraft:baryonyx.name=§6ArkCraft | §3重爪龙刷怪蛋
 action.hint.exit.arkcraft:baryonyx=骑乘重爪龙
 entity.arkcraft:baryonyx.name=重爪龙
 
-item.spawn_egg.entity.arkcraft:moschops.name=§6ArkCraft | §3Moschops Spawn Egg
-action.hint.exit.arkcraft:moschops=Riding Moschops
-entity.arkcraft:moschops.name=Moschops
+item.spawn_egg.entity.arkcraft:moschops.name=§6ArkCraft | §3麝足兽刷怪蛋
+action.hint.exit.arkcraft:moschops=骑麝足兽
+entity.arkcraft:moschops.name=麝足兽
 
 item.spawn_egg.entity.arkcraft:tropical_wyvern.name=§6ArkCraft | §3Tropical Wyvern Spawn Egg
 action.hint.exit.arkcraft:tropical_wyvern=Riding Tropical Wyvern
@@ -482,13 +482,13 @@ item.spawn_egg.entity.arkcraft:shringasaurus.name=§6ArkCraft | §3犄龙刷怪�
 entity.arkcraft:shringasaurus.name=犄龙
 action.hint.exit.arkcraft:shringasaurus=骑犄龙
 
-item.spawn_egg.entity.arkcraft:giga.name=§6ArkCraft | §3Giga Spawn Egg
-entity.arkcraft:giga.name=Giga
-action.hint.exit.arkcraft:giga=Riding Giga
+item.spawn_egg.entity.arkcraft:giga.name=§6ArkCraft | §3巨兽龙刷怪蛋
+entity.arkcraft:giga.name=巨兽龙
+action.hint.exit.arkcraft:giga=骑巨兽龙
 
-item.spawn_egg.entity.arkcraft:tralkasaurus.name=§6ArkCraft | §3Tralkasaurus Spawn Egg
-entity.arkcraft:tralkasaurus.name=Tralkasaurus
-action.hint.exit.arkcraft:tralkasaurus=Riding Tralkasaurus
+item.spawn_egg.entity.arkcraft:tralkasaurus.name=§6ArkCraft | §3雷霆龙刷怪蛋
+entity.arkcraft:tralkasaurus.name=雷霆龙
+action.hint.exit.arkcraft:tralkasaurus=骑雷霆龙
 
 item.spawn_egg.entity.arkcraft:sclerothorax.name=§6ArkCraft | §3Sclerothorax Spawn Egg
 entity.arkcraft:sclerothorax.name=Sclerothorax
