@@ -249,7 +249,7 @@ item.arkcraft:ainiktozoon_shell.name=§6ArkCraft | §3爱尼克托贝壳
 
 item.spawn_egg.entity.arkcraft:alvarezsaurus.name=§6ArkCraft | §3阿瓦拉慈龙刷怪蛋
 entity.arkcraft:alvarezsaurus.name=阿瓦拉慈龙
-item.arkcraft:pasta_roja.name=§6ArkCraft | §3Meat Kibble §o§a(Use on CARNIVORES for taming)
+item.arkcraft:pasta_roja.name=§6ArkCraft | §3粗磨的肉§o§a(喂给食肉动物来驯服它)
 item.arkcraft:pasta_bicho.name=§6ArkCraft | §3Insect Kibble §o§a(Use on INSECTS OR INSECT-EATERS for taming)
 item.arkcraft:pasta_verde.name=§6ArkCraft | §3Natural Kibble §o§a(Use on HERBIVORES for taming)
 item.arkcraft:pasta_acuatica.name=§6ArkCraft | §3Acuatic Kibble §o§a(Use on FISH EATERS for taming)
@@ -616,10 +616,10 @@ item.arkcraft:hamburger.name=§6ArkCraft | §3Hamburger
 item.arkcraft:ark_meat_special.name=§6ArkCraft | §3ARK Meat Dried 
 item.arkcraft:dodo_bread.name=§6ArkCraft | §3Dodo Bread
 
-item.arkcraft:shadow_boots.name=§6ArkCraft | §3Shadowmane Boots
-item.arkcraft:shadow_leggings.name=§6ArkCraft | §3Shadowmane Leggings
-item.arkcraft:shadow_helmet.name=§6ArkCraft | §3Shadowmane Helmet
-item.arkcraft:shadow_chestplate.name=§6ArkCraft | §3Shadowmane Chestplate
+item.arkcraft:shadow_boots.name=§6ArkCraft | §3暗影靴子
+item.arkcraft:shadow_leggings.name=§6ArkCraft | §3暗影长裤
+item.arkcraft:shadow_helmet.name=§6ArkCraft | §3暗影头盔
+item.arkcraft:shadow_chestplate.name=§6ArkCraft | §3暗影胸甲
 
 entity.arkcraft:tanyrhinichthys.name=古射线鳍鱼
 item.spawn_egg.entity.arkcraft:tanyrhinichthys.name=§6ArkCraft | §3古射线鳍鱼产卵
