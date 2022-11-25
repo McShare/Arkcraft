@@ -467,9 +467,9 @@ item.spawn_egg.entity.arkcraft:tapejara.name=§6ArkCraft | §3古神翼龙刷怪
 entity.arkcraft:tapejara.name=古神翼龙
 action.hint.exit.arkcraft:tapejara=骑古神翼龙
 
-item.spawn_egg.entity.arkcraft:shantungosaurus.name=§6ArkCraft | §3Shantungosaurus Spawn Egg
-entity.arkcraft:shantungosaurus.name=Shantungosaurus
-action.hint.exit.arkcraft:shantungosaurus=Riding Shantungosaurus
+item.spawn_egg.entity.arkcraft:shantungosaurus.name=§6ArkCraft | §3山东龙刷怪蛋
+entity.arkcraft:shantungosaurus.name=山东龙
+action.hint.exit.arkcraft:shantungosaurus=骑山东龙
 
 item.spawn_egg.entity.arkcraft:wakaleo.name=§6ArkCraft | §3Wakaleo Spawn Egg
 entity.arkcraft:wakaleo.name=Wakaleo
