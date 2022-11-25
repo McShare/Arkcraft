@@ -470,9 +470,9 @@ item.spawn_egg.entity.arkcraft:shantungosaurus.name=§6ArkCraft | §3山东龙�
 entity.arkcraft:shantungosaurus.name=山东龙
 action.hint.exit.arkcraft:shantungosaurus=骑山东龙
 
-item.spawn_egg.entity.arkcraft:wakaleo.name=§6ArkCraft | §3Wakaleo Spawn Egg
-entity.arkcraft:wakaleo.name=Wakaleo
-action.hint.exit.arkcraft:wakaleor=Riding Wakaleo
+item.spawn_egg.entity.arkcraft:wakaleo.name=§6ArkCraft | §3袋狮刷怪蛋
+entity.arkcraft:wakaleo.name=袋狮
+action.hint.exit.arkcraft:wakaleor=骑袋狮
 
 item.spawn_egg.entity.arkcraft:ptera.name=§6ArkCraft | §3Ptera Spawn Egg
 entity.arkcraft:ptera.name=Ptera
