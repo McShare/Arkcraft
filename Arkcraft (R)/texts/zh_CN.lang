@@ -666,3 +666,7 @@ item.spawn_egg.entity.arkcraft:female_shadowmane.name=§6ArkCraft | §3雌性暗
 item.spawn_egg.entity.arkcraft:male_shadowmane.name=§6ArkCraft | §3雄性暗影鬃狮刷怪蛋
 entity.arkcraft:female_shadowmane.name=雌性暗影鬃狮
 entity.arkcraft:male_shadowmane.name=雄性暗影鬃狮
+
+#补充名称
+
+item.spawn_egg.entity.ark:zilla_male.name=§6ArkCraft | §3斯拉刷怪蛋
