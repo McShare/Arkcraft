@@ -115,8 +115,6 @@ item.arkcraft:montura_para_tres.name=§6ArkCraft | §3平台
 item.arkcraft:montura_de_baryonyx.name=§e重爪龙鞍
 item.arkcraft:baryonyx_egg.name=§6ArkCraft | §3重爪龙蛋
 item.arkcraft:doedicurus_egg.name=§6ArkCraft | §3星尾兽蛋
-item.arkcraft:bucket_ammonite_friend.name=§6ArkCraft | §3一桶菊石
-item.arkcraft:bucket_ammonite_poisonshock.name=§6ArkCraft | §3一桶有攻击性的菊石
 item.arkcraft:backpack.name=§6ArkCraft | §3中华大眼翼龙 背包模式
 item.arkcraft:bucket_mawsonia.name=§6ArkCraft | §3一桶莫森氏鱼
 item.arkcraft:bucket_tany.name=§6ArkCraft | §3一桶唐鱼
@@ -571,9 +569,6 @@ item.arkcraft:poisonshock_bowl.name=§6ArkCraft | §3麻醉剂碗
 action.interact.add_toxic=变成毒药
 action.interact.remove_toxic=去除毒素
 
-item.arkcraft:bucket_trilobite.name=§6ArkCraft | §3一桶三叶虫
-item.arkcraft:bucket_mawsonia.name=§6ArkCraft | §3一桶莫森氏鱼
-item.arkcraft:bucket_tany.name=§6ArkCraft | §3一桶Tany
 item.spawn_egg.entity.arkcraft:mawsonia.name=§6ArkCraft | §3莫森氏鱼刷怪蛋
 
 item.arkcraft:carne_maju.name=§6ArkCraft | §3玛君龙肌肉
