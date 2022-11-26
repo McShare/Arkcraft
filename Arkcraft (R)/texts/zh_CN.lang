@@ -118,7 +118,7 @@ item.arkcraft:doedicurus_egg.name=§6ArkCraft | §3星尾兽蛋
 item.arkcraft:backpack.name=§6ArkCraft | §3中华大眼翼龙 背包模式
 item.arkcraft:bucket_mawsonia.name=§6ArkCraft | §3一桶莫森氏鱼
 item.arkcraft:bucket_tany.name=§6ArkCraft | §3一桶唐鱼
-item.arkcraft:bucket_trilobite.name=§6ArkCraft | §3一桶三叶兽
+item.arkcraft:bucket_trilobite.name=§6ArkCraft | §3一桶三叶虫
 item.arkcraft:diente_tralka.name=§6ArkCraft | §3雷霆龙的尖牙
 item.arkcraft:hln_a_item.name=§6ArkCraft | §3HLN-A
 item.arkcraft:backpack.name=§6ArkCraft | §3中华大眼翼龙 §o§a(背包)
@@ -131,8 +131,8 @@ tile.arkcraft:grill.name=§6ArkCraft | §3烤炉 §o§a(在这烹饪ArkCraft模�
 item.arkcraft:dodo_egg.name=§6ArkCraft | §3未经受精的渡渡鸟蛋
 item.spawn_egg.entity.arkcraft:dodo.name=§6ArkCraft | §3渡渡鸟刷怪蛋
 action.interact.dientetralka=拔出尖牙! §o§a(将会在几秒后长出来)
-action.hint.exit.arkcraft:dodo=骑渡渡鸟§e（仅限开箱，不可骑乘）
-action.hint.exit.minecraft:chicken=骑着
+action.hint.exit.arkcraft:dodo=骑渡渡鸟 §e(仅限开箱，不可骑乘)
+action.hint.exit.minecraft:chicken=骑
 entity.arkcraft:dodo.name=渡渡鸟
 
 item.spawn_egg.entity.arkcraft:hesperornis.name=§6ArkCraft | §3黄昏鸟刷怪蛋
@@ -204,7 +204,7 @@ entity.arkcraft:doedicurus.name=星尾兽
 item.arkcraft:montura_de_doedicurus.name=§6ArkCraft | §3星尾兽鞍座
 
 item.spawn_egg.entity.arkcraft:baryonyx.name=§6ArkCraft | §3重爪龙刷怪蛋
-action.hint.exit.arkcraft:baryonyx=骑乘重爪龙
+action.hint.exit.arkcraft:baryonyx=骑重爪龙
 entity.arkcraft:baryonyx.name=重爪龙
 
 item.spawn_egg.entity.arkcraft:moschops.name=§6ArkCraft | §3麝足兽刷怪蛋
@@ -215,9 +215,9 @@ item.spawn_egg.entity.arkcraft:tropical_wyvern.name=§6ArkCraft | §3热带双�
 action.hint.exit.arkcraft:tropical_wyvern=骑热带双足飞龙
 entity.arkcraft:tropical_wyvern.name=热带双足飞龙
 
-item.spawn_egg.entity.arkcraft:sinosaurus.name=§6ArkCraft | §3中国龙刷怪蛋
-action.hint.exit.arkcraft:sinosaurus=骑中国龙
-entity.arkcraft:sinosaurus.name=中国龙
+item.spawn_egg.entity.arkcraft:sinosaurus.name=§6ArkCraft | §3中国双脊龙刷怪蛋
+action.hint.exit.arkcraft:sinosaurus=骑中国双脊龙
+entity.arkcraft:sinosaurus.name=中国双脊龙
 
 item.spawn_egg.entity.arkcraft:thery.name=§6ArkCraft | §3镰刀龙刷怪蛋
 action.hint.exit.arkcraft:thery=骑镰刀龙
@@ -238,8 +238,8 @@ item.spawn_egg.entity.arkcraft:thorny_demon.name=§6ArkCraft | §3荆棘恶灵�
 entity.arkcraft:thorny_demon.name=荆棘恶灵
 entity.arkcraft:thorny_demon_proyectil.name=荆棘恶灵弹
 
-item.spawn_egg.entity.arkcraft:mega_raptor.name=§6ArkCraft | §3巨型猛禽刷怪蛋
-entity.arkcraft:mega_raptor.name=巨型猛禽
+item.spawn_egg.entity.arkcraft:mega_raptor.name=§6ArkCraft | §3大盗龙刷怪蛋
+entity.arkcraft:mega_raptor.name=大盗龙
 
 item.spawn_egg.entity.arkcraft:ainictozoon.name=§6ArkCraft | §3爱尼克托刷怪蛋
 entity.arkcraft:ainictozoon.name=爱尼克托
@@ -271,7 +271,7 @@ entity.arkcraft:mamut.name=猛犸象
 
 
 entity.arkcraft:healer_daeodon.name=治疗者凶齿豨
-action.hint.exit.arkcraft:healer_daeodon=骑着治疗师凶齿豨
+action.hint.exit.arkcraft:healer_daeodon=骑治疗师凶齿豨
 item.spawn_egg.entity.arkcraft:healer_daeodon.name=治疗者 凶齿豨刷怪蛋
 
 item.spawn_egg.entity.arkcraft:regeneration.name=再生
@@ -279,11 +279,11 @@ entity.arkcraft:regeneration.name=再生
 
 item.spawn_egg.entity.arkcraft:deinonychus.name=§6ArkCraft | §3恐爪龙刷怪蛋
 entity.arkcraft:deinonychus.name=恐爪龙
-action.hint.exit.arkcraft:deinonychus=骑着恐爪龙
+action.hint.exit.arkcraft:deinonychus=骑恐爪龙
 item.arkcraft:medium_carnivore_saddle.name=§6ArkCraft | §3中型食肉动物鞍座
 
 item.spawn_egg.entity.arkcraft:velociraptor.name=§6ArkCraft | §3犹他盗龙刷怪蛋
-action.hint.exit.arkcraft:velociraptor=骑着犹他盗龙
+action.hint.exit.arkcraft:velociraptor=骑犹他盗龙
 item.spawn_egg.entity.arkcraft:water_bug.name=§6ArkCraft | §3水虫刷怪蛋
 entity.arkcraft:water_bug.name=水虫
 entity.arkcraft:velociraptor.name=犹他盗龙
@@ -293,10 +293,6 @@ item.arkcraft:frozen_frame.name=冰冻框架
 item.arkcraft:piel_de_bestia_roja.name=§6ArkCraft | §3防火皮革
 item.arkcraft:fire_meat_raw.name=§6ArkCraft | §3生火肉
 item.arkcraft:fire_meat_cooked.name=§6ArkCraft | §3火肉煮熟
-
-item.spawn_egg.entity.arkcraft:belcbob.name=§6ArkCraft | §3贝尔克博刷怪蛋
-entity.arkcraft:belcbob.name=贝尔克博
-action.hint.exit.arkcraft:belcbob=骑着贝尔克博
 
 item.spawn_egg.entity.arkcraft:fire_deinonychus.name=火恐爪龙刷怪蛋
 entity.arkcraft:fire_deinonychus=火恐爪龙
@@ -313,7 +309,7 @@ item.arkcraft:frozen_demon_meat_cooked.name=冷冻恶魔肉熟
 item.arkcraft:frozen_demon_soft_meat.name=冷冻恶魔软肉
 item.spawn_egg.entity.arkcraft:frozen_demon.name=冰冻恶魔刷怪蛋
 entity.arkcraft:frozen_demon.name=冰冻恶魔
-action.hint.exit.arkcraft:frozen_demon=骑着冰冻恶魔
+action.hint.exit.arkcraft:frozen_demon=骑冰冻恶魔
 item.spawn_egg.entity.arkcraft:ice_deinonychus.name=§6ArkCraft | §3冰恐爪龙刷怪蛋
 entity.arkcraft:ice_deinonychus.name=冰恐爪龙
 action.hint.exit.arkcraft:ice_deinonychus=骑冰恐爪龙
@@ -331,7 +327,7 @@ action.hint.exit.arkcraft:dodorex=骑嘟嘟暴龙
 item.spawn_egg.entity.arkcraft:dodorex.name=§6ArkCraft | §3嘟嘟暴龙刷怪蛋
 entity.arkcraft:dodorex.name=嘟嘟暴龙
 
-action.hint.exit.arkcraft:llukalkan=骑着慑龙
+action.hint.exit.arkcraft:llukalkan=骑慑龙
 item.spawn_egg.entity.arkcraft:llukalkan.name=§6ArkCraft | §3慑龙刷怪蛋
 entity.arkcraft:majungasaurus.name=慑龙
 
@@ -339,15 +335,15 @@ action.hint.exit.arkcraft:brontornis=骑雷鸣鸟
 item.spawn_egg.entity.arkcraft:brontornis.name=§6ArkCraft | §3雷鸣鸟刷怪蛋
 entity.arkcraft:brontornis.name=雷鸣鸟
 
-action.hint.exit.arkcraft:nanuqsaurus=骑着白熊龙
+action.hint.exit.arkcraft:nanuqsaurus=骑白熊龙
 item.spawn_egg.entity.arkcraft:nanuqsaurus.name=§6ArkCraft | §3白熊龙刷怪蛋
 entity.arkcraft:nanuqsaurus.name=白熊龙
 
-action.hint.exit.arkcraft:velonasaur=骑着帷幕速龙
+action.hint.exit.arkcraft:velonasaur=骑帷幕速龙
 item.spawn_egg.entity.arkcraft:velonasaur.name=§6ArkCraft | §3 帷幕速龙刷怪蛋
 entity.arkcraft:velonasaur.name=帷幕速龙
 
-action.hint.exit.arkcraft:velonasaur_r=骑着帷幕速龙 (R变异)
+action.hint.exit.arkcraft:velonasaur_r=骑帷幕速龙 (R变异)
 item.spawn_egg.entity.arkcraft:velonasaur_r.name=§6ArkCraft | §3 帷幕速龙 (R变异) 刷怪蛋
 entity.arkcraft:velonasaur_r.name=帷幕速龙 (R变异)
 
@@ -355,43 +351,43 @@ action.hint.exit.arkcraft:dire_wolf=骑恐狼
 item.spawn_egg.entity.arkcraft:dire_wolf.name=§6ArkCraft | §3恐狼刷怪蛋
 entity.arkcraft:dire_wolf.name=恐狼
 
-action.hint.exit.arkcraft:longiscuama=骑着长鳞龙
+action.hint.exit.arkcraft:longiscuama=骑长鳞龙
 item.spawn_egg.entity.arkcraft:longiscuama.name=§6ArkCraft | §3长鳞龙刷怪蛋
 entity.arkcraft:longiscuama.name=长鳞龙
 
-action.hint.exit.arkcraft:brontoscorpio=骑着布龙度蝎
+action.hint.exit.arkcraft:brontoscorpio=骑布龙度蝎
 item.spawn_egg.entity.arkcraft:brontoscorpio.name=§6ArkCraft | §3布龙度蝎刷怪蛋
 entity.arkcraft:brontoscorpio.name=布龙度蝎
 
-action.hint.exit.arkcraft:camarasaurus=骑着圆顶龙
+action.hint.exit.arkcraft:camarasaurus=骑圆顶龙
 item.spawn_egg.entity.arkcraft:camarasaurus.name=§6ArkCraft | §3圆顶龙刷怪蛋
 entity.arkcraft:camarasaurus.name=圆顶龙
 
-action.hint.exit.arkcraft:gualicho=骑着瓜利乔龙
+action.hint.exit.arkcraft:gualicho=骑瓜利乔龙
 item.spawn_egg.entity.arkcraft:gualicho.name=§6ArkCraft | §3瓜利乔龙刷怪蛋
 entity.arkcraft:gualicho.name=瓜利乔龙
 
-action.hint.exit.arkcraft:cryolopho=骑着冰冠龙
+action.hint.exit.arkcraft:cryolopho=骑冰冠龙
 item.spawn_egg.entity.arkcraft:cryolopho.name=§6ArkCraft | §3冰冠龙刷怪蛋
 entity.arkcraft:cryolopho.name=冰冠龙
 
-action.hint.exit.arkcraft:raptor=骑着猛禽
-item.spawn_egg.entity.arkcraft:raptor.name=§6ArkCraft | §3猛禽刷怪蛋
-entity.arkcraft:raptor.name=猛禽
+action.hint.exit.arkcraft:raptor=骑迅猛龙
+item.spawn_egg.entity.arkcraft:raptor.name=§6ArkCraft | §3迅猛龙刷怪蛋
+entity.arkcraft:raptor.name=迅猛龙
 
-action.hint.exit.arkcraft:rosamygale=骑着格氏玫瑰古狼蛛
+action.hint.exit.arkcraft:rosamygale=骑格氏玫瑰古狼蛛
 item.spawn_egg.entity.arkcraft:rosamygale.name=§6ArkCraft | §3R格氏玫瑰古狼蛛刷怪蛋
 entity.arkcraft:rosamygale.name=格氏玫瑰古狼蛛
 
-action.hint.exit.arkcraft:tanycolagreus=骑着长臂猎龙
+action.hint.exit.arkcraft:tanycolagreus=骑长臂猎龙
 item.spawn_egg.entity.arkcraft:tanycolagreus.name=§6ArkCraft | §3长臂猎龙刷怪蛋
 entity.arkcraft:tanycolagreus.name=长臂猎龙
 
-action.hint.exit.arkcraft:thylacoleo=骑着袋狮
+action.hint.exit.arkcraft:thylacoleo=骑袋狮
 item.spawn_egg.entity.arkcraft:thylacoleo.name=§6ArkCraft | §3袋狮刷怪蛋
 entity.arkcraft:thylacoleo.name=袋狮
 
-action.hint.exit.arkcraft:unquillosaurus=骑着乌奎洛龙
+action.hint.exit.arkcraft:unquillosaurus=骑乌奎洛龙
 item.spawn_egg.entity.arkcraft:unquillosaurus.name=§6ArkCraft | §3乌奎洛龙刷怪蛋
 entity.arkcraft:unquillosaurus.name=乌奎洛龙
 
@@ -401,7 +397,7 @@ action.hint.exit.arkcraft:argentavis=骑阿根廷巨鹰
 item.spawn_egg.entity.arkcraft:argentavis.name=§6ArkCraft | §3阿根廷巨鹰刷怪蛋
 entity.arkcraft:argentavis.name=阿根廷巨鹰
 
-item.arkcraft:rexskull_on_stick.name=驯马鞭（用于骑术和技能）
+item.arkcraft:rexskull_on_stick.name=驯马鞭 (用于骑术和技能)
 item.arkcraft:raw_prime_meat.name=上等生肉
 item.arkcraft:cooked_prime_meat.name=上等熟肉
 
@@ -417,46 +413,46 @@ entity.arkcraft:pikaia.name=皮卡虫
 
 item.spawn_egg.entity.arkcraft:diplocaulus.name=§6ArkCraft | §3笠头螈刷怪蛋
 entity.arkcraft:diplocaulus.name=笠头螈
-action.hint.exit.arkcraft:diplocaulus=骑着笠头螈
+action.hint.exit.arkcraft:diplocaulus=骑笠头螈
 
 item.spawn_egg.entity.arkcraft:quetzal.name=§6ArkCraft | §3魁札尔鸟刷怪蛋
 entity.arkcraft:quetzal.name=魁札尔鸟
-action.hint.exit.arkcraft:quetzal=骑着魁札尔鸟
+action.hint.exit.arkcraft:quetzal=骑魁札尔鸟
 
 item.spawn_egg.entity.arkcraft:magmasaur.name=§6ArkCraft | §3岩浆龙刷怪蛋
 entity.arkcraft:magmasaur.name=岩浆龙
-action.hint.exit.arkcraft:magmasaur=骑着岩浆龙
+action.hint.exit.arkcraft:magmasaur=骑岩浆龙
 
 item.spawn_egg.entity.arkcraft:phiomia.name=§6ArkCraft | §3渐新象刷怪蛋
 entity.arkcraft:phiomia.name=渐新象
-action.hint.exit.arkcraft:phiomia=骑着渐新象
+action.hint.exit.arkcraft:phiomia=骑渐新象
 
 item.spawn_egg.entity.arkcraft:irritator.name=§6ArkCraft | §3激龙刷怪蛋
 entity.arkcraft:irritator.name=激龙
-action.hint.exit.arkcraft:irritator=骑着激龙
+action.hint.exit.arkcraft:irritator=骑激龙
 
 item.spawn_egg.entity.arkcraft:bulbdog.name=§6ArkCraft | §3灯泡犬刷怪蛋
 entity.arkcraft:bulbdog.name=灯泡狗
 
 item.spawn_egg.entity.arkcraft:lymantria.name=§6ArkCraft | §3毒蛾刷怪蛋
 entity.arkcraft:lymantria.name=毒蛾
-action.hint.exit.arkcraft:lymantria=骑着毒蛾
+action.hint.exit.arkcraft:lymantria=骑毒蛾
 
 item.spawn_egg.entity.arkcraft:scutosaurus.name=§6ArkCraft | §3盾甲龙刷怪蛋
 entity.arkcraft:scutosaurus.name=盾甲龙
 
 item.spawn_egg.entity.arkcraft:ankylosaur.name=§6ArkCraft | §3甲龙刷怪蛋
 entity.arkcraft:ankylosaur.name=甲龙
-action.hint.exit.arkcraft:ankylosaur=骑着甲龙
+action.hint.exit.arkcraft:ankylosaur=骑甲龙
 
 item.spawn_egg.entity.arkcraft:skorpiovenator.name=§6ArkCraft | §3蝎猎龙刷怪蛋
 entity.arkcraft:skorpiovenator.name=蝎猎龙
-action.hint.exit.arkcraft:skorpiovenator=骑着蝎猎龙
+action.hint.exit.arkcraft:skorpiovenator=骑蝎猎龙
 
 
 item.spawn_egg.entity.arkcraft:ouranosaurus.name=§6ArkCraft | §3无畏龙刷怪蛋
 entity.arkcraft:ouranosaurus.name=无畏龙
-action.hint.exit.arkcraft:ouranosaurus=骑着无畏龙
+action.hint.exit.arkcraft:ouranosaurus=骑无畏龙
 
 item.spawn_egg.entity.arkcraft:hln_a.name=§6ArkCraft | §3HLN-A 刷怪蛋
 entity.arkcraft:hln_a.name=HLN-A
@@ -583,11 +579,11 @@ entity.arkcraft:macrauchenia.name=长颈驼
 item.spawn_egg.entity.arkcraft:mawsonia.name=§6ArkCraft | §3莫森氏鱼刷怪蛋
 entity.arkcraft:mawsonia.name=莫森氏鱼
 
-action.hint.exit.arkcraft:kentrosaurus=骑着剑龙
+action.hint.exit.arkcraft:kentrosaurus=骑剑龙
 item.spawn_egg.entity.arkcraft:kentrosaurus.name=§6ArkCraft | §3肯特龙刷怪蛋
 entity.arkcraft:kentrosaurus.name=kentrosaurus
 
-action.hint.exit.arkcraft:parasaurolophus=骑乘栉龙
+action.hint.exit.arkcraft:parasaurolophus=骑副栉龙
 item.spawn_egg.entity.arkcraft:parasaurolophus.name=§6ArkCraft | §3副栉龙刷怪蛋
 entity.arkcraft:parasaurolophus.name=副栉龙
 
@@ -598,8 +594,8 @@ entity.arkcraft:kamuysaurus.name=神威龙
 item.spawn_egg.entity.arkcraft:tamer.name=§6ArkCraft | §3驯兽师刷怪蛋
 entity.arkcraft:tamer.name=驯兽师
 
-item.spawn_egg.entity.arkcraft:micro_raptor.name=§6ArkCraft | §3微型猛禽刷怪蛋
-entity.arkcraft:micro_raptor.name=微型猛禽
+item.spawn_egg.entity.arkcraft:micro_raptor.name=§6ArkCraft | §3小盗龙刷怪蛋
+entity.arkcraft:micro_raptor.name=小盗龙
 
 item.arkcraft:whip_t1.name=§6ArkCraft | §3木驯马鞭
 item.arkcraft:whip_t2.name=§6ArkCraft | §3驯铁鞭
@@ -630,7 +626,7 @@ item.arkcraft:narcoberry_seed=§6ArkCraft | §3黑色浆果 §o§a(在耕地中�
 
 item.arkcraft:hln_a_item.name=§6ArkCraft | §3HLN-A (触摸生成)
 
-item.arkcraft:jeringa_r.name=§6ArkCraft | §3R变异注射剂 §o§a(使用 Copy 和 Giga 进行突变)
+item.arkcraft:jeringa_r.name=§6ArkCraft | §3R变异注射剂 §o§a(使用Copy和巨兽龙进行突变)
 
 item.arkcraft:termic_wool.name=§6ArkCraft | §3保暖羊毛 §o§a(用于孵化怪物蛋)
 

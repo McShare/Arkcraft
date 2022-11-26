@@ -6,7 +6,7 @@
 		[
 			{
 				"scene_tag": "dialogo_tameado_arkcraft_farming_alv",
-				"npc_name": { "rawtext": [ { "translate": "Arkcraft - Download it on MCPEDL" } ] },
+				"npc_name": { "rawtext": [ { "translate": "Arkcraft" } ] },
 				"text": { "rawtext": [ { "translate": "For updates, spoilers test and betas: \n- https://discord.gg/hCudpfDhW8 \n\nThanks for play!", "with": ["\n"] } ] },
 				"buttons": [
 					{
