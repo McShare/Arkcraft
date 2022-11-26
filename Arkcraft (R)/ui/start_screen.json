@@ -58,17 +58,6 @@
     "layer": 12 // This is the lowest layer where the button border won't show through this icon while being pressed
   },
 
-  "copyright": {
-    "type": "label",
-    "color": "$main_header_text_color",
-    "layer": 2,
-    "text": "§cHive Injector ",
-    "size": [ "default", 10 ],
-    "max_size": [ "100%", "100%" ],
-    "anchor_from": "top_left",
-    "anchor_to": "top_left"
-  },
-
   "development_version": {
     "type": "label",
     "color": "$main_header_text_color",
