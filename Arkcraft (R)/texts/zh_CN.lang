@@ -578,8 +578,8 @@ item.spawn_egg.entity.arkcraft:mawsonia.name=§6ArkCraft | §3莫森氏鱼刷怪
 
 item.arkcraft:carne_maju.name=§6ArkCraft | §3玛君龙肌肉
 
-entity.arkcraft:weejasperaspididae.name=Weejasperaspididae
-item.spawn_egg.entity.arkcraft:weejasperaspididae.name=§6ArkCraft | §3Weejasperaspididae刷怪蛋
+entity.arkcraft:weejasperaspididae.name=韦杰鲨
+item.spawn_egg.entity.arkcraft:weejasperaspididae.name=§6ArkCraft | §3韦杰鲨刷怪蛋
 
 action.hint.exit.arkcraft:macrauchenia=骑长颈驼
 item.spawn_egg.entity.arkcraft:macrauchenia.name=§6ArkCraft | §3长颈驼刷怪蛋
